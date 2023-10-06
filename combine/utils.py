@@ -1,15 +1,14 @@
 #!/usr/bin/python
-
-
 import json
 import pickle as pkl
 import warnings
-from typing import List
-
+from typing import Dict, List, Tuple, Union
+from collections import OrderedDict
 import matplotlib.pyplot as plt
 import mplhep as hep
 import numpy as np
 from hist import Hist
+
 
 plt.style.use(hep.style.CMS)
 
@@ -18,46 +17,42 @@ warnings.filterwarnings("ignore", message="Found duplicate branch ")
 # (name of sample, name in templates)
 combine_samples = {
     # data
-    "SingleElectron_": "Data",
-    "SingleMuon_": "Data",
-    "EGamma_": "Data",
+    "data" : "Data"
     # signal
-    "GluGluHToWW_Pt-200ToInf_M-125": "ggF",
-    "HToWW_M-125": "VH",
-    "VBFHToWWToLNuQQ_M-125_withDipoleRecoil": "VBF",
-    "ttHToNonbb_M125": "ttH",
+    "TotalSignal":"TotalSignal"
+    "ggF": "ggF",
+    "VH" : "VH",
+    "VBF": "VBF",
+    "ttH": "ttH",
     # bkg
-    "QCD_Pt": "QCD",
-    "DYJets": "DYJets",
-    "WJetsToLNu_": "WJetsLNu",
-    "JetsToQQ": "WZQQ",
-    "TT": "TTbar",
-    "ST_": "SingleTop",
-    "WW": "Diboson",
-    "WZ": "Diboson",
-    "ZZ": "Diboson",
-    "GluGluHToTauTau": "HTauTau",
+    "QCD": "QCD",
+    "WJets": "WJets",
+    "Top": "Top",
+    "Rest" : "Rest"
 }
 
 # (name in templates, name in cards)
 labels = {
-    # sigs
+    # data
+    "data" : "Data"
+    # signal
+    "TotalSignal":"TotalSignal"
     "ggF": "ggF",
+    "VH" : "VH",
     "VBF": "VBF",
-    "VH": "VH",
     "ttH": "ttH",
-    # BKGS
-    "QCD": "qcd",
-    "TTbar": "ttbar",
-    "WJetsLNu": "wjets",
-    "SingleTop": "singletop",
-    "DYJets": "zjets",
+    # bkg
+    "QCD": "QCD",
+    "WJets": "WJets",
+    "Top": "Top",
+    "Rest" : "Rest"
 }
+data = ["data"]
 
-bkgs = ["TTbar", "WJetsLNu", "SingleTop", "DYJets"]
+bkgs = ['QCD','Top','WJets','Rest']
 
-sigs = ["ggF", "VBF", "VH", "ttH"]
-samples = sigs + bkgs
+sigs = ['TotalSignal','ggF','VH','ttH','VBF']
+samples = sigs + bkgs + data
 
 
 def get_sum_sumgenweight(pkl_files, year, sample):
@@ -68,27 +63,6 @@ def get_sum_sumgenweight(pkl_files, year, sample):
             metadata = pkl.load(f)
         sum_sumgenweight = sum_sumgenweight + metadata[sample][year]["sumgenweight"]
     return sum_sumgenweight
-
-
-def get_xsecweight(pkl_files, year, sample, is_data, luminosity):
-    if not is_data:
-        # find xsection
-        f = open("../fileset/xsec_pfnano.json")
-        xsec = json.load(f)
-        f.close()
-        try:
-            xsec = eval(str((xsec[sample])))
-        except ValueError:
-            print(f"sample {sample} doesn't have xsecs defined in xsec_pfnano.json so will skip it")
-            return None
-
-        # get overall weighting of events.. each event has a genweight...
-        # sumgenweight sums over events in a chunk... sum_sumgenweight sums over chunks
-        xsec_weight = (xsec * luminosity) / get_sum_sumgenweight(pkl_files, year, sample)
-    else:
-        xsec_weight = 1
-    return xsec_weight
-
 
 def shape_to_num(var, nom, clip=1.5):
     """
@@ -112,36 +86,33 @@ def shape_to_num(var, nom, clip=1.5):
     return var_rate / nom_rate
 
 
-def get_template(h, sample, ptbin):
-    mass_axis = 3
+def get_template(h, sample):
+    ''' 
+    histogram h Hist, with axes:["samples","systematic","MH_Reco"]
+    sample is sample name in ["QCD",...,"data"]
+    '''
+    mass_axis = 2 #axis index
     massbins = h.axes[mass_axis].edges
-    return (h[{"samples": sample, "systematic": "nominal", "fj_pt": ptbin}].values(), massbins, "reco_higgs_m")
+    return (h[{"samples": sample, "systematic": "nominal"}].values(), massbins, "MH_Reco")
 
 
 def blindBins(h: Hist, blind_region: List, blind_samples: List[str] = []):
     """
     Blind (i.e. zero) bins in histogram ``h``.
     If ``blind_samples`` specified, only blind those samples, else blinds all.
-
-    CAREFUL: assumes axis=0 is samples, axis=3 is mass_axis
-
+    blind_region: List = [left_bin,right_bin]
+    blind_samples: List[str] = ["QCD",...]
+    CAREFUL: assumes axis=0 is samples, axis=2 is mass_axis
     """
-
     h = h.copy()
-
-    #     mass_axis = np.argmax(np.array(list(h.axes.name))=="rec_higgs_m")
-    mass_axis = 3
+    mass_axis = 2
     massbins = h.axes[mass_axis].edges
-
-    lv = int(np.searchsorted(massbins, blind_region[0], "right"))
-    rv = int(np.searchsorted(massbins, blind_region[1], "left") + 1)
-
+    left_end = int(np.searchsorted(massbins, blind_region[0], "right"))
+    right_end = int(np.searchsorted(massbins, blind_region[1], "left") + 1)
     if blind_samples:
         for blind_sample in blind_samples:
             sample_index = np.argmax(np.array(list(h.axes[0])) == blind_sample)
-            h.view(flow=True)[sample_index, :, :, lv:rv] = 0
-
+            h.view(flow=True)[sample_index, :, left_end:right_end] = 0
     else:
-        h.view(flow=True)[:, :, :, lv:rv] = 0
-
+        h.view(flow=True)[:, :, left_end:right_end] = 0
     return h

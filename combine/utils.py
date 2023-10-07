@@ -17,9 +17,9 @@ warnings.filterwarnings("ignore", message="Found duplicate branch ")
 # (name of sample, name in templates)
 combine_samples = {
     # data
-    "data" : "Data"
+    "data" : "Data",
     # signal
-    "TotalSignal":"TotalSignal"
+    "TotalSignal":"TotalSignal",
     "ggF": "ggF",
     "VH" : "VH",
     "VBF": "VBF",
@@ -34,9 +34,9 @@ combine_samples = {
 # (name in templates, name in cards)
 labels = {
     # data
-    "data" : "Data"
+    "data" : "Data",
     # signal
-    "TotalSignal":"TotalSignal"
+    "TotalSignal":"TotalSignal",
     "ggF": "ggF",
     "VH" : "VH",
     "VBF": "VBF",

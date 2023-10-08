@@ -71,7 +71,7 @@ parser.add_argument(
     help="order of polynomial for TF in [dim 1, dim 2] = [mH(bb), -] for nonresonant or [mY, mX] for resonant."
     "Default is 0 for nonresonant and (1, 2) for resonant.",
 )
-parser.add_argument("--mcstats-threshold", default=100, type=float, help="mcstats threshold n_eff")
+parser.add_argument("--mcstats-threshold", default=10, type=float, help="mcstats threshold n_eff")
 parser.add_argument("--epsilon", default=1e-3, type=float, help="epsilon to avoid numerical errs")
 parser.add_argument(
     "--scale-templates", default=None, type=float, help="scale all templates for bias tests"
@@ -118,6 +118,7 @@ for key in sig_keys:
     mc_samples[key] = key
         
 all_mc = list(mc_samples.keys())
+logging.info("all MC = %s" % all_mc)
  
 
 
@@ -273,8 +274,8 @@ for skey, syst in uncorr_year_shape_systs.items():
 
 
 def main(args):
-
-    regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2","SR3a","SR3b","CR3"]
+    regions : List[str] = ["SR1a","CR1"]
+    # regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2","SR3a","SR3b","CR3"]
     regions_blinded = [region + "_blinded" for region in regions]
     regions =  regions + regions_blinded
     with open(f"./templates/hists_templates_blinded.pkl", "rb") as f:
@@ -289,7 +290,8 @@ def main(args):
         ShapeVar(name=axis.name, bins=axis.edges, order=args.nTF[i])
         for i, axis in enumerate(sample_templates.axes[1:]) #should be [1:] for boosted HWW analysis, because the 1st axes is mass
     ]
-
+    # logging.info("shape_var = ",shape_vars)
+    print("shape_var[0] info",shape_vars[0].name,shape_vars[0].scaled,shape_vars[0].bins)
     fill_args = [
         model,
         regions,
@@ -303,103 +305,23 @@ def main(args):
     fit_args = [model, shape_vars, hists_templates, args.scale_templates, args.min_qcd_val]
     
     fill_regions(*fill_args)
-    nonres_alphabet_fit(*fit_args)
+    # nonres_alphabet_fit(*fit_args)
     
     logging.info("rendering combine model")
 
     # os.system(f"mkdir -p {args.cards_dir}")
-    cards_dir = "./cards"
+    cards_dir = "/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/cards/"
     model_name = "HWWfhModel"
-    out_dir = os.path.join(cards_dir,model_name)
-    # out_dir = (
-    #     os.path.join(str(args.cards_dir), args.model_name)
-    #     if args.model_name is not None
-    #     else args.cards_dir
-    # )
-    
+    for channel in model:
+        print(channel)
+    out_dir = os.path.join(cards_dir,model_name)  
+    logging.info("rendering combine model in dir %s done",out_dir)  
     model.renderCombine(out_dir)
+    logging.info("rendering combine model done")
 
     with open(f"{out_dir}/model.pkl", "wb") as fout:
         pkl.dump(model, fout, 2)  # use python 2 compatible protocol
     
-    # for year in years:
-    #     for lep_ch in channels:
-    #         with open(f"templates/{args.tag}/hists_templates_{year}_{lep_ch}.pkl", "rb") as f:
-    #             hists_templates = pkl.load(f)
-
-    #         model = rhalphabet(
-    #             hists_templates,
-    #             year,
-    #             lep_ch,
-    #             blind=args.blind,
-    #             blind_samples=args.samples_to_blind.split(","),
-    #             blind_region=[40, 200],
-    #             qcd_estimation=True,
-    #         )
-
-    #         with open(f"templates/{args.tag}/model_{year}_{lep_ch}.pkl", "wb") as fout:
-    #             pkl.dump(model, fout, protocol=2)
-
-
-#Farouk's code:
-
-def systs_not_from_parquets(year, LUMI, full_lumi):
-    """
-    Define systematics that are NOT stored in the parquets
-    """
-
-    systs_dict = {
-        f"lumi_13TeV_{year}": rl.NuisanceParameter(f"CMS_lumi_13TeV_{year}", "lnN"),
-        "BR_hww": rl.NuisanceParameter("BR_hww", "lnN"),
-    }
-
-    # tuple (value_up, value_down) and if (value_up, None) is given then value_down=value_up
-    systs_dict_values = {
-        f"lumi_13TeV_{year}": (1.02 ** (LUMI["2017"] / full_lumi), None),
-        "BR_hww": (1.0153, 0.9848),
-    }
-
-    return systs_dict, systs_dict_values
-
-
-def systs_from_parquets(year):
-    """
-    Specify systematics that ARE stored in the parquets
-    """
-
-    systs_from_parquets = {
-        "SR1a": {
-            "all_samples": {
-                "weight_mu_pileup": rl.NuisanceParameter(f"{CMS_PARAMS_LABEL}_PU_{year}", "shape"),
-                },
-            # signal
-            "ggF": {},
-            "VBF": {},
-            "VH": {},
-            "ttH": {},
-            # bkgs
-            "TTbar": {},
-            "WJetsLNu": {},
-            "SingleTop": {},
-            "DYJets": {},
-        },
-        "SR2a": {
-            "all_samples": {},
-            # signal
-            "ggF": {},
-            "VBF": {},
-            "VH": {},
-            "ttH": {},
-            # bkgs
-            "TTbar": {},
-            "WJetsLNu": {},
-            "SingleTop": {},
-            "DYJets": {},
-        },
-    }
-
-    return systs_from_parquets
-
 
 def fill_regions(
     model: rl.Model,
@@ -440,10 +362,7 @@ def fill_regions(
         region_templates = templates[region]
 
         # pass_region = region.startswith("pass")
-        pass_region = (region.endswith("a") or region.endswith("b"))
-        region_noblinded = region.split("Blinded")[0]
-        
-        blind_str = "Blinded" if region.endswith("Blinded") else ""
+        pass_region = (region.endswith("a") or region.endswith("b") or "a_" in region or "b_" in region)
 
         logging.info("starting region: %s" % region)
         # binstr = "" if mX_bin is None else f"mXbin{mX_bin}"
@@ -487,49 +406,52 @@ def fill_regions(
             logging.debug("error     : {errors}".format(errors=errors_nominal))
 
             if not bblite and args.mcstats:
+                pass
                 # set mc stat uncs
-                logging.info("setting autoMCStats for %s in %s" % (sample_name, region))
-                # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
-                region_name = region 
-                stats_sample_name = f"{CMS_PARAMS_LABEL}_{region_name}_{card_name}"
-                sample.autoMCStats(
-                    sample_name=stats_sample_name,
-                    # this function uses a different threshold convention from combine
-                    threshold=np.sqrt(1 / args.mcstats_threshold),
-                    epsilon=args.epsilon,
-                )
+                # logging.info("setting autoMCStats for %s in %s" % (sample_name, region))
+                # # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
+                # region_name = region 
+                # stats_sample_name = f"{CMS_PARAMS_LABEL}_{region_name}_{card_name}"
+                # sample.autoMCStats(
+                #     sample_name=stats_sample_name,
+                #     # this function uses a different threshold convention from combine
+                #     threshold=np.sqrt(1 / args.mcstats_threshold),
+                #     epsilon=args.epsilon,
+                # )
 
             # rate systematics
             for skey, syst in nuisance_params.items():
-                continue #TODO: to be fixed
-                if sample_name not in syst.samples or (not pass_region and syst.pass_only):
-                    continue
+                pass
+                # continue #TODO: to be fixed
+                # if sample_name not in syst.samples or (not pass_region and syst.pass_only):
+                #     continue
 
-                logging.info(f"Getting {skey} rate")
+                # logging.info(f"Getting {skey} rate")
 
-                param = nuisance_params_dict[skey]
+                # param = nuisance_params_dict[skey]
 
-                val, val_down = syst.value, syst.value_down
-                if syst.diff_regions:
-                    region_name = region 
-                    val = val[region_name]
-                    val_down = val_down[region_name] if val_down is not None else val_down
-                if syst.diff_samples:
-                    val = val[sample_name]
-                    val_down = val_down[sample_name] if val_down is not None else val_down
+                # val, val_down = syst.value, syst.value_down
+                # if syst.diff_regions:
+                #     region_name = region 
+                #     val = val[region_name]
+                #     val_down = val_down[region_name] if val_down is not None else val_down
+                # if syst.diff_samples:
+                #     val = val[sample_name]
+                #     val_down = val_down[sample_name] if val_down is not None else val_down
 
-                sample.setParamEffect(param, val, effect_down=val_down)
+                # sample.setParamEffect(param, val, effect_down=val_down)
 
             ch.addSample(sample)
 
         if bblite and args.mcstats:
-            # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
-            channel_name = region 
-            ch.autoMCStats(
-                channel_name=f"{CMS_PARAMS_LABEL}_{channel_name}",
-                threshold=args.mcstats_threshold,
-                epsilon=args.epsilon,
-            )
+            pass
+            # # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
+            # channel_name = region 
+            # ch.autoMCStats(
+            #     channel_name=f"{CMS_PARAMS_LABEL}_{channel_name}",
+            #     threshold=args.mcstats_threshold,
+            #     epsilon=args.epsilon,
+            # )
 
         # data observed
         ch.setObservation(region_templates["data", :])
@@ -543,28 +465,27 @@ def nonres_alphabet_fit(
 ):
     shape_var = shape_vars[0]
     m_obs = rl.Observable(shape_var.name, shape_var.bins)
-    # regions = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2","SR3a","SR3b","CR3"]
-    # regions_blinded = [region + "_blinded" for region in regions]
-    # regions =  regions + regions_blinded
+
     # try doing multi-tfs for boosted HWW fh case, 6 tfs.
     regions = {
-        "CR1" :{"SRa": "SR1a","SRb":"SR1b"},
-        "CR2" :{"SRa": "SR2a","SRb":"SR2b"},
-        "CR3" :{"SRa": "SR3a","SRb":"SR3b"},
+        "CR1" :{"SRa": "SR1a"}, #for test
+        # "CR1" :{"SRa": "SR1a","SRb":"SR1b"},
+        # "CR2" :{"SRa": "SR2a","SRb":"SR2b"},
+        # "CR3" :{"SRa": "SR3a","SRb":"SR3b"},
         }
     regions_blinded = { key_fail + "_blinded": {key_pass + "_blinded" : key_pass_ab + "_blinded" for key_pass , key_pass_ab in key_pass_dict.items()}  for key_fail , key_pass_dict in regions.items()}
     
-    # for blind_str in ["", "blinded"]:
+    # for blind_str in [""]:
+        # regions_blinded = regions
     for blind_str in ["blinded"]:
         for fail_region in regions_blinded:
-            fail_region_str = fail_region.replace("_blinded","")
-            # passChName = pass_region_str
-            failChName = fail_region_str
+            fail_region_str = fail_region
+            failChName = fail_region.replace("_","")
             # logging.info(
             # "setting transfer factor for pass region %s, fail region %s" % (passChName, failChName)
             # )
             failCh = model[failChName]
-            # passCh = model[passChName] #filled 
+            logging.info("fail channel name is %s",failChName)
             # sideband fail
             # was integer, and numpy complained about subtracting float from it
             initial_qcd = failCh.getObservation().astype(float)
@@ -580,10 +501,12 @@ def nonres_alphabet_fit(
                         rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_{fail_region_str}Bin{i}", 0)
                         for i in range(m_obs.nbins)
                     ]
-                )    
+                ) 
+               
             # idea here is that the error should be 1/sqrt(N), so parametrizing it as (1 + 1/sqrt(N))^qcdparams
             # will result in qcdparams errors ~±1
             # but because qcd is poorly modelled we're scaling sigma scale
+            
             sigmascale = 10  # to scale the deviation from initial
             if scale is not None:
                 sigmascale *= scale
@@ -599,16 +522,16 @@ def nonres_alphabet_fit(
             )
             failCh.addSample(fail_qcd) #won't influence the pass region
             
-            
-
             for pass_region_ab in regions_blinded[fail_region]:
-                pass_region_str = regions_blinded[fail_region][pass_region_ab].replace("_blinded","")
+                pass_region_str = regions_blinded[fail_region][pass_region_ab]
+                # .replace("_blinded","")
                 # fail_region_str = fail_region.replace("_blinded","")
-                logging.debug("now processing pass:%s fail:%s ",pass_region_str,fail_region_str)
+                logging.info("now processing pass:%s fail:%s ",pass_region_str,fail_region_str)
                 # QCD overall pass / fail efficiency
                 qcd_eff = (templates_summed[pass_region_str]["QCD", :].sum().value 
                            / templates_summed[fail_region_str]["QCD", :].sum().value
                            )
+                # print("qcd-eff is ",qcd_eff)
                 tf_dataResidual = rl.BasisPoly(
                 f"{CMS_PARAMS_LABEL}_tf_dataResidual_{pass_region_str}",
                 (shape_var.order,),
@@ -619,53 +542,12 @@ def nonres_alphabet_fit(
                 )
                 tf_dataResidual_params = tf_dataResidual(shape_var.scaled)
                 tf_params_pass = qcd_eff * tf_dataResidual_params  # scale params initially by qcd eff
-                # qcd params
-                # qcd_params = np.array(
-                #     [
-                #         rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_{pass_region_str}_{fail_region_str}Bin{i}", 0)
-                #         for i in range(m_obs.nbins)
-                #     ]
-                # )            
-                #now access filled channel:
-                passChName = pass_region_str
-                # failChName = fail_region_str
+                
+                passChName = pass_region_str.replace("_","")
                 logging.info(
                 "setting transfer factor for pass region %s, fail region %s" % (passChName, failChName)
                 )
-                # failCh = model[failChName]
                 passCh = model[passChName] #filled
-                
-                # sideband fail
-                # was integer, and numpy complained about subtracting float from it
-                # initial_qcd = failCh.getObservation().astype(float)
-                # for sample in failCh:
-                #     if sample.sampletype == rl.Sample.SIGNAL:
-                #         continue
-                #     logging.info("subtracting %s from qcd" % sample._name)
-                #     initial_qcd -= sample.getExpectation(nominal=True)
-
-                # if np.any(initial_qcd < 0.0):
-                #     raise ValueError("initial_qcd negative for some bins..", initial_qcd)
-                # # idea here is that the error should be 1/sqrt(N), so parametrizing it as (1 + 1/sqrt(N))^qcdparams
-                # # will result in qcdparams errors ~±1
-                # # but because qcd is poorly modelled we're scaling sigma scale
-                # sigmascale = 10  # to scale the deviation from initial
-                # if scale is not None:
-                #     sigmascale *= scale
-
-                # scaled_params = (
-                #     initial_qcd * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd))) ** qcd_params
-                # )
-
-                # # add samples
-                # fail_qcd = rl.ParametericSample(
-                #     f"{failChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
-                #     rl.Sample.BACKGROUND,
-                #     m_obs,
-                #     scaled_params,
-                # )
-                # failCh.addSample(fail_qcd)
-
                 pass_qcd = rl.TransferFactorSample(
                     f"{passChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
                     rl.Sample.BACKGROUND,

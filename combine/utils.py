@@ -34,7 +34,7 @@ combine_samples = {
 # (name in templates, name in cards)
 labels = {
     # data
-    "data" : "Data",
+    "data" : "data",
     # signal
     "TotalSignal":"TotalSignal",
     "ggF": "ggF",

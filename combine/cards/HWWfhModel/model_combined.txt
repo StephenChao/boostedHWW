@@ -1,0 +1,16 @@
+Combination of SR1ablinded=SR1ablinded.txt  CR1blinded=CR1blinded.txt
+imax 2 number of bins
+jmax 6 number of processes minus 1
+kmax 0 number of nuisance parameters
+----------------------------------------------------------------------------------------------------------------------------------
+shapes *            CR1blinded   HWWfullhad.root HWWfullhad:CR1blinded_$PROCESS HWWfullhad:CR1blinded_$PROCESS_$SYSTEMATIC
+shapes *            SR1ablinded  HWWfullhad.root HWWfullhad:SR1ablinded_$PROCESS HWWfullhad:SR1ablinded_$PROCESS_$SYSTEMATIC
+----------------------------------------------------------------------------------------------------------------------------------
+bin          SR1ablinded  CR1blinded 
+observation  33746        3515605    
+----------------------------------------------------------------------------------------------------------------------------------
+bin          SR1ablinded  SR1ablinded  SR1ablinded  SR1ablinded  SR1ablinded  SR1ablinded  SR1ablinded  CR1blinded   CR1blinded   CR1blinded 
+process      ggF          VBF          VH           ttH          ttbar_st     wjets        rest         ttbar_st     wjets        rest       
+process      -3           -2           -1           0            1            2            3            1            2            3          
+rate         5.834        2.472        2.961        3.768        1076.556     1612.46      456.321      20703.481    39298.685    13861.679  
+----------------------------------------------------------------------------------------------------------------------------------

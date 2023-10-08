@@ -557,16 +557,60 @@ def nonres_alphabet_fit(
     # for blind_str in ["", "blinded"]:
     for blind_str in ["blinded"]:
         for fail_region in regions_blinded:
+            fail_region_str = fail_region.replace("_blinded","")
+            # passChName = pass_region_str
+            failChName = fail_region_str
+            # logging.info(
+            # "setting transfer factor for pass region %s, fail region %s" % (passChName, failChName)
+            # )
+            failCh = model[failChName]
+            # passCh = model[passChName] #filled 
+            # sideband fail
+            # was integer, and numpy complained about subtracting float from it
+            initial_qcd = failCh.getObservation().astype(float)
+            for sample in failCh:
+                if sample.sampletype == rl.Sample.SIGNAL:
+                    continue
+                logging.info("subtracting %s from qcd" % sample._name)
+                initial_qcd -= sample.getExpectation(nominal=True)
+            if np.any(initial_qcd < 0.0):
+                raise ValueError("initial_qcd negative for some bins..", initial_qcd)
+            qcd_params = np.array(
+                    [
+                        rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_{fail_region_str}Bin{i}", 0)
+                        for i in range(m_obs.nbins)
+                    ]
+                )    
+            # idea here is that the error should be 1/sqrt(N), so parametrizing it as (1 + 1/sqrt(N))^qcdparams
+            # will result in qcdparams errors ~±1
+            # but because qcd is poorly modelled we're scaling sigma scale
+            sigmascale = 10  # to scale the deviation from initial
+            if scale is not None:
+                sigmascale *= scale
+            scaled_params = (
+                initial_qcd * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd))) ** qcd_params
+            )
+            # add samples
+            fail_qcd = rl.ParametericSample(
+                f"{failChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+                rl.Sample.BACKGROUND,
+                m_obs,
+                scaled_params,
+            )
+            failCh.addSample(fail_qcd) #won't influence the pass region
+            
+            
+
             for pass_region_ab in regions_blinded[fail_region]:
                 pass_region_str = regions_blinded[fail_region][pass_region_ab].replace("_blinded","")
-                fail_region_str = fail_region.replace("_blinded","")
+                # fail_region_str = fail_region.replace("_blinded","")
                 logging.debug("now processing pass:%s fail:%s ",pass_region_str,fail_region_str)
                 # QCD overall pass / fail efficiency
                 qcd_eff = (templates_summed[pass_region_str]["QCD", :].sum().value 
                            / templates_summed[fail_region_str]["QCD", :].sum().value
                            )
                 tf_dataResidual = rl.BasisPoly(
-                f"{CMS_PARAMS_LABEL}_tf_dataResidual",
+                f"{CMS_PARAMS_LABEL}_tf_dataResidual_{pass_region_str}",
                 (shape_var.order,),
                 [shape_var.name],
                 basis="Bernstein",
@@ -576,51 +620,51 @@ def nonres_alphabet_fit(
                 tf_dataResidual_params = tf_dataResidual(shape_var.scaled)
                 tf_params_pass = qcd_eff * tf_dataResidual_params  # scale params initially by qcd eff
                 # qcd params
-                qcd_params = np.array(
-                    [
-                        rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_{pass_region_str}_{fail_region_str}Bin{i}", 0)
-                        for i in range(m_obs.nbins)
-                    ]
-                )            
+                # qcd_params = np.array(
+                #     [
+                #         rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_{pass_region_str}_{fail_region_str}Bin{i}", 0)
+                #         for i in range(m_obs.nbins)
+                #     ]
+                # )            
                 #now access filled channel:
                 passChName = pass_region_str
-                failChName = fail_region_str
+                # failChName = fail_region_str
                 logging.info(
                 "setting transfer factor for pass region %s, fail region %s" % (passChName, failChName)
                 )
-                failCh = model[failChName]
+                # failCh = model[failChName]
                 passCh = model[passChName] #filled
                 
                 # sideband fail
                 # was integer, and numpy complained about subtracting float from it
-                initial_qcd = failCh.getObservation().astype(float)
-                for sample in failCh:
-                    if sample.sampletype == rl.Sample.SIGNAL:
-                        continue
-                    logging.debug("subtracting %s from qcd" % sample._name)
-                    initial_qcd -= sample.getExpectation(nominal=True)
+                # initial_qcd = failCh.getObservation().astype(float)
+                # for sample in failCh:
+                #     if sample.sampletype == rl.Sample.SIGNAL:
+                #         continue
+                #     logging.info("subtracting %s from qcd" % sample._name)
+                #     initial_qcd -= sample.getExpectation(nominal=True)
 
-                if np.any(initial_qcd < 0.0):
-                    raise ValueError("initial_qcd negative for some bins..", initial_qcd)
-                # idea here is that the error should be 1/sqrt(N), so parametrizing it as (1 + 1/sqrt(N))^qcdparams
-                # will result in qcdparams errors ~±1
-                # but because qcd is poorly modelled we're scaling sigma scale
-                sigmascale = 10  # to scale the deviation from initial
-                if scale is not None:
-                    sigmascale *= scale
+                # if np.any(initial_qcd < 0.0):
+                #     raise ValueError("initial_qcd negative for some bins..", initial_qcd)
+                # # idea here is that the error should be 1/sqrt(N), so parametrizing it as (1 + 1/sqrt(N))^qcdparams
+                # # will result in qcdparams errors ~±1
+                # # but because qcd is poorly modelled we're scaling sigma scale
+                # sigmascale = 10  # to scale the deviation from initial
+                # if scale is not None:
+                #     sigmascale *= scale
 
-                scaled_params = (
-                    initial_qcd * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd))) ** qcd_params
-                )
+                # scaled_params = (
+                #     initial_qcd * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd))) ** qcd_params
+                # )
 
-                # add samples
-                fail_qcd = rl.ParametericSample(
-                    f"{failChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
-                    rl.Sample.BACKGROUND,
-                    m_obs,
-                    scaled_params,
-                )
-                failCh.addSample(fail_qcd)
+                # # add samples
+                # fail_qcd = rl.ParametericSample(
+                #     f"{failChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+                #     rl.Sample.BACKGROUND,
+                #     m_obs,
+                #     scaled_params,
+                # )
+                # failCh.addSample(fail_qcd)
 
                 pass_qcd = rl.TransferFactorSample(
                     f"{passChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",

@@ -24,6 +24,7 @@ import warnings
 import numpy as np
 import pandas as pd
 import rhalphalib as rl
+import hist
 from hist import Hist
 import os, sys
 from typing import Dict, List, Tuple, Union
@@ -71,7 +72,7 @@ parser.add_argument(
     help="order of polynomial for TF in [dim 1, dim 2] = [mH(bb), -] for nonresonant or [mY, mX] for resonant."
     "Default is 0 for nonresonant and (1, 2) for resonant.",
 )
-parser.add_argument("--mcstats-threshold", default=10, type=float, help="mcstats threshold n_eff")
+parser.add_argument("--mcstats-threshold", default=100, type=float, help="mcstats threshold n_eff")
 parser.add_argument("--epsilon", default=1e-3, type=float, help="epsilon to avoid numerical errs")
 parser.add_argument(
     "--scale-templates", default=None, type=float, help="scale all templates for bias tests"
@@ -126,9 +127,9 @@ logging.info("all MC = %s" % all_mc)
 class ShapeVar:
     """For storing and calculating info about variables used in fit"""
 
-    name:  str = None
-    bins:  np.ndarray = None  # bin edges
-    order: int = None  # TF order, to be decided
+    name:str = None
+    bins:np.ndarray = None  # bin edges
+    order:int = None  # TF order, to be decided
 
     def __post_init__(self):
         # use bin centers for polynomial fit
@@ -166,9 +167,9 @@ class Syst:
 # dictionary of nuisance params -> (modifier, samples affected by it, value)
 nuisance_params = {
     # https://gitlab.cern.ch/hh/naming-conventions#experimental-uncertainties
-    "lumi_13TeV_2016": Syst(prior="lnN", samples=all_mc, value=1.01 ** ((LUMI["2016"] + LUMI["2016APV"]) / full_lumi)),
-    "lumi_13TeV_2017": Syst(prior="lnN", samples=all_mc, value=1.02 ** (LUMI["2017"] / full_lumi)),
-    "lumi_13TeV_2018": Syst(prior="lnN", samples=all_mc, value=1.015 ** (LUMI["2018"] / full_lumi)),
+    # "lumi_13TeV_2016": Syst(prior="lnN", samples=all_mc, value=1.01 ** ((LUMI["2016"] + LUMI["2016APV"]) / full_lumi)),
+    # "lumi_13TeV_2017": Syst(prior="lnN", samples=all_mc, value=1.02 ** (LUMI["2017"] / full_lumi)),
+    # "lumi_13TeV_2018": Syst(prior="lnN", samples=all_mc, value=1.015 ** (LUMI["2018"] / full_lumi)),
     "lumi_13TeV_correlated": Syst(
         prior="lnN",
         samples=all_mc,
@@ -178,11 +179,11 @@ nuisance_params = {
             * (1.02 ** (LUMI["2018"] / full_lumi))
         ),
     ),
-    "lumi_13TeV_1718": Syst(
-        prior="lnN",
-        samples=all_mc,
-        value=((1.006 ** (LUMI["2017"] / full_lumi)) * (1.002 ** (LUMI["2018"] / full_lumi))),
-    ),
+    # "lumi_13TeV_1718": Syst(
+    #     prior="lnN",
+    #     samples=all_mc,
+    #     value=((1.006 ** (LUMI["2017"] / full_lumi)) * (1.002 ** (LUMI["2018"] / full_lumi))),
+    # ),
     # https://gitlab.cern.ch/hh/naming-conventions#theory-uncertainties
     "BR_hww": Syst(prior="lnN", samples=sig_keys, value=1.0153, value_down=0.9848),
     "pdf_gg": Syst(prior="lnN", samples=["TT"], value=1.042),
@@ -201,16 +202,16 @@ nuisance_params = {
     ),
     # "alpha_s": for single Higgs backgrounds
     # value will be added in from the systematics JSON
-    f"{CMS_PARAMS_LABEL}_triggerEffSF_uncorrelated": Syst(
-        prior="lnN", samples=all_mc, diff_regions=True
-    ),
+    # f"{CMS_PARAMS_LABEL}_triggerEffSF_uncorrelated": Syst(
+    #     prior="lnN", samples=all_mc, diff_regions=False
+    # ),
 }
 
-for sig_key in sig_keys:
-    # values will be added in from the systematics JSON
-    nuisance_params[f"{CMS_PARAMS_LABEL}_lp_sf_{mc_samples[sig_key]}"] = Syst(
-        prior="lnN", samples=[sig_key]
-    )
+# for sig_key in sig_keys:
+#     # values will be added in from the systematics JSON
+#     nuisance_params[f"{CMS_PARAMS_LABEL}_lp_sf_{mc_samples[sig_key]}"] = Syst(
+#         prior="lnN", samples=[sig_key]
+#     )
 
 if args.year != "all":
     # remove other years' keys
@@ -274,10 +275,10 @@ for skey, syst in uncorr_year_shape_systs.items():
 
 
 def main(args):
-    regions : List[str] = ["SR1a","CR1"]
+    regions : List[str] = ["SR1a","CR1"] #for test
     # regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2","SR3a","SR3b","CR3"]
     regions_blinded = [region + "_blinded" for region in regions]
-    regions =  regions + regions_blinded
+    regions =  regions_blinded #only use blinded results now
     with open(f"./templates/hists_templates_blinded.pkl", "rb") as f:
         hists_templates = pkl.load(f) #in Raghav's code, it's templates_summed and templates_dict
     
@@ -305,7 +306,7 @@ def main(args):
     fit_args = [model, shape_vars, hists_templates, args.scale_templates, args.min_qcd_val]
     
     fill_regions(*fill_args)
-    # nonres_alphabet_fit(*fit_args)
+    # alphabet_fit(*fit_args)
     
     logging.info("rendering combine model")
 
@@ -384,6 +385,7 @@ def fill_regions(
             logging.info("get templates for: %s" % sample_name)
 
             sample_template = region_templates[sample_name,:]
+            # sample_template = get_template(region_templates,sample_name)
 
             stype = rl.Sample.SIGNAL if sample_name in sig_keys else rl.Sample.BACKGROUND
             sample = rl.TemplateSample(ch.name + "_" + card_name, stype, sample_template)
@@ -406,18 +408,18 @@ def fill_regions(
             logging.debug("error     : {errors}".format(errors=errors_nominal))
 
             if not bblite and args.mcstats:
-                pass
+                # pass
                 # set mc stat uncs
-                # logging.info("setting autoMCStats for %s in %s" % (sample_name, region))
-                # # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
-                # region_name = region 
-                # stats_sample_name = f"{CMS_PARAMS_LABEL}_{region_name}_{card_name}"
-                # sample.autoMCStats(
-                #     sample_name=stats_sample_name,
-                #     # this function uses a different threshold convention from combine
-                #     threshold=np.sqrt(1 / args.mcstats_threshold),
-                #     epsilon=args.epsilon,
-                # )
+                logging.info("setting autoMCStats for %s in %s" % (sample_name, region))
+                # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
+                region_name = region 
+                stats_sample_name = f"{CMS_PARAMS_LABEL}_{region_name}_{card_name}"
+                sample.autoMCStats(
+                    sample_name=stats_sample_name,
+                    # this function uses a different threshold convention from combine
+                    threshold=np.sqrt(1 / args.mcstats_threshold),
+                    epsilon=args.epsilon,
+                )
 
             # rate systematics
             for skey, syst in nuisance_params.items():
@@ -428,7 +430,7 @@ def fill_regions(
 
                 # logging.info(f"Getting {skey} rate")
 
-                # param = nuisance_params_dict[skey]
+                # param = nuisance_params_dict[skey] #rl.NuisanceParameter object
 
                 # val, val_down = syst.value, syst.value_down
                 # if syst.diff_regions:
@@ -445,7 +447,7 @@ def fill_regions(
 
         if bblite and args.mcstats:
             pass
-            # # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
+            # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
             # channel_name = region 
             # ch.autoMCStats(
             #     channel_name=f"{CMS_PARAMS_LABEL}_{channel_name}",
@@ -456,7 +458,7 @@ def fill_regions(
         # data observed
         ch.setObservation(region_templates["data", :])
 
-def nonres_alphabet_fit(
+def alphabet_fit(
     model: rl.Model,
     shape_vars: List[ShapeVar],
     templates_summed: Dict,
@@ -556,21 +558,5 @@ def nonres_alphabet_fit(
                     min_val=min_qcd_val,
                 )
                 passCh.addSample(pass_qcd)
-
-
-# if __name__ == "__main__":
-#     # e.g.
-#     # python create_datacard.py --years 2017 --channels mu --tag v1
-
-#     parser = argparse.ArgumentParser()
-#     parser.add_argument("--years", dest="years", default="2017", help="years separated by commas")
-#     parser.add_argument("--channels", dest="channels", default="mu", help="channels separated by commas (e.g. mu,ele)")
-#     parser.add_argument("--tag", dest="tag", default="test", type=str, help="name of template directory")
-#     parser.add_argument("--blind", dest="blind", action="store_true")
-#     parser.add_argument(
-#         "--samples_to_blind", dest="samples_to_blind", default="", help="samples to blind separated by commas"
-#     )
-
-#     args = parser.parse_args()
 
 main(args)

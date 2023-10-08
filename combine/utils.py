@@ -86,14 +86,24 @@ def shape_to_num(var, nom, clip=1.5):
     return var_rate / nom_rate
 
 
+# def get_template(h, sample):
+#     ''' 
+#     histogram h Hist, with axes:["samples","systematic","MH_Reco"]
+#     sample is sample name in ["QCD",...,"data"]
+#     '''
+#     mass_axis = 2 #axis index
+#     massbins = h.axes[mass_axis].edges
+#     return (h[{"samples": sample, "systematic": "nominal"}].values(), massbins, "MH_Reco")
+
 def get_template(h, sample):
     ''' 
     histogram h Hist, with axes:["samples","systematic","MH_Reco"]
     sample is sample name in ["QCD",...,"data"]
     '''
-    mass_axis = 2 #axis index
+    mass_axis = 1 #axis index
     massbins = h.axes[mass_axis].edges
-    return (h[{"samples": sample, "systematic": "nominal"}].values(), massbins, "MH_Reco")
+    return (h[sample, :].values(), massbins, "MH_Reco")
+
 
 
 def blindBins(h: Hist, blind_region: List, blind_samples: List[str] = []):

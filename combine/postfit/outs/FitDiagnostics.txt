@@ -1,0 +1,47 @@
+ <<< Combine >>> 
+>>> random number generator seed is 123456
+>>> method used is FitDiagnostics
+PDF didn't factorize!
+Parameters: 
+  1) RooRealVar::           CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin0 = 0
+  2) RooRealVar::           CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin1 = 0
+  3) RooRealVar::          CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin10 = 0
+  4) RooRealVar::          CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin11 = 0
+  5) RooRealVar::          CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin12 = 0
+  6) RooRealVar::          CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin13 = 0
+  7) RooRealVar::          CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin14 = 0
+  8) RooRealVar::          CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin15 = 0
+  9) RooRealVar::          CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin16 = 0
+ 10) RooRealVar::          CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin17 = 0
+ 11) RooRealVar::          CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin18 = 0
+ 12) RooRealVar::          CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin19 = 0
+ 13) RooRealVar::           CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin2 = 0
+ 14) RooRealVar::           CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin3 = 0
+ 15) RooRealVar::           CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin4 = 0
+ 16) RooRealVar::           CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin5 = 0
+ 17) RooRealVar::           CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin6 = 0
+ 18) RooRealVar::           CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin7 = 0
+ 19) RooRealVar::           CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin8 = 0
+ 20) RooRealVar::           CMS_HWW_boosted_tf_dataResidual_CR1_blindedBin9 = 0
+ 21) RooRealVar:: CMS_HWW_boosted_tf_dataResidual_SR1a_blinded_MH_Reco_par0 = 1
+ 22) RooRealVar::   n_exp_binCR1blinded_proc_CMS_HWW_boosted_qcd_datadriven = 1
+ 23) RooRealVar::                             n_exp_binCR1blinded_proc_rest = 13861.7
+ 24) RooRealVar::                         n_exp_binCR1blinded_proc_ttbar_st = 20703.5
+ 25) RooRealVar::                            n_exp_binCR1blinded_proc_wjets = 39298.7
+ 26) RooRealVar::  n_exp_binSR1ablinded_proc_CMS_HWW_boosted_qcd_datadriven = 1
+ 27) RooRealVar::                            n_exp_binSR1ablinded_proc_rest = 456.321
+ 28) RooRealVar::                        n_exp_binSR1ablinded_proc_ttbar_st = 1076.56
+ 29) RooRealVar::                           n_exp_binSR1ablinded_proc_wjets = 1612.46
+ 30) RooRealVar::                                                         r = 0
+Obs: 
+  1) RooRealVar::     MH_Reco = 235
+  2) RooCategory:: CMS_channel = SR1ablinded(idx = 0)
+
+SimNLL created with 2 channels, 0 generic constraints, 0 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+Error: Minuit2Minimizer::MINOS failed due to invalid function minimum
+Error in <ROOT::Math::Fitter::CalculateMinosErrors>: Minos error calculation failed for all the selected parameters
+[WARNING]: Unable to determine uncertainties on all fit parameters in s+b fit. Have a look at https://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/part3/nonstandard/#fit-parameter-uncertainties for more information.
+
+ --- FitDiagnostics ---
+Best fit r: 20  1.13687e-13/+1.13687e-13  (68% CL)
+Done in 0.01 min (cpu), 0.04 min (real)

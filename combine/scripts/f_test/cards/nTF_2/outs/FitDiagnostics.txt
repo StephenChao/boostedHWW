@@ -424,10 +424,10 @@ Freezing the following parameters: RooArgSet:: = (CMS_HWW_boosted_tf_dataResidua
 >>> 2 out of 4 channels masked
 
 >>> Channel masks:
-  1) 0x615d340 RooRealVar::         mask_CR1 = 1 C  L(-INF - +INF)  "mask_CR1"
-  2) 0x615deb0 RooRealVar::  mask_CR1blinded = 0 C  L(-INF - +INF)  "mask_CR1blinded"
-  3) 0x615ea20 RooRealVar::        mask_SR1a = 1 C  L(-INF - +INF)  "mask_SR1a"
-  4) 0x615f530 RooRealVar:: mask_SR1ablinded = 0 C  L(-INF - +INF)  "mask_SR1ablinded"
+  1) 0x7940190 RooRealVar::         mask_CR1 = 1 C  L(-INF - +INF)  "mask_CR1"
+  2) 0x7940d00 RooRealVar::  mask_CR1blinded = 0 C  L(-INF - +INF)  "mask_CR1blinded"
+  3) 0x7941870 RooRealVar::        mask_SR1a = 1 C  L(-INF - +INF)  "mask_SR1a"
+  4) 0x7942380 RooRealVar:: mask_SR1ablinded = 0 C  L(-INF - +INF)  "mask_SR1ablinded"
 Saving snapshot 'clean'
 Saved snapshot 'clean'
  bin           MH_Reco       CMS_channel    weight
@@ -624,7 +624,7 @@ CMS_HWW_boosted_tf_dataResidual_Bin3	  = 0.00583695	 +/-  0.100962	(limited)
 CMS_HWW_boosted_tf_dataResidual_MH_Reco_par0	  = 0.37692	 +/-  0.00795789	(limited)
 CMS_HWW_boosted_tf_dataResidual_MH_Reco_par1	  = 0.676568	 +/-  0.0312415	(limited)
 CMS_HWW_boosted_tf_dataResidual_MH_Reco_par2	  = 1.50699	 +/-  0.0245254	(limited)
-Minimized in : Real time 0:00:00, CP time 0.080
+Minimized in : Real time 0:00:00, CP time 0.070
 FINAL NLL - NLL0 VALUE = -6353.439244
 Minuit2Minimizer: Minimize with max-calls 400000 convergence for edm < 0.1 strategy 1
 Minuit2Minimizer::Minuit  - Changing default options
@@ -850,7 +850,7 @@ CMS_HWW_boosted_tf_dataResidual_MH_Reco_par0	  = 0.374163	 +/-  0.00799865	(limi
 CMS_HWW_boosted_tf_dataResidual_MH_Reco_par1	  = 0.658463	 +/-  0.0312578	(limited)
 CMS_HWW_boosted_tf_dataResidual_MH_Reco_par2	  = 1.50459	 +/-  0.0249056	(limited)
 r	  = 19.9998	 +/-  17.6281	(limited)
-Minimized in : Real time 0:00:00, CP time 0.020
+Minimized in : Real time 0:00:00, CP time 0.030
 FINAL NLL - NLL0 VALUE = -6358.428512
 Minuit2Minimizer: Minimize with max-calls 400000 convergence for edm < 0.1 strategy 1
 Minuit2Minimizer::Minuit  - Changing default options

@@ -424,10 +424,10 @@ Freezing the following parameters: RooArgSet:: = (CMS_HWW_boosted_tf_dataResidua
 >>> 2 out of 4 channels masked
 
 >>> Channel masks:
-  1) 0x7421d20 RooRealVar::         mask_CR1 = 1 C  L(-INF - +INF)  "mask_CR1"
-  2) 0x7422890 RooRealVar::  mask_CR1blinded = 0 C  L(-INF - +INF)  "mask_CR1blinded"
-  3) 0x7423400 RooRealVar::        mask_SR1a = 1 C  L(-INF - +INF)  "mask_SR1a"
-  4) 0x7423f10 RooRealVar:: mask_SR1ablinded = 0 C  L(-INF - +INF)  "mask_SR1ablinded"
+  1) 0x6675d20 RooRealVar::         mask_CR1 = 1 C  L(-INF - +INF)  "mask_CR1"
+  2) 0x6676890 RooRealVar::  mask_CR1blinded = 0 C  L(-INF - +INF)  "mask_CR1blinded"
+  3) 0x6677400 RooRealVar::        mask_SR1a = 1 C  L(-INF - +INF)  "mask_SR1a"
+  4) 0x6677f10 RooRealVar:: mask_SR1ablinded = 0 C  L(-INF - +INF)  "mask_SR1ablinded"
 Saving snapshot 'clean'
 Saved snapshot 'clean'
  bin           MH_Reco       CMS_channel    weight
@@ -622,7 +622,7 @@ CMS_HWW_boosted_tf_dataResidual_Bin2	  = -0.0114136	 +/-  0.100314	(limited)
 CMS_HWW_boosted_tf_dataResidual_Bin3	  = -0.01832	 +/-  0.100638	(limited)
 CMS_HWW_boosted_tf_dataResidual_MH_Reco_par0	  = 0.338456	 +/-  0.00454844	(limited)
 CMS_HWW_boosted_tf_dataResidual_MH_Reco_par1	  = 1.38273	 +/-  0.0128872	(limited)
-Minimized in : Real time 0:00:00, CP time 0.050
+Minimized in : Real time 0:00:00, CP time 0.060
 FINAL NLL - NLL0 VALUE = -6335.379106
 Minuit2Minimizer: Minimize with max-calls 400000 convergence for edm < 0.1 strategy 1
 Minuit2Minimizer::Minuit  - Changing default options
@@ -823,7 +823,7 @@ CMS_HWW_boosted_tf_dataResidual_Bin3	  = -0.018475	 +/-  0.101177	(limited)
 CMS_HWW_boosted_tf_dataResidual_MH_Reco_par0	  = 0.338448	 +/-  0.004567	(limited)
 CMS_HWW_boosted_tf_dataResidual_MH_Reco_par1	  = 1.38274	 +/-  0.0131967	(limited)
 r	  = 0.000515485	 +/-  12.9236	(limited)
-Minimized in : Real time 0:00:00, CP time 0.010
+Minimized in : Real time 0:00:00, CP time 0.020
 FINAL NLL - NLL0 VALUE = -6339.86203
 Minuit2Minimizer: Minimize with max-calls 400000 convergence for edm < 0.1 strategy 1
 Minuit2Minimizer::Minuit  - Changing default options
@@ -906,7 +906,7 @@ r	  = 1.16607e-11	 +/-  12.9597	(limited)
                      r    5.1548e-04    1.1661e-11 +/-  1.30e+01  <none>
 
 Running Minos for POI 
-Run Minos in  Real time 0:00:00, CP time 0.020
+Run Minos in  Real time 0:00:00, CP time 0.010
 
 [#1] INFO:Eval -- RooRealVar::setRange(r) new range named 'err68' created with bounds [0,6.46275]
 
@@ -962,7 +962,7 @@ Run Minos in  Real time 0:00:00, CP time 0.020
 
  --- FitDiagnostics ---
 Best fit r: 1.16607e-11  -1.16607e-11/+6.46275  (68% CL)
-Done in 0.01 min (cpu), 0.03 min (real)
+Done in 0.01 min (cpu), 0.04 min (real)
 Printing Message Summary From ... combine_logger.out
 ----------------------------------------------
 Messages of type INFO : 22

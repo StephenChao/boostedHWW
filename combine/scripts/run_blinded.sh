@@ -282,7 +282,7 @@ if [ $goftoys = 1 ]; then
     --snapshotName MultiDimFit --bypassFrequentistFit \
     --setParameters ${maskunblindedargs},${setparams},r=0 \
     --freezeParameters ${freezeparams},r --saveToys \
-    -n Toys -v 9 -s $seed -t $numtoys --toysFrequentist 2>&1 | tee $outsdir/GoF_toys.txt
+    -n Toys  -v -9 -s $seed -t $numtoys --toysFrequentist 2>&1 | tee $outsdir/GoF_toys.txt
 fi
 
 

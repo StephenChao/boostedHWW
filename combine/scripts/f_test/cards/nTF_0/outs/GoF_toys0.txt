@@ -425,10 +425,10 @@ Freezing the following parameters: RooArgSet:: = (r)
 >>> 2 out of 4 channels masked
 
 >>> Channel masks:
-  1) 0x600ae40 RooRealVar::         mask_CR1 = 1 C  L(-INF - +INF)  "mask_CR1"
-  2) 0x600b9b0 RooRealVar::  mask_CR1blinded = 0 C  L(-INF - +INF)  "mask_CR1blinded"
-  3) 0x600c520 RooRealVar::        mask_SR1a = 1 C  L(-INF - +INF)  "mask_SR1a"
-  4) 0x600d030 RooRealVar:: mask_SR1ablinded = 0 C  L(-INF - +INF)  "mask_SR1ablinded"
+  1) 0x6171380 RooRealVar::         mask_CR1 = 1 C  L(-INF - +INF)  "mask_CR1"
+  2) 0x6171ef0 RooRealVar::  mask_CR1blinded = 0 C  L(-INF - +INF)  "mask_CR1blinded"
+  3) 0x6172a60 RooRealVar::        mask_SR1a = 1 C  L(-INF - +INF)  "mask_SR1a"
+  4) 0x6173570 RooRealVar:: mask_SR1ablinded = 0 C  L(-INF - +INF)  "mask_SR1ablinded"
 Saving snapshot 'clean'
 [#1] INFO:ObjectHandling -- RooWorkspace::saveSnaphot(w) replacing previous snapshot with name clean
 Saved snapshot 'clean'

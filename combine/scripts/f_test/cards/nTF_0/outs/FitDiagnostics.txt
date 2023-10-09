@@ -424,10 +424,10 @@ Freezing the following parameters: RooArgSet:: = (CMS_HWW_boosted_tf_dataResidua
 >>> 2 out of 4 channels masked
 
 >>> Channel masks:
-  1) 0x76b8840 RooRealVar::         mask_CR1 = 1 C  L(-INF - +INF)  "mask_CR1"
-  2) 0x76b93b0 RooRealVar::  mask_CR1blinded = 0 C  L(-INF - +INF)  "mask_CR1blinded"
-  3) 0x76b9f20 RooRealVar::        mask_SR1a = 1 C  L(-INF - +INF)  "mask_SR1a"
-  4) 0x76baa30 RooRealVar:: mask_SR1ablinded = 0 C  L(-INF - +INF)  "mask_SR1ablinded"
+  1) 0x6970830 RooRealVar::         mask_CR1 = 1 C  L(-INF - +INF)  "mask_CR1"
+  2) 0x69713a0 RooRealVar::  mask_CR1blinded = 0 C  L(-INF - +INF)  "mask_CR1blinded"
+  3) 0x6971f10 RooRealVar::        mask_SR1a = 1 C  L(-INF - +INF)  "mask_SR1a"
+  4) 0x6972a20 RooRealVar:: mask_SR1ablinded = 0 C  L(-INF - +INF)  "mask_SR1ablinded"
 Saving snapshot 'clean'
 Saved snapshot 'clean'
  bin           MH_Reco       CMS_channel    weight
@@ -613,7 +613,7 @@ CMS_HWW_boosted_tf_dataResidual_Bin19	  = 0.199148	 +/-  0.10382	(limited)
 CMS_HWW_boosted_tf_dataResidual_Bin2	  = -0.181629	 +/-  0.100903	(limited)
 CMS_HWW_boosted_tf_dataResidual_Bin3	  = -0.12518	 +/-  0.10119	(limited)
 CMS_HWW_boosted_tf_dataResidual_MH_Reco_par0	  = 0.622505	 +/-  0.00389469	(limited)
-Minimized in : Real time 0:00:00, CP time 0.060
+Minimized in : Real time 0:00:00, CP time 0.070
 FINAL NLL - NLL0 VALUE = -3548.626602
 Minuit2Minimizer: Minimize with max-calls 400000 convergence for edm < 0.1 strategy 1
 Minuit2Minimizer::Minuit  - Changing default options
@@ -810,7 +810,7 @@ CMS_HWW_boosted_tf_dataResidual_Bin2	  = -0.178874	 +/-  0.100907	(limited)
 CMS_HWW_boosted_tf_dataResidual_Bin3	  = -0.125819	 +/-  0.101198	(limited)
 CMS_HWW_boosted_tf_dataResidual_MH_Reco_par0	  = 0.615791	 +/-  0.00389387	(limited)
 r	  = 20	 +/-  0.496374	(limited)
-Minimized in : Real time 0:00:00, CP time 0.020
+Minimized in : Real time 0:00:00, CP time 0.010
 FINAL NLL - NLL0 VALUE = -3573.197964
 Minuit2Minimizer: Minimize with max-calls 400000 convergence for edm < 0.1 strategy 1
 Minuit2Minimizer::Minuit  - Changing default options
@@ -891,7 +891,7 @@ r	  = 20	 +/-  0.49635	(limited)
                      r    2.0000e+01    2.0000e+01 +/-  4.98e-01  <none>
 
 Running Minos for POI 
-Run Minos in  Real time 0:00:00, CP time 0.000
+Run Minos in  Real time 0:00:00, CP time 0.010
 
 [#1] INFO:Eval -- RooRealVar::setRange(r) new range named 'err68' created with bounds [19.5016,20]
 

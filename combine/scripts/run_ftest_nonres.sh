@@ -174,7 +174,7 @@ if [ $goftoys = 1 ]; then # -t
     echo "Toys for $order order fit"
     combine -M GenerateOnly -m 125 -d ${wsm_snapshot}.root \
     --snapshotName MultiDimFit --bypassFrequentistFit \
-    --setParameters ${maskunblindedargs},${setparams},r=0 \
+    --setParameters ${maskunblindedargs},r=0 \
     --freezeParameters ${freezeparams},r \
     -n "Toys${toys_name}" -t $numtoys --saveToys -s $seed -v 9 2>&1 | tee $outsdir/gentoys.txt
 
@@ -187,7 +187,7 @@ fi
 ####################################################################################################
 
 if [ $ffits = 1 ]; then # -f
-    for ord1 in 0 1
+    for ord1 in 0 
     do
         model_name="nTF_${ord1}"
         echo "Fits for $model_name"
@@ -197,7 +197,7 @@ if [ $ffits = 1 ]; then # -f
         ulimit -s unlimited
 
         combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
-        --setParameters ${maskunblindedargs},${setparams},r=0 \
+        --setParameters ${maskunblindedargs},r=0 \
         --freezeParameters ${freezeparams},r \
         -n Toys${toys_name} -v 9 -s $seed -t $numtoys --toysFile ${toys_file} 2>&1 | tee $outsdir/GoF_toys${toys_name}.txt
 

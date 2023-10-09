@@ -1,0 +1,14 @@
+ <<< Combine >>> 
+>>> random number generator seed is 42
+Will use saturated models to compute goodness of fit for a binned likelihood
+>>> method used is GoodnessOfFit
+Set Default Value of Parameter mask_SR1a To : 1
+Set Default Value of Parameter mask_CR1 To : 1
+Set Default Value of Parameter mask_SR1ablinded To : 0
+Set Default Value of Parameter mask_CR1blinded To : 0
+Error parsing physics model parameter expression : 
+Set Default Value of Parameter r To : 0
+>>> 2 out of 4 channels masked
+
+Error when running the combination:
+	Running with systematic variation in toys enabled, but I found floating parameters (which are not POIs) but no constrain terms have been defined in the datacard. If this is ok, re-run with -S 0

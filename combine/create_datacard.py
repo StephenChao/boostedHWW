@@ -23,10 +23,12 @@ import warnings
 
 import numpy as np
 import pandas as pd
-import rhalphalib as rl
-import hist
-from hist import Hist
 import os, sys
+# sys.path.append("/ospool/cms-user/yuzhe/BoostedHWW/rhaphabetlib/CMSSW_11_3_4/src/rhalphalib")
+import rhalphalib as rl
+# import hist
+from hist import Hist
+
 from typing import Dict, List, Tuple, Union
 from dataclasses import dataclass, field
 
@@ -72,6 +74,8 @@ parser.add_argument(
     help="order of polynomial for TF in [dim 1, dim 2] = [mH(bb), -] for nonresonant or [mY, mX] for resonant."
     "Default is 0 for nonresonant and (1, 2) for resonant.",
 )
+parser.add_argument("--cards-dir", default="/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/cards/", type=str, help="output card directory")
+parser.add_argument("--model-name", default="HWWfhModel", type=str, help="output model name")
 parser.add_argument("--mcstats-threshold", default=100, type=float, help="mcstats threshold n_eff")
 parser.add_argument("--epsilon", default=1e-3, type=float, help="epsilon to avoid numerical errs")
 parser.add_argument(
@@ -278,8 +282,8 @@ def main(args):
     regions : List[str] = ["SR1a","CR1"] #for test
     # regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2","SR3a","SR3b","CR3"]
     regions_blinded = [region + "_blinded" for region in regions]
-    regions =  regions_blinded #only use blinded results now
-    with open(f"./templates/hists_templates_blinded.pkl", "rb") as f:
+    regions = regions +  regions_blinded #only use blinded results now
+    with open(f"/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/templates/hists_templates_blinded.pkl", "rb") as f:
         hists_templates = pkl.load(f) #in Raghav's code, it's templates_summed and templates_dict
     
     model = rl.Model("HWWfullhad")
@@ -304,24 +308,24 @@ def main(args):
         args.bblite,
     ]
     fit_args = [model, shape_vars, hists_templates, args.scale_templates, args.min_qcd_val]
-    
+    print("now order is",args.nTF[0])
     fill_regions(*fill_args)
-    # alphabet_fit(*fit_args)
+    alphabet_fit(*fit_args)
     
     logging.info("rendering combine model")
 
-    # os.system(f"mkdir -p {args.cards_dir}")
-    cards_dir = "/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/cards/"
-    model_name = "HWWfhModel"
-    for channel in model:
-        print(channel)
-    out_dir = os.path.join(cards_dir,model_name)  
-    logging.info("rendering combine model in dir %s done",out_dir)  
+    os.system(f"mkdir -p {args.cards_dir}")
+
+    out_dir = (
+        os.path.join(str(args.cards_dir), args.model_name)
+        if args.model_name is not None
+        else args.cards_dir
+    )
     model.renderCombine(out_dir)
-    logging.info("rendering combine model done")
 
     with open(f"{out_dir}/model.pkl", "wb") as fout:
         pkl.dump(model, fout, 2)  # use python 2 compatible protocol
+    
     
 
 def fill_regions(
@@ -368,7 +372,9 @@ def fill_regions(
         logging.info("starting region: %s" % region)
         # binstr = "" if mX_bin is None else f"mXbin{mX_bin}"
         # binstr = "MH_Reco"
-        ch = rl.Channel(region.replace("_", ""))  # can't have '_'s in name
+        ch = rl.Channel(region.replace("_", "")) 
+        print(region.replace("_", ""))
+        # can't have '_'s in name
         # "MH_RecoSR1a"
         model.addChannel(ch)
 
@@ -465,98 +471,186 @@ def alphabet_fit(
     scale: float = None,
     min_qcd_val: float = None,
 ):
+    # shape_var = shape_vars[0]
+    # m_obs = rl.Observable(shape_var.name, shape_var.bins)
+    
+
+    # # try doing multi-tfs for boosted HWW fh case, 6 tfs.
+    # regions = {
+    #     "CR1" :{"SRa": "SR1a"}, #for test
+    #     # "CR1" :{"SRa": "SR1a","SRb":"SR1b"},
+    #     # "CR2" :{"SRa": "SR2a","SRb":"SR2b"},
+    #     # "CR3" :{"SRa": "SR3a","SRb":"SR3b"},
+    #     }
+    # # regions_blinded = { key_fail + "_blinded": {key_pass + "_blinded" : key_pass_ab + "_blinded" for key_pass , key_pass_ab in key_pass_dict.items()}  for key_fail , key_pass_dict in regions.items()}
+
+    # for blind_str in [""]:
+    #     # regions_blinded = regions
+    # # for blind_str in ["","_blinded"]:
+    #     for fail_region in regions:
+    #     # for fail_region in regions_blinded:
+    #         fail_region_name = fail_region + blind_str
+    #         failChName = fail_region_name.replace("_","")
+    #         # logging.info(
+    #         # "setting transfer factor for pass region %s, fail region %s" % (passChName, failChName)
+    #         # )
+    #         failCh = model[failChName]
+    #         logging.info("fail channel name is %s",failChName)
+    #         # sideband fail
+    #         # was integer, and numpy complained about subtracting float from it
+    #         initial_qcd = failCh.getObservation().astype(float)
+    #         for sample in failCh:
+    #             if sample.sampletype == rl.Sample.SIGNAL:
+    #                 continue
+    #             logging.info("subtracting %s from qcd" % sample._name)
+    #             initial_qcd -= sample.getExpectation(nominal=True)
+    #         print("initial_qcd",initial_qcd) #for test
+    #         if np.any(initial_qcd < 0.0):
+    #             logging.warning(f"initial_qcd negative for some bins... {initial_qcd}")
+    #             initial_qcd[initial_qcd < 0] = 0
+    #             raise ValueError("initial_qcd negative for some bins..", initial_qcd)
+    #         qcd_params = np.array(
+    #                 [
+    #                     rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_{fail_region_name}Bin{i}", 0)
+    #                     for i in range(m_obs.nbins)
+    #                 ]
+    #             ) 
+    #         # print("m_obs.nbins",m_obs.nbins)
+    #         # idea here is that the error should be 1/sqrt(N), so parametrizing it as (1 + 1/sqrt(N))^qcdparams
+    #         # will result in qcdparams errors ~±1
+    #         # but because qcd is poorly modelled we're scaling sigma scale
+            
+    #         sigmascale = 10  # to scale the deviation from initial
+    #         # if scale is not None:
+    #         #     sigmascale *= scale
+    #         scaled_params = (
+    #             initial_qcd * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd))) ** qcd_params
+    #         )
+    #         # add samples
+    #         fail_qcd = rl.ParametericSample(
+    #             f"{failChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+    #             rl.Sample.BACKGROUND,
+    #             m_obs,
+    #             scaled_params,
+    #         )
+    #         # print("scaled_params",scaled_params)
+    #         failCh.addSample(fail_qcd) #won't influence the pass region
+            
+    #         for pass_region_ab in regions[fail_region]:
+    #             pass_region_name = regions[fail_region][pass_region_ab] + blind_str
+    #             # .replace("_blinded","")
+    #             # fail_region_str = fail_region.replace("_blinded","")
+    #             logging.info("now processing pass:%s fail:%s ",pass_region_name,fail_region_name)
+    #             # QCD overall pass / fail efficiency
+                
+                
+                
+    #             qcd_eff = (templates_summed[fail_region_name]["QCD", :].sum().value 
+    #                        / templates_summed[fail_region_name]["QCD", :].sum().value
+    #                        )
+                
+                
+    #             # print("qcd-eff is ",qcd_eff)
+    #             tf_dataResidual = rl.BasisPoly(
+    #             f"{CMS_PARAMS_LABEL}_tf_dataResidual_{pass_region_name}",
+    #             (shape_var.order,),
+    #             [shape_var.name],
+    #             basis="Bernstein",
+    #             limits=(-20, 20),
+    #             # square_params=True,#unknown argument "square_params"
+    #             )
+                
+    #             tf_dataResidual_params = tf_dataResidual(shape_var.scaled)
+    #             tf_params_pass = qcd_eff * tf_dataResidual_params  # scale params initially by qcd eff
+                
+    #             passChName = pass_region_name.replace("_","")
+    #             logging.info(
+    #             "setting transfer factor for pass region %s, fail region %s" % (passChName, failChName)
+    #             )
+    #             passCh = model[passChName] #filled
+    #             pass_qcd = rl.TransferFactorSample(
+    #                 f"{passChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+    #                 rl.Sample.BACKGROUND,
+    #                 tf_params_pass,
+    #                 fail_qcd,
+    #                 min_val=min_qcd_val,
+    #             )
+    #             passCh.addSample(pass_qcd)
+    
     shape_var = shape_vars[0]
     m_obs = rl.Observable(shape_var.name, shape_var.bins)
+    qcd_eff = (
+        templates_summed[f"SR1a"]["QCD", :].sum().value
+        / templates_summed[f"CR1"]["QCD", :].sum().value
+    )
+    # transfer factor
+    tf_dataResidual = rl.BasisPoly(
+        f"{CMS_PARAMS_LABEL}_tf_dataResidual",
+        (shape_var.order,),
+        [shape_var.name],
+        basis="Bernstein",
+        limits=(-20, 20),
+        # square_params=True, 
+    )
+    tf_dataResidual_params = tf_dataResidual(shape_var.scaled)
+    tf_params_pass = qcd_eff * tf_dataResidual_params  # scale params initially by qcd eff
+    qcd_params = np.array(
+        [
+            rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_Bin{i}", 0)
+            for i in range(m_obs.nbins)
+        ]
+    )
+    for blind_str in ["", "blinded"]:
+        # for blind_str in ["Blinded"]:
+        passChName = f"SR1a{blind_str}".replace("_", "")
+        failChName = f"CR1{blind_str}".replace("_", "")
+        print("failChName",failChName)
+        logging.info(
+            "setting transfer factor for pass region %s, fail region %s" % (passChName, failChName)
+        )
+        failCh = model[failChName]
+        passCh = model[passChName]
 
-    # try doing multi-tfs for boosted HWW fh case, 6 tfs.
-    regions = {
-        "CR1" :{"SRa": "SR1a"}, #for test
-        # "CR1" :{"SRa": "SR1a","SRb":"SR1b"},
-        # "CR2" :{"SRa": "SR2a","SRb":"SR2b"},
-        # "CR3" :{"SRa": "SR3a","SRb":"SR3b"},
-        }
-    regions_blinded = { key_fail + "_blinded": {key_pass + "_blinded" : key_pass_ab + "_blinded" for key_pass , key_pass_ab in key_pass_dict.items()}  for key_fail , key_pass_dict in regions.items()}
-    
-    # for blind_str in [""]:
-        # regions_blinded = regions
-    for blind_str in ["blinded"]:
-        for fail_region in regions_blinded:
-            fail_region_str = fail_region
-            failChName = fail_region.replace("_","")
-            # logging.info(
-            # "setting transfer factor for pass region %s, fail region %s" % (passChName, failChName)
-            # )
-            failCh = model[failChName]
-            logging.info("fail channel name is %s",failChName)
-            # sideband fail
-            # was integer, and numpy complained about subtracting float from it
-            initial_qcd = failCh.getObservation().astype(float)
-            for sample in failCh:
-                if sample.sampletype == rl.Sample.SIGNAL:
-                    continue
-                logging.info("subtracting %s from qcd" % sample._name)
-                initial_qcd -= sample.getExpectation(nominal=True)
-            if np.any(initial_qcd < 0.0):
-                raise ValueError("initial_qcd negative for some bins..", initial_qcd)
-            qcd_params = np.array(
-                    [
-                        rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_{fail_region_str}Bin{i}", 0)
-                        for i in range(m_obs.nbins)
-                    ]
-                ) 
-               
-            # idea here is that the error should be 1/sqrt(N), so parametrizing it as (1 + 1/sqrt(N))^qcdparams
-            # will result in qcdparams errors ~±1
-            # but because qcd is poorly modelled we're scaling sigma scale
-            
-            sigmascale = 10  # to scale the deviation from initial
-            if scale is not None:
-                sigmascale *= scale
-            scaled_params = (
-                initial_qcd * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd))) ** qcd_params
-            )
-            # add samples
-            fail_qcd = rl.ParametericSample(
-                f"{failChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
-                rl.Sample.BACKGROUND,
-                m_obs,
-                scaled_params,
-            )
-            failCh.addSample(fail_qcd) #won't influence the pass region
-            
-            for pass_region_ab in regions_blinded[fail_region]:
-                pass_region_str = regions_blinded[fail_region][pass_region_ab]
-                # .replace("_blinded","")
-                # fail_region_str = fail_region.replace("_blinded","")
-                logging.info("now processing pass:%s fail:%s ",pass_region_str,fail_region_str)
-                # QCD overall pass / fail efficiency
-                qcd_eff = (templates_summed[pass_region_str]["QCD", :].sum().value 
-                           / templates_summed[fail_region_str]["QCD", :].sum().value
-                           )
-                # print("qcd-eff is ",qcd_eff)
-                tf_dataResidual = rl.BasisPoly(
-                f"{CMS_PARAMS_LABEL}_tf_dataResidual_{pass_region_str}",
-                (shape_var.order,),
-                [shape_var.name],
-                basis="Bernstein",
-                limits=(-20, 20),
-                # square_params=True,#unknown argument "square_params"
-                )
-                tf_dataResidual_params = tf_dataResidual(shape_var.scaled)
-                tf_params_pass = qcd_eff * tf_dataResidual_params  # scale params initially by qcd eff
-                
-                passChName = pass_region_str.replace("_","")
-                logging.info(
-                "setting transfer factor for pass region %s, fail region %s" % (passChName, failChName)
-                )
-                passCh = model[passChName] #filled
-                pass_qcd = rl.TransferFactorSample(
-                    f"{passChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
-                    rl.Sample.BACKGROUND,
-                    tf_params_pass,
-                    fail_qcd,
-                    min_val=min_qcd_val,
-                )
-                passCh.addSample(pass_qcd)
+        # sideband fail
+        # was integer, and numpy complained about subtracting float from it
+        initial_qcd = failCh.getObservation().astype(float)
+        for sample in failCh:
+            if sample.sampletype == rl.Sample.SIGNAL:
+                continue
+            logging.debug("subtracting %s from qcd" % sample._name)
+            initial_qcd -= sample.getExpectation(nominal=True)
 
+        if np.any(initial_qcd < 0.0):
+            raise ValueError("initial_qcd negative for some bins..", initial_qcd)
+
+        # idea here is that the error should be 1/sqrt(N), so parametrizing it as (1 + 1/sqrt(N))^qcdparams
+        # will result in qcdparams errors ~±1
+        # but because qcd is poorly modelled we're scaling sigma scale
+
+        sigmascale = 10  # to scale the deviation from initial
+        if scale is not None:
+            sigmascale *= scale
+
+        scaled_params = (
+            initial_qcd * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd))) ** qcd_params
+        )
+
+        # add samples
+        fail_qcd = rl.ParametericSample(
+            f"{failChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+            rl.Sample.BACKGROUND,
+            m_obs,
+            scaled_params,
+        )
+        failCh.addSample(fail_qcd)
+
+        pass_qcd = rl.TransferFactorSample(
+            f"{passChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+            rl.Sample.BACKGROUND,
+            tf_params_pass,
+            fail_qcd,
+            min_val=min_qcd_val,
+        )
+        passCh.addSample(pass_qcd)
+        
 main(args)

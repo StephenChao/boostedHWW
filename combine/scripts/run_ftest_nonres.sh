@@ -13,9 +13,9 @@
 goftoys=0
 ffits=0
 dfit=0
-seed=42
+seed=44
 numtoys=100
-order=0
+order=17
 limits=0
 
 options=$(getopt -o "tfdlo:" --long "cardstag:,templatestag:,goftoys,ffits,dfit,limits,order:,numtoys:,seed:" -- "$@")
@@ -88,6 +88,7 @@ dataset=data_obs
 ws="./combined"
 wsm=${ws}_withmasks
 wsm_snapshot=higgsCombineSnapshot.MultiDimFit.mH125
+
 outsdir="./outs"
 
 # nonresonant args
@@ -108,8 +109,8 @@ freezeparamsblinded=""
 # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
 for bin in {4..11} 
 do
-    setparamsblinded+="CMS_HWW_boosted_tf_dataResidual_CR1Bin${bin}=0,"
-    freezeparamsblinded+="CMS_HWW_boosted_tf_dataResidual_CR1Bin${bin},"
+    setparamsblinded+="CMS_HWW_boosted_tf_dataResidual_Bin${bin}=0,"
+    freezeparamsblinded+="CMS_HWW_boosted_tf_dataResidual_Bin${bin},"
 done
 
 # remove last comma
@@ -121,7 +122,7 @@ freezeparamsblinded=${freezeparamsblinded%,}
 # Making cards and workspaces for each order polynomial
 ####################################################################################################
 
-for ord1 in {0..3}
+for ord1 in {15..17}
 do
     model_name="nTF_${ord1}"
     
@@ -156,25 +157,28 @@ done
 
 
 ####################################################################################################
-# Generate toys for (0, 0) order
+# Generate toys for (0, 0) order, this is toys file
 ####################################################################################################
 
 echo "now generate toys"
+
 model_name="nTF_$order"
 toys_name=$order
 cd ${cards_dir}/${model_name}/
+echo "now" ${cards_dir}/${model_name}/
 toys_file="$(pwd)/higgsCombineToys${toys_name}.GenerateOnly.mH125.$seed.root"
+echo ${toys_file} "should be created"
 cd -
 
-if [ $goftoys = 1 ]; then # -t
+if [ $goftoys = 1 ]; then 
     cd ${cards_dir}/${model_name}/
     
-    ulimit -s unlimited
+    # ulimit -s unlimited
 
     echo "Toys for $order order fit"
     combine -M GenerateOnly -m 125 -d ${wsm_snapshot}.root \
     --snapshotName MultiDimFit --bypassFrequentistFit \
-    --setParameters ${maskunblindedargs},r=0 \
+    --setParameters ${maskunblindedargs},${setparams},r=0 \
     --freezeParameters ${freezeparams},r \
     -n "Toys${toys_name}" -t $numtoys --saveToys -s $seed -v 9 2>&1 | tee $outsdir/gentoys.txt
 
@@ -183,11 +187,11 @@ fi
 
 
 ####################################################################################################
-# GoFs on generated toys for next order polynomials
+# GoFs on generated toys for next order polynomials, and this is GOF
 ####################################################################################################
 
 if [ $ffits = 1 ]; then # -f
-    for ord1 in 0 
+    for ord1 in 17 
     do
         model_name="nTF_${ord1}"
         echo "Fits for $model_name"
@@ -197,7 +201,7 @@ if [ $ffits = 1 ]; then # -f
         ulimit -s unlimited
 
         combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
-        --setParameters ${maskunblindedargs},r=0 \
+        --setParameters ${maskunblindedargs},${setparams},r=0 \
         --freezeParameters ${freezeparams},r \
         -n Toys${toys_name} -v 9 -s $seed -t $numtoys --toysFile ${toys_file} 2>&1 | tee $outsdir/GoF_toys${toys_name}.txt
 

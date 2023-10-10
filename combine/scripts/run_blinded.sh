@@ -163,7 +163,7 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
     # remove last comma
     setparamsblinded=${setparamsblinded%,}
     # freezeparamsblinded="${freezeparamsblinded},var{.*lp_sf.*},CMS_XHYbbWW_boosted_PNetHbbScaleFactors_correlated"
-    freezeparamsblinded="${freezeparamsblinded}"
+    freezeparamsblinded="${freezeparamsblinded},var{.*lp_sf.*}"
 
 
     # floating parameters using var{} floats a bunch of parameters which shouldn't be floated,
@@ -173,7 +173,7 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
     
     # unblindedparams="--freezeParameters var{.*_In},var{.*__norm},var{n_exp_.*} --setParameters $maskblindedargs"
     unblindedparams="--freezeParameters var{.*_In},var{.*__norm},var{n_exp_.*} --setParameters $maskblindedargs"
-
+    # freezeparams=
     excludeimpactparams='rgx{.*tf_dataResidual_Bin.*}'
 else
     # resonant args
@@ -277,12 +277,22 @@ fi
 
 
 if [ $goftoys = 1 ]; then
+    # echo ${freezeparams} "test value"
+    echo "GoF on toys" #always bug.
+    echo ${maskunblindedargs}
+    # combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
+    # --snapshotName MultiDimFit --bypassFrequentistFit \
+    # --setParameters ${maskunblindedargs},${setparams},r=0 \
+    # --freezeParameters ${freezeparamsblinded} --saveToys \
+    # -n Toys   -s $seed -t $numtoys --toysFrequentist 2>&1 | tee $outsdir/GoF_toys.txt
+
     echo "GoF on toys"
     combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
     --snapshotName MultiDimFit --bypassFrequentistFit \
     --setParameters ${maskunblindedargs},${setparams},r=0 \
     --freezeParameters ${freezeparams},r --saveToys \
-    -n Toys  -v -9 -s $seed -t $numtoys --toysFrequentist 2>&1 | tee $outsdir/GoF_toys.txt
+    -n Toys  -v 9 -s $seed -t $numtoys --toysFrequentist 2>&1 | tee $outsdir/GoF_toys.txt
+
 fi
 
 

@@ -266,12 +266,21 @@ if [ $dfit = 1 ]; then
 fi
 
 
+# if [ $gofdata = 1 ]; then
+#     echo "GoF on data" #bypassFrequentistFit
+#     combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
+#     --snapshotName MultiDimFit --bypassFrequentistFit  \
+#     --setParameters ${maskunblindedargs},${setparams},r=0 \
+#     --freezeParameters ${freezeparams},r \
+#     -n Data -v 9 2>&1 | tee $outsdir/GoF_data.txt
+# fi
+
 if [ $gofdata = 1 ]; then
-    echo "GoF on data"
+    echo "GoF on data" #bypassFrequentistFit
     combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
-    --snapshotName MultiDimFit --bypassFrequentistFit \
-    --setParameters ${maskunblindedargs},${setparams},r=0 \
-    --freezeParameters ${freezeparams},r \
+    --snapshotName MultiDimFit  --bypassFrequentistFit \
+    --setParameters ${setparamsblinded},r=0 \
+    --freezeParameters r \
     -n Data -v 9 2>&1 | tee $outsdir/GoF_data.txt
 fi
 
@@ -289,8 +298,8 @@ if [ $goftoys = 1 ]; then
     echo "GoF on toys"
     combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
     --snapshotName MultiDimFit --bypassFrequentistFit \
-    --setParameters ${maskunblindedargs},${setparams},r=0 \
-    --freezeParameters ${freezeparams},r --saveToys \
+    --setParameters ${maskunblindedargs},r=0 \
+    --freezeParameters r --saveToys \
     -n Toys  -v 9 -s $seed -t $numtoys --toysFrequentist 2>&1 | tee $outsdir/GoF_toys.txt
 
 fi

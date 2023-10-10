@@ -634,21 +634,24 @@ Nuisance Parameters:     RooArgSet:: = (BR_hww,CMS_HWW_boosted_CR1_blinded_mcsta
 Global Observables:      RooArgSet:: = (BR_hww_In,CMS_HWW_boosted_CR1_blinded_mcstat_bin0_In,CMS_HWW_boosted_CR1_blinded_mcstat_bin1_In,CMS_HWW_boosted_CR1_blinded_mcstat_bin12_In,CMS_HWW_boosted_CR1_blinded_mcstat_bin13_In,CMS_HWW_boosted_CR1_blinded_mcstat_bin14_In,CMS_HWW_boosted_CR1_blinded_mcstat_bin15_In,CMS_HWW_boosted_CR1_blinded_mcstat_bin16_In,CMS_HWW_boosted_CR1_blinded_mcstat_bin17_In,CMS_HWW_boosted_CR1_blinded_mcstat_bin18_In,CMS_HWW_boosted_CR1_blinded_mcstat_bin19_In,CMS_HWW_boosted_CR1_blinded_mcstat_bin2_In,CMS_HWW_boosted_CR1_blinded_mcstat_bin3_In,CMS_HWW_boosted_CR1_mcstat_bin0_In,CMS_HWW_boosted_CR1_mcstat_bin1_In,CMS_HWW_boosted_CR1_mcstat_bin10_In,CMS_HWW_boosted_CR1_mcstat_bin11_In,CMS_HWW_boosted_CR1_mcstat_bin12_In,CMS_HWW_boosted_CR1_mcstat_bin13_In,CMS_HWW_boosted_CR1_mcstat_bin14_In,CMS_HWW_boosted_CR1_mcstat_bin15_In,CMS_HWW_boosted_CR1_mcstat_bin16_In,CMS_HWW_boosted_CR1_mcstat_bin17_In,CMS_HWW_boosted_CR1_mcstat_bin18_In,CMS_HWW_boosted_CR1_mcstat_bin19_In,CMS_HWW_boosted_CR1_mcstat_bin2_In,CMS_HWW_boosted_CR1_mcstat_bin3_In,CMS_HWW_boosted_CR1_mcstat_bin4_In,CMS_HWW_boosted_CR1_mcstat_bin5_In,CMS_HWW_boosted_CR1_mcstat_bin6_In,CMS_HWW_boosted_CR1_mcstat_bin7_In,CMS_HWW_boosted_CR1_mcstat_bin8_In,CMS_HWW_boosted_CR1_mcstat_bin9_In,CMS_HWW_boosted_SR1a_blinded_mcstat_bin0_In,CMS_HWW_boosted_SR1a_blinded_mcstat_bin1_In,CMS_HWW_boosted_SR1a_blinded_mcstat_bin12_In,CMS_HWW_boosted_SR1a_blinded_mcstat_bin13_In,CMS_HWW_boosted_SR1a_blinded_mcstat_bin14_In,CMS_HWW_boosted_SR1a_blinded_mcstat_bin15_In,CMS_HWW_boosted_SR1a_blinded_mcstat_bin16_In,CMS_HWW_boosted_SR1a_blinded_mcstat_bin17_In,CMS_HWW_boosted_SR1a_blinded_mcstat_bin18_In,CMS_HWW_boosted_SR1a_blinded_mcstat_bin19_In,CMS_HWW_boosted_SR1a_blinded_mcstat_bin2_In,CMS_HWW_boosted_SR1a_blinded_mcstat_bin3_In,CMS_HWW_boosted_SR1a_mcstat_bin0_In,CMS_HWW_boosted_SR1a_mcstat_bin1_In,CMS_HWW_boosted_SR1a_mcstat_bin10_In,CMS_HWW_boosted_SR1a_mcstat_bin11_In,CMS_HWW_boosted_SR1a_mcstat_bin12_In,CMS_HWW_boosted_SR1a_mcstat_bin13_In,CMS_HWW_boosted_SR1a_mcstat_bin14_In,CMS_HWW_boosted_SR1a_mcstat_bin15_In,CMS_HWW_boosted_SR1a_mcstat_bin16_In,CMS_HWW_boosted_SR1a_mcstat_bin17_In,CMS_HWW_boosted_SR1a_mcstat_bin18_In,CMS_HWW_boosted_SR1a_mcstat_bin19_In,CMS_HWW_boosted_SR1a_mcstat_bin2_In,CMS_HWW_boosted_SR1a_mcstat_bin3_In,CMS_HWW_boosted_SR1a_mcstat_bin4_In,CMS_HWW_boosted_SR1a_mcstat_bin5_In,CMS_HWW_boosted_SR1a_mcstat_bin6_In,CMS_HWW_boosted_SR1a_mcstat_bin7_In,CMS_HWW_boosted_SR1a_mcstat_bin8_In,CMS_HWW_boosted_SR1a_mcstat_bin9_In,lumi_13TeV_correlated_In)
 PDF:                     RooSimultaneousOpt::model_s[ indexCat=CMS_channel CR1=pdf_binCR1 CR1blinded=pdf_binCR1blinded SR1a=pdf_binSR1a SR1ablinded=pdf_binSR1ablinded extraConstraints=() channelMasks=(mask_CR1,mask_CR1blinded,mask_SR1a,mask_SR1ablinded) ] = 7.13387e-06
 
-Set Default Value of Parameter mask_SR1a To : 1
-Set Default Value of Parameter mask_CR1 To : 1
-Set Default Value of Parameter mask_SR1ablinded To : 0
-Set Default Value of Parameter mask_CR1blinded To : 0
-Error parsing physics model parameter expression : 
+Set Default Value of Parameter CMS_HWW_boosted_tf_dataResidual_Bin4 To : 0
+Set Default Value of Parameter CMS_HWW_boosted_tf_dataResidual_Bin5 To : 0
+Set Default Value of Parameter CMS_HWW_boosted_tf_dataResidual_Bin6 To : 0
+Set Default Value of Parameter CMS_HWW_boosted_tf_dataResidual_Bin7 To : 0
+Set Default Value of Parameter CMS_HWW_boosted_tf_dataResidual_Bin8 To : 0
+Set Default Value of Parameter CMS_HWW_boosted_tf_dataResidual_Bin9 To : 0
+Set Default Value of Parameter CMS_HWW_boosted_tf_dataResidual_Bin10 To : 0
+Set Default Value of Parameter CMS_HWW_boosted_tf_dataResidual_Bin11 To : 0
 Set Default Value of Parameter r To : 0
 Freezing the following parameters: RooArgSet:: = (r)
 [#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooUniform::prior
 >>> 2 out of 4 channels masked
 
 >>> Channel masks:
-  1) 0x952ab80 RooRealVar::         mask_CR1 = 1 C  L(-INF - +INF)  "mask_CR1"
-  2) 0x952b780 RooRealVar::  mask_CR1blinded = 0 C  L(-INF - +INF)  "mask_CR1blinded"
-  3) 0x952c320 RooRealVar::        mask_SR1a = 1 C  L(-INF - +INF)  "mask_SR1a"
-  4) 0x952ce60 RooRealVar:: mask_SR1ablinded = 0 C  L(-INF - +INF)  "mask_SR1ablinded"
+  1) 0x926f7d0 RooRealVar::         mask_CR1 = 1 C  L(-INF - +INF)  "mask_CR1"
+  2) 0x92703d0 RooRealVar::  mask_CR1blinded = 0 C  L(-INF - +INF)  "mask_CR1blinded"
+  3) 0x9270f70 RooRealVar::        mask_SR1a = 1 C  L(-INF - +INF)  "mask_SR1a"
+  4) 0x9271ab0 RooRealVar:: mask_SR1ablinded = 0 C  L(-INF - +INF)  "mask_SR1ablinded"
 Saving snapshot 'clean'
 [#1] INFO:ObjectHandling -- RooWorkspace::saveSnaphot(w) replacing previous snapshot with name clean
 Saved snapshot 'clean'
@@ -1033,7 +1036,7 @@ lumi_13TeV_correlated	  = -3.47471e-06	 +/-  0.996602	(limited)
 
  --- GoodnessOfFit --- 
 Best fit test statistic: 67.9133
-Done in 0.00 min (cpu), 0.02 min (real)
+Done in 0.00 min (cpu), 0.01 min (real)
 Printing Message Summary From ... combine_logger.out
 ----------------------------------------------
 Messages of type INFO : 8

@@ -13,9 +13,9 @@
 goftoys=0
 ffits=0
 dfit=0
-seed=44
+seed=666
 numtoys=100
-order=17
+order=1
 limits=0
 
 options=$(getopt -o "tfdlo:" --long "cardstag:,templatestag:,goftoys,ffits,dfit,limits,order:,numtoys:,seed:" -- "$@")
@@ -122,7 +122,7 @@ freezeparamsblinded=${freezeparamsblinded%,}
 # Making cards and workspaces for each order polynomial
 ####################################################################################################
 
-for ord1 in {15..17}
+for ord1 in {0..3}
 do
     model_name="nTF_${ord1}"
     
@@ -174,7 +174,7 @@ if [ $goftoys = 1 ]; then
     cd ${cards_dir}/${model_name}/
     
     # ulimit -s unlimited
-
+    # bypassFrequentistFit
     echo "Toys for $order order fit"
     combine -M GenerateOnly -m 125 -d ${wsm_snapshot}.root \
     --snapshotName MultiDimFit --bypassFrequentistFit \
@@ -191,7 +191,7 @@ fi
 ####################################################################################################
 
 if [ $ffits = 1 ]; then # -f
-    for ord1 in 17 
+    for ord1 in 1 
     do
         model_name="nTF_${ord1}"
         echo "Fits for $model_name"

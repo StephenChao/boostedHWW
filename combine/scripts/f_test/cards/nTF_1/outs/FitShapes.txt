@@ -42,10 +42,10 @@
 >> Doing prefit: SR1ablinded,TotalProcs
 Bin                       Total relative bkg uncert. (prefit)
 ----------------------------------------------------------
-CR1                       0.00000   
-CR1blinded                0.00000   
-SR1a                      0.00000   
-SR1ablinded               0.00000   
+CR1                       0.00029   
+CR1blinded                0.00027   
+SR1a                      0.00090   
+SR1ablinded               0.00092   
 >> Doing postfit: CR1,CMS_HWW_boosted_qcd_datadriven
 >> Doing postfit: CR1,rest
 >> Doing postfit: CR1,ttbar_st
@@ -86,33 +86,33 @@ SR1ablinded               0.00000
 Bin                       Total relative bkg uncert. (postfit)
 ----------------------------------------------------------
 CR1                       0.00025   
-CR1blinded                0.00051   
-SR1a                      0.00522   
-SR1ablinded               0.00522   
+CR1blinded                0.00042   
+SR1a                      0.00486   
+SR1ablinded               0.00445   
 
 Bin                       Process              Scale factor
 ----------------------------------------------------------
-CR1                       CMS_HWW_boosted_qcd_datadriven 1.00000   
-CR1                       rest                 1.00000   
-CR1                       ttbar_st             1.00000   
-CR1                       wjets                1.00000   
-CR1blinded                CMS_HWW_boosted_qcd_datadriven 1.00000   
-CR1blinded                rest                 1.00000   
-CR1blinded                ttbar_st             1.00000   
-CR1blinded                wjets                1.00000   
-SR1a                      CMS_HWW_boosted_qcd_datadriven 0.68978   
-SR1a                      VBF                  1.00000   
-SR1a                      VH                   1.00000   
-SR1a                      ggF                  1.00000   
-SR1a                      rest                 1.00000   
-SR1a                      ttH                  1.00000   
-SR1a                      ttbar_st             1.00000   
-SR1a                      wjets                1.00000   
-SR1ablinded               CMS_HWW_boosted_qcd_datadriven 0.64939   
-SR1ablinded               VBF                  1.00000   
-SR1ablinded               VH                   1.00000   
-SR1ablinded               ggF                  1.00000   
-SR1ablinded               rest                 1.00000   
-SR1ablinded               ttH                  1.00000   
-SR1ablinded               ttbar_st             1.00000   
-SR1ablinded               wjets                1.00000   
+CR1                       CMS_HWW_boosted_qcd_datadriven 0.99999   
+CR1                       rest                 1.00114   
+CR1                       ttbar_st             1.00114   
+CR1                       wjets                1.00114   
+CR1blinded                CMS_HWW_boosted_qcd_datadriven 0.99998   
+CR1blinded                rest                 1.00114   
+CR1blinded                ttbar_st             1.00114   
+CR1blinded                wjets                1.00114   
+SR1a                      CMS_HWW_boosted_qcd_datadriven 0.68969   
+SR1a                      VBF                  1.00114   
+SR1a                      VH                   1.00114   
+SR1a                      ggF                  1.00114   
+SR1a                      rest                 1.00114   
+SR1a                      ttH                  1.00114   
+SR1a                      ttbar_st             1.00114   
+SR1a                      wjets                1.00114   
+SR1ablinded               CMS_HWW_boosted_qcd_datadriven 0.64930   
+SR1ablinded               VBF                  0.99865   
+SR1ablinded               VH                   0.99968   
+SR1ablinded               ggF                  0.99933   
+SR1ablinded               rest                 1.00074   
+SR1ablinded               ttH                  1.00127   
+SR1ablinded               ttbar_st             1.00113   
+SR1ablinded               wjets                1.00088   

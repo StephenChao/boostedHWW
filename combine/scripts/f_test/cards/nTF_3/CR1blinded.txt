@@ -1,14 +1,27 @@
-# Datacard for <Channel (CR1blinded) instance at 0x2ab689f05eb0> generated on 2023-10-09 15:19:04.651492
+# Datacard for <Channel (CR1blinded) instance at 0x7fe0db7248e0> generated on 2023-10-09 21:43:06.096698
 imax 1 # number of categories ('bins' but here we are using shape templates)
 jmax 3 # number of samples minus 1
-kmax 0 # number of nuisance parameters
+kmax 13 # number of nuisance parameters
 shapes * CR1blinded HWWfullhad.root HWWfullhad:CR1blinded_$PROCESS HWWfullhad:CR1blinded_$PROCESS_$SYSTEMATIC
 bin CR1blinded
 observation 3515605.000
-bin      CR1blinded  CR1blinded  CR1blinded                      CR1blinded
-process    ttbar_st       wjets        rest  CMS_HWW_boosted_qcd_datadriven
-process           1           2           3                               4
-rate      20703.481   39298.685   13861.679                           1.000
+bin                                             CR1blinded  CR1blinded  CR1blinded                      CR1blinded
+process                                           ttbar_st       wjets        rest  CMS_HWW_boosted_qcd_datadriven
+process                                                  1           2           3                               4
+rate                                             20703.481   39298.685   13861.679                           1.000
+CMS_HWW_boosted_CR1_blinded_mcstat_bin0 shape       1.0000      1.0000      1.0000                               -
+CMS_HWW_boosted_CR1_blinded_mcstat_bin1 shape       1.0000      1.0000      1.0000                               -
+CMS_HWW_boosted_CR1_blinded_mcstat_bin12 shape      1.0000      1.0000      1.0000                               -
+CMS_HWW_boosted_CR1_blinded_mcstat_bin13 shape      1.0000      1.0000      1.0000                               -
+CMS_HWW_boosted_CR1_blinded_mcstat_bin14 shape      1.0000      1.0000      1.0000                               -
+CMS_HWW_boosted_CR1_blinded_mcstat_bin15 shape      1.0000      1.0000      1.0000                               -
+CMS_HWW_boosted_CR1_blinded_mcstat_bin16 shape      1.0000      1.0000      1.0000                               -
+CMS_HWW_boosted_CR1_blinded_mcstat_bin17 shape      1.0000      1.0000      1.0000                               -
+CMS_HWW_boosted_CR1_blinded_mcstat_bin18 shape      1.0000      1.0000      1.0000                               -
+CMS_HWW_boosted_CR1_blinded_mcstat_bin19 shape      1.0000      1.0000      1.0000                               -
+CMS_HWW_boosted_CR1_blinded_mcstat_bin2 shape       1.0000      1.0000      1.0000                               -
+CMS_HWW_boosted_CR1_blinded_mcstat_bin3 shape       1.0000      1.0000      1.0000                               -
+lumi_13TeV_correlated lnN                           1.0130      1.0130      1.0130                               -
 CMS_HWW_boosted_tf_dataResidual_Bin0 extArg HWWfullhad.root:HWWfullhad
 CMS_HWW_boosted_tf_dataResidual_Bin1 extArg HWWfullhad.root:HWWfullhad
 CMS_HWW_boosted_tf_dataResidual_Bin10 extArg HWWfullhad.root:HWWfullhad

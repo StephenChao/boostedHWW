@@ -190,20 +190,20 @@ nuisance_params = {
     # ),
     # https://gitlab.cern.ch/hh/naming-conventions#theory-uncertainties
     "BR_hww": Syst(prior="lnN", samples=sig_keys, value=1.0153, value_down=0.9848),
-    "pdf_gg": Syst(prior="lnN", samples=["TT"], value=1.042),
-    "pdf_qqbar": Syst(prior="lnN", samples=["ST"], value=1.027),
-    "pdf_Higgs_ggF": Syst(prior="lnN", samples=sig_keys, value=1.030),
-    # TODO: add these for other Higgs production channel
-    "QCDscale_ttbar": Syst(
-        prior="lnN",
-        samples=["ST", "TT"],
-        value={"ST": 1.03, "TT": 1.024},
-        value_down={"ST": 0.978, "TT": 0.965},
-        diff_samples=True,
-    ),
-    "QCDscale_qqHH": Syst(
-        prior="lnN", samples=sig_keys, value=1.0003, value_down=0.9996
-    ),
+    # "pdf_gg": Syst(prior="lnN", samples=["TT"], value=1.042),
+    # "pdf_qqbar": Syst(prior="lnN", samples=["ST"], value=1.027),
+    # "pdf_Higgs_ggF": Syst(prior="lnN", samples=sig_keys, value=1.030),
+    # # TODO: add these for other Higgs production channel
+    # "QCDscale_ttbar": Syst(
+    #     prior="lnN",
+    #     samples=["ST", "TT"],
+    #     value={"ST": 1.03, "TT": 1.024},
+    #     value_down={"ST": 0.978, "TT": 0.965},
+    #     diff_samples=True,
+    # ),
+    # "QCDscale_qqHH": Syst(
+    #     prior="lnN", samples=sig_keys, value=1.0003, value_down=0.9996
+    # ),
     # "alpha_s": for single Higgs backgrounds
     # value will be added in from the systematics JSON
     # f"{CMS_PARAMS_LABEL}_triggerEffSF_uncorrelated": Syst(
@@ -429,37 +429,37 @@ def fill_regions(
 
             # rate systematics
             for skey, syst in nuisance_params.items():
-                pass
+                # pass
                 # continue #TODO: to be fixed
-                # if sample_name not in syst.samples or (not pass_region and syst.pass_only):
-                #     continue
+                if sample_name not in syst.samples or (not pass_region and syst.pass_only):
+                    continue
 
-                # logging.info(f"Getting {skey} rate")
+                logging.info(f"Getting {skey} rate")
 
-                # param = nuisance_params_dict[skey] #rl.NuisanceParameter object
+                param = nuisance_params_dict[skey] #rl.NuisanceParameter object
 
-                # val, val_down = syst.value, syst.value_down
-                # if syst.diff_regions:
-                #     region_name = region 
-                #     val = val[region_name]
-                #     val_down = val_down[region_name] if val_down is not None else val_down
-                # if syst.diff_samples:
-                #     val = val[sample_name]
-                #     val_down = val_down[sample_name] if val_down is not None else val_down
+                val, val_down = syst.value, syst.value_down
+                if syst.diff_regions:
+                    region_name = region 
+                    val = val[region_name]
+                    val_down = val_down[region_name] if val_down is not None else val_down
+                if syst.diff_samples:
+                    val = val[sample_name]
+                    val_down = val_down[sample_name] if val_down is not None else val_down
 
-                # sample.setParamEffect(param, val, effect_down=val_down)
+                sample.setParamEffect(param, val, effect_down=val_down)
 
             ch.addSample(sample)
 
         if bblite and args.mcstats:
-            pass
+            # pass
             # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
-            # channel_name = region 
-            # ch.autoMCStats(
-            #     channel_name=f"{CMS_PARAMS_LABEL}_{channel_name}",
-            #     threshold=args.mcstats_threshold,
-            #     epsilon=args.epsilon,
-            # )
+            channel_name = region 
+            ch.autoMCStats(
+                channel_name=f"{CMS_PARAMS_LABEL}_{channel_name}",
+                threshold=args.mcstats_threshold,
+                epsilon=args.epsilon,
+            )
 
         # data observed
         ch.setObservation(region_templates["data", :])

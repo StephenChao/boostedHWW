@@ -6,8 +6,6 @@
 # 3) Runs fit diagnostics and saves shapes (-d|--dfit)
 # 4) Generates toys and gets test statistics for each (-t|--goftoys)
 # 5) Fits +1 order models to all 100 toys and gets test statistics (-f|--ffits)
-#
-# Author: Raghav Kansal
 ####################################################################################################
 
 goftoys=0

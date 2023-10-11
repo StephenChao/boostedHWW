@@ -18,8 +18,6 @@
 # Specify seed with --seed (default 42) and number of toys with --numtoys (default 100)
 #
 # Usage ./run_blinded.sh [-wblsdgt] [--numtoys 100] [--seed 42] 
-#
-# Author: Raghav Kansal
 ####################################################################################################
 
 

@@ -1,0 +1,118 @@
+[SetFlag] Changing value of flag "workspaces-use-clone" from 0 to 1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset CR1
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset CR1Blinded
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset SR1a
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset SR1aBlinded
+[SetFlag] Changing value of flag "workspaces-use-clone" from 0 to 1
+>> Doing prefit: CR1,CMS_HWW_boosted_qcd_datadriven
+>> Doing prefit: CR1,rest
+>> Doing prefit: CR1,ttbar_st
+>> Doing prefit: CR1,wjets
+>> Doing prefit: CR1,TotalBkg
+>> Doing prefit: CR1,TotalSig
+>> Doing prefit: CR1,TotalProcs
+>> Doing prefit: CR1Blinded,CMS_HWW_boosted_qcd_datadriven
+>> Doing prefit: CR1Blinded,rest
+>> Doing prefit: CR1Blinded,ttbar_st
+>> Doing prefit: CR1Blinded,wjets
+>> Doing prefit: CR1Blinded,TotalBkg
+>> Doing prefit: CR1Blinded,TotalSig
+>> Doing prefit: CR1Blinded,TotalProcs
+>> Doing prefit: SR1a,CMS_HWW_boosted_qcd_datadriven
+>> Doing prefit: SR1a,VBF
+>> Doing prefit: SR1a,VH
+>> Doing prefit: SR1a,ggF
+>> Doing prefit: SR1a,rest
+>> Doing prefit: SR1a,ttH
+>> Doing prefit: SR1a,ttbar_st
+>> Doing prefit: SR1a,wjets
+>> Doing prefit: SR1a,TotalBkg
+>> Doing prefit: SR1a,TotalSig
+>> Doing prefit: SR1a,TotalProcs
+>> Doing prefit: SR1aBlinded,CMS_HWW_boosted_qcd_datadriven
+>> Doing prefit: SR1aBlinded,VBF
+>> Doing prefit: SR1aBlinded,VH
+>> Doing prefit: SR1aBlinded,ggF
+>> Doing prefit: SR1aBlinded,rest
+>> Doing prefit: SR1aBlinded,ttH
+>> Doing prefit: SR1aBlinded,ttbar_st
+>> Doing prefit: SR1aBlinded,wjets
+>> Doing prefit: SR1aBlinded,TotalBkg
+>> Doing prefit: SR1aBlinded,TotalSig
+>> Doing prefit: SR1aBlinded,TotalProcs
+Bin                       Total relative bkg uncert. (prefit)
+----------------------------------------------------------
+CR1                       0.00029   
+CR1Blinded                0.00027   
+SR1a                      0.00090   
+SR1aBlinded               0.00092   
+>> Doing postfit: CR1,CMS_HWW_boosted_qcd_datadriven
+>> Doing postfit: CR1,rest
+>> Doing postfit: CR1,ttbar_st
+>> Doing postfit: CR1,wjets
+>> Doing postfit: CR1,TotalBkg
+>> Doing postfit: CR1,TotalSig
+>> Doing postfit: CR1,TotalProcs
+>> Doing postfit: CR1Blinded,CMS_HWW_boosted_qcd_datadriven
+>> Doing postfit: CR1Blinded,rest
+>> Doing postfit: CR1Blinded,ttbar_st
+>> Doing postfit: CR1Blinded,wjets
+>> Doing postfit: CR1Blinded,TotalBkg
+>> Doing postfit: CR1Blinded,TotalSig
+>> Doing postfit: CR1Blinded,TotalProcs
+>> Doing postfit: SR1a,CMS_HWW_boosted_qcd_datadriven
+>> Doing postfit: SR1a,VBF
+>> Doing postfit: SR1a,VH
+>> Doing postfit: SR1a,ggF
+>> Doing postfit: SR1a,rest
+>> Doing postfit: SR1a,ttH
+>> Doing postfit: SR1a,ttbar_st
+>> Doing postfit: SR1a,wjets
+>> Doing postfit: SR1a,TotalBkg
+>> Doing postfit: SR1a,TotalSig
+>> Doing postfit: SR1a,TotalProcs
+>> Doing postfit: SR1aBlinded,CMS_HWW_boosted_qcd_datadriven
+>> Doing postfit: SR1aBlinded,VBF
+>> Doing postfit: SR1aBlinded,VH
+>> Doing postfit: SR1aBlinded,ggF
+>> Doing postfit: SR1aBlinded,rest
+>> Doing postfit: SR1aBlinded,ttH
+>> Doing postfit: SR1aBlinded,ttbar_st
+>> Doing postfit: SR1aBlinded,wjets
+>> Doing postfit: SR1aBlinded,TotalBkg
+>> Doing postfit: SR1aBlinded,TotalSig
+>> Doing postfit: SR1aBlinded,TotalProcs
+
+Bin                       Total relative bkg uncert. (postfit)
+----------------------------------------------------------
+CR1                       0.00032   
+CR1Blinded                0.00054   
+SR1a                      0.00800   
+SR1aBlinded               0.00547   
+
+Bin                       Process              Scale factor
+----------------------------------------------------------
+CR1                       CMS_HWW_boosted_qcd_datadriven 1.00000   
+CR1                       rest                 1.00013   
+CR1                       ttbar_st             1.00013   
+CR1                       wjets                1.00013   
+CR1Blinded                CMS_HWW_boosted_qcd_datadriven 1.00000   
+CR1Blinded                rest                 1.00013   
+CR1Blinded                ttbar_st             1.00013   
+CR1Blinded                wjets                1.00013   
+SR1a                      CMS_HWW_boosted_qcd_datadriven 0.66573   
+SR1a                      VBF                  1.00018   
+SR1a                      VH                   1.00019   
+SR1a                      ggF                  1.00022   
+SR1a                      rest                 1.00047   
+SR1a                      ttH                  1.00023   
+SR1a                      ttbar_st             1.00002   
+SR1a                      wjets                1.00050   
+SR1aBlinded               CMS_HWW_boosted_qcd_datadriven 0.64951   
+SR1aBlinded               VBF                  1.00098   
+SR1aBlinded               VH                   1.00041   
+SR1aBlinded               ggF                  1.00108   
+SR1aBlinded               rest                 1.00028   
+SR1aBlinded               ttH                  1.00042   
+SR1aBlinded               ttbar_st             1.00018   
+SR1aBlinded               wjets                1.00030   

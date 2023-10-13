@@ -9,7 +9,7 @@ Adapted from
     https://github.com/nsmith-/rhalphalib/blob/master/tests/test_rhalphalib.py
     https://github.com/farakiko/boostedhiggs/blob/main/combine/create_datacard.py
 
-Author: Yuzhe Zhao
+Author: Raghav Kansal, Yuzhe Zhao
 """
 
 from __future__ import division, print_function
@@ -76,7 +76,7 @@ parser.add_argument(
 )
 parser.add_argument("--cards-dir", default="/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/cards/", type=str, help="output card directory")
 parser.add_argument("--model-name", default="HWWfhModel", type=str, help="output model name")
-parser.add_argument("--mcstats-threshold", default=100, type=float, help="mcstats threshold n_eff")
+parser.add_argument("--mcstats-threshold", default=10, type=float, help="mcstats threshold n_eff")
 parser.add_argument("--epsilon", default=1e-3, type=float, help="epsilon to avoid numerical errs")
 parser.add_argument(
     "--scale-templates", default=None, type=float, help="scale all templates for bias tests"
@@ -281,9 +281,9 @@ for skey, syst in uncorr_year_shape_systs.items():
 def main(args):
     regions : List[str] = ["SR1a","CR1"] #for test
     # regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2","SR3a","SR3b","CR3"]
-    regions_blinded = [region + "_blinded" for region in regions]
+    regions_blinded = [region + "Blinded" for region in regions]
     regions = regions +  regions_blinded #only use blinded results now
-    with open(f"/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/templates/hists_templates_blinded.pkl", "rb") as f:
+    with open(f"/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/templates/hists_templates_run2.pkl", "rb") as f:
         hists_templates = pkl.load(f) #in Raghav's code, it's templates_summed and templates_dict
     
     model = rl.Model("HWWfullhad")
@@ -367,8 +367,8 @@ def fill_regions(
         region_templates = templates[region]
 
         # pass_region = region.startswith("pass")
-        pass_region = (region.endswith("a") or region.endswith("b") or "a_" in region or "b_" in region)
-
+        pass_region = (region.endswith("a") or region.endswith("b") or "aBlinded" in region or "bBlinded" in region)
+        region_noblinded = region.split("Blinded")[0]
         logging.info("starting region: %s" % region)
         # binstr = "" if mX_bin is None else f"mXbin{mX_bin}"
         # binstr = "MH_Reco"
@@ -418,7 +418,7 @@ def fill_regions(
                 # set mc stat uncs
                 logging.info("setting autoMCStats for %s in %s" % (sample_name, region))
                 # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
-                region_name = region 
+                region_name = region_noblinded
                 stats_sample_name = f"{CMS_PARAMS_LABEL}_{region_name}_{card_name}"
                 sample.autoMCStats(
                     sample_name=stats_sample_name,
@@ -440,7 +440,7 @@ def fill_regions(
 
                 val, val_down = syst.value, syst.value_down
                 if syst.diff_regions:
-                    region_name = region 
+                    region_name = region_noblinded 
                     val = val[region_name]
                     val_down = val_down[region_name] if val_down is not None else val_down
                 if syst.diff_samples:
@@ -454,7 +454,7 @@ def fill_regions(
         if bblite and args.mcstats:
             # pass
             # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
-            channel_name = region 
+            channel_name = region_noblinded 
             ch.autoMCStats(
                 channel_name=f"{CMS_PARAMS_LABEL}_{channel_name}",
                 threshold=args.mcstats_threshold,
@@ -600,7 +600,7 @@ def alphabet_fit(
             for i in range(m_obs.nbins)
         ]
     )
-    for blind_str in ["", "blinded"]:
+    for blind_str in ["", "Blinded"]:
         # for blind_str in ["Blinded"]:
         passChName = f"SR1a{blind_str}".replace("_", "")
         failChName = f"CR1{blind_str}".replace("_", "")

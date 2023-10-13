@@ -13,7 +13,7 @@ ffits=0
 dfit=0
 seed=666
 numtoys=100
-order=1
+order=2
 limits=0
 
 options=$(getopt -o "tfdlo:" --long "cardstag:,templatestag:,goftoys,ffits,dfit,limits,order:,numtoys:,seed:" -- "$@")
@@ -90,9 +90,9 @@ wsm_snapshot=higgsCombineSnapshot.MultiDimFit.mH125
 outsdir="./outs"
 
 # nonresonant args
-ccargs="CR1=${cards_dir}/CR1.txt CR1blinded=${cards_dir}/CR1blinded.txt SR1a=${cards_dir}/SR1a.txt SR1ablinded=${cards_dir}/SR1ablinded.txt"
-maskunblindedargs="mask_SR1a=1,mask_CR1=1,mask_SR1ablinded=0,mask_CR1blinded=0"
-maskblindedargs="mask_SR1a=0,mask_CR1=0,mask_SR1alinded=1,mask_CR1blinded=1"
+ccargs="CR1=${cards_dir}/CR1.txt CR1Blinded=${cards_dir}/CR1Blinded.txt SR1a=${cards_dir}/SR1a.txt SR1aBlinded=${cards_dir}/SR1aBlinded.txt"
+maskunblindedargs="mask_SR1a=1,mask_CR1=1,mask_SR1aBlinded=0,mask_CR1Blinded=0"
+maskblindedargs="mask_SR1a=0,mask_CR1=0,mask_SR1aBlinded=1,mask_CR1Blinded=1"
 
 # ccargs="CR1=${cards_dir}/CR1.txt SR1a=${cards_dir}/SR1a.txt"
 
@@ -189,7 +189,7 @@ fi
 ####################################################################################################
 
 if [ $ffits = 1 ]; then # -f
-    for ord1 in 1 
+    for ord1 in 2 3
     do
         model_name="nTF_${ord1}"
         echo "Fits for $model_name"

@@ -36,7 +36,7 @@ goftoys=0
 impactsi=0
 impactsf=0
 impactsc=0
-seed=42
+seed=444
 numtoys=100
 bias=-1
 mintol=0.1  # --cminDefaultMinimizerTolerance
@@ -141,12 +141,9 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
     fi
 
     # nonresonant args
-    ccargs="CR1=${cards_dir}/CR1.txt CR1blinded=${cards_dir}/CR1blinded.txt SR1a=${cards_dir}/SR1a.txt SR1ablinded=${cards_dir}/SR1ablinded.txt"
-   
-    # ccargs="CR1=${cards_dir}/CR1.txt SR1a=${cards_dir}/SR1a.txt"
-
-    maskunblindedargs="mask_SR1a=1,mask_CR1=1,mask_SR1ablinded=0,mask_CR1blinded=0"
-    maskblindedargs="mask_SR1a=0,mask_CR1=0,mask_SR1alinded=1,mask_CR1blinded=1"
+    ccargs="CR1=${cards_dir}/CR1.txt CR1Blinded=${cards_dir}/CR1Blinded.txt SR1a=${cards_dir}/SR1a.txt SR1aBlinded=${cards_dir}/SR1aBlinded.txt"
+    maskunblindedargs="mask_SR1a=1,mask_CR1=1,mask_SR1aBlinded=0,mask_CR1Blinded=0"
+    maskblindedargs="mask_SR1a=0,mask_CR1=0,mask_SR1aBlinded=1,mask_CR1Blinded=1"
 
     # freeze qcd params in blinded bins
     setparamsblinded=""
@@ -274,11 +271,11 @@ fi
 # fi
 
 if [ $gofdata = 1 ]; then
-    echo "GoF on data" #bypassFrequentistFit
+    echo "GoF on data"
     combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
-    --snapshotName MultiDimFit  --bypassFrequentistFit \
-    --setParameters ${setparamsblinded},r=0 \
-    --freezeParameters r \
+    --snapshotName MultiDimFit --bypassFrequentistFit \
+    --setParameters ${maskunblindedargs},${setparams},r=0 \
+    --freezeParameters ${freezeparams},r \
     -n Data -v 9 2>&1 | tee $outsdir/GoF_data.txt
 fi
 

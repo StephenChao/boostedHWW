@@ -583,7 +583,7 @@ def alphabet_fit(
         templates_summed[f"SR1a"]["QCD", :].sum().value
         / templates_summed[f"CR1"]["QCD", :].sum().value
     )
-    # transfer factor
+    # initialize transfer factor, value here won't influence final results
     tf_dataResidual = rl.BasisPoly(
         f"{CMS_PARAMS_LABEL}_tf_dataResidual",
         (shape_var.order,),
@@ -591,15 +591,17 @@ def alphabet_fit(
         basis="Bernstein",
         limits=(-20, 20),
         # square_params=True, 
-    )
+    ) #question: can be used twice or not?
     tf_dataResidual_params = tf_dataResidual(shape_var.scaled)
     tf_params_pass = qcd_eff * tf_dataResidual_params  # scale params initially by qcd eff
+    
     qcd_params = np.array(
         [
             rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_Bin{i}", 0)
             for i in range(m_obs.nbins)
         ]
     )
+    
     for blind_str in ["", "Blinded"]:
         # for blind_str in ["Blinded"]:
         passChName = f"SR1a{blind_str}".replace("_", "")

@@ -39,7 +39,7 @@ impactsc=0
 seed=444
 numtoys=100
 bias=-1
-mintol=0.1  # --cminDefaultMinimizerTolerance
+mintol=0.5 # --cminDefaultMinimizerTolerance
 # maxcalls=1000000000  # --X-rtd MINIMIZER_MaxCalls
 
 options=$(getopt -o "wblsdrgti" --long "workspace,bfit,limits,significance,dfit,resonant,gofdata,goftoys,impactsi,impactsf:,impactsc:,bias:,seed:,numtoys:,mintol:" -- "$@")
@@ -139,25 +139,50 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
     if [ -f "mXbin0pass.txt" ]; then
         echo -e "\nWARNING: This is doing nonresonant fits - did you mean to pass -r|--resonant?\n"
     fi
-
+    echo "actually run the following: "
     # nonresonant args
-    ccargs="CR1=${cards_dir}/CR1.txt CR1Blinded=${cards_dir}/CR1Blinded.txt SR1a=${cards_dir}/SR1a.txt SR1aBlinded=${cards_dir}/SR1aBlinded.txt"
-    maskunblindedargs="mask_SR1a=1,mask_CR1=1,mask_SR1aBlinded=0,mask_CR1Blinded=0"
-    maskblindedargs="mask_SR1a=0,mask_CR1=0,mask_SR1aBlinded=1,mask_CR1Blinded=1"
-
-    # freeze qcd params in blinded bins
     setparamsblinded=""
     freezeparamsblinded=""
-    # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
-    for bin in {4..11} 
-    do
-        setparamsblinded+="${CMS_PARAMS_LABEL}_tf_dataResidual_Bin${bin}=0,"
-        freezeparamsblinded+="${CMS_PARAMS_LABEL}_tf_dataResidual_Bin${bin},"
-    done
 
+    # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
+    ccargs=""
+    maskunblindedargs=""
+    maskblindedargs=""
+    for region in 1 2 3;
+    do 
+        cr="CR${region}"
+        sra="SR${region}a"
+        srb="SR${region}b"
+        ccargs+="${cr}=${cards_dir}/${cr}.txt ${cr}Blinded=${cards_dir}/${cr}Blinded.txt "
+        ccargs+="${sra}=${cards_dir}/${sra}.txt ${sra}Blinded=${cards_dir}/${sra}Blinded.txt "
+        ccargs+="${srb}=${cards_dir}/${srb}.txt ${srb}Blinded=${cards_dir}/${srb}Blinded.txt "
+        maskunblindedargs+="mask_${sra}=1,mask_${srb}=1,mask_${cr}=1,"
+        maskunblindedargs+="mask_${sra}Blinded=0,mask_${srb}Blinded=0,mask_${cr}Blinded=0,"
+        maskblindedargs+="mask_${sra}=0,mask_${srb}=0,mask_${cr}=0,"
+        maskblindedargs+="mask_${sra}Blinded=1,mask_${srb}Blinded=1,mask_${cr}Blinded=1,"
+    done
+    maskblindedargs=${maskblindedargs%,}
+    maskunblindedargs=${maskunblindedargs%,}
+    echo "cards args=${ccargs}"
+    echo "maskblinded=${maskblindedargs}"
+    echo "maskunblinded=${maskunblindedargs}"
+    
+    setparamsblinded=""
+    freezeparamsblinded=""
+    for bin in {4..11} 
+    do  
+        for cr in CR1 CR2 CR3;
+        # for cr in CR3;
+        do
+            setparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin}=0,"
+            freezeparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin},"
+        done
+    done
+    # freeze qcd params in blinded bins
+    # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
     # remove last comma
     setparamsblinded=${setparamsblinded%,}
-    # freezeparamsblinded="${freezeparamsblinded},var{.*lp_sf.*},CMS_XHYbbWW_boosted_PNetHbbScaleFactors_correlated"
+    freezeparamsblinded=${freezeparamsblinded%,}
     freezeparamsblinded="${freezeparamsblinded},var{.*lp_sf.*}"
 
 
@@ -165,10 +190,7 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
     # so countering this inside --freezeParameters which takes priority.
     # Although, practically even if those are set to "float", I didn't see them ever being fitted,
     # so this is just to be extra safe.
-    
-    # unblindedparams="--freezeParameters var{.*_In},var{.*__norm},var{n_exp_.*} --setParameters $maskblindedargs"
     unblindedparams="--freezeParameters var{.*_In},var{.*__norm},var{n_exp_.*} --setParameters $maskblindedargs"
-    # freezeparams=
     excludeimpactparams='rgx{.*tf_dataResidual_Bin.*}'
 else
     # resonant args
@@ -216,7 +238,7 @@ fi
 if [ $bfit = 1 ]; then
     echo "Blinded background-only fit"
     combine -D $dataset -M MultiDimFit --saveWorkspace -m 125 -d ${wsm}.root -v 9 \
-    --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
+    --cminDefaultMinimizerStrategy 0 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=5000000 \
     --setParameters ${maskunblindedargs},${setparamsblinded},r=0  \
     --freezeParameters r,${freezeparamsblinded} \
     -n Snapshot 2>&1 | tee $outsdir/MultiDimFit.txt
@@ -251,7 +273,7 @@ if [ $dfit = 1 ]; then
     combine -M FitDiagnostics -m 125 -d ${wsm}.root \
     --setParameters ${maskunblindedargs},${setparamsblinded} \
     --freezeParameters ${freezeparamsblinded} \
-    --cminDefaultMinimizerStrategy 1  --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
+    --cminDefaultMinimizerStrategy 0  --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=5000000 \
     -n Blinded --ignoreCovWarning -v 9 2>&1 | tee $outsdir/FitDiagnostics.txt
     # --saveShapes --saveNormalizations --saveWithUncertainties --saveOverallShapes \
 

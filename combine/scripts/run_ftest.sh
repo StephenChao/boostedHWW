@@ -89,38 +89,56 @@ wsm_snapshot=higgsCombineSnapshot.MultiDimFit.mH125
 
 outsdir="./outs"
 
-# nonresonant args
-ccargs="CR1=${cards_dir}/CR1.txt CR1Blinded=${cards_dir}/CR1Blinded.txt SR1a=${cards_dir}/SR1a.txt SR1aBlinded=${cards_dir}/SR1aBlinded.txt"
-maskunblindedargs="mask_SR1a=1,mask_CR1=1,mask_SR1aBlinded=0,mask_CR1Blinded=0"
-maskblindedargs="mask_SR1a=0,mask_CR1=0,mask_SR1aBlinded=1,mask_CR1Blinded=1"
-
-# ccargs="CR1=${cards_dir}/CR1.txt SR1a=${cards_dir}/SR1a.txt"
-
-# maskunblindedargs="mask_SR1a=1,mask_CR1=1,mask_SR1ablinded=0,mask_CR1blinded=0"
-# maskblindedargs="mask_SR1a=0,mask_CR1=0,mask_SR1alinded=1,mask_CR1blinded=1"
-
+ccargs=""
+maskunblindedargs=""
+maskblindedargs=""
+for region in {1..3}
+do 
+    cr="CR${region}"
+    sra="SR${region}a"
+    srb="SR${region}b"
+    ccargs+="${cr}=${cards_dir}/${cr}.txt ${cr}Blinded=${cards_dir}/${cr}Blinded.txt "
+    ccargs+="${sra}=${cards_dir}/${sra}.txt ${sra}Blinded=${cards_dir}/${sra}Blinded.txt "
+    ccargs+="${srb}=${cards_dir}/${srb}.txt ${srb}Blinded=${cards_dir}/${srb}Blinded.txt "
+    maskunblindedargs+="mask_${sra}=1,mask_${srb}=1,mask_${cr}=1,"
+    maskunblindedargs+="mask_${sra}Blinded=0,mask_${srb}Blinded=0,mask_${cr}Blinded=0,"
+    maskblindedargs+="mask_${sra}=0,mask_${srb}=0,mask_${cr}=0,"
+    maskblindedargs+="mask_${sra}Blinded=1,mask_${srb}Blinded=1,mask_${cr}Blinded=1,"
+done
+maskblindedargs=${maskblindedargs%,}
+maskunblindedargs=${maskunblindedargs%,}
+echo "cards args=${ccargs}"
+echo "maskblinded=${maskblindedargs}"
+echo "maskunblinded=${maskunblindedargs}"
 
 # freeze qcd params in blinded bins
 setparamsblinded=""
 freezeparamsblinded=""
 
 # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
+
 for bin in {4..11} 
-do
-    setparamsblinded+="CMS_HWW_boosted_tf_dataResidual_Bin${bin}=0,"
-    freezeparamsblinded+="CMS_HWW_boosted_tf_dataResidual_Bin${bin},"
+do  
+    for cr in CR1 CR2 CR3;
+    do
+        setparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin}=0,"
+        freezeparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin},"
+    done
 done
 
 # remove last comma
 setparamsblinded=${setparamsblinded%,}
 freezeparamsblinded=${freezeparamsblinded%,}
 
+#actually all the variables above is not used when do ./run_ftest.sh
+#it depends on the variables in run_blinded.sh
 
 ####################################################################################################
 # Making cards and workspaces for each order polynomial
 ####################################################################################################
 
-for ord1 in {0..3}
+for ord1 in {1..3}
+# for ord1 in 1
 do
     model_name="nTF_${ord1}"
     

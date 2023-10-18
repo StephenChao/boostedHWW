@@ -5,12 +5,12 @@ import warnings
 from typing import Dict, List, Tuple, Union
 from collections import OrderedDict
 import matplotlib.pyplot as plt
-import mplhep as hep
+# import mplhep as hep
 import numpy as np
 from hist import Hist
 
 
-plt.style.use(hep.style.CMS)
+# plt.style.use(hep.style.CMS)
 
 warnings.filterwarnings("ignore", message="Found duplicate branch ")
 

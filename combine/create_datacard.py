@@ -82,8 +82,9 @@ parser.add_argument(
     "--scale-templates", default=None, type=float, help="scale all templates for bias tests"
 )
 parser.add_argument(
-    "--min-qcd-val", default=1e-3, type=float, help="clip the pass QCD to above a minimum value"
+    "--min-qcd-val", default=1e-4, type=float, help="clip the pass QCD to above a minimum value"
 )
+
 parser.add_argument(
     "--year",
     help="year",
@@ -190,20 +191,20 @@ nuisance_params = {
     # ),
     # https://gitlab.cern.ch/hh/naming-conventions#theory-uncertainties
     "BR_hww": Syst(prior="lnN", samples=sig_keys, value=1.0153, value_down=0.9848),
-    # "pdf_gg": Syst(prior="lnN", samples=["TT"], value=1.042),
-    # "pdf_qqbar": Syst(prior="lnN", samples=["ST"], value=1.027),
-    # "pdf_Higgs_ggF": Syst(prior="lnN", samples=sig_keys, value=1.030),
+    "pdf_gg": Syst(prior="lnN", samples=["Top"], value=1.042),
+    "pdf_qqbar": Syst(prior="lnN", samples=["Top"], value=1.027),
+    "pdf_Higgs_ggF": Syst(prior="lnN", samples=sig_keys, value=1.030),
     # # TODO: add these for other Higgs production channel
-    # "QCDscale_ttbar": Syst(
-    #     prior="lnN",
-    #     samples=["ST", "TT"],
-    #     value={"ST": 1.03, "TT": 1.024},
-    #     value_down={"ST": 0.978, "TT": 0.965},
-    #     diff_samples=True,
-    # ),
-    # "QCDscale_qqHH": Syst(
-    #     prior="lnN", samples=sig_keys, value=1.0003, value_down=0.9996
-    # ),
+    "QCDscale_ttbar": Syst(
+        prior="lnN",
+        samples=["Top"],
+        value=1.03,
+        value_down=0.978
+        # diff_samples=True,
+    ),
+    "QCDscale_qqHH": Syst(
+        prior="lnN", samples=sig_keys, value=1.0003, value_down=0.9996
+    ),
     # "alpha_s": for single Higgs backgrounds
     # value will be added in from the systematics JSON
     # f"{CMS_PARAMS_LABEL}_triggerEffSF_uncorrelated": Syst(
@@ -279,8 +280,11 @@ for skey, syst in uncorr_year_shape_systs.items():
 
 
 def main(args):
-    regions : List[str] = ["SR1a","CR1"] #for test
-    # regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2","SR3a","SR3b","CR3"]
+    # regions : List[str] = ["SR1a","CR1","SR1b"] #for test
+    regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2","SR3a","SR3b","CR3"]
+    # regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2"]
+    # regions : List[str] = ["SR2a","SR2b","CR2"]
+    # regions : List[str] = ["SR3a","SR3b","CR3"]
     regions_blinded = [region + "Blinded" for region in regions]
     regions = regions +  regions_blinded #only use blinded results now
     with open(f"/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/templates/hists_templates_run2.pkl", "rb") as f:
@@ -577,82 +581,302 @@ def alphabet_fit(
     #             )
     #             passCh.addSample(pass_qcd)
     
+    # using SR1a, SR1b and CR1 for test below:
     shape_var = shape_vars[0]
     m_obs = rl.Observable(shape_var.name, shape_var.bins)
-    qcd_eff = (
+    
+    qcd_eff_1a = (
         templates_summed[f"SR1a"]["QCD", :].sum().value
         / templates_summed[f"CR1"]["QCD", :].sum().value
     )
+    qcd_eff_1b = (
+        templates_summed[f"SR1b"]["QCD", :].sum().value
+        / templates_summed[f"CR1"]["QCD", :].sum().value
+    )
+    qcd_eff_2a = (
+        templates_summed[f"SR2a"]["QCD", :].sum().value
+        / templates_summed[f"CR2"]["QCD", :].sum().value
+    )
+    qcd_eff_2b = (
+        templates_summed[f"SR2b"]["QCD", :].sum().value
+        / templates_summed[f"CR2"]["QCD", :].sum().value
+    )
+    qcd_eff_3a = (
+        templates_summed[f"SR3a"]["QCD", :].sum().value
+        / templates_summed[f"CR3"]["QCD", :].sum().value
+    )
+    qcd_eff_3b = (
+        templates_summed[f"SR3b"]["QCD", :].sum().value
+        / templates_summed[f"CR3"]["QCD", :].sum().value
+    )
+    
     # initialize transfer factor, value here won't influence final results
-    tf_dataResidual = rl.BasisPoly(
-        f"{CMS_PARAMS_LABEL}_tf_dataResidual",
+    tf_dataResidual_1a = rl.BasisPoly(
+        f"{CMS_PARAMS_LABEL}_tf_dataResidual_1a",
         (shape_var.order,),
         [shape_var.name],
         basis="Bernstein",
         limits=(-20, 20),
-        # square_params=True, 
+        square_params=True, 
     ) #question: can be used twice or not?
-    tf_dataResidual_params = tf_dataResidual(shape_var.scaled)
-    tf_params_pass = qcd_eff * tf_dataResidual_params  # scale params initially by qcd eff
+    tf_dataResidual_1b = rl.BasisPoly(
+        f"{CMS_PARAMS_LABEL}_tf_dataResidual_1b",
+        (shape_var.order,),
+        [shape_var.name],
+        basis="Bernstein",
+        limits=(-20, 20),
+        square_params=True, 
+    ) #question: can be used twice or not? 
+    # Answer on October 16 2023, each SR should use one polynomial
+    tf_dataResidual_2a = rl.BasisPoly(
+        f"{CMS_PARAMS_LABEL}_tf_dataResidual_2a",
+        (shape_var.order,),
+        [shape_var.name],
+        basis="Bernstein",
+        limits=(-20, 20),
+        square_params=True, 
+    ) #question: can be used twice or not?
+    tf_dataResidual_2b = rl.BasisPoly(
+        f"{CMS_PARAMS_LABEL}_tf_dataResidual_2b",
+        (shape_var.order,),
+        [shape_var.name],
+        basis="Bernstein",
+        limits=(-20, 20),
+        square_params=True, 
+    ) #question: can be used twice or not? 
+    tf_dataResidual_3a = rl.BasisPoly(
+        f"{CMS_PARAMS_LABEL}_tf_dataResidual_3a",
+        (shape_var.order,),
+        [shape_var.name],
+        basis="Bernstein",
+        limits=(-30, 30),
+        square_params=True, 
+    ) #question: can be used twice or not?
+    tf_dataResidual_3b = rl.BasisPoly(
+        f"{CMS_PARAMS_LABEL}_tf_dataResidual_3b",
+        (shape_var.order,),
+        [shape_var.name],
+        basis="Bernstein",
+        limits=(-30, 30),
+        square_params=True, 
+    ) #question: can be used twice or not?     
     
-    qcd_params = np.array(
+    
+    tf_dataResidual_params_1a = tf_dataResidual_1a(shape_var.scaled)
+    tf_dataResidual_params_1b = tf_dataResidual_1b(shape_var.scaled)
+    tf_dataResidual_params_2a = tf_dataResidual_2a(shape_var.scaled)
+    tf_dataResidual_params_2b = tf_dataResidual_2b(shape_var.scaled)
+    tf_dataResidual_params_3a = tf_dataResidual_3a(shape_var.scaled)
+    tf_dataResidual_params_3b = tf_dataResidual_3b(shape_var.scaled)
+    
+    tf_params_pass_1a = qcd_eff_1a * tf_dataResidual_params_1a  # scale params initially by qcd eff
+    tf_params_pass_1b = qcd_eff_1b * tf_dataResidual_params_1b  # scale params initially by qcd eff
+    
+    tf_params_pass_2a = qcd_eff_2a * tf_dataResidual_params_2a  # scale params initially by qcd eff
+    tf_params_pass_2b = qcd_eff_2b * tf_dataResidual_params_2b  # scale params initially by qcd eff
+    
+    tf_params_pass_3a = qcd_eff_3a * tf_dataResidual_params_3a  # scale params initially by qcd eff
+    tf_params_pass_3b = qcd_eff_3b * tf_dataResidual_params_3b  # scale params initially by qcd eff
+    
+    #use 1 or 2?
+    qcd_params1 = np.array(
         [
-            rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_Bin{i}", 0)
+            rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_CR1_Bin{i}", 0)
+            for i in range(m_obs.nbins)
+        ]
+    )
+    
+    qcd_params2 = np.array(
+        [
+            rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_CR2_Bin{i}", 0)
+            for i in range(m_obs.nbins)
+        ]
+    )
+    
+    qcd_params3 = np.array(
+        [
+            rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_CR3_Bin{i}", 0)
             for i in range(m_obs.nbins)
         ]
     )
     
     for blind_str in ["", "Blinded"]:
         # for blind_str in ["Blinded"]:
-        passChName = f"SR1a{blind_str}".replace("_", "")
-        failChName = f"CR1{blind_str}".replace("_", "")
-        print("failChName",failChName)
-        logging.info(
-            "setting transfer factor for pass region %s, fail region %s" % (passChName, failChName)
-        )
-        failCh = model[failChName]
-        passCh = model[passChName]
-
+        passChName1a = f"SR1a{blind_str}".replace("_", "")
+        passChName1b = f"SR1b{blind_str}".replace("_", "")
+        failChName1 = f"CR1{blind_str}".replace("_", "")
+        
+        passChName2a = f"SR2a{blind_str}".replace("_", "")
+        passChName2b = f"SR2b{blind_str}".replace("_", "")
+        failChName2 = f"CR2{blind_str}".replace("_", "")
+        
+        passChName3a = f"SR3a{blind_str}".replace("_", "")
+        passChName3b = f"SR3b{blind_str}".replace("_", "")
+        failChName3 = f"CR3{blind_str}".replace("_", "")  
+              
+        # print("failChName",failChName)
+        
+        # logging.info(
+        #     "setting transfer factor for pass region %s, fail region %s" % (passChName1a, failChName1)
+        # )
+        # logging.info(
+        #     "setting transfer factor for pass region %s, fail region %s" % (passChName1b, failChName1)
+        # )        
+        
+        failCh1 = model[failChName1]
+        passCh1a = model[passChName1a]
+        passCh1b = model[passChName1b]
+        
+        failCh2 = model[failChName2]
+        passCh2a = model[passChName2a]
+        passCh2b = model[passChName2b]
+        
+        failCh3 = model[failChName3]
+        passCh3a = model[passChName3a]
+        passCh3b = model[passChName3b]
+        
         # sideband fail
         # was integer, and numpy complained about subtracting float from it
-        initial_qcd = failCh.getObservation().astype(float)
-        for sample in failCh:
+        initial_qcd1 = failCh1.getObservation().astype(float)
+        initial_qcd2 = failCh2.getObservation().astype(float)
+        initial_qcd3 = failCh3.getObservation().astype(float)
+                
+        for sample in failCh1:
             if sample.sampletype == rl.Sample.SIGNAL:
                 continue
             logging.debug("subtracting %s from qcd" % sample._name)
-            initial_qcd -= sample.getExpectation(nominal=True)
-
-        if np.any(initial_qcd < 0.0):
-            raise ValueError("initial_qcd negative for some bins..", initial_qcd)
-
+            initial_qcd1 -= sample.getExpectation(nominal=True)
+            
+        for sample in failCh2:
+            if sample.sampletype == rl.Sample.SIGNAL:
+                continue
+            logging.debug("subtracting %s from qcd" % sample._name)
+            initial_qcd2 -= sample.getExpectation(nominal=True)
+            
+        for sample in failCh3:
+            if sample.sampletype == rl.Sample.SIGNAL:
+                continue
+            logging.debug("subtracting %s from qcd" % sample._name)
+            initial_qcd3 -= sample.getExpectation(nominal=True)
+            
+        if np.any(initial_qcd1 < 0.0):
+            initial_qcd1[np.where(initial_qcd1 < 0)] = 0
+            raise ValueError("initial_qcd negative for some bins..", initial_qcd1)
+        if np.any(initial_qcd2 < 0.0):
+            # raise ValueError("initial_qcd negative for some bins..", initial_qcd2)
+            initial_qcd2[np.where(initial_qcd2 < 0)] = 0
+        if np.any(initial_qcd3 < 0.0):
+            # raise ValueError("initial_qcd negative for some bins..", initial_qcd3)
+            initial_qcd3[np.where(initial_qcd3 < 0)] = 0
+        print("have negative value ",initial_qcd3)
+        
         # idea here is that the error should be 1/sqrt(N), so parametrizing it as (1 + 1/sqrt(N))^qcdparams
         # will result in qcdparams errors ~±1
         # but because qcd is poorly modelled we're scaling sigma scale
 
-        sigmascale = 10  # to scale the deviation from initial
+        sigmascale = 10  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
         if scale is not None:
             sigmascale *= scale
 
-        scaled_params = (
-            initial_qcd * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd))) ** qcd_params
+        scaled_params1 = (
+            initial_qcd1 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd1))) ** qcd_params1
         )
-
+        
+        sigmascale = 500        
+        scaled_params2 = (
+            initial_qcd2 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd2))) ** qcd_params2
+        )
+        
+        sigmascale = 40  
+        scaled_params3 = (
+            initial_qcd3 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd3))) ** qcd_params3
+        )     
+           
         # add samples
-        fail_qcd = rl.ParametericSample(
-            f"{failChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+        
+        #Set fail region below
+        fail_qcd1 = rl.ParametericSample(
+            f"{failChName1}_{CMS_PARAMS_LABEL}_qcd_datadriven",
             rl.Sample.BACKGROUND,
             m_obs,
-            scaled_params,
+            scaled_params1,
         )
-        failCh.addSample(fail_qcd)
-
-        pass_qcd = rl.TransferFactorSample(
-            f"{passChName}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+        failCh1.addSample(fail_qcd1)
+        
+        fail_qcd2 = rl.ParametericSample(
+            f"{failChName2}_{CMS_PARAMS_LABEL}_qcd_datadriven",
             rl.Sample.BACKGROUND,
-            tf_params_pass,
-            fail_qcd,
+            m_obs,
+            scaled_params2,
+        )
+        failCh2.addSample(fail_qcd2)
+        
+        fail_qcd3 = rl.ParametericSample(
+            f"{failChName3}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+            rl.Sample.BACKGROUND,
+            m_obs,
+            scaled_params3,
+        )
+        failCh3.addSample(fail_qcd3)
+                
+        #Set pass region below
+        pass_qcd_1a = rl.TransferFactorSample(
+            f"{passChName1a}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+            rl.Sample.BACKGROUND,
+            tf_params_pass_1a,
+            fail_qcd1,
             min_val=min_qcd_val,
         )
-        passCh.addSample(pass_qcd)
         
+        passCh1a.addSample(pass_qcd_1a)      
+          
+        pass_qcd_1b = rl.TransferFactorSample(
+            f"{passChName1b}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+            rl.Sample.BACKGROUND,
+            tf_params_pass_1b,
+            fail_qcd1,
+            min_val=min_qcd_val,
+        )        
+        passCh1b.addSample(pass_qcd_1b)
+        
+        pass_qcd_2a = rl.TransferFactorSample(
+            f"{passChName2a}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+            rl.Sample.BACKGROUND,
+            tf_params_pass_2a,
+            fail_qcd2,
+            min_val=min_qcd_val,
+        )
+        
+        passCh2a.addSample(pass_qcd_2a)      
+          
+        pass_qcd_2b = rl.TransferFactorSample(
+            f"{passChName2b}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+            rl.Sample.BACKGROUND,
+            tf_params_pass_2b,
+            fail_qcd2,
+            min_val=min_qcd_val,
+        )        
+        passCh2b.addSample(pass_qcd_2b)
+        
+        pass_qcd_3a = rl.TransferFactorSample(
+            f"{passChName3a}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+            rl.Sample.BACKGROUND,
+            tf_params_pass_3a,
+            fail_qcd3,
+            # # min_val=min_qcd_val,
+            min_val=min_qcd_val,
+        )
+        
+        passCh3a.addSample(pass_qcd_3a)      
+          
+        pass_qcd_3b = rl.TransferFactorSample(
+            f"{passChName3b}_{CMS_PARAMS_LABEL}_qcd_datadriven",
+            rl.Sample.BACKGROUND,
+            tf_params_pass_3b,
+            fail_qcd3,
+            # min_val=min_qcd_val,
+            min_val=min_qcd_val,
+        )        
+        passCh3b.addSample(pass_qcd_3b)
+
 main(args)

@@ -282,11 +282,11 @@ if [ $dfit = 1 ]; then
     -m 125 -f fitDiagnosticsBlinded.root:fit_b --postfit --print 2>&1 | tee $outsdir/FitShapes.txt
 fi
 
-
+# try to change "setparams" to "setparamsblinded" and see the effect
 # if [ $gofdata = 1 ]; then
-#     echo "GoF on data" #bypassFrequentistFit
+#     echo "GoF on data"
 #     combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
-#     --snapshotName MultiDimFit --bypassFrequentistFit  \
+#     --snapshotName MultiDimFit --bypassFrequentistFit \
 #     --setParameters ${maskunblindedargs},${setparams},r=0 \
 #     --freezeParameters ${freezeparams},r \
 #     -n Data -v 9 2>&1 | tee $outsdir/GoF_data.txt

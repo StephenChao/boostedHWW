@@ -92,7 +92,7 @@ outsdir="./outs"
 ccargs=""
 maskunblindedargs=""
 maskblindedargs=""
-for region in {1..3}
+for region in 1 2 3;
 do 
     cr="CR${region}"
     sra="SR${region}a"
@@ -129,6 +129,11 @@ done
 # remove last comma
 setparamsblinded=${setparamsblinded%,}
 freezeparamsblinded=${freezeparamsblinded%,}
+
+#try to set "setparams" option, referring:https://github.com/rkansal47/HHbbVV/blob/60556c4624e21ac96d3b6c17475224b92cf199c9/src/HHbbVV/combine/submit/submit_ftest.templ.sh#L78C1-L79C73
+
+# setparams="rgx{pass_.*mcstat.*}=0,rgx{fail_.*mcstat.*}=0"
+# freezeparams="rgx{pass_.*mcstat.*},rgx{fail_.*mcstat.*},rgx{.*xhy_mx.*}"
 
 #actually all the variables above is not used when do ./run_ftest.sh
 #it depends on the variables in run_blinded.sh
@@ -194,20 +199,23 @@ if [ $goftoys = 1 ]; then
     echo "Toys for $order order fit"
     combine -M GenerateOnly -m 125 -d ${wsm_snapshot}.root \
     --snapshotName MultiDimFit --bypassFrequentistFit \
-    --setParameters ${maskunblindedargs},${setparams},r=0 \
-    --freezeParameters ${freezeparams},r \
+    --setParameters ${maskunblindedargs},${setparamsblinded},r=0 \
+    --freezeParameters ${freezeparamsblinded},r \
     -n "Toys${toys_name}" -t $numtoys --saveToys -s $seed -v 9 2>&1 | tee $outsdir/gentoys.txt
 
     cd -
 fi
 
+    # try set "setparamsblinded" instead of "setparams" here and below
+    # since "setparams" is actually not used.
+    # also here, replace "freezeparams" to "freezeparamsblinded"
 
 ####################################################################################################
 # GoFs on generated toys for next order polynomials, and this is GOF
 ####################################################################################################
 
 if [ $ffits = 1 ]; then # -f
-    for ord1 in 2 3
+    for ord1 in 2
     do
         model_name="nTF_${ord1}"
         echo "Fits for $model_name"
@@ -217,10 +225,14 @@ if [ $ffits = 1 ]; then # -f
         ulimit -s unlimited
 
         combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
-        --setParameters ${maskunblindedargs},${setparams},r=0 \
-        --freezeParameters ${freezeparams},r \
+        --setParameters ${maskunblindedargs},${setparamsblinded},r=0 \
+        --freezeParameters ${freezeparamsblinded},r \
         -n Toys${toys_name} -v 9 -s $seed -t $numtoys --toysFile ${toys_file} 2>&1 | tee $outsdir/GoF_toys${toys_name}.txt
 
         cd -
     done
 fi
+
+        # try set "setparamsblinded" instead of "setparams" here and below
+        # since "setparams" is actually not used.
+        # also replace "freezeparams" to "freezeparamsblinded"

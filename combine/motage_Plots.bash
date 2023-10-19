@@ -93,8 +93,8 @@ idx=-1; unset img;
 # ((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/Full-Run2_METReco_CR1postfit,order=3_.pdf'
 # ((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/GoF/23Oct11/gof3.pdf'
 
-((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/GoF/23Oct11/gof2.pdf'
-((idx++)); img[idx]="/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/GoF/23Oct11/f2_3.pdf"
+# ((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/GoF/23Oct11/gof2.pdf'
+# ((idx++)); img[idx]="/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/GoF/23Oct11/f2_3.pdf"
 
 # ((idx++)); img[idx]='./output1a.png'
 # ((idx++)); img[idx]='./output2a.png'
@@ -117,8 +117,18 @@ idx=-1; unset img;
 # ((idx++)); img[idx]='./impacts_SR2bsideband.pdf'
 # ((idx++)); img[idx]='./impacts_SR3bsideband.pdf'
 
+((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/18Oct2023/Full-Run2_METReco_SR1apostfit,order=2_.pdf'
+((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/18Oct2023/Full-Run2_METReco_SR1bpostfit,order=2_.pdf'
+((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/18Oct2023/Full-Run2_METReco_CR1postfit,order=2_.pdf'
+((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/18Oct2023/Full-Run2_METReco_SR2apostfit,order=2_.pdf'
+((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/18Oct2023/Full-Run2_METReco_SR2bpostfit,order=2_.pdf'
+((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/18Oct2023/Full-Run2_METReco_CR2postfit,order=2_.pdf'
+((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/18Oct2023/Full-Run2_METReco_SR3apostfit,order=2_.pdf'
+((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/18Oct2023/Full-Run2_METReco_SR3bpostfit,order=2_.pdf'
+((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/18Oct2023/Full-Run2_METReco_CR3postfit,order=2_.pdf'
+
 
 # montage -mode concatenate -tile 3x2 ${img[*]}  -resize 4000x -border 0  -geometry +0+0 Impacts_OnlyQCDRP.png;
-montage -mode concatenate -tile 2x1 ${img[*]} /ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/Order2vs3.png;
+montage -mode concatenate -tile 3x3 ${img[*]} /ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/Postfit_order2.png;
 ##display Multi_PS_.png &
 #

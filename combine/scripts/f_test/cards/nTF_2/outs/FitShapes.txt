@@ -194,24 +194,24 @@
 >> Doing prefit: SR3bBlinded,TotalProcs
 Bin                       Total relative bkg uncert. (prefit)
 ----------------------------------------------------------
-CR1                       0.00043   
-CR1Blinded                0.00042   
-CR2                       0.00131   
-CR2Blinded                0.00148   
-CR3                       0.00607   
-CR3Blinded                0.00847   
-SR1a                      0.00152   
-SR1aBlinded               0.00151   
-SR1b                      0.00060   
-SR1bBlinded               0.00062   
-SR2a                      0.00974   
-SR2aBlinded               0.01238   
-SR2b                      0.00213   
-SR2bBlinded               0.00247   
-SR3a                      0.02544   
-SR3aBlinded               0.03248   
-SR3b                      0.01114   
-SR3bBlinded               0.01552   
+CR1                       0.00029   
+CR1Blinded                0.00027   
+CR2                       0.00060   
+CR2Blinded                0.00065   
+CR3                       0.00300   
+CR3Blinded                0.00438   
+SR1a                      0.00090   
+SR1aBlinded               0.00092   
+SR1b                      0.00040   
+SR1bBlinded               0.00038   
+SR2a                      0.00630   
+SR2aBlinded               0.00854   
+SR2b                      0.00098   
+SR2bBlinded               0.00112   
+SR3a                      0.01592   
+SR3aBlinded               0.02325   
+SR3b                      0.00606   
+SR3bBlinded               0.00893   
 >> Doing postfit: CR1,CMS_HWW_boosted_qcd_datadriven
 >> Doing postfit: CR1,rest
 >> Doing postfit: CR1,ttbar_st
@@ -389,144 +389,144 @@ SR3bBlinded               0.01552
 
 Bin                       Total relative bkg uncert. (postfit)
 ----------------------------------------------------------
-CR1                       0.00035   
+CR1                       0.00029   
 CR1Blinded                0.00051   
-CR2                       0.00137   
-CR2Blinded                0.00276   
-CR3                       0.00688   
-CR3Blinded                0.01712   
-SR1a                      0.00850   
-SR1aBlinded               0.00769   
-SR1b                      0.00126   
-SR1bBlinded               0.00131   
-SR2a                      0.05653   
-SR2aBlinded               0.05074   
-SR2b                      0.00875   
-SR2bBlinded               0.00740   
-SR3a                      0.19938   
-SR3aBlinded               0.16888   
-SR3b                      0.04351   
-SR3bBlinded               0.03738   
+CR2                       0.00114   
+CR2Blinded                0.00275   
+CR3                       0.00522   
+CR3Blinded                0.01639   
+SR1a                      0.00812   
+SR1aBlinded               0.00737   
+SR1b                      0.00123   
+SR1bBlinded               0.00113   
+SR2a                      0.05229   
+SR2aBlinded               0.04855   
+SR2b                      0.00811   
+SR2bBlinded               0.00720   
+SR3a                      0.20448   
+SR3aBlinded               0.14127   
+SR3b                      0.03574   
+SR3bBlinded               0.03193   
 
 Bin                       Process              Scale factor
 ----------------------------------------------------------
-CR1                       CMS_HWW_boosted_qcd_datadriven 0.99998   
-CR1                       rest                 1.00027   
-CR1                       ttbar_st             1.00461   
-CR1                       wjets                1.00027   
-CR1Blinded                CMS_HWW_boosted_qcd_datadriven 0.99996   
-CR1Blinded                rest                 1.00027   
-CR1Blinded                ttbar_st             1.00461   
-CR1Blinded                wjets                1.00027   
-CR2                       CMS_HWW_boosted_qcd_datadriven 0.99995   
-CR2                       rest                 1.00023   
-CR2                       ttbar_st             1.00461   
-CR2                       wjets                1.00029   
-CR2Blinded                CMS_HWW_boosted_qcd_datadriven 0.99988   
-CR2Blinded                rest                 1.00026   
-CR2Blinded                ttbar_st             1.00469   
-CR2Blinded                wjets                1.00019   
-CR3                       CMS_HWW_boosted_qcd_datadriven 0.99981   
-CR3                       rest                 1.00017   
-CR3                       ttbar_st             1.00458   
-CR3                       wjets                1.00016   
-CR3Blinded                CMS_HWW_boosted_qcd_datadriven 0.99936   
-CR3Blinded                rest                 1.00003   
-CR3Blinded                ttbar_st             1.00457   
-CR3Blinded                wjets                1.00017   
-SR1a                      CMS_HWW_boosted_qcd_datadriven 0.66606   
-SR1a                      VBF                  1.00025   
-SR1a                      VH                   1.00026   
-SR1a                      ggF                  1.00032   
-SR1a                      rest                 1.00059   
-SR1a                      ttH                  1.00031   
-SR1a                      ttbar_st             1.00459   
-SR1a                      wjets                1.00061   
-SR1aBlinded               CMS_HWW_boosted_qcd_datadriven 0.64942   
-SR1aBlinded               VBF                  1.00072   
-SR1aBlinded               VH                   1.00043   
-SR1aBlinded               ggF                  1.00095   
-SR1aBlinded               rest                 1.00035   
-SR1aBlinded               ttH                  1.00048   
-SR1aBlinded               ttbar_st             1.00463   
-SR1aBlinded               wjets                1.00039   
-SR1b                      CMS_HWW_boosted_qcd_datadriven 0.97189   
-SR1b                      VBF                  1.00027   
-SR1b                      VH                   1.00027   
-SR1b                      ggF                  1.00027   
-SR1b                      rest                 1.00027   
-SR1b                      ttH                  1.00027   
-SR1b                      ttbar_st             1.00461   
-SR1b                      wjets                1.00027   
-SR1bBlinded               CMS_HWW_boosted_qcd_datadriven 0.94974   
-SR1bBlinded               VBF                  1.00096   
-SR1bBlinded               VH                   1.00027   
-SR1bBlinded               ggF                  1.00079   
-SR1bBlinded               rest                 1.00027   
-SR1bBlinded               ttH                  1.00027   
-SR1bBlinded               ttbar_st             1.00461   
-SR1bBlinded               wjets                1.00027   
-SR2a                      CMS_HWW_boosted_qcd_datadriven 0.67336   
-SR2a                      VBF                  0.99994   
-SR2a                      VH                   1.00048   
-SR2a                      ggF                  1.00045   
-SR2a                      rest                 0.99408   
-SR2a                      ttH                  0.99898   
-SR2a                      ttbar_st             1.00310   
-SR2a                      wjets                0.99917   
-SR2aBlinded               CMS_HWW_boosted_qcd_datadriven 0.57407   
-SR2aBlinded               VBF                  0.99872   
-SR2aBlinded               VH                   0.99948   
-SR2aBlinded               ggF                  1.00197   
-SR2aBlinded               rest                 0.98769   
-SR2aBlinded               ttH                  0.99675   
-SR2aBlinded               ttbar_st             1.00175   
-SR2aBlinded               wjets                0.99750   
-SR2b                      CMS_HWW_boosted_qcd_datadriven 0.97296   
-SR2b                      VBF                  1.00036   
-SR2b                      VH                   1.00027   
-SR2b                      ggF                  1.00027   
-SR2b                      rest                 1.00043   
-SR2b                      ttH                  1.00041   
-SR2b                      ttbar_st             1.00474   
-SR2b                      wjets                1.00033   
-SR2bBlinded               CMS_HWW_boosted_qcd_datadriven 0.96837   
-SR2bBlinded               VBF                  1.00063   
-SR2bBlinded               VH                   1.00030   
-SR2bBlinded               ggF                  1.00056   
-SR2bBlinded               rest                 1.00033   
-SR2bBlinded               ttH                  1.00031   
-SR2bBlinded               ttbar_st             1.00465   
-SR2bBlinded               wjets                1.00021   
-SR3a                      CMS_HWW_boosted_qcd_datadriven 1.25954   
-SR3a                      VBF                  1.00004   
-SR3a                      VH                   0.99972   
-SR3a                      ggF                  1.00025   
-SR3a                      rest                 0.99864   
-SR3a                      ttH                  0.99961   
-SR3a                      ttbar_st             1.00431   
-SR3a                      wjets                0.99969   
-SR3aBlinded               CMS_HWW_boosted_qcd_datadriven 1.45641   
-SR3aBlinded               VBF                  0.99832   
-SR3aBlinded               VH                   0.99763   
-SR3aBlinded               ggF                  0.99854   
-SR3aBlinded               rest                 0.99844   
-SR3aBlinded               ttH                  0.99823   
-SR3aBlinded               ttbar_st             1.00385   
-SR3aBlinded               wjets                0.99875   
-SR3b                      CMS_HWW_boosted_qcd_datadriven 1.00642   
+CR1                       CMS_HWW_boosted_qcd_datadriven 0.99999   
+CR1                       rest                 1.00017   
+CR1                       ttbar_st             1.00017   
+CR1                       wjets                1.00017   
+CR1Blinded                CMS_HWW_boosted_qcd_datadriven 0.99999   
+CR1Blinded                rest                 1.00017   
+CR1Blinded                ttbar_st             1.00017   
+CR1Blinded                wjets                1.00017   
+CR2                       CMS_HWW_boosted_qcd_datadriven 1.00000   
+CR2                       rest                 1.00013   
+CR2                       ttbar_st             1.00017   
+CR2                       wjets                1.00019   
+CR2Blinded                CMS_HWW_boosted_qcd_datadriven 0.99999   
+CR2Blinded                rest                 1.00015   
+CR2Blinded                ttbar_st             1.00024   
+CR2Blinded                wjets                1.00009   
+CR3                       CMS_HWW_boosted_qcd_datadriven 1.00005   
+CR3                       rest                 1.00015   
+CR3                       ttbar_st             1.00013   
+CR3                       wjets                1.00006   
+CR3Blinded                CMS_HWW_boosted_qcd_datadriven 1.00017   
+CR3Blinded                rest                 1.00014   
+CR3Blinded                ttbar_st             1.00010   
+CR3Blinded                wjets                1.00001   
+SR1a                      CMS_HWW_boosted_qcd_datadriven 0.66617   
+SR1a                      VBF                  1.00015   
+SR1a                      VH                   1.00016   
+SR1a                      ggF                  1.00022   
+SR1a                      rest                 1.00049   
+SR1a                      ttH                  1.00021   
+SR1a                      ttbar_st             1.00014   
+SR1a                      wjets                1.00051   
+SR1aBlinded               CMS_HWW_boosted_qcd_datadriven 0.64952   
+SR1aBlinded               VBF                  1.00062   
+SR1aBlinded               VH                   1.00033   
+SR1aBlinded               ggF                  1.00085   
+SR1aBlinded               rest                 1.00025   
+SR1aBlinded               ttH                  1.00038   
+SR1aBlinded               ttbar_st             1.00019   
+SR1aBlinded               wjets                1.00029   
+SR1b                      CMS_HWW_boosted_qcd_datadriven 0.97191   
+SR1b                      VBF                  1.00017   
+SR1b                      VH                   1.00017   
+SR1b                      ggF                  1.00017   
+SR1b                      rest                 1.00017   
+SR1b                      ttH                  1.00017   
+SR1b                      ttbar_st             1.00017   
+SR1b                      wjets                1.00017   
+SR1bBlinded               CMS_HWW_boosted_qcd_datadriven 0.94977   
+SR1bBlinded               VBF                  1.00086   
+SR1bBlinded               VH                   1.00017   
+SR1bBlinded               ggF                  1.00069   
+SR1bBlinded               rest                 1.00017   
+SR1bBlinded               ttH                  1.00017   
+SR1bBlinded               ttbar_st             1.00017   
+SR1bBlinded               wjets                1.00017   
+SR2a                      CMS_HWW_boosted_qcd_datadriven 0.67427   
+SR2a                      VBF                  0.99984   
+SR2a                      VH                   1.00046   
+SR2a                      ggF                  1.00035   
+SR2a                      rest                 0.96546   
+SR2a                      ttH                  1.00132   
+SR2a                      ttbar_st             1.00122   
+SR2a                      wjets                1.00104   
+SR2aBlinded               CMS_HWW_boosted_qcd_datadriven 0.57514   
+SR2aBlinded               VBF                  0.99962   
+SR2aBlinded               VH                   1.00254   
+SR2aBlinded               ggF                  1.00298   
+SR2aBlinded               rest                 0.92847   
+SR2aBlinded               ttH                  1.00318   
+SR2aBlinded               ttbar_st             1.00217   
+SR2aBlinded               wjets                1.00225   
+SR2b                      CMS_HWW_boosted_qcd_datadriven 0.97314   
+SR2b                      VBF                  1.00026   
+SR2b                      VH                   1.00017   
+SR2b                      ggF                  1.00017   
+SR2b                      rest                 1.00033   
+SR2b                      ttH                  1.00030   
+SR2b                      ttbar_st             1.00029   
+SR2b                      wjets                1.00022   
+SR2bBlinded               CMS_HWW_boosted_qcd_datadriven 0.96855   
+SR2bBlinded               VBF                  1.00053   
+SR2bBlinded               VH                   1.00020   
+SR2bBlinded               ggF                  1.00046   
+SR2bBlinded               rest                 1.00023   
+SR2bBlinded               ttH                  1.00021   
+SR2bBlinded               ttbar_st             1.00020   
+SR2bBlinded               wjets                1.00011   
+SR3a                      CMS_HWW_boosted_qcd_datadriven 1.26527   
+SR3a                      VBF                  1.00015   
+SR3a                      VH                   1.00009   
+SR3a                      ggF                  1.00049   
+SR3a                      rest                 0.99796   
+SR3a                      ttH                  0.99973   
+SR3a                      ttbar_st             0.99978   
+SR3a                      wjets                0.99951   
+SR3aBlinded               CMS_HWW_boosted_qcd_datadriven 1.46770   
+SR3aBlinded               VBF                  1.00052   
+SR3aBlinded               VH                   1.00018   
+SR3aBlinded               ggF                  1.00197   
+SR3aBlinded               rest                 0.99769   
+SR3aBlinded               ttH                  0.99889   
+SR3aBlinded               ttbar_st             0.99943   
+SR3aBlinded               wjets                0.99859   
+SR3b                      CMS_HWW_boosted_qcd_datadriven 1.00690   
 SR3b                      VBF                  1.00021   
-SR3b                      VH                   1.00026   
-SR3b                      ggF                  1.00036   
-SR3b                      rest                 1.00106   
-SR3b                      ttH                  1.00088   
-SR3b                      ttbar_st             1.00534   
-SR3b                      wjets                1.00094   
-SR3bBlinded               CMS_HWW_boosted_qcd_datadriven 1.05657   
-SR3bBlinded               VBF                  0.99968   
-SR3bBlinded               VH                   1.00130   
-SR3bBlinded               ggF                  1.00091   
-SR3bBlinded               rest                 1.00198   
-SR3bBlinded               ttH                  1.00148   
-SR3bBlinded               ttbar_st             1.00605   
-SR3bBlinded               wjets                1.00151   
+SR3b                      VH                   1.00021   
+SR3b                      ggF                  1.00022   
+SR3b                      rest                 1.00076   
+SR3b                      ttH                  1.00075   
+SR3b                      ttbar_st             1.00087   
+SR3b                      wjets                1.00082   
+SR3bBlinded               CMS_HWW_boosted_qcd_datadriven 1.05841   
+SR3bBlinded               VBF                  1.00115   
+SR3bBlinded               VH                   1.00141   
+SR3bBlinded               ggF                  1.00095   
+SR3bBlinded               rest                 1.00140   
+SR3bBlinded               ttH                  1.00131   
+SR3bBlinded               ttbar_st             1.00164   
+SR3bBlinded               wjets                1.00146   

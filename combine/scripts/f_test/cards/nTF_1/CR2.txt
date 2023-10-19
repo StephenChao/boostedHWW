@@ -1,38 +1,35 @@
-# Datacard for <Channel (CR2) instance at 0x7f41595d4f10> generated on 2023-10-18 14:58:37.004561
+# Datacard for <Channel (CR2) instance at 0x7fc166419790> generated on 2023-10-19 16:20:57.504897
 imax 1 # number of categories ('bins' but here we are using shape templates)
 jmax 3 # number of samples minus 1
-kmax 24 # number of nuisance parameters
+kmax 21 # number of nuisance parameters
 shapes * CR2 HWWfullhad.root HWWfullhad:CR2_$PROCESS HWWfullhad:CR2_$PROCESS_$SYSTEMATIC
 bin CR2
 observation 250166.000
-bin                                               CR2       CR2       CR2                             CR2
-process                                      ttbar_st     wjets      rest  CMS_HWW_boosted_qcd_datadriven
-process                                             1         2         3                               4
-rate                                         5272.493  4409.401  1866.575                           1.000
-CMS_HWW_boosted_CR2_mcstat_bin0 shape          1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin1 shape          1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin10 shape         1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin11 shape         1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin12 shape         1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin13 shape         1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin14 shape         1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin15 shape         1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin16 shape         1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin17 shape         1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin18 shape         1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin19 shape         1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin2 shape          1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin3 shape          1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin4 shape          1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin5 shape          1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin6 shape          1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin7 shape          1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin8 shape          1.0000    1.0000    1.0000                               -
-CMS_HWW_boosted_CR2_mcstat_bin9 shape          1.0000    1.0000    1.0000                               -
-QCDscale_ttbar lnN                      0.9780/1.0300         -         -                               -
-lumi_13TeV_correlated lnN                      1.0130    1.0130    1.0130                               -
-pdf_gg lnN                                     1.0420         -         -                               -
-pdf_qqbar lnN                                  1.0270         -         -                               -
+bin                                          CR2       CR2       CR2                             CR2
+process                                 ttbar_st     wjets      rest  CMS_HWW_boosted_qcd_datadriven
+process                                        1         2         3                               4
+rate                                    5272.493  4409.401  1866.575                           1.000
+CMS_HWW_boosted_CR2_mcstat_bin0 shape     1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin1 shape     1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin10 shape    1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin11 shape    1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin12 shape    1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin13 shape    1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin14 shape    1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin15 shape    1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin16 shape    1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin17 shape    1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin18 shape    1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin19 shape    1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin2 shape     1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin3 shape     1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin4 shape     1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin5 shape     1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin6 shape     1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin7 shape     1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin8 shape     1.0000    1.0000    1.0000                               -
+CMS_HWW_boosted_CR2_mcstat_bin9 shape     1.0000    1.0000    1.0000                               -
+lumi_13TeV_correlated lnN                 1.0130    1.0130    1.0130                               -
 CMS_HWW_boosted_tf_dataResidual_CR2_Bin0 extArg HWWfullhad.root:HWWfullhad
 CMS_HWW_boosted_tf_dataResidual_CR2_Bin1 extArg HWWfullhad.root:HWWfullhad
 CMS_HWW_boosted_tf_dataResidual_CR2_Bin10 extArg HWWfullhad.root:HWWfullhad

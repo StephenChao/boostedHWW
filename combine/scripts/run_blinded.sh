@@ -334,9 +334,10 @@ if [ $impactsi = 1 ]; then
     combineTool.py -M Impacts --snapshotName MultiDimFit -m 125 -n "impacts" \
     -t -1 --bypassFrequentistFit --toysFrequentist --expectSignal 1 \
     -d ${wsm_snapshot}.root --doInitialFit --robustFit 1 \
-    # ${unblindedparams} 
-    --floatParameters ${freezeparamsblinded} \
-     --cminDefaultMinimizerStrategy=1 -v 1 2>&1 | tee $outsdir/Impacts_init.txt
+    ${unblindedparams} --floatParameters ${freezeparamsblinded} \
+     --cminDefaultMinimizerStrategy=0 -v 1 2>&1 | tee $outsdir/Impacts_init.txt
+
+    # plotImpacts.py -i impacts.json -o impacts   
 fi
 
 
@@ -362,13 +363,21 @@ fi
 
 
 if [ $impactsc != 0 ]; then
-    echo "Collecting impacts"
-    combineTool.py -M Impacts --snapshotName MultiDimFit \
-    -m 125 -n "impacts" -d ${wsm_snapshot}.root \
-    --setParameters ${maskblindedargs} --floatParameters ${freezeparamsblinded} \
-    -t -1 --named $impactsc \
-    --setParameterRanges r=-0.5,20 -v 1 -o impacts.json 2>&1 | tee $outsdir/Impacts_collect.txt
 
+    echo "Collecting impacts"
+
+    # combineTool.py -M Impacts --snapshotName MultiDimFit \
+    # -m 125 -n "impacts" -d ${wsm_snapshot}.root \
+    # --setParameters ${maskblindedargs} --floatParameters ${freezeparamsblinded} \
+    # -t -1 --named $impactsc \
+    # --setParameterRanges r=-0.5,20 -v 1 -o impacts.json 2>&1 | tee $outsdir/Impacts_collect.txt
+
+    # plotImpacts.py -i impacts.json -o impacts
+
+    combineTool.py -M Impacts -d ${wsm_snapshot}.root --setParameters ${maskblindedargs} --floatParameters ${freezeparamsblinded} --cminDefaultMinimizerStrategy=0 --expectSignal=1 -t -1 -m 125 --doInitialFit --robustFit 1   --rMin -40 --rMax 40
+    combineTool.py -M Impacts -d ${wsm_snapshot}.root --setParameters ${maskblindedargs} --floatParameters ${freezeparamsblinded} --cminDefaultMinimizerStrategy=0 --expectSignal=1 -t -1 -m 125 --robustFit 1 --doFits  --rMin -40 --rMax 40
+    combineTool.py -M Impacts -d ${wsm_snapshot}.root --setParameters ${maskblindedargs} --floatParameters ${freezeparamsblinded} --cminDefaultMinimizerStrategy=0 --expectSignal=1 -t -1 -m 125 -o impacts.json  --rMin -40 --rMax 40
+    
     plotImpacts.py -i impacts.json -o impacts
 fi
 

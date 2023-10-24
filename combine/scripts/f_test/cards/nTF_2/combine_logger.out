@@ -1,48 +1,1130 @@
-INFO: (function: run) Combine.cc: 708 -- Freezing the following parameters: 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR1_Bin4 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR2_Bin4 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR3_Bin4 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR1_Bin5 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR2_Bin5 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR3_Bin5 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR1_Bin6 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR2_Bin6 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR3_Bin6 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR1_Bin7 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR2_Bin7 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR3_Bin7 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR1_Bin8 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR2_Bin8 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR3_Bin8 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR1_Bin9 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR2_Bin9 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR3_Bin9 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR1_Bin10 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR2_Bin10 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR3_Bin10 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR1_Bin11 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR2_Bin11 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_tf_dataResidual_CR3_Bin11 
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.5
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.5
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.5
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.5
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-ERROR: (function: runSpecific) [WARNING]: Unable to determine uncertainties on all fit parameters in b-only fit. Have a look at https://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/part3/nonstandard/#fit-parameter-uncertainties for more information.
-DEBUG: (function: runSpecific) FitDiagnostics.cc: 318 -- Fit B-only, status = 300, numBadNLL = 0, covariance quality = 0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.5
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.5
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: doFit) FitterAlgoBase.cc: 344 -- Running Minos for POI r
-ERROR: (function: runSpecific) [WARNING]: Unable to determine uncertainties on all fit parameters in s+b fit. Have a look at https://cms-analysis.github.io/HiggsAnalysis-CombinedLimit/part3/nonstandard/#fit-parameter-uncertainties for more information.
-DEBUG: (function: runSpecific) FitDiagnostics.cc: 443 -- Fit S+B, status = 300, numBadNLL = 0, covariance quality = 0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin14 at boundary (within ~1sigma): 0.387261+/-5.79826
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttH_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_wjets_mcstat_bin18 at boundary (within ~1sigma): -0.0148045+/-5.99935
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin0 at boundary (within ~1sigma): -0.0200185+/-6.00972
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VBF_mcstat_bin18 at boundary (within ~1sigma): -0.00571396+/-6.00281
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_ttH_mcstat_bin2 at boundary (within ~1sigma): 0.00602103+/-5.99675
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin16 at boundary (within ~1sigma): 0.0958093+/-5.95205
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin14 at boundary (within ~1sigma): -0.0345105+/-6.01666
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VH_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_wjets_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin13 at boundary (within ~1sigma): 0.0668648+/-5.96654
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin12 at boundary (within ~1sigma): 0.215945+/-5.88938
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_wjets_mcstat_bin1 at boundary (within ~1sigma): 0.0423922+/-5.97876
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin16 at boundary (within ~1sigma): -0.395517+/-6.19758
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin16 at boundary (within ~1sigma): 0.140687+/-5.86042
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_ttbar_st_mcstat_bin1 at boundary (within ~1sigma): 0.0257004+/-5.98711
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_wjets_mcstat_bin1 at boundary (within ~1sigma): 0.0308954+/-5.98454
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin2 at boundary (within ~1sigma): -0.131617+/-6.06489
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin19 at boundary (within ~1sigma): -0.0109072+/-6.0051
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VBF_mcstat_bin0 at boundary (within ~1sigma): -0.0351684+/-6.0171
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VH_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ggF_mcstat_bin1 at boundary (within ~1sigma): -0.0655147+/-6.03168
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ggF_mcstat_bin2 at boundary (within ~1sigma): -0.16197+/-6.07903
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin3 at boundary (within ~1sigma): 0.0522945+/-5.97384
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VH_mcstat_bin19 at boundary (within ~1sigma): 0.00535134+/-5.99708
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin0 at boundary (within ~1sigma): 0.0418351+/-5.9787
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin1 at boundary (within ~1sigma): 0.000800955+/-5.99931
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin1 at boundary (within ~1sigma): -0.276878+/-6.13142
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VH_mcstat_bin2 at boundary (within ~1sigma): -0.0513348+/-6.02485
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_wjets_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttbar_st_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_ttbar_st_mcstat_bin2 at boundary (within ~1sigma): 0.0264428+/-5.98667
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin1 at boundary (within ~1sigma): -0.018378+/-6.00878
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_wjets_mcstat_bin19 at boundary (within ~1sigma): 0.0330622+/-5.98341
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin16 at boundary (within ~1sigma): -0.049458+/-6.02421
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin14 at boundary (within ~1sigma): 0.055157+/-5.97241
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin17 at boundary (within ~1sigma): -0.16725+/-6.08242
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin12 at boundary (within ~1sigma): -0.124873+/-6.06106
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin2 at boundary (within ~1sigma): 0.0132589+/-5.99318
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin16 at boundary (within ~1sigma): 0.406376+/-5.77944
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin1 at boundary (within ~1sigma): 0.0282941+/-5.98584
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttH_mcstat_bin2 at boundary (within ~1sigma): -0.0373637+/-6.01801
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_VH_mcstat_bin2 at boundary (within ~1sigma): 0.00694809+/-5.9963
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_wjets_mcstat_bin2 at boundary (within ~1sigma): -0.166461+/-6.08218
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VH_mcstat_bin18 at boundary (within ~1sigma): -0.00262066+/-6.00107
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin0 at boundary (within ~1sigma): -0.00217088+/-6.00078
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin18 at boundary (within ~1sigma): -0.0181538+/-6.0088
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin16 at boundary (within ~1sigma): 0.0867784+/-5.95619
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin15 at boundary (within ~1sigma): 0.16007+/-5.91793
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin13 at boundary (within ~1sigma): -0.558289+/-6.25598
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin17 at boundary (within ~1sigma): -0.142819+/-6.06894
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin18 at boundary (within ~1sigma): 0.164321+/-5.91711
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin18 at boundary (within ~1sigma): 0.156561+/-5.92097
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ggF_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin0 at boundary (within ~1sigma): 0.143333+/-5.92772
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin3 at boundary (within ~1sigma): 0.170846+/-5.91356
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin16 at boundary (within ~1sigma): 0.312378+/-5.83889
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_rest_mcstat_bin2 at boundary (within ~1sigma): -0.0798555+/-6.03891
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttH_mcstat_bin1 at boundary (within ~1sigma): -0.0215101+/-6.01025
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_rest_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin13 at boundary (within ~1sigma): -0.00712576+/-6.00325
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin2 at boundary (within ~1sigma): -0.0330363+/-6.01588
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ggF_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_ttbar_st_mcstat_bin1 at boundary (within ~1sigma): -0.054397+/-6.02629
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin17 at boundary (within ~1sigma): -0.0310998+/-6.01496
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin18 at boundary (within ~1sigma): 0.0322311+/-5.9823
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin14 at boundary (within ~1sigma): -0.0107333+/-6.00498
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin13 at boundary (within ~1sigma): 0.0367679+/-5.98156
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin19 at boundary (within ~1sigma): -0.18302+/-6.08899
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ggF_mcstat_bin1 at boundary (within ~1sigma): 0.0341322+/-5.98292
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttbar_st_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_wjets_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VBF_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_rest_mcstat_bin19 at boundary (within ~1sigma): 0.104931+/-5.9461
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin15 at boundary (within ~1sigma): -0.19992+/-6.09685
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin18 at boundary (within ~1sigma): -0.139659+/-6.06858
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttH_mcstat_bin0 at boundary (within ~1sigma): -0.00634079+/-6.00283
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_wjets_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin12 at boundary (within ~1sigma): -0.0459233+/-6.02216
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin12 at boundary (within ~1sigma): -0.00872606+/-6.00404
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin19 at boundary (within ~1sigma): 0.0570846+/-5.97145
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin14 at boundary (within ~1sigma): 0.0714566+/-5.96203
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin17 at boundary (within ~1sigma): 0.0561188+/-5.97193
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_rest_mcstat_bin18 at boundary (within ~1sigma): -0.0840505+/-4.40761
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin1 at boundary (within ~1sigma): 0.00446731+/-5.99751
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin19 at boundary (within ~1sigma): 0.00215797+/-5.99866
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VH_mcstat_bin1 at boundary (within ~1sigma): -0.0341804+/-6.01644
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin16 at boundary (within ~1sigma): -0.10213+/-6.0495
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin18 at boundary (within ~1sigma): -0.0462988+/-6.02236
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin12 at boundary (within ~1sigma): 0.391788+/-5.61921
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_rest_mcstat_bin1 at boundary (within ~1sigma): 0.0651434+/-5.9668
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VBF_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_rest_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin14 at boundary (within ~1sigma): 0.401831+/-5.78506
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ggF_mcstat_bin19 at boundary (within ~1sigma): 0.0139778+/-5.99286
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttH_mcstat_bin18 at boundary (within ~1sigma): -0.00610276+/-6.00303
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin19 at boundary (within ~1sigma): 0.0465469+/-5.97672
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin15 at boundary (within ~1sigma): 0.115811+/-5.94072
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin17 at boundary (within ~1sigma): -0.20627+/-6.1012
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ggF_mcstat_bin18 at boundary (within ~1sigma): -0.00525666+/-6.00256
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttH_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttbar_st_mcstat_bin2 at boundary (within ~1sigma): -0.0720732+/-6.0351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttH_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin13 at boundary (within ~1sigma): -0.0641346+/-6.03098
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin19 at boundary (within ~1sigma): 0.202673+/-5.88718
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttH_mcstat_bin1 at boundary (within ~1sigma): 0.0123406+/-5.99365
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin19 at boundary (within ~1sigma): -0.18388+/-6.09193
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin18 at boundary (within ~1sigma): 0.03723+/-5.98138
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin2 at boundary (within ~1sigma): 0.0136773+/-5.993
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttH_mcstat_bin19 at boundary (within ~1sigma): 0.0108146+/-5.99441
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VBF_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin12 at boundary (within ~1sigma): 0.138741+/-5.91205
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_rest_mcstat_bin2 at boundary (within ~1sigma): 0.0885422+/-5.95569
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ggF_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin19 at boundary (within ~1sigma): 0.176548+/-5.90869
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin12 at boundary (within ~1sigma): 0.00691932+/-5.99631
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VH_mcstat_bin1 at boundary (within ~1sigma): 0.0145124+/-5.99258
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_VBF_mcstat_bin1 at boundary (within ~1sigma): -0.052233+/-6.02527
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_ttH_mcstat_bin1 at boundary (within ~1sigma): -0.00843968+/-6.00385
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin3 at boundary (within ~1sigma): 0.0945143+/-5.95085
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin17 at boundary (within ~1sigma): 0.00952785+/-5.99523
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VBF_mcstat_bin1 at boundary (within ~1sigma): -0.23427+/-6.11208
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin3 at boundary (within ~1sigma): -0.0297117+/-6.01426
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_wjets_mcstat_bin1 at boundary (within ~1sigma): -0.073018+/-6.03535
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin13 at boundary (within ~1sigma): -0.190002+/-6.09225
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin3 at boundary (within ~1sigma): 0.0329704+/-5.97474
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin3 at boundary (within ~1sigma): 0.0798092+/-5.00322
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin12 at boundary (within ~1sigma): -0.0118714+/-6.00559
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin0 at boundary (within ~1sigma): -0.00370829+/-6.00156
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin13 at boundary (within ~1sigma): -0.0191873+/-6.00912
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin15 at boundary (within ~1sigma): -0.550003+/-6.25551
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_ggF_mcstat_bin1 at boundary (within ~1sigma): -0.0386954+/-6.01865
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttbar_st_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin17 at boundary (within ~1sigma): 0.45518+/-5.7529
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VBF_mcstat_bin1 at boundary (within ~1sigma): 0.0237782+/-5.98803
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin15 at boundary (within ~1sigma): -0.146518+/-6.07054
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin13 at boundary (within ~1sigma): -0.530981+/-6.24569
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_VH_mcstat_bin1 at boundary (within ~1sigma): -0.0149462+/-6.00704
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin18 at boundary (within ~1sigma): -0.0255332+/-5.86357
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_wjets_mcstat_bin1 at boundary (within ~1sigma): -0.111537+/-6.05393
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin14 at boundary (within ~1sigma): 0.00897303+/-5.9953
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VBF_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_wjets_mcstat_bin0 at boundary (within ~1sigma): -0.0127642+/-6.00603
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin13 at boundary (within ~1sigma): 0.0671359+/-5.96643
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin1 at boundary (within ~1sigma): 0.0395305+/-5.98023
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VBF_mcstat_bin2 at boundary (within ~1sigma): -0.0227297+/-6.01087
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin15 at boundary (within ~1sigma): 0.0987124+/-5.95057
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin2 at boundary (within ~1sigma): 0.0158654+/-5.9919
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin12 at boundary (within ~1sigma): 0.099584+/-5.94617
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin15 at boundary (within ~1sigma): 0.033507+/-5.98317
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin14 at boundary (within ~1sigma): 0.0850673+/-5.95743
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ggF_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VH_mcstat_bin0 at boundary (within ~1sigma): -0.00847952+/-6.00388
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin17 at boundary (within ~1sigma): -0.0468202+/-6.02293
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin15 at boundary (within ~1sigma): -0.0426527+/-6.02056
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin14 at boundary (within ~1sigma): -0.211757+/-6.10552
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_wjets_mcstat_bin2 at boundary (within ~1sigma): 0.0336402+/-5.98311
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin3 at boundary (within ~1sigma): 0.026526+/-5.98667
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttbar_st_mcstat_bin1 at boundary (within ~1sigma): -0.03775+/-6.01817
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin17 at boundary (within ~1sigma): -0.0084534+/-6.00415
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin3 at boundary (within ~1sigma): -0.00932538+/-5.99328
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin2 at boundary (within ~1sigma): -0.0333662+/-6.01611
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_ggF_mcstat_bin2 at boundary (within ~1sigma): 0.0216071+/-5.9891
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin15 at boundary (within ~1sigma): -0.439885+/-6.2101
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin18 at boundary (within ~1sigma): 0.0150929+/-5.99229
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_rest_mcstat_bin1 at boundary (within ~1sigma): -0.195328+/-6.09454
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin19 at boundary (within ~1sigma): 0.0697053+/-5.96502
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin16 at boundary (within ~1sigma): -0.0514537+/-6.02484
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VH_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin2 at boundary (within ~1sigma): -0.0161115+/-6.0079
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter BR_hww at boundary (within ~1sigma): -0.000537207+/-8.41397
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VH_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin3 at boundary (within ~1sigma): -0.0579407+/-6.02894
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttH_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.99971
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin12 at boundary (within ~1sigma): -0.406332+/-13.6502
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin13 at boundary (within ~1sigma): -0.49928+/-11.9278
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin14 at boundary (within ~1sigma): -0.208742+/-14.8143
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin18 at boundary (within ~1sigma): 0.310738+/-14.5298
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin19 at boundary (within ~1sigma): 0.23721+/-15.0468
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin0 at boundary (within ~1sigma): 0+/-14.9668
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin0 at boundary (within ~1sigma): 0+/-14.7223
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin14 at boundary (within ~1sigma): -0.337352+/-6.03919
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttH_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_wjets_mcstat_bin18 at boundary (within ~1sigma): -0.0906891+/-5.89243
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin0 at boundary (within ~1sigma): -0.0172009+/-5.86903
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VBF_mcstat_bin18 at boundary (within ~1sigma): -1.14269e-05+/-5.86352
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_ttH_mcstat_bin2 at boundary (within ~1sigma): 3.13617e-07+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin16 at boundary (within ~1sigma): 0.050347+/-5.84759
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin14 at boundary (within ~1sigma): 0.06868+/-5.84209
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VH_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter lumi_13TeV_correlated at boundary (within ~1sigma): 0.0621571+/-10.3352
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_wjets_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin13 at boundary (within ~1sigma): 0.0959643+/-5.83392
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin12 at boundary (within ~1sigma): -0.0420307+/-5.88098
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_wjets_mcstat_bin1 at boundary (within ~1sigma): -0.065837+/-5.88868
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin16 at boundary (within ~1sigma): 0.292495+/-5.77056
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin16 at boundary (within ~1sigma): -0.0898033+/-5.89255
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_ttbar_st_mcstat_bin1 at boundary (within ~1sigma): 0.0138568+/-5.85938
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_wjets_mcstat_bin1 at boundary (within ~1sigma): 0.0166579+/-5.85861
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin2 at boundary (within ~1sigma): -0.0263701+/-5.88943
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin19 at boundary (within ~1sigma): 0.0562923+/-5.84557
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VBF_mcstat_bin0 at boundary (within ~1sigma): -1.97198e-05+/-5.86352
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VH_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ggF_mcstat_bin1 at boundary (within ~1sigma): -9.50609e-06+/-5.86352
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ggF_mcstat_bin2 at boundary (within ~1sigma): 3.54542e-05+/-5.8635
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin3 at boundary (within ~1sigma): 0.0110237+/-5.8599
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VH_mcstat_bin19 at boundary (within ~1sigma): 1.17248e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin0 at boundary (within ~1sigma): 0.0357065+/-5.85224
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin1 at boundary (within ~1sigma): 0.00689585+/-5.86122
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin1 at boundary (within ~1sigma): 0.0890211+/-5.8346
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VH_mcstat_bin2 at boundary (within ~1sigma): 1.14213e-05+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_wjets_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttbar_st_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_ttbar_st_mcstat_bin2 at boundary (within ~1sigma): 0.0037846+/-5.86303
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin1 at boundary (within ~1sigma): -0.00752313+/-5.86613
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_wjets_mcstat_bin19 at boundary (within ~1sigma): 0.0222002+/-5.85903
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin16 at boundary (within ~1sigma): -0.0881745+/-5.89129
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin14 at boundary (within ~1sigma): -0.158781+/-5.91352
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin17 at boundary (within ~1sigma): 0.0500265+/-5.90142
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin12 at boundary (within ~1sigma): 0.0777512+/-5.84365
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin2 at boundary (within ~1sigma): 0.0418421+/-5.85076
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin16 at boundary (within ~1sigma): 0.0396715+/-5.8744
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin1 at boundary (within ~1sigma): -0.0437376+/-5.87934
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttH_mcstat_bin2 at boundary (within ~1sigma): 8.36921e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_VH_mcstat_bin2 at boundary (within ~1sigma): 3.53182e-07+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_wjets_mcstat_bin2 at boundary (within ~1sigma): 0.104999+/-5.83572
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VH_mcstat_bin18 at boundary (within ~1sigma): -5.20067e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin0 at boundary (within ~1sigma): -0.00695552+/-5.86606
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin18 at boundary (within ~1sigma): 0.0414519+/-5.85076
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin16 at boundary (within ~1sigma): 0.170769+/-5.80833
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin15 at boundary (within ~1sigma): 0.0694847+/-5.86987
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin13 at boundary (within ~1sigma): 0.148496+/-5.83252
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin17 at boundary (within ~1sigma): -0.157126+/-5.92624
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin18 at boundary (within ~1sigma): -0.0760396+/-5.88849
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin18 at boundary (within ~1sigma): -0.109292+/-5.89989
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ggF_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin0 at boundary (within ~1sigma): -0.00657835+/-5.86604
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin3 at boundary (within ~1sigma): -0.0329571+/-5.87424
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin16 at boundary (within ~1sigma): -0.177153+/-5.94532
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_rest_mcstat_bin2 at boundary (within ~1sigma): 0.0496994+/-5.84935
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttH_mcstat_bin1 at boundary (within ~1sigma): -3.09345e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_rest_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin13 at boundary (within ~1sigma): 0.215342+/-5.794
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin2 at boundary (within ~1sigma): -0.0351293+/-5.87483
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ggF_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_ttbar_st_mcstat_bin1 at boundary (within ~1sigma): -0.0325539+/-5.87455
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin17 at boundary (within ~1sigma): -0.0102102+/-5.86686
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin18 at boundary (within ~1sigma): -0.0541917+/-5.88143
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin14 at boundary (within ~1sigma): 0.036427+/-5.85291
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin13 at boundary (within ~1sigma): -0.0597336+/-5.88545
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin19 at boundary (within ~1sigma): -0.0432931+/-5.89909
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ggF_mcstat_bin1 at boundary (within ~1sigma): -1.73145e-05+/-5.86352
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttbar_st_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_wjets_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VBF_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_rest_mcstat_bin19 at boundary (within ~1sigma): 0.0859006+/-5.85735
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin15 at boundary (within ~1sigma): 0.00723838+/-5.86228
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin18 at boundary (within ~1sigma): 0.0648271+/-5.84498
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttH_mcstat_bin0 at boundary (within ~1sigma): -3.5636e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_wjets_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin12 at boundary (within ~1sigma): -0.000532707+/-5.86496
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin12 at boundary (within ~1sigma): -0.204975+/-5.92847
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin19 at boundary (within ~1sigma): -0.157471+/-5.91508
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin14 at boundary (within ~1sigma): 0.111521+/-5.82823
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin17 at boundary (within ~1sigma): 0.0105387+/-5.86034
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_rest_mcstat_bin18 at boundary (within ~1sigma): -0.511682+/-6.0409
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin1 at boundary (within ~1sigma): -0.00410309+/-5.86979
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin19 at boundary (within ~1sigma): -0.0214515+/-5.87037
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VH_mcstat_bin1 at boundary (within ~1sigma): -4.91717e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin16 at boundary (within ~1sigma): 0.0409329+/-5.85333
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin18 at boundary (within ~1sigma): -0.0933486+/-5.89299
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin12 at boundary (within ~1sigma): -0.200257+/-5.93954
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_rest_mcstat_bin1 at boundary (within ~1sigma): 0.0351565+/-5.85403
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VBF_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_rest_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin14 at boundary (within ~1sigma): 0.526374+/-5.68985
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ggF_mcstat_bin19 at boundary (within ~1sigma): 3.03124e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttH_mcstat_bin18 at boundary (within ~1sigma): -1.23896e-05+/-5.86352
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin19 at boundary (within ~1sigma): 0.0314075+/-5.85883
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin15 at boundary (within ~1sigma): -0.110021+/-5.91574
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin17 at boundary (within ~1sigma): 0.0412927+/-5.85457
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ggF_mcstat_bin18 at boundary (within ~1sigma): -1.06203e-05+/-5.86352
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttH_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttbar_st_mcstat_bin2 at boundary (within ~1sigma): 0.0456018+/-5.8504
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttH_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin13 at boundary (within ~1sigma): 0.081379+/-5.83847
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin19 at boundary (within ~1sigma): 0.0278658+/-5.85768
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttH_mcstat_bin1 at boundary (within ~1sigma): -6.23167e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin19 at boundary (within ~1sigma): 0.0350836+/-5.85317
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin18 at boundary (within ~1sigma): -0.169269+/-5.93247
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin2 at boundary (within ~1sigma): -0.0793758+/-5.88825
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttH_mcstat_bin19 at boundary (within ~1sigma): 2.34958e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VBF_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin12 at boundary (within ~1sigma): 0.0588483+/-5.85858
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_rest_mcstat_bin2 at boundary (within ~1sigma): 0.0130272+/-5.86709
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ggF_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin19 at boundary (within ~1sigma): 0.290343+/-5.80887
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin12 at boundary (within ~1sigma): 0.00207956+/-5.86802
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VH_mcstat_bin1 at boundary (within ~1sigma): -7.37377e-06+/-5.86352
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_VBF_mcstat_bin1 at boundary (within ~1sigma): -9.58815e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_ttH_mcstat_bin1 at boundary (within ~1sigma): -1.56722e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin3 at boundary (within ~1sigma): 0.11528+/-5.8548
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin17 at boundary (within ~1sigma): 0.0650464+/-5.84273
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VBF_mcstat_bin1 at boundary (within ~1sigma): -3.23954e-05+/-5.86352
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin3 at boundary (within ~1sigma): -0.00425687+/-5.86941
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_wjets_mcstat_bin1 at boundary (within ~1sigma): -0.0410692+/-5.87747
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin13 at boundary (within ~1sigma): 0.221659+/-5.80578
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin3 at boundary (within ~1sigma): 0.0665142+/-5.84458
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin3 at boundary (within ~1sigma): -0.0390075+/-5.91508
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin12 at boundary (within ~1sigma): 0.0136369+/-5.86104
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin0 at boundary (within ~1sigma): 0.0157714+/-5.85854
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin13 at boundary (within ~1sigma): -0.0393425+/-5.87658
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin15 at boundary (within ~1sigma): -0.119631+/-5.9386
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_ggF_mcstat_bin1 at boundary (within ~1sigma): -7.16094e-06+/-5.86352
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttbar_st_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin17 at boundary (within ~1sigma): -0.115887+/-5.90166
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VBF_mcstat_bin1 at boundary (within ~1sigma): -1.20812e-05+/-5.86352
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin15 at boundary (within ~1sigma): 0.0805828+/-5.83952
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_mcstat_bin13 at boundary (within ~1sigma): -0.129241+/-5.9132
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_VH_mcstat_bin1 at boundary (within ~1sigma): -2.76785e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin18 at boundary (within ~1sigma): -0.157992+/-5.91428
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_wjets_mcstat_bin1 at boundary (within ~1sigma): -0.0535328+/-5.88118
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin14 at boundary (within ~1sigma): -0.0652431+/-5.88465
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VBF_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_wjets_mcstat_bin0 at boundary (within ~1sigma): -0.022184+/-5.87075
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin13 at boundary (within ~1sigma): -0.0716853+/-5.88661
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin1 at boundary (within ~1sigma): 0.0200365+/-5.85733
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VBF_mcstat_bin2 at boundary (within ~1sigma): 5.25852e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin15 at boundary (within ~1sigma): -0.00130567+/-5.86422
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin2 at boundary (within ~1sigma): 0.020476+/-5.86332
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin6 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin12 at boundary (within ~1sigma): 0.00459917+/-5.86363
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin15 at boundary (within ~1sigma): 0.0296125+/-5.85467
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin14 at boundary (within ~1sigma): 0.0380458+/-5.8533
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ggF_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin8 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VH_mcstat_bin0 at boundary (within ~1sigma): -4.75377e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin17 at boundary (within ~1sigma): 0.0723153+/-5.84697
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1b_mcstat_bin15 at boundary (within ~1sigma): -0.0608651+/-5.88311
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin14 at boundary (within ~1sigma): -0.247014+/-5.94837
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_wjets_mcstat_bin2 at boundary (within ~1sigma): 0.00478825+/-5.86316
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin3 at boundary (within ~1sigma): -0.0313831+/-5.87468
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttbar_st_mcstat_bin1 at boundary (within ~1sigma): -0.0181224+/-5.86929
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin17 at boundary (within ~1sigma): -0.0951135+/-5.89396
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin5 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin3 at boundary (within ~1sigma): -0.0277174+/-5.87711
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR1a_mcstat_bin11 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin2 at boundary (within ~1sigma): -0.106567+/-5.89698
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_ggF_mcstat_bin2 at boundary (within ~1sigma): 1.097e-06+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin15 at boundary (within ~1sigma): 0.406392+/-5.72834
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin18 at boundary (within ~1sigma): 0.0616809+/-5.84382
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3b_rest_mcstat_bin1 at boundary (within ~1sigma): -0.109641+/-5.9052
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin9 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR2_mcstat_bin19 at boundary (within ~1sigma): -0.0158017+/-5.86869
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR1_mcstat_bin16 at boundary (within ~1sigma): -0.0333262+/-5.87439
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2a_VH_mcstat_bin7 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_CR3_mcstat_bin2 at boundary (within ~1sigma): -0.00442289+/-5.86622
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter BR_hww at boundary (within ~1sigma): 1.28064e-06+/-10.2775
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_VH_mcstat_bin10 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR2b_mcstat_bin3 at boundary (within ~1sigma): 0.0582864+/-5.84481
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_SR3a_ttH_mcstat_bin4 at boundary (within ~1sigma): 0+/-5.86351
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin0 at boundary (within ~1sigma): -0.440275+/-14.9245
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin1 at boundary (within ~1sigma): -0.0107163+/-14.7699
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin12 at boundary (within ~1sigma): -0.222241+/-14.7863
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin13 at boundary (within ~1sigma): -0.0733498+/-14.7264
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin14 at boundary (within ~1sigma): -0.163472+/-14.7478
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin15 at boundary (within ~1sigma): -0.0339759+/-14.7058
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin16 at boundary (within ~1sigma): 0.0740645+/-14.6795
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin17 at boundary (within ~1sigma): 0.17473+/-14.6607
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin18 at boundary (within ~1sigma): 0.315748+/-14.628
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin19 at boundary (within ~1sigma): 0.229221+/-14.6755
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin2 at boundary (within ~1sigma): 0.317893+/-14.5894
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR1_Bin3 at boundary (within ~1sigma): 0.352395+/-14.5909
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_2a_MH_Reco_par0 at boundary (within ~1sigma): 0.000980859+/-27.1658
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_2a_MH_Reco_par1 at boundary (within ~1sigma): 1.05375+/-30.1854
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_2a_MH_Reco_par2 at boundary (within ~1sigma): 1.22466+/-29.1189
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin0 at boundary (within ~1sigma): 0+/-13.9653
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin1 at boundary (within ~1sigma): 0.024648+/-14.9807
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin12 at boundary (within ~1sigma): -0.0552709+/-14.9426
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin13 at boundary (within ~1sigma): -0.0347824+/-14.9391
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin14 at boundary (within ~1sigma): -0.0368169+/-14.7771
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin15 at boundary (within ~1sigma): -0.0798553+/-14.727
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin16 at boundary (within ~1sigma): -0.0326647+/-14.7521
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin17 at boundary (within ~1sigma): 0.0610611+/-14.9303
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin18 at boundary (within ~1sigma): 0.150435+/-14.8521
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin19 at boundary (within ~1sigma): -0.159736+/-15.0253
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin2 at boundary (within ~1sigma): -0.01148+/-12.1186
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_CR3_Bin3 at boundary (within ~1sigma): 0.00670703+/-14.6556
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_3a_MH_Reco_par0 at boundary (within ~1sigma): 0.122576+/-44.8777
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_3a_MH_Reco_par1 at boundary (within ~1sigma): 1.22763+/-42.4204
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_3a_MH_Reco_par2 at boundary (within ~1sigma): 1.49218+/-44.2252
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_3b_MH_Reco_par0 at boundary (within ~1sigma): 0.864593+/-44.7778
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_3b_MH_Reco_par1 at boundary (within ~1sigma): 1.19517+/-35.7557
+INFO: (function: anyParameterAtBoundaries) utils.cc: 1039 -- Found parameter CMS_HWW_boosted_tf_dataResidual_3b_MH_Reco_par2 at boundary (within ~1sigma): 1.02241+/-40.2707
+INFO: (function: minimize) CascadeMinimizer.cc: 480 -- After fit, some parameters are found at the boundary (within ~1sigma)
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0

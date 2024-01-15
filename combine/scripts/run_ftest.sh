@@ -77,7 +77,7 @@ goftoys=$goftoys ffits=$ffits seed=$seed numtoys=$numtoys"
 ####################################################################################################
 
 # templates_dir="/eos/uscms/store/user/rkansal/bbVV/templates/${templates_tag}"
-cards_dir="/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/scripts/f_test/cards"
+cards_dir="/home/pku/zhaoyz/Higgs/boostedHWW/combine/scripts/f_test/cards"
 mkdir -p ${cards_dir}
 echo "Saving datacards to ${cards_dir}"
 
@@ -150,7 +150,7 @@ do
     # create datacards if they don't already exist
     if [ ! -f "${cards_dir}/${model_name}/SR1a.txt" ]; then
         echo "Making Datacard for $model_name"
-        python3 -u /ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/create_datacard.py \
+        python3 -u /home/pku/zhaoyz/Higgs/boostedHWW/combine/create_datacard.py \
         --nTF ${ord1} --model-name ${model_name} --cards-dir ${cards_dir}
     fi
 
@@ -162,15 +162,15 @@ do
     # make workspace, background-only fit, GoF on data if they don't already exist
     if [ ! -f "./higgsCombineData.GoodnessOfFit.mH125.root" ]; then
         echo "Making workspace, doing b-only fit and gof on data"
-        /ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/scripts/run_blinded.sh -wbg 
+        /home/pku/zhaoyz/Higgs/boostedHWW/combine/scripts/run_blinded.sh -wbg 
     fi
 
     if [ $dfit = 1 ]; then
-        /ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/scripts/run_blinded.sh -d 
+        /home/pku/zhaoyz/Higgs/boostedHWW/combine/scripts/run_blinded.sh -d 
     fi
 
     if [ $limits = 1 ]; then
-        /ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/scripts/run_blinded.sh -l 
+        /home/pku/zhaoyz/Higgs/boostedHWW/combine/scripts/run_blinded.sh -l 
     fi
 
     cd -

@@ -74,7 +74,7 @@ parser.add_argument(
     help="order of polynomial for TF in [dim 1, dim 2] = [mH(bb), -] for nonresonant or [mY, mX] for resonant."
     "Default is 0 for nonresonant and (1, 2) for resonant.",
 )
-parser.add_argument("--cards-dir", default="/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/cards/", type=str, help="output card directory")
+parser.add_argument("--cards-dir", default="/home/pku/zhaoyz/Higgs/boostedHWW/combine/cards/", type=str, help="output card directory")
 parser.add_argument("--model-name", default="HWWfhModel", type=str, help="output model name")
 parser.add_argument("--mcstats-threshold", default=100, type=float, help="mcstats threshold n_eff")
 parser.add_argument("--epsilon", default=1e-3, type=float, help="epsilon to avoid numerical errs")
@@ -284,7 +284,7 @@ def main(args):
     regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2","SR3a","SR3b","CR3"]
     regions_blinded = [region + "Blinded" for region in regions]
     regions = regions +  regions_blinded #only use blinded results now
-    with open(f"/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/templates/hists_templates_run2.pkl", "rb") as f:
+    with open(f"/home/pku/zhaoyz/Higgs/boostedHWW/combine/templates/hists_templates_run2.pkl", "rb") as f:
         hists_templates = pkl.load(f) #in Raghav's code, it's templates_summed and templates_dict
     
     model = rl.Model("HWWfullhad")

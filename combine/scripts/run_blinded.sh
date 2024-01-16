@@ -126,7 +126,7 @@ seed=$seed numtoys=$numtoys"
 ####################################################################################################
 
 dataset=data_obs
-cards_dir="./"
+cards_dir="."
 ws=${cards_dir}/combined
 wsm=${ws}_withmasks
 wsm_snapshot=higgsCombineSnapshot.MultiDimFit.mH125

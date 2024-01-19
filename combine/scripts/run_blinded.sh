@@ -178,12 +178,13 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
             freezeparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin},"
         done
     done
+
     # freeze qcd params in blinded bins
     # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
     # remove last comma
     setparamsblinded=${setparamsblinded%,}
     freezeparamsblinded=${freezeparamsblinded%,}
-    freezeparamsblinded="${freezeparamsblinded},var{.*lp_sf.*}"
+    # freezeparamsblinded="${freezeparamsblinded},var{.*lp_sf.*}"
 
 
     # floating parameters using var{} floats a bunch of parameters which shouldn't be floated,

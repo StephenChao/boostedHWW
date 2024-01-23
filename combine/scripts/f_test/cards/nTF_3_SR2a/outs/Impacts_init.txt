@@ -1,0 +1,293 @@
+Have POIs: ['r']
+pass_str --snapshotName MultiDimFit -t -1 --bypassFrequentistFit --toysFrequentist --expectSignal 1 --robustFit 1 --freezeParameters var{.*_In},var{.*__norm},var{n_exp_.*} --floatParameters CMS_HWW_boosted_tf_dataResidual_CR2_Bin4,CMS_HWW_boosted_tf_dataResidual_CR2_Bin5,CMS_HWW_boosted_tf_dataResidual_CR2_Bin6,CMS_HWW_boosted_tf_dataResidual_CR2_Bin7,CMS_HWW_boosted_tf_dataResidual_CR2_Bin8,CMS_HWW_boosted_tf_dataResidual_CR2_Bin9,CMS_HWW_boosted_tf_dataResidual_CR2_Bin10,CMS_HWW_boosted_tf_dataResidual_CR2_Bin11,var{.*lp_sf.*} --cminDefaultMinimizerStrategy=0 -v 1 -m 125 -d higgsCombineSnapshot.MultiDimFit.mH125.root --setParameters mask_SR2a=0,mask_CR2=0,mask_SR2aBlinded=1,mask_CR2Blinded=1
+ <<< Combine >>> 
+>>> random number generator seed is 123456
+   Options for Robust Minimizer :: 
+        Tolerance  0.1
+        Strategy   0
+        Type,Algo  Minuit2,Migrad
+>>> method used is MultiDimFit
+Set Default Value of Parameter mask_SR2a To : 0
+Set Default Value of Parameter mask_CR2 To : 0
+Set Default Value of Parameter mask_SR2aBlinded To : 1
+Set Default Value of Parameter mask_CR2Blinded To : 1
+Redefining the POIs to be: RooArgSet:: = (r)
+Set floating the following parameters: RooArgSet:: = (CMS_HWW_boosted_tf_dataResidual_CR2_Bin4,CMS_HWW_boosted_tf_dataResidual_CR2_Bin5,CMS_HWW_boosted_tf_dataResidual_CR2_Bin6,CMS_HWW_boosted_tf_dataResidual_CR2_Bin7,CMS_HWW_boosted_tf_dataResidual_CR2_Bin8,CMS_HWW_boosted_tf_dataResidual_CR2_Bin9,CMS_HWW_boosted_tf_dataResidual_CR2_Bin10,CMS_HWW_boosted_tf_dataResidual_CR2_Bin11)
+Freezing the following parameters: RooArgSet:: = (BR_hww_In,CMS_HWW_boosted_CR2_mcstat_bin0_In,CMS_HWW_boosted_CR2_mcstat_bin1_In,CMS_HWW_boosted_CR2_mcstat_bin10_In,CMS_HWW_boosted_CR2_mcstat_bin11_In,CMS_HWW_boosted_CR2_mcstat_bin12_In,CMS_HWW_boosted_CR2_mcstat_bin13_In,CMS_HWW_boosted_CR2_mcstat_bin14_In,CMS_HWW_boosted_CR2_mcstat_bin15_In,CMS_HWW_boosted_CR2_mcstat_bin16_In,CMS_HWW_boosted_CR2_mcstat_bin17_In,CMS_HWW_boosted_CR2_mcstat_bin18_In,CMS_HWW_boosted_CR2_mcstat_bin19_In,CMS_HWW_boosted_CR2_mcstat_bin2_In,CMS_HWW_boosted_CR2_mcstat_bin3_In,CMS_HWW_boosted_CR2_mcstat_bin4_In,CMS_HWW_boosted_CR2_mcstat_bin5_In,CMS_HWW_boosted_CR2_mcstat_bin6_In,CMS_HWW_boosted_CR2_mcstat_bin7_In,CMS_HWW_boosted_CR2_mcstat_bin8_In,CMS_HWW_boosted_CR2_mcstat_bin9_In,CMS_HWW_boosted_SR2a_VBF_mcstat_bin0_In,CMS_HWW_boosted_SR2a_VBF_mcstat_bin1_In,CMS_HWW_boosted_SR2a_VBF_mcstat_bin18_In,CMS_HWW_boosted_SR2a_VBF_mcstat_bin7_In,CMS_HWW_boosted_SR2a_VH_mcstat_bin0_In,CMS_HWW_boosted_SR2a_VH_mcstat_bin1_In,CMS_HWW_boosted_SR2a_VH_mcstat_bin18_In,CMS_HWW_boosted_SR2a_VH_mcstat_bin19_In,CMS_HWW_boosted_SR2a_VH_mcstat_bin7_In,CMS_HWW_boosted_SR2a_ggF_mcstat_bin1_In,CMS_HWW_boosted_SR2a_ggF_mcstat_bin18_In,CMS_HWW_boosted_SR2a_ggF_mcstat_bin19_In,CMS_HWW_boosted_SR2a_ggF_mcstat_bin7_In,CMS_HWW_boosted_SR2a_mcstat_bin10_In,CMS_HWW_boosted_SR2a_mcstat_bin11_In,CMS_HWW_boosted_SR2a_mcstat_bin12_In,CMS_HWW_boosted_SR2a_mcstat_bin13_In,CMS_HWW_boosted_SR2a_mcstat_bin14_In,CMS_HWW_boosted_SR2a_mcstat_bin15_In,CMS_HWW_boosted_SR2a_mcstat_bin16_In,CMS_HWW_boosted_SR2a_mcstat_bin17_In,CMS_HWW_boosted_SR2a_mcstat_bin2_In,CMS_HWW_boosted_SR2a_mcstat_bin3_In,CMS_HWW_boosted_SR2a_mcstat_bin4_In,CMS_HWW_boosted_SR2a_mcstat_bin5_In,CMS_HWW_boosted_SR2a_mcstat_bin6_In,CMS_HWW_boosted_SR2a_mcstat_bin8_In,CMS_HWW_boosted_SR2a_mcstat_bin9_In,CMS_HWW_boosted_SR2a_rest_mcstat_bin18_In,CMS_HWW_boosted_SR2a_rest_mcstat_bin19_In,CMS_HWW_boosted_SR2a_rest_mcstat_bin7_In,CMS_HWW_boosted_SR2a_ttH_mcstat_bin0_In,CMS_HWW_boosted_SR2a_ttH_mcstat_bin1_In,CMS_HWW_boosted_SR2a_ttH_mcstat_bin18_In,CMS_HWW_boosted_SR2a_ttH_mcstat_bin19_In,CMS_HWW_boosted_SR2a_ttH_mcstat_bin7_In,CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin1_In,CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin18_In,CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin19_In,CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin7_In,CMS_HWW_boosted_SR2a_wjets_mcstat_bin0_In,CMS_HWW_boosted_SR2a_wjets_mcstat_bin1_In,CMS_HWW_boosted_SR2a_wjets_mcstat_bin18_In,CMS_HWW_boosted_SR2a_wjets_mcstat_bin19_In,CMS_HWW_boosted_SR2a_wjets_mcstat_bin7_In,lumi_13TeV_correlated_In,shapeBkg_ttbar_st_CR2__norm,shapeBkg_wjets_CR2__norm,shapeBkg_rest_CR2__norm,shapeBkg_ttbar_st_CR2Blinded__norm,shapeBkg_wjets_CR2Blinded__norm,shapeBkg_rest_CR2Blinded__norm,shapeSig_ggF_SR2a__norm,shapeSig_VBF_SR2a__norm,shapeSig_VH_SR2a__norm,shapeSig_ttH_SR2a__norm,shapeBkg_ttbar_st_SR2a__norm,shapeBkg_wjets_SR2a__norm,shapeBkg_rest_SR2a__norm,shapeSig_ggF_SR2aBlinded__norm,shapeSig_VBF_SR2aBlinded__norm,shapeSig_VH_SR2aBlinded__norm,shapeSig_ttH_SR2aBlinded__norm,shapeBkg_ttbar_st_SR2aBlinded__norm,shapeBkg_wjets_SR2aBlinded__norm,shapeBkg_rest_SR2aBlinded__norm,n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR2a_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR2aBlinded_proc_CMS_HWW_boosted_qcd_datadriven)
+>>> 2 out of 4 channels masked
+
+SimNLL created with 4 channels, 0 generic constraints, 67 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+Robus Fit for POI 
+Searching for crossing at nll = 0.494473 in the interval 1, 20
+      r      lvl-here  lvl-there   stepping
+2.900000    +0.47998  +0.49447    1.900000
+4.800000    +0.43710  +0.47998    1.900000
+6.700000    +0.36648  +0.43710    1.900000
+8.600000    +0.26847  +0.36648    1.900000
+10.500000    +0.14383  +0.26847    1.900000
+12.400000    -0.00677  +0.14383    1.900000
+11.070000    +0.10095  -0.00677    0.570000
+11.640000    +0.05648  +0.10095    0.570000
+12.210000    +0.00899  +0.05648    0.570000
+12.780000    -0.03999  +0.00899    0.570000
+12.381000    -0.00536  -0.03999    0.171000
+12.261300    +0.00466  -0.00536    0.051300
+12.312600    +0.00021  +0.00466    0.051300
+Searching for crossing at nll = 0.494473 in the interval 1, 0
+      r      lvl-here  lvl-there   stepping
+0.900000    +0.49438  +0.49447    -0.100000
+0.800000    +0.49418  +0.49438    -0.100000
+0.700000    +0.49383  +0.49418    -0.100000
+0.600000    +0.49374  +0.49383    -0.100000
+0.500000    +0.49333  +0.49374    -0.100000
+0.400000    +0.49268  +0.49333    -0.100000
+0.300000    +0.49240  +0.49268    -0.100000
+0.200000    +0.49174  +0.49240    -0.100000
+0.100000    +0.49093  +0.49174    -0.100000
+0.100000    +0.49100  +0.49093    -0.050000
+0.050000    +0.49061  +0.49100    -0.050000
+0.000000    +0.49015  +0.49061    -0.050000
+0.000000    +0.49041  +0.49015    0.000000
+Error: closed range without finding crossing.
+
+ --- MultiDimFit ---
+best fit parameter values and profile-likelihood uncertainties: 
+ Warning - No valid low-error found, will report difference to minimum of range for : r
+   r :    +1.000   -1.000/+11.313 (68%)
+Done in 0.01 min (cpu), 0.01 min (real)
+Printing Message Summary From ... combine_logger.out
+----------------------------------------------
+Messages of type INFO : 228
+Messages of type DEBUG : 0
+Messages of type ERROR : 1
+----------------------------------------------
+INFO: (function: applyOptionsBase) FitterAlgoBase.cc: 113 -- Setting robust fit options to Tolerance=0.1 / Strategy=0 / Type,Algo=Minuit2,Migrad (note that defaults of CascadeMinimizer were taken where option not specified)
+INFO: (function: run) Combine.cc: 676 -- Set floating the following parameters: 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin4 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin5 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin6 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin7 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin8 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin9 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin10 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin11 
+INFO: (function: run) Combine.cc: 712 -- Freezing the following parameters: 
+INFO: (function: run) Combine.cc: 715  BR_hww_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_VBF_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_VBF_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_VBF_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_VBF_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_VH_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_VH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_VH_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_VH_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_VH_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ggF_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ggF_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ggF_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ggF_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_rest_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_rest_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_rest_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttH_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttH_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttH_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttH_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_wjets_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_wjets_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_wjets_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_wjets_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_wjets_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  lumi_13TeV_correlated_In 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_st_CR2__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_CR2__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_CR2__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_st_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VH_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_st_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VH_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_st_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR2a_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR2aBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR2_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR2Blinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2a_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2aBlinded_obsOnly: in 20 x-bins
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: doFit) FitterAlgoBase.cc: 360 -- Running RobustFit for POI r. Configured with strategy 0  
+INFO: (function: findCrossing) FitterAlgoBase.cc: 406 -- Searching for crossing at nll = 0.494473, in the interval 1 < r < 20
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 427 -- r lvl-here lvl-there 	stepping 
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 2.900000    +0.47998  +0.49447    1.900000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 4.800000    +0.43710  +0.47998    1.900000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 6.700000    +0.36648  +0.43710    1.900000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 8.600000    +0.26847  +0.36648    1.900000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 10.500000    +0.14383  +0.26847    1.900000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 12.400000    -0.00677  +0.14383    1.900000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 11.070000    +0.10095  -0.00677    0.570000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 11.640000    +0.05648  +0.10095    0.570000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 12.210000    +0.00899  +0.05648    0.570000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 12.780000    -0.03999  +0.00899    0.570000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 12.381000    -0.00536  -0.03999    0.171000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 12.261300    +0.00466  -0.00536    0.051300
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 12.312600    +0.00021  +0.00466    0.051300
+INFO: (function: findCrossing) FitterAlgoBase.cc: 406 -- Searching for crossing at nll = 0.494473, in the interval 1 < r < 0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 427 -- r lvl-here lvl-there 	stepping 
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.900000    +0.49438  +0.49447    -0.100000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.800000    +0.49418  +0.49438    -0.100000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.700000    +0.49383  +0.49418    -0.100000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.600000    +0.49374  +0.49383    -0.100000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.500000    +0.49333  +0.49374    -0.100000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.400000    +0.49268  +0.49333    -0.100000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.300000    +0.49240  +0.49268    -0.100000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.200000    +0.49174  +0.49240    -0.100000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.100000    +0.49093  +0.49174    -0.100000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.100000    +0.49100  +0.49093    -0.050000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.050000    +0.49061  +0.49100    -0.050000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.000000    +0.49015  +0.49061    -0.050000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.000000    +0.49041  +0.49015    0.000000
+ERROR: (function: findCrossing) FitterAlgoBase.cc: 518 -- Closed range without finding crossing! 
+>> combine -M MultiDimFit -n _initialFit_impacts --algo singles --redefineSignalPOIs r --snapshotName MultiDimFit -t -1 --bypassFrequentistFit --toysFrequentist --expectSignal 1 --robustFit 1 --freezeParameters var{.*_In},var{.*__norm},var{n_exp_.*} --floatParameters CMS_HWW_boosted_tf_dataResidual_CR2_Bin4,CMS_HWW_boosted_tf_dataResidual_CR2_Bin5,CMS_HWW_boosted_tf_dataResidual_CR2_Bin6,CMS_HWW_boosted_tf_dataResidual_CR2_Bin7,CMS_HWW_boosted_tf_dataResidual_CR2_Bin8,CMS_HWW_boosted_tf_dataResidual_CR2_Bin9,CMS_HWW_boosted_tf_dataResidual_CR2_Bin10,CMS_HWW_boosted_tf_dataResidual_CR2_Bin11,var{.*lp_sf.*} --cminDefaultMinimizerStrategy=0 -v 1 -m 125 -d higgsCombineSnapshot.MultiDimFit.mH125.root --setParameters mask_SR2a=0,mask_CR2=0,mask_SR2aBlinded=1,mask_CR2Blinded=1

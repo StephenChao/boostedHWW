@@ -139,15 +139,16 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
     if [ -f "mXbin0pass.txt" ]; then
         echo -e "\nWARNING: This is doing nonresonant fits - did you mean to pass -r|--resonant?\n"
     fi
-    echo "actually run the following: "
-    # nonresonant args
-    setparamsblinded=""
-    freezeparamsblinded=""
 
-    # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
+    echo "actually run the following: "
+
+
+
     ccargs=""
+
     maskunblindedargs=""
     maskblindedargs=""
+
     for region in 1 2 3;
     do 
         cr="CR${region}"
@@ -161,12 +162,15 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
         maskblindedargs+="mask_${sra}=0,mask_${srb}=0,mask_${cr}=0,"
         maskblindedargs+="mask_${sra}Blinded=1,mask_${srb}Blinded=1,mask_${cr}Blinded=1,"
     done
+    
     maskblindedargs=${maskblindedargs%,}
     maskunblindedargs=${maskunblindedargs%,}
     echo "cards args=${ccargs}"
     echo "maskblinded=${maskblindedargs}"
     echo "maskunblinded=${maskunblindedargs}"
     
+    # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
+    # freeze qcd params in blinded bins
     setparamsblinded=""
     freezeparamsblinded=""
     for bin in {4..11} 
@@ -179,13 +183,9 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
         done
     done
 
-    # freeze qcd params in blinded bins
-    # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
     # remove last comma
     setparamsblinded=${setparamsblinded%,}
     freezeparamsblinded=${freezeparamsblinded%,}
-    # freezeparamsblinded="${freezeparamsblinded},var{.*lp_sf.*}"
-
 
     # floating parameters using var{} floats a bunch of parameters which shouldn't be floated,
     # so countering this inside --freezeParameters which takes priority.

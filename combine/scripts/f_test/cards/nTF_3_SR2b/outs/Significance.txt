@@ -1,0 +1,1312 @@
+
+>>> random number generator seed is 123456
+>>> method used is Significance
+Adding /data/pku/home/zhaoyz/Higgs/env/CMSSW_11_3_4/src to include path
+Adding /cvmfs/cms.cern.ch/slc7_amd64_gcc900/lcg/root/6.22.08-ljfedo//include to include path
+Input workspace 'w': 
+
+RooWorkspace(w) w contents
+
+variables
+---------
+(BR_hww,BR_hww_In,CMS_HWW_boosted_CR2_mcstat_bin0,CMS_HWW_boosted_CR2_mcstat_bin0_In,CMS_HWW_boosted_CR2_mcstat_bin1,CMS_HWW_boosted_CR2_mcstat_bin10,CMS_HWW_boosted_CR2_mcstat_bin10_In,CMS_HWW_boosted_CR2_mcstat_bin11,CMS_HWW_boosted_CR2_mcstat_bin11_In,CMS_HWW_boosted_CR2_mcstat_bin12,CMS_HWW_boosted_CR2_mcstat_bin12_In,CMS_HWW_boosted_CR2_mcstat_bin13,CMS_HWW_boosted_CR2_mcstat_bin13_In,CMS_HWW_boosted_CR2_mcstat_bin14,CMS_HWW_boosted_CR2_mcstat_bin14_In,CMS_HWW_boosted_CR2_mcstat_bin15,CMS_HWW_boosted_CR2_mcstat_bin15_In,CMS_HWW_boosted_CR2_mcstat_bin16,CMS_HWW_boosted_CR2_mcstat_bin16_In,CMS_HWW_boosted_CR2_mcstat_bin17,CMS_HWW_boosted_CR2_mcstat_bin17_In,CMS_HWW_boosted_CR2_mcstat_bin18,CMS_HWW_boosted_CR2_mcstat_bin18_In,CMS_HWW_boosted_CR2_mcstat_bin19,CMS_HWW_boosted_CR2_mcstat_bin19_In,CMS_HWW_boosted_CR2_mcstat_bin1_In,CMS_HWW_boosted_CR2_mcstat_bin2,CMS_HWW_boosted_CR2_mcstat_bin2_In,CMS_HWW_boosted_CR2_mcstat_bin3,CMS_HWW_boosted_CR2_mcstat_bin3_In,CMS_HWW_boosted_CR2_mcstat_bin4,CMS_HWW_boosted_CR2_mcstat_bin4_In,CMS_HWW_boosted_CR2_mcstat_bin5,CMS_HWW_boosted_CR2_mcstat_bin5_In,CMS_HWW_boosted_CR2_mcstat_bin6,CMS_HWW_boosted_CR2_mcstat_bin6_In,CMS_HWW_boosted_CR2_mcstat_bin7,CMS_HWW_boosted_CR2_mcstat_bin7_In,CMS_HWW_boosted_CR2_mcstat_bin8,CMS_HWW_boosted_CR2_mcstat_bin8_In,CMS_HWW_boosted_CR2_mcstat_bin9,CMS_HWW_boosted_CR2_mcstat_bin9_In,CMS_HWW_boosted_SR2b_mcstat_bin0,CMS_HWW_boosted_SR2b_mcstat_bin0_In,CMS_HWW_boosted_SR2b_mcstat_bin1,CMS_HWW_boosted_SR2b_mcstat_bin10,CMS_HWW_boosted_SR2b_mcstat_bin10_In,CMS_HWW_boosted_SR2b_mcstat_bin11,CMS_HWW_boosted_SR2b_mcstat_bin11_In,CMS_HWW_boosted_SR2b_mcstat_bin12,CMS_HWW_boosted_SR2b_mcstat_bin12_In,CMS_HWW_boosted_SR2b_mcstat_bin13,CMS_HWW_boosted_SR2b_mcstat_bin13_In,CMS_HWW_boosted_SR2b_mcstat_bin14,CMS_HWW_boosted_SR2b_mcstat_bin14_In,CMS_HWW_boosted_SR2b_mcstat_bin15,CMS_HWW_boosted_SR2b_mcstat_bin15_In,CMS_HWW_boosted_SR2b_mcstat_bin16,CMS_HWW_boosted_SR2b_mcstat_bin16_In,CMS_HWW_boosted_SR2b_mcstat_bin17,CMS_HWW_boosted_SR2b_mcstat_bin17_In,CMS_HWW_boosted_SR2b_mcstat_bin18,CMS_HWW_boosted_SR2b_mcstat_bin18_In,CMS_HWW_boosted_SR2b_mcstat_bin19,CMS_HWW_boosted_SR2b_mcstat_bin19_In,CMS_HWW_boosted_SR2b_mcstat_bin1_In,CMS_HWW_boosted_SR2b_mcstat_bin2,CMS_HWW_boosted_SR2b_mcstat_bin2_In,CMS_HWW_boosted_SR2b_mcstat_bin3,CMS_HWW_boosted_SR2b_mcstat_bin3_In,CMS_HWW_boosted_SR2b_mcstat_bin4,CMS_HWW_boosted_SR2b_mcstat_bin4_In,CMS_HWW_boosted_SR2b_mcstat_bin5,CMS_HWW_boosted_SR2b_mcstat_bin5_In,CMS_HWW_boosted_SR2b_mcstat_bin6,CMS_HWW_boosted_SR2b_mcstat_bin6_In,CMS_HWW_boosted_SR2b_mcstat_bin7,CMS_HWW_boosted_SR2b_mcstat_bin7_In,CMS_HWW_boosted_SR2b_mcstat_bin8,CMS_HWW_boosted_SR2b_mcstat_bin8_In,CMS_HWW_boosted_SR2b_mcstat_bin9,CMS_HWW_boosted_SR2b_mcstat_bin9_In,CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par0,CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par1,CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par2,CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par3,CMS_HWW_boosted_tf_dataResidual_CR2_Bin0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin1,CMS_HWW_boosted_tf_dataResidual_CR2_Bin10,CMS_HWW_boosted_tf_dataResidual_CR2_Bin11,CMS_HWW_boosted_tf_dataResidual_CR2_Bin12,CMS_HWW_boosted_tf_dataResidual_CR2_Bin13,CMS_HWW_boosted_tf_dataResidual_CR2_Bin14,CMS_HWW_boosted_tf_dataResidual_CR2_Bin15,CMS_HWW_boosted_tf_dataResidual_CR2_Bin16,CMS_HWW_boosted_tf_dataResidual_CR2_Bin17,CMS_HWW_boosted_tf_dataResidual_CR2_Bin18,CMS_HWW_boosted_tf_dataResidual_CR2_Bin19,CMS_HWW_boosted_tf_dataResidual_CR2_Bin2,CMS_HWW_boosted_tf_dataResidual_CR2_Bin3,CMS_HWW_boosted_tf_dataResidual_CR2_Bin4,CMS_HWW_boosted_tf_dataResidual_CR2_Bin5,CMS_HWW_boosted_tf_dataResidual_CR2_Bin6,CMS_HWW_boosted_tf_dataResidual_CR2_Bin7,CMS_HWW_boosted_tf_dataResidual_CR2_Bin8,CMS_HWW_boosted_tf_dataResidual_CR2_Bin9,CMS_channel,MH_Reco,lumi_13TeV_correlated,lumi_13TeV_correlated_In,mask_CR2,mask_CR2Blinded,mask_SR2b,mask_SR2bBlinded,n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven,r,shapeBkg_rest_CR2Blinded__norm,shapeBkg_rest_CR2__norm,shapeBkg_rest_SR2bBlinded__norm,shapeBkg_rest_SR2b__norm,shapeBkg_ttbar_st_CR2Blinded__norm,shapeBkg_ttbar_st_CR2__norm,shapeBkg_ttbar_st_SR2bBlinded__norm,shapeBkg_ttbar_st_SR2b__norm,shapeBkg_wjets_CR2Blinded__norm,shapeBkg_wjets_CR2__norm,shapeBkg_wjets_SR2bBlinded__norm,shapeBkg_wjets_SR2b__norm,shapeSig_VBF_SR2bBlinded__norm,shapeSig_VBF_SR2b__norm,shapeSig_VH_SR2bBlinded__norm,shapeSig_VH_SR2b__norm,shapeSig_ggF_SR2bBlinded__norm,shapeSig_ggF_SR2b__norm,shapeSig_ttH_SR2bBlinded__norm,shapeSig_ttH_SR2b__norm)
+
+p.d.f.s
+-------
+SimpleGaussianConstraint::BR_hww_Pdf[ mean=BR_hww_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin0_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin0_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin10_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin10_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin11_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin11_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin12_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin12_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin13_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin13_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin14_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin14_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin15_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin15_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin16_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin16_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin17_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin17_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin18_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin18_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin19_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin19_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin1_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin1_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin2_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin2_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin3_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin3_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin4_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin4_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin5_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin5_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin6_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin6_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin7_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin7_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin8_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin8_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR2_mcstat_bin9_Pdf[ mean=CMS_HWW_boosted_CR2_mcstat_bin9_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin0_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin0_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin10_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin10_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin11_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin11_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin12_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin12_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin13_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin13_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin14_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin14_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin15_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin15_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin16_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin16_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin17_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin17_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin18_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin18_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin19_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin19_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin1_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin1_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin2_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin2_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin3_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin3_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin4_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin4_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin5_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin5_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin6_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin6_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin7_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin7_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin8_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin8_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR2b_mcstat_bin9_Pdf[ mean=CMS_HWW_boosted_SR2b_mcstat_bin9_In sigma=1 ] = 1
+SimpleGaussianConstraint::lumi_13TeV_correlated_Pdf[ mean=lumi_13TeV_correlated_In sigma=1 ] = 1
+RooSimultaneousOpt::model_b[ indexCat=CMS_channel CR2=pdf_binCR2_bonly CR2Blinded=pdf_binCR2Blinded_bonly SR2b=pdf_binSR2b_bonly SR2bBlinded=pdf_binSR2bBlinded_bonly extraConstraints=() channelMasks=(mask_CR2,mask_CR2Blinded,mask_SR2b,mask_SR2bBlinded) ] = 9.78688e-05
+RooSimultaneousOpt::model_s[ indexCat=CMS_channel CR2=pdf_binCR2 CR2Blinded=pdf_binCR2Blinded SR2b=pdf_binSR2b SR2bBlinded=pdf_binSR2bBlinded extraConstraints=() channelMasks=(mask_CR2,mask_CR2Blinded,mask_SR2b,mask_SR2bBlinded) ] = 9.78688e-05
+RooProdPdf::nuisancePdf[ CMS_HWW_boosted_SR2b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin14_Pdf * BR_hww_Pdf * CMS_HWW_boosted_CR2_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin10_Pdf * CMS_HWW_boosted_CR2_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin12_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin13_Pdf * CMS_HWW_boosted_CR2_mcstat_bin16_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR2_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin8_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin7_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin4_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin12_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR2_mcstat_bin2_Pdf * CMS_HWW_boosted_CR2_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin8_Pdf * CMS_HWW_boosted_CR2_mcstat_bin9_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin16_Pdf * CMS_HWW_boosted_CR2_mcstat_bin7_Pdf * CMS_HWW_boosted_CR2_mcstat_bin15_Pdf * CMS_HWW_boosted_CR2_mcstat_bin4_Pdf * CMS_HWW_boosted_CR2_mcstat_bin3_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin10_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin9_Pdf * CMS_HWW_boosted_CR2_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin15_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin13_Pdf ] = 1
+RooProdPdf::pdf_binCR2[ CMS_HWW_boosted_SR2b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin14_Pdf * BR_hww_Pdf * CMS_HWW_boosted_CR2_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin10_Pdf * CMS_HWW_boosted_CR2_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin12_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin13_Pdf * CMS_HWW_boosted_CR2_mcstat_bin16_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR2_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin8_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin7_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin4_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin12_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR2_mcstat_bin2_Pdf * CMS_HWW_boosted_CR2_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin8_Pdf * CMS_HWW_boosted_CR2_mcstat_bin9_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin16_Pdf * CMS_HWW_boosted_CR2_mcstat_bin7_Pdf * CMS_HWW_boosted_CR2_mcstat_bin15_Pdf * CMS_HWW_boosted_CR2_mcstat_bin4_Pdf * CMS_HWW_boosted_CR2_mcstat_bin3_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin10_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin9_Pdf * CMS_HWW_boosted_CR2_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin15_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin13_Pdf * pdf_binCR2_nuis * pdfbins_binCR2 ] = 0.000439708
+RooProdPdf::pdf_binCR2Blinded[ CMS_HWW_boosted_SR2b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin14_Pdf * BR_hww_Pdf * CMS_HWW_boosted_CR2_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin10_Pdf * CMS_HWW_boosted_CR2_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin12_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin13_Pdf * CMS_HWW_boosted_CR2_mcstat_bin16_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR2_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin8_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin7_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin4_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin12_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR2_mcstat_bin2_Pdf * CMS_HWW_boosted_CR2_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin8_Pdf * CMS_HWW_boosted_CR2_mcstat_bin9_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin16_Pdf * CMS_HWW_boosted_CR2_mcstat_bin7_Pdf * CMS_HWW_boosted_CR2_mcstat_bin15_Pdf * CMS_HWW_boosted_CR2_mcstat_bin4_Pdf * CMS_HWW_boosted_CR2_mcstat_bin3_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin10_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin9_Pdf * CMS_HWW_boosted_CR2_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin15_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin13_Pdf * pdf_binCR2Blinded_nuis * pdfbins_binCR2Blinded ] = 0.00106577
+RooProdPdf::pdf_binCR2Blinded_bonly[ CMS_HWW_boosted_SR2b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin14_Pdf * BR_hww_Pdf * CMS_HWW_boosted_CR2_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin10_Pdf * CMS_HWW_boosted_CR2_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin12_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin13_Pdf * CMS_HWW_boosted_CR2_mcstat_bin16_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR2_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin8_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin7_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin4_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin12_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR2_mcstat_bin2_Pdf * CMS_HWW_boosted_CR2_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin8_Pdf * CMS_HWW_boosted_CR2_mcstat_bin9_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin16_Pdf * CMS_HWW_boosted_CR2_mcstat_bin7_Pdf * CMS_HWW_boosted_CR2_mcstat_bin15_Pdf * CMS_HWW_boosted_CR2_mcstat_bin4_Pdf * CMS_HWW_boosted_CR2_mcstat_bin3_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin10_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin9_Pdf * CMS_HWW_boosted_CR2_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin15_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin13_Pdf * pdf_binCR2Blinded_bonly_nuis * pdfbins_binCR2Blinded ] = 0.00106577
+RooAddPdf::pdf_binCR2Blinded_bonly_nuis[ n_exp_final_binCR2Blinded_proc_ttbar_st * shapeBkg_CR2Blinded_ttbar_st_morph + n_exp_final_binCR2Blinded_proc_wjets * shapeBkg_CR2Blinded_wjets_morph + n_exp_final_binCR2Blinded_proc_rest * shapeBkg_CR2Blinded_rest_morph + n_exp_final_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR2Blinded ] = 0.00106577
+RooAddPdf::pdf_binCR2Blinded_nuis[ n_exp_final_binCR2Blinded_proc_ttbar_st * shapeBkg_CR2Blinded_ttbar_st_morph + n_exp_final_binCR2Blinded_proc_wjets * shapeBkg_CR2Blinded_wjets_morph + n_exp_final_binCR2Blinded_proc_rest * shapeBkg_CR2Blinded_rest_morph + n_exp_final_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR2Blinded ] = 0.00106577
+RooProdPdf::pdf_binCR2_bonly[ CMS_HWW_boosted_SR2b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin14_Pdf * BR_hww_Pdf * CMS_HWW_boosted_CR2_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin10_Pdf * CMS_HWW_boosted_CR2_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin12_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin13_Pdf * CMS_HWW_boosted_CR2_mcstat_bin16_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR2_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin8_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin7_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin4_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin12_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR2_mcstat_bin2_Pdf * CMS_HWW_boosted_CR2_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin8_Pdf * CMS_HWW_boosted_CR2_mcstat_bin9_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin16_Pdf * CMS_HWW_boosted_CR2_mcstat_bin7_Pdf * CMS_HWW_boosted_CR2_mcstat_bin15_Pdf * CMS_HWW_boosted_CR2_mcstat_bin4_Pdf * CMS_HWW_boosted_CR2_mcstat_bin3_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin10_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin9_Pdf * CMS_HWW_boosted_CR2_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin15_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin13_Pdf * pdf_binCR2_bonly_nuis * pdfbins_binCR2 ] = 0.000439708
+RooAddPdf::pdf_binCR2_bonly_nuis[ n_exp_binCR2_proc_ttbar_st * shapeBkg_CR2_ttbar_st_morph + n_exp_final_binCR2_proc_wjets * shapeBkg_CR2_wjets_morph + n_exp_final_binCR2_proc_rest * shapeBkg_CR2_rest_morph + n_exp_final_binCR2_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR2 ] = 0.000439708
+RooAddPdf::pdf_binCR2_nuis[ n_exp_binCR2_proc_ttbar_st * shapeBkg_CR2_ttbar_st_morph + n_exp_final_binCR2_proc_wjets * shapeBkg_CR2_wjets_morph + n_exp_final_binCR2_proc_rest * shapeBkg_CR2_rest_morph + n_exp_final_binCR2_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR2 ] = 0.000439708
+RooProdPdf::pdf_binSR2b[ CMS_HWW_boosted_SR2b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin14_Pdf * BR_hww_Pdf * CMS_HWW_boosted_CR2_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin10_Pdf * CMS_HWW_boosted_CR2_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin12_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin13_Pdf * CMS_HWW_boosted_CR2_mcstat_bin16_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR2_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin8_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin7_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin4_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin12_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR2_mcstat_bin2_Pdf * CMS_HWW_boosted_CR2_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin8_Pdf * CMS_HWW_boosted_CR2_mcstat_bin9_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin16_Pdf * CMS_HWW_boosted_CR2_mcstat_bin7_Pdf * CMS_HWW_boosted_CR2_mcstat_bin15_Pdf * CMS_HWW_boosted_CR2_mcstat_bin4_Pdf * CMS_HWW_boosted_CR2_mcstat_bin3_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin10_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin9_Pdf * CMS_HWW_boosted_CR2_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin15_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin13_Pdf * pdf_binSR2b_nuis * pdfbins_binSR2b ] = 0.000485198
+RooProdPdf::pdf_binSR2bBlinded[ CMS_HWW_boosted_SR2b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin14_Pdf * BR_hww_Pdf * CMS_HWW_boosted_CR2_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin10_Pdf * CMS_HWW_boosted_CR2_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin12_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin13_Pdf * CMS_HWW_boosted_CR2_mcstat_bin16_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR2_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin8_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin7_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin4_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin12_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR2_mcstat_bin2_Pdf * CMS_HWW_boosted_CR2_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin8_Pdf * CMS_HWW_boosted_CR2_mcstat_bin9_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin16_Pdf * CMS_HWW_boosted_CR2_mcstat_bin7_Pdf * CMS_HWW_boosted_CR2_mcstat_bin15_Pdf * CMS_HWW_boosted_CR2_mcstat_bin4_Pdf * CMS_HWW_boosted_CR2_mcstat_bin3_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin10_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin9_Pdf * CMS_HWW_boosted_CR2_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin15_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin13_Pdf * pdf_binSR2bBlinded_nuis * pdfbins_binSR2bBlinded ] = 0.00117152
+RooProdPdf::pdf_binSR2bBlinded_bonly[ CMS_HWW_boosted_SR2b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin14_Pdf * BR_hww_Pdf * CMS_HWW_boosted_CR2_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin10_Pdf * CMS_HWW_boosted_CR2_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin12_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin13_Pdf * CMS_HWW_boosted_CR2_mcstat_bin16_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR2_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin8_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin7_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin4_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin12_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR2_mcstat_bin2_Pdf * CMS_HWW_boosted_CR2_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin8_Pdf * CMS_HWW_boosted_CR2_mcstat_bin9_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin16_Pdf * CMS_HWW_boosted_CR2_mcstat_bin7_Pdf * CMS_HWW_boosted_CR2_mcstat_bin15_Pdf * CMS_HWW_boosted_CR2_mcstat_bin4_Pdf * CMS_HWW_boosted_CR2_mcstat_bin3_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin10_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin9_Pdf * CMS_HWW_boosted_CR2_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin15_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin13_Pdf * pdf_binSR2bBlinded_bonly_nuis * pdfbins_binSR2bBlinded ] = 0.00117152
+RooAddPdf::pdf_binSR2bBlinded_bonly_nuis[ n_exp_final_binSR2bBlinded_proc_ttbar_st * shapeBkg_SR2bBlinded_ttbar_st_morph + n_exp_final_binSR2bBlinded_proc_wjets * shapeBkg_SR2bBlinded_wjets_morph + n_exp_final_binSR2bBlinded_proc_rest * shapeBkg_SR2bBlinded_rest_morph + n_exp_final_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR2bBlinded ] = 0.00117152
+RooAddPdf::pdf_binSR2bBlinded_nuis[ n_exp_final_binSR2bBlinded_proc_ggF * shapeSig_SR2bBlinded_ggF_morph + n_exp_final_binSR2bBlinded_proc_VBF * shapeSig_SR2bBlinded_VBF_morph + n_exp_final_binSR2bBlinded_proc_VH * shapeSig_SR2bBlinded_VH_morph + n_exp_final_binSR2bBlinded_proc_ttH * shapeSig_SR2bBlinded_ttH_morph + n_exp_final_binSR2bBlinded_proc_ttbar_st * shapeBkg_SR2bBlinded_ttbar_st_morph + n_exp_final_binSR2bBlinded_proc_wjets * shapeBkg_SR2bBlinded_wjets_morph + n_exp_final_binSR2bBlinded_proc_rest * shapeBkg_SR2bBlinded_rest_morph + n_exp_final_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR2bBlinded ] = 0.00117152
+RooProdPdf::pdf_binSR2b_bonly[ CMS_HWW_boosted_SR2b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin14_Pdf * BR_hww_Pdf * CMS_HWW_boosted_CR2_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin6_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin10_Pdf * CMS_HWW_boosted_CR2_mcstat_bin0_Pdf * CMS_HWW_boosted_CR2_mcstat_bin12_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR2_mcstat_bin13_Pdf * CMS_HWW_boosted_CR2_mcstat_bin16_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR2_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR2_mcstat_bin19_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin8_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin7_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin4_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin12_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR2_mcstat_bin2_Pdf * CMS_HWW_boosted_CR2_mcstat_bin17_Pdf * CMS_HWW_boosted_CR2_mcstat_bin8_Pdf * CMS_HWW_boosted_CR2_mcstat_bin9_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin16_Pdf * CMS_HWW_boosted_CR2_mcstat_bin7_Pdf * CMS_HWW_boosted_CR2_mcstat_bin15_Pdf * CMS_HWW_boosted_CR2_mcstat_bin4_Pdf * CMS_HWW_boosted_CR2_mcstat_bin3_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin10_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin9_Pdf * CMS_HWW_boosted_CR2_mcstat_bin18_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin15_Pdf * CMS_HWW_boosted_SR2b_mcstat_bin13_Pdf * pdf_binSR2b_bonly_nuis * pdfbins_binSR2b ] = 0.000485198
+RooAddPdf::pdf_binSR2b_bonly_nuis[ n_exp_final_binSR2b_proc_ttbar_st * shapeBkg_SR2b_ttbar_st_morph + n_exp_final_binSR2b_proc_wjets * shapeBkg_SR2b_wjets_morph + n_exp_final_binSR2b_proc_rest * shapeBkg_SR2b_rest_morph + n_exp_final_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR2b ] = 0.000485198
+RooAddPdf::pdf_binSR2b_nuis[ n_exp_final_binSR2b_proc_ggF * shapeSig_SR2b_ggF_morph + n_exp_final_binSR2b_proc_VBF * shapeSig_SR2b_VBF_morph + n_exp_final_binSR2b_proc_VH * shapeSig_SR2b_VH_morph + n_exp_final_binSR2b_proc_ttH * shapeSig_SR2b_ttH_morph + n_exp_final_binSR2b_proc_ttbar_st * shapeBkg_SR2b_ttbar_st_morph + n_exp_final_binSR2b_proc_wjets * shapeBkg_SR2b_wjets_morph + n_exp_final_binSR2b_proc_rest * shapeBkg_SR2b_rest_morph + n_exp_final_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR2b ] = 0.000485198
+RooProdPdf::pdfbins_binCR2[  ] = 1
+RooProdPdf::pdfbins_binCR2Blinded[  ] = 1
+RooProdPdf::pdfbins_binSR2b[  ] = 1
+RooProdPdf::pdfbins_binSR2bBlinded[  ] = 1
+RooParametricStepFunction::shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR2[ coefList=(CR2_CMS_HWW_boosted_qcd_datadriven_bin0_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin1_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin2_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin3_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin4_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin5_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin6_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin7_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin8_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin9_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin10_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin11_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin12_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin13_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin14_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin15_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin16_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin17_density,CR2_CMS_HWW_boosted_qcd_datadriven_bin18_density) ] = 0.000408499
+RooParametricStepFunction::shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR2Blinded[ coefList=(CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin0_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin1_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin2_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin3_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin4_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin5_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin6_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin7_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin8_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin9_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin10_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin11_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin12_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin13_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin14_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin15_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin16_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin17_density,CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin18_density) ] = 0.00099224
+RooParametricStepFunction::shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR2b[ coefList=(SR2b_CMS_HWW_boosted_qcd_datadriven_bin0_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin1_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin2_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin3_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin4_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin5_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin6_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin7_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin8_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin9_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin10_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin11_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin12_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin13_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin14_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin15_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin16_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin17_density,SR2b_CMS_HWW_boosted_qcd_datadriven_bin18_density) ] = 0.000408499
+RooParametricStepFunction::shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR2bBlinded[ coefList=(SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin0_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin1_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin2_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin3_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin4_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin5_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin6_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin7_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin8_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin9_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin10_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin11_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin12_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin13_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin14_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin15_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin16_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin17_density,SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin18_density) ] = 0.00099224
+FastVerticalInterpHistPdf2::shapeBkg_CR2Blinded_rest_morph[ x=MH_Reco ] = 0.00211294
+FastVerticalInterpHistPdf2::shapeBkg_CR2Blinded_ttbar_st_morph[ x=MH_Reco ] = 0.00300179
+FastVerticalInterpHistPdf2::shapeBkg_CR2Blinded_wjets_morph[ x=MH_Reco ] = 0.00200778
+FastVerticalInterpHistPdf2::shapeBkg_CR2_rest_morph[ x=MH_Reco ] = 0.000881928
+FastVerticalInterpHistPdf2::shapeBkg_CR2_ttbar_st_morph[ x=MH_Reco ] = 0.00140611
+FastVerticalInterpHistPdf2::shapeBkg_CR2_wjets_morph[ x=MH_Reco ] = 0.000785861
+FastVerticalInterpHistPdf2::shapeBkg_SR2bBlinded_rest_morph[ x=MH_Reco ] = 0.00319585
+FastVerticalInterpHistPdf2::shapeBkg_SR2bBlinded_ttbar_st_morph[ x=MH_Reco ] = 0.0035492
+FastVerticalInterpHistPdf2::shapeBkg_SR2bBlinded_wjets_morph[ x=MH_Reco ] = 0.00295295
+FastVerticalInterpHistPdf2::shapeBkg_SR2b_rest_morph[ x=MH_Reco ] = 0.00138845
+FastVerticalInterpHistPdf2::shapeBkg_SR2b_ttbar_st_morph[ x=MH_Reco ] = 0.00170859
+FastVerticalInterpHistPdf2::shapeBkg_SR2b_wjets_morph[ x=MH_Reco ] = 0.00120165
+FastVerticalInterpHistPdf2::shapeSig_SR2bBlinded_VBF_morph[ x=MH_Reco ] = 1e-09
+FastVerticalInterpHistPdf2::shapeSig_SR2bBlinded_VH_morph[ x=MH_Reco ] = 0.00266063
+FastVerticalInterpHistPdf2::shapeSig_SR2bBlinded_ggF_morph[ x=MH_Reco ] = 0.00233699
+FastVerticalInterpHistPdf2::shapeSig_SR2bBlinded_ttH_morph[ x=MH_Reco ] = 0.00439253
+FastVerticalInterpHistPdf2::shapeSig_SR2b_VBF_morph[ x=MH_Reco ] = 1e-09
+FastVerticalInterpHistPdf2::shapeSig_SR2b_VH_morph[ x=MH_Reco ] = 0.000703196
+FastVerticalInterpHistPdf2::shapeSig_SR2b_ggF_morph[ x=MH_Reco ] = 0.000499611
+FastVerticalInterpHistPdf2::shapeSig_SR2b_ttH_morph[ x=MH_Reco ] = 0.00177933
+
+functions
+--------
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_parsq0[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_parsq0_SR2b[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_parsq1[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_parsq1_SR2b[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_parsq2[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_parsq2_SR2b[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_parsq3[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_parsq3_SR2b[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p025[ formula="((((x[0]*1.5625000000000004e-05)+(x[1]*0.0018281250000000003))+(x[2]*0.07129687500000001))+(x[3]*0.926859375))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p025_SR2b[ formula="((((x[0]*1.5625000000000004e-05)+(x[1]*0.0018281250000000003))+(x[2]*0.07129687500000001))+(x[3]*0.926859375))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p075[ formula="((((x[0]*0.00042187499999999994)+(x[1]*0.015609375000000002))+(x[2]*0.19251562499999997))+(x[3]*0.791453125))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p075_SR2b[ formula="((((x[0]*0.00042187499999999994)+(x[1]*0.015609375000000002))+(x[2]*0.19251562499999997))+(x[3]*0.791453125))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p125[ formula="((((x[0]*0.001953125)+(x[1]*0.041015625))+(x[2]*0.287109375))+(x[3]*0.669921875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p125_SR2b[ formula="((((x[0]*0.001953125)+(x[1]*0.041015625))+(x[2]*0.287109375))+(x[3]*0.669921875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p175[ formula="((((x[0]*0.005359374999999999)+(x[1]*0.07579687499999999))+(x[2]*0.35732812499999994))+(x[3]*0.5615156250000001))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p175_SR2b[ formula="((((x[0]*0.005359374999999999)+(x[1]*0.07579687499999999))+(x[2]*0.35732812499999994))+(x[3]*0.5615156250000001))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p225[ formula="((((x[0]*0.011390625000000001)+(x[1]*0.117703125))+(x[2]*0.40542187500000004))+(x[3]*0.46548437499999995))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p225_SR2b[ formula="((((x[0]*0.011390625000000001)+(x[1]*0.117703125))+(x[2]*0.40542187500000004))+(x[3]*0.46548437499999995))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p275[ formula="((((x[0]*0.020796875000000006)+(x[1]*0.16448437500000002))+(x[3]*0.381078125))+(x[2]*0.433640625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p275_SR2b[ formula="((((x[0]*0.020796875000000006)+(x[1]*0.16448437500000002))+(x[3]*0.381078125))+(x[2]*0.433640625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p325[ formula="((((x[0]*0.034328125)+(x[1]*0.213890625))+(x[3]*0.30754687499999994))+(x[2]*0.44423437500000007))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p325_SR2b[ formula="((((x[0]*0.034328125)+(x[1]*0.213890625))+(x[3]*0.30754687499999994))+(x[2]*0.44423437500000007))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p375[ formula="((((x[0]*0.052734375)+(x[3]*0.244140625))+(x[1]*0.263671875))+(x[2]*0.439453125))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p375_SR2b[ formula="((((x[0]*0.052734375)+(x[3]*0.244140625))+(x[1]*0.263671875))+(x[2]*0.439453125))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p425[ formula="((((x[0]*0.07676562499999999)+(x[3]*0.19010937499999997))+(x[1]*0.31157812499999993))+(x[2]*0.4215468750000001))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p425_SR2b[ formula="((((x[0]*0.07676562499999999)+(x[3]*0.19010937499999997))+(x[1]*0.31157812499999993))+(x[2]*0.4215468750000001))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p475[ formula="((((x[0]*0.10717187499999999)+(x[3]*0.1447031250000002))+(x[1]*0.35535937500000003))+(x[2]*0.3927656249999998))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p475_SR2b[ formula="((((x[0]*0.10717187499999999)+(x[3]*0.1447031250000002))+(x[1]*0.35535937500000003))+(x[2]*0.3927656249999998))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p525[ formula="((((x[0]*0.10717187499999983)+(x[3]*0.14470312500000002))+(x[2]*0.35535937500000014))+(x[1]*0.392765625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p525_SR2b[ formula="((((x[0]*0.10717187499999983)+(x[3]*0.14470312500000002))+(x[2]*0.35535937500000014))+(x[1]*0.392765625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p575[ formula="((((x[0]*0.076765625)+(x[3]*0.19010937499999997))+(x[2]*0.31157812500000004))+(x[1]*0.421546875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p575_SR2b[ formula="((((x[0]*0.076765625)+(x[3]*0.19010937499999997))+(x[2]*0.31157812500000004))+(x[1]*0.421546875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p625[ formula="((((x[0]*0.052734375)+(x[3]*0.244140625))+(x[2]*0.263671875))+(x[1]*0.439453125))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p625_SR2b[ formula="((((x[0]*0.052734375)+(x[3]*0.244140625))+(x[2]*0.263671875))+(x[1]*0.439453125))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p675[ formula="((((x[0]*0.034328124999999876)+(x[2]*0.2138906249999999))+(x[3]*0.30754687500000005))+(x[1]*0.4442343750000002))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p675_SR2b[ formula="((((x[0]*0.034328124999999876)+(x[2]*0.2138906249999999))+(x[3]*0.30754687500000005))+(x[1]*0.4442343750000002))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p725[ formula="((((x[0]*0.020796875000000214)+(x[2]*0.1644843749999998))+(x[3]*0.381078125))+(x[1]*0.433640625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p725_SR2b[ formula="((((x[0]*0.020796875000000214)+(x[2]*0.1644843749999998))+(x[3]*0.381078125))+(x[1]*0.433640625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p775[ formula="((((x[0]*0.011390625000000099)+(x[2]*0.1177031249999998))+(x[1]*0.40542187500000004))+(x[3]*0.46548437500000006))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p775_SR2b[ formula="((((x[0]*0.011390625000000099)+(x[2]*0.1177031249999998))+(x[1]*0.40542187500000004))+(x[3]*0.46548437500000006))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p825[ formula="((((x[0]*0.005359375000000055)+(x[2]*0.07579687500000021))+(x[1]*0.3573281249999998))+(x[3]*0.561515625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p825_SR2b[ formula="((((x[0]*0.005359375000000055)+(x[2]*0.07579687500000021))+(x[1]*0.3573281249999998))+(x[3]*0.561515625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p875[ formula="((((x[0]*0.001953125)+(x[2]*0.041015625))+(x[1]*0.287109375))+(x[3]*0.669921875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p875_SR2b[ formula="((((x[0]*0.001953125)+(x[2]*0.041015625))+(x[1]*0.287109375))+(x[3]*0.669921875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p925[ formula="((((x[0]*0.000421875000000016)+(x[2]*0.015609374999999481))+(x[1]*0.1925156250000004))+(x[3]*0.7914531250000001))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p925_SR2b[ formula="((((x[0]*0.000421875000000016)+(x[2]*0.015609374999999481))+(x[1]*0.1925156250000004))+(x[3]*0.7914531250000001))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p975[ formula="((((x[0]*1.5624999999963585e-05)+(x[2]*0.0018281250000002913))+(x[1]*0.07129687499999982))+(x[3]*0.9268593749999999))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_2b_eval_MH_Reco0p975_SR2b[ formula="((((x[0]*1.5624999999963585e-05)+(x[2]*0.0018281250000002913))+(x[1]*0.07129687499999982))+(x[3]*0.9268593749999999))" ] = 1
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin0[ formula="(8235.255364251536*(6.5097446140026065**x[0]))" ] = 8235.26
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin0_CR2Blinded[ formula="(8235.255364251536*(6.5097446140026065**x[0]))" ] = 8235.26
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin0_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00838303
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin1[ formula="(16898.801029227747*(4.84629028613698**x[0]))" ] = 16898.8
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin10[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin10_CR2Blinded[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin10_density[ formula="((x[1]/10.0)/x[0])" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin11[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin11_CR2Blinded[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin11_density[ formula="((x[0]/10.0)/x[1])" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin12[ formula="(7755.988308421674*(6.677425335437339**x[0]))" ] = 7755.99
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin12_CR2Blinded[ formula="(7755.988308421674*(6.677425335437339**x[0]))" ] = 7755.99
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin12_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00789516
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin13[ formula="(6032.4294444589705*(7.437598376495574**x[0]))" ] = 6032.43
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin13_CR2Blinded = 6032.43
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin13_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00614067
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin14[ formula="(4489.677749579343*(8.46212327244044**x[0]))" ] = 4489.68
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin14_CR2Blinded[ formula="(4489.677749579343*(8.46212327244044**x[0]))" ] = 4489.68
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin14_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00457024
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin15[ formula="(3417.4745201775727*(9.55297813328842**x[0]))" ] = 3417.47
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin15_CR2Blinded[ formula="(3417.4745201775727*(9.55297813328842**x[0]))" ] = 3417.47
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin15_density[ formula="((x[0]/10.0)/x[1])" ] = 0.0034788
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin16[ formula="(2588.06712210351*(10.828386721444012**x[0]))" ] = 2588.07
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin16_CR2Blinded[ formula="(2588.06712210351*(10.828386721444012**x[0]))" ] = 2588.07
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin16_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00263451
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin17[ formula="(1920.6647268589347*(12.408911835045066**x[0]))" ] = 1920.66
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin17_CR2Blinded[ formula="(1920.6647268589347*(12.408911835045066**x[0]))" ] = 1920.66
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin17_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00195513
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin18[ formula="(1341.0602584563635*(14.653558580939421**x[0]))" ] = 1341.06
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin18_CR2Blinded[ formula="(1341.0602584563635*(14.653558580939421**x[0]))" ] = 1341.06
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin18_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00136512
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin19[ formula="(974.7491096988115*(17.014876014139386**x[0]))" ] = 974.749
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin19_CR2Blinded[ formula="(974.7491096988115*(17.014876014139386**x[0]))" ] = 974.749
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin1_CR2Blinded[ formula="(16898.801029227747*(4.84629028613698**x[0]))" ] = 16898.8
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin1_density[ formula="((x[1]/10.0)/x[0])" ] = 0.017202
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin2[ formula="(21302.748322120984*(4.425722547133571**x[0]))" ] = 21302.7
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin2_CR2Blinded[ formula="(21302.748322120984*(4.425722547133571**x[0]))" ] = 21302.7
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin2_density[ formula="((x[1]/10.0)/x[0])" ] = 0.021685
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin3[ formula="(23280.344856049607*(4.276991385222651**x[0]))" ] = 23280.3
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin3_CR2Blinded[ formula="(23280.344856049607*(4.276991385222651**x[0]))" ] = 23280.3
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin3_density[ formula="((x[0]/10.0)/x[1])" ] = 0.0236981
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin4[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin4_CR2Blinded[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin4_density[ formula="((x[1]/10.0)/x[0])" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin5[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin5_CR2Blinded[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin5_density[ formula="((x[1]/10.0)/x[0])" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin6[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin6_CR2Blinded[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin6_density[ formula="((x[1]/10.0)/x[0])" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin7[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin7_CR2Blinded[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin7_density[ formula="((x[0]/10.0)/x[1])" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin8[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin8_CR2Blinded[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin8_density[ formula="((x[1]/10.0)/x[0])" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin9[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin9_CR2Blinded[ formula="(0.0*(501.0**x[0]))" ] = 0
+RooFormulaVar::CR2Blinded_CMS_HWW_boosted_qcd_datadriven_bin9_density[ formula="((x[1]/10.0)/x[0])" ] = 0
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin0[ formula="(8235.255364251536*(6.5097446140026065**x[0]))" ] = 8235.26
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin0_CR2[ formula="(8235.255364251536*(6.5097446140026065**x[0]))" ] = 8235.26
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin0_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00345124
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin1[ formula="(16898.801029227747*(4.84629028613698**x[0]))" ] = 16898.8
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin10[ formula="(12099.546461811418*(5.545539735337864**x[0]))" ] = 12099.5
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin10_CR2[ formula="(12099.546461811418*(5.545539735337864**x[0]))" ] = 12099.5
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin10_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00507069
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin11[ formula="(9901.416668257803*(6.024829568118928**x[0]))" ] = 9901.42
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin11_CR2[ formula="(9901.416668257803*(6.024829568118928**x[0]))" ] = 9901.42
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin11_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00414949
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin12[ formula="(7755.988308421674*(6.677425335437339**x[0]))" ] = 7755.99
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin12_CR2[ formula="(7755.988308421674*(6.677425335437339**x[0]))" ] = 7755.99
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin12_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00325038
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin13[ formula="(6032.4294444589705*(7.437598376495574**x[0]))" ] = 6032.43
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin13_CR2[ formula="(6032.4294444589705*(7.437598376495574**x[0]))" ] = 6032.43
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin13_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00252807
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin14[ formula="(4489.677749579343*(8.46212327244044**x[0]))" ] = 4489.68
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin14_CR2[ formula="(4489.677749579343*(8.46212327244044**x[0]))" ] = 4489.68
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin14_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00188154
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin15[ formula="(3417.4745201775727*(9.55297813328842**x[0]))" ] = 3417.47
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin15_CR2[ formula="(3417.4745201775727*(9.55297813328842**x[0]))" ] = 3417.47
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin15_density[ formula="((x[1]/10.0)/x[0])" ] = 0.0014322
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin16[ formula="(2588.06712210351*(10.828386721444012**x[0]))" ] = 2588.07
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin16_CR2[ formula="(2588.06712210351*(10.828386721444012**x[0]))" ] = 2588.07
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin16_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00108461
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin17[ formula="(1920.6647268589347*(12.408911835045066**x[0]))" ] = 1920.66
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin17_CR2[ formula="(1920.6647268589347*(12.408911835045066**x[0]))" ] = 1920.66
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin17_density[ formula="((x[1]/10.0)/x[0])" ] = 0.000804914
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin18[ formula="(1341.0602584563635*(14.653558580939421**x[0]))" ] = 1341.06
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin18_CR2[ formula="(1341.0602584563635*(14.653558580939421**x[0]))" ] = 1341.06
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin18_density[ formula="((x[1]/10.0)/x[0])" ] = 0.000562012
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin19[ formula="(974.7491096988115*(17.014876014139386**x[0]))" ] = 974.749
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin19_CR2[ formula="(974.7491096988115*(17.014876014139386**x[0]))" ] = 974.749
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin1_CR2[ formula="(16898.801029227747*(4.84629028613698**x[0]))" ] = 16898.8
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin1_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00708196
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin2[ formula="(21302.748322120984*(4.425722547133571**x[0]))" ] = 21302.7
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin2_CR2[ formula="(21302.748322120984*(4.425722547133571**x[0]))" ] = 21302.7
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin2_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00892757
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin3[ formula="(23280.344856049607*(4.276991385222651**x[0]))" ] = 23280.3
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin3_CR2[ formula="(23280.344856049607*(4.276991385222651**x[0]))" ] = 23280.3
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin3_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00975634
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin4[ formula="(23752.80227745864*(4.244237033475155**x[0]))" ] = 23752.8
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin4_CR2[ formula="(23752.80227745864*(4.244237033475155**x[0]))" ] = 23752.8
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin4_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00995434
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin5[ formula="(22750.03132873849*(4.314965438161187**x[0]))" ] = 22750
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin5_CR2[ formula="(22750.03132873849*(4.314965438161187**x[0]))" ] = 22750
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin5_density[ formula="((x[1]/10.0)/x[0])" ] = 0.0095341
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin6[ formula="(21125.310966786885*(4.440079261326119**x[0]))" ] = 21125.3
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin6_CR2[ formula="(21125.310966786885*(4.440079261326119**x[0]))" ] = 21125.3
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin6_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00885321
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin7[ formula="(19095.166691051996*(4.618330869851883**x[0]))" ] = 19095.2
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin7_CR2[ formula="(19095.166691051996*(4.618330869851883**x[0]))" ] = 19095.2
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin7_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00800242
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin8[ formula="(17062.675181364062*(4.827775361844491**x[0]))" ] = 17062.7
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin8_CR2[ formula="(17062.675181364062*(4.827775361844491**x[0]))" ] = 17062.7
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin8_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00715064
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin9[ formula="(14593.320740909478*(5.138976308000562**x[0]))" ] = 14593.3
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin9_CR2[ formula="(14593.320740909478*(5.138976308000562**x[0]))" ] = 14593.3
+RooFormulaVar::CR2_CMS_HWW_boosted_qcd_datadriven_bin9_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00611578
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin0[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 3192
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin0_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 3192
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin0_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00838303
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin1[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 6550.02
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin10[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin10_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin10_density[ formula="((x[1]/10.0)/x[0])" ] = 2.62626e-10
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin11[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin11_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin11_density[ formula="((x[0]/10.0)/x[1])" ] = 2.62626e-10
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin12[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 3006.24
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin12_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 3006.24
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin12_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00789516
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin13[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 2338.18
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin13_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 2338.18
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin13_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00614067
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin14[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 1740.21
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin14_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 1740.21
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin14_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00457024
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin15[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 1324.62
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin15_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 1324.62
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin15_density[ formula="((x[0]/10.0)/x[1])" ] = 0.0034788
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin16[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 1003.14
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin16_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 1003.14
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin16_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00263451
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin17[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 744.454
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin17_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 744.454
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin17_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00195513
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin18[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 519.798
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin18_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 519.798
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin18_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00136512
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin19[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 377.815
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin19_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 377.815
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin1_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 6550.02
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin1_density[ formula="((x[0]/10.0)/x[1])" ] = 0.017202
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin2[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 8257
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin2_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 8257
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin2_density[ formula="((x[0]/10.0)/x[1])" ] = 0.021685
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin3[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 9023.52
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin3_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 9023.52
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin3_density[ formula="((x[0]/10.0)/x[1])" ] = 0.0236981
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin4[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin4_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin4_density[ formula="((x[0]/10.0)/x[1])" ] = 2.62626e-10
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin5[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin5_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin5_density[ formula="((x[0]/10.0)/x[1])" ] = 2.62626e-10
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin6[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin6_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin6_density[ formula="((x[1]/10.0)/x[0])" ] = 2.62626e-10
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin7[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin7_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin7_density[ formula="((x[0]/10.0)/x[1])" ] = 2.62626e-10
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin8[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin8_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin8_density[ formula="((x[0]/10.0)/x[1])" ] = 2.62626e-10
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin9[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin9_SR2bBlinded[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR2bBlinded_CMS_HWW_boosted_qcd_datadriven_bin9_density[ formula="((x[0]/10.0)/x[1])" ] = 2.62626e-10
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin0[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 3192
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin0_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 3192
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin0_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00345124
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin1[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 6550.02
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin10[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 4689.81
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin10_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 4689.81
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin10_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00507069
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin11[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 3837.81
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin11_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 3837.81
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin11_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00414949
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin12[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 3006.24
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin12_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 3006.24
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin12_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00325038
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin13[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 2338.18
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin13_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 2338.18
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin13_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00252807
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin14[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 1740.21
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin14_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 1740.21
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin14_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00188154
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin15[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 1324.62
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin15_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 1324.62
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin15_density[ formula="((x[0]/10.0)/x[1])" ] = 0.0014322
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin16[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 1003.14
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin16_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 1003.14
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin16_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00108461
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin17[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 744.454
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin17_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 744.454
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin17_density[ formula="((x[0]/10.0)/x[1])" ] = 0.000804914
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin18[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 519.798
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin18_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 519.798
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin18_density[ formula="((x[1]/10.0)/x[0])" ] = 0.000562012
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin19[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 377.815
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin19_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 377.815
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin1_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 6550.02
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin1_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00708196
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin2[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 8257
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin2_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 8257
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin2_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00892757
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin3[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 9023.52
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin3_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 9023.52
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin3_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00975634
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin4[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 9206.64
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin4_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 9206.64
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin4_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00995434
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin5[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 8817.97
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin5_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 8817.97
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin5_density[ formula="((x[0]/10.0)/x[1])" ] = 0.0095341
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin6[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 8188.22
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin6_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 8188.22
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin6_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00885321
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin7[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 7401.33
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin7_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[0])*x[1]), 0.0001))" ] = 7401.33
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin7_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00800242
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin8[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 6613.53
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin8_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 6613.53
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin8_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00715064
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin9[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 5656.41
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin9_SR2b[ formula="(TMath::Max(((0.3876023992949747*x[1])*x[0]), 0.0001))" ] = 5656.41
+RooFormulaVar::SR2b_CMS_HWW_boosted_qcd_datadriven_bin9_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00611578
+ProcessNormalization::n_exp_binCR2Blinded_proc_rest[ asymmThetaList=() otherFactorList=() ] = 779.097
+ProcessNormalization::n_exp_binCR2Blinded_proc_ttbar_st[ asymmThetaList=() otherFactorList=() ] = 2469.77
+ProcessNormalization::n_exp_binCR2Blinded_proc_wjets[ asymmThetaList=() otherFactorList=() ] = 1725.87
+ProcessNormalization::n_exp_binCR2_proc_rest[ asymmThetaList=() otherFactorList=() ] = 1866.58
+ProcessNormalization::n_exp_binCR2_proc_ttbar_st[ asymmThetaList=() otherFactorList=() ] = 5272.49
+ProcessNormalization::n_exp_binCR2_proc_wjets[ asymmThetaList=() otherFactorList=() ] = 4409.4
+ProcessNormalization::n_exp_binSR2bBlinded_proc_VBF[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR2bBlinded_proc_VH[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR2bBlinded_proc_ggF[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR2bBlinded_proc_rest[ asymmThetaList=() otherFactorList=() ] = 417.856
+ProcessNormalization::n_exp_binSR2bBlinded_proc_ttH[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR2bBlinded_proc_ttbar_st[ asymmThetaList=() otherFactorList=() ] = 1641.65
+ProcessNormalization::n_exp_binSR2bBlinded_proc_wjets[ asymmThetaList=() otherFactorList=() ] = 1166.15
+ProcessNormalization::n_exp_binSR2b_proc_VBF[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR2b_proc_VH[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR2b_proc_ggF[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR2b_proc_rest[ asymmThetaList=() otherFactorList=() ] = 961.797
+ProcessNormalization::n_exp_binSR2b_proc_ttH[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR2b_proc_ttbar_st[ asymmThetaList=() otherFactorList=() ] = 3410.15
+ProcessNormalization::n_exp_binSR2b_proc_wjets[ asymmThetaList=() otherFactorList=() ] = 2865.7
+RooProduct::n_exp_final_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven[ n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR2Blinded__norm_CR2Blinded ] = 98237.3
+RooProduct::n_exp_final_binCR2Blinded_proc_rest[ n_exp_binCR2Blinded_proc_rest * systeff_CR2Blinded_rest_CMS_HWW_boosted_CR2_mcstat_bin0 * systeff_CR2Blinded_rest_CMS_HWW_boosted_CR2_mcstat_bin1 * systeff_CR2Blinded_rest_CMS_HWW_boosted_CR2_mcstat_bin12 * systeff_CR2Blinded_rest_CMS_HWW_boosted_CR2_mcstat_bin13 * systeff_CR2Blinded_rest_CMS_HWW_boosted_CR2_mcstat_bin2 * systeff_CR2Blinded_rest_CMS_HWW_boosted_CR2_mcstat_bin3 ] = 779.097
+RooProduct::n_exp_final_binCR2Blinded_proc_ttbar_st[ n_exp_binCR2Blinded_proc_ttbar_st * systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin12 * systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin13 * systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin14 * systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin15 * systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin16 * systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin17 * systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin2 * systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin3 ] = 2469.77
+RooProduct::n_exp_final_binCR2Blinded_proc_wjets[ n_exp_binCR2Blinded_proc_wjets * systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin0 * systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin1 * systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin12 * systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin13 * systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin14 * systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin2 * systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin3 ] = 1725.87
+RooProduct::n_exp_final_binCR2_proc_CMS_HWW_boosted_qcd_datadriven[ n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR2__norm_CR2 ] = 238618
+RooProduct::n_exp_final_binCR2_proc_rest[ n_exp_binCR2_proc_rest * systeff_CR2_rest_CMS_HWW_boosted_CR2_mcstat_bin1 * systeff_CR2_rest_CMS_HWW_boosted_CR2_mcstat_bin6 * systeff_CR2_rest_CMS_HWW_boosted_CR2_mcstat_bin7 * systeff_CR2_rest_CMS_HWW_boosted_CR2_mcstat_bin8 ] = 1866.58
+RooProduct::n_exp_final_binCR2_proc_wjets[ n_exp_binCR2_proc_wjets * systeff_CR2_wjets_CMS_HWW_boosted_CR2_mcstat_bin3 * systeff_CR2_wjets_CMS_HWW_boosted_CR2_mcstat_bin4 * systeff_CR2_wjets_CMS_HWW_boosted_CR2_mcstat_bin5 * systeff_CR2_wjets_CMS_HWW_boosted_CR2_mcstat_bin6 * systeff_CR2_wjets_CMS_HWW_boosted_CR2_mcstat_bin7 ] = 4409.4
+RooProduct::n_exp_final_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven[ n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR2bBlinded__norm_SR2bBlinded ] = 38077
+RooProduct::n_exp_final_binSR2bBlinded_proc_VBF[ n_exp_binSR2bBlinded_proc_VBF * systeff_SR2bBlinded_VBF_CMS_HWW_boosted_SR2b_mcstat_bin1 * systeff_SR2bBlinded_VBF_CMS_HWW_boosted_SR2b_mcstat_bin12 * systeff_SR2bBlinded_VBF_CMS_HWW_boosted_SR2b_mcstat_bin13 * systeff_SR2bBlinded_VBF_CMS_HWW_boosted_SR2b_mcstat_bin2 * systeff_SR2bBlinded_VBF_CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 0
+RooProduct::n_exp_final_binSR2bBlinded_proc_VH[ n_exp_binSR2bBlinded_proc_VH * systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin1 * systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin12 * systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin13 * systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin14 * systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin15 * systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin16 * systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin17 * systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin2 * systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 0
+RooProduct::n_exp_final_binSR2bBlinded_proc_ggF[ n_exp_binSR2bBlinded_proc_ggF * systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin1 * systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin12 * systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin13 * systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin14 * systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin15 * systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin2 * systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 0
+RooProduct::n_exp_final_binSR2bBlinded_proc_rest[ n_exp_binSR2bBlinded_proc_rest * systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin0 * systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin1 * systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin12 * systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin13 * systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin14 * systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin15 * systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin16 * systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin17 * systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin19 * systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin2 * systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 417.856
+RooProduct::n_exp_final_binSR2bBlinded_proc_ttH[ n_exp_binSR2bBlinded_proc_ttH * systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin0 * systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin1 * systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin12 * systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin13 * systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin14 * systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin15 * systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin16 * systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin17 * systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin18 * systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin19 * systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin2 * systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 0
+RooProduct::n_exp_final_binSR2bBlinded_proc_ttbar_st[ n_exp_binSR2bBlinded_proc_ttbar_st * systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin0 * systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin1 * systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin12 * systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin13 * systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin14 * systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin15 * systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin16 * systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin17 * systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin18 * systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin19 * systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin2 * systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 1641.65
+RooProduct::n_exp_final_binSR2bBlinded_proc_wjets[ n_exp_binSR2bBlinded_proc_wjets * systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin0 * systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin1 * systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin12 * systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin13 * systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin14 * systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin15 * systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin16 * systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin17 * systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin19 * systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin2 * systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 1166.15
+RooProduct::n_exp_final_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven[ n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR2b__norm_SR2b ] = 92488.7
+RooProduct::n_exp_final_binSR2b_proc_VBF[ n_exp_binSR2b_proc_VBF * systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin10 * systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin11 * systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin12 * systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin3 * systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin5 * systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin6 * systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin7 * systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin8 * systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 0
+RooProduct::n_exp_final_binSR2b_proc_VH[ n_exp_binSR2b_proc_VH * systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin10 * systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin11 * systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin5 * systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin6 * systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin7 * systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin8 * systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 0
+RooProduct::n_exp_final_binSR2b_proc_ggF[ n_exp_binSR2b_proc_ggF * systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin10 * systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin11 * systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin4 * systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin5 * systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin6 * systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin7 * systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin8 * systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 0
+RooProduct::n_exp_final_binSR2b_proc_rest[ n_exp_binSR2b_proc_rest * systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin1 * systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin11 * systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin12 * systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin2 * systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin3 * systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin4 * systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin5 * systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin6 * systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin7 * systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin8 * systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 961.797
+RooProduct::n_exp_final_binSR2b_proc_ttH[ n_exp_binSR2b_proc_ttH * systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin10 * systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin11 * systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin12 * systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin6 * systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin7 * systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin8 * systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 0
+RooProduct::n_exp_final_binSR2b_proc_ttbar_st[ n_exp_binSR2b_proc_ttbar_st * systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin10 * systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin11 * systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin12 * systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin13 * systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin14 * systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin15 * systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin4 * systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin5 * systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin6 * systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin7 * systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin8 * systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 3410.15
+RooProduct::n_exp_final_binSR2b_proc_wjets[ n_exp_binSR2b_proc_wjets * systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin10 * systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin11 * systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin12 * systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin2 * systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin3 * systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin4 * systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin5 * systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin6 * systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin7 * systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin8 * systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 2865.7
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR2Blinded__norm[ formula="((((x[1]+x[3])+(x[5]+x[7]))+((x[9]+x[11])+(x[13]+x[15])))+(((x[17]+x[19])+(x[0]+x[2]))+(((x[4]+x[6])+(x[8]+x[10]))+((x[12]+x[14])+(x[16]+x[18])))))" ] = 98237.3
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR2Blinded__norm_CR2Blinded[ formula="((((x[1]+x[3])+(x[5]+x[7]))+((x[9]+x[11])+(x[13]+x[15])))+(((x[17]+x[19])+(x[0]+x[2]))+(((x[4]+x[6])+(x[8]+x[10]))+((x[12]+x[14])+(x[16]+x[18])))))" ] = 98237.3
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR2__norm[ formula="((((x[0]+x[2])+(x[4]+x[6]))+((x[8]+x[10])+(x[12]+x[14])))+(((x[16]+x[18])+(x[1]+x[3]))+(((x[5]+x[7])+(x[9]+x[11]))+((x[13]+x[15])+(x[17]+x[19])))))" ] = 238618
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR2__norm_CR2[ formula="((((x[0]+x[2])+(x[4]+x[6]))+((x[8]+x[10])+(x[12]+x[14])))+(((x[16]+x[18])+(x[1]+x[3]))+(((x[5]+x[7])+(x[9]+x[11]))+((x[13]+x[15])+(x[17]+x[19])))))" ] = 238618
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR2bBlinded__norm[ formula="((((x[16]+x[17])+(x[19]+x[1]))+((x[3]+x[5])+(x[7]+x[9])))+(((x[11]+x[14])+(x[15]+x[18]))+(((x[13]+x[0])+(x[2]+x[4]))+((x[6]+x[8])+(x[10]+x[12])))))" ] = 38077
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR2bBlinded__norm_SR2bBlinded[ formula="((((x[16]+x[17])+(x[19]+x[1]))+((x[3]+x[5])+(x[7]+x[9])))+(((x[11]+x[14])+(x[15]+x[18]))+(((x[13]+x[0])+(x[2]+x[4]))+((x[6]+x[8])+(x[10]+x[12])))))" ] = 38077
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR2b__norm[ formula="((((x[15]+x[16])+(x[18]+x[0]))+((x[1]+x[3])+(x[5]+x[7])))+(((x[10]+x[11])+(x[13]+x[14]))+(((x[17]+x[19])+(x[2]+x[4]))+((x[6]+x[8])+(x[9]+x[12])))))" ] = 92488.7
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR2b__norm_SR2b[ formula="((((x[15]+x[16])+(x[18]+x[0]))+((x[1]+x[3])+(x[5]+x[7])))+(((x[10]+x[11])+(x[13]+x[14]))+(((x[17]+x[19])+(x[2]+x[4]))+((x[6]+x[8])+(x[9]+x[12])))))" ] = 92488.7
+AsymPow::systeff_CR2Blinded_rest_CMS_HWW_boosted_CR2_mcstat_bin0[ kappaHigh=1.001695 theta=CMS_HWW_boosted_CR2_mcstat_bin0 ] = 1
+AsymPow::systeff_CR2Blinded_rest_CMS_HWW_boosted_CR2_mcstat_bin1[ kappaHigh=1.002423 theta=CMS_HWW_boosted_CR2_mcstat_bin1 ] = 1
+AsymPow::systeff_CR2Blinded_rest_CMS_HWW_boosted_CR2_mcstat_bin12[ kappaHigh=1.001560 theta=CMS_HWW_boosted_CR2_mcstat_bin12 ] = 1
+AsymPow::systeff_CR2Blinded_rest_CMS_HWW_boosted_CR2_mcstat_bin13[ kappaHigh=1.001120 theta=CMS_HWW_boosted_CR2_mcstat_bin13 ] = 1
+AsymPow::systeff_CR2Blinded_rest_CMS_HWW_boosted_CR2_mcstat_bin2[ kappaHigh=1.002085 theta=CMS_HWW_boosted_CR2_mcstat_bin2 ] = 1
+AsymPow::systeff_CR2Blinded_rest_CMS_HWW_boosted_CR2_mcstat_bin3[ kappaHigh=1.002233 theta=CMS_HWW_boosted_CR2_mcstat_bin3 ] = 1
+AsymPow::systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin12[ kappaHigh=1.001959 theta=CMS_HWW_boosted_CR2_mcstat_bin12 ] = 1
+AsymPow::systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin13[ kappaHigh=1.001744 theta=CMS_HWW_boosted_CR2_mcstat_bin13 ] = 1
+AsymPow::systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin14[ kappaHigh=1.001893 theta=CMS_HWW_boosted_CR2_mcstat_bin14 ] = 1
+AsymPow::systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin15[ kappaHigh=1.001644 theta=CMS_HWW_boosted_CR2_mcstat_bin15 ] = 1
+AsymPow::systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin16[ kappaHigh=1.001263 theta=CMS_HWW_boosted_CR2_mcstat_bin16 ] = 1
+AsymPow::systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin17[ kappaHigh=1.001226 theta=CMS_HWW_boosted_CR2_mcstat_bin17 ] = 1
+AsymPow::systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin2[ kappaHigh=1.001022 theta=CMS_HWW_boosted_CR2_mcstat_bin2 ] = 1
+AsymPow::systeff_CR2Blinded_ttbar_st_CMS_HWW_boosted_CR2_mcstat_bin3[ kappaHigh=1.001554 theta=CMS_HWW_boosted_CR2_mcstat_bin3 ] = 1
+AsymPow::systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin0[ kappaHigh=1.001289 theta=CMS_HWW_boosted_CR2_mcstat_bin0 ] = 1
+AsymPow::systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin1[ kappaHigh=1.001853 theta=CMS_HWW_boosted_CR2_mcstat_bin1 ] = 1
+AsymPow::systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin12[ kappaHigh=1.001702 theta=CMS_HWW_boosted_CR2_mcstat_bin12 ] = 1
+AsymPow::systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin13[ kappaHigh=1.001215 theta=CMS_HWW_boosted_CR2_mcstat_bin13 ] = 1
+AsymPow::systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin14[ kappaHigh=1.001111 theta=CMS_HWW_boosted_CR2_mcstat_bin14 ] = 1
+AsymPow::systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin2[ kappaHigh=1.001930 theta=CMS_HWW_boosted_CR2_mcstat_bin2 ] = 1
+AsymPow::systeff_CR2Blinded_wjets_CMS_HWW_boosted_CR2_mcstat_bin3[ kappaHigh=1.002645 theta=CMS_HWW_boosted_CR2_mcstat_bin3 ] = 1
+AsymPow::systeff_CR2_rest_CMS_HWW_boosted_CR2_mcstat_bin1[ kappaHigh=1.001011 theta=CMS_HWW_boosted_CR2_mcstat_bin1 ] = 1
+AsymPow::systeff_CR2_rest_CMS_HWW_boosted_CR2_mcstat_bin6[ kappaHigh=1.001028 theta=CMS_HWW_boosted_CR2_mcstat_bin6 ] = 1
+AsymPow::systeff_CR2_rest_CMS_HWW_boosted_CR2_mcstat_bin7[ kappaHigh=1.001142 theta=CMS_HWW_boosted_CR2_mcstat_bin7 ] = 1
+AsymPow::systeff_CR2_rest_CMS_HWW_boosted_CR2_mcstat_bin8[ kappaHigh=1.001026 theta=CMS_HWW_boosted_CR2_mcstat_bin8 ] = 1
+AsymPow::systeff_CR2_wjets_CMS_HWW_boosted_CR2_mcstat_bin3[ kappaHigh=1.001035 theta=CMS_HWW_boosted_CR2_mcstat_bin3 ] = 1
+AsymPow::systeff_CR2_wjets_CMS_HWW_boosted_CR2_mcstat_bin4[ kappaHigh=1.001100 theta=CMS_HWW_boosted_CR2_mcstat_bin4 ] = 1
+AsymPow::systeff_CR2_wjets_CMS_HWW_boosted_CR2_mcstat_bin5[ kappaHigh=1.001111 theta=CMS_HWW_boosted_CR2_mcstat_bin5 ] = 1
+AsymPow::systeff_CR2_wjets_CMS_HWW_boosted_CR2_mcstat_bin6[ kappaHigh=1.001006 theta=CMS_HWW_boosted_CR2_mcstat_bin6 ] = 1
+AsymPow::systeff_CR2_wjets_CMS_HWW_boosted_CR2_mcstat_bin7[ kappaHigh=1.001052 theta=CMS_HWW_boosted_CR2_mcstat_bin7 ] = 1
+AsymPow::systeff_SR2bBlinded_VBF_CMS_HWW_boosted_SR2b_mcstat_bin1[ kappaHigh=1.001576 theta=CMS_HWW_boosted_SR2b_mcstat_bin1 ] = 1
+AsymPow::systeff_SR2bBlinded_VBF_CMS_HWW_boosted_SR2b_mcstat_bin12[ kappaHigh=1.006016 theta=CMS_HWW_boosted_SR2b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR2bBlinded_VBF_CMS_HWW_boosted_SR2b_mcstat_bin13[ kappaHigh=1.001853 theta=CMS_HWW_boosted_SR2b_mcstat_bin13 ] = 1
+AsymPow::systeff_SR2bBlinded_VBF_CMS_HWW_boosted_SR2b_mcstat_bin2[ kappaHigh=1.002577 theta=CMS_HWW_boosted_SR2b_mcstat_bin2 ] = 1
+AsymPow::systeff_SR2bBlinded_VBF_CMS_HWW_boosted_SR2b_mcstat_bin3[ kappaHigh=1.005497 theta=CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin1[ kappaHigh=1.001815 theta=CMS_HWW_boosted_SR2b_mcstat_bin1 ] = 1
+AsymPow::systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin12[ kappaHigh=1.003055 theta=CMS_HWW_boosted_SR2b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin13[ kappaHigh=1.001926 theta=CMS_HWW_boosted_SR2b_mcstat_bin13 ] = 1
+AsymPow::systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin14[ kappaHigh=1.001655 theta=CMS_HWW_boosted_SR2b_mcstat_bin14 ] = 1
+AsymPow::systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin15[ kappaHigh=1.001048 theta=CMS_HWW_boosted_SR2b_mcstat_bin15 ] = 1
+AsymPow::systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin16[ kappaHigh=1.001241 theta=CMS_HWW_boosted_SR2b_mcstat_bin16 ] = 1
+AsymPow::systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin17[ kappaHigh=1.001069 theta=CMS_HWW_boosted_SR2b_mcstat_bin17 ] = 1
+AsymPow::systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin2[ kappaHigh=1.003085 theta=CMS_HWW_boosted_SR2b_mcstat_bin2 ] = 1
+AsymPow::systeff_SR2bBlinded_VH_CMS_HWW_boosted_SR2b_mcstat_bin3[ kappaHigh=1.003020 theta=CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin1[ kappaHigh=1.001137 theta=CMS_HWW_boosted_SR2b_mcstat_bin1 ] = 1
+AsymPow::systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin12[ kappaHigh=1.003995 theta=CMS_HWW_boosted_SR2b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin13[ kappaHigh=1.002226 theta=CMS_HWW_boosted_SR2b_mcstat_bin13 ] = 1
+AsymPow::systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin14[ kappaHigh=1.001647 theta=CMS_HWW_boosted_SR2b_mcstat_bin14 ] = 1
+AsymPow::systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin15[ kappaHigh=1.001070 theta=CMS_HWW_boosted_SR2b_mcstat_bin15 ] = 1
+AsymPow::systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin2[ kappaHigh=1.003278 theta=CMS_HWW_boosted_SR2b_mcstat_bin2 ] = 1
+AsymPow::systeff_SR2bBlinded_ggF_CMS_HWW_boosted_SR2b_mcstat_bin3[ kappaHigh=1.003502 theta=CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin0[ kappaHigh=1.001556 theta=CMS_HWW_boosted_SR2b_mcstat_bin0 ] = 1
+AsymPow::systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin1[ kappaHigh=1.002637 theta=CMS_HWW_boosted_SR2b_mcstat_bin1 ] = 1
+AsymPow::systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin12[ kappaHigh=1.002515 theta=CMS_HWW_boosted_SR2b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin13[ kappaHigh=1.001689 theta=CMS_HWW_boosted_SR2b_mcstat_bin13 ] = 1
+AsymPow::systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin14[ kappaHigh=1.001620 theta=CMS_HWW_boosted_SR2b_mcstat_bin14 ] = 1
+AsymPow::systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin15[ kappaHigh=1.001571 theta=CMS_HWW_boosted_SR2b_mcstat_bin15 ] = 1
+AsymPow::systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin16[ kappaHigh=1.001049 theta=CMS_HWW_boosted_SR2b_mcstat_bin16 ] = 1
+AsymPow::systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin17[ kappaHigh=1.001014 theta=CMS_HWW_boosted_SR2b_mcstat_bin17 ] = 1
+AsymPow::systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin19[ kappaHigh=1.001103 theta=CMS_HWW_boosted_SR2b_mcstat_bin19 ] = 1
+AsymPow::systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin2[ kappaHigh=1.003214 theta=CMS_HWW_boosted_SR2b_mcstat_bin2 ] = 1
+AsymPow::systeff_SR2bBlinded_rest_CMS_HWW_boosted_SR2b_mcstat_bin3[ kappaHigh=1.002397 theta=CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin0[ kappaHigh=1.001156 theta=CMS_HWW_boosted_SR2b_mcstat_bin0 ] = 1
+AsymPow::systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin1[ kappaHigh=1.001136 theta=CMS_HWW_boosted_SR2b_mcstat_bin1 ] = 1
+AsymPow::systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin12[ kappaHigh=1.002837 theta=CMS_HWW_boosted_SR2b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin13[ kappaHigh=1.002157 theta=CMS_HWW_boosted_SR2b_mcstat_bin13 ] = 1
+AsymPow::systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin14[ kappaHigh=1.002049 theta=CMS_HWW_boosted_SR2b_mcstat_bin14 ] = 1
+AsymPow::systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin15[ kappaHigh=1.002255 theta=CMS_HWW_boosted_SR2b_mcstat_bin15 ] = 1
+AsymPow::systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin16[ kappaHigh=1.001729 theta=CMS_HWW_boosted_SR2b_mcstat_bin16 ] = 1
+AsymPow::systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin17[ kappaHigh=1.001771 theta=CMS_HWW_boosted_SR2b_mcstat_bin17 ] = 1
+AsymPow::systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin18[ kappaHigh=1.001389 theta=CMS_HWW_boosted_SR2b_mcstat_bin18 ] = 1
+AsymPow::systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin19[ kappaHigh=1.001516 theta=CMS_HWW_boosted_SR2b_mcstat_bin19 ] = 1
+AsymPow::systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin2[ kappaHigh=1.001523 theta=CMS_HWW_boosted_SR2b_mcstat_bin2 ] = 1
+AsymPow::systeff_SR2bBlinded_ttH_CMS_HWW_boosted_SR2b_mcstat_bin3[ kappaHigh=1.001571 theta=CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin0[ kappaHigh=1.001031 theta=CMS_HWW_boosted_SR2b_mcstat_bin0 ] = 1
+AsymPow::systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin1[ kappaHigh=1.001144 theta=CMS_HWW_boosted_SR2b_mcstat_bin1 ] = 1
+AsymPow::systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin12[ kappaHigh=1.002692 theta=CMS_HWW_boosted_SR2b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin13[ kappaHigh=1.002552 theta=CMS_HWW_boosted_SR2b_mcstat_bin13 ] = 1
+AsymPow::systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin14[ kappaHigh=1.002361 theta=CMS_HWW_boosted_SR2b_mcstat_bin14 ] = 1
+AsymPow::systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin15[ kappaHigh=1.002242 theta=CMS_HWW_boosted_SR2b_mcstat_bin15 ] = 1
+AsymPow::systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin16[ kappaHigh=1.001727 theta=CMS_HWW_boosted_SR2b_mcstat_bin16 ] = 1
+AsymPow::systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin17[ kappaHigh=1.001438 theta=CMS_HWW_boosted_SR2b_mcstat_bin17 ] = 1
+AsymPow::systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin18[ kappaHigh=1.001168 theta=CMS_HWW_boosted_SR2b_mcstat_bin18 ] = 1
+AsymPow::systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin19[ kappaHigh=1.001225 theta=CMS_HWW_boosted_SR2b_mcstat_bin19 ] = 1
+AsymPow::systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin2[ kappaHigh=1.001452 theta=CMS_HWW_boosted_SR2b_mcstat_bin2 ] = 1
+AsymPow::systeff_SR2bBlinded_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin3[ kappaHigh=1.001685 theta=CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin0[ kappaHigh=1.001229 theta=CMS_HWW_boosted_SR2b_mcstat_bin0 ] = 1
+AsymPow::systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin1[ kappaHigh=1.002049 theta=CMS_HWW_boosted_SR2b_mcstat_bin1 ] = 1
+AsymPow::systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin12[ kappaHigh=1.002519 theta=CMS_HWW_boosted_SR2b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin13[ kappaHigh=1.002046 theta=CMS_HWW_boosted_SR2b_mcstat_bin13 ] = 1
+AsymPow::systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin14[ kappaHigh=1.001643 theta=CMS_HWW_boosted_SR2b_mcstat_bin14 ] = 1
+AsymPow::systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin15[ kappaHigh=1.001618 theta=CMS_HWW_boosted_SR2b_mcstat_bin15 ] = 1
+AsymPow::systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin16[ kappaHigh=1.001323 theta=CMS_HWW_boosted_SR2b_mcstat_bin16 ] = 1
+AsymPow::systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin17[ kappaHigh=1.001131 theta=CMS_HWW_boosted_SR2b_mcstat_bin17 ] = 1
+AsymPow::systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin19[ kappaHigh=1.001019 theta=CMS_HWW_boosted_SR2b_mcstat_bin19 ] = 1
+AsymPow::systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin2[ kappaHigh=1.002537 theta=CMS_HWW_boosted_SR2b_mcstat_bin2 ] = 1
+AsymPow::systeff_SR2bBlinded_wjets_CMS_HWW_boosted_SR2b_mcstat_bin3[ kappaHigh=1.002838 theta=CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin10[ kappaHigh=1.001427 theta=CMS_HWW_boosted_SR2b_mcstat_bin10 ] = 1
+AsymPow::systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin11[ kappaHigh=1.001510 theta=CMS_HWW_boosted_SR2b_mcstat_bin11 ] = 1
+AsymPow::systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin12[ kappaHigh=1.001099 theta=CMS_HWW_boosted_SR2b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin3[ kappaHigh=1.001004 theta=CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin5[ kappaHigh=1.001505 theta=CMS_HWW_boosted_SR2b_mcstat_bin5 ] = 1
+AsymPow::systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin6[ kappaHigh=1.001926 theta=CMS_HWW_boosted_SR2b_mcstat_bin6 ] = 1
+AsymPow::systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin7[ kappaHigh=1.002339 theta=CMS_HWW_boosted_SR2b_mcstat_bin7 ] = 1
+AsymPow::systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin8[ kappaHigh=1.002318 theta=CMS_HWW_boosted_SR2b_mcstat_bin8 ] = 1
+AsymPow::systeff_SR2b_VBF_CMS_HWW_boosted_SR2b_mcstat_bin9[ kappaHigh=1.002424 theta=CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 1
+AsymPow::systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin10[ kappaHigh=1.001458 theta=CMS_HWW_boosted_SR2b_mcstat_bin10 ] = 1
+AsymPow::systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin11[ kappaHigh=1.001162 theta=CMS_HWW_boosted_SR2b_mcstat_bin11 ] = 1
+AsymPow::systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin5[ kappaHigh=1.001138 theta=CMS_HWW_boosted_SR2b_mcstat_bin5 ] = 1
+AsymPow::systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin6[ kappaHigh=1.001620 theta=CMS_HWW_boosted_SR2b_mcstat_bin6 ] = 1
+AsymPow::systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin7[ kappaHigh=1.001793 theta=CMS_HWW_boosted_SR2b_mcstat_bin7 ] = 1
+AsymPow::systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin8[ kappaHigh=1.002223 theta=CMS_HWW_boosted_SR2b_mcstat_bin8 ] = 1
+AsymPow::systeff_SR2b_VH_CMS_HWW_boosted_SR2b_mcstat_bin9[ kappaHigh=1.002411 theta=CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 1
+AsymPow::systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin10[ kappaHigh=1.001455 theta=CMS_HWW_boosted_SR2b_mcstat_bin10 ] = 1
+AsymPow::systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin11[ kappaHigh=1.001118 theta=CMS_HWW_boosted_SR2b_mcstat_bin11 ] = 1
+AsymPow::systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin4[ kappaHigh=1.001070 theta=CMS_HWW_boosted_SR2b_mcstat_bin4 ] = 1
+AsymPow::systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin5[ kappaHigh=1.001324 theta=CMS_HWW_boosted_SR2b_mcstat_bin5 ] = 1
+AsymPow::systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin6[ kappaHigh=1.001655 theta=CMS_HWW_boosted_SR2b_mcstat_bin6 ] = 1
+AsymPow::systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin7[ kappaHigh=1.002204 theta=CMS_HWW_boosted_SR2b_mcstat_bin7 ] = 1
+AsymPow::systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin8[ kappaHigh=1.002275 theta=CMS_HWW_boosted_SR2b_mcstat_bin8 ] = 1
+AsymPow::systeff_SR2b_ggF_CMS_HWW_boosted_SR2b_mcstat_bin9[ kappaHigh=1.002439 theta=CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 1
+AsymPow::systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin1[ kappaHigh=1.001146 theta=CMS_HWW_boosted_SR2b_mcstat_bin1 ] = 1
+AsymPow::systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin11[ kappaHigh=1.001111 theta=CMS_HWW_boosted_SR2b_mcstat_bin11 ] = 1
+AsymPow::systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin12[ kappaHigh=1.001093 theta=CMS_HWW_boosted_SR2b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin2[ kappaHigh=1.001396 theta=CMS_HWW_boosted_SR2b_mcstat_bin2 ] = 1
+AsymPow::systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin3[ kappaHigh=1.001041 theta=CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin4[ kappaHigh=1.001002 theta=CMS_HWW_boosted_SR2b_mcstat_bin4 ] = 1
+AsymPow::systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin5[ kappaHigh=1.001275 theta=CMS_HWW_boosted_SR2b_mcstat_bin5 ] = 1
+AsymPow::systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin6[ kappaHigh=1.001516 theta=CMS_HWW_boosted_SR2b_mcstat_bin6 ] = 1
+AsymPow::systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin7[ kappaHigh=1.001293 theta=CMS_HWW_boosted_SR2b_mcstat_bin7 ] = 1
+AsymPow::systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin8[ kappaHigh=1.001164 theta=CMS_HWW_boosted_SR2b_mcstat_bin8 ] = 1
+AsymPow::systeff_SR2b_rest_CMS_HWW_boosted_SR2b_mcstat_bin9[ kappaHigh=1.001304 theta=CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 1
+AsymPow::systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin10[ kappaHigh=1.001343 theta=CMS_HWW_boosted_SR2b_mcstat_bin10 ] = 1
+AsymPow::systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin11[ kappaHigh=1.001093 theta=CMS_HWW_boosted_SR2b_mcstat_bin11 ] = 1
+AsymPow::systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin12[ kappaHigh=1.001149 theta=CMS_HWW_boosted_SR2b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin6[ kappaHigh=1.001283 theta=CMS_HWW_boosted_SR2b_mcstat_bin6 ] = 1
+AsymPow::systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin7[ kappaHigh=1.001384 theta=CMS_HWW_boosted_SR2b_mcstat_bin7 ] = 1
+AsymPow::systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin8[ kappaHigh=1.001655 theta=CMS_HWW_boosted_SR2b_mcstat_bin8 ] = 1
+AsymPow::systeff_SR2b_ttH_CMS_HWW_boosted_SR2b_mcstat_bin9[ kappaHigh=1.001933 theta=CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 1
+AsymPow::systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin10[ kappaHigh=1.001088 theta=CMS_HWW_boosted_SR2b_mcstat_bin10 ] = 1
+AsymPow::systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin11[ kappaHigh=1.001212 theta=CMS_HWW_boosted_SR2b_mcstat_bin11 ] = 1
+AsymPow::systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin12[ kappaHigh=1.001296 theta=CMS_HWW_boosted_SR2b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin13[ kappaHigh=1.001229 theta=CMS_HWW_boosted_SR2b_mcstat_bin13 ] = 1
+AsymPow::systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin14[ kappaHigh=1.001136 theta=CMS_HWW_boosted_SR2b_mcstat_bin14 ] = 1
+AsymPow::systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin15[ kappaHigh=1.001079 theta=CMS_HWW_boosted_SR2b_mcstat_bin15 ] = 1
+AsymPow::systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin4[ kappaHigh=1.001065 theta=CMS_HWW_boosted_SR2b_mcstat_bin4 ] = 1
+AsymPow::systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin5[ kappaHigh=1.001036 theta=CMS_HWW_boosted_SR2b_mcstat_bin5 ] = 1
+AsymPow::systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin6[ kappaHigh=1.001116 theta=CMS_HWW_boosted_SR2b_mcstat_bin6 ] = 1
+AsymPow::systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin7[ kappaHigh=1.001054 theta=CMS_HWW_boosted_SR2b_mcstat_bin7 ] = 1
+AsymPow::systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin8[ kappaHigh=1.001125 theta=CMS_HWW_boosted_SR2b_mcstat_bin8 ] = 1
+AsymPow::systeff_SR2b_ttbar_st_CMS_HWW_boosted_SR2b_mcstat_bin9[ kappaHigh=1.001154 theta=CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 1
+AsymPow::systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin10[ kappaHigh=1.001155 theta=CMS_HWW_boosted_SR2b_mcstat_bin10 ] = 1
+AsymPow::systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin11[ kappaHigh=1.001120 theta=CMS_HWW_boosted_SR2b_mcstat_bin11 ] = 1
+AsymPow::systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin12[ kappaHigh=1.001025 theta=CMS_HWW_boosted_SR2b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin2[ kappaHigh=1.001032 theta=CMS_HWW_boosted_SR2b_mcstat_bin2 ] = 1
+AsymPow::systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin3[ kappaHigh=1.001155 theta=CMS_HWW_boosted_SR2b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin4[ kappaHigh=1.001307 theta=CMS_HWW_boosted_SR2b_mcstat_bin4 ] = 1
+AsymPow::systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin5[ kappaHigh=1.001243 theta=CMS_HWW_boosted_SR2b_mcstat_bin5 ] = 1
+AsymPow::systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin6[ kappaHigh=1.001386 theta=CMS_HWW_boosted_SR2b_mcstat_bin6 ] = 1
+AsymPow::systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin7[ kappaHigh=1.001276 theta=CMS_HWW_boosted_SR2b_mcstat_bin7 ] = 1
+AsymPow::systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin8[ kappaHigh=1.001310 theta=CMS_HWW_boosted_SR2b_mcstat_bin8 ] = 1
+AsymPow::systeff_SR2b_wjets_CMS_HWW_boosted_SR2b_mcstat_bin9[ kappaHigh=1.001276 theta=CMS_HWW_boosted_SR2b_mcstat_bin9 ] = 1
+
+datasets
+--------
+RooDataSet::data_obs(MH_Reco,CMS_channel)
+
+parameter snapshots
+-------------------
+clean = (shapeBkg_ttbar_st_CR2__norm=10[C],shapeBkg_wjets_CR2__norm=10[C],shapeBkg_rest_CR2__norm=10[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin0=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin10=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin1=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin11=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin2=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin12=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin3=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin13=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin4=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin14=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin5=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin15=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin6=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin16=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin7=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin17=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin8=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin18=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin9=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin19=0,shapeBkg_ttbar_st_CR2Blinded__norm=10[C],shapeBkg_wjets_CR2Blinded__norm=10[C],shapeBkg_rest_CR2Blinded__norm=10[C],shapeSig_ggF_SR2b__norm=9.18947[C],shapeSig_VBF_SR2b__norm=3.86015[C],shapeSig_VH_SR2b__norm=6.1353[C],shapeSig_ttH_SR2b__norm=9.76334[C],shapeBkg_ttbar_st_SR2b__norm=10[C],shapeBkg_wjets_SR2b__norm=10[C],shapeBkg_rest_SR2b__norm=10[C],CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par3=1,CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par2=1,CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par1=1,CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par0=1,shapeSig_ggF_SR2bBlinded__norm=1.96456[C],shapeSig_VBF_SR2bBlinded__norm=0.704908[C],shapeSig_VH_SR2bBlinded__norm=1.62154[C],shapeSig_ttH_SR2bBlinded__norm=3.95495[C],shapeBkg_ttbar_st_SR2bBlinded__norm=10[C],shapeBkg_wjets_SR2bBlinded__norm=10[C],shapeBkg_rest_SR2bBlinded__norm=10[C],MH_Reco=235,CMS_channel=SR2bBlinded(idx = 3)
+,r=0[C],BR_hww=0 +/- 1,BR_hww_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin0=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin0_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin1=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin1_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin10=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin10_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin11=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin11_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin12=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin12_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin13=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin13_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin14=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin14_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin15=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin15_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin16=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin16_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin17=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin17_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin18=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin18_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin19=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin19_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin2=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin2_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin3=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin3_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin4=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin4_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin5=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin5_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin6=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin6_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin7=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin7_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin8=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin8_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin9=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin9_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin0=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin0_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin1=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin1_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin10=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin10_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin11=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin11_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin12=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin12_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin13=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin13_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin14=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin14_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin15=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin15_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin16=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin16_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin17=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin17_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin18=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin18_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin19=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin19_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin2=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin2_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin3=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin3_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin4=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin4_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin5=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin5_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin6=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin6_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin7=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin7_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin8=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin8_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin9=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin9_In=0[C],lumi_13TeV_correlated=0 +/- 1,lumi_13TeV_correlated_In=0[C],n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven=1[C],n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven=1[C],n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven=1[C],n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven=1[C],mask_CR2=1[C],mask_CR2Blinded=0[C],mask_SR2b=1[C],mask_SR2bBlinded=0[C])
+MultiDimFit = (shapeBkg_ttbar_st_CR2__norm=10[C],shapeBkg_wjets_CR2__norm=10[C],shapeBkg_rest_CR2__norm=10[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin0=-0.00266061 +/- 0.00563955,CMS_HWW_boosted_tf_dataResidual_CR2_Bin10=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin1=0.00329223 +/- 0.00449211,CMS_HWW_boosted_tf_dataResidual_CR2_Bin11=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin2=-0.000474078 +/- 0.00414872,CMS_HWW_boosted_tf_dataResidual_CR2_Bin12=0.00332799 +/- 0.00560364,CMS_HWW_boosted_tf_dataResidual_CR2_Bin3=-0.00109558 +/- 0.00423629,CMS_HWW_boosted_tf_dataResidual_CR2_Bin13=-0.00436918 +/- 0.00591873,CMS_HWW_boosted_tf_dataResidual_CR2_Bin4=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin14=0.00473583 +/- 0.00654029,CMS_HWW_boosted_tf_dataResidual_CR2_Bin5=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin15=-0.000835183 +/- 0.00705827,CMS_HWW_boosted_tf_dataResidual_CR2_Bin6=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin16=-0.0030707 +/- 0.00766945,CMS_HWW_boosted_tf_dataResidual_CR2_Bin7=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin17=-0.00839926 +/- 0.00846486,CMS_HWW_boosted_tf_dataResidual_CR2_Bin8=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin18=0.00776859 +/- 0.00952005,CMS_HWW_boosted_tf_dataResidual_CR2_Bin9=0[C],CMS_HWW_boosted_tf_dataResidual_CR2_Bin19=0.00269431 +/- 0.0111816,shapeBkg_ttbar_st_CR2Blinded__norm=10[C],shapeBkg_wjets_CR2Blinded__norm=10[C],shapeBkg_rest_CR2Blinded__norm=10[C],shapeSig_ggF_SR2b__norm=9.18947[C],shapeSig_VBF_SR2b__norm=3.86015[C],shapeSig_VH_SR2b__norm=6.1353[C],shapeSig_ttH_SR2b__norm=9.76334[C],shapeBkg_ttbar_st_SR2b__norm=10[C],shapeBkg_wjets_SR2b__norm=10[C],shapeBkg_rest_SR2b__norm=10[C],CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par3=1.17685 +/- 0.0243542,CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par2=1.0567 +/- 0.0347276,CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par1=0.952224 +/- 0.0305055,CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par0=0.923932 +/- 0.0107919,shapeSig_ggF_SR2bBlinded__norm=1.96456[C],shapeSig_VBF_SR2bBlinded__norm=0.704908[C],shapeSig_VH_SR2bBlinded__norm=1.62154[C],shapeSig_ttH_SR2bBlinded__norm=3.95495[C],shapeBkg_ttbar_st_SR2bBlinded__norm=10[C],shapeBkg_wjets_SR2bBlinded__norm=10[C],shapeBkg_rest_SR2bBlinded__norm=10[C],MH_Reco=235,CMS_channel=SR2bBlinded(idx = 3)
+,r=0[C],BR_hww=0 +/- 1,BR_hww_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin0=0.0296028 +/- 0.99891,CMS_HWW_boosted_CR2_mcstat_bin0_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin1=-0.0345614 +/- 0.998118,CMS_HWW_boosted_CR2_mcstat_bin1_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin10=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin10_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin11=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin11_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin12=-0.0582704 +/- 0.986581,CMS_HWW_boosted_CR2_mcstat_bin12_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin13=0.0568555 +/- 0.995684,CMS_HWW_boosted_CR2_mcstat_bin13_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin14=-0.0677506 +/- 0.994501,CMS_HWW_boosted_CR2_mcstat_bin14_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin15=0.0100459 +/- 0.994513,CMS_HWW_boosted_CR2_mcstat_bin15_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin16=0.0322354 +/- 0.9948,CMS_HWW_boosted_CR2_mcstat_bin16_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin17=0.0959455 +/- 0.989161,CMS_HWW_boosted_CR2_mcstat_bin17_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin18=-0.0749673 +/- 0.99076,CMS_HWW_boosted_CR2_mcstat_bin18_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin19=-0.0231348 +/- 0.993718,CMS_HWW_boosted_CR2_mcstat_bin19_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin2=0.00579697 +/- 0.999796,CMS_HWW_boosted_CR2_mcstat_bin2_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin3=0.0147091 +/- 0.999236,CMS_HWW_boosted_CR2_mcstat_bin3_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin4=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin4_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin5=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin5_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin6=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin6_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin7=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin7_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin8=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin8_In=0[C],CMS_HWW_boosted_CR2_mcstat_bin9=0 +/- 1,CMS_HWW_boosted_CR2_mcstat_bin9_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin0=-0.0545334 +/- 0.99958,CMS_HWW_boosted_SR2b_mcstat_bin0_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin1=0.0825904 +/- 0.997889,CMS_HWW_boosted_SR2b_mcstat_bin1_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin10=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin10_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin11=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin11_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin12=0.110369 +/- 0.98476,CMS_HWW_boosted_SR2b_mcstat_bin12_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin13=-0.131737 +/- 0.988757,CMS_HWW_boosted_SR2b_mcstat_bin13_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin14=0.126903 +/- 0.988052,CMS_HWW_boosted_SR2b_mcstat_bin14_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin15=-0.0215831 +/- 0.984838,CMS_HWW_boosted_SR2b_mcstat_bin15_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin16=-0.0650846 +/- 0.987748,CMS_HWW_boosted_SR2b_mcstat_bin16_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin17=-0.155685 +/- 0.98692,CMS_HWW_boosted_SR2b_mcstat_bin17_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin18=0.120884 +/- 0.986041,CMS_HWW_boosted_SR2b_mcstat_bin18_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin19=0.0458884 +/- 0.983844,CMS_HWW_boosted_SR2b_mcstat_bin19_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin2=-0.0124803 +/- 0.997847,CMS_HWW_boosted_SR2b_mcstat_bin2_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin3=-0.0315714 +/- 0.998302,CMS_HWW_boosted_SR2b_mcstat_bin3_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin4=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin4_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin5=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin5_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin6=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin6_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin7=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin7_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin8=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin8_In=0[C],CMS_HWW_boosted_SR2b_mcstat_bin9=0 +/- 1,CMS_HWW_boosted_SR2b_mcstat_bin9_In=0[C],lumi_13TeV_correlated=-0.0158585 +/- 0.973066,lumi_13TeV_correlated_In=0[C],n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven=1[C],n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven=1[C],n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven=1[C],n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven=1[C],mask_CR2=1[C],mask_CR2Blinded=0[C],mask_SR2b=1[C],mask_SR2bBlinded=0[C])
+
+named sets
+----------
+ModelConfig_GlobalObservables:(BR_hww_In,CMS_HWW_boosted_CR2_mcstat_bin0_In,CMS_HWW_boosted_CR2_mcstat_bin1_In,CMS_HWW_boosted_CR2_mcstat_bin10_In,CMS_HWW_boosted_CR2_mcstat_bin11_In,CMS_HWW_boosted_CR2_mcstat_bin12_In,CMS_HWW_boosted_CR2_mcstat_bin13_In,CMS_HWW_boosted_CR2_mcstat_bin14_In,CMS_HWW_boosted_CR2_mcstat_bin15_In,CMS_HWW_boosted_CR2_mcstat_bin16_In,CMS_HWW_boosted_CR2_mcstat_bin17_In,CMS_HWW_boosted_CR2_mcstat_bin18_In,CMS_HWW_boosted_CR2_mcstat_bin19_In,CMS_HWW_boosted_CR2_mcstat_bin2_In,CMS_HWW_boosted_CR2_mcstat_bin3_In,CMS_HWW_boosted_CR2_mcstat_bin4_In,CMS_HWW_boosted_CR2_mcstat_bin5_In,CMS_HWW_boosted_CR2_mcstat_bin6_In,CMS_HWW_boosted_CR2_mcstat_bin7_In,CMS_HWW_boosted_CR2_mcstat_bin8_In,CMS_HWW_boosted_CR2_mcstat_bin9_In,CMS_HWW_boosted_SR2b_mcstat_bin0_In,CMS_HWW_boosted_SR2b_mcstat_bin1_In,CMS_HWW_boosted_SR2b_mcstat_bin10_In,CMS_HWW_boosted_SR2b_mcstat_bin11_In,CMS_HWW_boosted_SR2b_mcstat_bin12_In,CMS_HWW_boosted_SR2b_mcstat_bin13_In,CMS_HWW_boosted_SR2b_mcstat_bin14_In,CMS_HWW_boosted_SR2b_mcstat_bin15_In,CMS_HWW_boosted_SR2b_mcstat_bin16_In,CMS_HWW_boosted_SR2b_mcstat_bin17_In,CMS_HWW_boosted_SR2b_mcstat_bin18_In,CMS_HWW_boosted_SR2b_mcstat_bin19_In,CMS_HWW_boosted_SR2b_mcstat_bin2_In,CMS_HWW_boosted_SR2b_mcstat_bin3_In,CMS_HWW_boosted_SR2b_mcstat_bin4_In,CMS_HWW_boosted_SR2b_mcstat_bin5_In,CMS_HWW_boosted_SR2b_mcstat_bin6_In,CMS_HWW_boosted_SR2b_mcstat_bin7_In,CMS_HWW_boosted_SR2b_mcstat_bin8_In,CMS_HWW_boosted_SR2b_mcstat_bin9_In,lumi_13TeV_correlated_In)
+ModelConfig_NuisParams:(BR_hww,CMS_HWW_boosted_CR2_mcstat_bin0,CMS_HWW_boosted_CR2_mcstat_bin1,CMS_HWW_boosted_CR2_mcstat_bin10,CMS_HWW_boosted_CR2_mcstat_bin11,CMS_HWW_boosted_CR2_mcstat_bin12,CMS_HWW_boosted_CR2_mcstat_bin13,CMS_HWW_boosted_CR2_mcstat_bin14,CMS_HWW_boosted_CR2_mcstat_bin15,CMS_HWW_boosted_CR2_mcstat_bin16,CMS_HWW_boosted_CR2_mcstat_bin17,CMS_HWW_boosted_CR2_mcstat_bin18,CMS_HWW_boosted_CR2_mcstat_bin19,CMS_HWW_boosted_CR2_mcstat_bin2,CMS_HWW_boosted_CR2_mcstat_bin3,CMS_HWW_boosted_CR2_mcstat_bin4,CMS_HWW_boosted_CR2_mcstat_bin5,CMS_HWW_boosted_CR2_mcstat_bin6,CMS_HWW_boosted_CR2_mcstat_bin7,CMS_HWW_boosted_CR2_mcstat_bin8,CMS_HWW_boosted_CR2_mcstat_bin9,CMS_HWW_boosted_SR2b_mcstat_bin0,CMS_HWW_boosted_SR2b_mcstat_bin1,CMS_HWW_boosted_SR2b_mcstat_bin10,CMS_HWW_boosted_SR2b_mcstat_bin11,CMS_HWW_boosted_SR2b_mcstat_bin12,CMS_HWW_boosted_SR2b_mcstat_bin13,CMS_HWW_boosted_SR2b_mcstat_bin14,CMS_HWW_boosted_SR2b_mcstat_bin15,CMS_HWW_boosted_SR2b_mcstat_bin16,CMS_HWW_boosted_SR2b_mcstat_bin17,CMS_HWW_boosted_SR2b_mcstat_bin18,CMS_HWW_boosted_SR2b_mcstat_bin19,CMS_HWW_boosted_SR2b_mcstat_bin2,CMS_HWW_boosted_SR2b_mcstat_bin3,CMS_HWW_boosted_SR2b_mcstat_bin4,CMS_HWW_boosted_SR2b_mcstat_bin5,CMS_HWW_boosted_SR2b_mcstat_bin6,CMS_HWW_boosted_SR2b_mcstat_bin7,CMS_HWW_boosted_SR2b_mcstat_bin8,CMS_HWW_boosted_SR2b_mcstat_bin9,lumi_13TeV_correlated)
+ModelConfig_Observables:(MH_Reco,CMS_channel)
+ModelConfig_POI:(r)
+ModelConfig_bonly_GlobalObservables:(BR_hww_In,CMS_HWW_boosted_CR2_mcstat_bin0_In,CMS_HWW_boosted_CR2_mcstat_bin1_In,CMS_HWW_boosted_CR2_mcstat_bin10_In,CMS_HWW_boosted_CR2_mcstat_bin11_In,CMS_HWW_boosted_CR2_mcstat_bin12_In,CMS_HWW_boosted_CR2_mcstat_bin13_In,CMS_HWW_boosted_CR2_mcstat_bin14_In,CMS_HWW_boosted_CR2_mcstat_bin15_In,CMS_HWW_boosted_CR2_mcstat_bin16_In,CMS_HWW_boosted_CR2_mcstat_bin17_In,CMS_HWW_boosted_CR2_mcstat_bin18_In,CMS_HWW_boosted_CR2_mcstat_bin19_In,CMS_HWW_boosted_CR2_mcstat_bin2_In,CMS_HWW_boosted_CR2_mcstat_bin3_In,CMS_HWW_boosted_CR2_mcstat_bin4_In,CMS_HWW_boosted_CR2_mcstat_bin5_In,CMS_HWW_boosted_CR2_mcstat_bin6_In,CMS_HWW_boosted_CR2_mcstat_bin7_In,CMS_HWW_boosted_CR2_mcstat_bin8_In,CMS_HWW_boosted_CR2_mcstat_bin9_In,CMS_HWW_boosted_SR2b_mcstat_bin0_In,CMS_HWW_boosted_SR2b_mcstat_bin1_In,CMS_HWW_boosted_SR2b_mcstat_bin10_In,CMS_HWW_boosted_SR2b_mcstat_bin11_In,CMS_HWW_boosted_SR2b_mcstat_bin12_In,CMS_HWW_boosted_SR2b_mcstat_bin13_In,CMS_HWW_boosted_SR2b_mcstat_bin14_In,CMS_HWW_boosted_SR2b_mcstat_bin15_In,CMS_HWW_boosted_SR2b_mcstat_bin16_In,CMS_HWW_boosted_SR2b_mcstat_bin17_In,CMS_HWW_boosted_SR2b_mcstat_bin18_In,CMS_HWW_boosted_SR2b_mcstat_bin19_In,CMS_HWW_boosted_SR2b_mcstat_bin2_In,CMS_HWW_boosted_SR2b_mcstat_bin3_In,CMS_HWW_boosted_SR2b_mcstat_bin4_In,CMS_HWW_boosted_SR2b_mcstat_bin5_In,CMS_HWW_boosted_SR2b_mcstat_bin6_In,CMS_HWW_boosted_SR2b_mcstat_bin7_In,CMS_HWW_boosted_SR2b_mcstat_bin8_In,CMS_HWW_boosted_SR2b_mcstat_bin9_In,lumi_13TeV_correlated_In)
+ModelConfig_bonly_NuisParams:(BR_hww,CMS_HWW_boosted_CR2_mcstat_bin0,CMS_HWW_boosted_CR2_mcstat_bin1,CMS_HWW_boosted_CR2_mcstat_bin10,CMS_HWW_boosted_CR2_mcstat_bin11,CMS_HWW_boosted_CR2_mcstat_bin12,CMS_HWW_boosted_CR2_mcstat_bin13,CMS_HWW_boosted_CR2_mcstat_bin14,CMS_HWW_boosted_CR2_mcstat_bin15,CMS_HWW_boosted_CR2_mcstat_bin16,CMS_HWW_boosted_CR2_mcstat_bin17,CMS_HWW_boosted_CR2_mcstat_bin18,CMS_HWW_boosted_CR2_mcstat_bin19,CMS_HWW_boosted_CR2_mcstat_bin2,CMS_HWW_boosted_CR2_mcstat_bin3,CMS_HWW_boosted_CR2_mcstat_bin4,CMS_HWW_boosted_CR2_mcstat_bin5,CMS_HWW_boosted_CR2_mcstat_bin6,CMS_HWW_boosted_CR2_mcstat_bin7,CMS_HWW_boosted_CR2_mcstat_bin8,CMS_HWW_boosted_CR2_mcstat_bin9,CMS_HWW_boosted_SR2b_mcstat_bin0,CMS_HWW_boosted_SR2b_mcstat_bin1,CMS_HWW_boosted_SR2b_mcstat_bin10,CMS_HWW_boosted_SR2b_mcstat_bin11,CMS_HWW_boosted_SR2b_mcstat_bin12,CMS_HWW_boosted_SR2b_mcstat_bin13,CMS_HWW_boosted_SR2b_mcstat_bin14,CMS_HWW_boosted_SR2b_mcstat_bin15,CMS_HWW_boosted_SR2b_mcstat_bin16,CMS_HWW_boosted_SR2b_mcstat_bin17,CMS_HWW_boosted_SR2b_mcstat_bin18,CMS_HWW_boosted_SR2b_mcstat_bin19,CMS_HWW_boosted_SR2b_mcstat_bin2,CMS_HWW_boosted_SR2b_mcstat_bin3,CMS_HWW_boosted_SR2b_mcstat_bin4,CMS_HWW_boosted_SR2b_mcstat_bin5,CMS_HWW_boosted_SR2b_mcstat_bin6,CMS_HWW_boosted_SR2b_mcstat_bin7,CMS_HWW_boosted_SR2b_mcstat_bin8,CMS_HWW_boosted_SR2b_mcstat_bin9,lumi_13TeV_correlated)
+ModelConfig_bonly_Observables:(MH_Reco,CMS_channel)
+ModelConfig_bonly_POI:(r)
+POI:(r)
+globalObservables:(BR_hww_In,CMS_HWW_boosted_CR2_mcstat_bin0_In,CMS_HWW_boosted_CR2_mcstat_bin1_In,CMS_HWW_boosted_CR2_mcstat_bin10_In,CMS_HWW_boosted_CR2_mcstat_bin11_In,CMS_HWW_boosted_CR2_mcstat_bin12_In,CMS_HWW_boosted_CR2_mcstat_bin13_In,CMS_HWW_boosted_CR2_mcstat_bin14_In,CMS_HWW_boosted_CR2_mcstat_bin15_In,CMS_HWW_boosted_CR2_mcstat_bin16_In,CMS_HWW_boosted_CR2_mcstat_bin17_In,CMS_HWW_boosted_CR2_mcstat_bin18_In,CMS_HWW_boosted_CR2_mcstat_bin19_In,CMS_HWW_boosted_CR2_mcstat_bin2_In,CMS_HWW_boosted_CR2_mcstat_bin3_In,CMS_HWW_boosted_CR2_mcstat_bin4_In,CMS_HWW_boosted_CR2_mcstat_bin5_In,CMS_HWW_boosted_CR2_mcstat_bin6_In,CMS_HWW_boosted_CR2_mcstat_bin7_In,CMS_HWW_boosted_CR2_mcstat_bin8_In,CMS_HWW_boosted_CR2_mcstat_bin9_In,CMS_HWW_boosted_SR2b_mcstat_bin0_In,CMS_HWW_boosted_SR2b_mcstat_bin1_In,CMS_HWW_boosted_SR2b_mcstat_bin10_In,CMS_HWW_boosted_SR2b_mcstat_bin11_In,CMS_HWW_boosted_SR2b_mcstat_bin12_In,CMS_HWW_boosted_SR2b_mcstat_bin13_In,CMS_HWW_boosted_SR2b_mcstat_bin14_In,CMS_HWW_boosted_SR2b_mcstat_bin15_In,CMS_HWW_boosted_SR2b_mcstat_bin16_In,CMS_HWW_boosted_SR2b_mcstat_bin17_In,CMS_HWW_boosted_SR2b_mcstat_bin18_In,CMS_HWW_boosted_SR2b_mcstat_bin19_In,CMS_HWW_boosted_SR2b_mcstat_bin2_In,CMS_HWW_boosted_SR2b_mcstat_bin3_In,CMS_HWW_boosted_SR2b_mcstat_bin4_In,CMS_HWW_boosted_SR2b_mcstat_bin5_In,CMS_HWW_boosted_SR2b_mcstat_bin6_In,CMS_HWW_boosted_SR2b_mcstat_bin7_In,CMS_HWW_boosted_SR2b_mcstat_bin8_In,CMS_HWW_boosted_SR2b_mcstat_bin9_In,lumi_13TeV_correlated_In)
+nuisances:(BR_hww,CMS_HWW_boosted_CR2_mcstat_bin0,CMS_HWW_boosted_CR2_mcstat_bin1,CMS_HWW_boosted_CR2_mcstat_bin10,CMS_HWW_boosted_CR2_mcstat_bin11,CMS_HWW_boosted_CR2_mcstat_bin12,CMS_HWW_boosted_CR2_mcstat_bin13,CMS_HWW_boosted_CR2_mcstat_bin14,CMS_HWW_boosted_CR2_mcstat_bin15,CMS_HWW_boosted_CR2_mcstat_bin16,CMS_HWW_boosted_CR2_mcstat_bin17,CMS_HWW_boosted_CR2_mcstat_bin18,CMS_HWW_boosted_CR2_mcstat_bin19,CMS_HWW_boosted_CR2_mcstat_bin2,CMS_HWW_boosted_CR2_mcstat_bin3,CMS_HWW_boosted_CR2_mcstat_bin4,CMS_HWW_boosted_CR2_mcstat_bin5,CMS_HWW_boosted_CR2_mcstat_bin6,CMS_HWW_boosted_CR2_mcstat_bin7,CMS_HWW_boosted_CR2_mcstat_bin8,CMS_HWW_boosted_CR2_mcstat_bin9,CMS_HWW_boosted_SR2b_mcstat_bin0,CMS_HWW_boosted_SR2b_mcstat_bin1,CMS_HWW_boosted_SR2b_mcstat_bin10,CMS_HWW_boosted_SR2b_mcstat_bin11,CMS_HWW_boosted_SR2b_mcstat_bin12,CMS_HWW_boosted_SR2b_mcstat_bin13,CMS_HWW_boosted_SR2b_mcstat_bin14,CMS_HWW_boosted_SR2b_mcstat_bin15,CMS_HWW_boosted_SR2b_mcstat_bin16,CMS_HWW_boosted_SR2b_mcstat_bin17,CMS_HWW_boosted_SR2b_mcstat_bin18,CMS_HWW_boosted_SR2b_mcstat_bin19,CMS_HWW_boosted_SR2b_mcstat_bin2,CMS_HWW_boosted_SR2b_mcstat_bin3,CMS_HWW_boosted_SR2b_mcstat_bin4,CMS_HWW_boosted_SR2b_mcstat_bin5,CMS_HWW_boosted_SR2b_mcstat_bin6,CMS_HWW_boosted_SR2b_mcstat_bin7,CMS_HWW_boosted_SR2b_mcstat_bin8,CMS_HWW_boosted_SR2b_mcstat_bin9,lumi_13TeV_correlated)
+observables:(MH_Reco,CMS_channel)
+
+generic objects
+---------------
+RooStats::ModelConfig::ModelConfig
+RooStats::ModelConfig::ModelConfig_bonly
+RooArgSet::discreteParams
+
+Workspace has a ModelConfig for signal called 'ModelConfig', with contents:
+
+=== Using the following for ModelConfig ===
+Observables:             RooArgSet:: = (MH_Reco,CMS_channel)
+Parameters of Interest:  RooArgSet:: = (r)
+Nuisance Parameters:     RooArgSet:: = (BR_hww,CMS_HWW_boosted_CR2_mcstat_bin0,CMS_HWW_boosted_CR2_mcstat_bin1,CMS_HWW_boosted_CR2_mcstat_bin10,CMS_HWW_boosted_CR2_mcstat_bin11,CMS_HWW_boosted_CR2_mcstat_bin12,CMS_HWW_boosted_CR2_mcstat_bin13,CMS_HWW_boosted_CR2_mcstat_bin14,CMS_HWW_boosted_CR2_mcstat_bin15,CMS_HWW_boosted_CR2_mcstat_bin16,CMS_HWW_boosted_CR2_mcstat_bin17,CMS_HWW_boosted_CR2_mcstat_bin18,CMS_HWW_boosted_CR2_mcstat_bin19,CMS_HWW_boosted_CR2_mcstat_bin2,CMS_HWW_boosted_CR2_mcstat_bin3,CMS_HWW_boosted_CR2_mcstat_bin4,CMS_HWW_boosted_CR2_mcstat_bin5,CMS_HWW_boosted_CR2_mcstat_bin6,CMS_HWW_boosted_CR2_mcstat_bin7,CMS_HWW_boosted_CR2_mcstat_bin8,CMS_HWW_boosted_CR2_mcstat_bin9,CMS_HWW_boosted_SR2b_mcstat_bin0,CMS_HWW_boosted_SR2b_mcstat_bin1,CMS_HWW_boosted_SR2b_mcstat_bin10,CMS_HWW_boosted_SR2b_mcstat_bin11,CMS_HWW_boosted_SR2b_mcstat_bin12,CMS_HWW_boosted_SR2b_mcstat_bin13,CMS_HWW_boosted_SR2b_mcstat_bin14,CMS_HWW_boosted_SR2b_mcstat_bin15,CMS_HWW_boosted_SR2b_mcstat_bin16,CMS_HWW_boosted_SR2b_mcstat_bin17,CMS_HWW_boosted_SR2b_mcstat_bin18,CMS_HWW_boosted_SR2b_mcstat_bin19,CMS_HWW_boosted_SR2b_mcstat_bin2,CMS_HWW_boosted_SR2b_mcstat_bin3,CMS_HWW_boosted_SR2b_mcstat_bin4,CMS_HWW_boosted_SR2b_mcstat_bin5,CMS_HWW_boosted_SR2b_mcstat_bin6,CMS_HWW_boosted_SR2b_mcstat_bin7,CMS_HWW_boosted_SR2b_mcstat_bin8,CMS_HWW_boosted_SR2b_mcstat_bin9,lumi_13TeV_correlated)
+Global Observables:      RooArgSet:: = (BR_hww_In,CMS_HWW_boosted_CR2_mcstat_bin0_In,CMS_HWW_boosted_CR2_mcstat_bin1_In,CMS_HWW_boosted_CR2_mcstat_bin10_In,CMS_HWW_boosted_CR2_mcstat_bin11_In,CMS_HWW_boosted_CR2_mcstat_bin12_In,CMS_HWW_boosted_CR2_mcstat_bin13_In,CMS_HWW_boosted_CR2_mcstat_bin14_In,CMS_HWW_boosted_CR2_mcstat_bin15_In,CMS_HWW_boosted_CR2_mcstat_bin16_In,CMS_HWW_boosted_CR2_mcstat_bin17_In,CMS_HWW_boosted_CR2_mcstat_bin18_In,CMS_HWW_boosted_CR2_mcstat_bin19_In,CMS_HWW_boosted_CR2_mcstat_bin2_In,CMS_HWW_boosted_CR2_mcstat_bin3_In,CMS_HWW_boosted_CR2_mcstat_bin4_In,CMS_HWW_boosted_CR2_mcstat_bin5_In,CMS_HWW_boosted_CR2_mcstat_bin6_In,CMS_HWW_boosted_CR2_mcstat_bin7_In,CMS_HWW_boosted_CR2_mcstat_bin8_In,CMS_HWW_boosted_CR2_mcstat_bin9_In,CMS_HWW_boosted_SR2b_mcstat_bin0_In,CMS_HWW_boosted_SR2b_mcstat_bin1_In,CMS_HWW_boosted_SR2b_mcstat_bin10_In,CMS_HWW_boosted_SR2b_mcstat_bin11_In,CMS_HWW_boosted_SR2b_mcstat_bin12_In,CMS_HWW_boosted_SR2b_mcstat_bin13_In,CMS_HWW_boosted_SR2b_mcstat_bin14_In,CMS_HWW_boosted_SR2b_mcstat_bin15_In,CMS_HWW_boosted_SR2b_mcstat_bin16_In,CMS_HWW_boosted_SR2b_mcstat_bin17_In,CMS_HWW_boosted_SR2b_mcstat_bin18_In,CMS_HWW_boosted_SR2b_mcstat_bin19_In,CMS_HWW_boosted_SR2b_mcstat_bin2_In,CMS_HWW_boosted_SR2b_mcstat_bin3_In,CMS_HWW_boosted_SR2b_mcstat_bin4_In,CMS_HWW_boosted_SR2b_mcstat_bin5_In,CMS_HWW_boosted_SR2b_mcstat_bin6_In,CMS_HWW_boosted_SR2b_mcstat_bin7_In,CMS_HWW_boosted_SR2b_mcstat_bin8_In,CMS_HWW_boosted_SR2b_mcstat_bin9_In,lumi_13TeV_correlated_In)
+PDF:                     RooSimultaneousOpt::model_s[ indexCat=CMS_channel CR2=pdf_binCR2 CR2Blinded=pdf_binCR2Blinded SR2b=pdf_binSR2b SR2bBlinded=pdf_binSR2bBlinded extraConstraints=() channelMasks=(mask_CR2,mask_CR2Blinded,mask_SR2b,mask_SR2bBlinded) ] = 9.78688e-05
+
+Input ModelConfig 'ModelConfig': 
+
+=== Using the following for ModelConfig ===
+Observables:             RooArgSet:: = (MH_Reco,CMS_channel)
+Parameters of Interest:  RooArgSet:: = (r)
+Nuisance Parameters:     RooArgSet:: = (BR_hww,CMS_HWW_boosted_CR2_mcstat_bin0,CMS_HWW_boosted_CR2_mcstat_bin1,CMS_HWW_boosted_CR2_mcstat_bin10,CMS_HWW_boosted_CR2_mcstat_bin11,CMS_HWW_boosted_CR2_mcstat_bin12,CMS_HWW_boosted_CR2_mcstat_bin13,CMS_HWW_boosted_CR2_mcstat_bin14,CMS_HWW_boosted_CR2_mcstat_bin15,CMS_HWW_boosted_CR2_mcstat_bin16,CMS_HWW_boosted_CR2_mcstat_bin17,CMS_HWW_boosted_CR2_mcstat_bin18,CMS_HWW_boosted_CR2_mcstat_bin19,CMS_HWW_boosted_CR2_mcstat_bin2,CMS_HWW_boosted_CR2_mcstat_bin3,CMS_HWW_boosted_CR2_mcstat_bin4,CMS_HWW_boosted_CR2_mcstat_bin5,CMS_HWW_boosted_CR2_mcstat_bin6,CMS_HWW_boosted_CR2_mcstat_bin7,CMS_HWW_boosted_CR2_mcstat_bin8,CMS_HWW_boosted_CR2_mcstat_bin9,CMS_HWW_boosted_SR2b_mcstat_bin0,CMS_HWW_boosted_SR2b_mcstat_bin1,CMS_HWW_boosted_SR2b_mcstat_bin10,CMS_HWW_boosted_SR2b_mcstat_bin11,CMS_HWW_boosted_SR2b_mcstat_bin12,CMS_HWW_boosted_SR2b_mcstat_bin13,CMS_HWW_boosted_SR2b_mcstat_bin14,CMS_HWW_boosted_SR2b_mcstat_bin15,CMS_HWW_boosted_SR2b_mcstat_bin16,CMS_HWW_boosted_SR2b_mcstat_bin17,CMS_HWW_boosted_SR2b_mcstat_bin18,CMS_HWW_boosted_SR2b_mcstat_bin19,CMS_HWW_boosted_SR2b_mcstat_bin2,CMS_HWW_boosted_SR2b_mcstat_bin3,CMS_HWW_boosted_SR2b_mcstat_bin4,CMS_HWW_boosted_SR2b_mcstat_bin5,CMS_HWW_boosted_SR2b_mcstat_bin6,CMS_HWW_boosted_SR2b_mcstat_bin7,CMS_HWW_boosted_SR2b_mcstat_bin8,CMS_HWW_boosted_SR2b_mcstat_bin9,lumi_13TeV_correlated)
+Global Observables:      RooArgSet:: = (BR_hww_In,CMS_HWW_boosted_CR2_mcstat_bin0_In,CMS_HWW_boosted_CR2_mcstat_bin1_In,CMS_HWW_boosted_CR2_mcstat_bin10_In,CMS_HWW_boosted_CR2_mcstat_bin11_In,CMS_HWW_boosted_CR2_mcstat_bin12_In,CMS_HWW_boosted_CR2_mcstat_bin13_In,CMS_HWW_boosted_CR2_mcstat_bin14_In,CMS_HWW_boosted_CR2_mcstat_bin15_In,CMS_HWW_boosted_CR2_mcstat_bin16_In,CMS_HWW_boosted_CR2_mcstat_bin17_In,CMS_HWW_boosted_CR2_mcstat_bin18_In,CMS_HWW_boosted_CR2_mcstat_bin19_In,CMS_HWW_boosted_CR2_mcstat_bin2_In,CMS_HWW_boosted_CR2_mcstat_bin3_In,CMS_HWW_boosted_CR2_mcstat_bin4_In,CMS_HWW_boosted_CR2_mcstat_bin5_In,CMS_HWW_boosted_CR2_mcstat_bin6_In,CMS_HWW_boosted_CR2_mcstat_bin7_In,CMS_HWW_boosted_CR2_mcstat_bin8_In,CMS_HWW_boosted_CR2_mcstat_bin9_In,CMS_HWW_boosted_SR2b_mcstat_bin0_In,CMS_HWW_boosted_SR2b_mcstat_bin1_In,CMS_HWW_boosted_SR2b_mcstat_bin10_In,CMS_HWW_boosted_SR2b_mcstat_bin11_In,CMS_HWW_boosted_SR2b_mcstat_bin12_In,CMS_HWW_boosted_SR2b_mcstat_bin13_In,CMS_HWW_boosted_SR2b_mcstat_bin14_In,CMS_HWW_boosted_SR2b_mcstat_bin15_In,CMS_HWW_boosted_SR2b_mcstat_bin16_In,CMS_HWW_boosted_SR2b_mcstat_bin17_In,CMS_HWW_boosted_SR2b_mcstat_bin18_In,CMS_HWW_boosted_SR2b_mcstat_bin19_In,CMS_HWW_boosted_SR2b_mcstat_bin2_In,CMS_HWW_boosted_SR2b_mcstat_bin3_In,CMS_HWW_boosted_SR2b_mcstat_bin4_In,CMS_HWW_boosted_SR2b_mcstat_bin5_In,CMS_HWW_boosted_SR2b_mcstat_bin6_In,CMS_HWW_boosted_SR2b_mcstat_bin7_In,CMS_HWW_boosted_SR2b_mcstat_bin8_In,CMS_HWW_boosted_SR2b_mcstat_bin9_In,lumi_13TeV_correlated_In)
+PDF:                     RooSimultaneousOpt::model_s[ indexCat=CMS_channel CR2=pdf_binCR2 CR2Blinded=pdf_binCR2Blinded SR2b=pdf_binSR2b SR2bBlinded=pdf_binSR2bBlinded extraConstraints=() channelMasks=(mask_CR2,mask_CR2Blinded,mask_SR2b,mask_SR2bBlinded) ] = 9.78688e-05
+
+Set Default Value of Parameter mask_SR2b To : 0
+Set Default Value of Parameter mask_CR2 To : 0
+Set Default Value of Parameter mask_SR2bBlinded To : 1
+Set Default Value of Parameter mask_CR2Blinded To : 1
+Set Default Value of Parameter r To : 1
+Set floating the following parameters: RooArgSet:: = (CMS_HWW_boosted_tf_dataResidual_CR2_Bin4,CMS_HWW_boosted_tf_dataResidual_CR2_Bin5,CMS_HWW_boosted_tf_dataResidual_CR2_Bin6,CMS_HWW_boosted_tf_dataResidual_CR2_Bin7,CMS_HWW_boosted_tf_dataResidual_CR2_Bin8,CMS_HWW_boosted_tf_dataResidual_CR2_Bin9,CMS_HWW_boosted_tf_dataResidual_CR2_Bin10,CMS_HWW_boosted_tf_dataResidual_CR2_Bin11,r)
+Freezing the following parameters: RooArgSet:: = (BR_hww_In,CMS_HWW_boosted_CR2_mcstat_bin0_In,CMS_HWW_boosted_CR2_mcstat_bin1_In,CMS_HWW_boosted_CR2_mcstat_bin10_In,CMS_HWW_boosted_CR2_mcstat_bin11_In,CMS_HWW_boosted_CR2_mcstat_bin12_In,CMS_HWW_boosted_CR2_mcstat_bin13_In,CMS_HWW_boosted_CR2_mcstat_bin14_In,CMS_HWW_boosted_CR2_mcstat_bin15_In,CMS_HWW_boosted_CR2_mcstat_bin16_In,CMS_HWW_boosted_CR2_mcstat_bin17_In,CMS_HWW_boosted_CR2_mcstat_bin18_In,CMS_HWW_boosted_CR2_mcstat_bin19_In,CMS_HWW_boosted_CR2_mcstat_bin2_In,CMS_HWW_boosted_CR2_mcstat_bin3_In,CMS_HWW_boosted_CR2_mcstat_bin4_In,CMS_HWW_boosted_CR2_mcstat_bin5_In,CMS_HWW_boosted_CR2_mcstat_bin6_In,CMS_HWW_boosted_CR2_mcstat_bin7_In,CMS_HWW_boosted_CR2_mcstat_bin8_In,CMS_HWW_boosted_CR2_mcstat_bin9_In,CMS_HWW_boosted_SR2b_mcstat_bin0_In,CMS_HWW_boosted_SR2b_mcstat_bin1_In,CMS_HWW_boosted_SR2b_mcstat_bin10_In,CMS_HWW_boosted_SR2b_mcstat_bin11_In,CMS_HWW_boosted_SR2b_mcstat_bin12_In,CMS_HWW_boosted_SR2b_mcstat_bin13_In,CMS_HWW_boosted_SR2b_mcstat_bin14_In,CMS_HWW_boosted_SR2b_mcstat_bin15_In,CMS_HWW_boosted_SR2b_mcstat_bin16_In,CMS_HWW_boosted_SR2b_mcstat_bin17_In,CMS_HWW_boosted_SR2b_mcstat_bin18_In,CMS_HWW_boosted_SR2b_mcstat_bin19_In,CMS_HWW_boosted_SR2b_mcstat_bin2_In,CMS_HWW_boosted_SR2b_mcstat_bin3_In,CMS_HWW_boosted_SR2b_mcstat_bin4_In,CMS_HWW_boosted_SR2b_mcstat_bin5_In,CMS_HWW_boosted_SR2b_mcstat_bin6_In,CMS_HWW_boosted_SR2b_mcstat_bin7_In,CMS_HWW_boosted_SR2b_mcstat_bin8_In,CMS_HWW_boosted_SR2b_mcstat_bin9_In,lumi_13TeV_correlated_In,shapeBkg_ttbar_st_CR2__norm,shapeBkg_wjets_CR2__norm,shapeBkg_rest_CR2__norm,shapeBkg_ttbar_st_CR2Blinded__norm,shapeBkg_wjets_CR2Blinded__norm,shapeBkg_rest_CR2Blinded__norm,shapeSig_ggF_SR2b__norm,shapeSig_VBF_SR2b__norm,shapeSig_VH_SR2b__norm,shapeSig_ttH_SR2b__norm,shapeBkg_ttbar_st_SR2b__norm,shapeBkg_wjets_SR2b__norm,shapeBkg_rest_SR2b__norm,shapeSig_ggF_SR2bBlinded__norm,shapeSig_VBF_SR2bBlinded__norm,shapeSig_VH_SR2bBlinded__norm,shapeSig_ttH_SR2bBlinded__norm,shapeBkg_ttbar_st_SR2bBlinded__norm,shapeBkg_wjets_SR2bBlinded__norm,shapeBkg_rest_SR2bBlinded__norm,n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooUniform::prior
+>>> 2 out of 4 channels masked
+
+>>> Channel masks:
+  1) 0x9da7830 RooRealVar::         mask_CR2 = 0 C  L(-INF - +INF)  "mask_CR2"
+  2) 0x9da8430 RooRealVar::  mask_CR2Blinded = 1 C  L(-INF - +INF)  "mask_CR2Blinded"
+  3) 0x9da8fd0 RooRealVar::        mask_SR2b = 0 C  L(-INF - +INF)  "mask_SR2b"
+  4) 0x9da9b10 RooRealVar:: mask_SR2bBlinded = 1 C  L(-INF - +INF)  "mask_SR2bBlinded"
+Warning: A value of r is specified in both the --setParameters and --expectSignal options. The argument of --expectSignal will take precedence
+Saving snapshot 'clean'
+[#1] INFO:ObjectHandling -- RooWorkspace::saveSnaphot(w) replacing previous snapshot with name clean
+Saved snapshot 'clean'
+Nuisance parameters after fit for asimov dataset: 
+  1) RooRealVar::                            BR_hww = 0 +/- 1
+  2) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin0 = 0.0296028 +/- 0.99891
+  3) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin1 = -0.0345614 +/- 0.998118
+  4) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin10 = 0 +/- 1
+  5) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin11 = 0 +/- 1
+  6) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin12 = -0.0582704 +/- 0.986581
+  7) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin13 = 0.0568555 +/- 0.995684
+  8) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin14 = -0.0677506 +/- 0.994501
+  9) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin15 = 0.0100459 +/- 0.994513
+ 10) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin16 = 0.0322354 +/- 0.9948
+ 11) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin17 = 0.0959455 +/- 0.989161
+ 12) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin18 = -0.0749673 +/- 0.99076
+ 13) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin19 = -0.0231348 +/- 0.993718
+ 14) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin2 = 0.00579697 +/- 0.999796
+ 15) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin3 = 0.0147091 +/- 0.999236
+ 16) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin4 = 0 +/- 1
+ 17) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin5 = 0 +/- 1
+ 18) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin6 = 0 +/- 1
+ 19) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin7 = 0 +/- 1
+ 20) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin8 = 0 +/- 1
+ 21) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin9 = 0 +/- 1
+ 22) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin0 = -0.0545334 +/- 0.99958
+ 23) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin1 = 0.0825904 +/- 0.997889
+ 24) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin10 = 0 +/- 1
+ 25) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin11 = 0 +/- 1
+ 26) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin12 = 0.110369 +/- 0.98476
+ 27) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin13 = -0.131737 +/- 0.988757
+ 28) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin14 = 0.126903 +/- 0.988052
+ 29) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin15 = -0.0215831 +/- 0.984838
+ 30) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin16 = -0.0650846 +/- 0.987748
+ 31) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin17 = -0.155685 +/- 0.98692
+ 32) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin18 = 0.120884 +/- 0.986041
+ 33) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin19 = 0.0458884 +/- 0.983844
+ 34) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin2 = -0.0124803 +/- 0.997847
+ 35) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin3 = -0.0315714 +/- 0.998302
+ 36) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin4 = 0 +/- 1
+ 37) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin5 = 0 +/- 1
+ 38) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin6 = 0 +/- 1
+ 39) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin7 = 0 +/- 1
+ 40) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin8 = 0 +/- 1
+ 41) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin9 = 0 +/- 1
+ 42) RooRealVar::             lumi_13TeV_correlated = -0.0158585 +/- 0.973066
+  ToyMCSampleOpt  -- Generating Asimov with histogram for pdf pdf_binCR2_obsOnly: in 20 x-bins 
+  ToyMCSampleOpt  -- Generating Asimov with histogram for pdf pdf_binCR2Blinded_obsOnly: in 20 x-bins 
+  ToyMCSampleOpt  -- Generating Asimov with histogram for pdf pdf_binSR2b_obsOnly: in 20 x-bins 
+  ToyMCSampleOpt  -- Generating Asimov with histogram for pdf pdf_binSR2bBlinded_obsOnly: in 20 x-bins 
+Global observables for data: 
+  1) RooRealVar::                            BR_hww_In = 0
+  2) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin0_In = 0
+  3) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin1_In = 0
+  4) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin10_In = 0
+  5) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin11_In = 0
+  6) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin12_In = 0
+  7) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin13_In = 0
+  8) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin14_In = 0
+  9) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin15_In = 0
+ 10) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin16_In = 0
+ 11) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin17_In = 0
+ 12) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin18_In = 0
+ 13) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin19_In = 0
+ 14) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin2_In = 0
+ 15) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin3_In = 0
+ 16) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin4_In = 0
+ 17) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin5_In = 0
+ 18) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin6_In = 0
+ 19) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin7_In = 0
+ 20) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin8_In = 0
+ 21) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin9_In = 0
+ 22) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin0_In = 0
+ 23) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin1_In = 0
+ 24) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin10_In = 0
+ 25) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin11_In = 0
+ 26) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin12_In = 0
+ 27) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin13_In = 0
+ 28) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin14_In = 0
+ 29) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin15_In = 0
+ 30) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin16_In = 0
+ 31) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin17_In = 0
+ 32) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin18_In = 0
+ 33) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin19_In = 0
+ 34) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin2_In = 0
+ 35) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin3_In = 0
+ 36) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin4_In = 0
+ 37) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin5_In = 0
+ 38) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin6_In = 0
+ 39) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin7_In = 0
+ 40) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin8_In = 0
+ 41) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin9_In = 0
+ 42) RooRealVar::             lumi_13TeV_correlated_In = 0
+Global observables for asimov: 
+  1) RooRealVar::                            BR_hww_In = 0
+  2) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin0_In = 0.0296028
+  3) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin1_In = -0.0345614
+  4) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin10_In = 0
+  5) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin11_In = 0
+  6) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin12_In = -0.0582704
+  7) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin13_In = 0.0568555
+  8) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin14_In = -0.0677506
+  9) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin15_In = 0.0100459
+ 10) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin16_In = 0.0322354
+ 11) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin17_In = 0.0959455
+ 12) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin18_In = -0.0749673
+ 13) RooRealVar::  CMS_HWW_boosted_CR2_mcstat_bin19_In = -0.0231348
+ 14) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin2_In = 0.00579697
+ 15) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin3_In = 0.0147091
+ 16) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin4_In = 0
+ 17) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin5_In = 0
+ 18) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin6_In = 0
+ 19) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin7_In = 0
+ 20) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin8_In = 0
+ 21) RooRealVar::   CMS_HWW_boosted_CR2_mcstat_bin9_In = 0
+ 22) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin0_In = -0.0545334
+ 23) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin1_In = 0.0825904
+ 24) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin10_In = 0
+ 25) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin11_In = 0
+ 26) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin12_In = 0.110369
+ 27) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin13_In = -0.131737
+ 28) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin14_In = 0.126903
+ 29) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin15_In = -0.0215831
+ 30) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin16_In = -0.0650846
+ 31) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin17_In = -0.155685
+ 32) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin18_In = 0.120884
+ 33) RooRealVar:: CMS_HWW_boosted_SR2b_mcstat_bin19_In = 0.0458884
+ 34) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin2_In = -0.0124803
+ 35) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin3_In = -0.0315714
+ 36) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin4_In = 0
+ 37) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin5_In = 0
+ 38) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin6_In = 0
+ 39) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin7_In = 0
+ 40) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin8_In = 0
+ 41) RooRealVar::  CMS_HWW_boosted_SR2b_mcstat_bin9_In = 0
+ 42) RooRealVar::             lumi_13TeV_correlated_In = -0.0158585
+[#1] INFO:ObjectHandling -- RooWorkspace::saveSnaphot(w) replacing previous snapshot with name clean
+ bin           MH_Reco       CMS_channel    weight
+   0                45               CR2  8412.1856689
+   1                55               CR2  17437.6879883
+   2                65               CR2  21847.9199219
+   3                75               CR2  24013.9672852
+   4                85               CR2  24783.8037109
+   5                95               CR2  23773.8061523
+   6               105               CR2  22006.8310547
+   7               115               CR2  19920.8422852
+   8               125               CR2  17831.8530273
+   9               135               CR2  15321.8615723
+  10               145               CR2  12776.8713379
+  11               155               CR2  10536.8798828
+  12               165               CR2  8424.5233154
+  13               175               CR2  6566.6473389
+  14               185               CR2  5058.0404663
+  15               195               CR2  3828.5504150
+  16               205               CR2  2870.2453613
+  17               215               CR2  2108.2507324
+  18               225               CR2  1542.9077148
+  19               235               CR2  1107.3798370
+  20                45        CR2Blinded  8412.1881104
+  21                55        CR2Blinded  17437.6892090
+  22                65        CR2Blinded  21847.9199219
+  23                75        CR2Blinded  24013.9672852
+  24                85        CR2Blinded     0.0000497
+  25                95        CR2Blinded     0.0000497
+  26               105        CR2Blinded     0.0000497
+  27               115        CR2Blinded     0.0000497
+  28               125        CR2Blinded     0.0000497
+  29               135        CR2Blinded     0.0000497
+  30               145        CR2Blinded     0.0000497
+  31               155        CR2Blinded     0.0000497
+  32               165        CR2Blinded  8424.5373535
+  33               175        CR2Blinded  6566.6644287
+  34               185        CR2Blinded  5058.0581665
+  35               195        CR2Blinded  3828.5644531
+  36               205        CR2Blinded  2870.2548218
+  37               215        CR2Blinded  2108.2569885
+  38               225        CR2Blinded  1542.9122925
+  39               235        CR2Blinded  1107.3836517
+  40                45              SR2b  2830.8422852
+  41                55              SR2b  5944.1156006
+  42                65              SR2b  7571.0919189
+  43                75              SR2b  8474.1290283
+  44                85              SR2b  8952.6354980
+  45                95              SR2b  8781.6882324
+  46               105              SR2b  8318.1060791
+  47               115              SR2b  7705.6512451
+  48               125              SR2b  7090.1800537
+  49               135              SR2b  6284.5001221
+  50               145              SR2b  5406.4099121
+  51               155              SR2b  4596.6955566
+  52               165              SR2b  3795.1779175
+  53               175              SR2b  3071.2255859
+  54               185              SR2b  2443.6750793
+  55               195              SR2b  1913.9286804
+  56               205              SR2b  1476.7378235
+  57               215              SR2b  1124.1854095
+  58               225              SR2b   842.2204590
+  59               235              SR2b   626.1309433
+  60                45       SR2bBlinded  2830.8288574
+  61                55       SR2bBlinded  5944.0844727
+  62                65       SR2bBlinded  7571.0510254
+  63                75       SR2bBlinded  8474.0765381
+  64                85       SR2bBlinded     0.0001323
+  65                95       SR2bBlinded     0.0001323
+  66               105       SR2bBlinded     0.0001323
+  67               115       SR2bBlinded     0.0001323
+  68               125       SR2bBlinded     0.0001323
+  69               135       SR2bBlinded     0.0001323
+  70               145       SR2bBlinded     0.0001323
+  71               155       SR2bBlinded     0.0001323
+  72               165       SR2bBlinded  3795.1263428
+  73               175       SR2bBlinded  3071.1770630
+  74               185       SR2bBlinded  2443.6325073
+  75               195       SR2bBlinded  1913.8931274
+  76               205       SR2bBlinded  1476.7112732
+  77               215       SR2bBlinded  1124.1636658
+  78               225       SR2bBlinded   842.2042084
+  79               235       SR2bBlinded   626.1182785
+SimNLL created with 4 channels, 0 generic constraints, 42 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+Minuit2Minimizer: Minimize with max-calls 33500 convergence for edm < 0.1 strategy 1
+Minuit2Minimizer::Minuit  - Changing default options
+             StorageLevel :               0
+MnSeedGenerator: for initial parameters FCN = 2.98454442171e-31
+MnSeedGenerator: Initial state:   - FCN = 2.98454442171e-31 Edm =    0.0196328 NCalls =    285
+VariableMetric: start iterating until Edm is < 0.0001
+VariableMetric: Initial state   - FCN = 2.98454442171e-31 Edm =    0.0196328 NCalls =    285
+VariableMetric: Iteration #   0 - FCN = 2.98454442171e-31 Edm =    0.0196328 NCalls =    285
+VariableMetric: Iteration #   1 - FCN = -0.004977493397109 Edm =  0.000209347 NCalls =    437
+VariableMetric: Iteration #   2 - FCN = -0.005178038957936 Edm =  2.06301e-05 NCalls =    572
+VariableMetric: After Hessian   - FCN = -0.005178038957936 Edm =  9.89375e-05 NCalls =   3054
+VariableMetric: Iteration #   3 - FCN = -0.005178038957936 Edm =  9.89375e-05 NCalls =   3054
+Number of iterations 4
+----------> Iteration 0
+            FVAL = 2.98454442171e-31 Edm = 0.0196327576682 Nfcn = 285
+            Error matrix change = 1
+            Parameters :  p0 = 0 p1 = 0.0296028 p2 = -0.0345614 p3 = 0 p4 = 0 p5 = -0.0582704 p6 = 0.0568555 p7 = -0.0677506 p8 = 0.0100459 p9 = 0.0322354 p10 = 0.0959455 p11 = -0.0749673 p12 = -0.0231348 p13 = 0.00579697 p14 = 0.0147091 p15 = 0 p16 = 0 p17 = 0 p18 = 0 p19 = 0 p20 = 0 p21 = -0.0545334 p22 = 0.0825904 p23 = 0 p24 = 0 p25 = 0.110369 p26 = -0.131737 p27 = 0.126903 p28 = -0.0215831 p29 = -0.0650846 p30 = -0.155685 p31 = 0.120884 p32 = 0.0458884 p33 = -0.0124803 p34 = -0.0315714 p35 = 0 p36 = 0 p37 = 0 p38 = 0 p39 = 0 p40 = 0 p41 = 0.923932 p42 = 0.952224 p43 = 1.0567 p44 = 1.17685 p45 = -0.00266061 p46 = 0.00329223 p47 = 0 p48 = 0 p49 = 0.00332799 p50 = -0.00436918 p51 = 0.00473583 p52 = -0.000835183 p53 = -0.0030707 p54 = -0.00839926 p55 = 0.00776859 p56 = 0.00269431 p57 = -0.000474078 p58 = -0.00109558 p59 = 0 p60 = 0 p61 = 0 p62 = 0 p63 = 0 p64 = 0 p65 = -0.0158585 p66 = 2
+----------> Iteration 1
+            FVAL = -0.00497749339711 Edm = 0.000209347254863 Nfcn = 437
+            Error matrix change = 0.595425
+            Parameters :  p0 = -8.24906e-05 p1 = 0.0296028 p2 = -0.0345615 p3 = 2.92906e-08 p4 = 8.79911e-08 p5 = -0.0582704 p6 = 0.0568554 p7 = -0.0677505 p8 = 0.010046 p9 = 0.0322354 p10 = 0.0959455 p11 = -0.0749673 p12 = -0.0231348 p13 = 0.00579703 p14 = 0.0147091 p15 = -8.8244e-08 p16 = 4.04125e-08 p17 = -1.2756e-07 p18 = -5.11472e-08 p19 = -1.918e-08 p20 = 0 p21 = -0.0542962 p22 = 0.0828457 p23 = -0.000828541 p24 = -0.000829153 p25 = 0.109567 p26 = -0.132076 p27 = 0.126561 p28 = -0.0219007 p29 = -0.0650805 p30 = -0.15576 p31 = 0.120836 p32 = 0.0458057 p33 = -0.0124702 p34 = -0.0315995 p35 = -0.000401104 p36 = -0.000551395 p37 = -0.000725433 p38 = -0.000880817 p39 = -0.00104038 p40 = -0.00129211 p41 = 0.923884 p42 = 0.952113 p43 = 1.05653 p44 = 1.17667 p45 = -0.00266355 p46 = 0.00328899 p47 = -2.05474e-05 p48 = -1.75883e-05 p49 = 0.00331119 p50 = -0.00438328 p51 = 0.00472133 p52 = -0.000849109 p53 = -0.00308381 p54 = -0.00841491 p55 = 0.00775421 p56 = 0.00267916 p57 = -0.000479292 p58 = -0.00110255 p59 = -9.20692e-06 p60 = -1.26727e-05 p61 = -1.49075e-05 p62 = -1.94562e-05 p63 = -2.22401e-05 p64 = -2.68304e-05 p65 = -0.0223941 p66 = 1.75515
+----------> Iteration 2
+            FVAL = -0.00517803895794 Edm = 2.06301171876e-05 Nfcn = 572
+            Error matrix change = 0.329147
+            Parameters :  p0 = -2.04761e-05 p1 = 0.0294865 p2 = -0.0346625 p3 = 9.17985e-05 p4 = 5.05764e-05 p5 = -0.0582078 p6 = 0.0568877 p7 = -0.0676959 p8 = 0.0100987 p9 = 0.032275 p10 = 0.0960232 p11 = -0.0749043 p12 = -0.0230808 p13 = 0.00566337 p14 = 0.0146754 p15 = -4.90621e-06 p16 = 5.37085e-05 p17 = 0.00013281 p18 = 0.000220433 p19 = 0.000140598 p20 = 0.000160342 p21 = -0.0543309 p22 = 0.0830059 p23 = -0.000436512 p24 = -7.68509e-05 p25 = 0.110383 p26 = -0.131428 p27 = 0.127109 p28 = -0.0213564 p29 = -0.0648602 p30 = -0.155703 p31 = 0.120913 p32 = 0.0458339 p33 = -0.0120304 p34 = -0.0311331 p35 = 0.000399142 p36 = 0.000120776 p37 = -3.16431e-05 p38 = -0.000485435 p39 = -0.000765575 p40 = -0.001328 p41 = 0.923916 p42 = 0.95211 p43 = 1.0565 p44 = 1.17665 p45 = -0.00265347 p46 = 0.00330478 p47 = -1.34973e-05 p48 = -4.19665e-06 p49 = 0.00332621 p50 = -0.00436324 p51 = 0.00473995 p52 = -0.000830314 p53 = -0.00306498 p54 = -0.00840245 p55 = 0.00776756 p56 = 0.00268948 p57 = -0.000462527 p58 = -0.00108464 p59 = 8.6499e-06 p60 = 1.51705e-06 p61 = -2.68847e-06 p62 = -1.39908e-05 p63 = -2.04016e-05 p64 = -3.27708e-05 p65 = -0.0138031 p66 = 1.69471
+----------> Iteration 3
+            FVAL = -0.00517803895794 Edm = 9.89374848827e-05 Nfcn = 3054
+            Error matrix change = 0
+            Parameters :  p0 = -2.04761e-05 p1 = 0.0294865 p2 = -0.0346625 p3 = 9.17985e-05 p4 = 5.05764e-05 p5 = -0.0582078 p6 = 0.0568877 p7 = -0.0676959 p8 = 0.0100987 p9 = 0.032275 p10 = 0.0960232 p11 = -0.0749043 p12 = -0.0230808 p13 = 0.00566337 p14 = 0.0146754 p15 = -4.90621e-06 p16 = 5.37085e-05 p17 = 0.00013281 p18 = 0.000220433 p19 = 0.000140598 p20 = 0.000160342 p21 = -0.0543309 p22 = 0.0830059 p23 = -0.000436512 p24 = -7.68509e-05 p25 = 0.110383 p26 = -0.131428 p27 = 0.127109 p28 = -0.0213564 p29 = -0.0648602 p30 = -0.155703 p31 = 0.120913 p32 = 0.0458339 p33 = -0.0120304 p34 = -0.0311331 p35 = 0.000399142 p36 = 0.000120776 p37 = -3.16431e-05 p38 = -0.000485435 p39 = -0.000765575 p40 = -0.001328 p41 = 0.923916 p42 = 0.95211 p43 = 1.0565 p44 = 1.17665 p45 = -0.00265347 p46 = 0.00330478 p47 = -1.34973e-05 p48 = -4.19665e-06 p49 = 0.00332621 p50 = -0.00436324 p51 = 0.00473995 p52 = -0.000830314 p53 = -0.00306498 p54 = -0.00840245 p55 = 0.00776756 p56 = 0.00268948 p57 = -0.000462527 p58 = -0.00108464 p59 = 8.6499e-06 p60 = 1.51705e-06 p61 = -2.68847e-06 p62 = -1.39908e-05 p63 = -2.04016e-05 p64 = -3.27708e-05 p65 = -0.0138031 p66 = 1.69471
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = -0.00517803895793649688
+Edm   = 9.89374848827388644e-05
+Nfcn  = 3054
+BR_hww	  = -2.04761e-05	 +/-  0.996329	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin0	  = 0.0294865	 +/-  0.989902	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin1	  = -0.0346625	 +/-  0.989998	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin10	  = 9.17985e-05	 +/-  0.988492	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin11	  = 5.05764e-05	 +/-  0.989009	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin12	  = -0.0582078	 +/-  0.988649	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin13	  = 0.0568877	 +/-  0.989062	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin14	  = -0.0676959	 +/-  0.988418	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin15	  = 0.0100987	 +/-  0.988553	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin16	  = 0.032275	 +/-  0.988408	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin17	  = 0.0960232	 +/-  0.988255	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin18	  = -0.0749043	 +/-  0.988697	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin19	  = -0.0230808	 +/-  0.988788	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin2	  = 0.00566337	 +/-  0.989218	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin3	  = 0.0146754	 +/-  0.989527	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin4	  = -4.90621e-06	 +/-  0.989608	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin5	  = 5.37085e-05	 +/-  0.989862	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin6	  = 0.00013281	 +/-  0.989587	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin7	  = 0.000220433	 +/-  0.990092	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin8	  = 0.000140598	 +/-  0.988856	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin9	  = 0.000160342	 +/-  0.989551	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin0	  = -0.0543309	 +/-  0.988571	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin1	  = 0.0830059	 +/-  0.988516	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin10	  = -0.000436512	 +/-  0.986093	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin11	  = -7.68509e-05	 +/-  0.985593	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin12	  = 0.110383	 +/-  0.984406	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin13	  = -0.131428	 +/-  0.984987	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin14	  = 0.127109	 +/-  0.98478	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin15	  = -0.0213564	 +/-  0.983508	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin16	  = -0.0648602	 +/-  0.985098	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin17	  = -0.155703	 +/-  0.985586	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin18	  = 0.120913	 +/-  0.986241	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin19	  = 0.0458339	 +/-  0.985061	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin2	  = -0.0120304	 +/-  0.987695	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin3	  = -0.0311331	 +/-  0.987702	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin4	  = 0.000399142	 +/-  0.987283	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin5	  = 0.000120776	 +/-  0.987249	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin6	  = -3.16431e-05	 +/-  0.986422	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin7	  = -0.000485435	 +/-  0.986676	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin8	  = -0.000765575	 +/-  0.98632	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin9	  = -0.001328	 +/-  0.987492	(limited)
+CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par0	  = 0.923916	 +/-  0.00877999	(limited)
+CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par1	  = 0.95211	 +/-  0.0225649	(limited)
+CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par2	  = 1.0565	 +/-  0.0382063	(limited)
+CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par3	  = 1.17665	 +/-  0.0233041	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin0	  = -0.00265347	 +/-  0.00560272	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin1	  = 0.00330478	 +/-  0.00452979	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin10	  = -1.34973e-05	 +/-  0.00480571	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin11	  = -4.19665e-06	 +/-  0.00511949	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin12	  = 0.00332621	 +/-  0.00547635	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin13	  = -0.00436324	 +/-  0.00599465	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin14	  = 0.00473995	 +/-  0.00641036	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin15	  = -0.000830314	 +/-  0.00696183	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin16	  = -0.00306498	 +/-  0.0075595	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin17	  = -0.00840245	 +/-  0.00844169	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin18	  = 0.00776756	 +/-  0.009395	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin19	  = 0.00268948	 +/-  0.0106702	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin2	  = -0.000462527	 +/-  0.00420054	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin3	  = -0.00108464	 +/-  0.00413375	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin4	  = 8.6499e-06	 +/-  0.00416026	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin5	  = 1.51705e-06	 +/-  0.00416915	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin6	  = -2.68847e-06	 +/-  0.00420605	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin7	  = -1.39908e-05	 +/-  0.00429553	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin8	  = -2.04016e-05	 +/-  0.0044421	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin9	  = -3.27708e-05	 +/-  0.00486355	(limited)
+lumi_13TeV_correlated	  = -0.0138031	 +/-  0.998512	(limited)
+r	  = 1.69471	 +/-  66.2391	(limited)
+Minuit2Minimizer: Minimize with max-calls 33000 convergence for edm < 0.1 strategy 1
+Minuit2Minimizer::Minuit  - Changing default options
+             StorageLevel :               0
+MnSeedGenerator: for initial parameters FCN = 0
+MnSeedGenerator: Initial state:   - FCN =                0 Edm =    0.0421613 NCalls =    265
+VariableMetric: start iterating until Edm is < 0.0001
+VariableMetric: Initial state   - FCN =                0 Edm =    0.0421613 NCalls =    265
+VariableMetric: Iteration #   0 - FCN =                0 Edm =    0.0421613 NCalls =    265
+VariableMetric: Iteration #   1 - FCN = -0.01379103093169 Edm =  0.000885024 NCalls =    399
+VariableMetric: Iteration #   2 - FCN = -0.01465363706694 Edm =  7.09767e-05 NCalls =    532
+VariableMetric: Iteration #   3 - FCN = -0.01473820610113 Edm =  2.70398e-05 NCalls =    666
+VariableMetric: After Hessian   - FCN = -0.01473820610113 Edm =  6.26825e-05 NCalls =   3078
+VariableMetric: Iteration #   4 - FCN = -0.01473820610113 Edm =  6.26825e-05 NCalls =   3078
+Number of iterations 5
+----------> Iteration 0
+            FVAL = 0 Edm = 0.0421612923844 Nfcn = 265
+            Error matrix change = 1
+            Parameters :  p0 = -2.04761e-05 p1 = 0.0294865 p2 = -0.0346625 p3 = 9.17985e-05 p4 = 5.05764e-05 p5 = -0.0582078 p6 = 0.0568877 p7 = -0.0676959 p8 = 0.0100987 p9 = 0.032275 p10 = 0.0960232 p11 = -0.0749043 p12 = -0.0230808 p13 = 0.00566337 p14 = 0.0146754 p15 = -4.90621e-06 p16 = 5.37085e-05 p17 = 0.00013281 p18 = 0.000220433 p19 = 0.000140598 p20 = 0.000160342 p21 = -0.0543309 p22 = 0.0830059 p23 = -0.000436512 p24 = -7.68509e-05 p25 = 0.110383 p26 = -0.131428 p27 = 0.127109 p28 = -0.0213564 p29 = -0.0648602 p30 = -0.155703 p31 = 0.120913 p32 = 0.0458339 p33 = -0.0120304 p34 = -0.0311331 p35 = 0.000399142 p36 = 0.000120776 p37 = -3.16431e-05 p38 = -0.000485435 p39 = -0.000765575 p40 = -0.001328 p41 = 0.923916 p42 = 0.95211 p43 = 1.0565 p44 = 1.17665 p45 = -0.00265347 p46 = 0.00330478 p47 = -1.34973e-05 p48 = -4.19665e-06 p49 = 0.00332621 p50 = -0.00436324 p51 = 0.00473995 p52 = -0.000830314 p53 = -0.00306498 p54 = -0.00840245 p55 = 0.00776756 p56 = 0.00268948 p57 = -0.000462527 p58 = -0.00108464 p59 = 8.6499e-06 p60 = 1.51705e-06 p61 = -2.68847e-06 p62 = -1.39908e-05 p63 = -2.04016e-05 p64 = -3.27708e-05 p65 = -0.0138031
+----------> Iteration 1
+            FVAL = -0.0137910309317 Edm = 0.000885024263248 Nfcn = 399
+            Error matrix change = 0.500908
+            Parameters :  p0 = -1.37783e-05 p1 = 0.0294949 p2 = -0.0346815 p3 = 0.000121859 p4 = 4.35614e-05 p5 = -0.0582305 p6 = 0.0568414 p7 = -0.0677436 p8 = 0.010051 p9 = 0.032234 p10 = 0.0960018 p11 = -0.0749283 p12 = -0.0230915 p13 = 0.00565965 p14 = 0.0146295 p15 = -5.56277e-05 p16 = 2.0224e-05 p17 = 9.64027e-05 p18 = 0.000217314 p19 = 0.000189486 p20 = 0.000254123 p21 = -0.0549443 p22 = 0.0823236 p23 = 0.0014533 p24 = 0.00179378 p25 = 0.112192 p26 = -0.130667 p27 = 0.127875 p28 = -0.0206515 p29 = -0.0648702 p30 = -0.155522 p31 = 0.121022 p32 = 0.0460237 p33 = -0.0121747 p34 = -0.0311765 p35 = 0.00118817 p36 = 0.00128132 p37 = 0.00153929 p38 = 0.00148097 p39 = 0.00158886 p40 = 0.00163467 p41 = 0.924019 p42 = 0.952348 p43 = 1.05686 p44 = 1.17706 p45 = -0.00265001 p46 = 0.00330891 p47 = 3.33713e-05 p48 = 3.60278e-05 p49 = 0.00336449 p50 = -0.00433129 p51 = 0.00477254 p52 = -0.000799135 p53 = -0.00303552 p54 = -0.00836738 p55 = 0.00779965 p56 = 0.00272313 p57 = -0.000453484 p58 = -0.00107123 p59 = 2.73889e-05 p60 = 2.86686e-05 p61 = 3.01361e-05 p62 = 2.95765e-05 p63 = 2.9871e-05 p64 = 2.81239e-05 p65 = -6.27073e-05
+----------> Iteration 2
+            FVAL = -0.0146536370669 Edm = 7.09767365635e-05 Nfcn = 532
+----------> Iteration 3
+            FVAL = -0.0147382061011 Edm = 2.70398230634e-05 Nfcn = 666
+            Error matrix change = 0.134722
+            Parameters :  p0 = 1.32272e-06 p1 = 0.0298816 p2 = -0.0341728 p3 = -0.000395003 p4 = -0.000124527 p5 = -0.0583356 p6 = 0.0569872 p7 = -0.067638 p8 = 0.010173 p9 = 0.0323521 p10 = 0.0959051 p11 = -0.0749603 p12 = -0.0231715 p13 = 0.00614079 p14 = 0.0150817 p15 = 0.000331273 p16 = 0.00010495 p17 = -6.32579e-05 p18 = -0.000417575 p19 = -0.000552012 p20 = -0.000818324 p21 = -0.0543041 p22 = 0.0826363 p23 = -3.2452e-08 p24 = -0.000486997 p25 = 0.109775 p26 = -0.132481 p27 = 0.126324 p28 = -0.0221673 p29 = -0.0655229 p30 = -0.155833 p31 = 0.120716 p32 = 0.0458053 p33 = -0.012549 p34 = -0.0317145 p35 = -0.00026613 p36 = -9.81288e-05 p37 = -9.21563e-05 p38 = 0.00028156 p39 = 0.000459032 p40 = 0.000968435 p41 = 0.92396 p42 = 0.952399 p43 = 1.05701 p44 = 1.17713 p45 = -0.00266029 p46 = 0.00328389 p47 = 9.43831e-06 p48 = -4.57763e-06 p49 = 0.00332026 p50 = -0.00438719 p51 = 0.00472126 p52 = -0.000850647 p53 = -0.0030886 p54 = -0.00840391 p55 = 0.00776094 p56 = 0.00269245 p57 = -0.000483325 p58 = -0.00110603 p59 = -8.90849e-06 p60 = -1.37805e-06 p61 = 1.32442e-06 p62 = 1.51036e-05 p63 = 2.20135e-05 p64 = 3.83497e-05 p65 = -0.0196162
+----------> Iteration 4
+            FVAL = -0.0147382061011 Edm = 6.26824923233e-05 Nfcn = 3078
+            Error matrix change = 0
+            Parameters :  p0 = 1.32272e-06 p1 = 0.0298816 p2 = -0.0341728 p3 = -0.000395003 p4 = -0.000124527 p5 = -0.0583356 p6 = 0.0569872 p7 = -0.067638 p8 = 0.010173 p9 = 0.0323521 p10 = 0.0959051 p11 = -0.0749603 p12 = -0.0231715 p13 = 0.00614079 p14 = 0.0150817 p15 = 0.000331273 p16 = 0.00010495 p17 = -6.32579e-05 p18 = -0.000417575 p19 = -0.000552012 p20 = -0.000818324 p21 = -0.0543041 p22 = 0.0826363 p23 = -3.2452e-08 p24 = -0.000486997 p25 = 0.109775 p26 = -0.132481 p27 = 0.126324 p28 = -0.0221673 p29 = -0.0655229 p30 = -0.155833 p31 = 0.120716 p32 = 0.0458053 p33 = -0.012549 p34 = -0.0317145 p35 = -0.00026613 p36 = -9.81288e-05 p37 = -9.21563e-05 p38 = 0.00028156 p39 = 0.000459032 p40 = 0.000968435 p41 = 0.92396 p42 = 0.952399 p43 = 1.05701 p44 = 1.17713 p45 = -0.00266029 p46 = 0.00328389 p47 = 9.43831e-06 p48 = -4.57763e-06 p49 = 0.00332026 p50 = -0.00438719 p51 = 0.00472126 p52 = -0.000850647 p53 = -0.0030886 p54 = -0.00840391 p55 = 0.00776094 p56 = 0.00269245 p57 = -0.000483325 p58 = -0.00110603 p59 = -8.90849e-06 p60 = -1.37805e-06 p61 = 1.32442e-06 p62 = 1.51036e-05 p63 = 2.20135e-05 p64 = 3.83497e-05 p65 = -0.0196162
+Minuit2Minimizer : Valid minimum - status = 0
+FVAL  = -0.0147382061011282501
+Edm   = 6.26824923232546945e-05
+Nfcn  = 3078
+BR_hww	  = 1.32272e-06	 +/-  0.996602	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin0	  = 0.0298816	 +/-  0.988979	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin1	  = -0.0341728	 +/-  0.988771	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin10	  = -0.000395003	 +/-  0.988077	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin11	  = -0.000124527	 +/-  0.988501	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin12	  = -0.0583356	 +/-  0.988199	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin13	  = 0.0569872	 +/-  0.988115	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin14	  = -0.067638	 +/-  0.987989	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin15	  = 0.010173	 +/-  0.987608	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin16	  = 0.0323521	 +/-  0.988041	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin17	  = 0.0959051	 +/-  0.987377	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin18	  = -0.0749603	 +/-  0.987745	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin19	  = -0.0231715	 +/-  0.988261	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin2	  = 0.00614079	 +/-  0.988859	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin3	  = 0.0150817	 +/-  0.988505	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin4	  = 0.000331273	 +/-  0.988882	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin5	  = 0.00010495	 +/-  0.989164	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin6	  = -6.32579e-05	 +/-  0.988877	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin7	  = -0.000417575	 +/-  0.988675	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin8	  = -0.000552012	 +/-  0.988951	(limited)
+CMS_HWW_boosted_CR2_mcstat_bin9	  = -0.000818324	 +/-  0.988356	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin0	  = -0.0543041	 +/-  0.988393	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin1	  = 0.0826363	 +/-  0.988511	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin10	  = -3.2452e-08	 +/-  0.986068	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin11	  = -0.000486997	 +/-  0.985185	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin12	  = 0.109775	 +/-  0.984107	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin13	  = -0.132481	 +/-  0.984633	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin14	  = 0.126324	 +/-  0.984522	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin15	  = -0.0221673	 +/-  0.983531	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin16	  = -0.0655229	 +/-  0.985109	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin17	  = -0.155833	 +/-  0.985466	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin18	  = 0.120716	 +/-  0.986136	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin19	  = 0.0458053	 +/-  0.98456	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin2	  = -0.012549	 +/-  0.98802	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin3	  = -0.0317145	 +/-  0.987913	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin4	  = -0.00026613	 +/-  0.987613	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin5	  = -9.81288e-05	 +/-  0.987474	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin6	  = -9.21563e-05	 +/-  0.986907	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin7	  = 0.00028156	 +/-  0.986818	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin8	  = 0.000459032	 +/-  0.986828	(limited)
+CMS_HWW_boosted_SR2b_mcstat_bin9	  = 0.000968435	 +/-  0.986199	(limited)
+CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par0	  = 0.92396	 +/-  0.00875899	(limited)
+CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par1	  = 0.952399	 +/-  0.0201609	(limited)
+CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par2	  = 1.05701	 +/-  0.0265401	(limited)
+CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par3	  = 1.17713	 +/-  0.0215826	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin0	  = -0.00266029	 +/-  0.00556389	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin1	  = 0.00328389	 +/-  0.00452981	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin10	  = 9.43831e-06	 +/-  0.00479875	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin11	  = -4.57763e-06	 +/-  0.0050727	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin12	  = 0.00332026	 +/-  0.00542657	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin13	  = -0.00438719	 +/-  0.00588193	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin14	  = 0.00472126	 +/-  0.00636861	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin15	  = -0.000850647	 +/-  0.00694531	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin16	  = -0.0030886	 +/-  0.00755265	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin17	  = -0.00840391	 +/-  0.00841575	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin18	  = 0.00776094	 +/-  0.00932423	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin19	  = 0.00269245	 +/-  0.0105392	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin2	  = -0.000483325	 +/-  0.00420064	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin3	  = -0.00110603	 +/-  0.00411873	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin4	  = -8.90849e-06	 +/-  0.00412675	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin5	  = -1.37805e-06	 +/-  0.00415828	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin6	  = 1.32442e-06	 +/-  0.00419112	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin7	  = 1.51036e-05	 +/-  0.00427454	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin8	  = 2.20135e-05	 +/-  0.0043831	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin9	  = 3.83497e-05	 +/-  0.00456572	(limited)
+lumi_13TeV_correlated	  = -0.0196162	 +/-  0.995193	(limited)
+
+ -- Significance -- 
+Significance: 0.012969
+       (p-value = 0.494826)
+Done in 0.01 min (cpu), 0.03 min (real)
+Printing Message Summary From ... combine_logger.out
+----------------------------------------------
+Messages of type INFO : 209
+Messages of type DEBUG : 0
+Messages of type ERROR : 0
+----------------------------------------------
+INFO: (function: run) Combine.cc: 676 -- Set floating the following parameters: 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin4 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin5 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin6 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin7 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin8 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin9 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin10 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin11 
+INFO: (function: run) Combine.cc: 679  r 
+INFO: (function: run) Combine.cc: 712 -- Freezing the following parameters: 
+INFO: (function: run) Combine.cc: 715  BR_hww_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 715  lumi_13TeV_correlated_In 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_st_CR2__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_CR2__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_CR2__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_st_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VH_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_st_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VH_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_st_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 69 -- Parameters after fit for asimov dataset
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- BR_hww = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- BR_hww_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin0 = 0.0296028 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin1 = -0.0345614 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin10 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin11 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin12 = -0.0582704 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin13 = 0.0568555 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin14 = -0.0677506 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin15 = 0.0100459 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin16 = 0.0322354 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin17 = 0.0959455 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin18 = -0.0749673 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin19 = -0.0231348 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin2 = 0.00579697 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin3 = 0.0147091 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin0 = -0.0545334 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin1 = 0.0825904 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin10 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin11 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin12 = 0.110369 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin13 = -0.131737 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin14 = 0.126903 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin15 = -0.0215831 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin16 = -0.0650846 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin17 = -0.155685 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin18 = 0.120884 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin19 = 0.0458884 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin2 = -0.0124803 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin3 = -0.0315714 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par0 = 0.923932 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par1 = 0.952224 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par2 = 1.0567 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_2b_MH_Reco_par3 = 1.17685 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin0 = -0.00266061 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin1 = 0.00329223 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin10 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin11 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin12 = 0.00332799 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin13 = -0.00436918 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin14 = 0.00473583 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin15 = -0.000835183 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin16 = -0.0030707 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin17 = -0.00839926 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin18 = 0.00776859 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin19 = 0.00269431 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin2 = -0.000474078 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin3 = -0.00109558 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_correlated = -0.0158585 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_correlated_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_CR2 = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_CR2Blinded = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_SR2b = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_SR2bBlinded = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- r = 1 (constant)
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR2_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR2Blinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2b_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2bBlinded_obsOnly: in 20 x-bins
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0

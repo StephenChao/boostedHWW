@@ -1,0 +1,43 @@
+[#0] ERROR:InputArguments -- RooWorkspace::defineSet(w) ERROR proposed set constituent "" is not in workspace
+ *** Break *** segmentation violation
+
+
+
+===========================================================
+There was a crash.
+This is the entire stack trace of all threads:
+===========================================================
+#0  0x00002b03e032d46c in waitpid () from /lib64/libc.so.6
+#1  0x00002b03e02aaf62 in do_system () from /lib64/libc.so.6
+#2  0x00002b03e756c535 in TUnixSystem::StackTrace() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc900/cms/cmssw/CMSSW_11_3_4/external/slc7_amd64_gcc900/lib/libCore.so
+#3  0x00002b03e6f0a252 in (anonymous namespace)::TExceptionHandlerImp::HandleException(int) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc900/cms/cmssw/CMSSW_11_3_4/external/slc7_amd64_gcc900/lib/libcppyy_backend3_8.so
+#4  0x00002b03e7569581 in TUnixSystem::DispatchSignals(ESignals) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc900/cms/cmssw/CMSSW_11_3_4/external/slc7_amd64_gcc900/lib/libCore.so
+#5  <signal handler called>
+#6  0x00002b0400326927 in non-virtual thunk to TIteratorToSTLInterface<std::vector<RooAbsArg*, std::allocator<RooAbsArg*> > >::next() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc900/lcg/root/6.22.08-ljfedo/lib/libRooFitCore.so
+#7  0x00002b04017f1c09 in RooStats::ModelConfig::SetHasOnlyParameters(RooArgSet const&, char const*) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc900/cms/cmssw/CMSSW_11_3_4/external/slc7_amd64_gcc900/lib/libRooStats.so
+#8  0x00002b04017f522e in RooStats::ModelConfig::SetObservables(RooArgSet const&) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc900/cms/cmssw/CMSSW_11_3_4/external/slc7_amd64_gcc900/lib/libRooStats.so
+#9  0x00002b040251203c in ?? ()
+#10 0x000000000a38e7a0 in ?? ()
+#11 0x00002b04017f5210 in ?? () from /cvmfs/cms.cern.ch/slc7_amd64_gcc900/cms/cmssw/CMSSW_11_3_4/external/slc7_amd64_gcc900/lib/libRooStats.so
+#12 0x0000000000000000 in ?? ()
+===========================================================
+
+
+The lines below might hint at the cause of the crash.
+You may get help by asking at the ROOT forum https://root.cern.ch/forum
+Only if you are really convinced it is a bug in ROOT then please submit a
+report at https://root.cern.ch/bugs Please post the ENTIRE stack trace
+from above as an attachment in addition to anything else
+that might help us fixing this issue.
+===========================================================
+#6  0x00002b0400326927 in non-virtual thunk to TIteratorToSTLInterface<std::vector<RooAbsArg*, std::allocator<RooAbsArg*> > >::next() () from /cvmfs/cms.cern.ch/slc7_amd64_gcc900/lcg/root/6.22.08-ljfedo/lib/libRooFitCore.so
+#7  0x00002b04017f1c09 in RooStats::ModelConfig::SetHasOnlyParameters(RooArgSet const&, char const*) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc900/cms/cmssw/CMSSW_11_3_4/external/slc7_amd64_gcc900/lib/libRooStats.so
+#8  0x00002b04017f522e in RooStats::ModelConfig::SetObservables(RooArgSet const&) () from /cvmfs/cms.cern.ch/slc7_amd64_gcc900/cms/cmssw/CMSSW_11_3_4/external/slc7_amd64_gcc900/lib/libRooStats.so
+#9  0x00002b040251203c in ?? ()
+#10 0x000000000a38e7a0 in ?? ()
+#11 0x00002b04017f5210 in ?? () from /cvmfs/cms.cern.ch/slc7_amd64_gcc900/cms/cmssw/CMSSW_11_3_4/external/slc7_amd64_gcc900/lib/libRooStats.so
+#12 0x0000000000000000 in ?? ()
+===========================================================
+
+
+ *** Break *** segmentation violation

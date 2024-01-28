@@ -117,18 +117,32 @@ idx=-1; unset img;
 # ((idx++)); img[idx]='./impacts_SR2bsideband.pdf'
 # ((idx++)); img[idx]='./impacts_SR3bsideband.pdf'
 
-((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_SR1apostfit,order=3_.pdf'
-((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_SR2apostfit,order=3_.pdf'
-((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_SR3apostfit,order=3_.pdf'
-((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_SR1bpostfit,order=3_.pdf'
-((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_SR2bpostfit,order=3_.pdf'
-((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_SR3bpostfit,order=3_.pdf'
-((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_CR1postfit,order=3_.pdf'
-((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_CR2postfit,order=3_.pdf'
-((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_CR3postfit,order=3_.pdf'
+# ((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_SR1apostfit,order=3_.pdf'
+# ((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_SR2apostfit,order=3_.pdf'
+# ((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_SR3apostfit,order=3_.pdf'
+# ((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_SR1bpostfit,order=3_.pdf'
+# ((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_SR2bpostfit,order=3_.pdf'
+# ((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_SR3bpostfit,order=3_.pdf'
+# ((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_CR1postfit,order=3_.pdf'
+# ((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_CR2postfit,order=3_.pdf'
+# ((idx++)); img[idx]='/ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/postfit/23Oct2023/Full-Run2_METReco_CR3postfit,order=3_.pdf'
 
+
+# ((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/prefit/25Jan2024/Full-Run2_MH_Reco_DECO_SR1aprefit_.pdf'
+# ((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/prefit/25Jan2024/Full-Run2_MH_Reco_DECO_SR1bprefit_.pdf'
+# ((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/prefit/25Jan2024/Full-Run2_MH_Reco_DECO_CR1prefit_.pdf'
+# ((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/prefit/25Jan2024/Full-Run2_MH_Reco_DECO_SR2aprefit_.pdf'
+# ((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/prefit/25Jan2024/Full-Run2_MH_Reco_DECO_SR2bprefit_.pdf'
+# ((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/prefit/25Jan2024/Full-Run2_MH_Reco_DECO_CR2prefit_.pdf'
+
+((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Full-Run2_MH_Reco_DECO_SR1apostfit,order=4_.pdf'
+((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Full-Run2_MH_Reco_DECO_SR1bpostfit,order=4_.pdf'
+((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Full-Run2_MH_Reco_DECO_CR1postfit,order=4_.pdf'
+((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Full-Run2_MH_Reco_DECO_SR2apostfit,order=4_.pdf'
+((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Full-Run2_MH_Reco_DECO_SR2bpostfit,order=4_.pdf'
+((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Full-Run2_MH_Reco_DECO_CR2postfit,order=4_.pdf'
 
 # montage -mode concatenate -tile 3x2 ${img[*]}  -resize 4000x -border 0  -geometry +0+0 Impacts_OnlyQCDRP.png;
-montage -mode concatenate -tile 3x3 ${img[*]} /ospool/cms-user/yuzhe/BoostedHWW/prediction/boostedHWW/combine/plots/Postfit_order3.png;
+montage -mode concatenate -tile 3x2 ${img[*]} /home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Postfit_50.png;
 ##display Multi_PS_.png &
 #

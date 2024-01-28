@@ -1,14 +1,14 @@
-# Datacard for <Channel (SR2b) instance at 0x7f10c3549760> generated on 2024-01-15 21:32:26.619837
+# Datacard for <Channel (SR2b) instance at 0x7f55fd5d5fd0> generated on 2024-01-26 00:31:27.023883
 imax 1 # number of categories ('bins' but here we are using shape templates)
 jmax 7 # number of samples minus 1
 kmax 22 # number of nuisance parameters
 shapes * SR2b HWWfullhad.root HWWfullhad:SR2b_$PROCESS HWWfullhad:SR2b_$PROCESS_$SYSTEMATIC
 bin SR2b
-observation 40105.000
+observation 11560.000
 bin                                               SR2b           SR2b           SR2b           SR2b      SR2b      SR2b     SR2b                            SR2b
 process                                            ggF            VBF             VH            ttH  ttbar_st     wjets     rest  CMS_HWW_boosted_qcd_datadriven
 process                                             -3             -2             -1              0         1         2        3                               4
-rate                                             9.189          3.860          6.135          9.763  3410.147  2865.703  961.797                           1.000
+rate                                            12.698          6.250          6.275          5.390  1284.800  1497.997  299.697                           1.000
 BR_hww lnN                               0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153         -         -        -                               -
 CMS_HWW_boosted_SR2b_mcstat_bin0 shape          1.0000         1.0000         1.0000         1.0000    1.0000    1.0000   1.0000                               -
 CMS_HWW_boosted_SR2b_mcstat_bin1 shape          1.0000         1.0000         1.0000         1.0000    1.0000    1.0000   1.0000                               -

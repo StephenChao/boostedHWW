@@ -281,10 +281,10 @@ for skey, syst in uncorr_year_shape_systs.items():
 
 def main(args):
     # all SRs and CRs
-    regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2","SR3a","SR3b","CR3"]
+    regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2"]
     regions_blinded = [region + "Blinded" for region in regions]
     regions = regions +  regions_blinded #only use blinded results now
-    with open(f"/home/pku/zhaoyz/Higgs/boostedHWW/combine/templates/hists_templates_run2.pkl", "rb") as f:
+    with open(f"/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/templates/25Jan2024/hists_templates_run2.pkl", "rb") as f:
         hists_templates = pkl.load(f) #in Raghav's code, it's templates_summed and templates_dict
     
     model = rl.Model("HWWfullhad")
@@ -486,14 +486,6 @@ def alphabet_fit(
         templates_summed[f"SR2b"]["QCD", :].sum().value
         / templates_summed[f"CR2"]["QCD", :].sum().value
     )
-    qcd_eff_3a = (
-        templates_summed[f"SR3a"]["QCD", :].sum().value
-        / templates_summed[f"CR3"]["QCD", :].sum().value
-    )
-    qcd_eff_3b = (
-        templates_summed[f"SR3b"]["QCD", :].sum().value
-        / templates_summed[f"CR3"]["QCD", :].sum().value
-    )
     
     # initialize transfer factor, value here won't influence final results
     # each SR should use one polynomial
@@ -529,40 +521,19 @@ def alphabet_fit(
         limits=(-20, 20),
         square_params=True, 
     ) 
-    tf_dataResidual_3a = rl.BasisPoly(
-        f"{CMS_PARAMS_LABEL}_tf_dataResidual_3a",
-        (shape_var.order,),
-        [shape_var.name],
-        basis="Bernstein",
-        limits=(-30, 30),
-        square_params=True, 
-    ) 
-    tf_dataResidual_3b = rl.BasisPoly(
-        f"{CMS_PARAMS_LABEL}_tf_dataResidual_3b",
-        (shape_var.order,),
-        [shape_var.name],
-        basis="Bernstein",
-        limits=(-30, 30),
-        square_params=True, 
-    ) 
     
     # set TF parameters for each pass region(6 SRs)
     tf_dataResidual_params_1a = tf_dataResidual_1a(shape_var.scaled)
     tf_dataResidual_params_1b = tf_dataResidual_1b(shape_var.scaled)
     tf_dataResidual_params_2a = tf_dataResidual_2a(shape_var.scaled)
     tf_dataResidual_params_2b = tf_dataResidual_2b(shape_var.scaled)
-    tf_dataResidual_params_3a = tf_dataResidual_3a(shape_var.scaled)
-    tf_dataResidual_params_3b = tf_dataResidual_3b(shape_var.scaled)
     
     tf_params_pass_1a = qcd_eff_1a * tf_dataResidual_params_1a  # scale params initially by qcd eff
     tf_params_pass_1b = qcd_eff_1b * tf_dataResidual_params_1b  # scale params initially by qcd eff
     
     tf_params_pass_2a = qcd_eff_2a * tf_dataResidual_params_2a  # scale params initially by qcd eff
     tf_params_pass_2b = qcd_eff_2b * tf_dataResidual_params_2b  # scale params initially by qcd eff
-    
-    tf_params_pass_3a = qcd_eff_3a * tf_dataResidual_params_3a  # scale params initially by qcd eff
-    tf_params_pass_3b = qcd_eff_3b * tf_dataResidual_params_3b  # scale params initially by qcd eff
-    
+        
     #set QCD parameters for 3 CRs
     qcd_params1 = np.array(
         [
@@ -573,12 +544,6 @@ def alphabet_fit(
     qcd_params2 = np.array(
         [
             rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_CR2_Bin{i}", 0)
-            for i in range(m_obs.nbins)
-        ]
-    )
-    qcd_params3 = np.array(
-        [
-            rl.IndependentParameter(f"{CMS_PARAMS_LABEL}_tf_dataResidual_CR3_Bin{i}", 0)
             for i in range(m_obs.nbins)
         ]
     )
@@ -593,10 +558,6 @@ def alphabet_fit(
         passChName2b = f"SR2b{blind_str}".replace("_", "")
         failChName2 = f"CR2{blind_str}".replace("_", "")
         
-        passChName3a = f"SR3a{blind_str}".replace("_", "")
-        passChName3b = f"SR3b{blind_str}".replace("_", "")
-        failChName3 = f"CR3{blind_str}".replace("_", "")  
-              
         #Get pass and fail channel information
         failCh1 = model[failChName1]
         passCh1a = model[passChName1a]
@@ -606,15 +567,10 @@ def alphabet_fit(
         passCh2a = model[passChName2a]
         passCh2b = model[passChName2b]
         
-        failCh3 = model[failChName3]
-        passCh3a = model[passChName3a]
-        passCh3b = model[passChName3b]
-        
         # sideband fail
         # was integer, and numpy complained about subtracting float from it
         initial_qcd1 = failCh1.getObservation().astype(float)
         initial_qcd2 = failCh2.getObservation().astype(float)
-        initial_qcd3 = failCh3.getObservation().astype(float)
                 
         for sample in failCh1:
             if sample.sampletype == rl.Sample.SIGNAL:
@@ -628,19 +584,10 @@ def alphabet_fit(
             logging.debug("subtracting %s from qcd" % sample._name)
             initial_qcd2 -= sample.getExpectation(nominal=True)
             
-        for sample in failCh3:
-            if sample.sampletype == rl.Sample.SIGNAL:
-                continue
-            logging.debug("subtracting %s from qcd" % sample._name)
-            initial_qcd3 -= sample.getExpectation(nominal=True)
-            
         if np.any(initial_qcd1 < 0.0):
             initial_qcd1[np.where(initial_qcd1 < 0)] = 0
         if np.any(initial_qcd2 < 0.0):
             initial_qcd2[np.where(initial_qcd2 < 0)] = 0
-        if np.any(initial_qcd3 < 0.0):
-            initial_qcd3[np.where(initial_qcd3 < 0)] = 0
-        print("Test for initial_qcd3 value ",initial_qcd3)
         
         # idea here is that the error should be 1/sqrt(N), so parametrizing it as (1 + 1/sqrt(N))^qcdparams
         # will result in qcdparams errors ~±1
@@ -658,12 +605,7 @@ def alphabet_fit(
         scaled_params2 = (
             initial_qcd2 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd2))) ** qcd_params2
         )
-        
-        sigmascale = 40  
-        scaled_params3 = (
-            initial_qcd3 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd3))) ** qcd_params3
-        )     
-           
+
         # add samples
         
         #Set fail region below
@@ -682,14 +624,6 @@ def alphabet_fit(
             scaled_params2,
         )
         failCh2.addSample(fail_qcd2)
-        
-        fail_qcd3 = rl.ParametericSample(
-            f"{failChName3}_{CMS_PARAMS_LABEL}_qcd_datadriven",
-            rl.Sample.BACKGROUND,
-            m_obs,
-            scaled_params3,
-        )
-        failCh3.addSample(fail_qcd3)
                 
         #Set pass region below
         pass_qcd_1a = rl.TransferFactorSample(
@@ -729,26 +663,4 @@ def alphabet_fit(
             min_val=min_qcd_val,
         )        
         passCh2b.addSample(pass_qcd_2b)
-        
-        pass_qcd_3a = rl.TransferFactorSample(
-            f"{passChName3a}_{CMS_PARAMS_LABEL}_qcd_datadriven",
-            rl.Sample.BACKGROUND,
-            tf_params_pass_3a,
-            fail_qcd3,
-            # # min_val=min_qcd_val,
-            min_val=min_qcd_val,
-        )
-        
-        passCh3a.addSample(pass_qcd_3a)      
-          
-        pass_qcd_3b = rl.TransferFactorSample(
-            f"{passChName3b}_{CMS_PARAMS_LABEL}_qcd_datadriven",
-            rl.Sample.BACKGROUND,
-            tf_params_pass_3b,
-            fail_qcd3,
-            # min_val=min_qcd_val,
-            min_val=min_qcd_val,
-        )        
-        passCh3b.addSample(pass_qcd_3b)
-
 main(args)

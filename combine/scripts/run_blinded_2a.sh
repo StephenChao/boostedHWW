@@ -169,7 +169,7 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
     
     setparamsblinded=""
     freezeparamsblinded=""
-    for bin in {4..11} 
+    for bin in {4..9} 
     do  
         for cr in CR2;
         # for cr in CR3;

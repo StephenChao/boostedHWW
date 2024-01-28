@@ -5,15 +5,15 @@
 # 2) Runs background-only fit (Higgs mass window blinded) for lowest order polynomial and GoF test (saturated model) on data
 # 3) Runs fit diagnostics and saves shapes (-d|--dfit)
 # 4) Generates toys and gets test statistics for each (-t|--goftoys)
-# 5) Fits +1 order models to all 100 toys and gets test statistics (-f|--ffits)
+# 5) Fits +1 order models to all 400 toys and gets test statistics (-f|--ffits)
 ####################################################################################################
 
 goftoys=0
 ffits=0
 dfit=0
-seed=667
-numtoys=100
-order=3
+seed=42
+numtoys=200
+order=4
 limits=0
 
 options=$(getopt -o "tfdlo:" --long "cardstag:,templatestag:,goftoys,ffits,dfit,limits,order:,numtoys:,seed:" -- "$@")
@@ -92,7 +92,7 @@ outsdir="./outs"
 ccargs=""
 maskunblindedargs=""
 maskblindedargs=""
-for region in 1 2 3;
+for region in 1 2;
 do 
     cr="CR${region}"
     sra="SR${region}a"
@@ -115,11 +115,11 @@ echo "maskunblinded=${maskunblindedargs}"
 setparamsblinded=""
 freezeparamsblinded=""
 
-# blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
+# blind 90 - 150 GeV mass bin, starts from 90 and ends with 150
 
-for bin in {4..11} 
+for bin in {4..9} 
 do  
-    for cr in CR1 CR2 CR3;
+    for cr in CR1 CR2;
     do
         setparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin}=0,"
         freezeparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin},"
@@ -142,7 +142,7 @@ freezeparamsblinded=${freezeparamsblinded%,}
 # Making cards and workspaces for each order polynomial
 ####################################################################################################
 
-for ord1 in {2..3}
+for ord1 in {0..5}
 # for ord1 in 1
 do
     model_name="nTF_${ord1}"
@@ -178,10 +178,10 @@ done
 
 
 ####################################################################################################
-# Generate toys for (0, 0) order, this is toys file
+# Generate toys for lower order
 ####################################################################################################
 
-echo "now generate toys"
+echo "now generate toys for lower order"
 
 model_name="nTF_$order"
 toys_name=$order
@@ -194,7 +194,10 @@ cd -
 if [ $goftoys = 1 ]; then 
     cd ${cards_dir}/${model_name}/
     
-    # ulimit -s unlimited
+    #--setParameters ${maskunblindedargs},${setparams},r=0 \
+    #--freezeParameters ${freezeparams},r \
+
+    ulimit -s unlimited
     # bypassFrequentistFit
     echo "Toys for $order order fit"
     combine -M GenerateOnly -m 125 -d ${wsm_snapshot}.root \
@@ -209,11 +212,11 @@ fi
     # also here, replace "freezeparams" to "freezeparamsblinded"
 
 ####################################################################################################
-# GoFs on generated toys for next order polynomials, and this is GOF
+# GoFs on generated toys for low and next high order polynomials
 ####################################################################################################
 
 if [ $ffits = 1 ]; then # -f
-    for ord1 in 3
+    for ord1 in $order $((order+1))
     do
         model_name="nTF_${ord1}"
         echo "Fits for $model_name"
@@ -221,7 +224,8 @@ if [ $ffits = 1 ]; then # -f
         cd ${cards_dir}/${model_name}/
 
         ulimit -s unlimited
-        
+        # --setParameters ${maskunblindedargs},${setparams},r=0 \
+        # --freezeParameters ${freezeparams},r \
         combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
         -n Toys${toys_name} -v 9 -s $seed -t $numtoys --toysFile ${toys_file} 2>&1 | tee $outsdir/GoF_toys${toys_name}.txt
 

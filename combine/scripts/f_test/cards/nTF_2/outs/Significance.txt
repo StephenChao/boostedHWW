@@ -1,0 +1,1221 @@
+
+>>> random number generator seed is 123456
+>>> method used is Significance
+Adding /data/pku/home/zhaoyz/Higgs/env/CMSSW_11_3_4/src to include path
+Adding /cvmfs/cms.cern.ch/slc7_amd64_gcc900/lcg/root/6.22.08-ljfedo//include to include path
+Input workspace 'w': 
+
+RooWorkspace(w) w contents
+
+variables
+---------
+(BR_hww,BR_hww_In,CMS_HWW_boosted_CR1_mcstat_bin0,CMS_HWW_boosted_CR1_mcstat_bin0_In,CMS_HWW_boosted_CR1_mcstat_bin1,CMS_HWW_boosted_CR1_mcstat_bin10,CMS_HWW_boosted_CR1_mcstat_bin10_In,CMS_HWW_boosted_CR1_mcstat_bin11,CMS_HWW_boosted_CR1_mcstat_bin11_In,CMS_HWW_boosted_CR1_mcstat_bin12,CMS_HWW_boosted_CR1_mcstat_bin12_In,CMS_HWW_boosted_CR1_mcstat_bin13,CMS_HWW_boosted_CR1_mcstat_bin13_In,CMS_HWW_boosted_CR1_mcstat_bin14,CMS_HWW_boosted_CR1_mcstat_bin14_In,CMS_HWW_boosted_CR1_mcstat_bin15,CMS_HWW_boosted_CR1_mcstat_bin15_In,CMS_HWW_boosted_CR1_mcstat_bin16,CMS_HWW_boosted_CR1_mcstat_bin16_In,CMS_HWW_boosted_CR1_mcstat_bin17,CMS_HWW_boosted_CR1_mcstat_bin17_In,CMS_HWW_boosted_CR1_mcstat_bin18,CMS_HWW_boosted_CR1_mcstat_bin18_In,CMS_HWW_boosted_CR1_mcstat_bin19,CMS_HWW_boosted_CR1_mcstat_bin19_In,CMS_HWW_boosted_CR1_mcstat_bin1_In,CMS_HWW_boosted_CR1_mcstat_bin2,CMS_HWW_boosted_CR1_mcstat_bin2_In,CMS_HWW_boosted_CR1_mcstat_bin3,CMS_HWW_boosted_CR1_mcstat_bin3_In,CMS_HWW_boosted_CR1_mcstat_bin4,CMS_HWW_boosted_CR1_mcstat_bin4_In,CMS_HWW_boosted_CR1_mcstat_bin5,CMS_HWW_boosted_CR1_mcstat_bin5_In,CMS_HWW_boosted_CR1_mcstat_bin6,CMS_HWW_boosted_CR1_mcstat_bin6_In,CMS_HWW_boosted_CR1_mcstat_bin7,CMS_HWW_boosted_CR1_mcstat_bin7_In,CMS_HWW_boosted_CR1_mcstat_bin8,CMS_HWW_boosted_CR1_mcstat_bin8_In,CMS_HWW_boosted_CR1_mcstat_bin9,CMS_HWW_boosted_CR1_mcstat_bin9_In,CMS_HWW_boosted_SR1b_mcstat_bin0,CMS_HWW_boosted_SR1b_mcstat_bin0_In,CMS_HWW_boosted_SR1b_mcstat_bin1,CMS_HWW_boosted_SR1b_mcstat_bin10,CMS_HWW_boosted_SR1b_mcstat_bin10_In,CMS_HWW_boosted_SR1b_mcstat_bin11,CMS_HWW_boosted_SR1b_mcstat_bin11_In,CMS_HWW_boosted_SR1b_mcstat_bin12,CMS_HWW_boosted_SR1b_mcstat_bin12_In,CMS_HWW_boosted_SR1b_mcstat_bin13,CMS_HWW_boosted_SR1b_mcstat_bin13_In,CMS_HWW_boosted_SR1b_mcstat_bin14,CMS_HWW_boosted_SR1b_mcstat_bin14_In,CMS_HWW_boosted_SR1b_mcstat_bin15,CMS_HWW_boosted_SR1b_mcstat_bin15_In,CMS_HWW_boosted_SR1b_mcstat_bin16,CMS_HWW_boosted_SR1b_mcstat_bin16_In,CMS_HWW_boosted_SR1b_mcstat_bin17,CMS_HWW_boosted_SR1b_mcstat_bin17_In,CMS_HWW_boosted_SR1b_mcstat_bin18,CMS_HWW_boosted_SR1b_mcstat_bin18_In,CMS_HWW_boosted_SR1b_mcstat_bin19,CMS_HWW_boosted_SR1b_mcstat_bin19_In,CMS_HWW_boosted_SR1b_mcstat_bin1_In,CMS_HWW_boosted_SR1b_mcstat_bin2,CMS_HWW_boosted_SR1b_mcstat_bin2_In,CMS_HWW_boosted_SR1b_mcstat_bin3,CMS_HWW_boosted_SR1b_mcstat_bin3_In,CMS_HWW_boosted_SR1b_mcstat_bin4,CMS_HWW_boosted_SR1b_mcstat_bin4_In,CMS_HWW_boosted_SR1b_mcstat_bin5,CMS_HWW_boosted_SR1b_mcstat_bin5_In,CMS_HWW_boosted_SR1b_mcstat_bin6,CMS_HWW_boosted_SR1b_mcstat_bin6_In,CMS_HWW_boosted_SR1b_mcstat_bin7,CMS_HWW_boosted_SR1b_mcstat_bin7_In,CMS_HWW_boosted_SR1b_mcstat_bin8,CMS_HWW_boosted_SR1b_mcstat_bin8_In,CMS_HWW_boosted_SR1b_mcstat_bin9,CMS_HWW_boosted_SR1b_mcstat_bin9_In,CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par0,CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par1,CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par2,CMS_HWW_boosted_tf_dataResidual_CR1_Bin0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin1,CMS_HWW_boosted_tf_dataResidual_CR1_Bin10,CMS_HWW_boosted_tf_dataResidual_CR1_Bin11,CMS_HWW_boosted_tf_dataResidual_CR1_Bin12,CMS_HWW_boosted_tf_dataResidual_CR1_Bin13,CMS_HWW_boosted_tf_dataResidual_CR1_Bin14,CMS_HWW_boosted_tf_dataResidual_CR1_Bin15,CMS_HWW_boosted_tf_dataResidual_CR1_Bin16,CMS_HWW_boosted_tf_dataResidual_CR1_Bin17,CMS_HWW_boosted_tf_dataResidual_CR1_Bin18,CMS_HWW_boosted_tf_dataResidual_CR1_Bin19,CMS_HWW_boosted_tf_dataResidual_CR1_Bin2,CMS_HWW_boosted_tf_dataResidual_CR1_Bin3,CMS_HWW_boosted_tf_dataResidual_CR1_Bin4,CMS_HWW_boosted_tf_dataResidual_CR1_Bin5,CMS_HWW_boosted_tf_dataResidual_CR1_Bin6,CMS_HWW_boosted_tf_dataResidual_CR1_Bin7,CMS_HWW_boosted_tf_dataResidual_CR1_Bin8,CMS_HWW_boosted_tf_dataResidual_CR1_Bin9,CMS_channel,MH_Reco,lumi_13TeV_correlated,lumi_13TeV_correlated_In,mask_CR1,mask_CR1Blinded,mask_SR1b,mask_SR1bBlinded,n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven,r,shapeBkg_rest_CR1Blinded__norm,shapeBkg_rest_CR1__norm,shapeBkg_rest_SR1bBlinded__norm,shapeBkg_rest_SR1b__norm,shapeBkg_ttbar_st_CR1Blinded__norm,shapeBkg_ttbar_st_CR1__norm,shapeBkg_ttbar_st_SR1bBlinded__norm,shapeBkg_ttbar_st_SR1b__norm,shapeBkg_wjets_CR1Blinded__norm,shapeBkg_wjets_CR1__norm,shapeBkg_wjets_SR1bBlinded__norm,shapeBkg_wjets_SR1b__norm,shapeSig_VBF_SR1bBlinded__norm,shapeSig_VBF_SR1b__norm,shapeSig_VH_SR1bBlinded__norm,shapeSig_VH_SR1b__norm,shapeSig_ggF_SR1bBlinded__norm,shapeSig_ggF_SR1b__norm,shapeSig_ttH_SR1bBlinded__norm,shapeSig_ttH_SR1b__norm)
+
+p.d.f.s
+-------
+SimpleGaussianConstraint::BR_hww_Pdf[ mean=BR_hww_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin0_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin0_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin10_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin10_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin11_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin11_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin12_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin12_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin13_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin13_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin14_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin14_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin15_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin15_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin16_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin16_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin17_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin17_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin18_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin18_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin19_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin19_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin1_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin1_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin2_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin2_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin3_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin3_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin4_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin4_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin5_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin5_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin6_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin6_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin7_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin7_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin8_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin8_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_CR1_mcstat_bin9_Pdf[ mean=CMS_HWW_boosted_CR1_mcstat_bin9_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin0_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin0_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin10_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin10_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin11_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin11_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin12_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin12_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin13_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin13_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin14_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin14_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin15_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin15_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin16_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin16_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin17_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin17_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin18_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin18_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin19_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin19_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin1_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin1_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin2_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin2_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin3_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin3_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin4_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin4_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin5_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin5_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin6_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin6_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin7_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin7_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin8_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin8_In sigma=1 ] = 1
+SimpleGaussianConstraint::CMS_HWW_boosted_SR1b_mcstat_bin9_Pdf[ mean=CMS_HWW_boosted_SR1b_mcstat_bin9_In sigma=1 ] = 1
+SimpleGaussianConstraint::lumi_13TeV_correlated_Pdf[ mean=lumi_13TeV_correlated_In sigma=1 ] = 1
+RooSimultaneousOpt::model_b[ indexCat=CMS_channel CR1=pdf_binCR1_bonly CR1Blinded=pdf_binCR1Blinded_bonly SR1b=pdf_binSR1b_bonly SR1bBlinded=pdf_binSR1bBlinded_bonly extraConstraints=() channelMasks=(mask_CR1,mask_CR1Blinded,mask_SR1b,mask_SR1bBlinded) ] = 1.26705e-06
+RooSimultaneousOpt::model_s[ indexCat=CMS_channel CR1=pdf_binCR1 CR1Blinded=pdf_binCR1Blinded SR1b=pdf_binSR1b SR1bBlinded=pdf_binSR1bBlinded extraConstraints=() channelMasks=(mask_CR1,mask_CR1Blinded,mask_SR1b,mask_SR1bBlinded) ] = 1.26705e-06
+RooProdPdf::nuisancePdf[ CMS_HWW_boosted_SR1b_mcstat_bin15_Pdf * CMS_HWW_boosted_CR1_mcstat_bin5_Pdf * CMS_HWW_boosted_CR1_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin12_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin4_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin18_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR1_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin7_Pdf * CMS_HWW_boosted_CR1_mcstat_bin15_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR1_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin17_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin8_Pdf * CMS_HWW_boosted_CR1_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin12_Pdf * CMS_HWW_boosted_CR1_mcstat_bin3_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin18_Pdf * CMS_HWW_boosted_CR1_mcstat_bin7_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin4_Pdf * BR_hww_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin2_Pdf * CMS_HWW_boosted_CR1_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR1_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin8_Pdf ] = 1
+RooProdPdf::pdf_binCR1[ CMS_HWW_boosted_SR1b_mcstat_bin15_Pdf * CMS_HWW_boosted_CR1_mcstat_bin5_Pdf * CMS_HWW_boosted_CR1_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin12_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin4_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin18_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR1_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin7_Pdf * CMS_HWW_boosted_CR1_mcstat_bin15_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR1_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin17_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin8_Pdf * CMS_HWW_boosted_CR1_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin12_Pdf * CMS_HWW_boosted_CR1_mcstat_bin3_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin18_Pdf * CMS_HWW_boosted_CR1_mcstat_bin7_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin4_Pdf * BR_hww_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin2_Pdf * CMS_HWW_boosted_CR1_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR1_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin8_Pdf * pdf_binCR1_nuis * pdfbins_binCR1 ] = 0.000452119
+RooProdPdf::pdf_binCR1Blinded[ CMS_HWW_boosted_SR1b_mcstat_bin15_Pdf * CMS_HWW_boosted_CR1_mcstat_bin5_Pdf * CMS_HWW_boosted_CR1_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin12_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin4_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin18_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR1_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin7_Pdf * CMS_HWW_boosted_CR1_mcstat_bin15_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR1_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin17_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin8_Pdf * CMS_HWW_boosted_CR1_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin12_Pdf * CMS_HWW_boosted_CR1_mcstat_bin3_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin18_Pdf * CMS_HWW_boosted_CR1_mcstat_bin7_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin4_Pdf * BR_hww_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin2_Pdf * CMS_HWW_boosted_CR1_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR1_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin8_Pdf * pdf_binCR1Blinded_nuis * pdfbins_binCR1Blinded ] = 0.000793811
+RooProdPdf::pdf_binCR1Blinded_bonly[ CMS_HWW_boosted_SR1b_mcstat_bin15_Pdf * CMS_HWW_boosted_CR1_mcstat_bin5_Pdf * CMS_HWW_boosted_CR1_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin12_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin4_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin18_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR1_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin7_Pdf * CMS_HWW_boosted_CR1_mcstat_bin15_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR1_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin17_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin8_Pdf * CMS_HWW_boosted_CR1_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin12_Pdf * CMS_HWW_boosted_CR1_mcstat_bin3_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin18_Pdf * CMS_HWW_boosted_CR1_mcstat_bin7_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin4_Pdf * BR_hww_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin2_Pdf * CMS_HWW_boosted_CR1_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR1_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin8_Pdf * pdf_binCR1Blinded_bonly_nuis * pdfbins_binCR1Blinded ] = 0.000793811
+RooAddPdf::pdf_binCR1Blinded_bonly_nuis[ n_exp_binCR1Blinded_proc_ttbar_st * shapeBkg_CR1Blinded_ttbar_st_morph + n_exp_binCR1Blinded_proc_wjets * shapeBkg_CR1Blinded_wjets_morph + n_exp_binCR1Blinded_proc_rest * shapeBkg_CR1Blinded_rest_morph + n_exp_final_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR1Blinded ] = 0.000793811
+RooAddPdf::pdf_binCR1Blinded_nuis[ n_exp_binCR1Blinded_proc_ttbar_st * shapeBkg_CR1Blinded_ttbar_st_morph + n_exp_binCR1Blinded_proc_wjets * shapeBkg_CR1Blinded_wjets_morph + n_exp_binCR1Blinded_proc_rest * shapeBkg_CR1Blinded_rest_morph + n_exp_final_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR1Blinded ] = 0.000793811
+RooProdPdf::pdf_binCR1_bonly[ CMS_HWW_boosted_SR1b_mcstat_bin15_Pdf * CMS_HWW_boosted_CR1_mcstat_bin5_Pdf * CMS_HWW_boosted_CR1_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin12_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin4_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin18_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR1_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin7_Pdf * CMS_HWW_boosted_CR1_mcstat_bin15_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR1_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin17_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin8_Pdf * CMS_HWW_boosted_CR1_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin12_Pdf * CMS_HWW_boosted_CR1_mcstat_bin3_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin18_Pdf * CMS_HWW_boosted_CR1_mcstat_bin7_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin4_Pdf * BR_hww_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin2_Pdf * CMS_HWW_boosted_CR1_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR1_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin8_Pdf * pdf_binCR1_bonly_nuis * pdfbins_binCR1 ] = 0.000452119
+RooAddPdf::pdf_binCR1_bonly_nuis[ n_exp_binCR1_proc_ttbar_st * shapeBkg_CR1_ttbar_st_morph + n_exp_binCR1_proc_wjets * shapeBkg_CR1_wjets_morph + n_exp_binCR1_proc_rest * shapeBkg_CR1_rest_morph + n_exp_final_binCR1_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR1 ] = 0.000452119
+RooAddPdf::pdf_binCR1_nuis[ n_exp_binCR1_proc_ttbar_st * shapeBkg_CR1_ttbar_st_morph + n_exp_binCR1_proc_wjets * shapeBkg_CR1_wjets_morph + n_exp_binCR1_proc_rest * shapeBkg_CR1_rest_morph + n_exp_final_binCR1_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR1 ] = 0.000452119
+RooProdPdf::pdf_binSR1b[ CMS_HWW_boosted_SR1b_mcstat_bin15_Pdf * CMS_HWW_boosted_CR1_mcstat_bin5_Pdf * CMS_HWW_boosted_CR1_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin12_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin4_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin18_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR1_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin7_Pdf * CMS_HWW_boosted_CR1_mcstat_bin15_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR1_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin17_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin8_Pdf * CMS_HWW_boosted_CR1_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin12_Pdf * CMS_HWW_boosted_CR1_mcstat_bin3_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin18_Pdf * CMS_HWW_boosted_CR1_mcstat_bin7_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin4_Pdf * BR_hww_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin2_Pdf * CMS_HWW_boosted_CR1_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR1_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin8_Pdf * pdf_binSR1b_nuis * pdfbins_binSR1b ] = 0.000539983
+RooProdPdf::pdf_binSR1bBlinded[ CMS_HWW_boosted_SR1b_mcstat_bin15_Pdf * CMS_HWW_boosted_CR1_mcstat_bin5_Pdf * CMS_HWW_boosted_CR1_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin12_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin4_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin18_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR1_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin7_Pdf * CMS_HWW_boosted_CR1_mcstat_bin15_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR1_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin17_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin8_Pdf * CMS_HWW_boosted_CR1_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin12_Pdf * CMS_HWW_boosted_CR1_mcstat_bin3_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin18_Pdf * CMS_HWW_boosted_CR1_mcstat_bin7_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin4_Pdf * BR_hww_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin2_Pdf * CMS_HWW_boosted_CR1_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR1_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin8_Pdf * pdf_binSR1bBlinded_nuis * pdfbins_binSR1bBlinded ] = 0.000940832
+RooProdPdf::pdf_binSR1bBlinded_bonly[ CMS_HWW_boosted_SR1b_mcstat_bin15_Pdf * CMS_HWW_boosted_CR1_mcstat_bin5_Pdf * CMS_HWW_boosted_CR1_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin12_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin4_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin18_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR1_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin7_Pdf * CMS_HWW_boosted_CR1_mcstat_bin15_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR1_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin17_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin8_Pdf * CMS_HWW_boosted_CR1_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin12_Pdf * CMS_HWW_boosted_CR1_mcstat_bin3_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin18_Pdf * CMS_HWW_boosted_CR1_mcstat_bin7_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin4_Pdf * BR_hww_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin2_Pdf * CMS_HWW_boosted_CR1_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR1_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin8_Pdf * pdf_binSR1bBlinded_bonly_nuis * pdfbins_binSR1bBlinded ] = 0.000940832
+RooAddPdf::pdf_binSR1bBlinded_bonly_nuis[ n_exp_final_binSR1bBlinded_proc_ttbar_st * shapeBkg_SR1bBlinded_ttbar_st_morph + n_exp_final_binSR1bBlinded_proc_wjets * shapeBkg_SR1bBlinded_wjets_morph + n_exp_binSR1bBlinded_proc_rest * shapeBkg_SR1bBlinded_rest_morph + n_exp_final_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR1bBlinded ] = 0.000940832
+RooAddPdf::pdf_binSR1bBlinded_nuis[ n_exp_final_binSR1bBlinded_proc_ggF * shapeSig_SR1bBlinded_ggF_morph + n_exp_final_binSR1bBlinded_proc_VBF * shapeSig_SR1bBlinded_VBF_morph + n_exp_final_binSR1bBlinded_proc_VH * shapeSig_SR1bBlinded_VH_morph + n_exp_final_binSR1bBlinded_proc_ttH * shapeSig_SR1bBlinded_ttH_morph + n_exp_final_binSR1bBlinded_proc_ttbar_st * shapeBkg_SR1bBlinded_ttbar_st_morph + n_exp_final_binSR1bBlinded_proc_wjets * shapeBkg_SR1bBlinded_wjets_morph + n_exp_binSR1bBlinded_proc_rest * shapeBkg_SR1bBlinded_rest_morph + n_exp_final_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR1bBlinded ] = 0.000940832
+RooProdPdf::pdf_binSR1b_bonly[ CMS_HWW_boosted_SR1b_mcstat_bin15_Pdf * CMS_HWW_boosted_CR1_mcstat_bin5_Pdf * CMS_HWW_boosted_CR1_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin5_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin12_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin2_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin4_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin18_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin3_Pdf * CMS_HWW_boosted_CR1_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin7_Pdf * CMS_HWW_boosted_CR1_mcstat_bin15_Pdf * lumi_13TeV_correlated_Pdf * CMS_HWW_boosted_CR1_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin17_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin6_Pdf * CMS_HWW_boosted_CR1_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin8_Pdf * CMS_HWW_boosted_CR1_mcstat_bin11_Pdf * CMS_HWW_boosted_CR1_mcstat_bin12_Pdf * CMS_HWW_boosted_CR1_mcstat_bin3_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin9_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin19_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin18_Pdf * CMS_HWW_boosted_CR1_mcstat_bin7_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin4_Pdf * BR_hww_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin1_Pdf * CMS_HWW_boosted_CR1_mcstat_bin2_Pdf * CMS_HWW_boosted_CR1_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin10_Pdf * CMS_HWW_boosted_CR1_mcstat_bin0_Pdf * CMS_HWW_boosted_CR1_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin17_Pdf * CMS_HWW_boosted_CR1_mcstat_bin16_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin13_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin14_Pdf * CMS_HWW_boosted_SR1b_mcstat_bin8_Pdf * pdf_binSR1b_bonly_nuis * pdfbins_binSR1b ] = 0.000539983
+RooAddPdf::pdf_binSR1b_bonly_nuis[ n_exp_binSR1b_proc_ttbar_st * shapeBkg_SR1b_ttbar_st_morph + n_exp_binSR1b_proc_wjets * shapeBkg_SR1b_wjets_morph + n_exp_binSR1b_proc_rest * shapeBkg_SR1b_rest_morph + n_exp_final_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR1b ] = 0.000539983
+RooAddPdf::pdf_binSR1b_nuis[ n_exp_final_binSR1b_proc_ggF * shapeSig_SR1b_ggF_morph + n_exp_final_binSR1b_proc_VBF * shapeSig_SR1b_VBF_morph + n_exp_final_binSR1b_proc_VH * shapeSig_SR1b_VH_morph + n_exp_final_binSR1b_proc_ttH * shapeSig_SR1b_ttH_morph + n_exp_binSR1b_proc_ttbar_st * shapeBkg_SR1b_ttbar_st_morph + n_exp_binSR1b_proc_wjets * shapeBkg_SR1b_wjets_morph + n_exp_binSR1b_proc_rest * shapeBkg_SR1b_rest_morph + n_exp_final_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR1b ] = 0.000539983
+RooProdPdf::pdfbins_binCR1[  ] = 1
+RooProdPdf::pdfbins_binCR1Blinded[  ] = 1
+RooProdPdf::pdfbins_binSR1b[  ] = 1
+RooProdPdf::pdfbins_binSR1bBlinded[  ] = 1
+RooParametricStepFunction::shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR1[ coefList=(CR1_CMS_HWW_boosted_qcd_datadriven_bin0_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin1_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin2_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin3_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin4_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin5_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin6_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin7_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin8_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin9_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin10_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin11_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin12_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin13_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin14_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin15_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin16_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin17_density,CR1_CMS_HWW_boosted_qcd_datadriven_bin18_density) ] = 0.000447259
+RooParametricStepFunction::shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR1Blinded[ coefList=(CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin0_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin1_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin2_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin3_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin4_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin5_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin6_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin7_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin8_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin9_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin10_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin11_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin12_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin13_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin14_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin15_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin16_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin17_density,CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin18_density) ] = 0.000784685
+RooParametricStepFunction::shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR1b[ coefList=(SR1b_CMS_HWW_boosted_qcd_datadriven_bin0_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin1_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin2_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin3_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin4_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin5_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin6_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin7_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin8_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin9_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin10_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin11_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin12_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin13_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin14_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin15_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin16_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin17_density,SR1b_CMS_HWW_boosted_qcd_datadriven_bin18_density) ] = 0.000447259
+RooParametricStepFunction::shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR1bBlinded[ coefList=(SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin0_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin1_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin2_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin3_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin4_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin5_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin6_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin7_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin8_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin9_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin10_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin11_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin12_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin13_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin14_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin15_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin16_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin17_density,SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin18_density) ] = 0.000784685
+FastVerticalInterpHistPdf2::shapeBkg_CR1Blinded_rest_morph[ x=MH_Reco ] = 0.00137414
+FastVerticalInterpHistPdf2::shapeBkg_CR1Blinded_ttbar_st_morph[ x=MH_Reco ] = 0.00127114
+FastVerticalInterpHistPdf2::shapeBkg_CR1Blinded_wjets_morph[ x=MH_Reco ] = 0.00110104
+FastVerticalInterpHistPdf2::shapeBkg_CR1_rest_morph[ x=MH_Reco ] = 0.000651483
+FastVerticalInterpHistPdf2::shapeBkg_CR1_ttbar_st_morph[ x=MH_Reco ] = 0.000775204
+FastVerticalInterpHistPdf2::shapeBkg_CR1_wjets_morph[ x=MH_Reco ] = 0.000609164
+FastVerticalInterpHistPdf2::shapeBkg_SR1bBlinded_rest_morph[ x=MH_Reco ] = 0.00351909
+FastVerticalInterpHistPdf2::shapeBkg_SR1bBlinded_ttbar_st_morph[ x=MH_Reco ] = 0.00322398
+FastVerticalInterpHistPdf2::shapeBkg_SR1bBlinded_wjets_morph[ x=MH_Reco ] = 0.00257981
+FastVerticalInterpHistPdf2::shapeBkg_SR1b_rest_morph[ x=MH_Reco ] = 0.00211037
+FastVerticalInterpHistPdf2::shapeBkg_SR1b_ttbar_st_morph[ x=MH_Reco ] = 0.00221795
+FastVerticalInterpHistPdf2::shapeBkg_SR1b_wjets_morph[ x=MH_Reco ] = 0.00157404
+FastVerticalInterpHistPdf2::shapeSig_SR1bBlinded_VBF_morph[ x=MH_Reco ] = 0.000190533
+FastVerticalInterpHistPdf2::shapeSig_SR1bBlinded_VH_morph[ x=MH_Reco ] = 0.00179593
+FastVerticalInterpHistPdf2::shapeSig_SR1bBlinded_ggF_morph[ x=MH_Reco ] = 0.000562936
+FastVerticalInterpHistPdf2::shapeSig_SR1bBlinded_ttH_morph[ x=MH_Reco ] = 0.00326713
+FastVerticalInterpHistPdf2::shapeSig_SR1b_VBF_morph[ x=MH_Reco ] = 4.2003e-05
+FastVerticalInterpHistPdf2::shapeSig_SR1b_VH_morph[ x=MH_Reco ] = 0.000573924
+FastVerticalInterpHistPdf2::shapeSig_SR1b_ggF_morph[ x=MH_Reco ] = 0.000139913
+FastVerticalInterpHistPdf2::shapeSig_SR1b_ttH_morph[ x=MH_Reco ] = 0.00165527
+
+functions
+--------
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_parsq0[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_parsq0_SR1b[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_parsq1[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_parsq1_SR1b[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_parsq2[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_parsq2_SR1b[ formula="(x[0]*x[0])" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p025[ formula="(((x[0]*0.0006250000000000001)+(x[1]*0.04875))+(x[2]*0.9506249999999999))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p025_SR1b[ formula="(((x[0]*0.0006250000000000001)+(x[1]*0.04875))+(x[2]*0.9506249999999999))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p075[ formula="(((x[0]*0.005625)+(x[1]*0.13874999999999998))+(x[2]*0.855625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p075_SR1b[ formula="(((x[0]*0.005625)+(x[1]*0.13874999999999998))+(x[2]*0.855625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p125[ formula="(((x[0]*0.015625)+(x[1]*0.21875))+(x[2]*0.765625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p125_SR1b[ formula="(((x[0]*0.015625)+(x[1]*0.21875))+(x[2]*0.765625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p175[ formula="(((x[0]*0.030624999999999996)+(x[1]*0.28875))+(x[2]*0.680625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p175_SR1b[ formula="(((x[0]*0.030624999999999996)+(x[1]*0.28875))+(x[2]*0.680625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p225[ formula="(((x[0]*0.050625)+(x[1]*0.34875))+(x[2]*0.6006250000000001))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p225_SR1b[ formula="(((x[0]*0.050625)+(x[1]*0.34875))+(x[2]*0.6006250000000001))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p275[ formula="(((x[0]*0.07562500000000001)+(x[1]*0.39875000000000005))+(x[2]*0.525625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p275_SR1b[ formula="(((x[0]*0.07562500000000001)+(x[1]*0.39875000000000005))+(x[2]*0.525625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p325[ formula="(((x[0]*0.10562500000000001)+(x[1]*0.43875))+(x[2]*0.455625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p325_SR1b[ formula="(((x[0]*0.10562500000000001)+(x[1]*0.43875))+(x[2]*0.455625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p375[ formula="(((x[0]*0.140625)+(x[2]*0.390625))+(x[1]*0.46875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p375_SR1b[ formula="(((x[0]*0.140625)+(x[2]*0.390625))+(x[1]*0.46875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p425[ formula="(((x[0]*0.18062499999999998)+(x[2]*0.330625))+(x[1]*0.48875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p425_SR1b[ formula="(((x[0]*0.18062499999999998)+(x[2]*0.330625))+(x[1]*0.48875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p475[ formula="(((x[0]*0.225625)+(x[2]*0.275625))+(x[1]*0.49874999999999997))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p475_SR1b[ formula="(((x[0]*0.225625)+(x[2]*0.275625))+(x[1]*0.49874999999999997))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p525[ formula="(((x[2]*0.22562499999999996)+(x[0]*0.275625))+(x[1]*0.49875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p525_SR1b[ formula="(((x[2]*0.22562499999999996)+(x[0]*0.275625))+(x[1]*0.49875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p575[ formula="(((x[2]*0.18062500000000004)+(x[0]*0.33062499999999995))+(x[1]*0.48875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p575_SR1b[ formula="(((x[2]*0.18062500000000004)+(x[0]*0.33062499999999995))+(x[1]*0.48875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p625[ formula="(((x[2]*0.140625)+(x[0]*0.390625))+(x[1]*0.46875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p625_SR1b[ formula="(((x[2]*0.140625)+(x[0]*0.390625))+(x[1]*0.46875))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p675[ formula="(((x[2]*0.10562499999999997)+(x[1]*0.43875))+(x[0]*0.45562500000000006))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p675_SR1b[ formula="(((x[2]*0.10562499999999997)+(x[1]*0.43875))+(x[0]*0.45562500000000006))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p725[ formula="(((x[2]*0.07562500000000005)+(x[1]*0.39874999999999994))+(x[0]*0.525625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p725_SR1b[ formula="(((x[2]*0.07562500000000005)+(x[1]*0.39874999999999994))+(x[0]*0.525625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p775[ formula="(((x[2]*0.05062500000000003)+(x[1]*0.3487499999999999))+(x[0]*0.6006250000000001))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p775_SR1b[ formula="(((x[2]*0.05062500000000003)+(x[1]*0.3487499999999999))+(x[0]*0.6006250000000001))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p825[ formula="(((x[2]*0.030625000000000013)+(x[1]*0.28875000000000006))+(x[0]*0.6806249999999999))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p825_SR1b[ formula="(((x[2]*0.030625000000000013)+(x[1]*0.28875000000000006))+(x[0]*0.6806249999999999))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p875[ formula="(((x[2]*0.015625)+(x[1]*0.21875))+(x[0]*0.765625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p875_SR1b[ formula="(((x[2]*0.015625)+(x[1]*0.21875))+(x[0]*0.765625))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p925[ formula="(((x[2]*0.005624999999999991)+(x[1]*0.13874999999999993))+(x[0]*0.8556250000000001))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p925_SR1b[ formula="(((x[2]*0.005624999999999991)+(x[1]*0.13874999999999993))+(x[0]*0.8556250000000001))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p975[ formula="(((x[2]*0.0006249999999999867)+(x[1]*0.04875000000000007))+(x[0]*0.9506249999999999))" ] = 1
+RooFormulaVar::CMS_HWW_boosted_tf_dataResidual_1b_eval_MH_Reco0p975_SR1b[ formula="(((x[2]*0.0006249999999999867)+(x[1]*0.04875000000000007))+(x[0]*0.9506249999999999))" ] = 1
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin0[ formula="(10301890.868715864*(1.0031155987973581**x[0]))" ] = 1.03019e+07
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin0_CR1Blinded[ formula="(10301890.868715864*(1.0031155987973581**x[0]))" ] = 1.03019e+07
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin0_density[ formula="((x[0]/10.0)/x[1])" ] = 0.0166682
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin1[ formula="(9989656.911860216*(1.0031639143157114**x[0]))" ] = 9.98966e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin10[ formula="(5076064.80877904*(1.0044385020094826**x[0]))" ] = 5.07606e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin10_CR1Blinded[ formula="(5076064.80877904*(1.0044385020094826**x[0]))" ] = 5.07606e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin10_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00821296
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin11[ formula="(4226015.352541431*(1.0048644580756245**x[0]))" ] = 4.22602e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin11_CR1Blinded[ formula="(4226015.352541431*(1.0048644580756245**x[0]))" ] = 4.22602e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin11_density[ formula="((x[1]/10.0)/x[0])" ] = 0.0068376
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin12[ formula="(3434207.3134587063*(1.005396183946855**x[0]))" ] = 3.43421e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin12_CR1Blinded[ formula="(3434207.3134587063*(1.005396183946855**x[0]))" ] = 3.43421e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin12_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00555647
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin13[ formula="(2711274.849292417*(1.0060731390847923**x[0]))" ] = 2.71127e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin13_CR1Blinded[ formula="(2711274.849292417*(1.0060731390847923**x[0]))" ] = 2.71127e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin13_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00438678
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin14[ formula="(2089904.4683395885*(1.006917302731715**x[0]))" ] = 2.0899e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin14_CR1Blinded[ formula="(2089904.4683395885*(1.006917302731715**x[0]))" ] = 2.0899e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin14_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00338142
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin15[ formula="(1577516.9603150415*(1.0079618314863243**x[0]))" ] = 1.57752e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin15_CR1Blinded[ formula="(1577516.9603150415*(1.0079618314863243**x[0]))" ] = 1.57752e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin15_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00255239
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin16[ formula="(1180006.618967449*(1.0092057203602214**x[0]))" ] = 1.18001e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin16_CR1Blinded[ formula="(1180006.618967449*(1.0092057203602214**x[0]))" ] = 1.18001e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin16_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00190923
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin17[ formula="(875852.3245812318*(1.0106852467726462**x[0]))" ] = 875852
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin17_CR1Blinded[ formula="(875852.3245812318*(1.0106852467726462**x[0]))" ] = 875852
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin17_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00141711
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin18[ formula="(651173.8115669306*(1.0123922891119184**x[0]))" ] = 651174
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin18_CR1Blinded[ formula="(651173.8115669306*(1.0123922891119184**x[0]))" ] = 651174
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin18_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00105359
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin19[ formula="(484978.5791829562*(1.0143594802808047**x[0]))" ] = 484979
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin19_CR1Blinded[ formula="(484978.5791829562*(1.0143594802808047**x[0]))" ] = 484979
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin1_CR1Blinded[ formula="(9989656.911860216*(1.0031639143157114**x[0]))" ] = 9.98966e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin1_density[ formula="((x[1]/10.0)/x[0])" ] = 0.016163
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin2[ formula="(9725506.12998353*(1.003206593397743**x[0]))" ] = 9.72551e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin2_CR1Blinded[ formula="(9725506.12998353*(1.003206593397743**x[0]))" ] = 9.72551e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin2_density[ formula="((x[1]/10.0)/x[0])" ] = 0.0157357
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin3[ formula="(9481471.332267279*(1.0032475970023464**x[0]))" ] = 9.48147e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin3_CR1Blinded[ formula="(9481471.332267279*(1.0032475970023464**x[0]))" ] = 9.48147e+06
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin3_density[ formula="((x[1]/10.0)/x[0])" ] = 0.0153408
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin4[ formula="(0.0*(11.0**x[0]))" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin4_CR1Blinded[ formula="(0.0*(11.0**x[0]))" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin4_density[ formula="((x[0]/10.0)/x[1])" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin5[ formula="(0.0*(11.0**x[0]))" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin5_CR1Blinded[ formula="(0.0*(11.0**x[0]))" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin5_density[ formula="((x[1]/10.0)/x[0])" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin6[ formula="(0.0*(11.0**x[0]))" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin6_CR1Blinded[ formula="(0.0*(11.0**x[0]))" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin6_density[ formula="((x[1]/10.0)/x[0])" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin7[ formula="(0.0*(11.0**x[0]))" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin7_CR1Blinded[ formula="(0.0*(11.0**x[0]))" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin7_density[ formula="((x[1]/10.0)/x[0])" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin8[ formula="(0.0*(11.0**x[0]))" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin8_CR1Blinded[ formula="(0.0*(11.0**x[0]))" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin8_density[ formula="((x[0]/10.0)/x[1])" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin9[ formula="(0.0*(11.0**x[0]))" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin9_CR1Blinded[ formula="(0.0*(11.0**x[0]))" ] = 0
+RooFormulaVar::CR1Blinded_CMS_HWW_boosted_qcd_datadriven_bin9_density[ formula="((x[1]/10.0)/x[0])" ] = 0
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin0[ formula="(10301890.868715864*(1.0031155987973581**x[0]))" ] = 1.03019e+07
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin0_CR1[ formula="(10301890.868715864*(1.0031155987973581**x[0]))" ] = 1.03019e+07
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin0_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00950065
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin1[ formula="(9989656.911860216*(1.0031639143157114**x[0]))" ] = 9.98966e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin10[ formula="(5076064.80877904*(1.0044385020094826**x[0]))" ] = 5.07606e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin10_CR1[ formula="(5076064.80877904*(1.0044385020094826**x[0]))" ] = 5.07606e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin10_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00468127
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin11[ formula="(4226015.352541431*(1.0048644580756245**x[0]))" ] = 4.22602e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin11_CR1[ formula="(4226015.352541431*(1.0048644580756245**x[0]))" ] = 4.22602e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin11_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00389733
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin12[ formula="(3434207.3134587063*(1.005396183946855**x[0]))" ] = 3.43421e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin12_CR1[ formula="(3434207.3134587063*(1.005396183946855**x[0]))" ] = 3.43421e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin12_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00316711
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin13[ formula="(2711274.849292417*(1.0060731390847923**x[0]))" ] = 2.71127e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin13_CR1[ formula="(2711274.849292417*(1.0060731390847923**x[0]))" ] = 2.71127e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin13_density[ formula="((x[0]/10.0)/x[1])" ] = 0.0025004
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin14[ formula="(2089904.4683395885*(1.006917302731715**x[0]))" ] = 2.0899e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin14_CR1[ formula="(2089904.4683395885*(1.006917302731715**x[0]))" ] = 2.0899e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin14_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00192736
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin15[ formula="(1577516.9603150415*(1.0079618314863243**x[0]))" ] = 1.57752e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin15_CR1[ formula="(1577516.9603150415*(1.0079618314863243**x[0]))" ] = 1.57752e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin15_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00145482
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin16[ formula="(1180006.618967449*(1.0092057203602214**x[0]))" ] = 1.18001e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin16_CR1[ formula="(1180006.618967449*(1.0092057203602214**x[0]))" ] = 1.18001e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin16_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00108823
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin17[ formula="(875852.3245812318*(1.0106852467726462**x[0]))" ] = 875852
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin17_CR1[ formula="(875852.3245812318*(1.0106852467726462**x[0]))" ] = 875852
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin17_density[ formula="((x[0]/10.0)/x[1])" ] = 0.000807732
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin18[ formula="(651173.8115669306*(1.0123922891119184**x[0]))" ] = 651174
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin18_CR1[ formula="(651173.8115669306*(1.0123922891119184**x[0]))" ] = 651174
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin18_density[ formula="((x[0]/10.0)/x[1])" ] = 0.000600528
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin19[ formula="(484978.5791829562*(1.0143594802808047**x[0]))" ] = 484979
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin19_CR1 = 484979
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin1_CR1[ formula="(9989656.911860216*(1.0031639143157114**x[0]))" ] = 9.98966e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin1_density[ formula="((x[0]/10.0)/x[1])" ] = 0.0092127
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin2[ formula="(9725506.12998353*(1.003206593397743**x[0]))" ] = 9.72551e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin2_CR1[ formula="(9725506.12998353*(1.003206593397743**x[0]))" ] = 9.72551e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin2_density[ formula="((x[0]/10.0)/x[1])" ] = 0.0089691
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin3[ formula="(9481471.332267279*(1.0032475970023464**x[0]))" ] = 9.48147e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin3_CR1[ formula="(9481471.332267279*(1.0032475970023464**x[0]))" ] = 9.48147e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin3_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00874404
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin4[ formula="(9177539.042537233*(1.0033009342937669**x[0]))" ] = 9.17754e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin4_CR1[ formula="(9177539.042537233*(1.0033009342937669**x[0]))" ] = 9.17754e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin4_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00846375
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin5[ formula="(8801522.012545465*(1.0033707078328957**x[0]))" ] = 8.80152e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin5_CR1[ formula="(8801522.012545465*(1.0033707078328957**x[0]))" ] = 8.80152e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin5_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00811698
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin6[ formula="(8276980.525657635*(1.003475874066988**x[0]))" ] = 8.27698e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin6_CR1[ formula="(8276980.525657635*(1.003475874066988**x[0]))" ] = 8.27698e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin6_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00763323
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin7[ formula="(7607087.629348961*(1.0036256910159729**x[0]))" ] = 7.60709e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin7_CR1[ formula="(7607087.629348961*(1.0036256910159729**x[0]))" ] = 7.60709e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin7_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00701544
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin8[ formula="(6811937.748810266*(1.0038314632538552**x[0]))" ] = 6.81194e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin8_CR1[ formula="(6811937.748810266*(1.0038314632538552**x[0]))" ] = 6.81194e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin8_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00628213
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin9[ formula="(5952933.025391354*(1.0040985902422224**x[0]))" ] = 5.95293e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin9_CR1[ formula="(5952933.025391354*(1.0040985902422224**x[0]))" ] = 5.95293e+06
+RooFormulaVar::CR1_CMS_HWW_boosted_qcd_datadriven_bin9_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00548994
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin0[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 36373.6
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin0_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 36373.6
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin0_density[ formula="((x[1]/10.0)/x[0])" ] = 0.0166682
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin1[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 35271.2
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin10[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 17922.4
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin10_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 17922.4
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin10_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00821296
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin11[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 14921.1
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin11_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 14921.1
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin11_density[ formula="((x[0]/10.0)/x[1])" ] = 0.0068376
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin12[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 12125.4
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin12_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 12125.4
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin12_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00555647
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin13[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 9572.89
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin13_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 9572.89
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin13_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00438678
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin14[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 7378.97
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin14_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 7378.97
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin14_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00338142
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin15[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 5569.85
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin15_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 5569.85
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin15_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00255239
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin16[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 4166.33
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin16_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 4166.33
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin16_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00190923
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin17[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 3092.43
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin17_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 3092.43
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin17_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00141711
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin18[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 2299.14
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin18_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 2299.14
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin18_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00105359
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin19[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 1712.35
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin19_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 1712.35
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin1_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 35271.2
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin1_density[ formula="((x[0]/10.0)/x[1])" ] = 0.016163
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin2[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 34338.5
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin2_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 34338.5
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin2_density[ formula="((x[1]/10.0)/x[0])" ] = 0.0157357
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin3[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 33476.9
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin3_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 33476.9
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin3_density[ formula="((x[1]/10.0)/x[0])" ] = 0.0153408
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin4[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin4_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin4_density[ formula="((x[0]/10.0)/x[1])" ] = 4.58251e-11
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin5[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin5_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin5_density[ formula="((x[1]/10.0)/x[0])" ] = 4.58251e-11
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin6[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin6_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin6_density[ formula="((x[0]/10.0)/x[1])" ] = 4.58251e-11
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin7[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin7_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin7_density[ formula="((x[0]/10.0)/x[1])" ] = 4.58251e-11
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin8[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin8_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin8_density[ formula="((x[1]/10.0)/x[0])" ] = 4.58251e-11
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin9[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin9_SR1bBlinded[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 0.0001
+RooFormulaVar::SR1bBlinded_CMS_HWW_boosted_qcd_datadriven_bin9_density[ formula="((x[1]/10.0)/x[0])" ] = 4.58251e-11
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin0[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 36373.6
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin0_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 36373.6
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin0_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00950065
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin1[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 35271.2
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin10[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 17922.4
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin10_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 17922.4
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin10_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00468127
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin11[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 14921.1
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin11_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 14921.1
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin11_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00389733
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin12[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 12125.4
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin12_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 12125.4
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin12_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00316711
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin13[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 9572.89
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin13_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 9572.89
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin13_density[ formula="((x[1]/10.0)/x[0])" ] = 0.0025004
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin14[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 7378.97
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin14_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 7378.97
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin14_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00192736
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin15[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 5569.85
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin15_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 5569.85
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin15_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00145482
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin16[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 4166.33
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin16_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 4166.33
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin16_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00108823
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin17[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 3092.43
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin17_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 3092.43
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin17_density[ formula="((x[1]/10.0)/x[0])" ] = 0.000807732
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin18[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 2299.14
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin18_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 2299.14
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin18_density[ formula="((x[0]/10.0)/x[1])" ] = 0.000600528
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin19[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 1712.35
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin19_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 1712.35
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin1_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 35271.2
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin1_density[ formula="((x[1]/10.0)/x[0])" ] = 0.0092127
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin2[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 34338.5
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin2_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 34338.5
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin2_density[ formula="((x[0]/10.0)/x[1])" ] = 0.0089691
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin3[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 33476.9
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin3_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 33476.9
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin3_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00874404
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin4[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 32403.8
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin4_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 32403.8
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin4_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00846375
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin5[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 31076.1
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin5_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 31076.1
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin5_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00811698
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin6[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 29224.1
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin6_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[0])*x[1]), 0.0001))" ] = 29224.1
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin6_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00763323
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin7[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 26858.9
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin7_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 26858.9
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin7_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00701544
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin8[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 24051.4
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin8_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 24051.4
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin8_density[ formula="((x[0]/10.0)/x[1])" ] = 0.00628213
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin9[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 21018.4
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin9_SR1b[ formula="(TMath::Max(((0.003530769483222114*x[1])*x[0]), 0.0001))" ] = 21018.4
+RooFormulaVar::SR1b_CMS_HWW_boosted_qcd_datadriven_bin9_density[ formula="((x[1]/10.0)/x[0])" ] = 0.00548994
+ProcessNormalization::n_exp_binCR1Blinded_proc_rest[ asymmThetaList=() otherFactorList=() ] = 254834
+ProcessNormalization::n_exp_binCR1Blinded_proc_ttbar_st[ asymmThetaList=() otherFactorList=() ] = 397973
+ProcessNormalization::n_exp_binCR1Blinded_proc_wjets[ asymmThetaList=() otherFactorList=() ] = 736200
+ProcessNormalization::n_exp_binCR1_proc_rest[ asymmThetaList=() otherFactorList=() ] = 537506
+ProcessNormalization::n_exp_binCR1_proc_ttbar_st[ asymmThetaList=() otherFactorList=() ] = 652578
+ProcessNormalization::n_exp_binCR1_proc_wjets[ asymmThetaList=() otherFactorList=() ] = 1.33065e+06
+ProcessNormalization::n_exp_binSR1bBlinded_proc_VBF[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR1bBlinded_proc_VH[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR1bBlinded_proc_ggF[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR1bBlinded_proc_rest[ asymmThetaList=() otherFactorList=() ] = 2807.07
+ProcessNormalization::n_exp_binSR1bBlinded_proc_ttH[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR1bBlinded_proc_ttbar_st[ asymmThetaList=() otherFactorList=() ] = 5091.51
+ProcessNormalization::n_exp_binSR1bBlinded_proc_wjets[ asymmThetaList=() otherFactorList=() ] = 9281.74
+ProcessNormalization::n_exp_binSR1b_proc_VBF[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR1b_proc_VH[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR1b_proc_ggF[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR1b_proc_rest[ asymmThetaList=() otherFactorList=() ] = 4680.85
+ProcessNormalization::n_exp_binSR1b_proc_ttH[ asymmThetaList=(BR_hww) otherFactorList=(r) ] = 0
+ProcessNormalization::n_exp_binSR1b_proc_ttbar_st[ asymmThetaList=() otherFactorList=() ] = 7400.92
+ProcessNormalization::n_exp_binSR1b_proc_wjets[ asymmThetaList=() otherFactorList=() ] = 15212.5
+RooProduct::n_exp_final_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven[ n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR1Blinded__norm_CR1Blinded ] = 6.18055e+07
+RooProduct::n_exp_final_binCR1_proc_CMS_HWW_boosted_qcd_datadriven[ n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR1__norm_CR1 ] = 1.08434e+08
+RooProduct::n_exp_final_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven[ n_exp_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR1bBlinded__norm_SR1bBlinded ] = 218221
+RooProduct::n_exp_final_binSR1bBlinded_proc_VBF[ n_exp_binSR1bBlinded_proc_VBF * systeff_SR1bBlinded_VBF_CMS_HWW_boosted_SR1b_mcstat_bin0 * systeff_SR1bBlinded_VBF_CMS_HWW_boosted_SR1b_mcstat_bin1 * systeff_SR1bBlinded_VBF_CMS_HWW_boosted_SR1b_mcstat_bin10 * systeff_SR1bBlinded_VBF_CMS_HWW_boosted_SR1b_mcstat_bin2 * systeff_SR1bBlinded_VBF_CMS_HWW_boosted_SR1b_mcstat_bin3 ] = 0
+RooProduct::n_exp_final_binSR1bBlinded_proc_VH[ n_exp_binSR1bBlinded_proc_VH * systeff_SR1bBlinded_VH_CMS_HWW_boosted_SR1b_mcstat_bin1 * systeff_SR1bBlinded_VH_CMS_HWW_boosted_SR1b_mcstat_bin10 * systeff_SR1bBlinded_VH_CMS_HWW_boosted_SR1b_mcstat_bin2 * systeff_SR1bBlinded_VH_CMS_HWW_boosted_SR1b_mcstat_bin3 ] = 0
+RooProduct::n_exp_final_binSR1bBlinded_proc_ggF[ n_exp_binSR1bBlinded_proc_ggF * systeff_SR1bBlinded_ggF_CMS_HWW_boosted_SR1b_mcstat_bin0 * systeff_SR1bBlinded_ggF_CMS_HWW_boosted_SR1b_mcstat_bin1 * systeff_SR1bBlinded_ggF_CMS_HWW_boosted_SR1b_mcstat_bin10 * systeff_SR1bBlinded_ggF_CMS_HWW_boosted_SR1b_mcstat_bin2 * systeff_SR1bBlinded_ggF_CMS_HWW_boosted_SR1b_mcstat_bin3 ] = 0
+RooProduct::n_exp_final_binSR1bBlinded_proc_ttH[ n_exp_binSR1bBlinded_proc_ttH * systeff_SR1bBlinded_ttH_CMS_HWW_boosted_SR1b_mcstat_bin10 ] = 0
+RooProduct::n_exp_final_binSR1bBlinded_proc_ttbar_st[ n_exp_binSR1bBlinded_proc_ttbar_st * systeff_SR1bBlinded_ttbar_st_CMS_HWW_boosted_SR1b_mcstat_bin12 * systeff_SR1bBlinded_ttbar_st_CMS_HWW_boosted_SR1b_mcstat_bin13 ] = 5091.51
+RooProduct::n_exp_final_binSR1bBlinded_proc_wjets[ n_exp_binSR1bBlinded_proc_wjets * systeff_SR1bBlinded_wjets_CMS_HWW_boosted_SR1b_mcstat_bin3 ] = 9281.74
+RooProduct::n_exp_final_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven[ n_exp_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven * shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR1b__norm_SR1b ] = 382854
+RooProduct::n_exp_final_binSR1b_proc_VBF[ n_exp_binSR1b_proc_VBF * systeff_SR1b_VBF_CMS_HWW_boosted_SR1b_mcstat_bin7 * systeff_SR1b_VBF_CMS_HWW_boosted_SR1b_mcstat_bin8 * systeff_SR1b_VBF_CMS_HWW_boosted_SR1b_mcstat_bin9 ] = 0
+RooProduct::n_exp_final_binSR1b_proc_VH[ n_exp_binSR1b_proc_VH * systeff_SR1b_VH_CMS_HWW_boosted_SR1b_mcstat_bin7 * systeff_SR1b_VH_CMS_HWW_boosted_SR1b_mcstat_bin8 * systeff_SR1b_VH_CMS_HWW_boosted_SR1b_mcstat_bin9 ] = 0
+RooProduct::n_exp_final_binSR1b_proc_ggF[ n_exp_binSR1b_proc_ggF * systeff_SR1b_ggF_CMS_HWW_boosted_SR1b_mcstat_bin7 * systeff_SR1b_ggF_CMS_HWW_boosted_SR1b_mcstat_bin8 * systeff_SR1b_ggF_CMS_HWW_boosted_SR1b_mcstat_bin9 ] = 0
+RooProduct::n_exp_final_binSR1b_proc_ttH[ n_exp_binSR1b_proc_ttH * systeff_SR1b_ttH_CMS_HWW_boosted_SR1b_mcstat_bin8 ] = 0
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR1Blinded__norm[ formula="((((x[14]+x[16])+(x[18]+x[0]))+((x[2]+x[4])+(x[6]+x[8])))+(((x[10]+x[12])+(x[13]+x[15]))+(((x[17]+x[19])+(x[1]+x[3]))+((x[5]+x[7])+(x[9]+x[11])))))" ] = 6.18055e+07
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR1Blinded__norm_CR1Blinded[ formula="((((x[14]+x[16])+(x[18]+x[0]))+((x[2]+x[4])+(x[6]+x[8])))+(((x[10]+x[12])+(x[13]+x[15]))+(((x[17]+x[19])+(x[1]+x[3]))+((x[5]+x[7])+(x[9]+x[11])))))" ] = 6.18055e+07
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR1__norm[ formula="((((x[7]+x[9])+(x[11]+x[13]))+((x[15]+x[17])+(x[19]+x[0])))+(((x[2]+x[4])+(x[6]+x[8]))+(((x[10]+x[12])+(x[14]+x[16]))+((x[18]+x[1])+(x[3]+x[5])))))" ] = 1.08434e+08
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_CR1__norm_CR1[ formula="((((x[7]+x[9])+(x[11]+x[13]))+((x[15]+x[17])+(x[19]+x[0])))+(((x[2]+x[4])+(x[6]+x[8]))+(((x[10]+x[12])+(x[14]+x[16]))+((x[18]+x[1])+(x[3]+x[5])))))" ] = 1.08434e+08
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR1bBlinded__norm[ formula="((((x[12]+x[13])+(x[15]+x[17]))+((x[19]+x[1])+(x[3]+x[6])))+(((x[8]+x[10])+(x[11]+x[14]))+(((x[16]+x[18])+(x[5]+x[0]))+((x[2]+x[4])+(x[7]+x[9])))))" ] = 218221
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR1bBlinded__norm_SR1bBlinded[ formula="((((x[12]+x[13])+(x[15]+x[17]))+((x[19]+x[1])+(x[3]+x[6])))+(((x[8]+x[10])+(x[11]+x[14]))+(((x[16]+x[18])+(x[5]+x[0]))+((x[2]+x[4])+(x[7]+x[9])))))" ] = 218221
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR1b__norm[ formula="((((x[5]+x[6])+(x[8]+x[10]))+((x[12]+x[14])+(x[16]+x[18])))+(((x[0]+x[2])+(x[3]+x[4]))+(((x[7]+x[9])+(x[11]+x[13]))+((x[15]+x[17])+(x[19]+x[1])))))" ] = 382854
+RooFormulaVar::shapeBkg_CMS_HWW_boosted_qcd_datadriven_SR1b__norm_SR1b[ formula="((((x[5]+x[6])+(x[8]+x[10]))+((x[12]+x[14])+(x[16]+x[18])))+(((x[0]+x[2])+(x[3]+x[4]))+(((x[7]+x[9])+(x[11]+x[13]))+((x[15]+x[17])+(x[19]+x[1])))))" ] = 382854
+AsymPow::systeff_SR1bBlinded_VBF_CMS_HWW_boosted_SR1b_mcstat_bin0[ kappaHigh=1.001409 theta=CMS_HWW_boosted_SR1b_mcstat_bin0 ] = 1
+AsymPow::systeff_SR1bBlinded_VBF_CMS_HWW_boosted_SR1b_mcstat_bin1[ kappaHigh=1.001910 theta=CMS_HWW_boosted_SR1b_mcstat_bin1 ] = 1
+AsymPow::systeff_SR1bBlinded_VBF_CMS_HWW_boosted_SR1b_mcstat_bin10[ kappaHigh=1.001875 theta=CMS_HWW_boosted_SR1b_mcstat_bin10 ] = 1
+AsymPow::systeff_SR1bBlinded_VBF_CMS_HWW_boosted_SR1b_mcstat_bin2[ kappaHigh=1.001553 theta=CMS_HWW_boosted_SR1b_mcstat_bin2 ] = 1
+AsymPow::systeff_SR1bBlinded_VBF_CMS_HWW_boosted_SR1b_mcstat_bin3[ kappaHigh=1.001784 theta=CMS_HWW_boosted_SR1b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR1bBlinded_VH_CMS_HWW_boosted_SR1b_mcstat_bin1[ kappaHigh=1.001176 theta=CMS_HWW_boosted_SR1b_mcstat_bin1 ] = 1
+AsymPow::systeff_SR1bBlinded_VH_CMS_HWW_boosted_SR1b_mcstat_bin10[ kappaHigh=1.001536 theta=CMS_HWW_boosted_SR1b_mcstat_bin10 ] = 1
+AsymPow::systeff_SR1bBlinded_VH_CMS_HWW_boosted_SR1b_mcstat_bin2[ kappaHigh=1.001203 theta=CMS_HWW_boosted_SR1b_mcstat_bin2 ] = 1
+AsymPow::systeff_SR1bBlinded_VH_CMS_HWW_boosted_SR1b_mcstat_bin3[ kappaHigh=1.001140 theta=CMS_HWW_boosted_SR1b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR1bBlinded_ggF_CMS_HWW_boosted_SR1b_mcstat_bin0[ kappaHigh=1.001081 theta=CMS_HWW_boosted_SR1b_mcstat_bin0 ] = 1
+AsymPow::systeff_SR1bBlinded_ggF_CMS_HWW_boosted_SR1b_mcstat_bin1[ kappaHigh=1.001395 theta=CMS_HWW_boosted_SR1b_mcstat_bin1 ] = 1
+AsymPow::systeff_SR1bBlinded_ggF_CMS_HWW_boosted_SR1b_mcstat_bin10[ kappaHigh=1.002115 theta=CMS_HWW_boosted_SR1b_mcstat_bin10 ] = 1
+AsymPow::systeff_SR1bBlinded_ggF_CMS_HWW_boosted_SR1b_mcstat_bin2[ kappaHigh=1.001526 theta=CMS_HWW_boosted_SR1b_mcstat_bin2 ] = 1
+AsymPow::systeff_SR1bBlinded_ggF_CMS_HWW_boosted_SR1b_mcstat_bin3[ kappaHigh=1.001380 theta=CMS_HWW_boosted_SR1b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR1bBlinded_ttH_CMS_HWW_boosted_SR1b_mcstat_bin10[ kappaHigh=1.001117 theta=CMS_HWW_boosted_SR1b_mcstat_bin10 ] = 1
+AsymPow::systeff_SR1bBlinded_ttbar_st_CMS_HWW_boosted_SR1b_mcstat_bin12[ kappaHigh=1.001036 theta=CMS_HWW_boosted_SR1b_mcstat_bin12 ] = 1
+AsymPow::systeff_SR1bBlinded_ttbar_st_CMS_HWW_boosted_SR1b_mcstat_bin13[ kappaHigh=1.001012 theta=CMS_HWW_boosted_SR1b_mcstat_bin13 ] = 1
+AsymPow::systeff_SR1bBlinded_wjets_CMS_HWW_boosted_SR1b_mcstat_bin3[ kappaHigh=1.001053 theta=CMS_HWW_boosted_SR1b_mcstat_bin3 ] = 1
+AsymPow::systeff_SR1b_VBF_CMS_HWW_boosted_SR1b_mcstat_bin7[ kappaHigh=1.001511 theta=CMS_HWW_boosted_SR1b_mcstat_bin7 ] = 1
+AsymPow::systeff_SR1b_VBF_CMS_HWW_boosted_SR1b_mcstat_bin8[ kappaHigh=1.002081 theta=CMS_HWW_boosted_SR1b_mcstat_bin8 ] = 1
+AsymPow::systeff_SR1b_VBF_CMS_HWW_boosted_SR1b_mcstat_bin9[ kappaHigh=1.001338 theta=CMS_HWW_boosted_SR1b_mcstat_bin9 ] = 1
+AsymPow::systeff_SR1b_VH_CMS_HWW_boosted_SR1b_mcstat_bin7[ kappaHigh=1.001346 theta=CMS_HWW_boosted_SR1b_mcstat_bin7 ] = 1
+AsymPow::systeff_SR1b_VH_CMS_HWW_boosted_SR1b_mcstat_bin8[ kappaHigh=1.001620 theta=CMS_HWW_boosted_SR1b_mcstat_bin8 ] = 1
+AsymPow::systeff_SR1b_VH_CMS_HWW_boosted_SR1b_mcstat_bin9[ kappaHigh=1.001061 theta=CMS_HWW_boosted_SR1b_mcstat_bin9 ] = 1
+AsymPow::systeff_SR1b_ggF_CMS_HWW_boosted_SR1b_mcstat_bin7[ kappaHigh=1.001481 theta=CMS_HWW_boosted_SR1b_mcstat_bin7 ] = 1
+AsymPow::systeff_SR1b_ggF_CMS_HWW_boosted_SR1b_mcstat_bin8[ kappaHigh=1.002001 theta=CMS_HWW_boosted_SR1b_mcstat_bin8 ] = 1
+AsymPow::systeff_SR1b_ggF_CMS_HWW_boosted_SR1b_mcstat_bin9[ kappaHigh=1.001201 theta=CMS_HWW_boosted_SR1b_mcstat_bin9 ] = 1
+AsymPow::systeff_SR1b_ttH_CMS_HWW_boosted_SR1b_mcstat_bin8[ kappaHigh=1.001054 theta=CMS_HWW_boosted_SR1b_mcstat_bin8 ] = 1
+
+datasets
+--------
+RooDataSet::data_obs(MH_Reco,CMS_channel)
+
+parameter snapshots
+-------------------
+clean = (shapeBkg_ttbar_st_CR1__norm=10[C],shapeBkg_wjets_CR1__norm=10[C],shapeBkg_rest_CR1__norm=10[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin7=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin17=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin8=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin18=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin9=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin19=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin10=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin0=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin11=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin1=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin12=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin2=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin13=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin3=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin14=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin4=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin15=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin5=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin16=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin6=0[C],shapeBkg_ttbar_st_CR1Blinded__norm=10[C],shapeBkg_wjets_CR1Blinded__norm=10[C],shapeBkg_rest_CR1Blinded__norm=10[C],shapeSig_ggF_SR1b__norm=10[C],shapeSig_VBF_SR1b__norm=10[C],shapeSig_VH_SR1b__norm=10[C],shapeSig_ttH_SR1b__norm=10[C],shapeBkg_ttbar_st_SR1b__norm=10[C],shapeBkg_wjets_SR1b__norm=10[C],shapeBkg_rest_SR1b__norm=10[C],CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par2=1,CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par1=1,CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par0=1,shapeSig_ggF_SR1bBlinded__norm=10[C],shapeSig_VBF_SR1bBlinded__norm=6.67677[C],shapeSig_VH_SR1bBlinded__norm=7.88403[C],shapeSig_ttH_SR1bBlinded__norm=10[C],shapeBkg_ttbar_st_SR1bBlinded__norm=10[C],shapeBkg_wjets_SR1bBlinded__norm=10[C],shapeBkg_rest_SR1bBlinded__norm=10[C],MH_Reco=245,CMS_channel=SR1bBlinded(idx = 3)
+,r=0[C],BR_hww=0 +/- 1,BR_hww_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin0=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin0_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin1=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin1_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin10=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin10_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin11=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin11_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin12=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin12_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin13=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin13_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin14=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin14_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin15=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin15_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin16=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin16_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin17=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin17_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin18=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin18_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin19=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin19_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin2=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin2_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin3=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin3_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin4=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin4_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin5=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin5_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin6=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin6_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin7=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin7_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin8=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin8_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin9=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin9_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin0=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin0_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin1=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin1_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin10=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin10_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin11=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin11_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin12=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin12_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin13=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin13_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin14=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin14_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin15=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin15_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin16=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin16_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin17=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin17_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin18=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin18_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin19=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin19_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin2=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin2_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin3=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin3_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin4=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin4_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin5=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin5_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin6=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin6_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin7=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin7_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin8=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin8_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin9=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin9_In=0[C],lumi_13TeV_correlated=0 +/- 1,lumi_13TeV_correlated_In=0[C],n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven=1[C],n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven=1[C],n_exp_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven=1[C],n_exp_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven=1[C],mask_CR1=1[C],mask_CR1Blinded=0[C],mask_SR1b=1[C],mask_SR1bBlinded=0[C])
+MultiDimFit = (shapeBkg_ttbar_st_CR1__norm=10[C],shapeBkg_wjets_CR1__norm=10[C],shapeBkg_rest_CR1__norm=10[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin7=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin17=0.0704202 +/- 0.106067,CMS_HWW_boosted_tf_dataResidual_CR1_Bin8=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin18=0.0541754 +/- 0.105333,CMS_HWW_boosted_tf_dataResidual_CR1_Bin9=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin19=0.0440218 +/- 0.104875,CMS_HWW_boosted_tf_dataResidual_CR1_Bin10=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin0=-0.0729297 +/- 0.10597,CMS_HWW_boosted_tf_dataResidual_CR1_Bin11=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin1=0.0213542 +/- 0.107295,CMS_HWW_boosted_tf_dataResidual_CR1_Bin12=-0.040577 +/- 0.114749,CMS_HWW_boosted_tf_dataResidual_CR1_Bin2=0.0658248 +/- 0.115051,CMS_HWW_boosted_tf_dataResidual_CR1_Bin13=-0.0145787 +/- 0.115158,CMS_HWW_boosted_tf_dataResidual_CR1_Bin3=0.0965344 +/- 0.142174,CMS_HWW_boosted_tf_dataResidual_CR1_Bin14=0.00817722 +/- 0.112483,CMS_HWW_boosted_tf_dataResidual_CR1_Bin4=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin15=0.0348352 +/- 0.109208,CMS_HWW_boosted_tf_dataResidual_CR1_Bin5=0[C],CMS_HWW_boosted_tf_dataResidual_CR1_Bin16=0.0674075 +/- 0.107162,CMS_HWW_boosted_tf_dataResidual_CR1_Bin6=0[C],shapeBkg_ttbar_st_CR1Blinded__norm=10[C],shapeBkg_wjets_CR1Blinded__norm=10[C],shapeBkg_rest_CR1Blinded__norm=10[C],shapeSig_ggF_SR1b__norm=10[C],shapeSig_VBF_SR1b__norm=10[C],shapeSig_VH_SR1b__norm=10[C],shapeSig_ttH_SR1b__norm=10[C],shapeBkg_ttbar_st_SR1b__norm=10[C],shapeBkg_wjets_SR1b__norm=10[C],shapeBkg_rest_SR1b__norm=10[C],CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par2=1.79083 +/- 0.00534743,CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par1=1.06848 +/- 0.00869377,CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par0=1.04643 +/- 0.00241881,shapeSig_ggF_SR1bBlinded__norm=10[C],shapeSig_VBF_SR1bBlinded__norm=6.67677[C],shapeSig_VH_SR1bBlinded__norm=7.88403[C],shapeSig_ttH_SR1bBlinded__norm=10[C],shapeBkg_ttbar_st_SR1bBlinded__norm=10[C],shapeBkg_wjets_SR1bBlinded__norm=10[C],shapeBkg_rest_SR1bBlinded__norm=10[C],MH_Reco=245,CMS_channel=SR1bBlinded(idx = 3)
+,r=0[C],BR_hww=0 +/- 1,BR_hww_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin0=0.0379996 +/- 1.03006,CMS_HWW_boosted_CR1_mcstat_bin0_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin1=0.00354463 +/- 0.999855,CMS_HWW_boosted_CR1_mcstat_bin1_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin10=0.012478 +/- 1.00026,CMS_HWW_boosted_CR1_mcstat_bin10_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin11=0.0126436 +/- 1.00032,CMS_HWW_boosted_CR1_mcstat_bin11_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin12=0.0333904 +/- 0.999919,CMS_HWW_boosted_CR1_mcstat_bin12_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin13=0.0203283 +/- 0.999852,CMS_HWW_boosted_CR1_mcstat_bin13_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin14=0.00633563 +/- 0.999783,CMS_HWW_boosted_CR1_mcstat_bin14_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin15=-0.00990894 +/- 0.999704,CMS_HWW_boosted_CR1_mcstat_bin15_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin16=-0.0285347 +/- 0.999622,CMS_HWW_boosted_CR1_mcstat_bin16_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin17=-0.0350945 +/- 1.0292,CMS_HWW_boosted_CR1_mcstat_bin17_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin18=-0.0241346 +/- 0.999456,CMS_HWW_boosted_CR1_mcstat_bin18_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin19=-0.0198423 +/- 0.999402,CMS_HWW_boosted_CR1_mcstat_bin19_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin2=-0.0128582 +/- 0.999726,CMS_HWW_boosted_CR1_mcstat_bin2_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin3=-0.0273489 +/- 0.999374,CMS_HWW_boosted_CR1_mcstat_bin3_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin4=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin4_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin5=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin5_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin6=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin6_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin7=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin7_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin8=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin8_In=0[C],CMS_HWW_boosted_CR1_mcstat_bin9=0 +/- 1,CMS_HWW_boosted_CR1_mcstat_bin9_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin0=-0.713417 +/- 1.00678,CMS_HWW_boosted_SR1b_mcstat_bin0_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin1=0.0579835 +/- 1.00636,CMS_HWW_boosted_SR1b_mcstat_bin1_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin10=-0.703873 +/- 0.996178,CMS_HWW_boosted_SR1b_mcstat_bin10_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin11=-0.498546 +/- 0.992693,CMS_HWW_boosted_SR1b_mcstat_bin11_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin12=-0.668458 +/- 0.981269,CMS_HWW_boosted_SR1b_mcstat_bin12_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin13=-0.340239 +/- 0.978854,CMS_HWW_boosted_SR1b_mcstat_bin13_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin14=-0.0964513 +/- 0.978869,CMS_HWW_boosted_SR1b_mcstat_bin14_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin15=0.207123 +/- 0.977582,CMS_HWW_boosted_SR1b_mcstat_bin15_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin16=0.559446 +/- 0.972868,CMS_HWW_boosted_SR1b_mcstat_bin16_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin17=0.58376 +/- 0.971328,CMS_HWW_boosted_SR1b_mcstat_bin17_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin18=0.444641 +/- 0.968123,CMS_HWW_boosted_SR1b_mcstat_bin18_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin19=0.326709 +/- 0.968371,CMS_HWW_boosted_SR1b_mcstat_bin19_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin2=0.496782 +/- 1.00745,CMS_HWW_boosted_SR1b_mcstat_bin2_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin3=0.80078 +/- 0.994661,CMS_HWW_boosted_SR1b_mcstat_bin3_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin4=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin4_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin5=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin5_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin6=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin6_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin7=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin7_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin8=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin8_In=0[C],CMS_HWW_boosted_SR1b_mcstat_bin9=0 +/- 1,CMS_HWW_boosted_SR1b_mcstat_bin9_In=0[C],lumi_13TeV_correlated=-0.190817 +/- 0.732463,lumi_13TeV_correlated_In=0[C],n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven=1[C],n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven=1[C],n_exp_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven=1[C],n_exp_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven=1[C],mask_CR1=1[C],mask_CR1Blinded=0[C],mask_SR1b=1[C],mask_SR1bBlinded=0[C])
+
+named sets
+----------
+ModelConfig_GlobalObservables:(BR_hww_In,CMS_HWW_boosted_CR1_mcstat_bin0_In,CMS_HWW_boosted_CR1_mcstat_bin1_In,CMS_HWW_boosted_CR1_mcstat_bin10_In,CMS_HWW_boosted_CR1_mcstat_bin11_In,CMS_HWW_boosted_CR1_mcstat_bin12_In,CMS_HWW_boosted_CR1_mcstat_bin13_In,CMS_HWW_boosted_CR1_mcstat_bin14_In,CMS_HWW_boosted_CR1_mcstat_bin15_In,CMS_HWW_boosted_CR1_mcstat_bin16_In,CMS_HWW_boosted_CR1_mcstat_bin17_In,CMS_HWW_boosted_CR1_mcstat_bin18_In,CMS_HWW_boosted_CR1_mcstat_bin19_In,CMS_HWW_boosted_CR1_mcstat_bin2_In,CMS_HWW_boosted_CR1_mcstat_bin3_In,CMS_HWW_boosted_CR1_mcstat_bin4_In,CMS_HWW_boosted_CR1_mcstat_bin5_In,CMS_HWW_boosted_CR1_mcstat_bin6_In,CMS_HWW_boosted_CR1_mcstat_bin7_In,CMS_HWW_boosted_CR1_mcstat_bin8_In,CMS_HWW_boosted_CR1_mcstat_bin9_In,CMS_HWW_boosted_SR1b_mcstat_bin0_In,CMS_HWW_boosted_SR1b_mcstat_bin1_In,CMS_HWW_boosted_SR1b_mcstat_bin10_In,CMS_HWW_boosted_SR1b_mcstat_bin11_In,CMS_HWW_boosted_SR1b_mcstat_bin12_In,CMS_HWW_boosted_SR1b_mcstat_bin13_In,CMS_HWW_boosted_SR1b_mcstat_bin14_In,CMS_HWW_boosted_SR1b_mcstat_bin15_In,CMS_HWW_boosted_SR1b_mcstat_bin16_In,CMS_HWW_boosted_SR1b_mcstat_bin17_In,CMS_HWW_boosted_SR1b_mcstat_bin18_In,CMS_HWW_boosted_SR1b_mcstat_bin19_In,CMS_HWW_boosted_SR1b_mcstat_bin2_In,CMS_HWW_boosted_SR1b_mcstat_bin3_In,CMS_HWW_boosted_SR1b_mcstat_bin4_In,CMS_HWW_boosted_SR1b_mcstat_bin5_In,CMS_HWW_boosted_SR1b_mcstat_bin6_In,CMS_HWW_boosted_SR1b_mcstat_bin7_In,CMS_HWW_boosted_SR1b_mcstat_bin8_In,CMS_HWW_boosted_SR1b_mcstat_bin9_In,lumi_13TeV_correlated_In)
+ModelConfig_NuisParams:(BR_hww,CMS_HWW_boosted_CR1_mcstat_bin0,CMS_HWW_boosted_CR1_mcstat_bin1,CMS_HWW_boosted_CR1_mcstat_bin10,CMS_HWW_boosted_CR1_mcstat_bin11,CMS_HWW_boosted_CR1_mcstat_bin12,CMS_HWW_boosted_CR1_mcstat_bin13,CMS_HWW_boosted_CR1_mcstat_bin14,CMS_HWW_boosted_CR1_mcstat_bin15,CMS_HWW_boosted_CR1_mcstat_bin16,CMS_HWW_boosted_CR1_mcstat_bin17,CMS_HWW_boosted_CR1_mcstat_bin18,CMS_HWW_boosted_CR1_mcstat_bin19,CMS_HWW_boosted_CR1_mcstat_bin2,CMS_HWW_boosted_CR1_mcstat_bin3,CMS_HWW_boosted_CR1_mcstat_bin4,CMS_HWW_boosted_CR1_mcstat_bin5,CMS_HWW_boosted_CR1_mcstat_bin6,CMS_HWW_boosted_CR1_mcstat_bin7,CMS_HWW_boosted_CR1_mcstat_bin8,CMS_HWW_boosted_CR1_mcstat_bin9,CMS_HWW_boosted_SR1b_mcstat_bin0,CMS_HWW_boosted_SR1b_mcstat_bin1,CMS_HWW_boosted_SR1b_mcstat_bin10,CMS_HWW_boosted_SR1b_mcstat_bin11,CMS_HWW_boosted_SR1b_mcstat_bin12,CMS_HWW_boosted_SR1b_mcstat_bin13,CMS_HWW_boosted_SR1b_mcstat_bin14,CMS_HWW_boosted_SR1b_mcstat_bin15,CMS_HWW_boosted_SR1b_mcstat_bin16,CMS_HWW_boosted_SR1b_mcstat_bin17,CMS_HWW_boosted_SR1b_mcstat_bin18,CMS_HWW_boosted_SR1b_mcstat_bin19,CMS_HWW_boosted_SR1b_mcstat_bin2,CMS_HWW_boosted_SR1b_mcstat_bin3,CMS_HWW_boosted_SR1b_mcstat_bin4,CMS_HWW_boosted_SR1b_mcstat_bin5,CMS_HWW_boosted_SR1b_mcstat_bin6,CMS_HWW_boosted_SR1b_mcstat_bin7,CMS_HWW_boosted_SR1b_mcstat_bin8,CMS_HWW_boosted_SR1b_mcstat_bin9,lumi_13TeV_correlated)
+ModelConfig_Observables:(MH_Reco,CMS_channel)
+ModelConfig_POI:(r)
+ModelConfig_bonly_GlobalObservables:(BR_hww_In,CMS_HWW_boosted_CR1_mcstat_bin0_In,CMS_HWW_boosted_CR1_mcstat_bin1_In,CMS_HWW_boosted_CR1_mcstat_bin10_In,CMS_HWW_boosted_CR1_mcstat_bin11_In,CMS_HWW_boosted_CR1_mcstat_bin12_In,CMS_HWW_boosted_CR1_mcstat_bin13_In,CMS_HWW_boosted_CR1_mcstat_bin14_In,CMS_HWW_boosted_CR1_mcstat_bin15_In,CMS_HWW_boosted_CR1_mcstat_bin16_In,CMS_HWW_boosted_CR1_mcstat_bin17_In,CMS_HWW_boosted_CR1_mcstat_bin18_In,CMS_HWW_boosted_CR1_mcstat_bin19_In,CMS_HWW_boosted_CR1_mcstat_bin2_In,CMS_HWW_boosted_CR1_mcstat_bin3_In,CMS_HWW_boosted_CR1_mcstat_bin4_In,CMS_HWW_boosted_CR1_mcstat_bin5_In,CMS_HWW_boosted_CR1_mcstat_bin6_In,CMS_HWW_boosted_CR1_mcstat_bin7_In,CMS_HWW_boosted_CR1_mcstat_bin8_In,CMS_HWW_boosted_CR1_mcstat_bin9_In,CMS_HWW_boosted_SR1b_mcstat_bin0_In,CMS_HWW_boosted_SR1b_mcstat_bin1_In,CMS_HWW_boosted_SR1b_mcstat_bin10_In,CMS_HWW_boosted_SR1b_mcstat_bin11_In,CMS_HWW_boosted_SR1b_mcstat_bin12_In,CMS_HWW_boosted_SR1b_mcstat_bin13_In,CMS_HWW_boosted_SR1b_mcstat_bin14_In,CMS_HWW_boosted_SR1b_mcstat_bin15_In,CMS_HWW_boosted_SR1b_mcstat_bin16_In,CMS_HWW_boosted_SR1b_mcstat_bin17_In,CMS_HWW_boosted_SR1b_mcstat_bin18_In,CMS_HWW_boosted_SR1b_mcstat_bin19_In,CMS_HWW_boosted_SR1b_mcstat_bin2_In,CMS_HWW_boosted_SR1b_mcstat_bin3_In,CMS_HWW_boosted_SR1b_mcstat_bin4_In,CMS_HWW_boosted_SR1b_mcstat_bin5_In,CMS_HWW_boosted_SR1b_mcstat_bin6_In,CMS_HWW_boosted_SR1b_mcstat_bin7_In,CMS_HWW_boosted_SR1b_mcstat_bin8_In,CMS_HWW_boosted_SR1b_mcstat_bin9_In,lumi_13TeV_correlated_In)
+ModelConfig_bonly_NuisParams:(BR_hww,CMS_HWW_boosted_CR1_mcstat_bin0,CMS_HWW_boosted_CR1_mcstat_bin1,CMS_HWW_boosted_CR1_mcstat_bin10,CMS_HWW_boosted_CR1_mcstat_bin11,CMS_HWW_boosted_CR1_mcstat_bin12,CMS_HWW_boosted_CR1_mcstat_bin13,CMS_HWW_boosted_CR1_mcstat_bin14,CMS_HWW_boosted_CR1_mcstat_bin15,CMS_HWW_boosted_CR1_mcstat_bin16,CMS_HWW_boosted_CR1_mcstat_bin17,CMS_HWW_boosted_CR1_mcstat_bin18,CMS_HWW_boosted_CR1_mcstat_bin19,CMS_HWW_boosted_CR1_mcstat_bin2,CMS_HWW_boosted_CR1_mcstat_bin3,CMS_HWW_boosted_CR1_mcstat_bin4,CMS_HWW_boosted_CR1_mcstat_bin5,CMS_HWW_boosted_CR1_mcstat_bin6,CMS_HWW_boosted_CR1_mcstat_bin7,CMS_HWW_boosted_CR1_mcstat_bin8,CMS_HWW_boosted_CR1_mcstat_bin9,CMS_HWW_boosted_SR1b_mcstat_bin0,CMS_HWW_boosted_SR1b_mcstat_bin1,CMS_HWW_boosted_SR1b_mcstat_bin10,CMS_HWW_boosted_SR1b_mcstat_bin11,CMS_HWW_boosted_SR1b_mcstat_bin12,CMS_HWW_boosted_SR1b_mcstat_bin13,CMS_HWW_boosted_SR1b_mcstat_bin14,CMS_HWW_boosted_SR1b_mcstat_bin15,CMS_HWW_boosted_SR1b_mcstat_bin16,CMS_HWW_boosted_SR1b_mcstat_bin17,CMS_HWW_boosted_SR1b_mcstat_bin18,CMS_HWW_boosted_SR1b_mcstat_bin19,CMS_HWW_boosted_SR1b_mcstat_bin2,CMS_HWW_boosted_SR1b_mcstat_bin3,CMS_HWW_boosted_SR1b_mcstat_bin4,CMS_HWW_boosted_SR1b_mcstat_bin5,CMS_HWW_boosted_SR1b_mcstat_bin6,CMS_HWW_boosted_SR1b_mcstat_bin7,CMS_HWW_boosted_SR1b_mcstat_bin8,CMS_HWW_boosted_SR1b_mcstat_bin9,lumi_13TeV_correlated)
+ModelConfig_bonly_Observables:(MH_Reco,CMS_channel)
+ModelConfig_bonly_POI:(r)
+POI:(r)
+globalObservables:(BR_hww_In,CMS_HWW_boosted_CR1_mcstat_bin0_In,CMS_HWW_boosted_CR1_mcstat_bin1_In,CMS_HWW_boosted_CR1_mcstat_bin10_In,CMS_HWW_boosted_CR1_mcstat_bin11_In,CMS_HWW_boosted_CR1_mcstat_bin12_In,CMS_HWW_boosted_CR1_mcstat_bin13_In,CMS_HWW_boosted_CR1_mcstat_bin14_In,CMS_HWW_boosted_CR1_mcstat_bin15_In,CMS_HWW_boosted_CR1_mcstat_bin16_In,CMS_HWW_boosted_CR1_mcstat_bin17_In,CMS_HWW_boosted_CR1_mcstat_bin18_In,CMS_HWW_boosted_CR1_mcstat_bin19_In,CMS_HWW_boosted_CR1_mcstat_bin2_In,CMS_HWW_boosted_CR1_mcstat_bin3_In,CMS_HWW_boosted_CR1_mcstat_bin4_In,CMS_HWW_boosted_CR1_mcstat_bin5_In,CMS_HWW_boosted_CR1_mcstat_bin6_In,CMS_HWW_boosted_CR1_mcstat_bin7_In,CMS_HWW_boosted_CR1_mcstat_bin8_In,CMS_HWW_boosted_CR1_mcstat_bin9_In,CMS_HWW_boosted_SR1b_mcstat_bin0_In,CMS_HWW_boosted_SR1b_mcstat_bin1_In,CMS_HWW_boosted_SR1b_mcstat_bin10_In,CMS_HWW_boosted_SR1b_mcstat_bin11_In,CMS_HWW_boosted_SR1b_mcstat_bin12_In,CMS_HWW_boosted_SR1b_mcstat_bin13_In,CMS_HWW_boosted_SR1b_mcstat_bin14_In,CMS_HWW_boosted_SR1b_mcstat_bin15_In,CMS_HWW_boosted_SR1b_mcstat_bin16_In,CMS_HWW_boosted_SR1b_mcstat_bin17_In,CMS_HWW_boosted_SR1b_mcstat_bin18_In,CMS_HWW_boosted_SR1b_mcstat_bin19_In,CMS_HWW_boosted_SR1b_mcstat_bin2_In,CMS_HWW_boosted_SR1b_mcstat_bin3_In,CMS_HWW_boosted_SR1b_mcstat_bin4_In,CMS_HWW_boosted_SR1b_mcstat_bin5_In,CMS_HWW_boosted_SR1b_mcstat_bin6_In,CMS_HWW_boosted_SR1b_mcstat_bin7_In,CMS_HWW_boosted_SR1b_mcstat_bin8_In,CMS_HWW_boosted_SR1b_mcstat_bin9_In,lumi_13TeV_correlated_In)
+nuisances:(BR_hww,CMS_HWW_boosted_CR1_mcstat_bin0,CMS_HWW_boosted_CR1_mcstat_bin1,CMS_HWW_boosted_CR1_mcstat_bin10,CMS_HWW_boosted_CR1_mcstat_bin11,CMS_HWW_boosted_CR1_mcstat_bin12,CMS_HWW_boosted_CR1_mcstat_bin13,CMS_HWW_boosted_CR1_mcstat_bin14,CMS_HWW_boosted_CR1_mcstat_bin15,CMS_HWW_boosted_CR1_mcstat_bin16,CMS_HWW_boosted_CR1_mcstat_bin17,CMS_HWW_boosted_CR1_mcstat_bin18,CMS_HWW_boosted_CR1_mcstat_bin19,CMS_HWW_boosted_CR1_mcstat_bin2,CMS_HWW_boosted_CR1_mcstat_bin3,CMS_HWW_boosted_CR1_mcstat_bin4,CMS_HWW_boosted_CR1_mcstat_bin5,CMS_HWW_boosted_CR1_mcstat_bin6,CMS_HWW_boosted_CR1_mcstat_bin7,CMS_HWW_boosted_CR1_mcstat_bin8,CMS_HWW_boosted_CR1_mcstat_bin9,CMS_HWW_boosted_SR1b_mcstat_bin0,CMS_HWW_boosted_SR1b_mcstat_bin1,CMS_HWW_boosted_SR1b_mcstat_bin10,CMS_HWW_boosted_SR1b_mcstat_bin11,CMS_HWW_boosted_SR1b_mcstat_bin12,CMS_HWW_boosted_SR1b_mcstat_bin13,CMS_HWW_boosted_SR1b_mcstat_bin14,CMS_HWW_boosted_SR1b_mcstat_bin15,CMS_HWW_boosted_SR1b_mcstat_bin16,CMS_HWW_boosted_SR1b_mcstat_bin17,CMS_HWW_boosted_SR1b_mcstat_bin18,CMS_HWW_boosted_SR1b_mcstat_bin19,CMS_HWW_boosted_SR1b_mcstat_bin2,CMS_HWW_boosted_SR1b_mcstat_bin3,CMS_HWW_boosted_SR1b_mcstat_bin4,CMS_HWW_boosted_SR1b_mcstat_bin5,CMS_HWW_boosted_SR1b_mcstat_bin6,CMS_HWW_boosted_SR1b_mcstat_bin7,CMS_HWW_boosted_SR1b_mcstat_bin8,CMS_HWW_boosted_SR1b_mcstat_bin9,lumi_13TeV_correlated)
+observables:(MH_Reco,CMS_channel)
+
+generic objects
+---------------
+RooStats::ModelConfig::ModelConfig
+RooStats::ModelConfig::ModelConfig_bonly
+RooArgSet::discreteParams
+
+Workspace has a ModelConfig for signal called 'ModelConfig', with contents:
+
+=== Using the following for ModelConfig ===
+Observables:             RooArgSet:: = (MH_Reco,CMS_channel)
+Parameters of Interest:  RooArgSet:: = (r)
+Nuisance Parameters:     RooArgSet:: = (BR_hww,CMS_HWW_boosted_CR1_mcstat_bin0,CMS_HWW_boosted_CR1_mcstat_bin1,CMS_HWW_boosted_CR1_mcstat_bin10,CMS_HWW_boosted_CR1_mcstat_bin11,CMS_HWW_boosted_CR1_mcstat_bin12,CMS_HWW_boosted_CR1_mcstat_bin13,CMS_HWW_boosted_CR1_mcstat_bin14,CMS_HWW_boosted_CR1_mcstat_bin15,CMS_HWW_boosted_CR1_mcstat_bin16,CMS_HWW_boosted_CR1_mcstat_bin17,CMS_HWW_boosted_CR1_mcstat_bin18,CMS_HWW_boosted_CR1_mcstat_bin19,CMS_HWW_boosted_CR1_mcstat_bin2,CMS_HWW_boosted_CR1_mcstat_bin3,CMS_HWW_boosted_CR1_mcstat_bin4,CMS_HWW_boosted_CR1_mcstat_bin5,CMS_HWW_boosted_CR1_mcstat_bin6,CMS_HWW_boosted_CR1_mcstat_bin7,CMS_HWW_boosted_CR1_mcstat_bin8,CMS_HWW_boosted_CR1_mcstat_bin9,CMS_HWW_boosted_SR1b_mcstat_bin0,CMS_HWW_boosted_SR1b_mcstat_bin1,CMS_HWW_boosted_SR1b_mcstat_bin10,CMS_HWW_boosted_SR1b_mcstat_bin11,CMS_HWW_boosted_SR1b_mcstat_bin12,CMS_HWW_boosted_SR1b_mcstat_bin13,CMS_HWW_boosted_SR1b_mcstat_bin14,CMS_HWW_boosted_SR1b_mcstat_bin15,CMS_HWW_boosted_SR1b_mcstat_bin16,CMS_HWW_boosted_SR1b_mcstat_bin17,CMS_HWW_boosted_SR1b_mcstat_bin18,CMS_HWW_boosted_SR1b_mcstat_bin19,CMS_HWW_boosted_SR1b_mcstat_bin2,CMS_HWW_boosted_SR1b_mcstat_bin3,CMS_HWW_boosted_SR1b_mcstat_bin4,CMS_HWW_boosted_SR1b_mcstat_bin5,CMS_HWW_boosted_SR1b_mcstat_bin6,CMS_HWW_boosted_SR1b_mcstat_bin7,CMS_HWW_boosted_SR1b_mcstat_bin8,CMS_HWW_boosted_SR1b_mcstat_bin9,lumi_13TeV_correlated)
+Global Observables:      RooArgSet:: = (BR_hww_In,CMS_HWW_boosted_CR1_mcstat_bin0_In,CMS_HWW_boosted_CR1_mcstat_bin1_In,CMS_HWW_boosted_CR1_mcstat_bin10_In,CMS_HWW_boosted_CR1_mcstat_bin11_In,CMS_HWW_boosted_CR1_mcstat_bin12_In,CMS_HWW_boosted_CR1_mcstat_bin13_In,CMS_HWW_boosted_CR1_mcstat_bin14_In,CMS_HWW_boosted_CR1_mcstat_bin15_In,CMS_HWW_boosted_CR1_mcstat_bin16_In,CMS_HWW_boosted_CR1_mcstat_bin17_In,CMS_HWW_boosted_CR1_mcstat_bin18_In,CMS_HWW_boosted_CR1_mcstat_bin19_In,CMS_HWW_boosted_CR1_mcstat_bin2_In,CMS_HWW_boosted_CR1_mcstat_bin3_In,CMS_HWW_boosted_CR1_mcstat_bin4_In,CMS_HWW_boosted_CR1_mcstat_bin5_In,CMS_HWW_boosted_CR1_mcstat_bin6_In,CMS_HWW_boosted_CR1_mcstat_bin7_In,CMS_HWW_boosted_CR1_mcstat_bin8_In,CMS_HWW_boosted_CR1_mcstat_bin9_In,CMS_HWW_boosted_SR1b_mcstat_bin0_In,CMS_HWW_boosted_SR1b_mcstat_bin1_In,CMS_HWW_boosted_SR1b_mcstat_bin10_In,CMS_HWW_boosted_SR1b_mcstat_bin11_In,CMS_HWW_boosted_SR1b_mcstat_bin12_In,CMS_HWW_boosted_SR1b_mcstat_bin13_In,CMS_HWW_boosted_SR1b_mcstat_bin14_In,CMS_HWW_boosted_SR1b_mcstat_bin15_In,CMS_HWW_boosted_SR1b_mcstat_bin16_In,CMS_HWW_boosted_SR1b_mcstat_bin17_In,CMS_HWW_boosted_SR1b_mcstat_bin18_In,CMS_HWW_boosted_SR1b_mcstat_bin19_In,CMS_HWW_boosted_SR1b_mcstat_bin2_In,CMS_HWW_boosted_SR1b_mcstat_bin3_In,CMS_HWW_boosted_SR1b_mcstat_bin4_In,CMS_HWW_boosted_SR1b_mcstat_bin5_In,CMS_HWW_boosted_SR1b_mcstat_bin6_In,CMS_HWW_boosted_SR1b_mcstat_bin7_In,CMS_HWW_boosted_SR1b_mcstat_bin8_In,CMS_HWW_boosted_SR1b_mcstat_bin9_In,lumi_13TeV_correlated_In)
+PDF:                     RooSimultaneousOpt::model_s[ indexCat=CMS_channel CR1=pdf_binCR1 CR1Blinded=pdf_binCR1Blinded SR1b=pdf_binSR1b SR1bBlinded=pdf_binSR1bBlinded extraConstraints=() channelMasks=(mask_CR1,mask_CR1Blinded,mask_SR1b,mask_SR1bBlinded) ] = 1.26705e-06
+
+Input ModelConfig 'ModelConfig': 
+
+=== Using the following for ModelConfig ===
+Observables:             RooArgSet:: = (MH_Reco,CMS_channel)
+Parameters of Interest:  RooArgSet:: = (r)
+Nuisance Parameters:     RooArgSet:: = (BR_hww,CMS_HWW_boosted_CR1_mcstat_bin0,CMS_HWW_boosted_CR1_mcstat_bin1,CMS_HWW_boosted_CR1_mcstat_bin10,CMS_HWW_boosted_CR1_mcstat_bin11,CMS_HWW_boosted_CR1_mcstat_bin12,CMS_HWW_boosted_CR1_mcstat_bin13,CMS_HWW_boosted_CR1_mcstat_bin14,CMS_HWW_boosted_CR1_mcstat_bin15,CMS_HWW_boosted_CR1_mcstat_bin16,CMS_HWW_boosted_CR1_mcstat_bin17,CMS_HWW_boosted_CR1_mcstat_bin18,CMS_HWW_boosted_CR1_mcstat_bin19,CMS_HWW_boosted_CR1_mcstat_bin2,CMS_HWW_boosted_CR1_mcstat_bin3,CMS_HWW_boosted_CR1_mcstat_bin4,CMS_HWW_boosted_CR1_mcstat_bin5,CMS_HWW_boosted_CR1_mcstat_bin6,CMS_HWW_boosted_CR1_mcstat_bin7,CMS_HWW_boosted_CR1_mcstat_bin8,CMS_HWW_boosted_CR1_mcstat_bin9,CMS_HWW_boosted_SR1b_mcstat_bin0,CMS_HWW_boosted_SR1b_mcstat_bin1,CMS_HWW_boosted_SR1b_mcstat_bin10,CMS_HWW_boosted_SR1b_mcstat_bin11,CMS_HWW_boosted_SR1b_mcstat_bin12,CMS_HWW_boosted_SR1b_mcstat_bin13,CMS_HWW_boosted_SR1b_mcstat_bin14,CMS_HWW_boosted_SR1b_mcstat_bin15,CMS_HWW_boosted_SR1b_mcstat_bin16,CMS_HWW_boosted_SR1b_mcstat_bin17,CMS_HWW_boosted_SR1b_mcstat_bin18,CMS_HWW_boosted_SR1b_mcstat_bin19,CMS_HWW_boosted_SR1b_mcstat_bin2,CMS_HWW_boosted_SR1b_mcstat_bin3,CMS_HWW_boosted_SR1b_mcstat_bin4,CMS_HWW_boosted_SR1b_mcstat_bin5,CMS_HWW_boosted_SR1b_mcstat_bin6,CMS_HWW_boosted_SR1b_mcstat_bin7,CMS_HWW_boosted_SR1b_mcstat_bin8,CMS_HWW_boosted_SR1b_mcstat_bin9,lumi_13TeV_correlated)
+Global Observables:      RooArgSet:: = (BR_hww_In,CMS_HWW_boosted_CR1_mcstat_bin0_In,CMS_HWW_boosted_CR1_mcstat_bin1_In,CMS_HWW_boosted_CR1_mcstat_bin10_In,CMS_HWW_boosted_CR1_mcstat_bin11_In,CMS_HWW_boosted_CR1_mcstat_bin12_In,CMS_HWW_boosted_CR1_mcstat_bin13_In,CMS_HWW_boosted_CR1_mcstat_bin14_In,CMS_HWW_boosted_CR1_mcstat_bin15_In,CMS_HWW_boosted_CR1_mcstat_bin16_In,CMS_HWW_boosted_CR1_mcstat_bin17_In,CMS_HWW_boosted_CR1_mcstat_bin18_In,CMS_HWW_boosted_CR1_mcstat_bin19_In,CMS_HWW_boosted_CR1_mcstat_bin2_In,CMS_HWW_boosted_CR1_mcstat_bin3_In,CMS_HWW_boosted_CR1_mcstat_bin4_In,CMS_HWW_boosted_CR1_mcstat_bin5_In,CMS_HWW_boosted_CR1_mcstat_bin6_In,CMS_HWW_boosted_CR1_mcstat_bin7_In,CMS_HWW_boosted_CR1_mcstat_bin8_In,CMS_HWW_boosted_CR1_mcstat_bin9_In,CMS_HWW_boosted_SR1b_mcstat_bin0_In,CMS_HWW_boosted_SR1b_mcstat_bin1_In,CMS_HWW_boosted_SR1b_mcstat_bin10_In,CMS_HWW_boosted_SR1b_mcstat_bin11_In,CMS_HWW_boosted_SR1b_mcstat_bin12_In,CMS_HWW_boosted_SR1b_mcstat_bin13_In,CMS_HWW_boosted_SR1b_mcstat_bin14_In,CMS_HWW_boosted_SR1b_mcstat_bin15_In,CMS_HWW_boosted_SR1b_mcstat_bin16_In,CMS_HWW_boosted_SR1b_mcstat_bin17_In,CMS_HWW_boosted_SR1b_mcstat_bin18_In,CMS_HWW_boosted_SR1b_mcstat_bin19_In,CMS_HWW_boosted_SR1b_mcstat_bin2_In,CMS_HWW_boosted_SR1b_mcstat_bin3_In,CMS_HWW_boosted_SR1b_mcstat_bin4_In,CMS_HWW_boosted_SR1b_mcstat_bin5_In,CMS_HWW_boosted_SR1b_mcstat_bin6_In,CMS_HWW_boosted_SR1b_mcstat_bin7_In,CMS_HWW_boosted_SR1b_mcstat_bin8_In,CMS_HWW_boosted_SR1b_mcstat_bin9_In,lumi_13TeV_correlated_In)
+PDF:                     RooSimultaneousOpt::model_s[ indexCat=CMS_channel CR1=pdf_binCR1 CR1Blinded=pdf_binCR1Blinded SR1b=pdf_binSR1b SR1bBlinded=pdf_binSR1bBlinded extraConstraints=() channelMasks=(mask_CR1,mask_CR1Blinded,mask_SR1b,mask_SR1bBlinded) ] = 1.26705e-06
+
+Set Default Value of Parameter mask_SR1b To : 0
+Set Default Value of Parameter mask_CR1 To : 0
+Set Default Value of Parameter mask_SR1bBlinded To : 1
+Set Default Value of Parameter mask_CR1Blinded To : 1
+Set Default Value of Parameter r To : 1
+Set floating the following parameters: RooArgSet:: = (CMS_HWW_boosted_tf_dataResidual_CR1_Bin4,CMS_HWW_boosted_tf_dataResidual_CR1_Bin5,CMS_HWW_boosted_tf_dataResidual_CR1_Bin6,CMS_HWW_boosted_tf_dataResidual_CR1_Bin7,CMS_HWW_boosted_tf_dataResidual_CR1_Bin8,CMS_HWW_boosted_tf_dataResidual_CR1_Bin9,CMS_HWW_boosted_tf_dataResidual_CR1_Bin10,CMS_HWW_boosted_tf_dataResidual_CR1_Bin11,r)
+Freezing the following parameters: RooArgSet:: = (BR_hww_In,CMS_HWW_boosted_CR1_mcstat_bin0_In,CMS_HWW_boosted_CR1_mcstat_bin1_In,CMS_HWW_boosted_CR1_mcstat_bin10_In,CMS_HWW_boosted_CR1_mcstat_bin11_In,CMS_HWW_boosted_CR1_mcstat_bin12_In,CMS_HWW_boosted_CR1_mcstat_bin13_In,CMS_HWW_boosted_CR1_mcstat_bin14_In,CMS_HWW_boosted_CR1_mcstat_bin15_In,CMS_HWW_boosted_CR1_mcstat_bin16_In,CMS_HWW_boosted_CR1_mcstat_bin17_In,CMS_HWW_boosted_CR1_mcstat_bin18_In,CMS_HWW_boosted_CR1_mcstat_bin19_In,CMS_HWW_boosted_CR1_mcstat_bin2_In,CMS_HWW_boosted_CR1_mcstat_bin3_In,CMS_HWW_boosted_CR1_mcstat_bin4_In,CMS_HWW_boosted_CR1_mcstat_bin5_In,CMS_HWW_boosted_CR1_mcstat_bin6_In,CMS_HWW_boosted_CR1_mcstat_bin7_In,CMS_HWW_boosted_CR1_mcstat_bin8_In,CMS_HWW_boosted_CR1_mcstat_bin9_In,CMS_HWW_boosted_SR1b_mcstat_bin0_In,CMS_HWW_boosted_SR1b_mcstat_bin1_In,CMS_HWW_boosted_SR1b_mcstat_bin10_In,CMS_HWW_boosted_SR1b_mcstat_bin11_In,CMS_HWW_boosted_SR1b_mcstat_bin12_In,CMS_HWW_boosted_SR1b_mcstat_bin13_In,CMS_HWW_boosted_SR1b_mcstat_bin14_In,CMS_HWW_boosted_SR1b_mcstat_bin15_In,CMS_HWW_boosted_SR1b_mcstat_bin16_In,CMS_HWW_boosted_SR1b_mcstat_bin17_In,CMS_HWW_boosted_SR1b_mcstat_bin18_In,CMS_HWW_boosted_SR1b_mcstat_bin19_In,CMS_HWW_boosted_SR1b_mcstat_bin2_In,CMS_HWW_boosted_SR1b_mcstat_bin3_In,CMS_HWW_boosted_SR1b_mcstat_bin4_In,CMS_HWW_boosted_SR1b_mcstat_bin5_In,CMS_HWW_boosted_SR1b_mcstat_bin6_In,CMS_HWW_boosted_SR1b_mcstat_bin7_In,CMS_HWW_boosted_SR1b_mcstat_bin8_In,CMS_HWW_boosted_SR1b_mcstat_bin9_In,lumi_13TeV_correlated_In,shapeBkg_ttbar_st_CR1__norm,shapeBkg_wjets_CR1__norm,shapeBkg_rest_CR1__norm,shapeBkg_ttbar_st_CR1Blinded__norm,shapeBkg_wjets_CR1Blinded__norm,shapeBkg_rest_CR1Blinded__norm,shapeSig_ggF_SR1b__norm,shapeSig_VBF_SR1b__norm,shapeSig_VH_SR1b__norm,shapeSig_ttH_SR1b__norm,shapeBkg_ttbar_st_SR1b__norm,shapeBkg_wjets_SR1b__norm,shapeBkg_rest_SR1b__norm,shapeSig_ggF_SR1bBlinded__norm,shapeSig_VBF_SR1bBlinded__norm,shapeSig_VH_SR1bBlinded__norm,shapeSig_ttH_SR1bBlinded__norm,shapeBkg_ttbar_st_SR1bBlinded__norm,shapeBkg_wjets_SR1bBlinded__norm,shapeBkg_rest_SR1bBlinded__norm,n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven)
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooUniform::prior
+>>> 2 out of 4 channels masked
+
+>>> Channel masks:
+  1) 0x8395360 RooRealVar::         mask_CR1 = 0 C  L(-INF - +INF)  "mask_CR1"
+  2) 0x8395f60 RooRealVar::  mask_CR1Blinded = 1 C  L(-INF - +INF)  "mask_CR1Blinded"
+  3) 0x8396b00 RooRealVar::        mask_SR1b = 0 C  L(-INF - +INF)  "mask_SR1b"
+  4) 0x8397640 RooRealVar:: mask_SR1bBlinded = 1 C  L(-INF - +INF)  "mask_SR1bBlinded"
+Warning: A value of r is specified in both the --setParameters and --expectSignal options. The argument of --expectSignal will take precedence
+Saving snapshot 'clean'
+[#1] INFO:ObjectHandling -- RooWorkspace::saveSnaphot(w) replacing previous snapshot with name clean
+Saved snapshot 'clean'
+Nuisance parameters after fit for asimov dataset: 
+  1) RooRealVar::                            BR_hww = 0 +/- 1
+  2) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin0 = 0.0379996 +/- 1.03006
+  3) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin1 = 0.00354463 +/- 0.999855
+  4) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin10 = 0.012478 +/- 1.00026
+  5) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin11 = 0.0126436 +/- 1.00032
+  6) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin12 = 0.0333904 +/- 0.999919
+  7) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin13 = 0.0203283 +/- 0.999852
+  8) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin14 = 0.00633563 +/- 0.999783
+  9) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin15 = -0.00990894 +/- 0.999704
+ 10) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin16 = -0.0285347 +/- 0.999622
+ 11) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin17 = -0.0350945 +/- 1.0292
+ 12) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin18 = -0.0241346 +/- 0.999456
+ 13) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin19 = -0.0198423 +/- 0.999402
+ 14) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin2 = -0.0128582 +/- 0.999726
+ 15) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin3 = -0.0273489 +/- 0.999374
+ 16) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin4 = 0 +/- 1
+ 17) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin5 = 0 +/- 1
+ 18) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin6 = 0 +/- 1
+ 19) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin7 = 0 +/- 1
+ 20) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin8 = 0 +/- 1
+ 21) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin9 = 0 +/- 1
+ 22) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin0 = -0.713417 +/- 1.00678
+ 23) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin1 = 0.0579835 +/- 1.00636
+ 24) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin10 = -0.703873 +/- 0.996178
+ 25) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin11 = -0.498546 +/- 0.992693
+ 26) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin12 = -0.668458 +/- 0.981269
+ 27) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin13 = -0.340239 +/- 0.978854
+ 28) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin14 = -0.0964513 +/- 0.978869
+ 29) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin15 = 0.207123 +/- 0.977582
+ 30) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin16 = 0.559446 +/- 0.972868
+ 31) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin17 = 0.58376 +/- 0.971328
+ 32) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin18 = 0.444641 +/- 0.968123
+ 33) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin19 = 0.326709 +/- 0.968371
+ 34) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin2 = 0.496782 +/- 1.00745
+ 35) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin3 = 0.80078 +/- 0.994661
+ 36) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin4 = 0 +/- 1
+ 37) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin5 = 0 +/- 1
+ 38) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin6 = 0 +/- 1
+ 39) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin7 = 0 +/- 1
+ 40) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin8 = 0 +/- 1
+ 41) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin9 = 0 +/- 1
+ 42) RooRealVar::             lumi_13TeV_correlated = -0.190817 +/- 0.732463
+  ToyMCSampleOpt  -- Generating Asimov with histogram for pdf pdf_binCR1_obsOnly: in 20 x-bins 
+  ToyMCSampleOpt  -- Generating Asimov with histogram for pdf pdf_binCR1Blinded_obsOnly: in 20 x-bins 
+  ToyMCSampleOpt  -- Generating Asimov with histogram for pdf pdf_binSR1b_obsOnly: in 20 x-bins 
+  ToyMCSampleOpt  -- Generating Asimov with histogram for pdf pdf_binSR1bBlinded_obsOnly: in 20 x-bins 
+Global observables for data: 
+  1) RooRealVar::                            BR_hww_In = 0
+  2) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin0_In = 0
+  3) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin1_In = 0
+  4) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin10_In = 0
+  5) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin11_In = 0
+  6) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin12_In = 0
+  7) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin13_In = 0
+  8) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin14_In = 0
+  9) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin15_In = 0
+ 10) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin16_In = 0
+ 11) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin17_In = 0
+ 12) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin18_In = 0
+ 13) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin19_In = 0
+ 14) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin2_In = 0
+ 15) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin3_In = 0
+ 16) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin4_In = 0
+ 17) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin5_In = 0
+ 18) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin6_In = 0
+ 19) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin7_In = 0
+ 20) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin8_In = 0
+ 21) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin9_In = 0
+ 22) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin0_In = 0
+ 23) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin1_In = 0
+ 24) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin10_In = 0
+ 25) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin11_In = 0
+ 26) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin12_In = 0
+ 27) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin13_In = 0
+ 28) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin14_In = 0
+ 29) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin15_In = 0
+ 30) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin16_In = 0
+ 31) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin17_In = 0
+ 32) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin18_In = 0
+ 33) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin19_In = 0
+ 34) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin2_In = 0
+ 35) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin3_In = 0
+ 36) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin4_In = 0
+ 37) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin5_In = 0
+ 38) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin6_In = 0
+ 39) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin7_In = 0
+ 40) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin8_In = 0
+ 41) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin9_In = 0
+ 42) RooRealVar::             lumi_13TeV_correlated_In = 0
+Global observables for asimov: 
+  1) RooRealVar::                            BR_hww_In = 0
+  2) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin0_In = 0.0379996
+  3) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin1_In = 0.00354463
+  4) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin10_In = 0.012478
+  5) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin11_In = 0.0126436
+  6) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin12_In = 0.0333904
+  7) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin13_In = 0.0203283
+  8) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin14_In = 0.00633563
+  9) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin15_In = -0.00990894
+ 10) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin16_In = -0.0285347
+ 11) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin17_In = -0.0350945
+ 12) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin18_In = -0.0241346
+ 13) RooRealVar::  CMS_HWW_boosted_CR1_mcstat_bin19_In = -0.0198423
+ 14) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin2_In = -0.0128582
+ 15) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin3_In = -0.0273489
+ 16) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin4_In = 0
+ 17) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin5_In = 0
+ 18) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin6_In = 0
+ 19) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin7_In = 0
+ 20) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin8_In = 0
+ 21) RooRealVar::   CMS_HWW_boosted_CR1_mcstat_bin9_In = 0
+ 22) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin0_In = -0.713417
+ 23) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin1_In = 0.0579835
+ 24) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin10_In = -0.703873
+ 25) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin11_In = -0.498546
+ 26) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin12_In = -0.668458
+ 27) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin13_In = -0.340239
+ 28) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin14_In = -0.0964513
+ 29) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin15_In = 0.207123
+ 30) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin16_In = 0.559446
+ 31) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin17_In = 0.58376
+ 32) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin18_In = 0.444641
+ 33) RooRealVar:: CMS_HWW_boosted_SR1b_mcstat_bin19_In = 0.326709
+ 34) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin2_In = 0.496782
+ 35) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin3_In = 0.80078
+ 36) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin4_In = 0
+ 37) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin5_In = 0
+ 38) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin6_In = 0
+ 39) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin7_In = 0
+ 40) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin8_In = 0
+ 41) RooRealVar::  CMS_HWW_boosted_SR1b_mcstat_bin9_In = 0
+ 42) RooRealVar::             lumi_13TeV_correlated_In = -0.190817
+[#1] INFO:ObjectHandling -- RooWorkspace::saveSnaphot(w) replacing previous snapshot with name clean
+ bin           MH_Reco       CMS_channel    weight
+   0                55               CR1  10411797.5000000
+   1                65               CR1  10114246.2500000
+   2                75               CR1  9908849.3750000
+   3                85               CR1  9806519.3750000
+   4                95               CR1  9506737.5000000
+   5               105               CR1  9035410.0000000
+   6               115               CR1  8446451.8750000
+   7               125               CR1  7750448.1250000
+   8               135               CR1  6943365.6250000
+   9               145               CR1  6074530.0000000
+  10               155               CR1  5189171.2500000
+  11               165               CR1  4333205.9375000
+  12               175               CR1  3537465.9375000
+  13               185               CR1  2804238.4375000
+  14               195               CR1  2162405.6250000
+  15               205               CR1  1629780.3125000
+  16               215               CR1  1218470.2343750
+  17               225               CR1  904848.9843750
+  18               235               CR1  673244.1406250
+  19               245               CR1  501907.6562500
+  20                55        CR1Blinded  10411797.5000000
+  21                65        CR1Blinded  10114246.2500000
+  22                75        CR1Blinded  9908849.3750000
+  23                85        CR1Blinded  9806519.3750000
+  24                95        CR1Blinded     0.0138559
+  25               105        CR1Blinded     0.0138559
+  26               115        CR1Blinded     0.0138559
+  27               125        CR1Blinded     0.0138559
+  28               135        CR1Blinded     0.0138559
+  29               145        CR1Blinded     0.0138559
+  30               155        CR1Blinded  5189171.2500000
+  31               165        CR1Blinded  4333205.6250000
+  32               175        CR1Blinded  3537465.9375000
+  33               185        CR1Blinded  2804238.4375000
+  34               195        CR1Blinded  2162405.6250000
+  35               205        CR1Blinded  1629780.3125000
+  36               215        CR1Blinded  1218470.2343750
+  37               225        CR1Blinded  904848.9843750
+  38               235        CR1Blinded  673244.1406250
+  39               245        CR1Blinded  501907.6562500
+  40                55              SR1b  40551.9189453
+  41                65              SR1b  39999.6166992
+  42                75              SR1b  40309.2163086
+  43                85              SR1b  41323.1347656
+  44                95              SR1b  41324.3115234
+  45               105              SR1b  41083.6767578
+  46               115              SR1b  40633.6791992
+  47               125              SR1b  39625.0927734
+  48               135              SR1b  37882.1191406
+  49               145              SR1b  35363.1079102
+  50               155              SR1b  32323.8037109
+  51               165              SR1b  28925.5712891
+  52               175              SR1b  25340.4614258
+  53               185              SR1b  21539.8046875
+  54               195              SR1b  17823.9721680
+  55               205              SR1b  14429.3334961
+  56               215              SR1b  11575.7568359
+  57               225              SR1b  9207.6806641
+  58               235              SR1b  7331.7663574
+  59               245              SR1b  5824.5263672
+  60                55       SR1bBlinded  40552.1508789
+  61                65       SR1bBlinded  39999.8999023
+  62                75       SR1bBlinded  40309.6459961
+  63                85       SR1bBlinded  41323.7792969
+  64                95       SR1bBlinded     0.0002718
+  65               105       SR1bBlinded     0.0002718
+  66               115       SR1bBlinded     0.0002718
+  67               125       SR1bBlinded     0.0002718
+  68               135       SR1bBlinded     0.0002718
+  69               145       SR1bBlinded     0.0002718
+  70               155       SR1bBlinded  32324.3432617
+  71               165       SR1bBlinded  28925.9375000
+  72               175       SR1bBlinded  25340.6445312
+  73               185       SR1bBlinded  21539.8852539
+  74               195       SR1bBlinded  17824.0747070
+  75               205       SR1bBlinded  14429.4458008
+  76               215       SR1bBlinded  11575.8618164
+  77               225       SR1bBlinded  9207.7722168
+  78               235       SR1bBlinded  7331.8304443
+  79               245       SR1bBlinded  5824.5825195
+SimNLL created with 4 channels, 0 generic constraints, 42 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+Minuit2Minimizer: Minimize with max-calls 33000 convergence for edm < 0.1 strategy 1
+Minuit2Minimizer::Minuit  - Changing default options
+             StorageLevel :               0
+MnSeedGenerator: for initial parameters FCN = 5.69786374047e-31
+MnSeedGenerator: Initial state:   - FCN = 5.69786374047e-31 Edm =    0.0743164 NCalls =    273
+MnSeedGenerator: Negative G2 found - new state:   - FCN = -5.671315581601e-07 Edm =    0.0741032 NCalls =    430
+VariableMetric: start iterating until Edm is < 0.0001
+VariableMetric: Initial state   - FCN = -5.671315581601e-07 Edm =    0.0741032 NCalls =    430
+VariableMetric: Iteration #   0 - FCN = -5.671315581601e-07 Edm =    0.0741032 NCalls =    430
+VariableMetric: Iteration #   1 - FCN = -0.02645206803536 Edm =   0.00141888 NCalls =    590
+VariableMetric: Iteration #   2 - FCN = -0.03006215150216 Edm =   0.00042816 NCalls =    804
+VariableMetric: Iteration #   3 - FCN = -0.03064630934163 Edm =  5.08143e-05 NCalls =    982
+VariableMetric: Iteration #   4 - FCN = -0.03074490491152 Edm =  2.69507e-05 NCalls =   1154
+Info in negative or zero diagonal element in covariance matrix : i = 44
+Info in negative or zero diagonal element in covariance matrix : i = 59
+Info in added to diagonal of Error matrix a value : dg = 24024.6
+Info in matrix forced pos-def by adding to diagonal : padd = 1030.48
+Info: MnHesse: matrix was forced pos. def. 
+VariableMetric: After Hessian   - FCN = -0.03074490491152 Edm =    0.0209675 NCalls =   3612
+VariableMetric: Iteration #   5 - FCN = -0.03074490491152 Edm =    0.0209675 NCalls =   3612
+Info: VariableMetricBuilder: Tolerance is not sufficient, continue the minimization
+Info in Current  Edm is : edm = 0.0209675
+Info in Required Edm is : edmval = 0.0001
+VariableMetric: Iteration #   6 - FCN = -0.03074499817628 Edm =  0.000726394 NCalls =   3785
+VariableMetric: Iteration #   7 - FCN = -0.03074499875835 Edm =  2.42483e-08 NCalls =   3956
+Info: DavidonErrorUpdator: delgam < 0 : first derivatives increasing along search line
+VariableMetric: Iteration #   8 - FCN = -0.03074507459224 Edm =   3.1256e-08 NCalls =   4112
+Info: VariableMetricBuilder: matrix not pos.def, gdel > 0
+Info: gdel = 1.93203e-08
+Info in matrix forced pos-def by adding to diagonal : padd = 1.19479
+Info: gdel = -2.03519e-08
+Info: VariableMetricBuilder: no improvement in line search
+VariableMetric: Iteration #   9 - FCN = -0.03074507459224 Edm =   3.1256e-08 NCalls =   4123
+Info in matrix forced pos-def by adding to diagonal : padd = 9.95649
+Info: MnHesse: matrix was forced pos. def. 
+VariableMetric: After Hessian   - FCN = -0.03074507459224 Edm =  1.70722e-05 NCalls =   6579
+VariableMetric: Iteration #  10 - FCN = -0.03074507459224 Edm =  1.70722e-05 NCalls =   6579
+Number of iterations 11
+----------> Iteration 0
+            FVAL = -5.6713155816e-07 Edm = 0.0741032405981 Nfcn = 430
+            Error matrix change = 1
+            Parameters :  p0 = 0 p1 = 0.0379996 p2 = 0.00354463 p3 = 0.012478 p4 = 0.0126436 p5 = 0.0333904 p6 = 0.0203283 p7 = 0.00633563 p8 = -0.00990894 p9 = -0.0285347 p10 = -0.0350945 p11 = -0.0241346 p12 = -0.0198423 p13 = -0.0128582 p14 = -0.0273489 p15 = 0 p16 = 0 p17 = 0 p18 = 0 p19 = 0 p20 = 0 p21 = -0.713417 p22 = 0.0579835 p23 = -0.703873 p24 = -0.498546 p25 = -0.668458 p26 = -0.340239 p27 = -0.0964513 p28 = 0.207123 p29 = 0.559446 p30 = 0.58376 p31 = 0.444641 p32 = 0.326709 p33 = 0.496782 p34 = 0.80078 p35 = 0 p36 = 0 p37 = 0 p38 = 0 p39 = 0 p40 = 0 p41 = 1.04643 p42 = 1.06848 p43 = 1.79083 p44 = -0.0729999 p45 = 0.0213542 p46 = 0 p47 = 0 p48 = -0.040577 p49 = -0.0145787 p50 = 0.00817722 p51 = 0.0348352 p52 = 0.0674075 p53 = 0.0704202 p54 = 0.0541754 p55 = 0.0440218 p56 = 0.0658248 p57 = 0.0965344 p58 = 0 p59 = 0 p60 = 0 p61 = 0 p62 = 0 p63 = 0 p64 = -0.190817 p65 = 2
+----------> Iteration 1
+            FVAL = -0.0264520680354 Edm = 0.00141887599657 Nfcn = 590
+            Error matrix change = 0.573838
+            Parameters :  p0 = -0.00068412 p1 = 0.0379996 p2 = 0.00354463 p3 = 0.012478 p4 = 0.0126436 p5 = 0.0333904 p6 = 0.0203283 p7 = 0.00633563 p8 = -0.00990894 p9 = -0.0285347 p10 = -0.0350945 p11 = -0.0241346 p12 = -0.0198423 p13 = -0.0128582 p14 = -0.0273489 p15 = 0 p16 = 0 p17 = 0 p18 = 0 p19 = 0 p20 = 0 p21 = -0.712672 p22 = 0.0586862 p23 = -0.703944 p24 = -0.498021 p25 = -0.667744 p26 = -0.339574 p27 = -0.0957789 p28 = 0.207718 p29 = 0.559993 p30 = 0.584252 p31 = 0.445092 p32 = 0.327104 p33 = 0.497485 p34 = 0.801293 p35 = 0.000376414 p36 = 0.00010359 p37 = -0.000391486 p38 = -0.00172435 p39 = -0.00319821 p40 = -0.00172264 p41 = 1.04637 p42 = 1.06828 p43 = 1.79066 p44 = -0.0729976 p45 = 0.0213502 p46 = -0.000122831 p47 = -6.8404e-05 p48 = -0.0405928 p49 = -0.0146071 p50 = 0.00815722 p51 = 0.0348157 p52 = 0.067387 p53 = 0.0704092 p54 = 0.0541685 p55 = 0.0439919 p56 = 0.0658059 p57 = 0.0965203 p58 = -9.33229e-05 p59 = -0.000112335 p60 = -0.000154519 p61 = -0.000252251 p62 = -0.000380885 p63 = -0.000239127 p64 = -0.191858 p65 = 1.65464
+----------> Iteration 2
+            FVAL = -0.0300621515022 Edm = 0.000428159682593 Nfcn = 804
+----------> Iteration 3
+            FVAL = -0.0306463093416 Edm = 5.08142802116e-05 Nfcn = 982
+----------> Iteration 4
+            FVAL = -0.0307449049115 Edm = 2.69506927433e-05 Nfcn = 1154
+            Error matrix change = 0.261578
+            Parameters :  p0 = -9.98429e-05 p1 = 0.0377412 p2 = 0.00306226 p3 = 0.0124669 p4 = 0.012891 p5 = 0.0331553 p6 = 0.0200932 p7 = 0.00634672 p8 = -0.0100081 p9 = -0.0285347 p10 = -0.0350834 p11 = -0.0243696 p12 = -0.0195949 p13 = -0.0128582 p14 = -0.0275729 p15 = 0.000493454 p16 = 0.000129207 p17 = 0 p18 = -0.000269498 p19 = -6.46908e-05 p20 = -3.44584e-05 p21 = -0.713759 p22 = 0.0579029 p23 = -0.703657 p24 = -0.498413 p25 = -0.668556 p26 = -0.340494 p27 = -0.096868 p28 = 0.206609 p29 = 0.558827 p30 = 0.583072 p31 = 0.44387 p32 = 0.32601 p33 = 0.496988 p34 = 0.801223 p35 = 0.000715279 p36 = 0.000640706 p37 = 0.000592716 p38 = 0.000328893 p39 = 6.42393e-05 p40 = 9.43189e-05 p41 = 1.04646 p42 = 1.06833 p43 = 1.79089 p44 = -0.0729748 p45 = 0.0213508 p46 = 6.16401e-05 p47 = -2.37775e-05 p48 = -0.0405221 p49 = -0.0145703 p50 = 0.00813816 p51 = 0.0347591 p52 = 0.0673003 p53 = 0.0704478 p54 = 0.054178 p55 = 0.0439436 p56 = 0.0657626 p57 = 0.0965557 p58 = 0.00011203 p59 = 0.000111453 p60 = 6.57221e-05 p61 = -9.09178e-05 p62 = 6.7381e-05 p63 = 7.17155e-05 p64 = -0.190481 p65 = 1.12085
+----------> Iteration 5
+            FVAL = -0.0307449049115 Edm = 0.020967483708 Nfcn = 3612
+            Error matrix change = 1
+            Parameters :  p0 = -9.98429e-05 p1 = 0.0377412 p2 = 0.00306226 p3 = 0.0124669 p4 = 0.012891 p5 = 0.0331553 p6 = 0.0200932 p7 = 0.00634672 p8 = -0.0100081 p9 = -0.0285347 p10 = -0.0350834 p11 = -0.0243696 p12 = -0.0195949 p13 = -0.0128582 p14 = -0.0275729 p15 = 0.000493454 p16 = 0.000129207 p17 = 0 p18 = -0.000269498 p19 = -6.46908e-05 p20 = -3.44584e-05 p21 = -0.713759 p22 = 0.0579029 p23 = -0.703657 p24 = -0.498413 p25 = -0.668556 p26 = -0.340494 p27 = -0.096868 p28 = 0.206609 p29 = 0.558827 p30 = 0.583072 p31 = 0.44387 p32 = 0.32601 p33 = 0.496988 p34 = 0.801223 p35 = 0.000715279 p36 = 0.000640706 p37 = 0.000592716 p38 = 0.000328893 p39 = 6.42393e-05 p40 = 9.43189e-05 p41 = 1.04646 p42 = 1.06833 p43 = 1.79089 p44 = -0.0729748 p45 = 0.0213508 p46 = 6.16401e-05 p47 = -2.37775e-05 p48 = -0.0405221 p49 = -0.0145703 p50 = 0.00813816 p51 = 0.0347591 p52 = 0.0673003 p53 = 0.0704478 p54 = 0.054178 p55 = 0.0439436 p56 = 0.0657626 p57 = 0.0965557 p58 = 0.00011203 p59 = 0.000111453 p60 = 6.57221e-05 p61 = -9.09178e-05 p62 = 6.7381e-05 p63 = 7.17155e-05 p64 = -0.190481 p65 = 1.12085
+----------> Iteration 6
+            FVAL = -0.0307449981763 Edm = 0.000726393685795 Nfcn = 3785
+----------> Iteration 7
+            FVAL = -0.0307449987584 Edm = 2.42482531407e-08 Nfcn = 3956
+----------> Iteration 8
+            FVAL = -0.0307450745922 Edm = 3.12559769602e-08 Nfcn = 4112
+----------> Iteration 9
+            FVAL = -0.0307450745922 Edm = 3.12559769602e-08 Nfcn = 4112
+            Error matrix change = 1
+            Parameters :  p0 = -9.98429e-05 p1 = 0.0377412 p2 = 0.00306226 p3 = 0.0124669 p4 = 0.012891 p5 = 0.0331553 p6 = 0.0200932 p7 = 0.00634672 p8 = -0.0100081 p9 = -0.0285347 p10 = -0.0350834 p11 = -0.0243696 p12 = -0.0195949 p13 = -0.0128582 p14 = -0.0275729 p15 = 0.000493454 p16 = 0.000129207 p17 = 0 p18 = -0.000269498 p19 = -6.46908e-05 p20 = -3.44584e-05 p21 = -0.713759 p22 = 0.0579029 p23 = -0.703657 p24 = -0.498413 p25 = -0.668556 p26 = -0.340494 p27 = -0.096868 p28 = 0.206609 p29 = 0.558827 p30 = 0.583072 p31 = 0.44387 p32 = 0.32601 p33 = 0.496988 p34 = 0.801223 p35 = 0.000715279 p36 = 0.000640706 p37 = 0.000592716 p38 = 0.000328893 p39 = 6.42393e-05 p40 = 9.43189e-05 p41 = 1.04646 p42 = 1.06833 p43 = 1.79089 p44 = -0.0729787 p45 = 0.0213508 p46 = 6.16401e-05 p47 = -2.37775e-05 p48 = -0.0405221 p49 = -0.0145702 p50 = 0.00813816 p51 = 0.0347591 p52 = 0.0673004 p53 = 0.0704478 p54 = 0.054178 p55 = 0.0439436 p56 = 0.0657626 p57 = 0.0965557 p58 = 0.000112029 p59 = 0.0001115 p60 = 6.57246e-05 p61 = -9.09178e-05 p62 = 6.73809e-05 p63 = 7.17154e-05 p64 = -0.190481 p65 = 1.12085
+----------> Iteration 10
+            FVAL = -0.0307450745922 Edm = 1.707218574e-05 Nfcn = 6579
+            Error matrix change = 1
+            Parameters :  p0 = -9.98429e-05 p1 = 0.0377412 p2 = 0.00306226 p3 = 0.0124669 p4 = 0.012891 p5 = 0.0331553 p6 = 0.0200932 p7 = 0.00634672 p8 = -0.0100081 p9 = -0.0285347 p10 = -0.0350834 p11 = -0.0243696 p12 = -0.0195949 p13 = -0.0128582 p14 = -0.0275729 p15 = 0.000493454 p16 = 0.000129207 p17 = 0 p18 = -0.000269498 p19 = -6.46908e-05 p20 = -3.44584e-05 p21 = -0.713759 p22 = 0.0579029 p23 = -0.703657 p24 = -0.498413 p25 = -0.668556 p26 = -0.340494 p27 = -0.096868 p28 = 0.206609 p29 = 0.558827 p30 = 0.583072 p31 = 0.44387 p32 = 0.32601 p33 = 0.496988 p34 = 0.801223 p35 = 0.000715279 p36 = 0.000640706 p37 = 0.000592716 p38 = 0.000328893 p39 = 6.42393e-05 p40 = 9.43189e-05 p41 = 1.04646 p42 = 1.06833 p43 = 1.79089 p44 = -0.0729787 p45 = 0.0213508 p46 = 6.16401e-05 p47 = -2.37775e-05 p48 = -0.0405221 p49 = -0.0145702 p50 = 0.00813816 p51 = 0.0347591 p52 = 0.0673004 p53 = 0.0704478 p54 = 0.054178 p55 = 0.0439436 p56 = 0.0657626 p57 = 0.0965557 p58 = 0.000112029 p59 = 0.0001115 p60 = 6.57246e-05 p61 = -9.09178e-05 p62 = 6.73809e-05 p63 = 7.17154e-05 p64 = -0.190481 p65 = 1.12085
+Info in Minuit2Minimizer::Minimize : Covar was made pos def
+Minuit2Minimizer : Valid minimum - status = 1
+FVAL  = -0.0307450745922376138
+Edm   = 1.70721857400056973e-05
+Nfcn  = 6579
+BR_hww	  = -9.98429e-05	 +/-  0.301873	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin0	  = 0.0377412	 +/-  0.323432	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin1	  = 0.00306226	 +/-  0.316674	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin10	  = 0.0124669	 +/-  0.470481	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin11	  = 0.012891	 +/-  0.303781	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin12	  = 0.0331553	 +/-  0.418958	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin13	  = 0.0200932	 +/-  0.326288	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin14	  = 0.00634672	 +/-  0.397919	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin15	  = -0.0100081	 +/-  0.304615	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin16	  = -0.0285347	 +/-  0.304262	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin17	  = -0.0350834	 +/-  0.438549	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin18	  = -0.0243696	 +/-  0.376402	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin19	  = -0.0195949	 +/-  0.304057	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin2	  = -0.0128582	 +/-  0.318656	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin3	  = -0.0275729	 +/-  0.319961	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin4	  = 0.000493454	 +/-  0.727487	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin5	  = 0.000129207	 +/-  0.490993	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin6	  = 0	 +/-  0.376826	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin7	  = -0.000269498	 +/-  0.338439	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin8	  = -6.46908e-05	 +/-  0.439565	(limited)
+CMS_HWW_boosted_CR1_mcstat_bin9	  = -3.44584e-05	 +/-  0.521555	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin0	  = -0.713759	 +/-  0.301545	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin1	  = 0.0579029	 +/-  0.301546	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin10	  = -0.703657	 +/-  0.300703	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin11	  = -0.498413	 +/-  0.30071	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin12	  = -0.668556	 +/-  0.300706	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin13	  = -0.340494	 +/-  0.30047	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin14	  = -0.096868	 +/-  0.30044	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin15	  = 0.206609	 +/-  0.300435	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin16	  = 0.558827	 +/-  0.300705	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin17	  = 0.583072	 +/-  0.30045	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin18	  = 0.44387	 +/-  0.300171	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin19	  = 0.32601	 +/-  0.300783	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin2	  = 0.496988	 +/-  0.300991	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin3	  = 0.801223	 +/-  0.300737	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin4	  = 0.000715279	 +/-  0.300738	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin5	  = 0.000640706	 +/-  0.300993	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin6	  = 0.000592716	 +/-  0.301277	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin7	  = 0.000328893	 +/-  0.300655	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin8	  = 6.42393e-05	 +/-  0.300701	(limited)
+CMS_HWW_boosted_SR1b_mcstat_bin9	  = 9.43189e-05	 +/-  0.300555	(limited)
+CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par0	  = 1.04646	 +/-  0.000438653	(limited)
+CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par1	  = 1.06833	 +/-  0.000781469	(limited)
+CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par2	  = 1.79089	 +/-  0.000879682	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin0	  = -0.0729787	 +/-  0.152135	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin1	  = 0.0213508	 +/-  0.0223981	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin10	  = 6.16401e-05	 +/-  0.0503012	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin11	  = -2.37775e-05	 +/-  0.029904	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin12	  = -0.0405221	 +/-  0.0268137	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin13	  = -0.0145702	 +/-  0.00884674	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin14	  = 0.00813816	 +/-  0.0316767	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin15	  = 0.0347591	 +/-  0.0748062	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin16	  = 0.0673004	 +/-  0.0160058	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin17	  = 0.0704478	 +/-  0.00699222	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin18	  = 0.054178	 +/-  0.00366846	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin19	  = 0.0439436	 +/-  0.102522	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin2	  = 0.0657626	 +/-  0.0184136	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin3	  = 0.0965557	 +/-  0.0491728	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin4	  = 0.000112029	 +/-  0.0533302	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin5	  = 0.0001115	 +/-  0.057406	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin6	  = 6.57246e-05	 +/-  0.125324	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin7	  = -9.09178e-05	 +/-  0.0285689	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin8	  = 6.73809e-05	 +/-  0.0974266	(limited)
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin9	  = 7.17154e-05	 +/-  0.0538712	(limited)
+lumi_13TeV_correlated	  = -0.190481	 +/-  0.266471	(limited)
+r	  = 1.12085	 +/-  1.14659	(limited)
+[WARNING] Minimisation finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim!
+Minuit2Minimizer: Minimize with max-calls 32500 convergence for edm < 0.1 strategy 1
+Minuit2Minimizer::Minuit  - Changing default options
+             StorageLevel :               0
+MnSeedGenerator: for initial parameters FCN = 0
+MnSeedGenerator: Initial state:   - FCN =                0 Edm =    0.0564272 NCalls =    273
+VariableMetric: start iterating until Edm is < 0.0001
+VariableMetric: Initial state   - FCN =                0 Edm =    0.0564272 NCalls =    273
+VariableMetric: Iteration #   0 - FCN =                0 Edm =    0.0564272 NCalls =    273
+VariableMetric: Iteration #   1 - FCN = -0.0269325082767 Edm =  0.000953348 NCalls =    433
+VariableMetric: Iteration #   2 - FCN = -0.03027046910354 Edm =  0.000959284 NCalls =    597
+VariableMetric: Iteration #   3 - FCN = -0.0323124789993 Edm =  0.000104443 NCalls =    803
+VariableMetric: Iteration #   4 - FCN = -0.0324634006447 Edm =  7.20361e-06 NCalls =    977
+Info in negative or zero diagonal element in covariance matrix : i = 44
+Info in negative or zero diagonal element in covariance matrix : i = 45
+Info in negative or zero diagonal element in covariance matrix : i = 46
+Info in negative or zero diagonal element in covariance matrix : i = 47
+Info in negative or zero diagonal element in covariance matrix : i = 48
+Info in negative or zero diagonal element in covariance matrix : i = 49
+Info in negative or zero diagonal element in covariance matrix : i = 50
+Info in negative or zero diagonal element in covariance matrix : i = 51
+Info in negative or zero diagonal element in covariance matrix : i = 52
+Info in negative or zero diagonal element in covariance matrix : i = 53
+Info in negative or zero diagonal element in covariance matrix : i = 54
+Info in negative or zero diagonal element in covariance matrix : i = 55
+Info in negative or zero diagonal element in covariance matrix : i = 56
+Info in negative or zero diagonal element in covariance matrix : i = 57
+Info in negative or zero diagonal element in covariance matrix : i = 58
+Info in negative or zero diagonal element in covariance matrix : i = 59
+Info in negative or zero diagonal element in covariance matrix : i = 60
+Info in negative or zero diagonal element in covariance matrix : i = 61
+Info in negative or zero diagonal element in covariance matrix : i = 62
+Info in negative or zero diagonal element in covariance matrix : i = 63
+Info in negative or zero diagonal element in covariance matrix : i = 64
+Info in added to diagonal of Error matrix a value : dg = 2.25869e+06
+Info in matrix forced pos-def by adding to diagonal : padd = 2311.13
+Info: MnHesse: matrix was forced pos. def. 
+VariableMetric: After Hessian   - FCN = -0.0324634006447 Edm =       6.3919 NCalls =   3386
+VariableMetric: Iteration #   5 - FCN = -0.0324634006447 Edm =       6.3919 NCalls =   3386
+Info: VariableMetricBuilder: Tolerance is not sufficient, continue the minimization
+Info in Current  Edm is : edm = 6.3919
+Info in Required Edm is : edmval = 0.0001
+VariableMetric: Iteration #   6 - FCN = -0.03246546462537 Edm =  0.000497981 NCalls =   3578
+VariableMetric: Iteration #   7 - FCN = -0.03246569255366 Edm =  3.51703e-10 NCalls =   3746
+Info in matrix forced pos-def by adding to diagonal : padd = 11.1104
+Info: MnHesse: matrix was forced pos. def. 
+VariableMetric: After Hessian   - FCN = -0.03246569255366 Edm =  0.000158898 NCalls =   6157
+VariableMetric: Iteration #   8 - FCN = -0.03246569255366 Edm =  0.000158898 NCalls =   6157
+Info: VariableMetricBuilder: Tolerance is not sufficient, continue the minimization
+Info in Current  Edm is : edm = 0.000158898
+Info in Required Edm is : edmval = 0.0001
+VariableMetric: Iteration #   9 - FCN = -0.0324659101667 Edm =  1.12578e-06 NCalls =   6337
+Info in matrix forced pos-def by adding to diagonal : padd = 11.1872
+Info: MnHesse: matrix was forced pos. def. 
+VariableMetric: After Hessian   - FCN = -0.0324659101667 Edm =  0.000493719 NCalls =   8738
+VariableMetric: Iteration #  10 - FCN = -0.0324659101667 Edm =  0.000493719 NCalls =   8738
+Info: VariableMetricBuilder: Tolerance is not sufficient, continue the minimization
+Info in Current  Edm is : edm = 0.000493719
+Info in Required Edm is : edmval = 0.0001
+Info: VariableMetricBuilder: no improvement in line search
+VariableMetric: Iteration #  11 - FCN = -0.0324659101667 Edm =  0.000493719 NCalls =   8749
+Info: VariableMetricBuilder: iterations finish without convergence.
+Info in VariableMetricBuilder : edm = 0.00197487
+Info in             requested : edmval = 0.0001
+Info: VariableMetricBuilder: FunctionMinimum is invalid after second try
+Number of iterations 12
+----------> Iteration 0
+            FVAL = 0 Edm = 0.0564272487085 Nfcn = 273
+            Error matrix change = 1
+            Parameters :  p0 = -9.98429e-05 p1 = 0.0377412 p2 = 0.00306226 p3 = 0.0124669 p4 = 0.012891 p5 = 0.0331553 p6 = 0.0200932 p7 = 0.00634672 p8 = -0.0100081 p9 = -0.0285347 p10 = -0.0350834 p11 = -0.0243696 p12 = -0.0195949 p13 = -0.0128582 p14 = -0.0275729 p15 = 0.000493454 p16 = 0.000129207 p17 = 0 p18 = -0.000269498 p19 = -6.46908e-05 p20 = -3.44584e-05 p21 = -0.713759 p22 = 0.0579029 p23 = -0.703657 p24 = -0.498413 p25 = -0.668556 p26 = -0.340494 p27 = -0.096868 p28 = 0.206609 p29 = 0.558827 p30 = 0.583072 p31 = 0.44387 p32 = 0.32601 p33 = 0.496988 p34 = 0.801223 p35 = 0.000715279 p36 = 0.000640706 p37 = 0.000592716 p38 = 0.000328893 p39 = 6.42393e-05 p40 = 9.43189e-05 p41 = 1.04646 p42 = 1.06833 p43 = 1.79089 p44 = -0.0729787 p45 = 0.0213508 p46 = 6.16401e-05 p47 = -2.37775e-05 p48 = -0.0405221 p49 = -0.0145702 p50 = 0.00813816 p51 = 0.0347591 p52 = 0.0673004 p53 = 0.0704478 p54 = 0.054178 p55 = 0.0439436 p56 = 0.0657626 p57 = 0.0965557 p58 = 0.000112029 p59 = 0.0001115 p60 = 6.57246e-05 p61 = -9.09178e-05 p62 = 6.73809e-05 p63 = 7.17154e-05 p64 = -0.190481
+----------> Iteration 1
+            FVAL = -0.0269325082767 Edm = 0.000953348053357 Nfcn = 433
+            Error matrix change = 0.500038
+            Parameters :  p0 = -5.21867e-05 p1 = 0.0378646 p2 = 0.0032925 p3 = 0.0124722 p4 = 0.0127729 p5 = 0.0332675 p6 = 0.0202054 p7 = 0.00634143 p8 = -0.00996077 p9 = -0.0285347 p10 = -0.0350887 p11 = -0.0242575 p12 = -0.019713 p13 = -0.0128582 p14 = -0.027466 p15 = 0.000257922 p16 = 6.7535e-05 p17 = 0 p18 = -0.000140863 p19 = -3.38131e-05 p20 = -1.8011e-05 p21 = -0.714858 p22 = 0.0568649 p23 = -0.70353 p24 = -0.499111 p25 = -0.669479 p26 = -0.341352 p27 = -0.0977335 p28 = 0.205853 p29 = 0.558137 p30 = 0.582454 p31 = 0.443311 p32 = 0.325496 p33 = 0.495939 p34 = 0.800433 p35 = 9.33586e-05 p36 = 0.000447134 p37 = 0.00110584 p38 = 0.00261258 p39 = 0.00430972 p40 = 0.0024257 p41 = 1.04656 p42 = 1.06863 p43 = 1.79113 p44 = -0.0729491 p45 = 0.0213648 p46 = 0.000145739 p47 = 3.7713e-05 p48 = -0.0405088 p49 = -0.0145588 p50 = 0.00815546 p51 = 0.0347951 p52 = 0.0673092 p53 = 0.0704499 p54 = 0.0541791 p55 = 0.0439798 p56 = 0.0657707 p57 = 0.0965838 p58 = 0.0001512 p59 = 0.000168036 p60 = 0.000216264 p61 = 0.000131061 p62 = 0.000396737 p63 = 0.000183463 p64 = -0.188433
+----------> Iteration 2
+            FVAL = -0.0302704691035 Edm = 0.000959283698135 Nfcn = 597
+----------> Iteration 3
+            FVAL = -0.0323124789993 Edm = 0.000104443281156 Nfcn = 803
+----------> Iteration 4
+            FVAL = -0.0324634006447 Edm = 7.20360812522e-06 Nfcn = 977
+            Error matrix change = 0.0716526
+            Parameters :  p0 = 1.5872e-06 p1 = 0.0378086 p2 = 0.00385885 p3 = 0.0126449 p4 = 0.0128344 p5 = 0.0336263 p6 = 0.0204286 p7 = 0.00643865 p8 = -0.00985702 p9 = -0.0283309 p10 = -0.0350947 p11 = -0.023927 p12 = -0.0201839 p13 = -0.0124881 p14 = -0.0272492 p15 = -0.000340324 p16 = -0.000122298 p17 = -0.000203881 p18 = -0.000163509 p19 = -0.00019626 p20 = -4.97922e-05 p21 = -0.712241 p22 = 0.0581768 p23 = -0.704941 p24 = -0.500696 p25 = -0.670562 p26 = -0.341622 p27 = -0.0972962 p28 = 0.206832 p29 = 0.559685 p30 = 0.584378 p31 = 0.445667 p32 = 0.327842 p33 = 0.496017 p34 = 0.799413 p35 = -0.00204298 p36 = -0.00176721 p37 = -0.000828632 p38 = 0.00262288 p39 = 0.00648458 p40 = 0.00290885 p41 = 1.04637 p42 = 1.06916 p43 = 1.79077 p44 = -0.07264 p45 = 0.0213576 p46 = -4.86832e-05 p47 = -0.000207813 p48 = -0.0408397 p49 = -0.0148206 p50 = 0.00798189 p51 = 0.034806 p52 = 0.0672597 p53 = 0.0703749 p54 = 0.0541226 p55 = 0.0442298 p56 = 0.0657406 p57 = 0.096563 p58 = 5.2098e-05 p59 = 2.27439e-05 p60 = 8.90468e-05 p61 = 0.000473139 p62 = 0.000723514 p63 = 0.000360741 p64 = -0.191841
+----------> Iteration 5
+            FVAL = -0.0324634006447 Edm = 6.39189625363 Nfcn = 3386
+            Error matrix change = 1
+            Parameters :  p0 = 1.5872e-06 p1 = 0.0378086 p2 = 0.00385885 p3 = 0.0126449 p4 = 0.0128344 p5 = 0.0336263 p6 = 0.0204286 p7 = 0.00643865 p8 = -0.00985702 p9 = -0.0283309 p10 = -0.0350947 p11 = -0.023927 p12 = -0.0201839 p13 = -0.0124881 p14 = -0.0272492 p15 = -0.000340324 p16 = -0.000122298 p17 = -0.000203881 p18 = -0.000163509 p19 = -0.00019626 p20 = -4.97922e-05 p21 = -0.712241 p22 = 0.0581768 p23 = -0.704941 p24 = -0.500696 p25 = -0.670562 p26 = -0.341622 p27 = -0.0972962 p28 = 0.206832 p29 = 0.559685 p30 = 0.584378 p31 = 0.445667 p32 = 0.327842 p33 = 0.496017 p34 = 0.799413 p35 = -0.00204298 p36 = -0.00176721 p37 = -0.000828632 p38 = 0.00262288 p39 = 0.00648458 p40 = 0.00290885 p41 = 1.04637 p42 = 1.06916 p43 = 1.79077 p44 = -0.07264 p45 = 0.0213576 p46 = -4.86832e-05 p47 = -0.000207813 p48 = -0.0408397 p49 = -0.0148206 p50 = 0.00798189 p51 = 0.034806 p52 = 0.0672597 p53 = 0.0703749 p54 = 0.0541226 p55 = 0.0442298 p56 = 0.0657406 p57 = 0.096563 p58 = 5.2098e-05 p59 = 2.27439e-05 p60 = 8.90468e-05 p61 = 0.000473139 p62 = 0.000723514 p63 = 0.000360741 p64 = -0.191841
+----------> Iteration 6
+            FVAL = -0.0324654646254 Edm = 0.000497981015723 Nfcn = 3578
+----------> Iteration 7
+            FVAL = -0.0324656925537 Edm = 3.51702874844e-10 Nfcn = 3746
+            Error matrix change = 29283.2
+            Parameters :  p0 = 1.5872e-06 p1 = 0.0378086 p2 = 0.00385885 p3 = 0.0126449 p4 = 0.0128344 p5 = 0.0336263 p6 = 0.0204286 p7 = 0.00643865 p8 = -0.00985702 p9 = -0.0283309 p10 = -0.0350947 p11 = -0.023927 p12 = -0.0201839 p13 = -0.0124881 p14 = -0.0272492 p15 = -0.000340324 p16 = -0.000122298 p17 = -0.000203881 p18 = -0.000163509 p19 = -0.00019626 p20 = -4.97922e-05 p21 = -0.712241 p22 = 0.0581768 p23 = -0.704941 p24 = -0.500696 p25 = -0.670562 p26 = -0.341622 p27 = -0.0972962 p28 = 0.206832 p29 = 0.559685 p30 = 0.584378 p31 = 0.445667 p32 = 0.327842 p33 = 0.496017 p34 = 0.799413 p35 = -0.00204298 p36 = -0.00176721 p37 = -0.000828632 p38 = 0.00262288 p39 = 0.00648458 p40 = 0.00290885 p41 = 1.04637 p42 = 1.06916 p43 = 1.79077 p44 = -0.07264 p45 = 0.0213576 p46 = -4.86968e-05 p47 = -0.000207812 p48 = -0.0408397 p49 = -0.0148206 p50 = 0.00798188 p51 = 0.034806 p52 = 0.0674598 p53 = 0.0703749 p54 = 0.0541226 p55 = 0.0442298 p56 = 0.0657406 p57 = 0.096563 p58 = 5.20855e-05 p59 = 2.27186e-05 p60 = 8.90466e-05 p61 = 0.00047313 p62 = 0.000723514 p63 = 0.000360688 p64 = -0.191841
+----------> Iteration 8
+            FVAL = -0.0324656925537 Edm = 0.000158897799668 Nfcn = 6157
+            Error matrix change = 1
+            Parameters :  p0 = 1.5872e-06 p1 = 0.0378086 p2 = 0.00385885 p3 = 0.0126449 p4 = 0.0128344 p5 = 0.0336263 p6 = 0.0204286 p7 = 0.00643865 p8 = -0.00985702 p9 = -0.0283309 p10 = -0.0350947 p11 = -0.023927 p12 = -0.0201839 p13 = -0.0124881 p14 = -0.0272492 p15 = -0.000340324 p16 = -0.000122298 p17 = -0.000203881 p18 = -0.000163509 p19 = -0.00019626 p20 = -4.97922e-05 p21 = -0.712241 p22 = 0.0581768 p23 = -0.704941 p24 = -0.500696 p25 = -0.670562 p26 = -0.341622 p27 = -0.0972962 p28 = 0.206832 p29 = 0.559685 p30 = 0.584378 p31 = 0.445667 p32 = 0.327842 p33 = 0.496017 p34 = 0.799413 p35 = -0.00204298 p36 = -0.00176721 p37 = -0.000828632 p38 = 0.00262288 p39 = 0.00648458 p40 = 0.00290885 p41 = 1.04637 p42 = 1.06916 p43 = 1.79077 p44 = -0.07264 p45 = 0.0213576 p46 = -4.86968e-05 p47 = -0.000207812 p48 = -0.0408397 p49 = -0.0148206 p50 = 0.00798188 p51 = 0.034806 p52 = 0.0674598 p53 = 0.0703749 p54 = 0.0541226 p55 = 0.0442298 p56 = 0.0657406 p57 = 0.096563 p58 = 5.20855e-05 p59 = 2.27186e-05 p60 = 8.90466e-05 p61 = 0.00047313 p62 = 0.000723514 p63 = 0.000360688 p64 = -0.191841
+----------> Iteration 9
+            FVAL = -0.0324659101667 Edm = 1.12577794834e-06 Nfcn = 6337
+            Error matrix change = 3.53886
+            Parameters :  p0 = 1.58642e-06 p1 = 0.0378257 p2 = 0.0038356 p3 = 0.0125726 p4 = 0.0128882 p5 = 0.0336437 p6 = 0.0204676 p7 = 0.00646883 p8 = -0.00990264 p9 = -0.0283582 p10 = -0.0351564 p11 = -0.0239822 p12 = -0.0201262 p13 = -0.0125611 p14 = -0.0273043 p15 = -0.000404458 p16 = -0.000166306 p17 = -0.000216854 p18 = -5.41898e-05 p19 = -0.000161178 p20 = -5.96058e-06 p21 = -0.712241 p22 = 0.0581768 p23 = -0.704942 p24 = -0.500696 p25 = -0.670562 p26 = -0.341622 p27 = -0.0972965 p28 = 0.206832 p29 = 0.559685 p30 = 0.584378 p31 = 0.445667 p32 = 0.327842 p33 = 0.496017 p34 = 0.799413 p35 = -0.00204294 p36 = -0.00176712 p37 = -0.000828576 p38 = 0.00262258 p39 = 0.00648418 p40 = 0.0029087 p41 = 1.04637 p42 = 1.06916 p43 = 1.79077 p44 = -0.0726558 p45 = 0.0213569 p46 = -4.13124e-05 p47 = -0.00021999 p48 = -0.0408435 p49 = -0.0148164 p50 = 0.00797964 p51 = 0.0348033 p52 = 0.0674575 p53 = 0.0703714 p54 = 0.0541201 p55 = 0.0442267 p56 = 0.0657352 p57 = 0.096553 p58 = 4.52115e-05 p59 = 1.22562e-05 p60 = 8.39317e-05 p61 = 0.000470958 p62 = 0.000718369 p63 = 0.000359525 p64 = -0.191854
+----------> Iteration 10
+            FVAL = -0.0324659101667 Edm = 0.000493718610344 Nfcn = 8738
+            Error matrix change = 1
+            Parameters :  p0 = 1.58642e-06 p1 = 0.0378257 p2 = 0.0038356 p3 = 0.0125726 p4 = 0.0128882 p5 = 0.0336437 p6 = 0.0204676 p7 = 0.00646883 p8 = -0.00990264 p9 = -0.0283582 p10 = -0.0351564 p11 = -0.0239822 p12 = -0.0201262 p13 = -0.0125611 p14 = -0.0273043 p15 = -0.000404458 p16 = -0.000166306 p17 = -0.000216854 p18 = -5.41898e-05 p19 = -0.000161178 p20 = -5.96058e-06 p21 = -0.712241 p22 = 0.0581768 p23 = -0.704942 p24 = -0.500696 p25 = -0.670562 p26 = -0.341622 p27 = -0.0972965 p28 = 0.206832 p29 = 0.559685 p30 = 0.584378 p31 = 0.445667 p32 = 0.327842 p33 = 0.496017 p34 = 0.799413 p35 = -0.00204294 p36 = -0.00176712 p37 = -0.000828576 p38 = 0.00262258 p39 = 0.00648418 p40 = 0.0029087 p41 = 1.04637 p42 = 1.06916 p43 = 1.79077 p44 = -0.0726558 p45 = 0.0213569 p46 = -4.13124e-05 p47 = -0.00021999 p48 = -0.0408435 p49 = -0.0148164 p50 = 0.00797964 p51 = 0.0348033 p52 = 0.0674575 p53 = 0.0703714 p54 = 0.0541201 p55 = 0.0442267 p56 = 0.0657352 p57 = 0.096553 p58 = 4.52115e-05 p59 = 1.22562e-05 p60 = 8.39317e-05 p61 = 0.000470958 p62 = 0.000718369 p63 = 0.000359525 p64 = -0.191854
+----------> Iteration 11
+            FVAL = -0.0324659101667 Edm = 0.000493718610344 Nfcn = 8738
+            Error matrix change = 1
+            Parameters :  p0 = 1.58642e-06 p1 = 0.0378257 p2 = 0.0038356 p3 = 0.0125726 p4 = 0.0128882 p5 = 0.0336437 p6 = 0.0204676 p7 = 0.00646883 p8 = -0.00990264 p9 = -0.0283582 p10 = -0.0351564 p11 = -0.0239822 p12 = -0.0201262 p13 = -0.0125611 p14 = -0.0273043 p15 = -0.000404458 p16 = -0.000166306 p17 = -0.000216854 p18 = -5.41898e-05 p19 = -0.000161178 p20 = -5.96058e-06 p21 = -0.712241 p22 = 0.0581768 p23 = -0.704942 p24 = -0.500696 p25 = -0.670562 p26 = -0.341622 p27 = -0.0972965 p28 = 0.206832 p29 = 0.559685 p30 = 0.584378 p31 = 0.445667 p32 = 0.327842 p33 = 0.496017 p34 = 0.799413 p35 = -0.00204294 p36 = -0.00176712 p37 = -0.000828576 p38 = 0.00262258 p39 = 0.00648418 p40 = 0.0029087 p41 = 1.04637 p42 = 1.06916 p43 = 1.79077 p44 = -0.0726558 p45 = 0.0213569 p46 = -4.13124e-05 p47 = -0.00021999 p48 = -0.0408435 p49 = -0.0148164 p50 = 0.00797964 p51 = 0.0348033 p52 = 0.0674575 p53 = 0.0703714 p54 = 0.0541201 p55 = 0.0442267 p56 = 0.0657352 p57 = 0.096553 p58 = 4.52115e-05 p59 = 1.22562e-05 p60 = 8.39317e-05 p61 = 0.000470958 p62 = 0.000718369 p63 = 0.000359525 p64 = -0.191854
+Info in Minuit2Minimizer::Minimize : Minimization did NOT converge, Edm is above max
+Minuit2Minimizer : Invalid Minimum - status = 3
+FVAL  = -0.0324659
+Edm   = 0.000493719
+Nfcn  = 8738
+
+ -- Significance -- 
+Significance: 0.112087
+       (p-value = 0.455377)
+Done in 0.01 min (cpu), 0.01 min (real)
+Printing Message Summary From ... combine_logger.out
+----------------------------------------------
+Messages of type INFO : 207
+Messages of type DEBUG : 2
+Messages of type ERROR : 0
+----------------------------------------------
+INFO: (function: run) Combine.cc: 676 -- Set floating the following parameters: 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin4 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin5 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin6 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin7 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin8 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin9 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin10 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin11 
+INFO: (function: run) Combine.cc: 679  r 
+INFO: (function: run) Combine.cc: 712 -- Freezing the following parameters: 
+INFO: (function: run) Combine.cc: 715  BR_hww_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 715  lumi_13TeV_correlated_In 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_st_CR1__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_CR1__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_CR1__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_st_CR1Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_CR1Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_CR1Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VH_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_st_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VH_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_st_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 69 -- Parameters after fit for asimov dataset
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- BR_hww = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- BR_hww_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin0 = 0.0379996 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin1 = 0.00354463 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin10 = 0.012478 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin11 = 0.0126436 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin12 = 0.0333904 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin13 = 0.0203283 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin14 = 0.00633563 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin15 = -0.00990894 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin16 = -0.0285347 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin17 = -0.0350945 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin18 = -0.0241346 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin19 = -0.0198423 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin2 = -0.0128582 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin3 = -0.0273489 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin0 = -0.713417 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin1 = 0.0579835 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin10 = -0.703873 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin11 = -0.498546 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin12 = -0.668458 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin13 = -0.340239 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin14 = -0.0964513 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin15 = 0.207123 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin16 = 0.559446 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin17 = 0.58376 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin18 = 0.444641 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin19 = 0.326709 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin2 = 0.496782 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin3 = 0.80078 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par0 = 1.04643 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par1 = 1.06848 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_1b_MH_Reco_par2 = 1.79083 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin0 = -0.0729297 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin1 = 0.0213542 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin10 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin11 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin12 = -0.040577 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin13 = -0.0145787 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin14 = 0.00817722 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin15 = 0.0348352 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin16 = 0.0674075 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin17 = 0.0704202 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin18 = 0.0541754 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin19 = 0.0440218 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin2 = 0.0658248 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin3 = 0.0965344 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_correlated = -0.190817 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_correlated_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_CR1 = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_CR1Blinded = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_SR1b = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_SR1bBlinded = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- r = 1 (constant)
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR1_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR1Blinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR1b_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR1bBlinded_obsOnly: in 20 x-bins
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 212 -- finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim.
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1

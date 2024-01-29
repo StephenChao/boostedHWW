@@ -1,1 +1,0 @@
---cminDefaultMinimizerStrategy 1  

@@ -284,7 +284,9 @@ def main(args):
     regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2"]
     regions_blinded = [region + "Blinded" for region in regions]
     regions = regions +  regions_blinded #only use blinded results now
-    with open(f"/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/templates/25Jan2024/hists_templates_run2.pkl", "rb") as f:
+    cur_dir = os.getcwd()
+    print("current dir = ",cur_dir)
+    with open(f"../../postprocessing/templates/25Jan2024/hists_templates_run2.pkl", "rb") as f:
         hists_templates = pkl.load(f) #in Raghav's code, it's templates_summed and templates_dict
     
     model = rl.Model("HWWfullhad")
@@ -489,50 +491,76 @@ def alphabet_fit(
     
     # initialize transfer factor, value here won't influence final results
     # each SR should use one polynomial
-    tf_dataResidual_1a = rl.BasisPoly(
-        f"{CMS_PARAMS_LABEL}_tf_dataResidual_1a",
+    
+    # tf_dataResidual_1a = rl.BasisPoly(
+    #     f"{CMS_PARAMS_LABEL}_tf_dataResidual_1a",
+    #     (shape_var.order,),
+    #     [shape_var.name],
+    #     basis="Bernstein",
+    #     limits=(-20, 20),
+    #     square_params=True, 
+    # ) 
+    # tf_dataResidual_1b = rl.BasisPoly(
+    #     f"{CMS_PARAMS_LABEL}_tf_dataResidual_1b",
+    #     (shape_var.order,),
+    #     [shape_var.name],
+    #     basis="Bernstein",
+    #     limits=(-20, 20),
+    #     square_params=True, 
+    # ) 
+    # tf_dataResidual_2a = rl.BasisPoly(
+    #     f"{CMS_PARAMS_LABEL}_tf_dataResidual_2a",
+    #     (shape_var.order,),
+    #     [shape_var.name],
+    #     basis="Bernstein",
+    #     limits=(-20, 20),
+    #     square_params=True, 
+    # ) 
+    # tf_dataResidual_2b = rl.BasisPoly(
+    #     f"{CMS_PARAMS_LABEL}_tf_dataResidual_2b",
+    #     (shape_var.order,),
+    #     [shape_var.name],
+    #     basis="Bernstein",
+    #     limits=(-20, 20),
+    #     square_params=True, 
+    # ) 
+    
+    tf_dataResidual_a = rl.BasisPoly(
+        f"{CMS_PARAMS_LABEL}_tf_dataResidual_a",
         (shape_var.order,),
         [shape_var.name],
         basis="Bernstein",
         limits=(-20, 20),
         square_params=True, 
-    ) 
-    tf_dataResidual_1b = rl.BasisPoly(
-        f"{CMS_PARAMS_LABEL}_tf_dataResidual_1b",
+    )
+    tf_dataResidual_b = rl.BasisPoly(
+        f"{CMS_PARAMS_LABEL}_tf_dataResidual_b",
         (shape_var.order,),
         [shape_var.name],
         basis="Bernstein",
         limits=(-20, 20),
         square_params=True, 
-    ) 
-    tf_dataResidual_2a = rl.BasisPoly(
-        f"{CMS_PARAMS_LABEL}_tf_dataResidual_2a",
-        (shape_var.order,),
-        [shape_var.name],
-        basis="Bernstein",
-        limits=(-20, 20),
-        square_params=True, 
-    ) 
-    tf_dataResidual_2b = rl.BasisPoly(
-        f"{CMS_PARAMS_LABEL}_tf_dataResidual_2b",
-        (shape_var.order,),
-        [shape_var.name],
-        basis="Bernstein",
-        limits=(-20, 20),
-        square_params=True, 
-    ) 
+    )  
     
     # set TF parameters for each pass region(6 SRs)
-    tf_dataResidual_params_1a = tf_dataResidual_1a(shape_var.scaled)
-    tf_dataResidual_params_1b = tf_dataResidual_1b(shape_var.scaled)
-    tf_dataResidual_params_2a = tf_dataResidual_2a(shape_var.scaled)
-    tf_dataResidual_params_2b = tf_dataResidual_2b(shape_var.scaled)
+    # tf_dataResidual_params_1a = tf_dataResidual_1a(shape_var.scaled)
+    # tf_dataResidual_params_1b = tf_dataResidual_1b(shape_var.scaled)
+    # tf_dataResidual_params_2a = tf_dataResidual_2a(shape_var.scaled)
+    # tf_dataResidual_params_2b = tf_dataResidual_2b(shape_var.scaled)
     
-    tf_params_pass_1a = qcd_eff_1a * tf_dataResidual_params_1a  # scale params initially by qcd eff
-    tf_params_pass_1b = qcd_eff_1b * tf_dataResidual_params_1b  # scale params initially by qcd eff
+    tf_dataResidual_params_a = tf_dataResidual_a(shape_var.scaled)
+    tf_dataResidual_params_b = tf_dataResidual_b(shape_var.scaled)
+
+    tf_params_pass_1a = qcd_eff_1a * tf_dataResidual_params_a  # scale params initially by qcd eff
+    tf_params_pass_1b = qcd_eff_1b * tf_dataResidual_params_b  # scale params initially by qcd eff
+    tf_params_pass_2a = qcd_eff_2a * tf_dataResidual_params_a  # scale params initially by qcd eff
+    tf_params_pass_2b = qcd_eff_2b * tf_dataResidual_params_b  # scale params initially by qcd eff
     
-    tf_params_pass_2a = qcd_eff_2a * tf_dataResidual_params_2a  # scale params initially by qcd eff
-    tf_params_pass_2b = qcd_eff_2b * tf_dataResidual_params_2b  # scale params initially by qcd eff
+    # tf_params_pass_1a = qcd_eff_1a * tf_dataResidual_params_1a  # scale params initially by qcd eff
+    # tf_params_pass_1b = qcd_eff_1b * tf_dataResidual_params_1b  # scale params initially by qcd eff
+    
+    # tf_params_pass_2a = qcd_eff_2a * tf_dataResidual_params_2a  # scale params initially by qcd eff
+    # tf_params_pass_2b = qcd_eff_2b * tf_dataResidual_params_2b  # scale params initially by qcd eff
         
     #set QCD parameters for 3 CRs
     qcd_params1 = np.array(

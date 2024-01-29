@@ -12,8 +12,8 @@ goftoys=0
 ffits=0
 dfit=0
 seed=42
-numtoys=200
-order=4
+numtoys=50
+order=5
 limits=0
 
 options=$(getopt -o "tfdlo:" --long "cardstag:,templatestag:,goftoys,ffits,dfit,limits,order:,numtoys:,seed:" -- "$@")
@@ -77,15 +77,21 @@ goftoys=$goftoys ffits=$ffits seed=$seed numtoys=$numtoys"
 ####################################################################################################
 
 # templates_dir="/eos/uscms/store/user/rkansal/bbVV/templates/${templates_tag}"
-cards_dir="/home/pku/zhaoyz/Higgs/boostedHWW/combine/scripts/f_test/cards"
+cd ..
+combine_dir=$(pwd)
+cd -
+cards_dir=${combine_dir}/f_test/cards
 mkdir -p ${cards_dir}
 echo "Saving datacards to ${cards_dir}"
+
+
 
 # these are for inside the different cards directories
 dataset=data_obs
 ws="./combined"
 wsm=${ws}_withmasks
 wsm_snapshot=higgsCombineSnapshot.MultiDimFit.mH125
+
 
 outsdir="./outs"
 
@@ -142,7 +148,7 @@ freezeparamsblinded=${freezeparamsblinded%,}
 # Making cards and workspaces for each order polynomial
 ####################################################################################################
 
-for ord1 in {0..5}
+for ord1 in {0..6}
 # for ord1 in 1
 do
     model_name="nTF_${ord1}"
@@ -150,10 +156,12 @@ do
     # create datacards if they don't already exist
     if [ ! -f "${cards_dir}/${model_name}/SR1a.txt" ]; then
         echo "Making Datacard for $model_name"
-        python3 -u /home/pku/zhaoyz/Higgs/boostedHWW/combine/create_datacard.py \
+        python3 -u ${combine_dir}/create_datacard.py \
         --nTF ${ord1} --model-name ${model_name} --cards-dir ${cards_dir}
     fi
 
+    pwd
+    echo ${cards_dir}
     cd ${cards_dir}/${model_name}/
     echo "now it's in: "
     echo ${cards_dir}/${model_name}/
@@ -162,18 +170,19 @@ do
     # make workspace, background-only fit, GoF on data if they don't already exist
     if [ ! -f "./higgsCombineData.GoodnessOfFit.mH125.root" ]; then
         echo "Making workspace, doing b-only fit and gof on data"
-        /home/pku/zhaoyz/Higgs/boostedHWW/combine/scripts/run_blinded.sh -wbg 
+        source ${combine_dir}/scripts/run_blinded.sh -wbg 
     fi
 
     if [ $dfit = 1 ]; then
-        /home/pku/zhaoyz/Higgs/boostedHWW/combine/scripts/run_blinded.sh -d 
+        source ${combine_dir}/scripts/run_blinded.sh -d 
     fi
 
     if [ $limits = 1 ]; then
-        /home/pku/zhaoyz/Higgs/boostedHWW/combine/scripts/run_blinded.sh -l 
+        source ${combine_dir}/scripts/run_blinded.sh -l 
     fi
 
-    cd -
+    cards_dir=${combine_dir}/f_test/cards
+    cd ${combine_dir}/scripts
 done
 
 
@@ -189,7 +198,7 @@ cd ${cards_dir}/${model_name}/
 echo "now" ${cards_dir}/${model_name}/
 toys_file="$(pwd)/higgsCombineToys${toys_name}.GenerateOnly.mH125.$seed.root"
 echo ${toys_file} "should be created"
-cd -
+cd ${combine_dir}/scripts
 
 if [ $goftoys = 1 ]; then 
     cd ${cards_dir}/${model_name}/
@@ -204,7 +213,7 @@ if [ $goftoys = 1 ]; then
     --snapshotName MultiDimFit --bypassFrequentistFit \
     -n "Toys${toys_name}" -t $numtoys --saveToys -s $seed -v 9 2>&1 | tee $outsdir/gentoys.txt
 
-    cd -
+    cd ${combine_dir}/scripts
 fi
 
     # try set "setparamsblinded" instead of "setparams" here and below
@@ -229,7 +238,7 @@ if [ $ffits = 1 ]; then # -f
         combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
         -n Toys${toys_name} -v 9 -s $seed -t $numtoys --toysFile ${toys_file} 2>&1 | tee $outsdir/GoF_toys${toys_name}.txt
 
-        cd -
+        cd ${combine_dir}/scripts
     done
 fi
 

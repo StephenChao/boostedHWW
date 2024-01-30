@@ -12,8 +12,8 @@ goftoys=0
 ffits=0
 dfit=0
 seed=42
-numtoys=50
-order=5
+numtoys=200
+order=6
 limits=0
 
 options=$(getopt -o "tfdlo:" --long "cardstag:,templatestag:,goftoys,ffits,dfit,limits,order:,numtoys:,seed:" -- "$@")
@@ -148,7 +148,7 @@ freezeparamsblinded=${freezeparamsblinded%,}
 # Making cards and workspaces for each order polynomial
 ####################################################################################################
 
-for ord1 in {0..6}
+for ord1 in {6..7}
 # for ord1 in 1
 do
     model_name="nTF_${ord1}"

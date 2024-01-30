@@ -1,0 +1,1125 @@
+ <<< Combine >>> 
+>>> random number generator seed is 44
+   Options for Robust Minimizer :: 
+        Tolerance  0.1
+        Strategy   0
+        Type,Algo  Minuit2,Migrad
+>>> method used is FitDiagnostics
+Set Default Value of Parameter mask_SR1a To : 0
+Set Default Value of Parameter mask_SR1b To : 0
+Set Default Value of Parameter mask_CR1 To : 0
+Set Default Value of Parameter mask_SR1aBlinded To : 1
+Set Default Value of Parameter mask_SR1bBlinded To : 1
+Set Default Value of Parameter mask_CR1Blinded To : 1
+Set Default Value of Parameter mask_SR2a To : 0
+Set Default Value of Parameter mask_SR2b To : 0
+Set Default Value of Parameter mask_CR2 To : 0
+Set Default Value of Parameter mask_SR2aBlinded To : 1
+Set Default Value of Parameter mask_SR2bBlinded To : 1
+Set Default Value of Parameter mask_CR2Blinded To : 1
+Set Default Value of Parameter r To : 0
+>>> 6 out of 12 channels masked
+
+Warning: A value of r is specified in both the --setParameters and --expectSignal options. The argument of --expectSignal will take precedence
+Generate toy 1/1000
+SimNLL created with 12 channels, 0 generic constraints, 154 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+Error: closed range without finding crossing.
+Error: minimization failed at r = -0.406726
+
+ --- FitDiagnostics ---
+Best fit r: 0.830743  -15.8307/+14.1693  (68% CL)
+Done in 0.73 min (cpu), 0.73 min (real)
+Generate toy 2/1000
+Error: minimization failed at r = 0.370325
+Error: minimization failed at r = -1.74079
+
+ --- FitDiagnostics ---
+Best fit r: -0.334084  -14.6659/+15.3341  (68% CL)
+Done in 0.67 min (cpu), 0.67 min (real)
+Generate toy 3/1000
+Error: minimization failed at r = 2.3413
+Error: minimization failed at r = -0.0300738
+
+ --- FitDiagnostics ---
+Best fit r: 0.94573  -15.9457/+14.0543  (68% CL)
+Done in 1.03 min (cpu), 1.03 min (real)
+Generate toy 4/1000
+Error: minimization failed at r = -0.300425
+Error: minimization failed at r = -0.300425
+
+ --- FitDiagnostics ---
+Best fit r: -0.300425  -14.6996/+15.3004  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 5/1000
+Error: minimization failed at r = -0.474774
+Error: minimization failed at r = -0.474774
+
+ --- FitDiagnostics ---
+Best fit r: -0.474774  -14.5252/+15.4748  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 6/1000
+Error: minimization failed at r = -0.954977
+Error: minimization failed at r = -0.954977
+
+ --- FitDiagnostics ---
+Best fit r: -0.954977  -14.045/+15.955  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 7/1000
+Error: minimization failed at r = -1.997
+Error: minimization failed at r = -1.997
+
+ --- FitDiagnostics ---
+Best fit r: -1.997  -13.003/+16.997  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 8/1000
+Error: minimization failed at r = 0.26418
+Error: minimization failed at r = 0.26418
+
+ --- FitDiagnostics ---
+Best fit r: 0.26418  -15.2642/+14.7358  (68% CL)
+Done in 0.08 min (cpu), 0.08 min (real)
+Generate toy 9/1000
+Error: minimization failed at r = 0.153592
+Error: minimization failed at r = 0.153592
+
+ --- FitDiagnostics ---
+Best fit r: 0.153592  -15.1536/+14.8464  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 10/1000
+Error: closed range without finding crossing.
+Error: minimization failed at r = -2.24729
+
+ --- FitDiagnostics ---
+Best fit r: -0.978313  -14.0217/+15.9783  (68% CL)
+Done in 0.79 min (cpu), 0.79 min (real)
+Generate toy 11/1000
+Error: minimization failed at r = 2.95738
+Error: minimization failed at r = 0.266908
+
+ --- FitDiagnostics ---
+Best fit r: 1.55998  -16.56/+13.44  (68% CL)
+Done in 0.91 min (cpu), 0.91 min (real)
+Generate toy 12/1000
+Error: minimization failed at r = 0.612382
+Error: minimization failed at r = 0.612382
+
+ --- FitDiagnostics ---
+Best fit r: 0.612382  -15.6124/+14.3876  (68% CL)
+Done in 0.08 min (cpu), 0.08 min (real)
+Generate toy 13/1000
+Error: minimization failed at r = 1.17981
+Error: minimization failed at r = 1.17981
+
+ --- FitDiagnostics ---
+Best fit r: 1.17981  -16.1798/+13.8202  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 14/1000
+Error: minimization failed at r = -2.70658
+Error: minimization failed at r = -2.70658
+
+ --- FitDiagnostics ---
+Best fit r: -2.70658  -12.2934/+17.7066  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 15/1000
+
+ --- FitDiagnostics ---
+Fit failed.
+Done in 0.02 min (cpu), 0.02 min (real)
+Generate toy 16/1000
+Error: minimization failed at r = 2.69395
+Error: minimization failed at r = 0.329795
+
+ --- FitDiagnostics ---
+Best fit r: 1.31806  -16.3181/+13.6819  (68% CL)
+Done in 0.45 min (cpu), 0.45 min (real)
+Generate toy 17/1000
+Error: minimization failed at r = -1.58368
+Error: minimization failed at r = -1.58368
+
+ --- FitDiagnostics ---
+Best fit r: -1.58368  -13.4163/+16.5837  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 18/1000
+Error: minimization failed at r = 0.456753
+Error: minimization failed at r = 0.456753
+
+ --- FitDiagnostics ---
+Best fit r: 0.456753  -15.4568/+14.5432  (68% CL)
+Done in 0.18 min (cpu), 0.18 min (real)
+Generate toy 19/1000
+Error: minimization failed at r = 1.09986
+Error: minimization failed at r = 1.09986
+
+ --- FitDiagnostics ---
+Best fit r: 1.09986  -16.0999/+13.9001  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 20/1000
+Error: minimization failed at r = -2.93493
+Error: minimization failed at r = -2.93493
+
+ --- FitDiagnostics ---
+Best fit r: -2.93493  -12.0651/+17.9349  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 21/1000
+Error: minimization failed at r = 0.586756
+Error: minimization failed at r = -1.9647
+
+ --- FitDiagnostics ---
+Best fit r: -0.652878  -14.3471/+15.6529  (68% CL)
+Done in 0.67 min (cpu), 0.67 min (real)
+Generate toy 22/1000
+Error: minimization failed at r = -0.531387
+Error: minimization failed at r = -0.531387
+
+ --- FitDiagnostics ---
+Best fit r: -0.531387  -14.4686/+15.5314  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 23/1000
+Error: minimization failed at r = 0.596768
+Error: minimization failed at r = 0.596768
+
+ --- FitDiagnostics ---
+Best fit r: 0.596768  -15.5968/+14.4032  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 24/1000
+Error: minimization failed at r = 1.29152
+Error: minimization failed at r = 1.29152
+
+ --- FitDiagnostics ---
+Best fit r: 1.29152  -16.2915/+13.7085  (68% CL)
+Done in 0.17 min (cpu), 0.17 min (real)
+Generate toy 25/1000
+Error: minimization failed at r = 1.00941
+Error: minimization failed at r = 1.00941
+
+ --- FitDiagnostics ---
+Best fit r: 1.00941  -16.0094/+13.9906  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 26/1000
+Error: minimization failed at r = -1.8467
+Error: minimization failed at r = -1.8467
+
+ --- FitDiagnostics ---
+Best fit r: -1.8467  -13.1533/+16.8467  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 27/1000
+Error: minimization failed at r = 0.329608
+Error: minimization failed at r = 0.329608
+
+ --- FitDiagnostics ---
+Best fit r: 0.329608  -15.3296/+14.6704  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 28/1000
+Error: minimization failed at r = -1.148
+Error: minimization failed at r = -1.148
+
+ --- FitDiagnostics ---
+Best fit r: -1.148  -13.852/+16.148  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 29/1000
+Error: minimization failed at r = -0.425183
+Error: minimization failed at r = -0.425183
+
+ --- FitDiagnostics ---
+Best fit r: -0.425183  -14.5748/+15.4252  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 30/1000
+Error: minimization failed at r = -0.741071
+Error: minimization failed at r = -0.741071
+
+ --- FitDiagnostics ---
+Best fit r: -0.741071  -14.2589/+15.7411  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 31/1000
+Error: minimization failed at r = 1.64113
+Error: minimization failed at r = 1.64113
+
+ --- FitDiagnostics ---
+Best fit r: 1.64113  -16.6411/+13.3589  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 32/1000
+Error: minimization failed at r = -1.86673
+Error: minimization failed at r = -1.86673
+
+ --- FitDiagnostics ---
+Best fit r: -1.86673  -13.1333/+16.8667  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 33/1000
+Error: minimization failed at r = 0.989692
+Error: minimization failed at r = 0.989692
+
+ --- FitDiagnostics ---
+Best fit r: 0.989692  -15.9897/+14.0103  (68% CL)
+Done in 0.20 min (cpu), 0.20 min (real)
+Generate toy 34/1000
+Error: minimization failed at r = 0.888592
+Error: minimization failed at r = 0.888592
+
+ --- FitDiagnostics ---
+Best fit r: 0.888592  -15.8886/+14.1114  (68% CL)
+Done in 0.12 min (cpu), 0.13 min (real)
+Generate toy 35/1000
+Error: minimization failed at r = -0.967298
+Error: minimization failed at r = -0.967298
+
+ --- FitDiagnostics ---
+Best fit r: -0.967298  -14.0327/+15.9673  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 36/1000
+Error: minimization failed at r = 0.892207
+Error: minimization failed at r = 0.892207
+
+ --- FitDiagnostics ---
+Best fit r: 0.892207  -15.8922/+14.1078  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 37/1000
+Error: minimization failed at r = -2.68144
+Error: minimization failed at r = -2.68144
+
+ --- FitDiagnostics ---
+Best fit r: -2.68144  -12.3186/+17.6814  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 38/1000
+Error: minimization failed at r = -0.0274648
+Error: minimization failed at r = -0.0274648
+
+ --- FitDiagnostics ---
+Best fit r: -0.0274648  -14.9725/+15.0275  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 39/1000
+Error: minimization failed at r = 2.01568
+Error: minimization failed at r = -0.560906
+
+ --- FitDiagnostics ---
+Best fit r: 0.712747  -15.7127/+14.2873  (68% CL)
+Done in 0.87 min (cpu), 0.87 min (real)
+Generate toy 40/1000
+Error: minimization failed at r = -0.18239
+Error: minimization failed at r = -0.18239
+
+ --- FitDiagnostics ---
+Best fit r: -0.18239  -14.8176/+15.1824  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 41/1000
+Error: minimization failed at r = -1.52205
+
+ --- FitDiagnostics ---
+Best fit r: -2.77394  -1.22266/+17.7739  (68% CL)
+Done in 0.35 min (cpu), 0.35 min (real)
+Generate toy 42/1000
+Error: minimization failed at r = -0.612484
+Error: minimization failed at r = -0.612484
+
+ --- FitDiagnostics ---
+Best fit r: -0.612484  -14.3875/+15.6125  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 43/1000
+Error: minimization failed at r = -1.25249
+Error: minimization failed at r = -1.25249
+
+ --- FitDiagnostics ---
+Best fit r: -1.25249  -13.7475/+16.2525  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 44/1000
+Error: minimization failed at r = -1.6726
+Error: minimization failed at r = -1.6726
+
+ --- FitDiagnostics ---
+Best fit r: -1.6726  -13.3274/+16.6726  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 45/1000
+Error: minimization failed at r = -0.123865
+Error: minimization failed at r = -0.123865
+
+ --- FitDiagnostics ---
+Best fit r: -0.123865  -14.8761/+15.1239  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 46/1000
+Error: minimization failed at r = -1.1601
+Error: minimization failed at r = -1.1601
+
+ --- FitDiagnostics ---
+Best fit r: -1.1601  -13.8399/+16.1601  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 47/1000
+Error: minimization failed at r = -1.91696
+Error: minimization failed at r = -1.91696
+
+ --- FitDiagnostics ---
+Best fit r: -1.91696  -13.083/+16.917  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 48/1000
+Error: minimization failed at r = 3.28375
+Error: minimization failed at r = 3.28375
+
+ --- FitDiagnostics ---
+Best fit r: 3.28375  -18.2837/+11.7163  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 49/1000
+Error: minimization failed at r = 0.245223
+Error: minimization failed at r = 0.245223
+
+ --- FitDiagnostics ---
+Best fit r: 0.245223  -15.2452/+14.7548  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 50/1000
+Error: minimization failed at r = -1.53242
+Error: minimization failed at r = -1.53242
+
+ --- FitDiagnostics ---
+Best fit r: -1.53242  -13.4676/+16.5324  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 51/1000
+Error: minimization failed at r = -2.894
+Error: minimization failed at r = -2.894
+
+ --- FitDiagnostics ---
+Best fit r: -2.894  -12.106/+17.894  (68% CL)
+Done in 0.08 min (cpu), 0.08 min (real)
+Generate toy 52/1000
+Error: minimization failed at r = 0.834107
+Error: minimization failed at r = 0.834107
+
+ --- FitDiagnostics ---
+Best fit r: 0.834107  -15.8341/+14.1659  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 53/1000
+Error: closed range without finding crossing.
+Error: minimization failed at r = -0.472583
+
+ --- FitDiagnostics ---
+Best fit r: 0.474448  -15.4744/+14.5256  (68% CL)
+Done in 0.97 min (cpu), 0.97 min (real)
+Generate toy 54/1000
+Error: minimization failed at r = 1.31134
+Error: minimization failed at r = 1.31134
+
+ --- FitDiagnostics ---
+Best fit r: 1.31134  -16.3113/+13.6887  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 55/1000
+Error: minimization failed at r = -0.44944
+Error: minimization failed at r = -0.44944
+
+ --- FitDiagnostics ---
+Best fit r: -0.44944  -14.5506/+15.4494  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 56/1000
+Error: minimization failed at r = 0.751985
+Error: minimization failed at r = 0.751985
+
+ --- FitDiagnostics ---
+Best fit r: 0.751985  -15.752/+14.248  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 57/1000
+Error: minimization failed at r = -2.74743
+Error: minimization failed at r = -2.74743
+
+ --- FitDiagnostics ---
+Best fit r: -2.74743  -12.2526/+17.7474  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 58/1000
+Error: minimization failed at r = -1.06021
+Error: minimization failed at r = -1.06021
+
+ --- FitDiagnostics ---
+Best fit r: -1.06021  -13.9398/+16.0602  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 59/1000
+Error: minimization failed at r = -2.43613
+Error: minimization failed at r = -2.43613
+
+ --- FitDiagnostics ---
+Best fit r: -2.43613  -12.5639/+17.4361  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 60/1000
+Error: minimization failed at r = -2.30065
+Error: minimization failed at r = -2.30065
+
+ --- FitDiagnostics ---
+Best fit r: -2.30065  -12.6994/+17.3006  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 61/1000
+Error: minimization failed at r = 2.13089
+Error: minimization failed at r = 2.13089
+
+ --- FitDiagnostics ---
+Best fit r: 2.13089  -17.1309/+12.8691  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 62/1000
+Error: minimization failed at r = 1.528
+Error: minimization failed at r = 1.528
+
+ --- FitDiagnostics ---
+Best fit r: 1.528  -16.528/+13.472  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 63/1000
+Error: minimization failed at r = 2.2086
+Error: minimization failed at r = 2.2086
+
+ --- FitDiagnostics ---
+Best fit r: 2.2086  -17.2086/+12.7914  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 64/1000
+Error: minimization failed at r = 0.692902
+Error: minimization failed at r = -1.51829
+
+ --- FitDiagnostics ---
+Best fit r: -0.22943  -14.7706/+15.2294  (68% CL)
+Done in 0.70 min (cpu), 0.70 min (real)
+Generate toy 65/1000
+Error: minimization failed at r = 2.87801
+Error: minimization failed at r = 0.511092
+
+ --- FitDiagnostics ---
+Best fit r: 1.52217  -16.5222/+13.4778  (68% CL)
+Done in 0.90 min (cpu), 0.90 min (real)
+Generate toy 66/1000
+Error: minimization failed at r = 2.66258
+Error: minimization failed at r = 2.66258
+
+ --- FitDiagnostics ---
+Best fit r: 2.66258  -17.6626/+12.3374  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 67/1000
+Error: minimization failed at r = 1.28464
+Error: minimization failed at r = -1.00636
+
+ --- FitDiagnostics ---
+Best fit r: -0.0860948  -14.9139/+15.0861  (68% CL)
+Done in 0.81 min (cpu), 0.81 min (real)
+Generate toy 68/1000
+Error: minimization failed at r = 2.18757
+Error: minimization failed at r = 2.18757
+
+ --- FitDiagnostics ---
+Best fit r: 2.18757  -17.1876/+12.8124  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 69/1000
+Error: closed range without finding crossing.
+Error: closed range without finding crossing.
+
+ --- FitDiagnostics ---
+Best fit r: 1.46014  -16.4601/+13.5399  (68% CL)
+Done in 1.08 min (cpu), 1.08 min (real)
+Generate toy 70/1000
+Error: minimization failed at r = 0.162163
+Error: minimization failed at r = 0.162163
+
+ --- FitDiagnostics ---
+Best fit r: 0.162163  -15.1622/+14.8378  (68% CL)
+Done in 0.17 min (cpu), 0.17 min (real)
+Generate toy 71/1000
+Error: minimization failed at r = -0.830714
+Error: minimization failed at r = -0.830714
+
+ --- FitDiagnostics ---
+Best fit r: -0.830714  -14.1693/+15.8307  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 72/1000
+Error: minimization failed at r = -2.2956
+Error: minimization failed at r = -2.2956
+
+ --- FitDiagnostics ---
+Best fit r: -2.2956  -12.7044/+17.2956  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 73/1000
+Error: minimization failed at r = 3.41195
+Error: minimization failed at r = 3.41195
+
+ --- FitDiagnostics ---
+Best fit r: 3.41195  -18.4119/+11.5881  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 74/1000
+Error: minimization failed at r = -1.62452
+Error: minimization failed at r = -1.62452
+
+ --- FitDiagnostics ---
+Best fit r: -1.62452  -13.3755/+16.6245  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 75/1000
+Error: minimization failed at r = 0.137735
+Error: minimization failed at r = 0.137735
+
+ --- FitDiagnostics ---
+Best fit r: 0.137735  -15.1377/+14.8623  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 76/1000
+Error: minimization failed at r = -2.25003
+Error: minimization failed at r = -2.25003
+
+ --- FitDiagnostics ---
+Best fit r: -2.25003  -12.75/+17.25  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 77/1000
+Error: minimization failed at r = -0.29442
+Error: minimization failed at r = -0.29442
+
+ --- FitDiagnostics ---
+Best fit r: -0.29442  -14.7056/+15.2944  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 78/1000
+Error: minimization failed at r = 1.03194
+Error: minimization failed at r = -1.62838
+
+ --- FitDiagnostics ---
+Best fit r: -0.305094  -14.6949/+15.3051  (68% CL)
+Done in 0.73 min (cpu), 0.73 min (real)
+Generate toy 79/1000
+Error: minimization failed at r = 0.183921
+Error: minimization failed at r = 0.183921
+
+ --- FitDiagnostics ---
+Best fit r: 0.183921  -15.1839/+14.8161  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 80/1000
+Error: minimization failed at r = 1.00943
+Error: minimization failed at r = 1.00943
+
+ --- FitDiagnostics ---
+Best fit r: 1.00943  -16.0094/+13.9906  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 81/1000
+Error: minimization failed at r = 0.0978561
+Error: minimization failed at r = -2.48943
+
+ --- FitDiagnostics ---
+Best fit r: -1.24361  -13.7564/+16.2436  (68% CL)
+Done in 0.89 min (cpu), 0.89 min (real)
+Generate toy 82/1000
+Error: minimization failed at r = -0.213334
+Error: minimization failed at r = -0.213334
+
+ --- FitDiagnostics ---
+Best fit r: -0.213334  -14.7867/+15.2133  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 83/1000
+Error: minimization failed at r = 0.32752
+Error: minimization failed at r = 0.32752
+
+ --- FitDiagnostics ---
+Best fit r: 0.32752  -15.3275/+14.6725  (68% CL)
+Done in 0.17 min (cpu), 0.16 min (real)
+Generate toy 84/1000
+Error: minimization failed at r = -2.08742
+Error: minimization failed at r = -2.08742
+
+ --- FitDiagnostics ---
+Best fit r: -2.08742  -12.9126/+17.0874  (68% CL)
+Done in 0.08 min (cpu), 0.08 min (real)
+Generate toy 85/1000
+Error: minimization failed at r = -1.17351
+Error: minimization failed at r = -1.17351
+
+ --- FitDiagnostics ---
+Best fit r: -1.17351  -13.8265/+16.1735  (68% CL)
+Done in 0.08 min (cpu), 0.08 min (real)
+Generate toy 86/1000
+Error: minimization failed at r = 0.206114
+Error: minimization failed at r = -1.67089
+
+ --- FitDiagnostics ---
+Best fit r: -0.7476  -14.2524/+15.7476  (68% CL)
+Done in 0.66 min (cpu), 0.66 min (real)
+Generate toy 87/1000
+Error: closed range without finding crossing.
+Error: minimization failed at r = -1.18533
+
+ --- FitDiagnostics ---
+Best fit r: -0.294744  -14.7053/+15.2947  (68% CL)
+Done in 0.67 min (cpu), 0.67 min (real)
+Generate toy 88/1000
+Error: minimization failed at r = -1.16239
+Error: minimization failed at r = -1.16239
+
+ --- FitDiagnostics ---
+Best fit r: -1.16239  -13.8376/+16.1624  (68% CL)
+Done in 0.24 min (cpu), 0.24 min (real)
+Generate toy 89/1000
+Error: minimization failed at r = 1.50703
+Error: minimization failed at r = 1.50703
+
+ --- FitDiagnostics ---
+Best fit r: 1.50703  -16.507/+13.493  (68% CL)
+Done in 0.19 min (cpu), 0.19 min (real)
+Generate toy 90/1000
+Error: minimization failed at r = 2.23447
+Error: minimization failed at r = 2.23447
+
+ --- FitDiagnostics ---
+Best fit r: 2.23447  -17.2345/+12.7655  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 91/1000
+Error: minimization failed at r = 2.65111
+Error: minimization failed at r = 0.285051
+
+ --- FitDiagnostics ---
+Best fit r: 1.27043  -16.2704/+13.7296  (68% CL)
+Done in 0.62 min (cpu), 0.62 min (real)
+Generate toy 92/1000
+Error: minimization failed at r = -0.216863
+Error: minimization failed at r = -0.216863
+
+ --- FitDiagnostics ---
+Best fit r: -0.216863  -14.7831/+15.2169  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 93/1000
+Error: minimization failed at r = -0.707969
+Error: minimization failed at r = -0.707969
+
+ --- FitDiagnostics ---
+Best fit r: -0.707969  -14.292/+15.708  (68% CL)
+Done in 0.20 min (cpu), 0.20 min (real)
+Generate toy 94/1000
+Error: minimization failed at r = 0.940524
+Error: minimization failed at r = 0.940524
+
+ --- FitDiagnostics ---
+Best fit r: 0.940524  -15.9405/+14.0595  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 95/1000
+Error: minimization failed at r = -1.09557
+Error: minimization failed at r = -1.09557
+
+ --- FitDiagnostics ---
+Best fit r: -1.09557  -13.9044/+16.0956  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 96/1000
+Error: minimization failed at r = -0.455936
+Error: minimization failed at r = -0.455936
+
+ --- FitDiagnostics ---
+Best fit r: -0.455936  -14.5441/+15.4559  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 97/1000
+Error: minimization failed at r = -0.322674
+Error: minimization failed at r = -0.322674
+
+ --- FitDiagnostics ---
+Best fit r: -0.322674  -14.6773/+15.3227  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 98/1000
+Error: minimization failed at r = -0.334939
+Error: minimization failed at r = -0.334939
+
+ --- FitDiagnostics ---
+Best fit r: -0.334939  -14.6651/+15.3349  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 99/1000
+Error: minimization failed at r = 2.72576
+Error: minimization failed at r = 2.72576
+
+ --- FitDiagnostics ---
+Best fit r: 2.72576  -17.7258/+12.2742  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 100/1000
+Error: minimization failed at r = -0.391808
+
+ --- FitDiagnostics ---
+Best fit r: -0.364366  -14.6356/+1.34351  (68% CL)
+Done in 0.72 min (cpu), 0.72 min (real)
+Generate toy 101/1000
+Error: minimization failed at r = -2.21739
+Error: minimization failed at r = -2.21739
+
+ --- FitDiagnostics ---
+Best fit r: -2.21739  -12.7826/+17.2174  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 102/1000
+Error: minimization failed at r = 0.452595
+Error: minimization failed at r = 0.452595
+
+ --- FitDiagnostics ---
+Best fit r: 0.452595  -15.4526/+14.5474  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 103/1000
+Error: minimization failed at r = 0.173331
+Error: minimization failed at r = 0.173331
+
+ --- FitDiagnostics ---
+Best fit r: 0.173331  -15.1733/+14.8267  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 104/1000
+Error: minimization failed at r = 1.35617
+Error: minimization failed at r = -1.44172
+
+ --- FitDiagnostics ---
+Best fit r: -0.032708  -14.9673/+15.0327  (68% CL)
+Done in 0.92 min (cpu), 0.92 min (real)
+Generate toy 105/1000
+Error: minimization failed at r = -0.432264
+Error: minimization failed at r = -0.432264
+
+ --- FitDiagnostics ---
+Best fit r: -0.432264  -14.5677/+15.4323  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 106/1000
+Error: minimization failed at r = -2.04982
+Error: minimization failed at r = -2.04982
+
+ --- FitDiagnostics ---
+Best fit r: -2.04982  -12.9502/+17.0498  (68% CL)
+Done in 0.20 min (cpu), 0.20 min (real)
+Generate toy 107/1000
+Error: minimization failed at r = 0.427735
+Error: minimization failed at r = 0.427735
+
+ --- FitDiagnostics ---
+Best fit r: 0.427735  -15.4277/+14.5723  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 108/1000
+Error: minimization failed at r = 0.559708
+Error: minimization failed at r = 0.559708
+
+ --- FitDiagnostics ---
+Best fit r: 0.559708  -15.5597/+14.4403  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 109/1000
+Error: minimization failed at r = -0.638671
+Error: minimization failed at r = -0.638671
+
+ --- FitDiagnostics ---
+Best fit r: -0.638671  -14.3613/+15.6387  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 110/1000
+Error: minimization failed at r = -1.52508
+Error: minimization failed at r = -1.52508
+
+ --- FitDiagnostics ---
+Best fit r: -1.52508  -13.4749/+16.5251  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 111/1000
+Error: minimization failed at r = 0.183834
+Error: minimization failed at r = 0.183834
+
+ --- FitDiagnostics ---
+Best fit r: 0.183834  -15.1838/+14.8162  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 112/1000
+Error: minimization failed at r = -2.21682
+Error: minimization failed at r = -2.21682
+
+ --- FitDiagnostics ---
+Best fit r: -2.21682  -12.7832/+17.2168  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 113/1000
+Error: minimization failed at r = 0.269667
+Error: minimization failed at r = 0.269667
+
+ --- FitDiagnostics ---
+Best fit r: 0.269667  -15.2697/+14.7303  (68% CL)
+Done in 0.20 min (cpu), 0.20 min (real)
+Generate toy 114/1000
+Error: minimization failed at r = -0.629455
+Error: minimization failed at r = -0.629455
+
+ --- FitDiagnostics ---
+Best fit r: -0.629455  -14.3705/+15.6295  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 115/1000
+Error: minimization failed at r = 0.0263677
+Error: minimization failed at r = 0.0263677
+
+ --- FitDiagnostics ---
+Best fit r: 0.0263677  -15.0264/+14.9736  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 116/1000
+Error: minimization failed at r = 0.556889
+Error: minimization failed at r = 0.556889
+
+ --- FitDiagnostics ---
+Best fit r: 0.556889  -15.5569/+14.4431  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 117/1000
+Error: minimization failed at r = -0.00463799
+Error: minimization failed at r = -2.52283
+
+ --- FitDiagnostics ---
+Best fit r: -1.28034  -13.7197/+16.2803  (68% CL)
+Done in 0.66 min (cpu), 0.66 min (real)
+Generate toy 118/1000
+Error: minimization failed at r = 0.773259
+Error: minimization failed at r = 0.773259
+
+ --- FitDiagnostics ---
+Best fit r: 0.773259  -15.7733/+14.2267  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 119/1000
+Error: closed range without finding crossing.
+Error: closed range without finding crossing.
+
+ --- FitDiagnostics ---
+Best fit r: 0.914439  -15.9144/+14.0856  (68% CL)
+Done in 1.27 min (cpu), 1.27 min (real)
+Generate toy 120/1000
+Error: minimization failed at r = 0.456769
+Error: minimization failed at r = 0.456769
+
+ --- FitDiagnostics ---
+Best fit r: 0.456769  -15.4568/+14.5432  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 121/1000
+Error: minimization failed at r = 0.187971
+Error: minimization failed at r = -2.20606
+
+ --- FitDiagnostics ---
+Best fit r: -0.920026  -14.08/+15.92  (68% CL)
+Done in 1.07 min (cpu), 1.07 min (real)
+Generate toy 122/1000
+Error: minimization failed at r = 1.81922
+Error: minimization failed at r = 1.81922
+
+ --- FitDiagnostics ---
+Best fit r: 1.81922  -16.8192/+13.1808  (68% CL)
+Done in 0.22 min (cpu), 0.22 min (real)
+Generate toy 123/1000
+Error: minimization failed at r = 0.144418
+Error: minimization failed at r = 0.144418
+
+ --- FitDiagnostics ---
+Best fit r: 0.144418  -15.1444/+14.8556  (68% CL)
+Done in 0.20 min (cpu), 0.20 min (real)
+Generate toy 124/1000
+Error: closed range without finding crossing.
+Error: minimization failed at r = -1.91529
+
+ --- FitDiagnostics ---
+Best fit r: -0.604853  -14.3951/+15.6049  (68% CL)
+Done in 1.20 min (cpu), 1.20 min (real)
+Generate toy 125/1000
+Error: minimization failed at r = -0.800395
+Error: minimization failed at r = -3.05875
+
+ --- FitDiagnostics ---
+Best fit r: -1.819  -13.181/+16.819  (68% CL)
+Done in 0.78 min (cpu), 0.78 min (real)
+Generate toy 126/1000
+Error: minimization failed at r = -0.656107
+Error: minimization failed at r = -0.656107
+
+ --- FitDiagnostics ---
+Best fit r: -0.656107  -14.3439/+15.6561  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 127/1000
+Error: minimization failed at r = -0.326307
+Error: minimization failed at r = -0.326307
+
+ --- FitDiagnostics ---
+Best fit r: -0.326307  -14.6737/+15.3263  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 128/1000
+Error: minimization failed at r = 0.736285
+Error: minimization failed at r = 0.736285
+
+ --- FitDiagnostics ---
+Best fit r: 0.736285  -15.7363/+14.2637  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 129/1000
+Error: minimization failed at r = -2.09963
+Error: minimization failed at r = -2.09963
+
+ --- FitDiagnostics ---
+Best fit r: -2.09963  -12.9004/+17.0996  (68% CL)
+Done in 0.12 min (cpu), 0.11 min (real)
+Generate toy 130/1000
+Error: minimization failed at r = 0.664768
+Error: minimization failed at r = 0.664768
+
+ --- FitDiagnostics ---
+Best fit r: 0.664768  -15.6648/+14.3352  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 131/1000
+Error: minimization failed at r = 0.263049
+Error: minimization failed at r = 0.263049
+
+ --- FitDiagnostics ---
+Best fit r: 0.263049  -15.263/+14.737  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 132/1000
+Error: minimization failed at r = -0.252668
+Error: minimization failed at r = -0.252668
+
+ --- FitDiagnostics ---
+Best fit r: -0.252668  -14.7473/+15.2527  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 133/1000
+Error: minimization failed at r = 3.14699
+Error: minimization failed at r = 0.627947
+
+ --- FitDiagnostics ---
+Best fit r: 1.68855  -16.6886/+13.3114  (68% CL)
+Done in 0.85 min (cpu), 0.85 min (real)
+Generate toy 134/1000
+Error: minimization failed at r = 1.92114
+Error: minimization failed at r = -0.679148
+
+ --- FitDiagnostics ---
+Best fit r: 0.618732  -15.6187/+14.3813  (68% CL)
+Done in 0.82 min (cpu), 0.82 min (real)
+Generate toy 135/1000
+Error: minimization failed at r = -1.16735
+Error: minimization failed at r = -1.16735
+
+ --- FitDiagnostics ---
+Best fit r: -1.16735  -13.8326/+16.1674  (68% CL)
+Done in 0.08 min (cpu), 0.08 min (real)
+Generate toy 136/1000
+Error: minimization failed at r = 2.01449
+Error: minimization failed at r = 2.01449
+
+ --- FitDiagnostics ---
+Best fit r: 2.01449  -17.0145/+12.9855  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 137/1000
+Error: minimization failed at r = 2.02504
+Error: closed range without finding crossing.
+
+ --- FitDiagnostics ---
+Best fit r: 0.732436  -15.7324/+14.2676  (68% CL)
+Done in 1.13 min (cpu), 1.13 min (real)
+Generate toy 138/1000
+Error: minimization failed at r = 0.941723
+Error: minimization failed at r = 0.941723
+
+ --- FitDiagnostics ---
+Best fit r: 0.941723  -15.9417/+14.0583  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 139/1000
+Error: minimization failed at r = -0.661914
+Error: minimization failed at r = -0.661914
+
+ --- FitDiagnostics ---
+Best fit r: -0.661914  -14.3381/+15.6619  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 140/1000
+Error: minimization failed at r = -0.210378
+Error: minimization failed at r = -0.210378
+
+ --- FitDiagnostics ---
+Best fit r: -0.210378  -14.7896/+15.2104  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 141/1000
+Error: minimization failed at r = -0.40185
+Error: minimization failed at r = -0.40185
+
+ --- FitDiagnostics ---
+Best fit r: -0.40185  -14.5982/+15.4018  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 142/1000
+Error: minimization failed at r = 0.244362
+Error: minimization failed at r = 0.244362
+
+ --- FitDiagnostics ---
+Best fit r: 0.244362  -15.2444/+14.7556  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 143/1000
+Error: minimization failed at r = -0.821115
+Error: minimization failed at r = -0.821115
+
+ --- FitDiagnostics ---
+Best fit r: -0.821115  -14.1789/+15.8211  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 144/1000
+Error: minimization failed at r = 1.76995
+Error: minimization failed at r = 1.76995
+
+ --- FitDiagnostics ---
+Best fit r: 1.76995  -16.7699/+13.2301  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 145/1000
+Error: minimization failed at r = -1.00605
+Error: minimization failed at r = -1.00605
+
+ --- FitDiagnostics ---
+Best fit r: -1.00605  -13.9939/+16.0061  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 146/1000
+Error: minimization failed at r = 1.98463
+Error: minimization failed at r = -0.704306
+
+ --- FitDiagnostics ---
+Best fit r: 0.599308  -15.5993/+14.4007  (68% CL)
+Done in 0.92 min (cpu), 0.92 min (real)
+Generate toy 147/1000
+Error: minimization failed at r = 1.62728
+Error: minimization failed at r = -0.653425
+
+ --- FitDiagnostics ---
+Best fit r: 0.301229  -15.3012/+14.6988  (68% CL)
+Done in 0.89 min (cpu), 0.89 min (real)
+Generate toy 148/1000
+Error: minimization failed at r = -0.947206
+Error: minimization failed at r = -0.947206
+
+ --- FitDiagnostics ---
+Best fit r: -0.947206  -14.0528/+15.9472  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 149/1000
+Error: minimization failed at r = 0.248065
+Error: minimization failed at r = 0.248065
+
+ --- FitDiagnostics ---
+Best fit r: 0.248065  -15.2481/+14.7519  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 150/1000
+Error: minimization failed at r = 3.27551
+Error: minimization failed at r = 0.66195
+
+ --- FitDiagnostics ---
+Best fit r: 1.83289  -16.8329/+13.1671  (68% CL)
+Done in 0.52 min (cpu), 0.52 min (real)
+Generate toy 151/1000
+Error: minimization failed at r = -0.586494
+
+ --- FitDiagnostics ---
+Best fit r: 0.673659  -15.6737/+1.40216  (68% CL)
+Done in 0.60 min (cpu), 0.60 min (real)
+Generate toy 152/1000
+Error: minimization failed at r = -1.56145
+Error: minimization failed at r = -1.56145
+
+ --- FitDiagnostics ---
+Best fit r: -1.56145  -13.4385/+16.5615  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 153/1000
+Error: minimization failed at r = 0.753478
+Error: minimization failed at r = 0.753478
+
+ --- FitDiagnostics ---
+Best fit r: 0.753478  -15.7535/+14.2465  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 154/1000
+Error: minimization failed at r = 2.93414
+
+ --- FitDiagnostics ---
+Best fit r: 1.57821  -1.31425/+13.4218  (68% CL)
+Done in 0.95 min (cpu), 0.95 min (real)
+Generate toy 155/1000
+Error: minimization failed at r = 0.968542
+Error: minimization failed at r = 0.968542
+
+ --- FitDiagnostics ---
+Best fit r: 0.968542  -15.9685/+14.0315  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 156/1000
+Error: minimization failed at r = -1.47092
+Error: minimization failed at r = -1.47092
+
+ --- FitDiagnostics ---
+Best fit r: -1.47092  -13.5291/+16.4709  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 157/1000
+Error: minimization failed at r = 0.48948
+Error: minimization failed at r = 0.48948
+
+ --- FitDiagnostics ---
+Best fit r: 0.48948  -15.4895/+14.5105  (68% CL)
+Done in 0.18 min (cpu), 0.18 min (real)
+Generate toy 158/1000
+Error: minimization failed at r = -0.321184
+Error: minimization failed at r = -0.321184
+
+ --- FitDiagnostics ---
+Best fit r: -0.321184  -14.6788/+15.3212  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 159/1000

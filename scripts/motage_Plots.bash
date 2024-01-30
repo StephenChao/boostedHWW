@@ -135,14 +135,14 @@ idx=-1; unset img;
 # ((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/prefit/25Jan2024/Full-Run2_MH_Reco_DECO_SR2bprefit_.pdf'
 # ((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/prefit/25Jan2024/Full-Run2_MH_Reco_DECO_CR2prefit_.pdf'
 
-((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Full-Run2_MH_Reco_DECO_SR1apostfit,order=4_.pdf'
-((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Full-Run2_MH_Reco_DECO_SR1bpostfit,order=4_.pdf'
-((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Full-Run2_MH_Reco_DECO_CR1postfit,order=4_.pdf'
-((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Full-Run2_MH_Reco_DECO_SR2apostfit,order=4_.pdf'
-((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Full-Run2_MH_Reco_DECO_SR2bpostfit,order=4_.pdf'
-((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Full-Run2_MH_Reco_DECO_CR2postfit,order=4_.pdf'
+((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/29Jan2024/Full-Run2_MH_Reco_DECO_SR1apostfit,order=6_.pdf'
+((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/29Jan2024/Full-Run2_MH_Reco_DECO_SR1bpostfit,order=6_.pdf'
+((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/29Jan2024/Full-Run2_MH_Reco_DECO_CR1postfit,order=6_.pdf'
+((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/29Jan2024/Full-Run2_MH_Reco_DECO_SR2apostfit,order=6_.pdf'
+((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/29Jan2024/Full-Run2_MH_Reco_DECO_SR2bpostfit,order=6_.pdf'
+((idx++)); img[idx]='/home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/29Jan2024/Full-Run2_MH_Reco_DECO_CR2postfit,order=6_.pdf'
 
 # montage -mode concatenate -tile 3x2 ${img[*]}  -resize 4000x -border 0  -geometry +0+0 Impacts_OnlyQCDRP.png;
-montage -mode concatenate -tile 3x2 ${img[*]} /home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/25Jan2024/Postfit_50.png;
+montage -mode concatenate -tile 3x2 ${img[*]} /home/pku/zhaoyz/Higgs/boostedHWW/postprocessing/plots/postfit/29Jan2024/Postfit.png;
 ##display Multi_PS_.png &
 #

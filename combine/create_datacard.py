@@ -67,12 +67,18 @@ def add_bool_arg(parser, name, help, default=False, no_name=None):
     group.add_argument("--" + no_name, dest=varname, action="store_false", help=no_help)
     parser.set_defaults(**{varname: default})
 parser.add_argument(
-    "--nTF",
+    "--nTFa",
     default=None,
     nargs="*",
     type=int,
-    help="order of polynomial for TF in [dim 1, dim 2] = [mH(bb), -] for nonresonant or [mY, mX] for resonant."
-    "Default is 0 for nonresonant and (1, 2) for resonant.",
+    help="order of polynomial for TFa.",
+)
+parser.add_argument(
+    "--nTFb",
+    default=None,
+    nargs="*",
+    type=int,
+    help="order of polynomial for TFb.",
 )
 parser.add_argument("--cards-dir", default="/home/pku/zhaoyz/Higgs/boostedHWW/combine/cards/", type=str, help="output card directory")
 parser.add_argument("--model-name", default="HWWfhModel", type=str, help="output model name")
@@ -102,8 +108,11 @@ if args.year != "all":
 else:
     full_lumi = np.sum(list(LUMI.values()))
     
-if args.nTF is None:
-    args.nTF = [0] # TODO: order to be decided
+if args.nTFa is None:
+    args.nTFa = [0] # set default to 0
+
+if args.nTFb is None:
+    args.nTFb = [0] # set default to 0
      
 mc_samples = OrderedDict(
     [
@@ -134,7 +143,8 @@ class ShapeVar:
 
     name:str = None
     bins:np.ndarray = None  # bin edges
-    order:int = None  # TF order, to be decided
+    order_a:int = None  # TF order for tf_a, to be decided
+    order_b:int = None  # TF order for tf_b, to be decided
 
     def __post_init__(self):
         # use bin centers for polynomial fit
@@ -295,7 +305,7 @@ def main(args):
     
     #MH_Reco for full-hadronic boosted HWW
     shape_vars = [
-        ShapeVar(name=axis.name, bins=axis.edges, order=args.nTF[i])
+        ShapeVar(name=axis.name, bins=axis.edges, order_a=args.nTFa[i],order_b=args.nTFb[i])
         for i, axis in enumerate(sample_templates.axes[1:]) #should be [1:] for boosted HWW analysis, because the 1st axes is mass
     ]
     # logging.info("shape_var = ",shape_vars)
@@ -311,7 +321,8 @@ def main(args):
         args.bblite,
     ]
     fit_args = [model, shape_vars, hists_templates, args.scale_templates, args.min_qcd_val]
-    print("now order is",args.nTF[0])
+    print("now order_a is",args.nTFa[0])
+    print("now order_b is",args.nTFb[0])
     fill_regions(*fill_args)
     alphabet_fit(*fit_args)
     
@@ -527,7 +538,7 @@ def alphabet_fit(
     
     tf_dataResidual_a = rl.BasisPoly(
         f"{CMS_PARAMS_LABEL}_tf_dataResidual_a",
-        (shape_var.order,),
+        (shape_var.order_a,),
         [shape_var.name],
         basis="Bernstein",
         limits=(-20, 20),
@@ -535,7 +546,7 @@ def alphabet_fit(
     )
     tf_dataResidual_b = rl.BasisPoly(
         f"{CMS_PARAMS_LABEL}_tf_dataResidual_b",
-        (shape_var.order,),
+        (shape_var.order_b,),
         [shape_var.name],
         basis="Bernstein",
         limits=(-20, 20),

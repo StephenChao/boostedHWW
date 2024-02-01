@@ -1,0 +1,130 @@
+ <<< Combine >>> 
+>>> random number generator seed is 42
+   Options for Robust Minimizer :: 
+        Tolerance  0.1
+        Strategy   0
+        Type,Algo  Minuit2,Migrad
+>>> method used is FitDiagnostics
+Set Default Value of Parameter mask_SR1a To : 0
+Set Default Value of Parameter mask_SR1b To : 0
+Set Default Value of Parameter mask_CR1 To : 0
+Set Default Value of Parameter mask_SR1aBlinded To : 1
+Set Default Value of Parameter mask_SR1bBlinded To : 1
+Set Default Value of Parameter mask_CR1Blinded To : 1
+Set Default Value of Parameter mask_SR2a To : 0
+Set Default Value of Parameter mask_SR2b To : 0
+Set Default Value of Parameter mask_CR2 To : 0
+Set Default Value of Parameter mask_SR2aBlinded To : 1
+Set Default Value of Parameter mask_SR2bBlinded To : 1
+Set Default Value of Parameter mask_CR2Blinded To : 1
+Set Default Value of Parameter r To : 3
+>>> 6 out of 12 channels masked
+
+Warning: A value of r is specified in both the --setParameters and --expectSignal options. The argument of --expectSignal will take precedence
+Generate toy 1/20
+SimNLL created with 12 channels, 0 generic constraints, 154 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+
+ --- FitDiagnostics ---
+Best fit r: 0.0725591  -1.3456/+1.41116  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 2/20
+
+ --- FitDiagnostics ---
+Best fit r: 5.76082  -1.52958/+1.59127  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 3/20
+
+ --- FitDiagnostics ---
+Best fit r: 3.53225  -1.47478/+1.51519  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 4/20
+
+ --- FitDiagnostics ---
+Best fit r: 1.41012  -1.38431/+1.43765  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 5/20
+
+ --- FitDiagnostics ---
+Best fit r: 1.65917  -1.29383/+1.37958  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 6/20
+
+ --- FitDiagnostics ---
+Best fit r: 1.90429  -1.41758/+1.46873  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 7/20
+
+ --- FitDiagnostics ---
+Best fit r: 4.7977  -1.49003/+1.54699  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 8/20
+
+ --- FitDiagnostics ---
+Best fit r: 2.43585  -1.43611/+1.48909  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 9/20
+
+ --- FitDiagnostics ---
+Best fit r: 1.89145  -1.33965/+1.38652  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 10/20
+Error: minimization failed at r = 4.83792
+Error: minimization failed at r = 4.83792
+
+ --- FitDiagnostics ---
+Best fit r: 4.83792  -44.8379/+35.1621  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 11/20
+
+ --- FitDiagnostics ---
+Best fit r: 2.10369  -1.37466/+1.4312  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 12/20
+
+ --- FitDiagnostics ---
+Best fit r: 3.69607  -1.44599/+1.50507  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 13/20
+
+ --- FitDiagnostics ---
+Best fit r: 0.617206  -1.33012/+1.38635  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 14/20
+
+ --- FitDiagnostics ---
+Best fit r: 1.8287  -1.42586/+1.48451  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 15/20
+
+ --- FitDiagnostics ---
+Best fit r: 4.3084  -1.50824/+1.53373  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 16/20
+
+ --- FitDiagnostics ---
+Best fit r: 5.08556  -1.48398/+1.50123  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 17/20
+
+ --- FitDiagnostics ---
+Best fit r: 2.24036  -1.42343/+1.48083  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 18/20
+
+ --- FitDiagnostics ---
+Best fit r: 3.27525  -1.4182/+1.47355  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 19/20
+
+ --- FitDiagnostics ---
+Best fit r: 3.1664  -1.40193/+1.45412  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 20/20
+
+ --- FitDiagnostics ---
+Best fit r: 6.00905  -1.4484/+1.54485  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+mean   expected limit: r < 3.03164 +/- 0.377917 @ 95%CL (20 toyMC)
+median expected limit: r < 2.80112 @ 95%CL (20 toyMC)
+   68% expected band : 1.65917 < r < 5.08556
+   95% expected band : 0.0725591 < r < 6.00905

@@ -37,7 +37,7 @@ goftoys=0
 impactsi=0
 impactsf=0
 impactsc=0
-seed=44
+seed=42
 numtoys=20
 bias=-1
 mintol=0.1 # --cminDefaultMinimizerTolerance
@@ -399,9 +399,10 @@ if [ $bias != -1 ]; then
     # setting verbose > 0 here can lead to crazy large output files (~10-100GB!) because of getting
     # stuck in negative yield areas
     combine -M FitDiagnostics --trackParameters r --trackErrors r --justFit \
-    -m 125 -n "bias${bias}" -d ${wsm_snapshot}.root --rMin "-80" --rMax 80 \
+    -m 125 -n "bias${bias}" -d ${wsm_snapshot}.root --rMin "-40" --rMax 40 \
     --snapshotName MultiDimFit --bypassFrequentistFit --toysFrequentist --expectSignal $bias \
     ${unblindedparams},r=$bias --floatParameters ${freezeparamsblinded} \
     --robustFit=1 -t $numtoys -s $seed \
+    --cminDefaultMinimizerStrategy=0 \
     --X-rtd MINIMIZER_MaxCalls=1000000 --cminDefaultMinimizerTolerance $mintol 2>&1 | tee $outsdir/bias${bias}seed${seed}.txt
 fi

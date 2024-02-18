@@ -21,6 +21,12 @@ class DAS:
                 ds = ids.split("/")[-1]
                 if "log" in ds:
                     ds = ids.split("/")[-2]+ids.split("/")[-1]
+        elif "ospool" in ids:
+            ids = os.path.normpath(ids)
+            if "/ospool/cms-user/" in ids:
+                ds = ids.split("/")[-1]
+                if "log" in ds:
+                    ds = ids.split("/")[-2]+ids.split("/")[-1]            
         else :
             if "MINIAOD" in ids.split("/")[3]:
                 ds = ids.split("/")[1] + "_" + ids.split("/")[2]
@@ -59,11 +65,21 @@ class DAS:
             json.dump(Files_,f,indent=4)
         return Files
 
+#cmsconnect local MiniAOD files path for Wcb samples:
+CMSC_Wcb_2018_ = [
+    "/ospool/cms-user/yuzhe/MiniAOD/Wcb/WJetsToQQ_HT-200to400_TuneCP5_13TeV-madgraphMLM-pythia8",
+    "/ospool/cms-user/yuzhe/MiniAOD/Wcb/WJetsToQQ_HT-600to800_TuneCP5_13TeV-madgraphMLM-pythia8",
+    "/ospool/cms-user/yuzhe/MiniAOD/Wcb/WJetsToQQ_HT-400to600_TuneCP5_13TeV-madgraphMLM-pythia8",
+    "/ospool/cms-user/yuzhe/MiniAOD/Wcb/WJetsToQQ_HT-800toInf_TuneCP5_13TeV-madgraphMLM-pythia8",
+]
+
+
 #the ttbar samples are only used for calibration
 DAS_ttbar_2018_ = [
     "/TTToSemiLeptonic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM",
     "/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v1/MINIAODSIM", 
 ]    
+
 
 DAS_ttbar_2017_ = [
     "/TTToHadronic_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM",
@@ -425,6 +441,9 @@ DAS_ttbar_2018 = lambda: DAS(DAS_ttbar_2018_)
 DAS_ttbar_2017 = lambda: DAS(DAS_ttbar_2017_)
 DAS_ttbar_2016 = lambda: DAS(DAS_ttbar_2016_)
 DAS_ttbar_2016APV = lambda: DAS(DAS_ttbar_2016APV_)
+
+#Wcb local samples
+CMSC_Wcb_2018 = lambda: DAS(CMSC_Wcb_2018_)
 
 if __name__ == '__main__':
 

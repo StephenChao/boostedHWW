@@ -69,10 +69,17 @@ class fetchFiles():
         self.BASEDIR = BASEDIR # all the files are copy to the BASEDIR
 
     def cmsconnetFile(self,ifile):
+        ifile = os.path.normpath(ifile)
         filename = ifile.split("/")[-1]
-        wget = "wget --tries=3 --no-check-certificate http://stash.osgconnect.net/+yuzhe/{file} -O {PATH}/In_{filename}"
-        ifile = ifile.replace("/stash/user/yuzhe/public/","")
-        os.system( wget.format(file = ifile, PATH = self.BASEDIR ,filename = filename) )
+        # User_ = re.compile(r'/stash/user/(.*)/public/') #for old stash space
+        # file_ = re.compile(r'/stash/user/(.*)/public/(.*)') #for old stash space
+        User_ = re.compile(r'/ospool/cms-user/(.*)/')
+        file_ = re.compile(r'/ospool/cms-user/(.*)/(.*)')
+        User = User_.search(ifile).group(1)
+        File = file_.search(ifile).group(2)
+        # wget = "wget --tries=3 --no-check-certificate http://stash.osgconnect.net/+{User}/{file} -O {PATH}/In_{filename}" #for old stash space
+        wget = "wget --tries=3 --no-check-certificate http://stash.osgconnect.net/cms-user/{User}/{file} -O {PATH}/In_{filename}"
+        os.system( wget.format(file = File, User = User, PATH = self.BASEDIR ,filename = filename) )
         return "%s/In_%s"%(self.BASEDIR,filename)
 
     def DasFile(self,ifile):
@@ -115,6 +122,8 @@ class fetchFiles():
         for ifile in self.files:
             if "/stash/user/yuzhe/public" in ifile:
                 InLocalFiles.append(self.cmsconnetFile(ifile))
+            if ifile.startswith("/ospool/cms-user/") :
+                InLocalFiles.append(self.cmsconnetFile(ifile))      
             if (ifile.startswith("/store/mc/")) or (ifile.startswith('/store/data')):
                 InLocalFiles.append(self.DasFile(ifile))
         if not self.checkFiles(InLocalFiles,isNanoAOD):

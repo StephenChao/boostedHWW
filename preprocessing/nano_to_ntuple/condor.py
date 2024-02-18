@@ -7,6 +7,7 @@ from samples import DAS_2016_Signal,DAS_2016APV_Signal,DAS_2018_Signal,DAS_2017_
 from samples import DAS_2018_SingleMuon,DAS_2017_SingleMuon,DAS_2016APV_SingleMuon,DAS_2016_SingleMuon
 from samples import DAS_2018MET,DAS_2017MET,DAS_2016MET,DAS_2016APVMET
 from samples import DAS_ttbar_2018,DAS_ttbar_2017,DAS_ttbar_2016,DAS_ttbar_2016APV
+from samples import CMSC_Wcb_2018
 
 from optparse   import OptionParser
 import time
@@ -170,6 +171,14 @@ class File_json():
         self.debugkeepN = kwargs.get("debugkeepN",1)
         if not self.Samples: self.Samples = list(self.DAS.keys())
 
+    def LocalFile(self,ds):
+        ds = os.path.normpath(ds)
+        if not os.path.isdir(ds) : sys.exit("local dir %s can not be found"%(ds))
+        Files = [ os.path.normpath("%s/%s"%(ds,i)) for i in os.listdir(ds) if ".root" in i ]
+        if self.debug: Files = Files[:self.debugkeepN]
+        if not len(Files): return None
+        return Files
+    
     def DasFiles(self,ds):
         if self.debug:
             Files = json.loads(getoutput('/cvmfs/cms.cern.ch/common/dasgoclient --query="file dataset=%s" -limit=0 -json'%(ds)))
@@ -179,6 +188,27 @@ class File_json():
         else:
             Files = getoutput('/cvmfs/cms.cern.ch/common/dasgoclient --query="file dataset=%s" -limit=0 '%(ds))
             Files = [i.replace("\n","").replace(" ","") for i in Files.split("\n")]
+        return Files
+
+    def IsDAS(self,ds):
+        if ds.startswith("/stash"):
+            return False
+        if ds.startswith("/ospool"):
+            return False        
+        IsMiniAODmc = re.compile(r"(.*)20UL1(.*)(MiniAODv2|MiniAODAPVv2)(.*)")
+        if IsMiniAODmc.search(ds) :
+            return True
+        IsMiniAODdata = re.compile(r"(.*)UL201(.*)(MiniAODv2|MiniAODAPVv2)(.*)")
+        if IsMiniAODdata.search(ds) :
+            return True
+
+    def Files(self,ds):
+        print ds
+        if "/ospool/cms-user/yuzhe/" in ds: Files = self.LocalFile(ds)
+        if "/stash/user/qilongguo/public" in ds: Files = self.LocalFile(ds)
+        if "/stash/user/yuzhe/public"     in ds: Files = self.LocalFile(ds)
+        if "/stash/user/fudawei"     in ds: Files = self.LocalFile(ds)
+        if self.IsDAS(ds): Files = self.DasFiles(ds)
         return Files
 
     def Files_Splitter(self,files,Nperjobs):
@@ -196,10 +226,11 @@ class File_json():
         dic = {}
         for ds in self.Samples:
             dic[ds] = {}
-            files_ = self.DasFiles(self.DAS[ds])
+            files_ = self.Files(self.DAS[ds])
             files_ = self.Files_Splitter(files_,self.Nperjobs[ds])
             for index,ifiles in enumerate(files_):
                 dic[ds][str(index)] = ifiles
+            print "finish :",ds
         with open(self.jsonfile,"w") as f:
             json.dump(dic,f,indent = 4)
 
@@ -271,7 +302,7 @@ if options.createfilejson:
         print PATH
         os.makedirs(PATH)
     samples_toRun = [ds for ds in eval(options.DAS)().DAS]
-    File_json_ = File_json(options.Filesjson, eval(options.DAS)().DAS, Samples_ToRun = samples_toRun, debug = options.debug, debugkeepN = options.debugkeepN )
+    File_json_ = File_json( options.Filesjson, eval(options.DAS)().DAS, Samples_ToRun = samples_toRun, debug = options.debug, debugkeepN = options.debugkeepN )
     File_json_.Configer()
 
 if options.Condor:
@@ -284,7 +315,7 @@ if options.Condor:
     def additional(ds):
         return additional_(ds,options.AddtionalArgs)
     samples_toRun = [ds for ds in eval(options.DAS)().DAS]
-    Input = ["x509up_u12976","scripts/fetchFiles.py"]
+    Input = ["x509up_u12976","Scripts/fetchFiles.py"]
     os.system("cp /tmp/x509up_u12976 .")
     Input = [ "%s/%s"%(os.getcwd(),i) for i in Input ]
     Condor_ = Condor(
@@ -310,7 +341,7 @@ if options.FakeCondor:
     def additional(ds):
         return additional_(ds,options.AddtionalArgs)
     samples_toRun = [ds for ds in eval(options.DAS)().DAS]
-    Input = ["x509up_u12976","scripts/fetchFiles.py"]
+    Input = ["x509up_u12976","Scripts/fetchFiles.py"]
     os.system("cp /tmp/x509up_u12976 .")
     Input = [ "%s/%s"%(os.getcwd(),i) for i in Input ]
     FakeCondorTest_ = FakeCondorTest(

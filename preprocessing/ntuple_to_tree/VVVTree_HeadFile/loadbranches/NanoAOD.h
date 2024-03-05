@@ -3,18 +3,6 @@
 
 
 void EDBR2PKUTree::loadVectorBranches_Electron() {
-    // b_Electron_pt_ = fChain->GetBranch("Electron_pt");
-    // if (b_Electron_pt_) { b_Electron_pt_->SetAddress(&Electron_pt_);}
-
-    // b_Electron_eta_ = fChain->GetBranch("Electron_eta");
-    // if (b_Electron_eta_) { b_Electron_eta_->SetAddress(&Electron_eta_);}
-
-    // b_Electron_phi_ = fChain->GetBranch("Electron_phi");
-    // if (b_Electron_phi_) { b_Electron_phi_->SetAddress(&Electron_phi_);}
-
-    // b_Electron_mass_ = fChain->GetBranch("Electron_mass");
-    // if (b_Electron_mass_) { b_Electron_mass_->SetAddress(&Electron_mass_);}
-
     fChain->SetBranchAddress("Electron_charge",Electron_charge_,&b_Electron_charge_);
     fChain->SetBranchAddress("Electron_jetIdx",Electron_jetIdx_,&b_Electron_jetIdx_);
     fChain->SetBranchAddress("Electron_pdgId",Electron_pdgId_,&b_Electron_pdgId_);
@@ -23,23 +11,10 @@ void EDBR2PKUTree::loadVectorBranches_Electron() {
     fChain->SetBranchAddress("Electron_mass",Electron_mass_,&b_Electron_mass_);
     fChain->SetBranchAddress("Electron_pfRelIso03_all",Electron_pfRelIso03_all_,&b_Electron_pfRelIso03_all_);
     fChain->SetBranchAddress("Electron_phi",Electron_phi_,&b_Electron_phi_);
-
     fChain->SetBranchAddress("Electron_pt",Electron_pt_,&b_Electron_pt_);
 }
 
 void EDBR2PKUTree::loadVectorBranches_Muon() {
-    // b_Muon_pt_ = fChain->GetBranch("Muon_pt");
-    // if (b_Muon_pt_) { b_Muon_pt_->SetAddress(&Muon_pt_);}
-
-    // b_Muon_eta_ = fChain->GetBranch("Muon_eta");
-    // if (b_Muon_eta_) { b_Muon_eta_->SetAddress(&Muon_eta_);}
-
-    // b_Muon_phi_ = fChain->GetBranch("Muon_phi");
-    // if (b_Muon_phi_) { b_Muon_phi_->SetAddress(&Muon_phi_);}
-
-    // b_Muon_mass_ = fChain->GetBranch("Muon_mass");
-    // if (b_Muon_mass_) { b_Muon_mass_->SetAddress(&Muon_mass_);}
-
     fChain->SetBranchAddress("Muon_charge",Muon_charge_,&b_Muon_charge_);
     fChain->SetBranchAddress("Muon_highPtId",Muon_highPtId_,&b_Muon_highPtId_);
     fChain->SetBranchAddress("Muon_jetIdx",Muon_jetIdx_,&b_Muon_jetIdx_);
@@ -56,7 +31,20 @@ void EDBR2PKUTree::loadVectorBranches_Muon() {
 
 //To give value to Muon_pt_, now it's a array like the original content in the branch "Muon_charge"
 //b_Muon_charge is a clone to this branch
+
 void EDBR2PKUTree::loadVectorBranches_FatJets_HWW() {
+
+    // add LHEScaleWeight
+
+    b_LHEScaleWeight_ = fChain->GetBranch("LHEScaleWeight");
+    if (b_LHEScaleWeight_) { b_LHEScaleWeight_->SetAddress(&LHEScaleWeight_);}
+
+    // Add PSWeight
+    
+    b_PSWeight_ = fChain->GetBranch("PSWeight");
+    if (b_PSWeight_) { b_PSWeight_->SetAddress(&PSWeight_);}
+  
+    //
 
     b_FatJet_msoftdrop_raw_ = fChain->GetBranch("FatJet_msoftdrop_raw");
     if (b_FatJet_msoftdrop_raw_) { b_FatJet_msoftdrop_raw_->SetAddress(&FatJet_msoftdrop_raw_);}
@@ -73,7 +61,6 @@ void EDBR2PKUTree::loadVectorBranches_FatJets_HWW() {
     b_FatJet_msoftdrop_corr_PUPPI_ = fChain->GetBranch("FatJet_msoftdrop_corr_PUPPI");
     if (b_FatJet_msoftdrop_corr_PUPPI_) { b_FatJet_msoftdrop_corr_PUPPI_->SetAddress(&FatJet_msoftdrop_corr_PUPPI_);}
 
-
     // Add JES, JER up and down branch on 26/2/2024
 
     b_FatJet_msoftdrop_jesTotalUp_ = fChain->GetBranch("FatJet_msoftdrop_jesTotalUp");
@@ -89,6 +76,25 @@ void EDBR2PKUTree::loadVectorBranches_FatJets_HWW() {
     if (b_FatJet_msoftdrop_jerDown_) { b_FatJet_msoftdrop_jerDown_->SetAddress(&FatJet_msoftdrop_jerDown_);}
 
     // Add JES, JER up and down branch on 26/2/2024, over
+    b_FatJet_msoftdrop_jmrUp_ = fChain->GetBranch("FatJet_msoftdrop_jmrUp");
+    if (b_FatJet_msoftdrop_jmrUp_) { b_FatJet_msoftdrop_jmrUp_->SetAddress(&FatJet_msoftdrop_jmrUp_);}
+
+    b_FatJet_msoftdrop_jmrDown_ = fChain->GetBranch("FatJet_msoftdrop_jmrDown");
+    if (b_FatJet_msoftdrop_jmrDown_) { b_FatJet_msoftdrop_jmrDown_->SetAddress(&FatJet_msoftdrop_jmrDown_);}
+
+    b_FatJet_msoftdrop_jmsUp_ = fChain->GetBranch("FatJet_msoftdrop_jmsUp");
+    if (b_FatJet_msoftdrop_jmsUp_) { b_FatJet_msoftdrop_jmsUp_->SetAddress(&FatJet_msoftdrop_jmsUp_);}
+
+    b_FatJet_msoftdrop_jmsDown_ = fChain->GetBranch("FatJet_msoftdrop_jmsDown");
+    if (b_FatJet_msoftdrop_jmsDown_) { b_FatJet_msoftdrop_jmsDown_->SetAddress(&FatJet_msoftdrop_jmsDown_);}
+
+    // Add JMR, JMS up and down branch 
+
+
+
+    // Add over
+
+    
 
     b_FatJet_pt_nom_ = fChain->GetBranch("FatJet_pt_nom");
     if (b_FatJet_pt_nom_) { b_FatJet_pt_nom_->SetAddress(&FatJet_pt_nom_);}
@@ -107,11 +113,6 @@ void EDBR2PKUTree::loadVectorBranches_FatJets_HWW() {
         
     b_FatJet_jetId_ = fChain->GetBranch("FatJet_jetId");
     if (b_FatJet_jetId_) { b_FatJet_jetId_->SetAddress(&FatJet_jetId_);}
-
-
-        
-    b_FatJet_particleNet_mass_ = fChain->GetBranch("FatJet_particleNet_mass");
-    if (b_FatJet_particleNet_mass_) { b_FatJet_particleNet_mass_->SetAddress(&FatJet_particleNet_mass_);}
 
     b_FatJet_tau1_ = fChain->GetBranch("FatJet_tau1");
     if (b_FatJet_tau1_) { b_FatJet_tau1_->SetAddress(&FatJet_tau1_);}
@@ -211,219 +212,6 @@ void EDBR2PKUTree::loadVectorBranches_FatJets_HWW() {
 
 }
 
-void EDBR2PKUTree::loadVectorBranches_FatJets() {
-
-    b_FatJet_msoftdrop_raw_ = fChain->GetBranch("FatJet_msoftdrop_raw");
-    if (b_FatJet_msoftdrop_raw_) { b_FatJet_msoftdrop_raw_->SetAddress(&FatJet_msoftdrop_raw_);}
-
-    b_FatJet_msoftdrop_nom_ = fChain->GetBranch("FatJet_msoftdrop_nom");
-    if (b_FatJet_msoftdrop_nom_) { b_FatJet_msoftdrop_nom_->SetAddress(&FatJet_msoftdrop_nom_);}
-
-    b_FatJet_msoftdrop_corr_JMR_ = fChain->GetBranch("FatJet_msoftdrop_corr_JMR");
-    if (b_FatJet_msoftdrop_corr_JMR_) { b_FatJet_msoftdrop_corr_JMR_->SetAddress(&FatJet_msoftdrop_corr_JMR_);}
-
-    b_FatJet_msoftdrop_corr_JMS_ = fChain->GetBranch("FatJet_msoftdrop_corr_JMS");
-    if (b_FatJet_msoftdrop_corr_JMS_) { b_FatJet_msoftdrop_corr_JMS_->SetAddress(&FatJet_msoftdrop_corr_JMS_);}
-
-    b_FatJet_msoftdrop_corr_PUPPI_ = fChain->GetBranch("FatJet_msoftdrop_corr_PUPPI");
-    if (b_FatJet_msoftdrop_corr_PUPPI_) { b_FatJet_msoftdrop_corr_PUPPI_->SetAddress(&FatJet_msoftdrop_corr_PUPPI_);}
-
-    b_FatJet_ParticleNetMDraw_probQCDb_ = fChain->GetBranch("FatJet_ParticleNetMDraw_probQCDb");
-    if (b_FatJet_ParticleNetMDraw_probQCDb_) { b_FatJet_ParticleNetMDraw_probQCDb_->SetAddress(&FatJet_ParticleNetMDraw_probQCDb_);}
-
-    b_FatJet_ParticleNetMDraw_probQCDbb_ = fChain->GetBranch("FatJet_ParticleNetMDraw_probQCDbb");
-    if (b_FatJet_ParticleNetMDraw_probQCDbb_) { b_FatJet_ParticleNetMDraw_probQCDbb_->SetAddress(&FatJet_ParticleNetMDraw_probQCDbb_);}
-
-    b_FatJet_ParticleNetMDraw_probQCDc_ = fChain->GetBranch("FatJet_ParticleNetMDraw_probQCDc");
-    if (b_FatJet_ParticleNetMDraw_probQCDc_) { b_FatJet_ParticleNetMDraw_probQCDc_->SetAddress(&FatJet_ParticleNetMDraw_probQCDc_);}
-
-    b_FatJet_ParticleNetMDraw_probQCDcc_ = fChain->GetBranch("FatJet_ParticleNetMDraw_probQCDcc");
-    if (b_FatJet_ParticleNetMDraw_probQCDcc_) { b_FatJet_ParticleNetMDraw_probQCDcc_->SetAddress(&FatJet_ParticleNetMDraw_probQCDcc_);}
-
-    b_FatJet_ParticleNetMDraw_probQCDothers_ = fChain->GetBranch("FatJet_ParticleNetMDraw_probQCDothers");
-    if (b_FatJet_ParticleNetMDraw_probQCDothers_) { b_FatJet_ParticleNetMDraw_probQCDothers_->SetAddress(&FatJet_ParticleNetMDraw_probQCDothers_);}
-
-    b_FatJet_ParticleNetMDraw_probXbb_ = fChain->GetBranch("FatJet_ParticleNetMDraw_probXbb");
-    if (b_FatJet_ParticleNetMDraw_probXbb_) { b_FatJet_ParticleNetMDraw_probXbb_->SetAddress(&FatJet_ParticleNetMDraw_probXbb_);}
-
-    b_FatJet_ParticleNetMDraw_probXcc_ = fChain->GetBranch("FatJet_ParticleNetMDraw_probXcc");
-    if (b_FatJet_ParticleNetMDraw_probXcc_) { b_FatJet_ParticleNetMDraw_probXcc_->SetAddress(&FatJet_ParticleNetMDraw_probXcc_);}
-
-    b_FatJet_ParticleNetMDraw_probXqq_ = fChain->GetBranch("FatJet_ParticleNetMDraw_probXqq");
-    if (b_FatJet_ParticleNetMDraw_probXqq_) { b_FatJet_ParticleNetMDraw_probXqq_->SetAddress(&FatJet_ParticleNetMDraw_probXqq_);}
-
-    b_FatJet_pt_nom_ = fChain->GetBranch("FatJet_pt_nom");
-    if (b_FatJet_pt_nom_) { b_FatJet_pt_nom_->SetAddress(&FatJet_pt_nom_);}
-
-    b_FatJet_pt_ = fChain->GetBranch("FatJet_pt");
-    if (b_FatJet_pt_) { b_FatJet_pt_->SetAddress(&FatJet_pt_);}
-        
-    b_FatJet_eta_ = fChain->GetBranch("FatJet_eta");
-    if (b_FatJet_eta_) { b_FatJet_eta_->SetAddress(&FatJet_eta_);}
-        
-    b_FatJet_phi_ = fChain->GetBranch("FatJet_phi");
-    if (b_FatJet_phi_) { b_FatJet_phi_->SetAddress(&FatJet_phi_);}
-        
-    b_FatJet_msoftdrop_ = fChain->GetBranch("FatJet_msoftdrop");
-    if (b_FatJet_msoftdrop_) { b_FatJet_msoftdrop_->SetAddress(&FatJet_msoftdrop_);}
-    
-    b_FatJet_jetId_ = fChain->GetBranch("FatJet_jetId");
-    if (b_FatJet_jetId_) { b_FatJet_jetId_->SetAddress(&FatJet_jetId_);}
-
-    b_FatJet_deepTagMD_probHbb_ = fChain->GetBranch("FatJet_deepTagMD_probHbb");
-    if (b_FatJet_deepTagMD_probHbb_) { b_FatJet_deepTagMD_probHbb_->SetAddress(&FatJet_deepTagMD_probHbb_);}
-        
-    b_FatJet_deepTagMD_probHcc_ = fChain->GetBranch("FatJet_deepTagMD_probHcc");
-    if (b_FatJet_deepTagMD_probHcc_) { b_FatJet_deepTagMD_probHcc_->SetAddress(&FatJet_deepTagMD_probHcc_);}
-        
-    b_FatJet_deepTagMD_probHqqqq_ = fChain->GetBranch("FatJet_deepTagMD_probHqqqq");
-    if (b_FatJet_deepTagMD_probHqqqq_) { b_FatJet_deepTagMD_probHqqqq_->SetAddress(&FatJet_deepTagMD_probHqqqq_);}
-        
-    b_FatJet_deepTagMD_probQCDb_ = fChain->GetBranch("FatJet_deepTagMD_probQCDb");
-    if (b_FatJet_deepTagMD_probQCDb_) { b_FatJet_deepTagMD_probQCDb_->SetAddress(&FatJet_deepTagMD_probQCDb_);}
-        
-    b_FatJet_deepTagMD_probQCDbb_ = fChain->GetBranch("FatJet_deepTagMD_probQCDbb");
-    if (b_FatJet_deepTagMD_probQCDbb_) { b_FatJet_deepTagMD_probQCDbb_->SetAddress(&FatJet_deepTagMD_probQCDbb_);}
-        
-    b_FatJet_deepTagMD_probQCDc_ = fChain->GetBranch("FatJet_deepTagMD_probQCDc");
-    if (b_FatJet_deepTagMD_probQCDc_) { b_FatJet_deepTagMD_probQCDc_->SetAddress(&FatJet_deepTagMD_probQCDc_);}
-        
-    b_FatJet_deepTagMD_probQCDcc_ = fChain->GetBranch("FatJet_deepTagMD_probQCDcc");
-    if (b_FatJet_deepTagMD_probQCDcc_) { b_FatJet_deepTagMD_probQCDcc_->SetAddress(&FatJet_deepTagMD_probQCDcc_);}
-        
-    b_FatJet_deepTagMD_probQCDothers_ = fChain->GetBranch("FatJet_deepTagMD_probQCDothers");
-    if (b_FatJet_deepTagMD_probQCDothers_) { b_FatJet_deepTagMD_probQCDothers_->SetAddress(&FatJet_deepTagMD_probQCDothers_);}
-        
-    b_FatJet_deepTagMD_probTbc_ = fChain->GetBranch("FatJet_deepTagMD_probTbc");
-    if (b_FatJet_deepTagMD_probTbc_) { b_FatJet_deepTagMD_probTbc_->SetAddress(&FatJet_deepTagMD_probTbc_);}
-        
-    b_FatJet_deepTagMD_probTbcq_ = fChain->GetBranch("FatJet_deepTagMD_probTbcq");
-    if (b_FatJet_deepTagMD_probTbcq_) { b_FatJet_deepTagMD_probTbcq_->SetAddress(&FatJet_deepTagMD_probTbcq_);}
-        
-    b_FatJet_deepTagMD_probTbq_ = fChain->GetBranch("FatJet_deepTagMD_probTbq");
-    if (b_FatJet_deepTagMD_probTbq_) { b_FatJet_deepTagMD_probTbq_->SetAddress(&FatJet_deepTagMD_probTbq_);}
-        
-    b_FatJet_deepTagMD_probTbqq_ = fChain->GetBranch("FatJet_deepTagMD_probTbqq");
-    if (b_FatJet_deepTagMD_probTbqq_) { b_FatJet_deepTagMD_probTbqq_->SetAddress(&FatJet_deepTagMD_probTbqq_);}
-        
-    b_FatJet_deepTagMD_probWcq_ = fChain->GetBranch("FatJet_deepTagMD_probWcq");
-    if (b_FatJet_deepTagMD_probWcq_) { b_FatJet_deepTagMD_probWcq_->SetAddress(&FatJet_deepTagMD_probWcq_);}
-        
-    b_FatJet_deepTagMD_probWqq_ = fChain->GetBranch("FatJet_deepTagMD_probWqq");
-    if (b_FatJet_deepTagMD_probWqq_) { b_FatJet_deepTagMD_probWqq_->SetAddress(&FatJet_deepTagMD_probWqq_);}
-        
-    b_FatJet_deepTagMD_probZbb_ = fChain->GetBranch("FatJet_deepTagMD_probZbb");
-    if (b_FatJet_deepTagMD_probZbb_) { b_FatJet_deepTagMD_probZbb_->SetAddress(&FatJet_deepTagMD_probZbb_);}
-        
-    b_FatJet_deepTagMD_probZcc_ = fChain->GetBranch("FatJet_deepTagMD_probZcc");
-    if (b_FatJet_deepTagMD_probZcc_) { b_FatJet_deepTagMD_probZcc_->SetAddress(&FatJet_deepTagMD_probZcc_);}
-        
-    b_FatJet_deepTagMD_probZqq_ = fChain->GetBranch("FatJet_deepTagMD_probZqq");
-    if (b_FatJet_deepTagMD_probZqq_) { b_FatJet_deepTagMD_probZqq_->SetAddress(&FatJet_deepTagMD_probZqq_);}
-        
-    b_FatJet_deepTag_probHbb_ = fChain->GetBranch("FatJet_deepTag_probHbb");
-    if (b_FatJet_deepTag_probHbb_) { b_FatJet_deepTag_probHbb_->SetAddress(&FatJet_deepTag_probHbb_);}
-        
-    b_FatJet_deepTag_probHcc_ = fChain->GetBranch("FatJet_deepTag_probHcc");
-    if (b_FatJet_deepTag_probHcc_) { b_FatJet_deepTag_probHcc_->SetAddress(&FatJet_deepTag_probHcc_);}
-        
-    b_FatJet_deepTag_probHqqqq_ = fChain->GetBranch("FatJet_deepTag_probHqqqq");
-    if (b_FatJet_deepTag_probHqqqq_) { b_FatJet_deepTag_probHqqqq_->SetAddress(&FatJet_deepTag_probHqqqq_);}
-        
-    b_FatJet_deepTag_probQCDb_ = fChain->GetBranch("FatJet_deepTag_probQCDb");
-    if (b_FatJet_deepTag_probQCDb_) { b_FatJet_deepTag_probQCDb_->SetAddress(&FatJet_deepTag_probQCDb_);}
-        
-    b_FatJet_deepTag_probQCDbb_ = fChain->GetBranch("FatJet_deepTag_probQCDbb");
-    if (b_FatJet_deepTag_probQCDbb_) { b_FatJet_deepTag_probQCDbb_->SetAddress(&FatJet_deepTag_probQCDbb_);}
-        
-    b_FatJet_deepTag_probQCDc_ = fChain->GetBranch("FatJet_deepTag_probQCDc");
-    if (b_FatJet_deepTag_probQCDc_) { b_FatJet_deepTag_probQCDc_->SetAddress(&FatJet_deepTag_probQCDc_);}
-        
-    b_FatJet_deepTag_probQCDcc_ = fChain->GetBranch("FatJet_deepTag_probQCDcc");
-    if (b_FatJet_deepTag_probQCDcc_) { b_FatJet_deepTag_probQCDcc_->SetAddress(&FatJet_deepTag_probQCDcc_);}
-        
-    b_FatJet_deepTag_probQCDothers_ = fChain->GetBranch("FatJet_deepTag_probQCDothers");
-    if (b_FatJet_deepTag_probQCDothers_) { b_FatJet_deepTag_probQCDothers_->SetAddress(&FatJet_deepTag_probQCDothers_);}
-        
-    b_FatJet_deepTag_probTbc_ = fChain->GetBranch("FatJet_deepTag_probTbc");
-    if (b_FatJet_deepTag_probTbc_) { b_FatJet_deepTag_probTbc_->SetAddress(&FatJet_deepTag_probTbc_);}
-        
-    b_FatJet_deepTag_probTbcq_ = fChain->GetBranch("FatJet_deepTag_probTbcq");
-    if (b_FatJet_deepTag_probTbcq_) { b_FatJet_deepTag_probTbcq_->SetAddress(&FatJet_deepTag_probTbcq_);}
-        
-    b_FatJet_deepTag_probTbq_ = fChain->GetBranch("FatJet_deepTag_probTbq");
-    if (b_FatJet_deepTag_probTbq_) { b_FatJet_deepTag_probTbq_->SetAddress(&FatJet_deepTag_probTbq_);}
-        
-    b_FatJet_deepTag_probTbqq_ = fChain->GetBranch("FatJet_deepTag_probTbqq");
-    if (b_FatJet_deepTag_probTbqq_) { b_FatJet_deepTag_probTbqq_->SetAddress(&FatJet_deepTag_probTbqq_);}
-        
-    b_FatJet_deepTag_probWcq_ = fChain->GetBranch("FatJet_deepTag_probWcq");
-    if (b_FatJet_deepTag_probWcq_) { b_FatJet_deepTag_probWcq_->SetAddress(&FatJet_deepTag_probWcq_);}
-        
-    b_FatJet_deepTag_probWqq_ = fChain->GetBranch("FatJet_deepTag_probWqq");
-    if (b_FatJet_deepTag_probWqq_) { b_FatJet_deepTag_probWqq_->SetAddress(&FatJet_deepTag_probWqq_);}
-        
-    b_FatJet_deepTag_probZbb_ = fChain->GetBranch("FatJet_deepTag_probZbb");
-    if (b_FatJet_deepTag_probZbb_) { b_FatJet_deepTag_probZbb_->SetAddress(&FatJet_deepTag_probZbb_);}
-        
-    b_FatJet_deepTag_probZcc_ = fChain->GetBranch("FatJet_deepTag_probZcc");
-    if (b_FatJet_deepTag_probZcc_) { b_FatJet_deepTag_probZcc_->SetAddress(&FatJet_deepTag_probZcc_);}
-        
-    b_FatJet_deepTag_probZqq_ = fChain->GetBranch("FatJet_deepTag_probZqq");
-    if (b_FatJet_deepTag_probZqq_) { b_FatJet_deepTag_probZqq_->SetAddress(&FatJet_deepTag_probZqq_);}
-
-    b_FatJet_particleNetMD_QCD_ = fChain->GetBranch("FatJet_particleNetMD_QCD");
-    if (b_FatJet_particleNetMD_QCD_) { b_FatJet_particleNetMD_QCD_->SetAddress(&FatJet_particleNetMD_QCD_);}
-        
-    b_FatJet_particleNetMD_Xbb_ = fChain->GetBranch("FatJet_particleNetMD_Xbb");
-    if (b_FatJet_particleNetMD_Xbb_) { b_FatJet_particleNetMD_Xbb_->SetAddress(&FatJet_particleNetMD_Xbb_);}
-        
-    b_FatJet_particleNetMD_Xcc_ = fChain->GetBranch("FatJet_particleNetMD_Xcc");
-    if (b_FatJet_particleNetMD_Xcc_) { b_FatJet_particleNetMD_Xcc_->SetAddress(&FatJet_particleNetMD_Xcc_);}
-        
-    b_FatJet_particleNetMD_Xqq_ = fChain->GetBranch("FatJet_particleNetMD_Xqq");
-    if (b_FatJet_particleNetMD_Xqq_) { b_FatJet_particleNetMD_Xqq_->SetAddress(&FatJet_particleNetMD_Xqq_);}
-        
-    b_FatJet_particleNet_H4qvsQCD_ = fChain->GetBranch("FatJet_particleNet_H4qvsQCD");
-    if (b_FatJet_particleNet_H4qvsQCD_) { b_FatJet_particleNet_H4qvsQCD_->SetAddress(&FatJet_particleNet_H4qvsQCD_);}
-        
-    b_FatJet_particleNet_HbbvsQCD_ = fChain->GetBranch("FatJet_particleNet_HbbvsQCD");
-    if (b_FatJet_particleNet_HbbvsQCD_) { b_FatJet_particleNet_HbbvsQCD_->SetAddress(&FatJet_particleNet_HbbvsQCD_);}
-        
-    b_FatJet_particleNet_HccvsQCD_ = fChain->GetBranch("FatJet_particleNet_HccvsQCD");
-    if (b_FatJet_particleNet_HccvsQCD_) { b_FatJet_particleNet_HccvsQCD_->SetAddress(&FatJet_particleNet_HccvsQCD_);}
-        
-    b_FatJet_particleNet_QCD_ = fChain->GetBranch("FatJet_particleNet_QCD");
-    if (b_FatJet_particleNet_QCD_) { b_FatJet_particleNet_QCD_->SetAddress(&FatJet_particleNet_QCD_);}
-        
-    b_FatJet_particleNet_TvsQCD_ = fChain->GetBranch("FatJet_particleNet_TvsQCD");
-    if (b_FatJet_particleNet_TvsQCD_) { b_FatJet_particleNet_TvsQCD_->SetAddress(&FatJet_particleNet_TvsQCD_);}
-        
-    b_FatJet_particleNet_WvsQCD_ = fChain->GetBranch("FatJet_particleNet_WvsQCD");
-    if (b_FatJet_particleNet_WvsQCD_) { b_FatJet_particleNet_WvsQCD_->SetAddress(&FatJet_particleNet_WvsQCD_);}
-        
-    b_FatJet_particleNet_ZvsQCD_ = fChain->GetBranch("FatJet_particleNet_ZvsQCD");
-    if (b_FatJet_particleNet_ZvsQCD_) { b_FatJet_particleNet_ZvsQCD_->SetAddress(&FatJet_particleNet_ZvsQCD_);}
-        
-    b_FatJet_particleNet_mass_ = fChain->GetBranch("FatJet_particleNet_mass");
-    if (b_FatJet_particleNet_mass_) { b_FatJet_particleNet_mass_->SetAddress(&FatJet_particleNet_mass_);}
-
-    b_FatJet_tau1_ = fChain->GetBranch("FatJet_tau1");
-    if (b_FatJet_tau1_) { b_FatJet_tau1_->SetAddress(&FatJet_tau1_);}
-
-    b_FatJet_tau2_ = fChain->GetBranch("FatJet_tau2");
-    if (b_FatJet_tau2_) { b_FatJet_tau2_->SetAddress(&FatJet_tau2_);}
-
-    b_FatJet_tau3_ = fChain->GetBranch("FatJet_tau3");
-    if (b_FatJet_tau3_) { b_FatJet_tau3_->SetAddress(&FatJet_tau3_);}
-
-    b_FatJet_tau4_ = fChain->GetBranch("FatJet_tau4");
-    if (b_FatJet_tau4_) { b_FatJet_tau4_->SetAddress(&FatJet_tau4_);}
-
-  
-
-}
-
 void EDBR2PKUTree::loadVectorBranches_Jets() {
     b_Jet_pt_nom_ = fChain->GetBranch("Jet_pt_nom");
     if (b_Jet_pt_nom_) { b_Jet_pt_nom_->SetAddress(&Jet_pt_nom_);}
@@ -508,9 +296,17 @@ void EDBR2PKUTree::loadVectorBranches_Genparticles() {
 
 void EDBR2PKUTree::loadVectorBranches_MET() {
    fChain->SetBranchAddress("MET_pt",&MET_pt,&b_MET_pt);
+//    cout << "MET Test center 1=" << MET_pt << endl;
    fChain->SetBranchAddress("MET_phi",&MET_phi,&b_MET_phi);
    fChain->SetBranchAddress("MET_T1Smear_pt",&MET_T1Smear_pt,&b_MET_T1Smear_pt);
    fChain->SetBranchAddress("MET_T1Smear_phi",&MET_T1Smear_phi,&b_MET_T1Smear_phi);
+   // Add MET UE, up and down branch 
+   fChain->SetBranchAddress("MET_T1Smear_pt_unclustEnUp",&MET_T1Smear_pt_UEup,&b_MET_T1Smear_pt_unclustEnUp);
+   fChain->SetBranchAddress("MET_T1Smear_phi_unclustEnUp",&MET_T1Smear_phi_UEup,&b_MET_T1Smear_phi_unclustEnUp);
+//    cout << "MET Test 1=" << MET_T1Smear_pt_UEup << endl;
+   fChain->SetBranchAddress("MET_T1Smear_pt_unclustEnDown",&MET_T1Smear_pt_UEdown,&b_MET_T1Smear_pt_unclustEnDown);
+   fChain->SetBranchAddress("MET_T1Smear_phi_unclustEnDown",&MET_T1Smear_phi_UEdown,&b_MET_T1Smear_phi_unclustEnDown);
+
 }
 
 void EDBR2PKUTree::loadVectorBranches_genH() {

@@ -237,6 +237,39 @@ if __name__ == '__main__':
 "Mj_jerDown_b",
 "Mj_jerDown_c",
 
+#add pu
+"puWeight",
+"puWeightDown",
+"puWeightUp",
+
+#add LHE
+"LHEScaleWeight",
+
+
+#JMS, JMR
+"Mj_jmsUp_a" ,
+"Mj_jmsDown_a" ,
+"Mj_jmrUp_a" ,
+"Mj_jmrDown_a" ,
+"Mj_jmsUp_b" ,
+"Mj_jmsDown_b" ,
+"Mj_jmrUp_b" ,
+"Mj_jmrDown_b" ,
+"Mj_jmsUp_c" ,
+"Mj_jmsDown_c" ,
+"Mj_jmrUp_c" ,
+"Mj_jmrDown_c" ,
+
+# MET UE up/down var
+
+"MET_et_UEup",
+"MET_et_UEdown",
+"MET_phi_UEup",
+"MET_phi_UEdown",
+
+# PS weight
+"PSWeight",
+
     ]
 
     if IsData > 100 :

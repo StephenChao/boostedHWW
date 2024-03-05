@@ -31,8 +31,4 @@ void EDBR2PKUTree::goldenjsoninit(TString YEAR, Int_t IS_Data) {
     
 }
 
-
-
-
-
 #endif

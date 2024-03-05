@@ -1,5 +1,5 @@
-#ifndef _GKK_0lepton__process_
-#define _GKK_0lepton__process_
+#ifndef _process__process_
+#define _process__process_
 
 
 void EDBR2PKUTree::initFatJet_Collection(){
@@ -24,6 +24,11 @@ void EDBR2PKUTree::initFatJet_Collection(){
         &v_FatJet_msoftdrop_jesTotalDown_,
         &v_FatJet_msoftdrop_jerUp_,
         &v_FatJet_msoftdrop_jerDown_,
+
+        &v_FatJet_msoftdrop_jmsUp_,
+        &v_FatJet_msoftdrop_jmsDown_,
+        &v_FatJet_msoftdrop_jmrUp_,
+        &v_FatJet_msoftdrop_jmrDown_,
 
         &v_FatJet_pt_nom_,
         //HWW tagger.
@@ -72,7 +77,7 @@ void EDBR2PKUTree::initFatJet_Collection(){
     // class FatJet_Collection defined in fatJets.h
 }
 
-void EDBR2PKUTree::GKK_process_1(Long64_t jentry, TString YEAR) {
+void EDBR2PKUTree::HWW_process_1(Long64_t jentry, TString YEAR) {
     Jets_GetEntry(jentry);
     fatJets_GetEntry(jentry);
 
@@ -81,9 +86,6 @@ void EDBR2PKUTree::GKK_process_1(Long64_t jentry, TString YEAR) {
 
     FatJets_P4_PTOrder();
     FatJets_P4_MASSOrder();
-    // FatJets_P4_DEEP_MD_W_Order();
-    // FatJets_P4_PNet_MD_W_Order();
-    // FatJets_P4_HWWH4q_Order();
     FatJets_P4_HWWV2_Order();
 
     MJJ_MJJJf();
@@ -124,13 +126,9 @@ void EDBR2PKUTree::initJet_Collection(TString YEAR){
     Jets = Jet_Collection( Jet_P_, 1, YEAR, FatJets_);
 }
 
-void EDBR2PKUTree::GKK_process_2(Long64_t jentry, TString YEAR) {
+void EDBR2PKUTree::HWW_process_2(Long64_t jentry, TString YEAR) {
 
     initJet_Collection(YEAR);
-
-    // FatJets_DEEP_MD_W_Order();
-    // FatJets_PNet_MD_W_Order();
-    // FatJets_HWWH4q_Order(); 
     FatJets_HWWV2_Order(); 
     Nbtagf();
 
@@ -219,178 +217,8 @@ void EDBR2PKUTree::FatJets_P4_MASSOrder() {
 
 }
 
-void EDBR2PKUTree::FatJets_P4_DEEP_MD_W_Order() {
-    PTj_a  = FatJets.Get("deep-W-MD","pt_nom" , 0);
-    Etaj_a = FatJets.Get("deep-W-MD","eta", 0);
-    Phij_a = FatJets.Get("deep-W-MD","phi", 0);
-    Mj_a   = FatJets.Get("deep-W-MD","msoftdrop_nom_noJWS", 0);
-    Mj_corr_a   = FatJets.Get("deep-W-MD","msoftdrop_nom", 0);
-
-    PTj_b  = FatJets.Get("deep-W-MD","pt_nom" , 1);
-    Etaj_b = FatJets.Get("deep-W-MD","eta", 1);
-    Phij_b = FatJets.Get("deep-W-MD","phi", 1);
-    Mj_b   = FatJets.Get("deep-W-MD","msoftdrop_nom_noJWS", 1);
-    Mj_corr_b   = FatJets.Get("deep-W-MD","msoftdrop_nom", 1);
-
-    PTj_c  = FatJets.Get("deep-W-MD","pt_nom" , 2);
-    Etaj_c = FatJets.Get("deep-W-MD","eta", 2);
-    Phij_c = FatJets.Get("deep-W-MD","phi", 2);
-    Mj_c   = FatJets.Get("deep-W-MD","msoftdrop_nom_noJWS", 2);
-    Mj_corr_c   = FatJets.Get("deep-W-MD","msoftdrop_nom", 2);
-}
-
-void EDBR2PKUTree::FatJets_DEEP_MD_W_Order(){
-    dnnDecorr_probTbcq_a      = FatJets.Get("deep-W-MD","deepTagMD_probTbcq",0);
-    dnnDecorr_probTbqq_a      = FatJets.Get("deep-W-MD","deepTagMD_probTbqq",0);
-    dnnDecorr_probTbc_a       = FatJets.Get("deep-W-MD","deepTagMD_probTbc",0);
-    dnnDecorr_probTbq_a       = FatJets.Get("deep-W-MD","deepTagMD_probTbq",0);
-    dnnDecorr_probWcq_a       = FatJets.Get("deep-W-MD","deepTagMD_probWcq",0);
-    dnnDecorr_probWqq_a       = FatJets.Get("deep-W-MD","deepTagMD_probWqq",0);
-    dnnDecorr_probZbb_a       = FatJets.Get("deep-W-MD","deepTagMD_probZbb",0);
-    dnnDecorr_probZcc_a       = FatJets.Get("deep-W-MD","deepTagMD_probZcc",0);
-    dnnDecorr_probZqq_a       = FatJets.Get("deep-W-MD","deepTagMD_probZqq",0);
-    dnnDecorr_probHbb_a       = FatJets.Get("deep-W-MD","deepTagMD_probHbb",0);
-    dnnDecorr_probHcc_a       = FatJets.Get("deep-W-MD","deepTagMD_probHcc",0);
-    dnnDecorr_probHqqqq_a     = FatJets.Get("deep-W-MD","deepTagMD_probHqqqq",0);
-    dnnDecorr_probQCDbb_a     = FatJets.Get("deep-W-MD","deepTagMD_probQCDbb",0);
-    dnnDecorr_probQCDcc_a     = FatJets.Get("deep-W-MD","deepTagMD_probQCDcc",0);
-    dnnDecorr_probQCDb_a      = FatJets.Get("deep-W-MD","deepTagMD_probQCDb",0);
-    dnnDecorr_probQCDc_a      = FatJets.Get("deep-W-MD","deepTagMD_probQCDc",0);
-    dnnDecorr_probQCDothers_a = FatJets.Get("deep-W-MD","deepTagMD_probQCDothers",0);
-    FatJet_tau1_a             = FatJets.Get("deep-W-MD","tau1",0);
-    FatJet_tau2_a             = FatJets.Get("deep-W-MD","tau2",0);
-    FatJet_tau3_a             = FatJets.Get("deep-W-MD","tau3",0);
-    FatJet_tau4_a             = FatJets.Get("deep-W-MD","tau4",0);
-
-
-    dnnDecorr_probTbcq_b      = FatJets.Get("deep-W-MD","deepTagMD_probTbcq",1);
-    dnnDecorr_probTbqq_b      = FatJets.Get("deep-W-MD","deepTagMD_probTbqq",1);
-    dnnDecorr_probTbc_b       = FatJets.Get("deep-W-MD","deepTagMD_probTbc",1);
-    dnnDecorr_probTbq_b       = FatJets.Get("deep-W-MD","deepTagMD_probTbq",1);
-    dnnDecorr_probWcq_b       = FatJets.Get("deep-W-MD","deepTagMD_probWcq",1);
-    dnnDecorr_probWqq_b       = FatJets.Get("deep-W-MD","deepTagMD_probWqq",1);
-    dnnDecorr_probZbb_b       = FatJets.Get("deep-W-MD","deepTagMD_probZbb",1);
-    dnnDecorr_probZcc_b       = FatJets.Get("deep-W-MD","deepTagMD_probZcc",1);
-    dnnDecorr_probZqq_b       = FatJets.Get("deep-W-MD","deepTagMD_probZqq",1);
-    dnnDecorr_probHbb_b       = FatJets.Get("deep-W-MD","deepTagMD_probHbb",1);
-    dnnDecorr_probHcc_b       = FatJets.Get("deep-W-MD","deepTagMD_probHcc",1);
-    dnnDecorr_probHqqqq_b     = FatJets.Get("deep-W-MD","deepTagMD_probHqqqq",1);
-    dnnDecorr_probQCDbb_b     = FatJets.Get("deep-W-MD","deepTagMD_probQCDbb",1);
-    dnnDecorr_probQCDcc_b     = FatJets.Get("deep-W-MD","deepTagMD_probQCDcc",1);
-    dnnDecorr_probQCDb_b      = FatJets.Get("deep-W-MD","deepTagMD_probQCDb",1);
-    dnnDecorr_probQCDc_b      = FatJets.Get("deep-W-MD","deepTagMD_probQCDc",1);
-    dnnDecorr_probQCDothers_b = FatJets.Get("deep-W-MD","deepTagMD_probQCDothers",1);
-    FatJet_tau1_b      = FatJets.Get("deep-W-MD","tau1",1);
-    FatJet_tau2_b      = FatJets.Get("deep-W-MD","tau2",1);
-    FatJet_tau3_b      = FatJets.Get("deep-W-MD","tau3",1);
-    FatJet_tau4_b      = FatJets.Get("deep-W-MD","tau4",1);
-
-    dnnDecorr_probTbcq_c      = FatJets.Get("deep-W-MD","deepTagMD_probTbcq",2);
-    dnnDecorr_probTbqq_c      = FatJets.Get("deep-W-MD","deepTagMD_probTbqq",2);
-    dnnDecorr_probTbc_c       = FatJets.Get("deep-W-MD","deepTagMD_probTbc",2);
-    dnnDecorr_probTbq_c       = FatJets.Get("deep-W-MD","deepTagMD_probTbq",2);
-    dnnDecorr_probWcq_c       = FatJets.Get("deep-W-MD","deepTagMD_probWcq",2);
-    dnnDecorr_probWqq_c       = FatJets.Get("deep-W-MD","deepTagMD_probWqq",2);
-    dnnDecorr_probZbb_c       = FatJets.Get("deep-W-MD","deepTagMD_probZbb",2);
-    dnnDecorr_probZcc_c       = FatJets.Get("deep-W-MD","deepTagMD_probZcc",2);
-    dnnDecorr_probZqq_c       = FatJets.Get("deep-W-MD","deepTagMD_probZqq",2);
-    dnnDecorr_probHbb_c       = FatJets.Get("deep-W-MD","deepTagMD_probHbb",2);
-    dnnDecorr_probHcc_c       = FatJets.Get("deep-W-MD","deepTagMD_probHcc",2);
-    dnnDecorr_probHqqqq_c     = FatJets.Get("deep-W-MD","deepTagMD_probHqqqq",2);
-    dnnDecorr_probQCDbb_c     = FatJets.Get("deep-W-MD","deepTagMD_probQCDbb",2);
-    dnnDecorr_probQCDcc_c     = FatJets.Get("deep-W-MD","deepTagMD_probQCDcc",2);
-    dnnDecorr_probQCDb_c      = FatJets.Get("deep-W-MD","deepTagMD_probQCDb",2);
-    dnnDecorr_probQCDc_c      = FatJets.Get("deep-W-MD","deepTagMD_probQCDc",2);
-    dnnDecorr_probQCDothers_c = FatJets.Get("deep-W-MD","deepTagMD_probQCDothers",2);
-    FatJet_tau1_c = FatJets.Get("deep-W-MD","tau1",2);
-    FatJet_tau2_c = FatJets.Get("deep-W-MD","tau2",2);
-    FatJet_tau3_c = FatJets.Get("deep-W-MD","tau3",2);
-    FatJet_tau4_c = FatJets.Get("deep-W-MD","tau4",2);
-
-    PartNet_MD_W_a   = FatJets.Get("deep-W-MD","particleNetMD_WvsQCD", 0);
-    PartNet_MD_W_b   = FatJets.Get("deep-W-MD","particleNetMD_WvsQCD", 1);
-    PartNet_MD_W_c   = FatJets.Get("deep-W-MD","particleNetMD_WvsQCD", 2);
-}
-
-void EDBR2PKUTree::FatJets_P4_PNet_MD_W_Order() {
-    PTj_Pneta  = FatJets.Get("PNet-W-MD","pt_nom" , 0);
-    Etaj_Pneta = FatJets.Get("PNet-W-MD","eta", 0);
-    Phij_Pneta = FatJets.Get("PNet-W-MD","phi", 0);
-    Mj_Pneta   = FatJets.Get("PNet-W-MD","msoftdrop_nom_noJWS", 0);
-    Mj_corr_Pneta   = FatJets.Get("PNet-W-MD","msoftdrop_nom", 0);
-
-    PTj_Pnetb  = FatJets.Get("PNet-W-MD","pt_nom" , 1);
-    Etaj_Pnetb = FatJets.Get("PNet-W-MD","eta", 1);
-    Phij_Pnetb = FatJets.Get("PNet-W-MD","phi", 1);
-    Mj_Pnetb   = FatJets.Get("PNet-W-MD","msoftdrop_nom_noJWS", 1);
-    Mj_corr_Pnetb   = FatJets.Get("PNet-W-MD","msoftdrop_nom", 1);
-
-    PTj_Pnetc  = FatJets.Get("PNet-W-MD","pt_nom" , 2);
-    Etaj_Pnetc = FatJets.Get("PNet-W-MD","eta", 2);
-    Phij_Pnetc = FatJets.Get("PNet-W-MD","phi", 2);
-    Mj_Pnetc   = FatJets.Get("PNet-W-MD","msoftdrop_nom_noJWS", 2);
-    Mj_corr_Pnetc   = FatJets.Get("PNet-W-MD","msoftdrop_nom", 2);
-}
-
-void EDBR2PKUTree::FatJets_PNet_MD_W_Order() {
-    PartNet_MD_W_Pneta   = FatJets.Get("PNet-W-MD","particleNetMD_WvsQCD", 0);
-    PartNet_MD_W_Pnetb   = FatJets.Get("PNet-W-MD","particleNetMD_WvsQCD", 1);
-    PartNet_MD_W_Pnetc   = FatJets.Get("PNet-W-MD","particleNetMD_WvsQCD", 2);
-
-    dnnDecorr_probTbcq_Pnetc      = FatJets.Get("PNet-W-MD","deepTagMD_probTbcq",2);
-    dnnDecorr_probTbqq_Pnetc      = FatJets.Get("PNet-W-MD","deepTagMD_probTbqq",2);
-    dnnDecorr_probTbc_Pnetc       = FatJets.Get("PNet-W-MD","deepTagMD_probTbc",2);
-    dnnDecorr_probTbq_Pnetc       = FatJets.Get("PNet-W-MD","deepTagMD_probTbq",2);
-    dnnDecorr_probWcq_Pnetc       = FatJets.Get("PNet-W-MD","deepTagMD_probWcq",2);
-    dnnDecorr_probWqq_Pnetc       = FatJets.Get("PNet-W-MD","deepTagMD_probWqq",2);
-    dnnDecorr_probZbb_Pnetc       = FatJets.Get("PNet-W-MD","deepTagMD_probZbb",2);
-    dnnDecorr_probZcc_Pnetc       = FatJets.Get("PNet-W-MD","deepTagMD_probZcc",2);
-    dnnDecorr_probZqq_Pnetc       = FatJets.Get("PNet-W-MD","deepTagMD_probZqq",2);
-    dnnDecorr_probHbb_Pnetc       = FatJets.Get("PNet-W-MD","deepTagMD_probHbb",2);
-    dnnDecorr_probHcc_Pnetc       = FatJets.Get("PNet-W-MD","deepTagMD_probHcc",2);
-    dnnDecorr_probHqqqq_Pnetc     = FatJets.Get("PNet-W-MD","deepTagMD_probHqqqq",2);
-    dnnDecorr_probQCDbb_Pnetc     = FatJets.Get("PNet-W-MD","deepTagMD_probQCDbb",2);
-    dnnDecorr_probQCDcc_Pnetc     = FatJets.Get("PNet-W-MD","deepTagMD_probQCDcc",2);
-    dnnDecorr_probQCDb_Pnetc      = FatJets.Get("PNet-W-MD","deepTagMD_probQCDb",2);
-    dnnDecorr_probQCDc_Pnetc      = FatJets.Get("PNet-W-MD","deepTagMD_probQCDc",2);
-    dnnDecorr_probQCDothers_Pnetc = FatJets.Get("PNet-W-MD","deepTagMD_probQCDothers",2);
-
-    FatJet_tau1_Pneta = FatJets.Get("PNet-W-MD","tau1",0);
-    FatJet_tau2_Pneta = FatJets.Get("PNet-W-MD","tau2",0);
-    FatJet_tau3_Pneta = FatJets.Get("PNet-W-MD","tau3",0);
-    FatJet_tau4_Pneta = FatJets.Get("PNet-W-MD","tau4",0);
-
-    FatJet_tau1_Pnetb = FatJets.Get("PNet-W-MD","tau1",1);
-    FatJet_tau2_Pnetb = FatJets.Get("PNet-W-MD","tau2",1);
-    FatJet_tau3_Pnetb = FatJets.Get("PNet-W-MD","tau3",1);
-    FatJet_tau4_Pnetb = FatJets.Get("PNet-W-MD","tau4",1);
-
-    FatJet_tau1_Pnetc = FatJets.Get("PNet-W-MD","tau1",2);
-    FatJet_tau2_Pnetc = FatJets.Get("PNet-W-MD","tau2",2);
-    FatJet_tau3_Pnetc = FatJets.Get("PNet-W-MD","tau3",2);
-    FatJet_tau4_Pnetc = FatJets.Get("PNet-W-MD","tau4",2);
-}
 
 //New tagger, actually general HWW tagger order.
-void EDBR2PKUTree::FatJets_P4_HWWH4q_Order() {
-    PTj_HWWa  = FatJets.Get("HWW-H4q-MD","pt_nom" , 0);
-    Etaj_HWWa = FatJets.Get("HWW-H4q-MD","eta", 0);
-    Phij_HWWa = FatJets.Get("HWW-H4q-MD","phi", 0);
-    Mj_HWWa   = FatJets.Get("HWW-H4q-MD","msoftdrop_nom_noJWS", 0);
-    Mj_corr_HWWa   = FatJets.Get("HWW-H4q-MD","msoftdrop_nom", 0);
-
-    PTj_HWWb  = FatJets.Get("HWW-H4q-MD","pt_nom" , 1);
-    Etaj_HWWb = FatJets.Get("HWW-H4q-MD","eta", 1);
-    Phij_HWWb = FatJets.Get("HWW-H4q-MD","phi", 1);
-    Mj_HWWb   = FatJets.Get("HWW-H4q-MD","msoftdrop_nom_noJWS", 1);
-    Mj_corr_HWWb   = FatJets.Get("HWW-H4q-MD","msoftdrop_nom", 1);
-
-    PTj_HWWc  = FatJets.Get("HWW-H4q-MD","pt_nom" , 2);
-    Etaj_HWWc = FatJets.Get("HWW-H4q-MD","eta", 2);
-    Phij_HWWc = FatJets.Get("HWW-H4q-MD","phi", 2);
-    Mj_HWWc   = FatJets.Get("HWW-H4q-MD","msoftdrop_nom_noJWS", 2);
-    Mj_corr_HWWc   = FatJets.Get("HWW-H4q-MD","msoftdrop_nom", 2);
-}
 
 void EDBR2PKUTree::FatJets_P4_HWWV2_Order() {
     PTj_V2_a  = FatJets.Get("HWW-V2-MD","pt_nom" , 0);
@@ -404,6 +232,11 @@ void EDBR2PKUTree::FatJets_P4_HWWV2_Order() {
     Mj_jerUp_a        = FatJets.Get("HWW-V2-MD","msoftdrop_jerUp", 0);
     Mj_jerDown_a      = FatJets.Get("HWW-V2-MD","msoftdrop_jerDown", 0);
 
+    Mj_jmsUp_a        = FatJets.Get("HWW-V2-MD","msoftdrop_jmsUp", 0);
+    Mj_jmsDown_a      = FatJets.Get("HWW-V2-MD","msoftdrop_jmsDown", 0);
+    Mj_jmrUp_a        = FatJets.Get("HWW-V2-MD","msoftdrop_jmrUp", 0);
+    Mj_jmrDown_a      = FatJets.Get("HWW-V2-MD","msoftdrop_jmrDown", 0);
+
     PTj_V2_b  = FatJets.Get("HWW-V2-MD","pt_nom" , 1);
     Etaj_V2_b = FatJets.Get("HWW-V2-MD","eta", 1);
     Phij_V2_b = FatJets.Get("HWW-V2-MD","phi", 1);
@@ -415,6 +248,10 @@ void EDBR2PKUTree::FatJets_P4_HWWV2_Order() {
     Mj_jerUp_b        = FatJets.Get("HWW-V2-MD","msoftdrop_jerUp", 1);
     Mj_jerDown_b      = FatJets.Get("HWW-V2-MD","msoftdrop_jerDown", 1);
 
+    Mj_jmsUp_b        = FatJets.Get("HWW-V2-MD","msoftdrop_jmsUp", 1);
+    Mj_jmsDown_b      = FatJets.Get("HWW-V2-MD","msoftdrop_jmsDown", 1);
+    Mj_jmrUp_b        = FatJets.Get("HWW-V2-MD","msoftdrop_jmrUp", 1);
+    Mj_jmrDown_b      = FatJets.Get("HWW-V2-MD","msoftdrop_jmrDown", 1);
 
     PTj_V2_c  = FatJets.Get("HWW-V2-MD","pt_nom" , 2);
     Etaj_V2_c = FatJets.Get("HWW-V2-MD","eta", 2);
@@ -427,104 +264,13 @@ void EDBR2PKUTree::FatJets_P4_HWWV2_Order() {
     Mj_jerUp_c        = FatJets.Get("HWW-V2-MD","msoftdrop_jerUp", 2);
     Mj_jerDown_c      = FatJets.Get("HWW-V2-MD","msoftdrop_jerDown", 2);
 
+    Mj_jmsUp_c        = FatJets.Get("HWW-V2-MD","msoftdrop_jmsUp", 2);
+    Mj_jmsDown_c      = FatJets.Get("HWW-V2-MD","msoftdrop_jmsDown", 2);
+    Mj_jmrUp_c        = FatJets.Get("HWW-V2-MD","msoftdrop_jmrUp", 2);
+    Mj_jmrDown_c      = FatJets.Get("HWW-V2-MD","msoftdrop_jmrDown", 2);
 
 }
 
-
-void EDBR2PKUTree::FatJets_HWWH4q_Order(){
-    deepHWW_probHww3q_a         = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHww3q",0); 
-    deepHWW_probHww4q_a         = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHww4q",0);
-    deepHWW_probHww4q3qvsQCD_a  = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHww4q3qvsQCD",0);
-    deepHWW_probHww4qvsQCD_a    = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHww4qvsQCD",0);
-    deepHWW_probHwwevqq_a       = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwevqq",0);
-    deepHWW_probHwwmvqq_a       = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwmvqq",0);
-    deepHWW_probHwwhadtauvqq_a  = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwhadtauvqq",0);
-    deepHWW_probHwwleptauevqq_a = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwleptauevqq",0);
-    deepHWW_probHwwleptaumvqq_a = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwleptaumvqq",0);
-    deepHWW_probQCDc_a          = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDc",0);
-    deepHWW_probQCDcc_a         = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDcc",0);
-    deepHWW_probQCDb_a          = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDb",0);
-    deepHWW_probQCDbb_a         = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDbb",0);
-    deepHWW_probQCDothers_a     = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDothers",0);
-    deepHWW_H4q_a               = FatJets.Get("HWW-H4q-MD","particleNetMD_WvsQCD", 0);
-    FatJet_tau1_HWW_a           = FatJets.Get("HWW-H4q-MD","tau1",0);
-    FatJet_tau2_HWW_a           = FatJets.Get("HWW-H4q-MD","tau2",0);
-    FatJet_tau3_HWW_a           = FatJets.Get("HWW-H4q-MD","tau3",0);
-    FatJet_tau4_HWW_a           = FatJets.Get("HWW-H4q-MD","tau4",0);
-    deepHWWMDV1_HallvsQCD_a       = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HallvsQCD",0); 
- 
-
-    deepHWW_probHww3q_b         = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHww3q",1); 
-    deepHWW_probHww4q_b         = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHww4q",1);
-    deepHWW_probHww4q3qvsQCD_b  = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHww4q3qvsQCD",1);
-    deepHWW_probHww4qvsQCD_b    = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHww4qvsQCD",1);
-    deepHWW_probHwwevqq_b       = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwevqq",1);
-    deepHWW_probHwwmvqq_b       = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwmvqq",1);
-    deepHWW_probHwwhadtauvqq_b  = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwhadtauvqq",1);
-    deepHWW_probHwwleptauevqq_b = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwleptauevqq",1);
-    deepHWW_probHwwleptaumvqq_b = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwleptaumvqq",1);
-    deepHWW_probQCDc_b          = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDc",1);
-    deepHWW_probQCDcc_b         = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDcc",1);
-    deepHWW_probQCDb_b          = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDb",1);
-    deepHWW_probQCDbb_b         = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDbb",1);
-    deepHWW_probQCDothers_b     = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDothers",1);
-    deepHWW_H4q_b               = FatJets.Get("HWW-H4q-MD","particleNetMD_WvsQCD", 1);;
-    FatJet_tau1_HWW_b           = FatJets.Get("HWW-H4q-MD","tau1",1);
-    FatJet_tau2_HWW_b           = FatJets.Get("HWW-H4q-MD","tau2",1);
-    FatJet_tau3_HWW_b           = FatJets.Get("HWW-H4q-MD","tau3",1);
-    FatJet_tau4_HWW_b           = FatJets.Get("HWW-H4q-MD","tau4",1);
-    deepHWWMDV1_HallvsQCD_b       = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HallvsQCD",1); 
-
-
-    deepHWW_probHww3q_c         = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHww3q",2); 
-    deepHWW_probHww4q_c         = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHww4q",2);
-    deepHWW_probHww4q3qvsQCD_c  = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHww4q3qvsQCD",2);
-    deepHWW_probHww4qvsQCD_c    = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHww4qvsQCD",2);
-    deepHWW_probHwwevqq_c       = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwevqq",2);
-    deepHWW_probHwwmvqq_c       = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwmvqq",2);
-    deepHWW_probHwwhadtauvqq_c  = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwhadtauvqq",2);
-    deepHWW_probHwwleptauevqq_c = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwleptauevqq",2);
-    deepHWW_probHwwleptaumvqq_c = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probHwwleptaumvqq",2);
-    deepHWW_probQCDc_c          = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDc",2);
-    deepHWW_probQCDcc_c         = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDcc",2);
-    deepHWW_probQCDb_c          = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDb",2);
-    deepHWW_probQCDbb_c         = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDbb",2);
-    deepHWW_probQCDothers_c     = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_probQCDothers",2);
-    deepHWW_H4q_c               = FatJets.Get("HWW-H4q-MD","particleNetMD_WvsQCD", 2);;
-    FatJet_tau1_HWW_c           = FatJets.Get("HWW-H4q-MD","tau1",2);
-    FatJet_tau2_HWW_c           = FatJets.Get("HWW-H4q-MD","tau1",2);
-    FatJet_tau3_HWW_c           = FatJets.Get("HWW-H4q-MD","tau1",2);
-    FatJet_tau4_HWW_c           = FatJets.Get("HWW-H4q-MD","tau1",2);
-    deepHWWMDV1_HallvsQCD_c       = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HallvsQCD",2); 
-
-
-    deepHWWMDV1_H4qvsQCD_a      = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_H4qvsQCD",0);
-    deepHWWMDV1_H4q3qvsQCD_a    = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_H4q3qvsQCD",0);
-    deepHWWMDV1_HevqqvsQCD_a    = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HevqqvsQCD",0);
-    deepHWWMDV1_HmvqqvsQCD_a    = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HmvqqvsQCD",0);
-    deepHWWMDV1_HtauevqqvsQCD_a = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HtauevqqvsQCD",0);
-    deepHWWMDV1_HtaumvqqvsQCD_a = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HtaumvqqvsQCD",0);
-    deepHWWMDV1_HhadtauvqqvsQCD_a=FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HhadtauvqqvsQCD",0);
-
-    deepHWWMDV1_H4qvsQCD_b      = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_H4qvsQCD",1);
-    deepHWWMDV1_H4q3qvsQCD_b    = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_H4q3qvsQCD",1);
-    deepHWWMDV1_HevqqvsQCD_b    = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HevqqvsQCD",1);
-    deepHWWMDV1_HmvqqvsQCD_b    = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HmvqqvsQCD",1);
-    deepHWWMDV1_HtauevqqvsQCD_b = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HtauevqqvsQCD",1);
-    deepHWWMDV1_HtaumvqqvsQCD_b = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HtaumvqqvsQCD",1);
-    deepHWWMDV1_HhadtauvqqvsQCD_b=FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HhadtauvqqvsQCD",1);
-
-    deepHWWMDV1_H4qvsQCD_c      = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_H4qvsQCD",2);
-    deepHWWMDV1_H4q3qvsQCD_c    = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_H4q3qvsQCD",2);
-    deepHWWMDV1_HevqqvsQCD_c    = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HevqqvsQCD",2);
-    deepHWWMDV1_HmvqqvsQCD_c    = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HmvqqvsQCD",2);
-    deepHWWMDV1_HtauevqqvsQCD_c = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HtauevqqvsQCD",2);
-    deepHWWMDV1_HtaumvqqvsQCD_c = FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HtaumvqqvsQCD",2);
-    deepHWWMDV1_HhadtauvqqvsQCD_c=FatJets.Get("HWW-H4q-MD","deepHWWMDV1_HhadtauvqqvsQCD",2);
-
-
-
-}
 
 void EDBR2PKUTree::FatJets_HWWV2_Order(){
 
@@ -670,63 +416,6 @@ void EDBR2PKUTree::FatJets_HWWV2_Order(){
     // cout << "Must satisfy" << a_HWW_V2 << " > " << b_HWW_V2 << " > " << c_HWW_V2 << endl;
 }
 
-
-
-bool EDBR2PKUTree::Filter_Events(TString YEAR, Int_t IS_Data) {
-    bool Fill = true;
-    bool HLT  = false;
-    if ( !(Nj8 == 2 || Nj8 == 3 ) ){ 
-        Fill = false; 
-    }
-    if ( !( Mj_max >= 50 ) ){ 
-        Fill = false; 
-    }
-    if ( !( HT >= 1100 ) ){ 
-        Fill = false; 
-    }
-    if ( !( PTj > 400 ) ){ 
-        Fill = false; 
-    }
-    // if( IS_Data == 0 ){ goodRun = goodrun(run, luminosityBlock) ; }
-    // else{ goodRun = true ; }
-    if(YEAR.Contains("2016")){
-        if( IS_Data == 0 ){
-            Flag = Flag_METFilters && Flag_goodVertices && Flag_globalSuperTightHalo2016Filter && Flag_HBHENoiseFilter && Flag_HBHENoiseIsoFilter && Flag_EcalDeadCellTriggerPrimitiveFilter && Flag_BadPFMuonFilter && Flag_eeBadScFilter;
-        }
-        else{
-            Flag = Flag_METFilters && Flag_goodVertices && Flag_HBHENoiseFilter && Flag_HBHENoiseIsoFilter && Flag_EcalDeadCellTriggerPrimitiveFilter && Flag_BadPFMuonFilter && Flag_eeBadScFilter;
-        }
-        HLT = ( HLT_PFHT650_WideJetMJJ900DEtaJJ1p5 || HLT_PFHT650_WideJetMJJ950DEtaJJ1p5 || HLT_PFHT800 || HLT_PFHT900 || HLT_PFJet450 || HLT_AK8PFJet450 || HLT_AK8PFJet500 || HLT_PFJet500 || HLT_AK8PFJet360_TrimMass30 || HLT_AK8PFHT700_TrimR0p1PT0p03Mass50 );
-    }
-
-    if(YEAR.Contains("2017")){
-        if( IS_Data == 0 ){
-            Flag = Flag_goodVertices and Flag_globalSuperTightHalo2016Filter and Flag_HBHENoiseFilter and Flag_HBHENoiseIsoFilter and Flag_EcalDeadCellTriggerPrimitiveFilter and Flag_BadPFMuonFilter and Flag_ecalBadCalibFilter;
-        }
-        else{
-            Flag = Flag_goodVertices and                                              Flag_HBHENoiseFilter and Flag_HBHENoiseIsoFilter and Flag_EcalDeadCellTriggerPrimitiveFilter and Flag_BadPFMuonFilter and Flag_ecalBadCalibFilter;
-        }
-        HLT = ( HLT_PFHT1050 || HLT_AK8PFJet380_TrimMass30 || HLT_AK8PFJet400_TrimMass30 || HLT_AK8PFJet420_TrimMass30 || HLT_AK8PFHT750_TrimMass50 || HLT_AK8PFHT800_TrimMass50 || HLT_AK8PFHT850_TrimMass50 || HLT_AK8PFHT900_TrimMass50 || HLT_AK8PFJet500 || HLT_AK8PFJet360_TrimMass30 );
-
-    }
-
-    if(YEAR.Contains("2018")){
-        if( IS_Data == 0 ){
-            Flag = Flag_goodVertices and Flag_globalSuperTightHalo2016Filter and Flag_HBHENoiseFilter and Flag_HBHENoiseIsoFilter and Flag_EcalDeadCellTriggerPrimitiveFilter and Flag_BadPFMuonFilter and Flag_ecalBadCalibFilter;
-        }
-        else{
-            Flag = Flag_goodVertices and                                              Flag_HBHENoiseFilter and Flag_HBHENoiseIsoFilter and Flag_EcalDeadCellTriggerPrimitiveFilter and Flag_BadPFMuonFilter and Flag_ecalBadCalibFilter;
-        }
-        HLT = ( HLT_PFHT1050 || HLT_AK8PFJet380_TrimMass30 || HLT_AK8PFJet400_TrimMass30 || HLT_AK8PFJet420_TrimMass30 || HLT_AK8PFHT750_TrimMass50 || HLT_AK8PFHT800_TrimMass50 || HLT_AK8PFHT850_TrimMass50 || HLT_AK8PFHT900_TrimMass50 || HLT_AK8PFJet500 || HLT_AK8PFJet360_TrimMass30 );
-    }
-
-    if( !( Flag ) || !(HLT) ){ 
-        Fill = false; 
-    }
-
-    return Fill;
-}
-
 bool EDBR2PKUTree::Filter_Events_HWW(TString YEAR, Int_t IS_Data) {
     bool Fill = true;
     bool HLT  = false;
@@ -740,9 +429,6 @@ bool EDBR2PKUTree::Filter_Events_HWW(TString YEAR, Int_t IS_Data) {
     if ( !( Mj_V2_a >= 40 ) ){ 
         Fill = false; 
     } 
-    // if ( !( HT >= 1100 ) ){ 
-    //     Fill = false; 
-    // }
 
     // Cut on HT has been commentted out for HWW analysis.
     if ( !( PTj > 400 ) ){ 
@@ -799,6 +485,12 @@ void EDBR2PKUTree::METf() {
     else{
         MET_et_NoXYCorr  = MET_T1Smear_pt ;
         MET_phi_NoXYCorr = MET_T1Smear_phi ;
+        // UE up/down uncertainty
+        MET_et_NoXYCorr_UEup  = MET_T1Smear_pt_UEup ;
+        MET_phi_NoXYCorr_UEup = MET_T1Smear_phi_UEup ;
+
+        MET_et_NoXYCorr_UEdown  = MET_T1Smear_pt_UEdown ;
+        MET_phi_NoXYCorr_UEdown = MET_T1Smear_phi_UEdown ;
     }
     int  runnb = 0 ;
     bool isMC  = true ;
@@ -820,11 +512,18 @@ void EDBR2PKUTree::METf() {
     if( YEAR_g.Contains("2018") ){
         year = "2018";
     }
-    std::pair<double,double> MET_T1Smear_XYcorr = METXYCorr_Met_MetPhi( MET_et_NoXYCorr, MET_phi_NoXYCorr, runnb, year, isMC, PV_npvs, true);
+    std::pair<double,double> MET_T1Smear_XYcorr        = METXYCorr_Met_MetPhi( MET_et_NoXYCorr, MET_phi_NoXYCorr, runnb, year, isMC, PV_npvs, true);
+    std::pair<double,double> MET_T1Smear_XYcorr_UEup   = METXYCorr_Met_MetPhi( MET_et_NoXYCorr_UEup,   MET_phi_NoXYCorr_UEup, runnb, year, isMC, PV_npvs, true);
+    std::pair<double,double> MET_T1Smear_XYcorr_UEdown = METXYCorr_Met_MetPhi( MET_et_NoXYCorr_UEdown, MET_phi_NoXYCorr_UEdown, runnb, year, isMC, PV_npvs, true);
 
     MET_et  = MET_T1Smear_XYcorr.first; 
     MET_phi = MET_T1Smear_XYcorr.second;
 
+    MET_et_UEup  = MET_T1Smear_XYcorr_UEup.first; 
+    MET_phi_UEup = MET_T1Smear_XYcorr_UEup.second;    
+    
+    MET_et_UEdown    = MET_T1Smear_XYcorr_UEdown.first; 
+    MET_phi_UEdown   = MET_T1Smear_XYcorr_UEdown.second;
 }
 
 void EDBR2PKUTree::HEMFilter() {
@@ -1013,13 +712,4 @@ void EDBR2PKUTree::Nbtagf() {
 
 #endif
 
-
-// dnnDecorr_probTbcq_a 
-// deepTagMD_probTbcq
-
-// dnnDecorr_(.*)_a
-
-// dnnDecorr_$1_a = FatJets.Get("deep-W-MD","deepTagMD_$1",0);
-// dnnDecorr_$1_b = FatJets.Get("deep-W-MD","deepTagMD_$1",1);
-// dnnDecorr_$1_c = FatJets.Get("deep-W-MD","deepTagMD_$1",2);
 

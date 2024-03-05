@@ -18,9 +18,10 @@
 #include "TLorentzVector.h"
 //#include "DataFormats/Math/interface/deltaR.h"
 
-#include "VVVTree_HeadFile/goodrun.h"
-#include "VVVTree_HeadFile/fatJets.h"
-#include "VVVTree_HeadFile/Jets.h"
+#include "VVVTree_HeadFile/utils/goodrun.h"
+#include "VVVTree_HeadFile/jets/fatJets.h"
+#include "VVVTree_HeadFile/jets/jets.h"
+#include "VVVTree_HeadFile/utils/VVVUtils.h"
 
 #include <iostream>
 #include <fstream>
@@ -46,7 +47,6 @@ using namespace std;
 class EDBR2PKUTree {
    public :
       TTree          *fChain;   //!pointer to the analyzed TTree or TChain
-      // TChain          *fChain;   //!pointer to the analyzed TTree or TChain
       Int_t           fCurrent; //!current Tree number in a TChain
       TString channelName;
       TString YEAR_g;
@@ -57,23 +57,17 @@ class EDBR2PKUTree {
    void loadVectorBranches_run();
    void loadVectorBranches_genWeight();
    void initFatJet_Collection_2016();
-   void GKK_process_1_2016(Long64_t jentry, TString YEAR);
-   void GKK_process_2_2016(Long64_t jentry, TString YEAR);
+   void HWW_process_1_2016(Long64_t jentry, TString YEAR);
+   void HWW_process_2_2016(Long64_t jentry, TString YEAR);
    void FatJets_P4_PTOrder_2016();
    void FatJets_P4_MASSOrder_2016();
-   void FatJets_P4_DEEP_MD_W_Order_2016();
-   void FatJets_P4_PNet_MD_W_Order_2016();
-   void FatJets_P4_HWWH4q_Order_2016();
    void FatJets_P4_HWWV2_Order_2016();
-   
-   void FatJets_P4_HWWH4q_Order();
    void FatJets_P4_HWWV2_Order();
-   void FatJets_HWWH4q_Order();
    void FatJets_HWWV2_Order();
    void METf_2016();
 
-   void GKK_process_1(Long64_t jentry, TString YEAR);
-   void GKK_process_2(Long64_t jentry, TString YEAR);
+   void HWW_process_1(Long64_t jentry, TString YEAR);
+   void HWW_process_2(Long64_t jentry, TString YEAR);
    void FatJets_P4_PTOrder();
    void FatJets_P4_MASSOrder();
    void FatJets_P4_DEEP_MD_W_Order();
@@ -148,11 +142,6 @@ class EDBR2PKUTree {
    void GenParticles();
    void GenParticles_HWW();
    
-   void Radion_Matching();
-   void Radion_Matching_taulep();
-   void gKK_g_Matching();
-   void Radion_Matching_taudecay();
-   void Radion_Matching_deepW_Ordered();
 
    //HWW ordering.
    void Higgs_Matching();
@@ -166,38 +155,19 @@ class EDBR2PKUTree {
    bool Filter_Events(TString YEAR, Int_t IS_Data);
    bool Filter_Events_HWW(TString YEAR, Int_t IS_Data);
 
-   // for VVV EFT study
-   void VVVEFT_analysis_init(Long64_t jentry);
-   void VVVEFT_AK8_init();
-   void VVVEFT_GenMatching();
-   void VVVEFT_leptonicW();
-   void VVVEFT_EventLevel();
-   void VVVEFT_Nbjets();
-   void VVVEFT_process(Long64_t jentry);
-   void VVVEFT_weight(Double_t XS, Int_t Nevents, Double_t LUMI);
-   bool Filter_Event_1LeptonEFT(TString YEAR, Int_t IS_Data);
-
-   void B2GSF_preprocess();
    void loadVectorBranches_FatJets();
    void loadVectorBranches_FatJets_HWW();
-   void OutputBranches_GKK_0Lepton();
-   void B2GSF_GetEntry(Long64_t jentry);
    void Electron_GetEntry(Long64_t jentry);
    void Muon_GetEntry(Long64_t jentry);
    void Muon_flatVector(Long64_t jentry);
    void loadVectorBranches_Electron();
    void Jets_GetEntry(Long64_t jentry);
    void OutputBranches_VVV_EFT_1lepton();
-   void B2GSF_1lepton_Lepton();
    void fatJets_GetEntry(Long64_t jentry);
    void loadVectorBranches_Muon();
-   bool B2GSF_prefilter();
    void loadVectorBranches_1Lepton();
    void Electron_flatVector(Long64_t jentry);
-   bool B2GSF_FillTree();
-   void B2GSF_1lepton_fatJets();
    void loadVectorBranches_B2GSF_1Lepton();
-   // void loadVectorBranches_GKK_0Lepton();
    void OutputBranches_B2GSF();
    void loadVectorBranches_Genparticles();
    void loadVectorBranches_Jets();
@@ -241,6 +211,7 @@ float Mj_V2_a;
 float Mj_V2_b;
 float Mj_V2_c;
 
+// JES/JER correction
 float Mj_jesTotalUp_a  ;
 float Mj_jesTotalDown_a;
 float Mj_jerUp_a       ;
@@ -253,6 +224,69 @@ float Mj_jesTotalUp_c  ;
 float Mj_jesTotalDown_c;
 float Mj_jerUp_c       ;
 float Mj_jerDown_c     ;
+
+float Mj_jmsUp_a   ;
+float Mj_jmsDown_a ;
+float Mj_jmrUp_a   ;
+float Mj_jmrDown_a ;
+
+// JMS/ JMR correction
+float Mj_jmsUp_b   ;
+float Mj_jmsDown_b ;
+float Mj_jmrUp_b   ;
+float Mj_jmrDown_b ;
+
+float Mj_jmsUp_c   ;
+float Mj_jmsDown_c ;
+float Mj_jmrUp_c   ;
+float Mj_jmrDown_c ;
+
+// MET correction
+
+
+
+// MET information
+
+Float_t MET_pt;
+Float_t MET_et; // no use at all
+
+// Float_t MET_pt;
+Float_t MET_et_UEup; // no use at all
+Float_t MET_et_UEdown; // no use at all
+
+Float_t MET_phi_UEup;
+Float_t MET_phi_UEdown;
+
+// MET branch
+// Float_t MET_pt_UEup; 
+// Unclustered energy
+// Float_t MET_pt_UEdown; 
+// Unclustered energy
+
+// define flat branch(center value)
+Float_t MET_T1Smear_pt;
+Float_t MET_T1Smear_phi;
+Float_t MET_phi_NoXYCorr;
+Float_t MET_et_NoXYCorr;
+// define MET UE(uncluster energy) up/down
+Float_t MET_T1Smear_pt_UEup;
+Float_t MET_T1Smear_phi_UEup;
+Float_t MET_T1Smear_pt_UEdown;
+Float_t MET_T1Smear_phi_UEdown;
+// define corrected UE(uncluster energy) up/down
+Float_t MET_phi_NoXYCorr_UEup;
+Float_t MET_et_NoXYCorr_UEup;
+Float_t MET_phi_NoXYCorr_UEdown;
+Float_t MET_et_NoXYCorr_UEdown;
+TBranch        *b_MET_T1Smear_pt;
+TBranch        *b_MET_T1Smear_phi;
+// define corrected UE(uncluster energy) up/down branch
+TBranch        *b_MET_T1Smear_pt_unclustEnUp;
+TBranch        *b_MET_T1Smear_phi_unclustEnUp;
+TBranch        *b_MET_T1Smear_pt_unclustEnDown;
+TBranch        *b_MET_T1Smear_phi_unclustEnDown;
+
+
 
 float Mj_jesTotalUp  ;
 float Mj_jesTotalDown;
@@ -424,8 +458,12 @@ float jetAK8puppi_sd;
 float jetAK8puppi_sd_2;
 float jetAK8puppi_sd_3;
 
-Float_t MET_pt;
-Float_t MET_et; // no use at all
+
+
+// Float_t MET_pt;
+// Float_t MET_et; // no use at all
+
+
 Float_t genH_pt;
 Float_t genWeight;
 
@@ -612,15 +650,10 @@ int gen_tau_decay_3;
 std::vector<float> Jet_mass_nom_out;
 std::vector<float> Jet_pt_nom_out;
 
-// define flat branch
-Float_t MET_T1Smear_pt;
-Float_t MET_T1Smear_phi;
 
-Float_t MET_phi_NoXYCorr;
-Float_t MET_et_NoXYCorr;
 
-TBranch        *b_MET_T1Smear_pt;
-TBranch        *b_MET_T1Smear_phi;
+
+
 
 bool Flag_ecalBadCalibFilter;
 TBranch        *b_Flag_ecalBadCalibFilter;
@@ -825,194 +858,42 @@ TBranch *b_FatJet_msoftdrop_jerDown_;
 
 // Add JES, JER up and down branch on 26/2/2024, over
 
+// Add LHE Scale Weight on 29/2/2024
 
-float FatJet_deepTagMD_probHbb_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probHbb_;
-TBranch *b_FatJet_deepTagMD_probHbb_;
-    
-float FatJet_deepTagMD_probHcc_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probHcc_;
-TBranch *b_FatJet_deepTagMD_probHcc_;
-    
-float FatJet_deepTagMD_probHqqqq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probHqqqq_;
-TBranch *b_FatJet_deepTagMD_probHqqqq_;
-    
-float FatJet_deepTagMD_probQCDb_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probQCDb_;
-TBranch *b_FatJet_deepTagMD_probQCDb_;
-    
-float FatJet_deepTagMD_probQCDbb_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probQCDbb_;
-TBranch *b_FatJet_deepTagMD_probQCDbb_;
-    
-float FatJet_deepTagMD_probQCDc_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probQCDc_;
-TBranch *b_FatJet_deepTagMD_probQCDc_;
-    
-float FatJet_deepTagMD_probQCDcc_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probQCDcc_;
-TBranch *b_FatJet_deepTagMD_probQCDcc_;
-    
-float FatJet_deepTagMD_probQCDothers_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probQCDothers_;
-TBranch *b_FatJet_deepTagMD_probQCDothers_;
-    
-float FatJet_deepTagMD_probTbc_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probTbc_;
-TBranch *b_FatJet_deepTagMD_probTbc_;
-    
-float FatJet_deepTagMD_probTbcq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probTbcq_;
-TBranch *b_FatJet_deepTagMD_probTbcq_;
-    
-float FatJet_deepTagMD_probTbq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probTbq_;
-TBranch *b_FatJet_deepTagMD_probTbq_;
-    
-float FatJet_deepTagMD_probTbqq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probTbqq_;
-TBranch *b_FatJet_deepTagMD_probTbqq_;
-    
-float FatJet_deepTagMD_probWcq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probWcq_;
-TBranch *b_FatJet_deepTagMD_probWcq_;
-    
-float FatJet_deepTagMD_probWqq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probWqq_;
-TBranch *b_FatJet_deepTagMD_probWqq_;
-    
-float FatJet_deepTagMD_probZbb_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probZbb_;
-TBranch *b_FatJet_deepTagMD_probZbb_;
-    
-float FatJet_deepTagMD_probZcc_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probZcc_;
-TBranch *b_FatJet_deepTagMD_probZcc_;
-    
-float FatJet_deepTagMD_probZqq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTagMD_probZqq_;
-TBranch *b_FatJet_deepTagMD_probZqq_;
-    
-float FatJet_deepTag_probHbb_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probHbb_;
-TBranch *b_FatJet_deepTag_probHbb_;
-    
-float FatJet_deepTag_probHcc_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probHcc_;
-TBranch *b_FatJet_deepTag_probHcc_;
-    
-float FatJet_deepTag_probHqqqq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probHqqqq_;
-TBranch *b_FatJet_deepTag_probHqqqq_;
-    
-float FatJet_deepTag_probQCDb_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probQCDb_;
-TBranch *b_FatJet_deepTag_probQCDb_;
-    
-float FatJet_deepTag_probQCDbb_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probQCDbb_;
-TBranch *b_FatJet_deepTag_probQCDbb_;
-    
-float FatJet_deepTag_probQCDc_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probQCDc_;
-TBranch *b_FatJet_deepTag_probQCDc_;
-    
-float FatJet_deepTag_probQCDcc_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probQCDcc_;
-TBranch *b_FatJet_deepTag_probQCDcc_;
-    
-float FatJet_deepTag_probQCDothers_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probQCDothers_;
-TBranch *b_FatJet_deepTag_probQCDothers_;
-    
-float FatJet_deepTag_probTbc_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probTbc_;
-TBranch *b_FatJet_deepTag_probTbc_;
-    
-float FatJet_deepTag_probTbcq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probTbcq_;
-TBranch *b_FatJet_deepTag_probTbcq_;
-    
-float FatJet_deepTag_probTbq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probTbq_;
-TBranch *b_FatJet_deepTag_probTbq_;
-    
-float FatJet_deepTag_probTbqq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probTbqq_;
-TBranch *b_FatJet_deepTag_probTbqq_;
-    
-float FatJet_deepTag_probWcq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probWcq_;
-TBranch *b_FatJet_deepTag_probWcq_;
-    
-float FatJet_deepTag_probWqq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probWqq_;
-TBranch *b_FatJet_deepTag_probWqq_;
-    
-float FatJet_deepTag_probZbb_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probZbb_;
-TBranch *b_FatJet_deepTag_probZbb_;
-    
-float FatJet_deepTag_probZcc_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probZcc_;
-TBranch *b_FatJet_deepTag_probZcc_;
-    
-float FatJet_deepTag_probZqq_[NFATJET_MAX];
-vector<float> v_FatJet_deepTag_probZqq_;
-TBranch *b_FatJet_deepTag_probZqq_;
+float LHEScaleWeight_[9];
+vector<float> v_LHEScaleWeight_;
+TBranch *b_LHEScaleWeight_;
+
+// PS weight
+float PSWeight_[4]; // nPSWeight always = 4
+vector<float> v_PSWeight_;
+TBranch *b_PSWeight_;
+
+// Add LHE Scale Weight on 29/2/2024, over
+
+// Add JMR, JMS up and down branch
+
+float FatJet_msoftdrop_jmrUp_[NFATJET_MAX];
+vector<float> v_FatJet_msoftdrop_jmrUp_;
+TBranch *b_FatJet_msoftdrop_jmrUp_;
+
+float FatJet_msoftdrop_jmsUp_[NFATJET_MAX];
+vector<float> v_FatJet_msoftdrop_jmsUp_;
+TBranch *b_FatJet_msoftdrop_jmsUp_;
+
+float FatJet_msoftdrop_jmrDown_[NFATJET_MAX];
+vector<float> v_FatJet_msoftdrop_jmrDown_;
+TBranch *b_FatJet_msoftdrop_jmrDown_;
+
+float FatJet_msoftdrop_jmsDown_[NFATJET_MAX];
+vector<float> v_FatJet_msoftdrop_jmsDown_;
+TBranch *b_FatJet_msoftdrop_jmsDown_;
+
+
+// Add over
 
 
 
-// particle-net 
-
-float FatJet_particleNetMD_QCD_[NFATJET_MAX];
-vector<float> v_FatJet_particleNetMD_QCD_;
-TBranch *b_FatJet_particleNetMD_QCD_;
-    
-float FatJet_particleNetMD_Xbb_[NFATJET_MAX];
-vector<float> v_FatJet_particleNetMD_Xbb_;
-TBranch *b_FatJet_particleNetMD_Xbb_;
-    
-float FatJet_particleNetMD_Xcc_[NFATJET_MAX];
-vector<float> v_FatJet_particleNetMD_Xcc_;
-TBranch *b_FatJet_particleNetMD_Xcc_;
-    
-float FatJet_particleNetMD_Xqq_[NFATJET_MAX];
-vector<float> v_FatJet_particleNetMD_Xqq_;
-TBranch *b_FatJet_particleNetMD_Xqq_;
-    
-float FatJet_particleNet_H4qvsQCD_[NFATJET_MAX];
-vector<float> v_FatJet_particleNet_H4qvsQCD_;
-TBranch *b_FatJet_particleNet_H4qvsQCD_;
-    
-float FatJet_particleNet_HbbvsQCD_[NFATJET_MAX];
-vector<float> v_FatJet_particleNet_HbbvsQCD_;
-TBranch *b_FatJet_particleNet_HbbvsQCD_;
-    
-float FatJet_particleNet_HccvsQCD_[NFATJET_MAX];
-vector<float> v_FatJet_particleNet_HccvsQCD_;
-TBranch *b_FatJet_particleNet_HccvsQCD_;
-    
-float FatJet_particleNet_QCD_[NFATJET_MAX];
-vector<float> v_FatJet_particleNet_QCD_;
-TBranch *b_FatJet_particleNet_QCD_;
-    
-float FatJet_particleNet_TvsQCD_[NFATJET_MAX];
-vector<float> v_FatJet_particleNet_TvsQCD_;
-TBranch *b_FatJet_particleNet_TvsQCD_;
-    
-float FatJet_particleNet_WvsQCD_[NFATJET_MAX];
-vector<float> v_FatJet_particleNet_WvsQCD_;
-TBranch *b_FatJet_particleNet_WvsQCD_;
-    
-float FatJet_particleNet_ZvsQCD_[NFATJET_MAX];
-vector<float> v_FatJet_particleNet_ZvsQCD_;
-TBranch *b_FatJet_particleNet_ZvsQCD_;
-    
-float FatJet_particleNet_mass_[NFATJET_MAX];
-vector<float> v_FatJet_particleNet_mass_;
-TBranch *b_FatJet_particleNet_mass_;
 
 float FatJet_tau1_[NFATJET_MAX];
 vector<float> v_FatJet_tau1_;
@@ -1099,64 +980,7 @@ TBranch *b_Jet_rawFactor_;
 
 
 
-//Added Tagger and Raw score developed by Dawei.
-
-float FatJet_deepHWWMDV1_probHww3q_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probHww3q_;
-TBranch *b_FatJet_deepHWWMDV1_probHww3q_;
-
-float FatJet_deepHWWMDV1_probHww4q_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probHww4q_;
-TBranch *b_FatJet_deepHWWMDV1_probHww4q_;
-
-float FatJet_deepHWWMDV1_probHww4qvsQCD_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probHww4qvsQCD_;
-TBranch *b_FatJet_deepHWWMDV1_probHww4qvsQCD_;
-
-float FatJet_deepHWWMDV1_probHww4q3qvsQCD_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probHww4q3qvsQCD_;
-TBranch *b_FatJet_deepHWWMDV1_probHww4q3qvsQCD_;
-
-
-float FatJet_deepHWWMDV1_probHwwevqq_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probHwwevqq_;
-TBranch *b_FatJet_deepHWWMDV1_probHwwevqq_;
-
-float FatJet_deepHWWMDV1_probHwwmvqq_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probHwwmvqq_;
-TBranch *b_FatJet_deepHWWMDV1_probHwwmvqq_;
-
-float FatJet_deepHWWMDV1_probHwwhadtauvqq_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probHwwhadtauvqq_;
-TBranch *b_FatJet_deepHWWMDV1_probHwwhadtauvqq_;
-
-float FatJet_deepHWWMDV1_probHwwleptauevqq_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probHwwleptauevqq_;
-TBranch *b_FatJet_deepHWWMDV1_probHwwleptauevqq_;
-
-float FatJet_deepHWWMDV1_probHwwleptaumvqq_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probHwwleptaumvqq_;
-TBranch *b_FatJet_deepHWWMDV1_probHwwleptaumvqq_;
-
-float FatJet_deepHWWMDV1_probQCDb_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probQCDb_;
-TBranch *b_FatJet_deepHWWMDV1_probQCDb_;
-
-float FatJet_deepHWWMDV1_probQCDbb_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probQCDbb_;
-TBranch *b_FatJet_deepHWWMDV1_probQCDbb_;
-
-float FatJet_deepHWWMDV1_probQCDc_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probQCDc_;
-TBranch *b_FatJet_deepHWWMDV1_probQCDc_;
-
-float FatJet_deepHWWMDV1_probQCDcc_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probQCDcc_;
-TBranch *b_FatJet_deepHWWMDV1_probQCDcc_;
-
-float FatJet_deepHWWMDV1_probQCDothers_[NFATJET_MAX];
-vector<float>v_FatJet_deepHWWMDV1_probQCDothers_;
-TBranch *b_FatJet_deepHWWMDV1_probQCDothers_;
+//Added HWW tagger
 
 
 float FatJet_inclParTMDV1_probHWqqWqq0c_   [NFATJET_MAX];
@@ -1277,169 +1101,6 @@ TBranch *b_FatJet_inclParTMDV1_probTopbWtauhv_   ;
 TBranch *b_FatJet_inclParTMDV1_probTopbWtauev_   ;
 TBranch *b_FatJet_inclParTMDV1_probTopbWtaumv_   ;
 
-//Ended Dawei's tagger part.
-
-float FatJet_particleNetMD_QCD_1;
-float FatJet_particleNetMD_QCD_2;
-float FatJet_particleNetMD_QCD_3;
-    
-float FatJet_particleNetMD_Xbb_1;
-float FatJet_particleNetMD_Xbb_2;
-float FatJet_particleNetMD_Xbb_3;
-    
-float FatJet_particleNetMD_Xcc_1;
-float FatJet_particleNetMD_Xcc_2;
-float FatJet_particleNetMD_Xcc_3;
-    
-float FatJet_particleNetMD_Xqq_1;
-float FatJet_particleNetMD_Xqq_2;
-float FatJet_particleNetMD_Xqq_3;
-    
-float FatJet_particleNet_H4qvsQCD_1;
-float FatJet_particleNet_H4qvsQCD_2;
-float FatJet_particleNet_H4qvsQCD_3;
-    
-float FatJet_particleNet_HbbvsQCD_1;
-float FatJet_particleNet_HbbvsQCD_2;
-float FatJet_particleNet_HbbvsQCD_3;
-    
-float FatJet_particleNet_HccvsQCD_1;
-float FatJet_particleNet_HccvsQCD_2;
-float FatJet_particleNet_HccvsQCD_3;
-    
-float FatJet_particleNet_QCD_1;
-float FatJet_particleNet_QCD_2;
-float FatJet_particleNet_QCD_3;
-    
-float FatJet_particleNet_TvsQCD_1;
-float FatJet_particleNet_TvsQCD_2;
-float FatJet_particleNet_TvsQCD_3;
-    
-float FatJet_particleNet_WvsQCD_1;
-float FatJet_particleNet_WvsQCD_2;
-float FatJet_particleNet_WvsQCD_3;
-    
-float FatJet_particleNet_ZvsQCD_1;
-float FatJet_particleNet_ZvsQCD_2;
-float FatJet_particleNet_ZvsQCD_3;
-    
-float FatJet_particleNet_mass_1;
-float FatJet_particleNet_mass_2;
-float FatJet_particleNet_mass_3;
-
-//Strat hidden neurons.
-
-
-//End hidden neurons.
-
-
-float FatJet_deepTagMD_probHbb_1;
-float FatJet_deepTagMD_probHbb_2;
-float FatJet_deepTagMD_probHbb_3;
-float FatJet_deepTagMD_probHcc_1;
-float FatJet_deepTagMD_probHcc_2;
-float FatJet_deepTagMD_probHcc_3;
-float FatJet_deepTagMD_probHqqqq_1;
-float FatJet_deepTagMD_probHqqqq_2;
-float FatJet_deepTagMD_probHqqqq_3;
-float FatJet_deepTagMD_probQCDb_1;
-float FatJet_deepTagMD_probQCDb_2;
-float FatJet_deepTagMD_probQCDb_3;
-float FatJet_deepTagMD_probQCDbb_1;
-float FatJet_deepTagMD_probQCDbb_2;
-float FatJet_deepTagMD_probQCDbb_3;
-float FatJet_deepTagMD_probQCDc_1;
-float FatJet_deepTagMD_probQCDc_2;
-float FatJet_deepTagMD_probQCDc_3;
-float FatJet_deepTagMD_probQCDcc_1;
-float FatJet_deepTagMD_probQCDcc_2;
-float FatJet_deepTagMD_probQCDcc_3;
-float FatJet_deepTagMD_probQCDothers_1;
-float FatJet_deepTagMD_probQCDothers_2;
-float FatJet_deepTagMD_probQCDothers_3;
-float FatJet_deepTagMD_probTbc_1;
-float FatJet_deepTagMD_probTbc_2;
-float FatJet_deepTagMD_probTbc_3;
-float FatJet_deepTagMD_probTbcq_1;
-float FatJet_deepTagMD_probTbcq_2;
-float FatJet_deepTagMD_probTbcq_3;
-float FatJet_deepTagMD_probTbq_1;
-float FatJet_deepTagMD_probTbq_2;
-float FatJet_deepTagMD_probTbq_3;
-float FatJet_deepTagMD_probTbqq_1;
-float FatJet_deepTagMD_probTbqq_2;
-float FatJet_deepTagMD_probTbqq_3;
-float FatJet_deepTagMD_probWcq_1;
-float FatJet_deepTagMD_probWcq_2;
-float FatJet_deepTagMD_probWcq_3;
-float FatJet_deepTagMD_probWqq_1;
-float FatJet_deepTagMD_probWqq_2;
-float FatJet_deepTagMD_probWqq_3;
-float FatJet_deepTagMD_probZbb_1;
-float FatJet_deepTagMD_probZbb_2;
-float FatJet_deepTagMD_probZbb_3;
-float FatJet_deepTagMD_probZcc_1;
-float FatJet_deepTagMD_probZcc_2;
-float FatJet_deepTagMD_probZcc_3;
-float FatJet_deepTagMD_probZqq_1;
-float FatJet_deepTagMD_probZqq_2;
-float FatJet_deepTagMD_probZqq_3;
-float FatJet_deepTag_probHbb_1;
-float FatJet_deepTag_probHbb_2;
-float FatJet_deepTag_probHbb_3;
-float FatJet_deepTag_probHcc_1;
-float FatJet_deepTag_probHcc_2;
-float FatJet_deepTag_probHcc_3;
-float FatJet_deepTag_probHqqqq_1;
-float FatJet_deepTag_probHqqqq_2;
-float FatJet_deepTag_probHqqqq_3;
-float FatJet_deepTag_probQCDb_1;
-float FatJet_deepTag_probQCDb_2;
-float FatJet_deepTag_probQCDb_3;
-float FatJet_deepTag_probQCDbb_1;
-float FatJet_deepTag_probQCDbb_2;
-float FatJet_deepTag_probQCDbb_3;
-float FatJet_deepTag_probQCDc_1;
-float FatJet_deepTag_probQCDc_2;
-float FatJet_deepTag_probQCDc_3;
-float FatJet_deepTag_probQCDcc_1;
-float FatJet_deepTag_probQCDcc_2;
-float FatJet_deepTag_probQCDcc_3;
-float FatJet_deepTag_probQCDothers_1;
-float FatJet_deepTag_probQCDothers_2;
-float FatJet_deepTag_probQCDothers_3;
-float FatJet_deepTag_probTbc_1;
-float FatJet_deepTag_probTbc_2;
-float FatJet_deepTag_probTbc_3;
-float FatJet_deepTag_probTbcq_1;
-float FatJet_deepTag_probTbcq_2;
-float FatJet_deepTag_probTbcq_3;
-float FatJet_deepTag_probTbq_1;
-float FatJet_deepTag_probTbq_2;
-float FatJet_deepTag_probTbq_3;
-float FatJet_deepTag_probTbqq_1;
-float FatJet_deepTag_probTbqq_2;
-float FatJet_deepTag_probTbqq_3;
-float FatJet_deepTag_probWcq_1;
-float FatJet_deepTag_probWcq_2;
-float FatJet_deepTag_probWcq_3;
-float FatJet_deepTag_probWqq_1;
-float FatJet_deepTag_probWqq_2;
-float FatJet_deepTag_probWqq_3;
-float FatJet_deepTag_probZbb_1;
-float FatJet_deepTag_probZbb_2;
-float FatJet_deepTag_probZbb_3;
-float FatJet_deepTag_probZcc_1;
-float FatJet_deepTag_probZcc_2;
-float FatJet_deepTag_probZcc_3;
-float FatJet_deepTag_probZqq_1;
-float FatJet_deepTag_probZqq_2;
-float FatJet_deepTag_probZqq_3;
-
-
-
-
-
 // Declaration of leaf types
 // gKK 21.9.25
 float DPhi_MET_j1;
@@ -1536,25 +1197,6 @@ float Phij_Pneta, Phij_Pnetb, Phij_Pnetc;
 
 float PartNet_MD_W_Pneta, PartNet_MD_W_Pnetb, PartNet_MD_W_Pnetc;
 
-Float_t dnnDecorr_probTbcq_Pnetc;
-Float_t dnnDecorr_probTbqq_Pnetc;
-Float_t dnnDecorr_probTbc_Pnetc;
-Float_t dnnDecorr_probTbq_Pnetc;
-Float_t dnnDecorr_probWcq_Pnetc;
-Float_t dnnDecorr_probWqq_Pnetc;
-Float_t dnnDecorr_probZbb_Pnetc;
-Float_t dnnDecorr_probZcc_Pnetc;
-Float_t dnnDecorr_probZqq_Pnetc;
-Float_t dnnDecorr_probHbb_Pnetc;
-Float_t dnnDecorr_probHcc_Pnetc;
-Float_t dnnDecorr_probHqqqq_Pnetc;
-Float_t dnnDecorr_probQCDbb_Pnetc;
-Float_t dnnDecorr_probQCDcc_Pnetc;
-Float_t dnnDecorr_probQCDb_Pnetc;
-Float_t dnnDecorr_probQCDc_Pnetc;
-Float_t dnnDecorr_probQCDothers_Pnetc;
-
-
 Float_t FatJet_tau1_Pneta;
 Float_t FatJet_tau2_Pneta;
 Float_t FatJet_tau3_Pneta;
@@ -1568,143 +1210,21 @@ Float_t FatJet_tau2_Pnetc;
 Float_t FatJet_tau3_Pnetc;
 Float_t FatJet_tau4_Pnetc;
 
-
-
-
-
-float dnn_probTbcq_a, dnn_probTbcq_b, dnn_probTbcq_c;
-float dnn_probTbqq_a, dnn_probTbqq_b, dnn_probTbqq_c;
-float dnn_probTbc_a, dnn_probTbc_b, dnn_probTbc_c;
-float dnn_probTbq_a, dnn_probTbq_b, dnn_probTbq_c;
-float dnn_probWcq_a, dnn_probWcq_b, dnn_probWcq_c;
-float dnn_probWqq_a, dnn_probWqq_b, dnn_probWqq_c;
-float dnn_probZbb_a, dnn_probZbb_b, dnn_probZbb_c;
-float dnn_probZcc_a, dnn_probZcc_b, dnn_probZcc_c;
-float dnn_probZqq_a, dnn_probZqq_b, dnn_probZqq_c;
-float dnn_probHbb_a, dnn_probHbb_b, dnn_probHbb_c;
-float dnn_probHcc_a, dnn_probHcc_b, dnn_probHcc_c;
-float dnn_probHqqqq_a, dnn_probHqqqq_b, dnn_probHqqqq_c;
-float dnn_probQCDbb_a, dnn_probQCDbb_b, dnn_probQCDbb_c;
-float dnn_probQCDcc_a, dnn_probQCDcc_b, dnn_probQCDcc_c;
-float dnn_probQCDb_a, dnn_probQCDb_b, dnn_probQCDb_c;
-float dnn_probQCDc_a, dnn_probQCDc_b, dnn_probQCDc_c;
-float dnn_probQCDothers_a, dnn_probQCDothers_b, dnn_probQCDothers_c;
-float dnnDecorr_probTbcq_a, dnnDecorr_probTbcq_b, dnnDecorr_probTbcq_c;
-float dnnDecorr_probTbqq_a, dnnDecorr_probTbqq_b, dnnDecorr_probTbqq_c;
-float dnnDecorr_probTbc_a, dnnDecorr_probTbc_b, dnnDecorr_probTbc_c;
-float dnnDecorr_probTbq_a, dnnDecorr_probTbq_b, dnnDecorr_probTbq_c;
-float dnnDecorr_probWcq_a, dnnDecorr_probWcq_b, dnnDecorr_probWcq_c;
-float dnnDecorr_probWqq_a, dnnDecorr_probWqq_b, dnnDecorr_probWqq_c;
-float dnnDecorr_probZbb_a, dnnDecorr_probZbb_b, dnnDecorr_probZbb_c;
-float dnnDecorr_probZcc_a, dnnDecorr_probZcc_b, dnnDecorr_probZcc_c;
-float dnnDecorr_probZqq_a, dnnDecorr_probZqq_b, dnnDecorr_probZqq_c;
-float dnnDecorr_probHbb_a, dnnDecorr_probHbb_b, dnnDecorr_probHbb_c;
-float dnnDecorr_probHcc_a, dnnDecorr_probHcc_b, dnnDecorr_probHcc_c;
-float dnnDecorr_probHqqqq_a, dnnDecorr_probHqqqq_b, dnnDecorr_probHqqqq_c;
-float dnnDecorr_probQCDbb_a, dnnDecorr_probQCDbb_b, dnnDecorr_probQCDbb_c;
-float dnnDecorr_probQCDcc_a, dnnDecorr_probQCDcc_b, dnnDecorr_probQCDcc_c;
-float dnnDecorr_probQCDb_a, dnnDecorr_probQCDb_b, dnnDecorr_probQCDb_c;
-float dnnDecorr_probQCDc_a, dnnDecorr_probQCDc_b, dnnDecorr_probQCDc_c;
-float dnnDecorr_probQCDothers_a, dnnDecorr_probQCDothers_b, dnnDecorr_probQCDothers_c;
-
-
-float dnnTop_a, dnnTop_b, dnnTop_c;
-float dnnW_a, dnnW_b, dnnW_c;
-float dnnH4q_a, dnnH4q_b, dnnH4q_c;
-float dnnZ_a, dnnZ_b, dnnZ_c;
-float dnnZbb_a, dnnZbb_b, dnnZbb_c;
-float dnnHbb_a, dnnHbb_b, dnnHbb_c;
-float dnnDecorrTop_a, dnnDecorrTop_b, dnnDecorrTop_c;
-float dnnDecorrW_a, dnnDecorrW_b, dnnDecorrW_c;
-float dnnDecorrH4q_a, dnnDecorrH4q_b, dnnDecorrH4q_c;
-float dnnDecorrZ_a, dnnDecorrZ_b, dnnDecorrZ_c;
-float dnnDecorrZbb_a, dnnDecorrZbb_b, dnnDecorrZbb_c;
-float dnnDecorrHbb_a, dnnDecorrHbb_b, dnnDecorrHbb_c;
-float dnnDecorrbb_a, dnnDecorrbb_b, dnnDecorrbb_c;
-float dnnDecorrcc_a, dnnDecorrcc_b, dnnDecorrcc_c;
-float dnnDecorrbbnog_a, dnnDecorrbbnog_b, dnnDecorrbbnog_c;
-float dnnDecorrccnog_a, dnnDecorrccnog_b, dnnDecorrccnog_c;
-float dnnqcd_a, dnnqcd_b, dnnqcd_c;
-float dnntop_a, dnntop_b, dnntop_c;
-float dnnw_a, dnnw_b, dnnw_c;
-float dnnz_a, dnnz_b, dnnz_c;
-float dnnzbb_a, dnnzbb_b, dnnzbb_c;
-float dnnhbb_a, dnnhbb_b, dnnhbb_c;
-float dnnh4q_a, dnnh4q_b, dnnh4q_c;
-float dnnDecorrqcd_a, dnnDecorrqcd_b, dnnDecorrqcd_c;
-float dnnDecorrtop_a, dnnDecorrtop_b, dnnDecorrtop_c;
-float dnnDecorrw_a, dnnDecorrw_b, dnnDecorrw_c;
-float dnnDecorrz_a, dnnDecorrz_b, dnnDecorrz_c;
-float dnnDecorrzbb_a, dnnDecorrzbb_b, dnnDecorrzbb_c;
-float dnnDecorrhbb_a, dnnDecorrhbb_b, dnnDecorrhbb_c;
-float dnnDecorrh4q_a, dnnDecorrh4q_b, dnnDecorrh4q_c;
-
-
-//HWW tagger.
-float    deepHWW_probHww3q_a;    
-float    deepHWW_probHww4q_a;    
-float    deepHWW_probHww4q3qvsQCD_a ;
-float    deepHWW_probHww4qvsQCD_a;   
-float    deepHWW_probHwwevqq_a;
-float    deepHWW_probHwwmvqq_a;  
-float    deepHWW_probHwwhadtauvqq_a;
-float    deepHWW_probHwwleptauevqq_a;
-float    deepHWW_probHwwleptaumvqq_a;
-float    deepHWW_probQCDc_a;          
-float    deepHWW_probQCDcc_a;        
-float    deepHWW_probQCDb_a;          
-float    deepHWW_probQCDbb_a;         
-float    deepHWW_probQCDothers_a;     
-float    deepHWW_H4q_a;               
+//HWW tagger.             
 float    FatJet_tau1_HWW_a;           
 float    FatJet_tau2_HWW_a;           
 float    FatJet_tau3_HWW_a;          
 float    FatJet_tau4_HWW_a;       
 
-float    deepHWW_probHww3q_b;    
-float    deepHWW_probHww4q_b;    
-float    deepHWW_probHww4q3qvsQCD_b ;
-float    deepHWW_probHww4qvsQCD_b;   
-float    deepHWW_probHwwevqq_b;
-float    deepHWW_probHwwmvqq_b;  
-float    deepHWW_probHwwhadtauvqq_b;
-float    deepHWW_probHwwleptauevqq_b;
-float    deepHWW_probHwwleptaumvqq_b;
-float    deepHWW_probQCDc_b;          
-float    deepHWW_probQCDcc_b;        
-float    deepHWW_probQCDb_b;          
-float    deepHWW_probQCDbb_b;         
-float    deepHWW_probQCDothers_b;     
-float    deepHWW_H4q_b;               
 float    FatJet_tau1_HWW_b;           
 float    FatJet_tau2_HWW_b;           
 float    FatJet_tau3_HWW_b;          
 float    FatJet_tau4_HWW_b;       
-
-float    deepHWW_probHww3q_c;    
-float    deepHWW_probHww4q_c;    
-float    deepHWW_probHww4q3qvsQCD_c ;
-float    deepHWW_probHww4qvsQCD_c;   
-float    deepHWW_probHwwevqq_c;
-float    deepHWW_probHwwmvqq_c;  
-float    deepHWW_probHwwhadtauvqq_c;
-float    deepHWW_probHwwleptauevqq_c;
-float    deepHWW_probHwwleptaumvqq_c;
-float    deepHWW_probQCDc_c;          
-float    deepHWW_probQCDcc_c;        
-float    deepHWW_probQCDb_c;          
-float    deepHWW_probQCDbb_c;         
-float    deepHWW_probQCDothers_c;     
-float    deepHWW_H4q_c;               
+            
 float    FatJet_tau1_HWW_c;           
 float    FatJet_tau2_HWW_c;           
 float    FatJet_tau3_HWW_c;          
 float    FatJet_tau4_HWW_c;       
-
-float deepHWWMDV1_H4qvsQCD_a,deepHWWMDV1_H4q3qvsQCD_a,deepHWWMDV1_HevqqvsQCD_a,deepHWWMDV1_HmvqqvsQCD_a,deepHWWMDV1_HtauevqqvsQCD_a,deepHWWMDV1_HtaumvqqvsQCD_a,deepHWWMDV1_HhadtauvqqvsQCD_a;
-float deepHWWMDV1_H4qvsQCD_b,deepHWWMDV1_H4q3qvsQCD_b,deepHWWMDV1_HevqqvsQCD_b,deepHWWMDV1_HmvqqvsQCD_b,deepHWWMDV1_HtauevqqvsQCD_b,deepHWWMDV1_HtaumvqqvsQCD_b,deepHWWMDV1_HhadtauvqqvsQCD_b;
-float deepHWWMDV1_H4qvsQCD_c,deepHWWMDV1_H4q3qvsQCD_c,deepHWWMDV1_HevqqvsQCD_c,deepHWWMDV1_HmvqqvsQCD_c,deepHWWMDV1_HtauevqqvsQCD_c,deepHWWMDV1_HtaumvqqvsQCD_c,deepHWWMDV1_HhadtauvqqvsQCD_c;
-float deepHWWMDV1_HallvsQCD_a,deepHWWMDV1_HallvsQCD_b,deepHWWMDV1_HallvsQCD_c;
 
    // gKK deepW ordered
 double Maxpt_AK4_deepflavor_probb;
@@ -1737,223 +1257,6 @@ double    Mass_tag3;
 double    deepW_tag1;
 double    deepW_tag2;
 double    deepW_tag3;
-
-double jetAK8puppi_dnn_probTbcq_tag1;
-double jetAK8puppi_dnn_probTbcq_tag2;
-double jetAK8puppi_dnn_probTbcq_tag3;
-double jetAK8puppi_dnn_probTbqq_tag1;
-double jetAK8puppi_dnn_probTbqq_tag2;
-double jetAK8puppi_dnn_probTbqq_tag3;
-double jetAK8puppi_dnn_probTbc_tag1;
-double jetAK8puppi_dnn_probTbc_tag2;
-double jetAK8puppi_dnn_probTbc_tag3;
-double jetAK8puppi_dnn_probTbq_tag1;
-double jetAK8puppi_dnn_probTbq_tag2;
-double jetAK8puppi_dnn_probTbq_tag3;
-double jetAK8puppi_dnn_probWcq_tag1;
-double jetAK8puppi_dnn_probWcq_tag2;
-double jetAK8puppi_dnn_probWcq_tag3;
-double jetAK8puppi_dnn_probWqq_tag1;
-double jetAK8puppi_dnn_probWqq_tag2;
-double jetAK8puppi_dnn_probWqq_tag3;
-double jetAK8puppi_dnn_probZbb_tag1;
-double jetAK8puppi_dnn_probZbb_tag2;
-double jetAK8puppi_dnn_probZbb_tag3;
-double jetAK8puppi_dnn_probZcc_tag1;
-double jetAK8puppi_dnn_probZcc_tag2;
-double jetAK8puppi_dnn_probZcc_tag3;
-double jetAK8puppi_dnn_probZqq_tag1;
-double jetAK8puppi_dnn_probZqq_tag2;
-double jetAK8puppi_dnn_probZqq_tag3;
-double jetAK8puppi_dnn_probHbb_tag1;
-double jetAK8puppi_dnn_probHbb_tag2;
-double jetAK8puppi_dnn_probHbb_tag3;
-double jetAK8puppi_dnn_probHcc_tag1;
-double jetAK8puppi_dnn_probHcc_tag2;
-double jetAK8puppi_dnn_probHcc_tag3;
-double jetAK8puppi_dnn_probHqqqq_tag1;
-double jetAK8puppi_dnn_probHqqqq_tag2;
-double jetAK8puppi_dnn_probHqqqq_tag3;
-double jetAK8puppi_dnn_probQCDbb_tag1;
-double jetAK8puppi_dnn_probQCDbb_tag2;
-double jetAK8puppi_dnn_probQCDbb_tag3;
-double jetAK8puppi_dnn_probQCDcc_tag1;
-double jetAK8puppi_dnn_probQCDcc_tag2;
-double jetAK8puppi_dnn_probQCDcc_tag3;
-double jetAK8puppi_dnn_probQCDb_tag1;
-double jetAK8puppi_dnn_probQCDb_tag2;
-double jetAK8puppi_dnn_probQCDb_tag3;
-double jetAK8puppi_dnn_probQCDc_tag1;
-double jetAK8puppi_dnn_probQCDc_tag2;
-double jetAK8puppi_dnn_probQCDc_tag3;
-double jetAK8puppi_dnn_probQCDothers_tag1;
-double jetAK8puppi_dnn_probQCDothers_tag2;
-double jetAK8puppi_dnn_probQCDothers_tag3;
-double jetAK8puppi_dnnDecorr_probTbcq_tag1;
-double jetAK8puppi_dnnDecorr_probTbcq_tag2;
-double jetAK8puppi_dnnDecorr_probTbcq_tag3;
-double jetAK8puppi_dnnDecorr_probTbqq_tag1;
-double jetAK8puppi_dnnDecorr_probTbqq_tag2;
-double jetAK8puppi_dnnDecorr_probTbqq_tag3;
-double jetAK8puppi_dnnDecorr_probTbc_tag1;
-double jetAK8puppi_dnnDecorr_probTbc_tag2;
-double jetAK8puppi_dnnDecorr_probTbc_tag3;
-double jetAK8puppi_dnnDecorr_probTbq_tag1;
-double jetAK8puppi_dnnDecorr_probTbq_tag2;
-double jetAK8puppi_dnnDecorr_probTbq_tag3;
-double jetAK8puppi_dnnDecorr_probWcq_tag1;
-double jetAK8puppi_dnnDecorr_probWcq_tag2;
-double jetAK8puppi_dnnDecorr_probWcq_tag3;
-double jetAK8puppi_dnnDecorr_probWqq_tag1;
-double jetAK8puppi_dnnDecorr_probWqq_tag2;
-double jetAK8puppi_dnnDecorr_probWqq_tag3;
-double jetAK8puppi_dnnDecorr_probZbb_tag1;
-double jetAK8puppi_dnnDecorr_probZbb_tag2;
-double jetAK8puppi_dnnDecorr_probZbb_tag3;
-double jetAK8puppi_dnnDecorr_probZcc_tag1;
-double jetAK8puppi_dnnDecorr_probZcc_tag2;
-double jetAK8puppi_dnnDecorr_probZcc_tag3;
-double jetAK8puppi_dnnDecorr_probZqq_tag1;
-double jetAK8puppi_dnnDecorr_probZqq_tag2;
-double jetAK8puppi_dnnDecorr_probZqq_tag3;
-double jetAK8puppi_dnnDecorr_probHbb_tag1;
-double jetAK8puppi_dnnDecorr_probHbb_tag2;
-double jetAK8puppi_dnnDecorr_probHbb_tag3;
-double jetAK8puppi_dnnDecorr_probHcc_tag1;
-double jetAK8puppi_dnnDecorr_probHcc_tag2;
-double jetAK8puppi_dnnDecorr_probHcc_tag3;
-double jetAK8puppi_dnnDecorr_probHqqqq_tag1;
-double jetAK8puppi_dnnDecorr_probHqqqq_tag2;
-double jetAK8puppi_dnnDecorr_probHqqqq_tag3;
-double jetAK8puppi_dnnDecorr_probQCDbb_tag1;
-double jetAK8puppi_dnnDecorr_probQCDbb_tag2;
-double jetAK8puppi_dnnDecorr_probQCDbb_tag3;
-double jetAK8puppi_dnnDecorr_probQCDcc_tag1;
-double jetAK8puppi_dnnDecorr_probQCDcc_tag2;
-double jetAK8puppi_dnnDecorr_probQCDcc_tag3;
-double jetAK8puppi_dnnDecorr_probQCDb_tag1;
-double jetAK8puppi_dnnDecorr_probQCDb_tag2;
-double jetAK8puppi_dnnDecorr_probQCDb_tag3;
-double jetAK8puppi_dnnDecorr_probQCDc_tag1;
-double jetAK8puppi_dnnDecorr_probQCDc_tag2;
-double jetAK8puppi_dnnDecorr_probQCDc_tag3;
-double jetAK8puppi_dnnDecorr_probQCDothers_tag1;
-double jetAK8puppi_dnnDecorr_probQCDothers_tag2;
-double jetAK8puppi_dnnDecorr_probQCDothers_tag3;
-
-   // gKK Mass ordered
-double jetAK8puppi_dnn_probTbcq_max;
-double jetAK8puppi_dnn_probTbcq_mid;
-double jetAK8puppi_dnn_probTbcq_min;
-double jetAK8puppi_dnn_probTbqq_max;
-double jetAK8puppi_dnn_probTbqq_mid;
-double jetAK8puppi_dnn_probTbqq_min;
-double jetAK8puppi_dnn_probTbc_max;
-double jetAK8puppi_dnn_probTbc_mid;
-double jetAK8puppi_dnn_probTbc_min;
-double jetAK8puppi_dnn_probTbq_max;
-double jetAK8puppi_dnn_probTbq_mid;
-double jetAK8puppi_dnn_probTbq_min;
-double jetAK8puppi_dnn_probWcq_max;
-double jetAK8puppi_dnn_probWcq_mid;
-double jetAK8puppi_dnn_probWcq_min;
-double jetAK8puppi_dnn_probWqq_max;
-double jetAK8puppi_dnn_probWqq_mid;
-double jetAK8puppi_dnn_probWqq_min;
-double jetAK8puppi_dnn_probZbb_max;
-double jetAK8puppi_dnn_probZbb_mid;
-double jetAK8puppi_dnn_probZbb_min;
-double jetAK8puppi_dnn_probZcc_max;
-double jetAK8puppi_dnn_probZcc_mid;
-double jetAK8puppi_dnn_probZcc_min;
-double jetAK8puppi_dnn_probZqq_max;
-double jetAK8puppi_dnn_probZqq_mid;
-double jetAK8puppi_dnn_probZqq_min;
-double jetAK8puppi_dnn_probHbb_max;
-double jetAK8puppi_dnn_probHbb_mid;
-double jetAK8puppi_dnn_probHbb_min;
-double jetAK8puppi_dnn_probHcc_max;
-double jetAK8puppi_dnn_probHcc_mid;
-double jetAK8puppi_dnn_probHcc_min;
-double jetAK8puppi_dnn_probHqqqq_max;
-double jetAK8puppi_dnn_probHqqqq_mid;
-double jetAK8puppi_dnn_probHqqqq_min;
-double jetAK8puppi_dnn_probQCDbb_max;
-double jetAK8puppi_dnn_probQCDbb_mid;
-double jetAK8puppi_dnn_probQCDbb_min;
-double jetAK8puppi_dnn_probQCDcc_max;
-double jetAK8puppi_dnn_probQCDcc_mid;
-double jetAK8puppi_dnn_probQCDcc_min;
-double jetAK8puppi_dnn_probQCDb_max;
-double jetAK8puppi_dnn_probQCDb_mid;
-double jetAK8puppi_dnn_probQCDb_min;
-double jetAK8puppi_dnn_probQCDc_max;
-double jetAK8puppi_dnn_probQCDc_mid;
-double jetAK8puppi_dnn_probQCDc_min;
-double jetAK8puppi_dnn_probQCDothers_max;
-double jetAK8puppi_dnn_probQCDothers_mid;
-double jetAK8puppi_dnn_probQCDothers_min;
-double jetAK8puppi_dnnDecorr_probTbcq_max;
-double jetAK8puppi_dnnDecorr_probTbcq_mid;
-double jetAK8puppi_dnnDecorr_probTbcq_min;
-double jetAK8puppi_dnnDecorr_probTbqq_max;
-double jetAK8puppi_dnnDecorr_probTbqq_mid;
-double jetAK8puppi_dnnDecorr_probTbqq_min;
-double jetAK8puppi_dnnDecorr_probTbc_max;
-double jetAK8puppi_dnnDecorr_probTbc_mid;
-double jetAK8puppi_dnnDecorr_probTbc_min;
-double jetAK8puppi_dnnDecorr_probTbq_max;
-double jetAK8puppi_dnnDecorr_probTbq_mid;
-double jetAK8puppi_dnnDecorr_probTbq_min;
-double jetAK8puppi_dnnDecorr_probWcq_max;
-double jetAK8puppi_dnnDecorr_probWcq_mid;
-double jetAK8puppi_dnnDecorr_probWcq_min;
-double jetAK8puppi_dnnDecorr_probWqq_max;
-double jetAK8puppi_dnnDecorr_probWqq_mid;
-double jetAK8puppi_dnnDecorr_probWqq_min;
-double jetAK8puppi_dnnDecorr_probZbb_max;
-double jetAK8puppi_dnnDecorr_probZbb_mid;
-double jetAK8puppi_dnnDecorr_probZbb_min;
-double jetAK8puppi_dnnDecorr_probZcc_max;
-double jetAK8puppi_dnnDecorr_probZcc_mid;
-double jetAK8puppi_dnnDecorr_probZcc_min;
-double jetAK8puppi_dnnDecorr_probZqq_max;
-double jetAK8puppi_dnnDecorr_probZqq_mid;
-double jetAK8puppi_dnnDecorr_probZqq_min;
-double jetAK8puppi_dnnDecorr_probHbb_max;
-double jetAK8puppi_dnnDecorr_probHbb_mid;
-double jetAK8puppi_dnnDecorr_probHbb_min;
-double jetAK8puppi_dnnDecorr_probHcc_max;
-double jetAK8puppi_dnnDecorr_probHcc_mid;
-double jetAK8puppi_dnnDecorr_probHcc_min;
-double jetAK8puppi_dnnDecorr_probHqqqq_max;
-double jetAK8puppi_dnnDecorr_probHqqqq_mid;
-double jetAK8puppi_dnnDecorr_probHqqqq_min;
-double jetAK8puppi_dnnDecorr_probQCDbb_max;
-double jetAK8puppi_dnnDecorr_probQCDbb_mid;
-double jetAK8puppi_dnnDecorr_probQCDbb_min;
-double jetAK8puppi_dnnDecorr_probQCDcc_max;
-double jetAK8puppi_dnnDecorr_probQCDcc_mid;
-double jetAK8puppi_dnnDecorr_probQCDcc_min;
-double jetAK8puppi_dnnDecorr_probQCDb_max;
-double jetAK8puppi_dnnDecorr_probQCDb_mid;
-double jetAK8puppi_dnnDecorr_probQCDb_min;
-double jetAK8puppi_dnnDecorr_probQCDc_max;
-double jetAK8puppi_dnnDecorr_probQCDc_mid;
-double jetAK8puppi_dnnDecorr_probQCDc_min;
-double jetAK8puppi_dnnDecorr_probQCDothers_max;
-double jetAK8puppi_dnnDecorr_probQCDothers_mid;
-double jetAK8puppi_dnnDecorr_probQCDothers_min;
-
-
-// gKK 21.7.19
-// deep H
-double jetAK8puppi_dnnDecorrhbb_tag1;
-double jetAK8puppi_dnnDecorrhbb_tag2;
-double jetAK8puppi_dnnDecorrhbb_tag3;
-double jetAK8puppi_dnnDecorrh4q_tag1;
-double jetAK8puppi_dnnDecorrh4q_tag2;
-double jetAK8puppi_dnnDecorrh4q_tag3;
    
 // DR
 double DR_j1j2 ;
@@ -2037,145 +1340,6 @@ double DR_jj23_j1_deepwordered;
 double DPhi_jj12_j3_deepwordered;
 double DPhi_jj13_j2_deepwordered;
 double DPhi_jj23_j1_deepwordered;
-
-// gKK raw scores
-double jetAK8puppi_dnn_probTbcq;
-double jetAK8puppi_dnn_probTbqq;
-double jetAK8puppi_dnn_probTbc;
-double jetAK8puppi_dnn_probTbq;
-double jetAK8puppi_dnn_probWcq;
-double jetAK8puppi_dnn_probWqq;
-double jetAK8puppi_dnn_probZbb;
-double jetAK8puppi_dnn_probZcc;
-double jetAK8puppi_dnn_probZqq;
-double jetAK8puppi_dnn_probHbb;
-double jetAK8puppi_dnn_probHcc;
-double jetAK8puppi_dnn_probHqqqq;
-double jetAK8puppi_dnn_probQCDbb;
-double jetAK8puppi_dnn_probQCDcc;
-double jetAK8puppi_dnn_probQCDb;
-double jetAK8puppi_dnn_probQCDc;
-double jetAK8puppi_dnn_probQCDothers;
-double jetAK8puppi_dnnDecorr_probTbcq;
-double jetAK8puppi_dnnDecorr_probTbqq;
-double jetAK8puppi_dnnDecorr_probTbc;
-double jetAK8puppi_dnnDecorr_probTbq;
-double jetAK8puppi_dnnDecorr_probWcq;
-double jetAK8puppi_dnnDecorr_probWqq;
-double jetAK8puppi_dnnDecorr_probZbb;
-double jetAK8puppi_dnnDecorr_probZcc;
-double jetAK8puppi_dnnDecorr_probZqq;
-double jetAK8puppi_dnnDecorr_probHbb;
-double jetAK8puppi_dnnDecorr_probHcc;
-double jetAK8puppi_dnnDecorr_probHqqqq;
-double jetAK8puppi_dnnDecorr_probQCDbb;
-double jetAK8puppi_dnnDecorr_probQCDcc;
-double jetAK8puppi_dnnDecorr_probQCDb;
-double jetAK8puppi_dnnDecorr_probQCDc;
-double jetAK8puppi_dnnDecorr_probQCDothers;
-double jetAK8puppi_dnn_probTbcq_2;
-double jetAK8puppi_dnn_probTbqq_2;
-double jetAK8puppi_dnn_probTbc_2;
-double jetAK8puppi_dnn_probTbq_2;
-double jetAK8puppi_dnn_probWcq_2;
-double jetAK8puppi_dnn_probWqq_2;
-double jetAK8puppi_dnn_probZbb_2;
-double jetAK8puppi_dnn_probZcc_2;
-double jetAK8puppi_dnn_probZqq_2;
-double jetAK8puppi_dnn_probHbb_2;
-double jetAK8puppi_dnn_probHcc_2;
-double jetAK8puppi_dnn_probHqqqq_2;
-double jetAK8puppi_dnn_probQCDbb_2;
-double jetAK8puppi_dnn_probQCDcc_2;
-double jetAK8puppi_dnn_probQCDb_2;
-double jetAK8puppi_dnn_probQCDc_2;
-double jetAK8puppi_dnn_probQCDothers_2;
-double jetAK8puppi_dnnDecorr_probTbcq_2;
-double jetAK8puppi_dnnDecorr_probTbqq_2;
-double jetAK8puppi_dnnDecorr_probTbc_2;
-double jetAK8puppi_dnnDecorr_probTbq_2;
-double jetAK8puppi_dnnDecorr_probWcq_2;
-double jetAK8puppi_dnnDecorr_probWqq_2;
-double jetAK8puppi_dnnDecorr_probZbb_2;
-double jetAK8puppi_dnnDecorr_probZcc_2;
-double jetAK8puppi_dnnDecorr_probZqq_2;
-double jetAK8puppi_dnnDecorr_probHbb_2;
-double jetAK8puppi_dnnDecorr_probHcc_2;
-double jetAK8puppi_dnnDecorr_probHqqqq_2;
-double jetAK8puppi_dnnDecorr_probQCDbb_2;
-double jetAK8puppi_dnnDecorr_probQCDcc_2;
-double jetAK8puppi_dnnDecorr_probQCDb_2;
-double jetAK8puppi_dnnDecorr_probQCDc_2;
-double jetAK8puppi_dnnDecorr_probQCDothers_2;
-double jetAK8puppi_dnn_probTbcq_3;
-double jetAK8puppi_dnn_probTbqq_3;
-double jetAK8puppi_dnn_probTbc_3;
-double jetAK8puppi_dnn_probTbq_3;
-double jetAK8puppi_dnn_probWcq_3;
-double jetAK8puppi_dnn_probWqq_3;
-double jetAK8puppi_dnn_probZbb_3;
-double jetAK8puppi_dnn_probZcc_3;
-double jetAK8puppi_dnn_probZqq_3;
-double jetAK8puppi_dnn_probHbb_3;
-double jetAK8puppi_dnn_probHcc_3;
-double jetAK8puppi_dnn_probHqqqq_3;
-double jetAK8puppi_dnn_probQCDbb_3;
-double jetAK8puppi_dnn_probQCDcc_3;
-double jetAK8puppi_dnn_probQCDb_3;
-double jetAK8puppi_dnn_probQCDc_3;
-double jetAK8puppi_dnn_probQCDothers_3;
-double jetAK8puppi_dnnDecorr_probTbcq_3;
-double jetAK8puppi_dnnDecorr_probTbqq_3;
-double jetAK8puppi_dnnDecorr_probTbc_3;
-double jetAK8puppi_dnnDecorr_probTbq_3;
-double jetAK8puppi_dnnDecorr_probWcq_3;
-double jetAK8puppi_dnnDecorr_probWqq_3;
-double jetAK8puppi_dnnDecorr_probZbb_3;
-double jetAK8puppi_dnnDecorr_probZcc_3;
-double jetAK8puppi_dnnDecorr_probZqq_3;
-double jetAK8puppi_dnnDecorr_probHbb_3;
-double jetAK8puppi_dnnDecorr_probHcc_3;
-double jetAK8puppi_dnnDecorr_probHqqqq_3;
-double jetAK8puppi_dnnDecorr_probQCDbb_3;
-double jetAK8puppi_dnnDecorr_probQCDcc_3;
-double jetAK8puppi_dnnDecorr_probQCDb_3;
-double jetAK8puppi_dnnDecorr_probQCDc_3;
-double jetAK8puppi_dnnDecorr_probQCDothers_3;
-double jetAK8puppi_dnn_probTbcq_4;
-double jetAK8puppi_dnn_probTbqq_4;
-double jetAK8puppi_dnn_probTbc_4;
-double jetAK8puppi_dnn_probTbq_4;
-double jetAK8puppi_dnn_probWcq_4;
-double jetAK8puppi_dnn_probWqq_4;
-double jetAK8puppi_dnn_probZbb_4;
-double jetAK8puppi_dnn_probZcc_4;
-double jetAK8puppi_dnn_probZqq_4;
-double jetAK8puppi_dnn_probHbb_4;
-double jetAK8puppi_dnn_probHcc_4;
-double jetAK8puppi_dnn_probHqqqq_4;
-double jetAK8puppi_dnn_probQCDbb_4;
-double jetAK8puppi_dnn_probQCDcc_4;
-double jetAK8puppi_dnn_probQCDb_4;
-double jetAK8puppi_dnn_probQCDc_4;
-double jetAK8puppi_dnn_probQCDothers_4;
-double jetAK8puppi_dnnDecorr_probTbcq_4;
-double jetAK8puppi_dnnDecorr_probTbqq_4;
-double jetAK8puppi_dnnDecorr_probTbc_4;
-double jetAK8puppi_dnnDecorr_probTbq_4;
-double jetAK8puppi_dnnDecorr_probWcq_4;
-double jetAK8puppi_dnnDecorr_probWqq_4;
-double jetAK8puppi_dnnDecorr_probZbb_4;
-double jetAK8puppi_dnnDecorr_probZcc_4;
-double jetAK8puppi_dnnDecorr_probZqq_4;
-double jetAK8puppi_dnnDecorr_probHbb_4;
-double jetAK8puppi_dnnDecorr_probHcc_4;
-double jetAK8puppi_dnnDecorr_probHqqqq_4;
-double jetAK8puppi_dnnDecorr_probQCDbb_4;
-double jetAK8puppi_dnnDecorr_probQCDcc_4;
-double jetAK8puppi_dnnDecorr_probQCDb_4;
-double jetAK8puppi_dnnDecorr_probQCDc_4;
-double jetAK8puppi_dnnDecorr_probQCDothers_4;
-
 
 TLorentzVector AK41,AK42,AK43,AK44,AK45,AK46;
 TLorentzVector AK81,AK82,AK83,AK84;
@@ -2277,14 +1441,6 @@ Double_t tau42_max2;
 Double_t tau42_mid2;
 Double_t tau42_min2;
 Double_t tau42_mostmin2;
-Double_t jetAK8puppi_dnnTop, jetAK8puppi_dnnW,jetAK8puppi_dnnH4q,jetAK8puppi_dnnTop_2, jetAK8puppi_dnnW_2,jetAK8puppi_dnnH4q_2,jetAK8puppi_dnnTop_3, jetAK8puppi_dnnW_3,jetAK8puppi_dnnH4q_3, jetAK8puppi_dnnTop_4, jetAK8puppi_dnnW_4,jetAK8puppi_dnnH4q_4; //DeepAK8
-Double_t jetAK8puppi_dnnZ,jetAK8puppi_dnnZbb,jetAK8puppi_dnnHbb,jetAK8puppi_dnnZ_2,jetAK8puppi_dnnZbb_2,jetAK8puppi_dnnHbb_2,jetAK8puppi_dnnZ_3,jetAK8puppi_dnnZbb_3,jetAK8puppi_dnnHbb_3,jetAK8puppi_dnnZ_4,jetAK8puppi_dnnZbb_4,jetAK8puppi_dnnHbb_4;
-Double_t jetAK8puppi_dnnDecorrTop, jetAK8puppi_dnnDecorrW,jetAK8puppi_dnnDecorrH4q,jetAK8puppi_dnnDecorrTop_2, jetAK8puppi_dnnDecorrW_2, jetAK8puppi_dnnDecorrH4q_2,jetAK8puppi_dnnDecorrTop_3, jetAK8puppi_dnnDecorrW_3, jetAK8puppi_dnnDecorrH4q_3,jetAK8puppi_dnnDecorrTop_4, jetAK8puppi_dnnDecorrW_4,jetAK8puppi_dnnDecorrH4q_4; //Decorrelated DeepAK8
-Double_t jetAK8puppi_dnnDecorrZ,jetAK8puppi_dnnDecorrZbb,jetAK8puppi_dnnDecorrHbb,jetAK8puppi_dnnDecorrZ_2,jetAK8puppi_dnnDecorrZbb_2,jetAK8puppi_dnnDecorrHbb_2,jetAK8puppi_dnnDecorrZ_3,jetAK8puppi_dnnDecorrZbb_3,jetAK8puppi_dnnDecorrHbb_3,jetAK8puppi_dnnDecorrZ_4,jetAK8puppi_dnnDecorrZbb_4,jetAK8puppi_dnnDecorrHbb_4;
-Double_t jetAK8puppi_dnnDecorrbb,jetAK8puppi_dnnDecorrcc,jetAK8puppi_dnnDecorrbbnog,jetAK8puppi_dnnDecorrccnog,jetAK8puppi_dnnDecorrbb_2,jetAK8puppi_dnnDecorrcc_2,jetAK8puppi_dnnDecorrbbnog_2,jetAK8puppi_dnnDecorrccnog_2,jetAK8puppi_dnnDecorrbb_3,jetAK8puppi_dnnDecorrcc_3,jetAK8puppi_dnnDecorrbbnog_3,jetAK8puppi_dnnDecorrccnog_3,jetAK8puppi_dnnDecorrbb_4,jetAK8puppi_dnnDecorrcc_4,jetAK8puppi_dnnDecorrbbnog_4,jetAK8puppi_dnnDecorrccnog_4;
-Double_t jetAK8puppi_dnnqcd,jetAK8puppi_dnntop,jetAK8puppi_dnnw,jetAK8puppi_dnnz,jetAK8puppi_dnnzbb,jetAK8puppi_dnnhbb,jetAK8puppi_dnnh4q,jetAK8puppi_dnnqcd_2,jetAK8puppi_dnntop_2,jetAK8puppi_dnnw_2,jetAK8puppi_dnnz_2,jetAK8puppi_dnnzbb_2,jetAK8puppi_dnnhbb_2,jetAK8puppi_dnnh4q_2,jetAK8puppi_dnnqcd_3,jetAK8puppi_dnntop_3,jetAK8puppi_dnnw_3,jetAK8puppi_dnnz_3,jetAK8puppi_dnnzbb_3,jetAK8puppi_dnnhbb_3,jetAK8puppi_dnnh4q_3,jetAK8puppi_dnnqcd_4,jetAK8puppi_dnntop_4,jetAK8puppi_dnnw_4,jetAK8puppi_dnnz_4,jetAK8puppi_dnnzbb_4,jetAK8puppi_dnnhbb_4,jetAK8puppi_dnnh4q_4;
-Double_t jetAK8puppi_dnnDecorrqcd,jetAK8puppi_dnnDecorrtop,jetAK8puppi_dnnDecorrw,jetAK8puppi_dnnDecorrz,jetAK8puppi_dnnDecorrzbb,jetAK8puppi_dnnDecorrhbb,jetAK8puppi_dnnDecorrh4q,jetAK8puppi_dnnDecorrqcd_2,jetAK8puppi_dnnDecorrtop_2,jetAK8puppi_dnnDecorrw_2,jetAK8puppi_dnnDecorrz_2,jetAK8puppi_dnnDecorrzbb_2,jetAK8puppi_dnnDecorrhbb_2,jetAK8puppi_dnnDecorrh4q_2,jetAK8puppi_dnnDecorrqcd_3,jetAK8puppi_dnnDecorrtop_3,jetAK8puppi_dnnDecorrw_3,jetAK8puppi_dnnDecorrz_3,jetAK8puppi_dnnDecorrzbb_3,jetAK8puppi_dnnDecorrhbb_3,jetAK8puppi_dnnDecorrh4q_3,jetAK8puppi_dnnDecorrqcd_4,jetAK8puppi_dnnDecorrtop_4,jetAK8puppi_dnnDecorrw_4,jetAK8puppi_dnnDecorrz_4,jetAK8puppi_dnnDecorrzbb_4,jetAK8puppi_dnnDecorrhbb_4,jetAK8puppi_dnnDecorrh4q_4;
-Double_t jetAK8puppi_dnnTop_max, jetAK8puppi_dnnW_max, jetAK8puppi_dnnH4q_max, jetAK8puppi_dnnTop_mid, jetAK8puppi_dnnW_mid, jetAK8puppi_dnnH4q_mid, jetAK8puppi_dnnTop_min, jetAK8puppi_dnnW_min, jetAK8puppi_dnnH4q_min, jetAK8puppi_dnnZ_max, jetAK8puppi_dnnZbb_max, jetAK8puppi_dnnHbb_max, jetAK8puppi_dnnZ_mid, jetAK8puppi_dnnZbb_mid, jetAK8puppi_dnnHbb_mid, jetAK8puppi_dnnZ_min, jetAK8puppi_dnnZbb_min, jetAK8puppi_dnnHbb_min, jetAK8puppi_dnnDecorrTop_max, jetAK8puppi_dnnDecorrW_max, jetAK8puppi_dnnDecorrH4q_max, jetAK8puppi_dnnDecorrTop_mid, jetAK8puppi_dnnDecorrW_mid, jetAK8puppi_dnnDecorrH4q_mid, jetAK8puppi_dnnDecorrTop_min, jetAK8puppi_dnnDecorrW_min, jetAK8puppi_dnnDecorrH4q_min, jetAK8puppi_dnnDecorrZ_max, jetAK8puppi_dnnDecorrZbb_max, jetAK8puppi_dnnDecorrHbb_max, jetAK8puppi_dnnDecorrZ_mid, jetAK8puppi_dnnDecorrZbb_mid, jetAK8puppi_dnnDecorrHbb_mid, jetAK8puppi_dnnDecorrZ_min, jetAK8puppi_dnnDecorrZbb_min, jetAK8puppi_dnnDecorrHbb_min, jetAK8puppi_dnnDecorrbb_max, jetAK8puppi_dnnDecorrcc_max, jetAK8puppi_dnnDecorrbbnog_max, jetAK8puppi_dnnDecorrccnog_max, jetAK8puppi_dnnDecorrbb_mid, jetAK8puppi_dnnDecorrcc_mid, jetAK8puppi_dnnDecorrbbnog_mid, jetAK8puppi_dnnDecorrccnog_mid, jetAK8puppi_dnnDecorrbb_min, jetAK8puppi_dnnDecorrcc_min, jetAK8puppi_dnnDecorrbbnog_min, jetAK8puppi_dnnDecorrccnog_min, jetAK8puppi_dnnqcd_max, jetAK8puppi_dnntop_max, jetAK8puppi_dnnw_max, jetAK8puppi_dnnz_max, jetAK8puppi_dnnzbb_max, jetAK8puppi_dnnhbb_max, jetAK8puppi_dnnh4q_max, jetAK8puppi_dnnqcd_mid, jetAK8puppi_dnntop_mid, jetAK8puppi_dnnw_mid, jetAK8puppi_dnnz_mid, jetAK8puppi_dnnzbb_mid, jetAK8puppi_dnnhbb_mid, jetAK8puppi_dnnh4q_mid, jetAK8puppi_dnnqcd_min, jetAK8puppi_dnntop_min, jetAK8puppi_dnnw_min, jetAK8puppi_dnnz_min, jetAK8puppi_dnnzbb_min, jetAK8puppi_dnnhbb_min, jetAK8puppi_dnnh4q_min, jetAK8puppi_dnnDecorrqcd_max, jetAK8puppi_dnnDecorrtop_max, jetAK8puppi_dnnDecorrw_max, jetAK8puppi_dnnDecorrz_max, jetAK8puppi_dnnDecorrzbb_max, jetAK8puppi_dnnDecorrhbb_max, jetAK8puppi_dnnDecorrh4q_max, jetAK8puppi_dnnDecorrqcd_mid, jetAK8puppi_dnnDecorrtop_mid, jetAK8puppi_dnnDecorrw_mid, jetAK8puppi_dnnDecorrz_mid, jetAK8puppi_dnnDecorrzbb_mid, jetAK8puppi_dnnDecorrhbb_mid, jetAK8puppi_dnnDecorrh4q_mid, jetAK8puppi_dnnDecorrqcd_min, jetAK8puppi_dnnDecorrtop_min, jetAK8puppi_dnnDecorrw_min, jetAK8puppi_dnnDecorrz_min, jetAK8puppi_dnnDecorrzbb_min, jetAK8puppi_dnnDecorrhbb_min, jetAK8puppi_dnnDecorrh4q_min;
 
 float PartNet_MD_W_a;
 float PartNet_MD_W_b;
@@ -2968,22 +2124,6 @@ Double_t        phigenq5l[5];
 Double_t        ptgenq5l[5];
 Double_t        egenq5l[5];
 
-/*   Double_t        gen_gra_m;
-Double_t        gen_gra_pt;
-Double_t        gen_ele_pt;
-Double_t        gen_ele_eta;
-Double_t        gen_ele_phi;
-Double_t        gen_ele_e;
-Double_t        gen_mu_pt;
-Double_t        gen_mu_eta;
-Double_t        gen_mu_phi;
-Double_t        gen_mu_e;
-Double_t        genmatch_ele_pt;
-Double_t        genmatch_ele_eta;
-Double_t        genmatch_ele_phi;
-Double_t        genmatch_ele_e;
-Double_t        genmatch_ele_dr;
-*/
 Double_t        gentop_pt;
 Double_t        gentop_eta;
 Double_t        gentop_phi;
@@ -2992,20 +2132,6 @@ Double_t        genantitop_pt;
 Double_t        genantitop_eta;
 Double_t        genantitop_phi;
 Double_t        genantitop_mass;
-/*   Double_t        genmatch_mu_pt;
-Double_t        genmatch_mu_eta;
-Double_t        genmatch_mu_phi;
-Double_t        genmatch_mu_e;
-Double_t        genmatch_mu_dr;
-Double_t        ptGenVlep;
-Double_t        etaGenVlep;
-Double_t        phiGenVlep;
-Double_t        massGenVlep;
-Double_t        ptGenVhad;
-Double_t        etaGenVhad;
-Double_t        phiGenVhad;
-Double_t        massGenVhad;
-*/
 Double_t        L1prefiring;
 Double_t        L1prefiringup;
 Double_t        L1prefiringdown;
@@ -3031,174 +2157,6 @@ bool HLT_PFJet500;
 bool HLT_AK8PFJet360_TrimMass30;
 bool HLT_AK8PFHT700_TrimR0p1PT0p03Mass50;
 
-// for 1lepton VVV EFT
-
-float Lep1fatJet2_LeptonPt;
-float Lep1fatJet2_LeptonEta;
-float Lep1fatJet2_LeptonPhi;
-float Lep1fatJet2_LeptonE;
-int Lep1fatJet2_LeptonPDGID;
-float Lep1fatJet2_Muon_pfRelIso04_all;
-
-    // MET
-float Lep1fatJet2_MET_pt;
-float Lep1fatJet2_MET_phi;
-float Common_MET_pt_JER;
-float Common_MET_phi_JER;
-
-    // neutrino
-float Lep1fatJet2_NeutrinoPt;
-float Lep1fatJet2_NeutrinoEta;
-float Lep1fatJet2_Neutrinophi;
-float Lep1fatJet2_NeutrinoE;
-
-    // Leptonic W
-float Lep1fatJet2_LeptonicWPt;
-float Lep1fatJet2_LeptonicWEta;
-float Lep1fatJet2_LeptonicWPhi;
-float Lep1fatJet2_LeptonicWM;
-float Lep1fatJet2_LeptonicWMt;
-
-    
-// fatJet
-float Lep1fatJet2_FatJet_pt;
-float Lep1fatJet2_FatJet_eta;
-float Lep1fatJet2_FatJet_phi;
-float Lep1fatJet2_FatJet_msoftdrop;
-int Lep1fatJet2_FatJet_jetId;
-float Lep1fatJet2_FatJet_tau1;
-float Lep1fatJet2_FatJet_tau2;
-float Lep1fatJet2_FatJet_tau3;
-float Lep1fatJet2_FatJet_tau4;
-float Lep1fatJet2_FatJet_deepTagMD_H4qvsQCD;
-float Lep1fatJet2_FatJet_deepTagMD_HbbvsQCD;
-float Lep1fatJet2_FatJet_deepTagMD_TvsQCD;
-float Lep1fatJet2_FatJet_deepTagMD_WvsQCD;
-float Lep1fatJet2_FatJet_deepTagMD_ZHbbvsQCD;
-float Lep1fatJet2_FatJet_deepTagMD_ZHccvsQCD;
-float Lep1fatJet2_FatJet_deepTagMD_ZbbvsQCD;
-float Lep1fatJet2_FatJet_deepTagMD_ZvsQCD;
-float Lep1fatJet2_FatJet_deepTagMD_bbvsLight;
-float Lep1fatJet2_FatJet_deepTagMD_ccvsLight;
-float Lep1fatJet2_FatJet_deepTag_H;
-float Lep1fatJet2_FatJet_deepTag_QCD;
-float Lep1fatJet2_FatJet_deepTag_QCDothers;
-float Lep1fatJet2_FatJet_deepTag_TvsQCD;
-float Lep1fatJet2_FatJet_deepTag_WvsQCD;
-float Lep1fatJet2_FatJet_deepTag_ZvsQCD;
-float Lep1fatJet2_FatJet_particleNetMD_QCD;
-float Lep1fatJet2_FatJet_particleNetMD_Xbb;
-float Lep1fatJet2_FatJet_particleNetMD_Xcc;
-float Lep1fatJet2_FatJet_particleNetMD_Xqq;
-float Lep1fatJet2_FatJet_particleNet_H4qvsQCD;
-float Lep1fatJet2_FatJet_particleNet_HbbvsQCD;
-float Lep1fatJet2_FatJet_particleNet_HccvsQCD;
-float Lep1fatJet2_FatJet_particleNet_QCD;
-float Lep1fatJet2_FatJet_particleNet_TvsQCD;
-float Lep1fatJet2_FatJet_particleNet_WvsQCD;
-float Lep1fatJet2_FatJet_particleNet_ZvsQCD;
-
-float Lep1fatJet2_FatJet_pt_2;
-float Lep1fatJet2_FatJet_eta_2;
-float Lep1fatJet2_FatJet_phi_2;
-float Lep1fatJet2_FatJet_msoftdrop_2;
-int Lep1fatJet2_FatJet_jetId_2;
-float Lep1fatJet2_FatJet_tau1_2;
-float Lep1fatJet2_FatJet_tau2_2;
-float Lep1fatJet2_FatJet_tau3_2;
-float Lep1fatJet2_FatJet_tau4_2;
-float Lep1fatJet2_FatJet_deepTagMD_H4qvsQCD_2;
-float Lep1fatJet2_FatJet_deepTagMD_HbbvsQCD_2;
-float Lep1fatJet2_FatJet_deepTagMD_TvsQCD_2;
-float Lep1fatJet2_FatJet_deepTagMD_WvsQCD_2;
-float Lep1fatJet2_FatJet_deepTagMD_ZHbbvsQCD_2;
-float Lep1fatJet2_FatJet_deepTagMD_ZHccvsQCD_2;
-float Lep1fatJet2_FatJet_deepTagMD_ZbbvsQCD_2;
-float Lep1fatJet2_FatJet_deepTagMD_ZvsQCD_2;
-float Lep1fatJet2_FatJet_deepTagMD_bbvsLight_2;
-float Lep1fatJet2_FatJet_deepTagMD_ccvsLight_2;
-float Lep1fatJet2_FatJet_deepTag_H_2;
-float Lep1fatJet2_FatJet_deepTag_QCD_2;
-float Lep1fatJet2_FatJet_deepTag_QCDothers_2;
-float Lep1fatJet2_FatJet_deepTag_TvsQCD_2;
-float Lep1fatJet2_FatJet_deepTag_WvsQCD_2;
-float Lep1fatJet2_FatJet_deepTag_ZvsQCD_2;
-float Lep1fatJet2_FatJet_particleNetMD_QCD_2;
-float Lep1fatJet2_FatJet_particleNetMD_Xbb_2;
-float Lep1fatJet2_FatJet_particleNetMD_Xcc_2;
-float Lep1fatJet2_FatJet_particleNetMD_Xqq_2;
-float Lep1fatJet2_FatJet_particleNet_H4qvsQCD_2;
-float Lep1fatJet2_FatJet_particleNet_HbbvsQCD_2;
-float Lep1fatJet2_FatJet_particleNet_HccvsQCD_2;
-float Lep1fatJet2_FatJet_particleNet_QCD_2;
-float Lep1fatJet2_FatJet_particleNet_TvsQCD_2;
-float Lep1fatJet2_FatJet_particleNet_WvsQCD_2;
-float Lep1fatJet2_FatJet_particleNet_ZvsQCD_2;
-
-// Gen
-
-
-// weight, HLT
-float Lep1fatJet2_Pileup_nTrueInt;
-float Lep1fatJet2_Pileup_nPU;
-
-int Lep1fatJet2_HLT_Mu50;
-int Lep1fatJet2_HLT_IsoMu24;
-int Lep1fatJet2_HLT_OldMu100;
-int Lep1fatJet2_HLT_TkMu100;
-int Lep1fatJet2_HLT_IsoMu27;
-int Lep1fatJet2_HLT_Ele27_WPTight_Gsf;
-int Lep1fatJet2_HLT_Ele32_WPTight_Gsf_L1DoubleEG;
-int Lep1fatJet2_HLT_Ele35_WPTight_Gsf;
-int Lep1fatJet2_HLT_Photon200;
-int Lep1fatJet2_HLT_Ele32_WPTight_Gsf;
-
-bool Common_passGoodRun;
-bool Common_noiseFlag;
-bool Common_noiseFlagMC;
-
-int Common_nb_tight;
-int Common_nb_medium;
-int Common_nb_loose;
-
-float Common_event_lepSF;
-float Common_event_tightBtagSF;
-float Common_event_mediumBtagSF;
-float Common_event_looseBtagSF;
-float Common_eventweight_fatjet_SFVLoose;
-float Common_eventweight_fatjet_SFLoose;
-float Common_eventweight_fatjet_SFMedium;
-float Common_eventweight_fatjet_SFTight;
-
-float Weight_btagtight;
-float weight_btagmediun;
-float Weight_btagloose;
-float Weight_FJVL;
-float Weight_FJL;
-float Weight_FJM;
-float Weight_FJT;
-
-// Gen matching
-int matchingt_1;
-int matchingW_1;
-int matchingg_1;
-int matchingZ_1;
-int matchingu_1;
-int matchingd_1;
-int matchings_1;
-int matchingc_1;
-int matching_gq_1;
-
-int matchingt_2;
-int matchingW_2;
-int matchingg_2;
-int matchingZ_2;
-int matchingu_2;
-int matchingd_2;
-int matchings_2;
-int matchingc_2;
-int matching_gq_2;
-
 // calculated variables
 Int_t Nj4_ex;
 Int_t Nj4_in;
@@ -3213,174 +2171,6 @@ int nb_t_deep_in;
 float MJJlv;
 
 float leptonicWMT;
-
-// vector branches
-std::vector<float> *  Common_LHEReweightingWeight=0;
-
-std::vector<float> *  Lep1fatJet2_Jet_btagDeepB=0;
-std::vector<float> *  Lep1fatJet2_Jet_btagDeepC=0;
-std::vector<float> *  Lep1fatJet2_Jet_btagDeepFlavC=0;
-std::vector<float> *  Lep1fatJet2_Jet_btagDeepFlavB=0;
-std::vector<float> *  Lep1fatJet2_Jet_qgl=0;
-std::vector<float> *  Lep1fatJet2_Jet_jetId=0;
-std::vector<float> *  Lep1fatJet2_Jet_hadronFlavour=0;
-std::vector<float> *  Lep1fatJet2_Jet_partonFlavour=0;
-std::vector<float> *  Lep1fatJet2_Jet_pt=0;
-std::vector<float> *  Lep1fatJet2_Jet_eta=0;
-std::vector<float> *  Lep1fatJet2_Jet_phi=0;
-std::vector<float> *  Lep1fatJet2_Jet_e=0;
-
-std::vector<float> *  Lep1fatJet2_GenPart_eta=0;
-std::vector<int> *  Lep1fatJet2_GenPart_genPartIdxMother=0;
-std::vector<float> *  Lep1fatJet2_GenPart_mass=0;
-std::vector<int> *  Lep1fatJet2_GenPart_pdgId=0;
-std::vector<float> *  Lep1fatJet2_GenPart_phi=0;
-std::vector<float> *  Lep1fatJet2_GenPart_pt=0;
-std::vector<int> *  Lep1fatJet2_GenPart_status=0;
-std::vector<int> *  Lep1fatJet2_GenPart_statusFlags=0;
-
-
-
-TBranch        *b_Lep1fatJet2_LeptonPt;
-TBranch        *b_Lep1fatJet2_LeptonEta;
-TBranch        *b_Lep1fatJet2_LeptonPhi;
-TBranch        *b_Lep1fatJet2_LeptonE;
-TBranch        *b_Lep1fatJet2_LeptonPDGID;
-TBranch        *b_Lep1fatJet2_Muon_pfRelIso04_all;
-
-    // MET
-TBranch        *b_Lep1fatJet2_MET_pt;
-TBranch        *b_Lep1fatJet2_MET_phi;
-TBranch        *b_Common_MET_pt_JER;
-TBranch        *b_Common_MET_phi_JER;
-
-    // neutrino
-TBranch        *b_Lep1fatJet2_NeutrinoPt;
-TBranch        *b_Lep1fatJet2_NeutrinoEta;
-TBranch        *b_Lep1fatJet2_Neutrinophi;
-TBranch        *b_Lep1fatJet2_NeutrinoE;
-
-    // Leptonic W
-TBranch        *b_Lep1fatJet2_LeptonicWPt;
-TBranch        *b_Lep1fatJet2_LeptonicWEta;
-TBranch        *b_Lep1fatJet2_LeptonicWPhi;
-TBranch        *b_Lep1fatJet2_LeptonicWM;
-TBranch        *b_Lep1fatJet2_LeptonicWMt;
-
-    
-   
-// fatJet
-
-TBranch        *b_Lep1fatJet2_FatJet_pt;
-TBranch        *b_Lep1fatJet2_FatJet_eta;
-TBranch        *b_Lep1fatJet2_FatJet_phi;
-TBranch        *b_Lep1fatJet2_FatJet_msoftdrop;
-TBranch        *b_Lep1fatJet2_FatJet_jetId;
-TBranch        *b_Lep1fatJet2_FatJet_tau1;
-TBranch        *b_Lep1fatJet2_FatJet_tau2;
-TBranch        *b_Lep1fatJet2_FatJet_tau3;
-TBranch        *b_Lep1fatJet2_FatJet_tau4;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_H4qvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_HbbvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_TvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_WvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_ZHbbvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_ZHccvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_ZbbvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_ZvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_bbvsLight;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_ccvsLight;
-TBranch        *b_Lep1fatJet2_FatJet_deepTag_H;
-TBranch        *b_Lep1fatJet2_FatJet_deepTag_QCD;
-TBranch        *b_Lep1fatJet2_FatJet_deepTag_QCDothers;
-TBranch        *b_Lep1fatJet2_FatJet_deepTag_TvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_deepTag_WvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_deepTag_ZvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_particleNetMD_QCD;
-TBranch        *b_Lep1fatJet2_FatJet_particleNetMD_Xbb;
-TBranch        *b_Lep1fatJet2_FatJet_particleNetMD_Xcc;
-TBranch        *b_Lep1fatJet2_FatJet_particleNetMD_Xqq;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_H4qvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_HbbvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_HccvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_QCD;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_TvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_WvsQCD;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_ZvsQCD;
-
-TBranch        *b_Lep1fatJet2_FatJet_pt_2;
-TBranch        *b_Lep1fatJet2_FatJet_eta_2;
-TBranch        *b_Lep1fatJet2_FatJet_phi_2;
-TBranch        *b_Lep1fatJet2_FatJet_msoftdrop_2;
-TBranch        *b_Lep1fatJet2_FatJet_jetId_2;
-TBranch        *b_Lep1fatJet2_FatJet_tau1_2;
-TBranch        *b_Lep1fatJet2_FatJet_tau2_2;
-TBranch        *b_Lep1fatJet2_FatJet_tau3_2;
-TBranch        *b_Lep1fatJet2_FatJet_tau4_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_H4qvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_HbbvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_TvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_WvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_ZHbbvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_ZHccvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_ZbbvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_ZvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_bbvsLight_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTagMD_ccvsLight_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTag_H_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTag_QCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTag_QCDothers_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTag_TvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTag_WvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_deepTag_ZvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_particleNetMD_QCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_particleNetMD_Xbb_2;
-TBranch        *b_Lep1fatJet2_FatJet_particleNetMD_Xcc_2;
-TBranch        *b_Lep1fatJet2_FatJet_particleNetMD_Xqq_2;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_H4qvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_HbbvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_HccvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_QCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_TvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_WvsQCD_2;
-TBranch        *b_Lep1fatJet2_FatJet_particleNet_ZvsQCD_2;
-
-
-// weight, HLT
-TBranch        *b_Lep1fatJet2_Pileup_nTrueInt;
-TBranch        *b_Lep1fatJet2_Pileup_nPU;
-
-TBranch        *b_Lep1fatJet2_HLT_Mu50;
-TBranch        *b_Lep1fatJet2_HLT_IsoMu24;
-TBranch        *b_Lep1fatJet2_HLT_OldMu100;
-TBranch        *b_Lep1fatJet2_HLT_TkMu100;
-TBranch        *b_Lep1fatJet2_HLT_IsoMu27;
-TBranch        *b_Lep1fatJet2_HLT_Ele27_WPTight_Gsf;
-TBranch        *b_Lep1fatJet2_HLT_Ele32_WPTight_Gsf_L1DoubleEG;
-TBranch        *b_Lep1fatJet2_HLT_Ele35_WPTight_Gsf;
-TBranch        *b_Lep1fatJet2_HLT_Photon200;
-TBranch        *b_Lep1fatJet2_HLT_Ele32_WPTight_Gsf;
-
-TBranch        *b_Common_passGoodRun;
-TBranch        *b_Common_noiseFlag;
-TBranch        *b_Common_noiseFlagMC;
-
-TBranch        *b_Common_nb_tight;
-TBranch        *b_Common_nb_medium;
-TBranch        *b_Common_nb_loose;
-
-
-TBranch        *b_Common_event_lepSF;
-TBranch        *b_Common_event_tightBtagSF;
-TBranch        *b_Common_event_mediumBtagSF;
-TBranch        *b_Common_event_looseBtagSF;
-TBranch        *b_Common_eventweight_fatjet_SFVLoose;
-TBranch        *b_Common_eventweight_fatjet_SFLoose;
-TBranch        *b_Common_eventweight_fatjet_SFMedium;
-TBranch        *b_Common_eventweight_fatjet_SFTight;
-
-// end of for VVV EFT 1lepton 
-
 
 TBranch        *b_jetAK8puppi_pt;
 TBranch        *b_jetAK8puppi_pt_2;
@@ -3677,13 +2467,6 @@ TBranch        *b_genantit_w_q2_pdg;
 TBranch        *b_taggenwl;
 TBranch        *b_genw_q1_pdg;
 TBranch        *b_genw_q2_pdg;
-TBranch        *b_jetAK8puppi_dnnTop, *b_jetAK8puppi_dnnW,*b_jetAK8puppi_dnnH4q,*b_jetAK8puppi_dnnTop_2, *b_jetAK8puppi_dnnW_2,*b_jetAK8puppi_dnnH4q_2,*b_jetAK8puppi_dnnTop_3, *b_jetAK8puppi_dnnW_3,*b_jetAK8puppi_dnnH4q_3,*b_jetAK8puppi_dnnTop_4, *b_jetAK8puppi_dnnW_4,*b_jetAK8puppi_dnnH4q_4; //DeepAK8
-TBranch        *b_jetAK8puppi_dnnZ,*b_jetAK8puppi_dnnZbb,*b_jetAK8puppi_dnnHbb,*b_jetAK8puppi_dnnZ_2,*b_jetAK8puppi_dnnZbb_2,*b_jetAK8puppi_dnnHbb_2,*b_jetAK8puppi_dnnZ_3,*b_jetAK8puppi_dnnZbb_3,*b_jetAK8puppi_dnnHbb_3,*b_jetAK8puppi_dnnZ_4,*b_jetAK8puppi_dnnZbb_4,*b_jetAK8puppi_dnnHbb_4;
-TBranch        *b_jetAK8puppi_dnnDecorrTop, *b_jetAK8puppi_dnnDecorrW,*b_jetAK8puppi_dnnDecorrH4q,*b_jetAK8puppi_dnnDecorrTop_2, *b_jetAK8puppi_dnnDecorrW_2, *b_jetAK8puppi_dnnDecorrH4q_2,*b_jetAK8puppi_dnnDecorrTop_3, *b_jetAK8puppi_dnnDecorrW_3, *b_jetAK8puppi_dnnDecorrH4q_3,*b_jetAK8puppi_dnnDecorrTop_4, *b_jetAK8puppi_dnnDecorrW_4,*b_jetAK8puppi_dnnDecorrH4q_4; //Decorrelated DeepAK8
-TBranch        *b_jetAK8puppi_dnnDecorrZ,*b_jetAK8puppi_dnnDecorrZbb,*b_jetAK8puppi_dnnDecorrHbb,*b_jetAK8puppi_dnnDecorrZ_2,*b_jetAK8puppi_dnnDecorrZbb_2,*b_jetAK8puppi_dnnDecorrHbb_2,*b_jetAK8puppi_dnnDecorrZ_3,*b_jetAK8puppi_dnnDecorrZbb_3,*b_jetAK8puppi_dnnDecorrHbb_3,*b_jetAK8puppi_dnnDecorrZ_4,*b_jetAK8puppi_dnnDecorrZbb_4,*b_jetAK8puppi_dnnDecorrHbb_4;
-TBranch        *b_jetAK8puppi_dnnDecorrbb,*b_jetAK8puppi_dnnDecorrcc,*b_jetAK8puppi_dnnDecorrbbnog,*b_jetAK8puppi_dnnDecorrccnog,*b_jetAK8puppi_dnnDecorrbb_2,*b_jetAK8puppi_dnnDecorrcc_2,*b_jetAK8puppi_dnnDecorrbbnog_2,*b_jetAK8puppi_dnnDecorrccnog_2,*b_jetAK8puppi_dnnDecorrbb_3,*b_jetAK8puppi_dnnDecorrcc_3,*b_jetAK8puppi_dnnDecorrbbnog_3,*b_jetAK8puppi_dnnDecorrccnog_3,*b_jetAK8puppi_dnnDecorrbb_4,*b_jetAK8puppi_dnnDecorrcc_4,*b_jetAK8puppi_dnnDecorrbbnog_4,*b_jetAK8puppi_dnnDecorrccnog_4;
-TBranch        *b_jetAK8puppi_dnnqcd,*b_jetAK8puppi_dnntop,*b_jetAK8puppi_dnnw,*b_jetAK8puppi_dnnz,*b_jetAK8puppi_dnnzbb,*b_jetAK8puppi_dnnhbb,*b_jetAK8puppi_dnnh4q,*b_jetAK8puppi_dnnqcd_2,*b_jetAK8puppi_dnntop_2,*b_jetAK8puppi_dnnw_2,*b_jetAK8puppi_dnnz_2,*b_jetAK8puppi_dnnzbb_2,*b_jetAK8puppi_dnnhbb_2,*b_jetAK8puppi_dnnh4q_2,*b_jetAK8puppi_dnnqcd_3,*b_jetAK8puppi_dnntop_3,*b_jetAK8puppi_dnnw_3,*b_jetAK8puppi_dnnz_3,*b_jetAK8puppi_dnnzbb_3,*b_jetAK8puppi_dnnhbb_3,*b_jetAK8puppi_dnnh4q_3,*b_jetAK8puppi_dnnqcd_4,*b_jetAK8puppi_dnntop_4,*b_jetAK8puppi_dnnw_4,*b_jetAK8puppi_dnnz_4,*b_jetAK8puppi_dnnzbb_4,*b_jetAK8puppi_dnnhbb_4,*b_jetAK8puppi_dnnh4q_4;
-TBranch        *b_jetAK8puppi_dnnDecorrqcd,*b_jetAK8puppi_dnnDecorrtop,*b_jetAK8puppi_dnnDecorrw,*b_jetAK8puppi_dnnDecorrz,*b_jetAK8puppi_dnnDecorrzbb,*b_jetAK8puppi_dnnDecorrhbb,*b_jetAK8puppi_dnnDecorrh4q,*b_jetAK8puppi_dnnDecorrqcd_2,*b_jetAK8puppi_dnnDecorrtop_2,*b_jetAK8puppi_dnnDecorrw_2,*b_jetAK8puppi_dnnDecorrz_2,*b_jetAK8puppi_dnnDecorrzbb_2,*b_jetAK8puppi_dnnDecorrhbb_2,*b_jetAK8puppi_dnnDecorrh4q_2,*b_jetAK8puppi_dnnDecorrqcd_3,*b_jetAK8puppi_dnnDecorrtop_3,*b_jetAK8puppi_dnnDecorrw_3,*b_jetAK8puppi_dnnDecorrz_3,*b_jetAK8puppi_dnnDecorrzbb_3,*b_jetAK8puppi_dnnDecorrhbb_3,*b_jetAK8puppi_dnnDecorrh4q_3,*b_jetAK8puppi_dnnDecorrqcd_4,*b_jetAK8puppi_dnnDecorrtop_4,*b_jetAK8puppi_dnnDecorrw_4,*b_jetAK8puppi_dnnDecorrz_4,*b_jetAK8puppi_dnnDecorrzbb_4,*b_jetAK8puppi_dnnDecorrhbb_4,*b_jetAK8puppi_dnnDecorrh4q_4;
 
 // gKK raw score
 TBranch        *b_ak4jet_deepflavor_probb;
@@ -3692,144 +2475,6 @@ TBranch        *b_ak4jet_deepflavor_probg;
 TBranch        *b_ak4jet_deepflavor_problepb;
 TBranch        *b_ak4jet_deepflavor_probbb;
 TBranch        *b_ak4jet_deepflavor_probuds;
-
-TBranch        *b_jetAK8puppi_dnn_probTbcq;
-TBranch        *b_jetAK8puppi_dnn_probTbqq;
-TBranch        *b_jetAK8puppi_dnn_probTbc;
-TBranch        *b_jetAK8puppi_dnn_probTbq;
-TBranch        *b_jetAK8puppi_dnn_probWcq;
-TBranch        *b_jetAK8puppi_dnn_probWqq;
-TBranch        *b_jetAK8puppi_dnn_probZbb;
-TBranch        *b_jetAK8puppi_dnn_probZcc;
-TBranch        *b_jetAK8puppi_dnn_probZqq;
-TBranch        *b_jetAK8puppi_dnn_probHbb;
-TBranch        *b_jetAK8puppi_dnn_probHcc;
-TBranch        *b_jetAK8puppi_dnn_probHqqqq;
-TBranch        *b_jetAK8puppi_dnn_probQCDbb;
-TBranch        *b_jetAK8puppi_dnn_probQCDcc;
-TBranch        *b_jetAK8puppi_dnn_probQCDb;
-TBranch        *b_jetAK8puppi_dnn_probQCDc;
-TBranch        *b_jetAK8puppi_dnn_probQCDothers;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbcq;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbqq;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbc;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbq;
-TBranch        *b_jetAK8puppi_dnnDecorr_probWcq;
-TBranch        *b_jetAK8puppi_dnnDecorr_probWqq;
-TBranch        *b_jetAK8puppi_dnnDecorr_probZbb;
-TBranch        *b_jetAK8puppi_dnnDecorr_probZcc;
-TBranch        *b_jetAK8puppi_dnnDecorr_probZqq;
-TBranch        *b_jetAK8puppi_dnnDecorr_probHbb;
-TBranch        *b_jetAK8puppi_dnnDecorr_probHcc;
-TBranch        *b_jetAK8puppi_dnnDecorr_probHqqqq;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDbb;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDcc;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDb;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDc;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDothers;
-TBranch        *b_jetAK8puppi_dnn_probTbcq_2;
-TBranch        *b_jetAK8puppi_dnn_probTbqq_2;
-TBranch        *b_jetAK8puppi_dnn_probTbc_2;
-TBranch        *b_jetAK8puppi_dnn_probTbq_2;
-TBranch        *b_jetAK8puppi_dnn_probWcq_2;
-TBranch        *b_jetAK8puppi_dnn_probWqq_2;
-TBranch        *b_jetAK8puppi_dnn_probZbb_2;
-TBranch        *b_jetAK8puppi_dnn_probZcc_2;
-TBranch        *b_jetAK8puppi_dnn_probZqq_2;
-TBranch        *b_jetAK8puppi_dnn_probHbb_2;
-TBranch        *b_jetAK8puppi_dnn_probHcc_2;
-TBranch        *b_jetAK8puppi_dnn_probHqqqq_2;
-TBranch        *b_jetAK8puppi_dnn_probQCDbb_2;
-TBranch        *b_jetAK8puppi_dnn_probQCDcc_2;
-TBranch        *b_jetAK8puppi_dnn_probQCDb_2;
-TBranch        *b_jetAK8puppi_dnn_probQCDc_2;
-TBranch        *b_jetAK8puppi_dnn_probQCDothers_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbcq_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbqq_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbc_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbq_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probWcq_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probWqq_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probZbb_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probZcc_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probZqq_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probHbb_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probHcc_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probHqqqq_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDbb_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDcc_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDb_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDc_2;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDothers_2;
-TBranch        *b_jetAK8puppi_dnn_probTbcq_3;
-TBranch        *b_jetAK8puppi_dnn_probTbqq_3;
-TBranch        *b_jetAK8puppi_dnn_probTbc_3;
-TBranch        *b_jetAK8puppi_dnn_probTbq_3;
-TBranch        *b_jetAK8puppi_dnn_probWcq_3;
-TBranch        *b_jetAK8puppi_dnn_probWqq_3;
-TBranch        *b_jetAK8puppi_dnn_probZbb_3;
-TBranch        *b_jetAK8puppi_dnn_probZcc_3;
-TBranch        *b_jetAK8puppi_dnn_probZqq_3;
-TBranch        *b_jetAK8puppi_dnn_probHbb_3;
-TBranch        *b_jetAK8puppi_dnn_probHcc_3;
-TBranch        *b_jetAK8puppi_dnn_probHqqqq_3;
-TBranch        *b_jetAK8puppi_dnn_probQCDbb_3;
-TBranch        *b_jetAK8puppi_dnn_probQCDcc_3;
-TBranch        *b_jetAK8puppi_dnn_probQCDb_3;
-TBranch        *b_jetAK8puppi_dnn_probQCDc_3;
-TBranch        *b_jetAK8puppi_dnn_probQCDothers_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbcq_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbqq_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbc_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbq_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probWcq_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probWqq_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probZbb_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probZcc_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probZqq_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probHbb_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probHcc_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probHqqqq_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDbb_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDcc_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDb_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDc_3;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDothers_3;
-TBranch        *b_jetAK8puppi_dnn_probTbcq_4;
-TBranch        *b_jetAK8puppi_dnn_probTbqq_4;
-TBranch        *b_jetAK8puppi_dnn_probTbc_4;
-TBranch        *b_jetAK8puppi_dnn_probTbq_4;
-TBranch        *b_jetAK8puppi_dnn_probWcq_4;
-TBranch        *b_jetAK8puppi_dnn_probWqq_4;
-TBranch        *b_jetAK8puppi_dnn_probZbb_4;
-TBranch        *b_jetAK8puppi_dnn_probZcc_4;
-TBranch        *b_jetAK8puppi_dnn_probZqq_4;
-TBranch        *b_jetAK8puppi_dnn_probHbb_4;
-TBranch        *b_jetAK8puppi_dnn_probHcc_4;
-TBranch        *b_jetAK8puppi_dnn_probHqqqq_4;
-TBranch        *b_jetAK8puppi_dnn_probQCDbb_4;
-TBranch        *b_jetAK8puppi_dnn_probQCDcc_4;
-TBranch        *b_jetAK8puppi_dnn_probQCDb_4;
-TBranch        *b_jetAK8puppi_dnn_probQCDc_4;
-TBranch        *b_jetAK8puppi_dnn_probQCDothers_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbcq_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbqq_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbc_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probTbq_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probWcq_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probWqq_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probZbb_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probZcc_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probZqq_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probHbb_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probHcc_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probHqqqq_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDbb_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDcc_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDb_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDc_4;
-TBranch        *b_jetAK8puppi_dnnDecorr_probQCDothers_4;
-
 
 TBranch        *b_jetAK8puppi_tau42;   //!
 TBranch        *b_jetAK8puppi_sdJEC_2;   //!
@@ -4096,34 +2741,10 @@ TBranch  *b_leptonid;
 float leptonpgdid;
 TBranch  *b_leptonpgdid;
 
-// =============== number ==============
-
-// =============== Nano ===============
-// =============== Nano ===============
-
-// =============== added branches =============
 // ========= Common ========
 Int_t         Nj8;
 
-
-
-// =========== B2G SF ==========
-Int_t NLepton;
-Int_t LeptonID;
-
-float PT_l;
-float Eta_l;
-float Phi_l;
-float M_l;
-// =========== B2G SF ==========
-
-// =============== added branches =============
-
 // =============== Looper ===============
-
-
-
-
 
    TString m_dataset;
    EDBR2PKUTree(TTree *tree=0, TString dataset="", Int_t IsData = 1, std::vector<std::string> outputbranches_ = std::vector<std::string>({}), TString channel_ = "" );
@@ -4150,7 +2771,7 @@ float M_l;
 #endif
 
 #ifdef EDBR2PKUTree_cxx
-// EDBR2PKUTree::EDBR2PKUTree(TChain *tree, TString dataset, Int_t IsData, std::vector<std::string> outputbranches_, TString channel_) : fChain(0) 
+
 EDBR2PKUTree::EDBR2PKUTree(TTree *tree, TString dataset, Int_t IsData_, std::vector<std::string> outputbranches_, TString channel_) : fChain(0) 
 {
    channelName = channel_;
@@ -4174,6 +2795,7 @@ Int_t EDBR2PKUTree::GetEntry(Long64_t entry)
    if (!fChain) return 0;
    return fChain->GetEntry(entry);
 }
+
 Long64_t EDBR2PKUTree::LoadTree(Long64_t entry)
 {
 // Set the environment to read one entry
@@ -4211,32 +2833,15 @@ void EDBR2PKUTree::Init(TTree *tree, Int_t IsData)
    fChain = tree;
    fCurrent = -1;
    fChain->SetMakeClass(1);
-
    fout = new TFile(m_dataset, "RECREATE");
    ExTree = new TTree("PKUTree","PKUTree");
    // ExTree->SetAutoSave(0);
    file_cutflow =new ofstream(m_dataset+"_eventnum.txt");
-
    loadVectorBranches();
-
-   if( channelName.EqualTo("had") ){
-      OutputBranches_GKK_0Lepton();
-   }
-
    if(channelName.EqualTo("HWW")) {
       OutputBranches_HWW(); 
    }
 
-   if( channelName.EqualTo("B2GSF_1lepton") ){
-      OutputBranches_B2GSF();
-   }
-
-   if ( channelName.Contains("VVV_EFT_1lepton") ){
-      OutputBranches_VVV_EFT_1lepton();
-   }
-
-
-   // Notify();
 }
 
 Bool_t EDBR2PKUTree::Notify(Long64_t jentry)
@@ -4261,18 +2866,12 @@ void EDBR2PKUTree::Show(Long64_t entry)
 void EDBR2PKUTree::endJob() {
    fout->cd();
    ExTree->Write();
-   // ExTree->Write("",TObject::kWriteDelete); // 21.9.7 : in order to solve the problem for write the backup trees
-   // ExTree->Write("",TObject::kOverwrite); // 21.9.7 : in order to solve the problem for write the backup trees
-   
    fout->Write();
    fout->Close();
 }
 
 Int_t EDBR2PKUTree::Cut(Long64_t entry)
 {
-// This function may be called from Loop.
-// returns  1 if entry is accepted.
-// returns -1 otherwise.
    return 1;
 }
 #endif // #ifdef EDBR2PKUTree_cxx

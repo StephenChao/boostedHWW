@@ -115,32 +115,24 @@
 ./EDBR2PKUTree_C.so: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TMatrixFUtils.h
 ./EDBR2PKUTree_C.so: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TMatrixFUtilsfwd.h
 ./EDBR2PKUTree_C.so: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TRotation.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/goodrun.h /usr/include/stdlib.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/utils/goodrun.h /usr/include/stdlib.h
 ./EDBR2PKUTree_C.so: /usr/include/sys/types.h /usr/include/sys/wait.h
-./EDBR2PKUTree_C.so: /usr/include/sys/stat.h VVVTree_HeadFile/fatJets.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/VVVUtils.h VVVTree_HeadFile/Jets.h
+./EDBR2PKUTree_C.so: /usr/include/sys/stat.h VVVTree_HeadFile/jets/fatJets.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/jets/jets.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/utils/VVVUtils.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/utils/VVVUtils.h
 ./EDBR2PKUTree_C.so: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TRandom.h
 ./EDBR2PKUTree_C.so: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/Math/TRandomEngine.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/XYMETCorrection_withUL17andUL18andUL16.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/VVVUtils.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/GKK_0lepton/process.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/GKK_0lepton/process_2016.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/VVVTree_EventLevel.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/GenParticles.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/VVVTree_GenMatching.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/VVVTree_signal_DECO.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/VVV_EFT_1lepton.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/VVVNano_B2GSF_lepton.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/B2GSF_1lepton/Lepton.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/B2GSF_1lepton/process.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/B2GSF_1lepton/Lepton_fatJets.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/outputBranches/GKK_0Lepton.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/outputBranches/B2GSF.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/outputBranches/VVVEFT.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/vector_GetEntry/NanoAOD.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/utils/XYMETCorrection_withUL17andUL18andUL16.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/process/process.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/process/process_2016.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/utils/VVVTree_EventLevel.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/matching/GenParticles.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/matching/VVVTree_GenMatching.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/matching/VVVTree_signal_DECO.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/outputbranches/HWW_0lepton.h
+./EDBR2PKUTree_C.so: VVVTree_HeadFile/vector/NanoAOD.h
 ./EDBR2PKUTree_C.so: VVVTree_HeadFile/loadbranches/Init.h
 ./EDBR2PKUTree_C.so: VVVTree_HeadFile/loadbranches/NanoAOD.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/loadbranches/VVVEFT.h
-./EDBR2PKUTree_C.so: VVVTree_HeadFile/loadbranches/B2GSF_1Lepton.h
 ./EDBR2PKUTree_C.so: /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/RVersion.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/RConfig.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TClass.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TDictAttributeMap.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TInterpreter.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TROOT.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TBuffer.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TMemberInspector.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TError.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/RtypesImp.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TIsAProxy.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TFileMergeInfo.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/lcg/root/6.14.09-pafccj5/include/TCollectionProxyInfo.h /cvmfs/cms.cern.ch/slc7_amd64_gcc820/cms/cmssw/CMSSW_10_6_26/external/slc7_amd64_gcc820/bin/rootcling
 EDBR2PKUTree_C__ROOTBUILDVERSION= 6.14/09

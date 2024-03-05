@@ -1,5 +1,5 @@
-#ifndef _GKK_0lepton__process_2016_
-#define _GKK_0lepton__process_2016_
+#ifndef _process__process_2016_
+#define _process__process_2016_
 
 void EDBR2PKUTree::initFatJet_Collection_2016(){
     FatJet_P FatJet_P_ = {
@@ -23,6 +23,11 @@ void EDBR2PKUTree::initFatJet_Collection_2016(){
         &v_FatJet_msoftdrop_jesTotalDown_,
         &v_FatJet_msoftdrop_jerUp_,
         &v_FatJet_msoftdrop_jerDown_,
+
+        &v_FatJet_msoftdrop_jmsUp_,
+        &v_FatJet_msoftdrop_jmsDown_,
+        &v_FatJet_msoftdrop_jmrUp_,
+        &v_FatJet_msoftdrop_jmrDown_,
 
         &v_FatJet_pt_nom_,
 
@@ -72,7 +77,7 @@ void EDBR2PKUTree::initFatJet_Collection_2016(){
     FatJets = FatJet_Collection( FatJet_P_, 3, 1 );
 }
 
-void EDBR2PKUTree::GKK_process_1_2016(Long64_t jentry, TString YEAR) {
+void EDBR2PKUTree::HWW_process_1_2016(Long64_t jentry, TString YEAR) {
     Jets_GetEntry(jentry);
     fatJets_GetEntry(jentry);
 
@@ -81,28 +86,16 @@ void EDBR2PKUTree::GKK_process_1_2016(Long64_t jentry, TString YEAR) {
 
     FatJets_P4_PTOrder_2016();
     FatJets_P4_MASSOrder_2016();
-    // FatJets_P4_DEEP_MD_W_Order_2016();
-    // FatJets_P4_PNet_MD_W_Order_2016();
-    // FatJets_P4_HWWH4q_Order_2016();
     FatJets_P4_HWWV2_Order_2016();
-    
-
     MJJ_MJJJf();
     HT_ST();
 
 }
 
-void EDBR2PKUTree::GKK_process_2_2016(Long64_t jentry, TString YEAR) {
-
+void EDBR2PKUTree::HWW_process_2_2016(Long64_t jentry, TString YEAR) {
     initJet_Collection(YEAR);
-
-    // FatJets_DEEP_MD_W_Order();
-    // FatJets_PNet_MD_W_Order();
-    // FatJets_HWWH4q_Order(); 
     FatJets_HWWV2_Order(); 
-    
     Nbtagf();
-
     METf_2016();
 
 }
@@ -183,56 +176,6 @@ void EDBR2PKUTree::FatJets_P4_MASSOrder_2016() {
 
 }
 
-void EDBR2PKUTree::FatJets_P4_DEEP_MD_W_Order_2016() {
-    PTj_a  = FatJets.Get("deep-W-MD","pt" , 0);
-    Etaj_a = FatJets.Get("deep-W-MD","eta", 0);
-    Phij_a = FatJets.Get("deep-W-MD","phi", 0);
-    Mj_a   = FatJets.Get("deep-W-MD","msoftdrop", 0);
-
-    PTj_b  = FatJets.Get("deep-W-MD","pt" , 1);
-    Etaj_b = FatJets.Get("deep-W-MD","eta", 1);
-    Phij_b = FatJets.Get("deep-W-MD","phi", 1);
-    Mj_b   = FatJets.Get("deep-W-MD","msoftdrop", 1);
-
-    PTj_c  = FatJets.Get("deep-W-MD","pt" , 2);
-    Etaj_c = FatJets.Get("deep-W-MD","eta", 2);
-    Phij_c = FatJets.Get("deep-W-MD","phi", 2);
-    Mj_c   = FatJets.Get("deep-W-MD","msoftdrop", 2);
-}
-
-void EDBR2PKUTree::FatJets_P4_PNet_MD_W_Order_2016() {
-    PTj_Pneta  = FatJets.Get("PNet-W-MD","pt" , 0);
-    Etaj_Pneta = FatJets.Get("PNet-W-MD","eta", 0);
-    Phij_Pneta = FatJets.Get("PNet-W-MD","phi", 0);
-    Mj_Pneta   = FatJets.Get("PNet-W-MD","msoftdrop", 0);
-
-    PTj_Pnetb  = FatJets.Get("PNet-W-MD","pt" , 1);
-    Etaj_Pnetb = FatJets.Get("PNet-W-MD","eta", 1);
-    Phij_Pnetb = FatJets.Get("PNet-W-MD","phi", 1);
-    Mj_Pnetb   = FatJets.Get("PNet-W-MD","msoftdrop", 1);
-
-    PTj_Pnetc  = FatJets.Get("PNet-W-MD","pt" , 2);
-    Etaj_Pnetc = FatJets.Get("PNet-W-MD","eta", 2);
-    Phij_Pnetc = FatJets.Get("PNet-W-MD","phi", 2);
-    Mj_Pnetc   = FatJets.Get("PNet-W-MD","msoftdrop", 2);
-}
-
-void EDBR2PKUTree::FatJets_P4_HWWH4q_Order_2016() {
-    PTj_HWWa  = FatJets.Get("HWW-H4q-MD","pt" , 0);
-    Etaj_HWWa = FatJets.Get("HWW-H4q-MD","eta", 0);
-    Phij_HWWa = FatJets.Get("HWW-H4q-MD","phi", 0);
-    Mj_HWWa   = FatJets.Get("HWW-H4q-MD","msoftdrop", 0);
-
-    PTj_HWWb  = FatJets.Get("HWW-H4q-MD","pt" , 1);
-    Etaj_HWWb = FatJets.Get("HWW-H4q-MD","eta", 1);
-    Phij_HWWb = FatJets.Get("HWW-H4q-MD","phi", 1);
-    Mj_HWWb   = FatJets.Get("HWW-H4q-MD","msoftdrop", 1);
-
-    PTj_HWWc  = FatJets.Get("HWW-H4q-MD","pt" , 2);
-    Etaj_HWWc = FatJets.Get("HWW-H4q-MD","eta", 2);
-    Phij_HWWc = FatJets.Get("HWW-H4q-MD","phi", 2);
-    Mj_HWWc   = FatJets.Get("HWW-H4q-MD","msoftdrop", 2);
-}
 
 void EDBR2PKUTree::FatJets_P4_HWWV2_Order_2016() {
     PTj_V2_a  = FatJets.Get("HWW-V2-MD","pt_nom" , 0);
@@ -245,6 +188,12 @@ void EDBR2PKUTree::FatJets_P4_HWWV2_Order_2016() {
     Mj_jesTotalDown_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesTotalDown", 0);
     Mj_jerUp_a        = FatJets.Get("HWW-V2-MD","msoftdrop_jerUp", 0);
     Mj_jerDown_a      = FatJets.Get("HWW-V2-MD","msoftdrop_jerDown", 0);
+
+    Mj_jmsUp_a        = FatJets.Get("HWW-V2-MD","msoftdrop_jmsUp", 0);
+    Mj_jmsDown_a      = FatJets.Get("HWW-V2-MD","msoftdrop_jmsDown", 0);
+    Mj_jmrUp_a        = FatJets.Get("HWW-V2-MD","msoftdrop_jmrUp", 0);
+    Mj_jmrDown_a      = FatJets.Get("HWW-V2-MD","msoftdrop_jmrDown", 0);
+
 
 
     PTj_V2_b  = FatJets.Get("HWW-V2-MD","pt_nom" , 1);
@@ -259,6 +208,12 @@ void EDBR2PKUTree::FatJets_P4_HWWV2_Order_2016() {
     Mj_jerDown_b      = FatJets.Get("HWW-V2-MD","msoftdrop_jerDown", 1);
 
 
+    Mj_jmsUp_b        = FatJets.Get("HWW-V2-MD","msoftdrop_jmsUp", 1);
+    Mj_jmsDown_b      = FatJets.Get("HWW-V2-MD","msoftdrop_jmsDown", 1);
+    Mj_jmrUp_b        = FatJets.Get("HWW-V2-MD","msoftdrop_jmrUp", 1);
+    Mj_jmrDown_b      = FatJets.Get("HWW-V2-MD","msoftdrop_jmrDown", 1);
+
+
     PTj_V2_c  = FatJets.Get("HWW-V2-MD","pt_nom" , 2);
     Etaj_V2_c = FatJets.Get("HWW-V2-MD","eta", 2);
     Phij_V2_c = FatJets.Get("HWW-V2-MD","phi", 2);
@@ -270,6 +225,11 @@ void EDBR2PKUTree::FatJets_P4_HWWV2_Order_2016() {
     Mj_jerUp_c        = FatJets.Get("HWW-V2-MD","msoftdrop_jerUp", 2);
     Mj_jerDown_c      = FatJets.Get("HWW-V2-MD","msoftdrop_jerDown", 2);
 
+    Mj_jmsUp_c        = FatJets.Get("HWW-V2-MD","msoftdrop_jmsUp", 2);
+    Mj_jmsDown_c      = FatJets.Get("HWW-V2-MD","msoftdrop_jmsDown", 2);
+    Mj_jmrUp_c        = FatJets.Get("HWW-V2-MD","msoftdrop_jmrUp", 2);
+    Mj_jmrDown_c      = FatJets.Get("HWW-V2-MD","msoftdrop_jmrDown", 2);
+
 }
 
 void EDBR2PKUTree::METf_2016() {
@@ -280,6 +240,13 @@ void EDBR2PKUTree::METf_2016() {
     else{
         MET_et_NoXYCorr  = MET_T1Smear_pt ;
         MET_phi_NoXYCorr = MET_T1Smear_phi ;
+
+                // UE up/down uncertainty
+        MET_et_NoXYCorr_UEup  = MET_T1Smear_pt_UEup ;
+        MET_phi_NoXYCorr_UEup = MET_T1Smear_phi_UEup ;
+
+        MET_et_NoXYCorr_UEdown  = MET_T1Smear_pt_UEdown ;
+        MET_phi_NoXYCorr_UEdown = MET_T1Smear_phi_UEdown ;
     }
     int  runnb = 0 ;
     bool isMC  = true ;
@@ -301,10 +268,18 @@ void EDBR2PKUTree::METf_2016() {
     if( YEAR_g.Contains("2018") ){
         year = "2018";
     }
-    std::pair<double,double> MET_T1Smear_XYcorr = METXYCorr_Met_MetPhi( MET_et_NoXYCorr, MET_phi_NoXYCorr, runnb, year, isMC, PV_npvs, true);
+    std::pair<double,double> MET_T1Smear_XYcorr        = METXYCorr_Met_MetPhi( MET_et_NoXYCorr, MET_phi_NoXYCorr, runnb, year, isMC, PV_npvs, true);
+    std::pair<double,double> MET_T1Smear_XYcorr_UEup   = METXYCorr_Met_MetPhi( MET_et_NoXYCorr_UEup,   MET_phi_NoXYCorr_UEup, runnb, year, isMC, PV_npvs, true);
+    std::pair<double,double> MET_T1Smear_XYcorr_UEdown = METXYCorr_Met_MetPhi( MET_et_NoXYCorr_UEdown, MET_phi_NoXYCorr_UEdown, runnb, year, isMC, PV_npvs, true);
 
     MET_et  = MET_T1Smear_XYcorr.first; 
     MET_phi = MET_T1Smear_XYcorr.second;
+
+    MET_et_UEup  = MET_T1Smear_XYcorr_UEup.first; 
+    MET_phi_UEup = MET_T1Smear_XYcorr_UEup.second;    
+    
+    MET_et_UEdown  = MET_T1Smear_XYcorr_UEdown.first; 
+    MET_phi_UEdown   = MET_T1Smear_XYcorr_UEdown.second;
 }
 
 #endif

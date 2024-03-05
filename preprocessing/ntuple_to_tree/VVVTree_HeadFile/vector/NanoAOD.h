@@ -98,6 +98,19 @@ void EDBR2PKUTree::fatJets_GetEntry(Long64_t jentry) {
 
 //Here is already jentry involved.
 
+    //LHE Scale Weight
+    if(b_LHEScaleWeight_){
+        int bytes_LHEScaleWeight_ = b_LHEScaleWeight_->GetEntry(jentry);
+        v_LHEScaleWeight_ = vector<float>(LHEScaleWeight_ , LHEScaleWeight_ + bytes_LHEScaleWeight_/sizeof(LHEScaleWeight_[0]));
+    }
+
+    //PS Weight
+    if(b_PSWeight_){
+        int bytes_PSWeight_ = b_PSWeight_->GetEntry(jentry);
+        v_PSWeight_ = vector<float>(PSWeight_ , PSWeight_ + bytes_PSWeight_/sizeof(PSWeight_[0]));
+    }
+
+    // Jet mass
     if(b_FatJet_msoftdrop_raw_){
         int bytes_FatJet_msoftdrop_raw = b_FatJet_msoftdrop_raw_->GetEntry(jentry);
         v_FatJet_msoftdrop_raw_ = vector<float>(FatJet_msoftdrop_raw_,FatJet_msoftdrop_raw_+bytes_FatJet_msoftdrop_raw/sizeof(FatJet_msoftdrop_raw_[0]));
@@ -144,6 +157,29 @@ void EDBR2PKUTree::fatJets_GetEntry(Long64_t jentry) {
         int bytes_FatJet_msoftdrop_jerDown = b_FatJet_msoftdrop_jerDown_->GetEntry(jentry);
         v_FatJet_msoftdrop_jerDown_ = vector<float>(FatJet_msoftdrop_jerDown_,FatJet_msoftdrop_jerDown_+bytes_FatJet_msoftdrop_jerDown/sizeof(FatJet_msoftdrop_jerDown_[0]));
     }
+
+    //  Add JMS/JMR up and down
+
+    if(b_FatJet_msoftdrop_jmsUp_){
+        int bytes_FatJet_msoftdrop_jmsUp = b_FatJet_msoftdrop_jmsUp_->GetEntry(jentry);
+        v_FatJet_msoftdrop_jmsUp_ = vector<float>(FatJet_msoftdrop_jmsUp_,FatJet_msoftdrop_jmsUp_ + bytes_FatJet_msoftdrop_jmsUp/sizeof(FatJet_msoftdrop_jmsUp_[0]));
+    }
+
+    if(b_FatJet_msoftdrop_jmsDown_){
+        int bytes_FatJet_msoftdrop_jmsDown = b_FatJet_msoftdrop_jmsDown_->GetEntry(jentry);
+        v_FatJet_msoftdrop_jmsDown_ = vector<float>(FatJet_msoftdrop_jmsDown_,FatJet_msoftdrop_jmsDown_ + bytes_FatJet_msoftdrop_jmsDown/sizeof(FatJet_msoftdrop_jmsDown_[0]));
+    }
+
+    if(b_FatJet_msoftdrop_jmrUp_){
+        int bytes_FatJet_msoftdrop_jmrUp = b_FatJet_msoftdrop_jmrUp_->GetEntry(jentry);
+        v_FatJet_msoftdrop_jmrUp_ = vector<float>(FatJet_msoftdrop_jmrUp_,FatJet_msoftdrop_jmrUp_+bytes_FatJet_msoftdrop_jmrUp/sizeof(FatJet_msoftdrop_jmrUp_[0]));
+    }
+
+    if(b_FatJet_msoftdrop_jmrDown_){
+        int bytes_FatJet_msoftdrop_jmrDown = b_FatJet_msoftdrop_jmrDown_->GetEntry(jentry);
+        v_FatJet_msoftdrop_jmrDown_ = vector<float>(FatJet_msoftdrop_jmrDown_,FatJet_msoftdrop_jmrDown_+bytes_FatJet_msoftdrop_jmrDown/sizeof(FatJet_msoftdrop_jmrDown_[0]));
+    }
+
 
     // if(b_FatJet_ParticleNetMDraw_probQCDb_){
     //     int bytes_FatJet_ParticleNetMDraw_probQCDb = b_FatJet_ParticleNetMDraw_probQCDb_->GetEntry(jentry);

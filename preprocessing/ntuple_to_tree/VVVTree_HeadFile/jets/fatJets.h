@@ -23,8 +23,6 @@
 #include <numeric>
 #include<vector>
 #include <iostream>
- 
-#include "VVVUtils.h"
 
 struct FatJet_P //define the necessary struct used by 
 {
@@ -50,6 +48,12 @@ struct FatJet_P //define the necessary struct used by
     vector<float>* v_FatJet_msoftdrop_jerUp_;
     vector<float>* v_FatJet_msoftdrop_jerDown_;
 
+
+// Add JMS, JMR up and down branch on 1/3/2024
+    vector<float>* v_FatJet_msoftdrop_jmsUp_;
+    vector<float>* v_FatJet_msoftdrop_jmsDown_;
+    vector<float>* v_FatJet_msoftdrop_jmrUp_;
+    vector<float>* v_FatJet_msoftdrop_jmrDown_;
 
     vector<float>* v_FatJet_pt_nom_;
     
@@ -131,6 +135,12 @@ class FatJet_Collection {
     vector<float>* v_FatJet_msoftdrop_jerUp_;
     vector<float>* v_FatJet_msoftdrop_jerDown_;
 
+// Add JES, JER up and down branch on 26/2/2024
+    vector<float>* v_FatJet_msoftdrop_jmsUp_;
+    vector<float>* v_FatJet_msoftdrop_jmsDown_;
+    vector<float>* v_FatJet_msoftdrop_jmrUp_;
+    vector<float>* v_FatJet_msoftdrop_jmrDown_;
+
         //Tagger V2
 
     vector<float>* v_FatJet_inclParTMDV1_probHWqqWqq0c_;
@@ -197,6 +207,11 @@ class FatJet_Collection {
     vector<float> FatJet_msoftdrop_jerUp;
     vector<float> FatJet_msoftdrop_jerDown;
 
+    //JMS/JMR
+    vector<float> FatJet_msoftdrop_jmsUp;
+    vector<float> FatJet_msoftdrop_jmsDown;
+    vector<float> FatJet_msoftdrop_jmrUp;
+    vector<float> FatJet_msoftdrop_jmrDown;
 
 
     vector<float> FatJet_pt_nom;
@@ -309,7 +324,13 @@ FatJet_Collection::FatJet_Collection(FatJet_P FatJet_ , int NMAXFatJet_, int fil
     v_FatJet_msoftdrop_jerUp_                = FatJet_.v_FatJet_msoftdrop_jerUp_;
     v_FatJet_msoftdrop_jerDown_              = FatJet_.v_FatJet_msoftdrop_jerDown_;
 
-  
+// Add JES, JER up and down branch on 26/2/2024
+
+    v_FatJet_msoftdrop_jmsUp_                = FatJet_.v_FatJet_msoftdrop_jmsUp_;
+    v_FatJet_msoftdrop_jmsDown_              = FatJet_.v_FatJet_msoftdrop_jmsDown_;
+    v_FatJet_msoftdrop_jmrUp_                = FatJet_.v_FatJet_msoftdrop_jmrUp_;
+    v_FatJet_msoftdrop_jmrDown_              = FatJet_.v_FatJet_msoftdrop_jmrDown_;
+
     v_FatJet_pt_nom_                         = FatJet_.v_FatJet_pt_nom_;
 
 
@@ -357,7 +378,7 @@ FatJet_Collection::FatJet_Collection(FatJet_P FatJet_ , int NMAXFatJet_, int fil
     NMAXFatJet = NMAXFatJet_;
     filterMode = filterMode_;
 
-    Filter(); //jetId eta pt requirement check again. and set the array like FatJet_inclParTMDV1_probTopbWtaumv, using the vector_GetEntry, push_back one by one.
+    Filter(); //jetId eta pt requirement check again. and set the array like FatJet_inclParTMDV1_probTopbWtaumv, using the vector, push_back one by one.
     brances_map(); //establish map between string and all the array needed, already filled the array in Filter().
     brances_Added(); //define completely new branches using the raw scores or something else.
     Order(1);
@@ -402,7 +423,14 @@ void FatJet_Collection::brances_map(){
     FatJet_Branches["msoftdrop_jerUp"]                 = FatJet_msoftdrop_jerUp;
     FatJet_Branches["msoftdrop_jerDown"]               = FatJet_msoftdrop_jerDown;
 
+    // Add JMS, JMR up and down
 
+    FatJet_Branches["msoftdrop_jmsUp"]                 = FatJet_msoftdrop_jmsUp;
+    FatJet_Branches["msoftdrop_jmsDown"]               = FatJet_msoftdrop_jmsDown;
+    FatJet_Branches["msoftdrop_jmrUp"]                 = FatJet_msoftdrop_jmrUp;
+    FatJet_Branches["msoftdrop_jmrDown"]               = FatJet_msoftdrop_jmrDown;
+
+    // over
 
     FatJet_Branches["pt_nom"]                         = FatJet_pt_nom;
 
@@ -737,6 +765,37 @@ void FatJet_Collection::Filter_1(){
 
 
 
+        // Add JMS, JMR up and down branch on 1/3/2024
+        
+        if( v_FatJet_msoftdrop_jmsUp_->size() > iFJ ){
+            FatJet_msoftdrop_jmsUp.push_back(v_FatJet_msoftdrop_jmsUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jmsUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jmsDown_->size() > iFJ ){
+            FatJet_msoftdrop_jmsDown.push_back(v_FatJet_msoftdrop_jmsDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jmsDown.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jmrUp_->size() > iFJ ){
+            FatJet_msoftdrop_jmrUp.push_back(v_FatJet_msoftdrop_jmrUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jmrUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jmrDown_->size() > iFJ ){
+            FatJet_msoftdrop_jmrDown.push_back(v_FatJet_msoftdrop_jmrDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jmrDown.push_back(-99.);
+        }
+
+        // over
 
 
         if( v_FatJet_pt_nom_->size() > iFJ ){
@@ -886,6 +945,39 @@ void FatJet_Collection::Filter_2(){
         else{
             FatJet_pt_nom.push_back(-99.);
         }
+
+
+        // start JMS/JMR
+             
+        if( v_FatJet_msoftdrop_jmsUp_->size() > iFJ ){
+            FatJet_msoftdrop_jmsUp.push_back(v_FatJet_msoftdrop_jmsUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jmsUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jmsDown_->size() > iFJ ){
+            FatJet_msoftdrop_jmsDown.push_back(v_FatJet_msoftdrop_jmsDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jmsDown.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jmrUp_->size() > iFJ ){
+            FatJet_msoftdrop_jmrUp.push_back(v_FatJet_msoftdrop_jmrUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jmrUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jmrDown_->size() > iFJ ){
+            FatJet_msoftdrop_jmrDown.push_back(v_FatJet_msoftdrop_jmrDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jmrDown.push_back(-99.);
+        }
+
+        // over   
 
     }
 }

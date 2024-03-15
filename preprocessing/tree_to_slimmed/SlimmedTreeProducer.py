@@ -206,8 +206,8 @@ def Store_BDT_Score(infile_name,outfile_name,Outcolumn,loadcolumns = None,BDT ={
         df["SF_unc"] = scale_factor_unc_output        
         
     else : 
-        df["SF"] = np.zeroslike(df["Mj_V2_a"]) + 1.0
-        df["SF_unc"] = np.zeroslike(df["Mj_V2_a"])
+        df["SF"] = np.zeros_like(df["Mj_V2_a"]) + 1.0
+        df["SF_unc"] = np.zeros_like(df["Mj_V2_a"])
     # for i in range(10):
     #     print("Original weight = ",df["weight"][i])
     #     print("SF = ",df["SF"][i])
@@ -515,7 +515,37 @@ elif args.year == "2016":
         "HLT_AK8PFJet360_TrimMass30",
         "HLT_AK8PFHT700_TrimR0p1PT0p03Mass50",
     ]
-
+    
+elif args.year == "2016APV":
+    SFjson = "/home/pku/zhaoyz/Higgs/boostedHWW/scale_factors/trigger/mesh_data_2016.json"
+    SF_unc_json = "/home/pku/zhaoyz/Higgs/boostedHWW/scale_factors/trigger/mesh_data_2016_unc.json"
+    loadcolumns += [
+        "HEM_Filter",
+        "HLT_PFHT650_WideJetMJJ900DEtaJJ1p5",
+        "HLT_PFHT650_WideJetMJJ950DEtaJJ1p5",
+        "HLT_PFHT800",
+        "HLT_PFHT900",
+        "HLT_PFJet450",
+        "HLT_AK8PFJet450",
+        "HLT_AK8PFJet500",
+        "HLT_PFJet500",
+        "HLT_AK8PFJet360_TrimMass30",
+        "HLT_AK8PFHT700_TrimR0p1PT0p03Mass50",
+    ]
+    drop = [
+        "HEM_Filter",
+        "HLT_PFHT650_WideJetMJJ900DEtaJJ1p5",
+        "HLT_PFHT650_WideJetMJJ950DEtaJJ1p5",
+        "HLT_PFHT800",
+        "HLT_PFHT900",
+        "HLT_PFJet450",
+        "HLT_AK8PFJet450",
+        "HLT_AK8PFJet500",
+        "HLT_PFJet500",
+        "HLT_AK8PFJet360_TrimMass30",
+        "HLT_AK8PFHT700_TrimR0p1PT0p03Mass50",
+    ]
+    
 
 if signal :
     loadcolumns += [
@@ -527,9 +557,10 @@ definecolumn = [
 
 if args.outfile:
     # cut = " HT > 1100 && PTj_2 > 200 && (dnnDecorr_probTbcq_a+dnnDecorr_probTbqq_a+dnnDecorr_probTbc_a+dnnDecorr_probTbq_a+dnnDecorr_probWcq_a+dnnDecorr_probWqq_a+dnnDecorr_probZbb_a+dnnDecorr_probZcc_a+dnnDecorr_probZqq_a+dnnDecorr_probHbb_a+dnnDecorr_probHcc_a+dnnDecorr_probHqqqq_a+dnnDecorr_probQCDbb_a+dnnDecorr_probQCDcc_a+dnnDecorr_probQCDb_a+dnnDecorr_probQCDc_a+dnnDecorr_probQCDothers_a) > 0.001 && (dnnDecorr_probTbcq_c+dnnDecorr_probTbqq_c+dnnDecorr_probTbc_c+dnnDecorr_probTbq_c+dnnDecorr_probWcq_c+dnnDecorr_probWqq_c+dnnDecorr_probZbb_c+dnnDecorr_probZcc_c+dnnDecorr_probZqq_c+dnnDecorr_probHbb_c+dnnDecorr_probHcc_c+dnnDecorr_probHqqqq_c+dnnDecorr_probQCDbb_c+dnnDecorr_probQCDcc_c+dnnDecorr_probQCDb_c+dnnDecorr_probQCDc_c+dnnDecorr_probQCDothers_c) > 0.001 && ((Nj8 == 2 && Mj_a > 50) ||(Nj8==3 && Mj_Pneta > 50&& Mj_Pnetb>50&& (dnnDecorr_probTbcq_b+dnnDecorr_probTbqq_b+dnnDecorr_probTbc_b+dnnDecorr_probTbq_b+dnnDecorr_probWcq_b+dnnDecorr_probWqq_b+dnnDecorr_probZbb_b+dnnDecorr_probZcc_b+dnnDecorr_probZqq_b+dnnDecorr_probHbb_b+dnnDecorr_probHcc_b+dnnDecorr_probHqqqq_b+dnnDecorr_probQCDbb_b+dnnDecorr_probQCDcc_b+dnnDecorr_probQCDb_b+dnnDecorr_probQCDc_b+dnnDecorr_probQCDothers_b) > 0.001)) && HEM_Filter == 1 && goodRun == 1"
-    if args.year == "2018":cut = " (HEM_Filter == 1) && ((HLT_AK8PFJet500 == 1) || (HLT_PFHT1050 == 1)   || (HLT_AK8PFJet400_TrimMass30 == 1) || (HLT_AK8PFJet420_TrimMass30 == 1) || (HLT_AK8PFHT800_TrimMass50 == 1) || (HLT_AK8PFHT850_TrimMass50== 1) || (HLT_AK8PFHT900_TrimMass50== 1))"
-    if args.year == "2017":cut = " (HEM_Filter == 1) && ((HLT_AK8PFJet500 == 1) || (HLT_PFJet500 == 1)   || (HLT_AK8PFJet360_TrimMass30 == 1) || (HLT_PFHT1050 == 1) || (HLT_AK8PFJet380_TrimMass30 == 1) || (HLT_AK8PFJet400_TrimMass30== 1) || (HLT_AK8PFJet420_TrimMass30== 1) || (HLT_AK8PFHT750_TrimMass50 == 1) || (HLT_AK8PFHT800_TrimMass50 == 1) || (HLT_AK8PFHT850_TrimMass50 == 1) || (HLT_AK8PFHT900_TrimMass50))"
-    if args.year == "2016":cut = " (HEM_Filter == 1) && ((HLT_PFHT650_WideJetMJJ900DEtaJJ1p5 == 1) || (HLT_PFHT650_WideJetMJJ950DEtaJJ1p5 == 1)   || (HLT_PFHT800 == 1) || (HLT_PFHT900 == 1) || (HLT_PFJet450 == 1) || (HLT_AK8PFJet450== 1) || (HLT_AK8PFJet500 == 1) || (HLT_PFJet500 == 1) || (HLT_AK8PFJet360_TrimMass30 == 1) || (HLT_AK8PFHT700_TrimR0p1PT0p03Mass50 == 1))"
+    if args.year == "2018":   cut = " (HEM_Filter == 1) && ((HLT_AK8PFJet500 == 1) || (HLT_PFHT1050 == 1)   || (HLT_AK8PFJet400_TrimMass30 == 1) || (HLT_AK8PFJet420_TrimMass30 == 1) || (HLT_AK8PFHT800_TrimMass50 == 1) || (HLT_AK8PFHT850_TrimMass50== 1) || (HLT_AK8PFHT900_TrimMass50== 1))"
+    if args.year == "2017":   cut = " (HEM_Filter == 1) && ((HLT_AK8PFJet500 == 1) || (HLT_PFJet500 == 1)   || (HLT_AK8PFJet360_TrimMass30 == 1) || (HLT_PFHT1050 == 1) || (HLT_AK8PFJet380_TrimMass30 == 1) || (HLT_AK8PFJet400_TrimMass30== 1) || (HLT_AK8PFJet420_TrimMass30== 1) || (HLT_AK8PFHT750_TrimMass50 == 1) || (HLT_AK8PFHT800_TrimMass50 == 1) || (HLT_AK8PFHT850_TrimMass50 == 1) || (HLT_AK8PFHT900_TrimMass50))"
+    if args.year == "2016":   cut = " (HEM_Filter == 1) && ((HLT_PFHT650_WideJetMJJ900DEtaJJ1p5 == 1) || (HLT_PFHT650_WideJetMJJ950DEtaJJ1p5 == 1)   || (HLT_PFHT800 == 1) || (HLT_PFHT900 == 1) || (HLT_PFJet450 == 1) || (HLT_AK8PFJet450== 1) || (HLT_AK8PFJet500 == 1) || (HLT_PFJet500 == 1) || (HLT_AK8PFJet360_TrimMass30 == 1) || (HLT_AK8PFHT700_TrimR0p1PT0p03Mass50 == 1))"
+    if args.year == "2016APV":cut = " (HEM_Filter == 1) && ((HLT_PFHT650_WideJetMJJ900DEtaJJ1p5 == 1) || (HLT_PFHT650_WideJetMJJ950DEtaJJ1p5 == 1)   || (HLT_PFHT800 == 1) || (HLT_PFHT900 == 1) || (HLT_PFJet450 == 1) || (HLT_AK8PFJet450== 1) || (HLT_AK8PFJet500 == 1) || (HLT_PFJet500 == 1) || (HLT_AK8PFJet360_TrimMass30 == 1) || (HLT_AK8PFHT700_TrimR0p1PT0p03Mass50 == 1))"
 
     # cut = "(HLT_PFHT1050 == 1)"
 

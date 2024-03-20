@@ -28,6 +28,7 @@
 workspace=0
 bfit=0
 limits=0
+dfit_asimov=0
 significance=0
 dfit=0
 resonant=0 #always do non-resonant option
@@ -36,13 +37,13 @@ goftoys=0
 impactsi=0
 impactsf=0
 impactsc=0
-seed=444
-numtoys=100
+seed=44
+numtoys=1000
 bias=-1
-mintol=0.5 # --cminDefaultMinimizerTolerance
+mintol=0.1 # --cminDefaultMinimizerTolerance
 # maxcalls=1000000000  # --X-rtd MINIMIZER_MaxCalls
 
-options=$(getopt -o "wblsdrgti" --long "workspace,bfit,limits,significance,dfit,resonant,gofdata,goftoys,impactsi,impactsf:,impactsc:,bias:,seed:,numtoys:,mintol:" -- "$@")
+options=$(getopt -o "wblsdrgti" --long "workspace,bfit,limits,significance,dfit,dfitasimov,resonant,gofdata,goftoys,impactsi,impactsf:,impactsc:,bias:,seed:,numtoys:,mintol:" -- "$@")
 eval set -- "$options"
 
 while true; do
@@ -61,6 +62,9 @@ while true; do
             ;;
         -d|--dfit)
             dfit=1
+            ;;
+        --dfitasimov)
+            dfit_asimov=1
             ;;
         -r|--resonant)
             resonant=0
@@ -126,10 +130,11 @@ seed=$seed numtoys=$numtoys"
 ####################################################################################################
 
 dataset=data_obs
-cards_dir="./"
+cards_dir="."
 ws=${cards_dir}/combined
 wsm=${ws}_withmasks
 wsm_snapshot=higgsCombineSnapshot.MultiDimFit.mH125
+
 CMS_PARAMS_LABEL="CMS_HWW_boosted"
 
 outsdir=${cards_dir}/outs
@@ -139,16 +144,17 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
     if [ -f "mXbin0pass.txt" ]; then
         echo -e "\nWARNING: This is doing nonresonant fits - did you mean to pass -r|--resonant?\n"
     fi
-    echo "actually run the following: "
-    # nonresonant args
-    setparamsblinded=""
-    freezeparamsblinded=""
 
-    # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
+    echo "actually run the following: "
+
+
+
     ccargs=""
+
     maskunblindedargs=""
     maskblindedargs=""
-    for region in 1 2 3;
+
+    for region in 1 2;
     do 
         cr="CR${region}"
         sra="SR${region}a"
@@ -161,30 +167,30 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
         maskblindedargs+="mask_${sra}=0,mask_${srb}=0,mask_${cr}=0,"
         maskblindedargs+="mask_${sra}Blinded=1,mask_${srb}Blinded=1,mask_${cr}Blinded=1,"
     done
+    
     maskblindedargs=${maskblindedargs%,}
     maskunblindedargs=${maskunblindedargs%,}
     echo "cards args=${ccargs}"
     echo "maskblinded=${maskblindedargs}"
     echo "maskunblinded=${maskunblindedargs}"
     
+    # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
+    # freeze qcd params in blinded bins
     setparamsblinded=""
     freezeparamsblinded=""
-    for bin in {4..11} 
+    for bin in {4..9} 
     do  
-        for cr in CR1 CR2 CR3;
+        for cr in CR1 CR2;
         # for cr in CR3;
         do
             setparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin}=0,"
             freezeparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin},"
         done
     done
-    # freeze qcd params in blinded bins
-    # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
+
     # remove last comma
     setparamsblinded=${setparamsblinded%,}
     freezeparamsblinded=${freezeparamsblinded%,}
-    freezeparamsblinded="${freezeparamsblinded},var{.*lp_sf.*}"
-
 
     # floating parameters using var{} floats a bunch of parameters which shouldn't be floated,
     # so countering this inside --freezeParameters which takes priority.
@@ -238,7 +244,7 @@ fi
 if [ $bfit = 1 ]; then
     echo "Blinded background-only fit"
     combine -D $dataset -M MultiDimFit --saveWorkspace -m 125 -d ${wsm}.root -v 9 \
-    --cminDefaultMinimizerStrategy 0 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=5000000 \
+    --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=5000000 \
     --setParameters ${maskunblindedargs},${setparamsblinded},r=0  \
     --freezeParameters r,${freezeparamsblinded} \
     -n Snapshot 2>&1 | tee $outsdir/MultiDimFit.txt
@@ -273,7 +279,7 @@ if [ $dfit = 1 ]; then
     combine -M FitDiagnostics -m 125 -d ${wsm}.root \
     --setParameters ${maskunblindedargs},${setparamsblinded} \
     --freezeParameters ${freezeparamsblinded} \
-    --cminDefaultMinimizerStrategy 0  --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=5000000 \
+    --cminDefaultMinimizerStrategy 1  --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=5000000 \
     -n Blinded --ignoreCovWarning -v 9 2>&1 | tee $outsdir/FitDiagnostics.txt
     # --saveShapes --saveNormalizations --saveWithUncertainties --saveOverallShapes \
 
@@ -282,15 +288,21 @@ if [ $dfit = 1 ]; then
     -m 125 -f fitDiagnosticsBlinded.root:fit_b --postfit --print 2>&1 | tee $outsdir/FitShapes.txt
 fi
 
-# try to change "setparams" to "setparamsblinded" and see the effect
-# if [ $gofdata = 1 ]; then
-#     echo "GoF on data"
-#     combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
-#     --snapshotName MultiDimFit --bypassFrequentistFit \
-#     --setParameters ${maskunblindedargs},${setparams},r=0 \
-#     --freezeParameters ${freezeparams},r \
-#     -n Data -v 9 2>&1 | tee $outsdir/GoF_data.txt
-# fi
+
+if [ $dfit_asimov = 1 ]; then
+    echo "Fit Diagnostics on Asimov dataset"
+    combine -M FitDiagnostics -m 125 -d ${wsm_snapshot}.root --snapshotName MultiDimFit \
+    -t -1 --expectSignal=1 --toysFrequentist --bypassFrequentistFit --saveWorkspace --saveToys \
+    ${unblindedparams} --floatParameters ${freezeparamsblinded},r \
+    --cminDefaultMinimizerStrategy 1  --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
+    -n Asimov --ignoreCovWarning -v 9 2>&1 | tee $outsdir/FitDiagnosticsAsimov.txt
+
+    combineTool.py -M ModifyDataSet ${wsm}.root:w ${wsm}_asimov.root:w:toy_asimov -d higgsCombineAsimov.FitDiagnostics.mH125.123456.root:toys/toy_asimov
+
+    echo "Fit Shapes"
+    PostFitShapesFromWorkspace --dataset toy_asimov -w ${wsm}_asimov.root --output FitShapesAsimov.root \
+    -m 125 -f fitDiagnosticsAsimov.root:fit_b --postfit --print 2>&1 | tee $outsdir/FitShapesAsimov.txt
+fi
 
 if [ $gofdata = 1 ]; then
     echo "GoF on data"
@@ -302,24 +314,16 @@ if [ $gofdata = 1 ]; then
 fi
 
 
-if [ $goftoys = 1 ]; then
-    # echo ${freezeparams} "test value"
-    echo "GoF on toys" #always bug.
-    echo ${maskunblindedargs}
-    # combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
-    # --snapshotName MultiDimFit --bypassFrequentistFit \
-    # --setParameters ${maskunblindedargs},${setparams},r=0 \
-    # --freezeParameters ${freezeparamsblinded} --saveToys \
-    # -n Toys   -s $seed -t $numtoys --toysFrequentist 2>&1 | tee $outsdir/GoF_toys.txt
 
+if [ $goftoys = 1 ]; then
     echo "GoF on toys"
     combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
     --snapshotName MultiDimFit --bypassFrequentistFit \
-    --setParameters ${maskunblindedargs},r=0 \
-    --freezeParameters r --saveToys \
-    -n Toys  -v 9 -s $seed -t $numtoys --toysFrequentist 2>&1 | tee $outsdir/GoF_toys.txt
-
+    --setParameters ${maskunblindedargs},${setparams},r=0 \
+    --freezeParameters ${freezeparams},r --saveToys \
+    -n Toys -v 9 -s $seed -t $numtoys --toysFrequentist 2>&1 | tee $outsdir/GoF_toys.txt
 fi
+
 
 
 if [ $impactsi = 1 ]; then
@@ -335,11 +339,8 @@ if [ $impactsi = 1 ]; then
     -t -1 --bypassFrequentistFit --toysFrequentist --expectSignal 1 \
     -d ${wsm_snapshot}.root --doInitialFit --robustFit 1 \
     ${unblindedparams} --floatParameters ${freezeparamsblinded} \
-     --cminDefaultMinimizerStrategy=0 -v 1 2>&1 | tee $outsdir/Impacts_init.txt
-
-    # plotImpacts.py -i impacts.json -o impacts   
+     --cminDefaultMinimizerStrategy=1 -v 1 2>&1 | tee $outsdir/Impacts_init.txt
 fi
-
 
 if [ $impactsf != 0 ]; then
     echo "Submitting jobs for impact scans"
@@ -382,14 +383,26 @@ if [ $impactsc != 0 ]; then
 fi
 
 
+# if [ $impactsc != 0 ]; then
+#     echo "Collecting impacts"
+#     combineTool.py -M Impacts --snapshotName MultiDimFit \
+#     -m 125 -n "impacts" -d ${wsm_snapshot}.root \
+#     --setParameters ${maskblindedargs} --floatParameters ${freezeparamsblinded} \
+#     -t -1 --named $impactsc \
+#     --setParameterRanges r=-0.5,20 -v 1 -o impacts.json 2>&1 | tee $outsdir/Impacts_collect.txt
+
+#     plotImpacts.py -i impacts.json -o impacts
+# fi
+
 if [ $bias != -1 ]; then
     echo "Bias test with bias $bias"
     # setting verbose > 0 here can lead to crazy large output files (~10-100GB!) because of getting
     # stuck in negative yield areas
     combine -M FitDiagnostics --trackParameters r --trackErrors r --justFit \
-    -m 125 -n "bias${bias}" -d ${wsm_snapshot}.root --rMin "-15" --rMax 15 \
+    -m 125 -n "bias${bias}" -d ${wsm_snapshot}.root --rMin "-40" --rMax 40 \
     --snapshotName MultiDimFit --bypassFrequentistFit --toysFrequentist --expectSignal $bias \
     ${unblindedparams},r=$bias --floatParameters ${freezeparamsblinded} \
     --robustFit=1 -t $numtoys -s $seed \
+    --cminDefaultMinimizerStrategy=0 \
     --X-rtd MINIMIZER_MaxCalls=1000000 --cminDefaultMinimizerTolerance $mintol 2>&1 | tee $outsdir/bias${bias}seed${seed}.txt
 fi

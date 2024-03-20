@@ -1,0 +1,234 @@
+// Do NOT change. Changes will be lost next time file is generated
+
+#define R__DICTIONARY_FILENAME dIdatadIpkudIhomedIzhaoyzdIHiggsdIMCvsDATAdIHAllOrderdICMSSW_10_6_26dIsrcdIPhysicsToolsdINanoAODToolsdIpythondIpostprocessingdIanalysisdITransferTreedIgKKmIHWWvsALL_V6dIEDBR2PKUTree_C_ACLiC_dict
+
+/*******************************************************************/
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <assert.h>
+#define G__DICTIONARY
+#include "RConfig.h"
+#include "TClass.h"
+#include "TDictAttributeMap.h"
+#include "TInterpreter.h"
+#include "TROOT.h"
+#include "TBuffer.h"
+#include "TMemberInspector.h"
+#include "TInterpreter.h"
+#include "TVirtualMutex.h"
+#include "TError.h"
+
+#ifndef G__ROOT
+#define G__ROOT
+#endif
+
+#include "RtypesImp.h"
+#include "TIsAProxy.h"
+#include "TFileMergeInfo.h"
+#include <algorithm>
+#include "TCollectionProxyInfo.h"
+/*******************************************************************/
+
+#include "TDataMember.h"
+
+// Since CINT ignores the std namespace, we need to do so in this file.
+namespace std {} using namespace std;
+
+// Header files passed as explicit arguments
+#include "/data/pku/home/zhaoyz/Higgs/MCvsDATA/HAllOrder/CMSSW_10_6_26/src/PhysicsTools/NanoAODTools/python/postprocessing/analysis/TransferTree/gKK-HWWvsALL_V6/./EDBR2PKUTree.C"
+
+// Header files passed via #pragma extra_include
+
+namespace ROOT {
+   static TClass *EDBR2PKUTree_Dictionary();
+   static void EDBR2PKUTree_TClassManip(TClass*);
+   static void *new_EDBR2PKUTree(void *p = 0);
+   static void *newArray_EDBR2PKUTree(Long_t size, void *p);
+   static void delete_EDBR2PKUTree(void *p);
+   static void deleteArray_EDBR2PKUTree(void *p);
+   static void destruct_EDBR2PKUTree(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const ::EDBR2PKUTree*)
+   {
+      ::EDBR2PKUTree *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::EDBR2PKUTree));
+      static ::ROOT::TGenericClassInfo 
+         instance("EDBR2PKUTree", "EDBR2PKUTree.h", 46,
+                  typeid(::EDBR2PKUTree), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &EDBR2PKUTree_Dictionary, isa_proxy, 4,
+                  sizeof(::EDBR2PKUTree) );
+      instance.SetNew(&new_EDBR2PKUTree);
+      instance.SetNewArray(&newArray_EDBR2PKUTree);
+      instance.SetDelete(&delete_EDBR2PKUTree);
+      instance.SetDeleteArray(&deleteArray_EDBR2PKUTree);
+      instance.SetDestructor(&destruct_EDBR2PKUTree);
+      return &instance;
+   }
+   TGenericClassInfo *GenerateInitInstance(const ::EDBR2PKUTree*)
+   {
+      return GenerateInitInstanceLocal((::EDBR2PKUTree*)0);
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::EDBR2PKUTree*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *EDBR2PKUTree_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::EDBR2PKUTree*)0x0)->GetClass();
+      EDBR2PKUTree_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void EDBR2PKUTree_TClassManip(TClass* theClass){
+      theClass->CreateAttributeMap();
+      TDictAttributeMap* attrMap( theClass->GetAttributeMap() );
+      attrMap->AddProperty("file_name","/data/pku/home/zhaoyz/Higgs/MCvsDATA/HAllOrder/CMSSW_10_6_26/src/PhysicsTools/NanoAODTools/python/postprocessing/analysis/TransferTree/gKK-HWWvsALL_V6/./EDBR2PKUTree.h");
+   }
+
+} // end of namespace ROOT
+
+namespace ROOT {
+   // Wrappers around operator new
+   static void *new_EDBR2PKUTree(void *p) {
+      return  p ? new(p) ::EDBR2PKUTree : new ::EDBR2PKUTree;
+   }
+   static void *newArray_EDBR2PKUTree(Long_t nElements, void *p) {
+      return p ? new(p) ::EDBR2PKUTree[nElements] : new ::EDBR2PKUTree[nElements];
+   }
+   // Wrapper around operator delete
+   static void delete_EDBR2PKUTree(void *p) {
+      delete ((::EDBR2PKUTree*)p);
+   }
+   static void deleteArray_EDBR2PKUTree(void *p) {
+      delete [] ((::EDBR2PKUTree*)p);
+   }
+   static void destruct_EDBR2PKUTree(void *p) {
+      typedef ::EDBR2PKUTree current_t;
+      ((current_t*)p)->~current_t();
+   }
+} // end of namespace ROOT for class ::EDBR2PKUTree
+
+namespace ROOT {
+   static TClass *vectorlEstringgR_Dictionary();
+   static void vectorlEstringgR_TClassManip(TClass*);
+   static void *new_vectorlEstringgR(void *p = 0);
+   static void *newArray_vectorlEstringgR(Long_t size, void *p);
+   static void delete_vectorlEstringgR(void *p);
+   static void deleteArray_vectorlEstringgR(void *p);
+   static void destruct_vectorlEstringgR(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const vector<string>*)
+   {
+      vector<string> *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(vector<string>));
+      static ::ROOT::TGenericClassInfo 
+         instance("vector<string>", -2, "vector", 339,
+                  typeid(vector<string>), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &vectorlEstringgR_Dictionary, isa_proxy, 0,
+                  sizeof(vector<string>) );
+      instance.SetNew(&new_vectorlEstringgR);
+      instance.SetNewArray(&newArray_vectorlEstringgR);
+      instance.SetDelete(&delete_vectorlEstringgR);
+      instance.SetDeleteArray(&deleteArray_vectorlEstringgR);
+      instance.SetDestructor(&destruct_vectorlEstringgR);
+      instance.AdoptCollectionProxyInfo(TCollectionProxyInfo::Generate(TCollectionProxyInfo::Pushback< vector<string> >()));
+      return &instance;
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const vector<string>*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *vectorlEstringgR_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const vector<string>*)0x0)->GetClass();
+      vectorlEstringgR_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void vectorlEstringgR_TClassManip(TClass* ){
+   }
+
+} // end of namespace ROOT
+
+namespace ROOT {
+   // Wrappers around operator new
+   static void *new_vectorlEstringgR(void *p) {
+      return  p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) vector<string> : new vector<string>;
+   }
+   static void *newArray_vectorlEstringgR(Long_t nElements, void *p) {
+      return p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) vector<string>[nElements] : new vector<string>[nElements];
+   }
+   // Wrapper around operator delete
+   static void delete_vectorlEstringgR(void *p) {
+      delete ((vector<string>*)p);
+   }
+   static void deleteArray_vectorlEstringgR(void *p) {
+      delete [] ((vector<string>*)p);
+   }
+   static void destruct_vectorlEstringgR(void *p) {
+      typedef vector<string> current_t;
+      ((current_t*)p)->~current_t();
+   }
+} // end of namespace ROOT for class vector<string>
+
+namespace ROOT {
+   static TClass *vectorlEintgR_Dictionary();
+   static void vectorlEintgR_TClassManip(TClass*);
+   static void *new_vectorlEintgR(void *p = 0);
+   static void *newArray_vectorlEintgR(Long_t size, void *p);
+   static void delete_vectorlEintgR(void *p);
+   static void deleteArray_vectorlEintgR(void *p);
+   static void destruct_vectorlEintgR(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const vector<int>*)
+   {
+      vector<int> *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(vector<int>));
+      static ::ROOT::TGenericClassInfo 
+         instance("vector<int>", -2, "vector", 339,
+                  typeid(vector<int>), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &vectorlEintgR_Dictionary, isa_proxy, 0,
+                  sizeof(vector<int>) );
+      instance.SetNew(&new_vectorlEintgR);
+      instance.SetNewArray(&newArray_vectorlEintgR);
+      instance.SetDelete(&delete_vectorlEintgR);
+      instance.SetDeleteArray(&deleteArray_vectorlEintgR);
+      instance.SetDestructor(&destruct_vectorlEintgR);
+      instance.AdoptCollectionProxyInfo(TCollectionProxyInfo::Generate(TCollectionProxyInfo::Pushback< vector<int> >()));
+      return &instance;
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const vector<int>*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *vectorlEintgR_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const vector<int>*)0x0)->GetClass();
+      vectorlEintgR_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void vectorlEintgR_TClassManip(TClass* ){
+   }
+
+} // end of namespace ROOT
+
+namespace ROOT {
+   // Wrappers around operator new
+   static void *new_vectorlEintgR(void *p) {
+      return  p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) vector<int> : new vector<int>;
+   }
+   static void *newArray_vectorlEintgR(Long_t nElements, void *p) {
+      return p ? ::new((::ROOT::Internal::TOperatorNewHelper*)p) vector<int>[nElements] : new vector<int>[nElements];
+   }
+   // Wrapper around operator delete
+   static void delete_vectorlEintgR(void *p) {
+      delete ((vector<int>*)p);
+   }
+   static void deleteArray_vectorlEintgR(void *p) {
+      delete [] ((vector<int>*)p);
+   }
+   static void destruct_vectorlEintgR(void *p) {
+      typedef vector<int> current_t;

@@ -1,0 +1,1 @@
+python condor.py --DAS DAS_2018_Signal    --Filesjson "./json/2018_HWW_Signal.json"       --outputPath "/ospool/cms-user/yuzhe/NtupleStore/V3/2018/Signal"    --year 2018    --excutable "exe_UL18_NanoNtupleChain.sh"        --TaskFolder "production/NanoNtupleChain_16_Feb_2024"    --submitsh "NanoNtupleChain_16_Feb_2024.sh" --Condor --AddtionalArgs "-a '-o ./ -M HWW -m --year 2018'"

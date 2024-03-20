@@ -1,0 +1,75 @@
+# Datacard for <Channel (SR2aBlinded) instance at 0x2b2a86cdefa0> generated on 2024-01-31 02:36:19.085556
+imax 1 # number of categories ('bins' but here we are using shape templates)
+jmax 7 # number of samples minus 1
+kmax 37 # number of nuisance parameters
+shapes * SR2aBlinded HWWfullhad.root HWWfullhad:SR2aBlinded_$PROCESS HWWfullhad:SR2aBlinded_$PROCESS_$SYSTEMATIC
+bin SR2aBlinded
+observation 518.000
+bin                                                 SR2aBlinded    SR2aBlinded    SR2aBlinded    SR2aBlinded  SR2aBlinded  SR2aBlinded  SR2aBlinded                     SR2aBlinded
+process                                                     ggF            VBF             VH            ttH     ttbar_st        wjets         rest  CMS_HWW_boosted_qcd_datadriven
+process                                                      -3             -2             -1              0            1            2            3                               4
+rate                                                      1.975          1.234          1.203          0.987      166.473      142.373       25.916                           1.000
+BR_hww lnN                                        0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153            -            -            -                               -
+CMS_HWW_boosted_SR2a_VBF_mcstat_bin0 shape                    -         1.0000              -              -            -            -            -                               -
+CMS_HWW_boosted_SR2a_VBF_mcstat_bin17 shape                   -         1.0000              -              -            -            -            -                               -
+CMS_HWW_boosted_SR2a_VBF_mcstat_bin19 shape                   -         1.0000              -              -            -            -            -                               -
+CMS_HWW_boosted_SR2a_VBF_mcstat_bin3 shape                    -         1.0000              -              -            -            -            -                               -
+CMS_HWW_boosted_SR2a_VH_mcstat_bin0 shape                     -              -         1.0000              -            -            -            -                               -
+CMS_HWW_boosted_SR2a_VH_mcstat_bin17 shape                    -              -         1.0000              -            -            -            -                               -
+CMS_HWW_boosted_SR2a_VH_mcstat_bin19 shape                    -              -         1.0000              -            -            -            -                               -
+CMS_HWW_boosted_SR2a_VH_mcstat_bin3 shape                     -              -         1.0000              -            -            -            -                               -
+CMS_HWW_boosted_SR2a_ggF_mcstat_bin0 shape               1.0000              -              -              -            -            -            -                               -
+CMS_HWW_boosted_SR2a_ggF_mcstat_bin19 shape              1.0000              -              -              -            -            -            -                               -
+CMS_HWW_boosted_SR2a_ggF_mcstat_bin3 shape               1.0000              -              -              -            -            -            -                               -
+CMS_HWW_boosted_SR2a_mcstat_bin1 shape                   1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2a_mcstat_bin10 shape                  1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2a_mcstat_bin11 shape                  1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2a_mcstat_bin12 shape                  1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2a_mcstat_bin13 shape                  1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2a_mcstat_bin14 shape                  1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2a_mcstat_bin15 shape                  1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2a_mcstat_bin16 shape                  1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2a_mcstat_bin18 shape                  1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2a_mcstat_bin2 shape                   1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2a_rest_mcstat_bin17 shape                  -              -              -              -            -            -       1.0000                               -
+CMS_HWW_boosted_SR2a_rest_mcstat_bin19 shape                  -              -              -              -            -            -       1.0000                               -
+CMS_HWW_boosted_SR2a_ttH_mcstat_bin0 shape                    -              -              -         1.0000            -            -            -                               -
+CMS_HWW_boosted_SR2a_ttH_mcstat_bin17 shape                   -              -              -         1.0000            -            -            -                               -
+CMS_HWW_boosted_SR2a_ttH_mcstat_bin19 shape                   -              -              -         1.0000            -            -            -                               -
+CMS_HWW_boosted_SR2a_ttH_mcstat_bin3 shape                    -              -              -         1.0000            -            -            -                               -
+CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin0 shape               -              -              -              -       1.0000            -            -                               -
+CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin17 shape              -              -              -              -       1.0000            -            -                               -
+CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin19 shape              -              -              -              -       1.0000            -            -                               -
+CMS_HWW_boosted_SR2a_ttbar_st_mcstat_bin3 shape               -              -              -              -       1.0000            -            -                               -
+CMS_HWW_boosted_SR2a_wjets_mcstat_bin0 shape                  -              -              -              -            -       1.0000            -                               -
+CMS_HWW_boosted_SR2a_wjets_mcstat_bin17 shape                 -              -              -              -            -       1.0000            -                               -
+CMS_HWW_boosted_SR2a_wjets_mcstat_bin19 shape                 -              -              -              -            -       1.0000            -                               -
+CMS_HWW_boosted_SR2a_wjets_mcstat_bin3 shape                  -              -              -              -            -       1.0000            -                               -
+lumi_13TeV_correlated lnN                                1.0130         1.0130         1.0130         1.0130       1.0130       1.0130       1.0130                               -
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin0 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin1 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin10 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin11 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin12 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin13 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin14 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin15 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin16 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin17 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin18 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin19 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin2 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin3 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin4 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin5 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin6 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin7 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin8 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR2_Bin9 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par0 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par1 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par2 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par3 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par4 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par5 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par6 extArg HWWfullhad.root:HWWfullhad

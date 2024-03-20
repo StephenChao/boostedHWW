@@ -1,0 +1,5128 @@
+ <<< Combine >>> 
+>>> random number generator seed is 44
+   Options for Robust Minimizer :: 
+        Tolerance  0.1
+        Strategy   0
+        Type,Algo  Minuit2,Migrad
+>>> method used is FitDiagnostics
+Set Default Value of Parameter mask_SR1a To : 0
+Set Default Value of Parameter mask_SR1b To : 0
+Set Default Value of Parameter mask_CR1 To : 0
+Set Default Value of Parameter mask_SR1aBlinded To : 1
+Set Default Value of Parameter mask_SR1bBlinded To : 1
+Set Default Value of Parameter mask_CR1Blinded To : 1
+Set Default Value of Parameter mask_SR2a To : 0
+Set Default Value of Parameter mask_SR2b To : 0
+Set Default Value of Parameter mask_CR2 To : 0
+Set Default Value of Parameter mask_SR2aBlinded To : 1
+Set Default Value of Parameter mask_SR2bBlinded To : 1
+Set Default Value of Parameter mask_CR2Blinded To : 1
+Set Default Value of Parameter r To : 0.6
+>>> 6 out of 12 channels masked
+
+Warning: A value of r is specified in both the --setParameters and --expectSignal options. The argument of --expectSignal will take precedence
+Generate toy 1/1000
+SimNLL created with 12 channels, 0 generic constraints, 154 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+
+ --- FitDiagnostics ---
+Best fit r: 1.25264  -1.33237/+1.38098  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 2/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.365171  -1.38402/+1.4437  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 3/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.36251  -1.29465/+1.36097  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 4/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.565654  -1.32317/+1.37504  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 5/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.14127  -1.38885/+1.45384  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 6/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.860017  -1.38392/+1.42904  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 7/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.889344  -1.35038/+1.38372  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 8/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.821672  -1.38365/+1.45547  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 9/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.45439  -1.35003/+1.41563  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 10/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.12857  -1.32533/+1.36419  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 11/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.09417  -1.37433/+1.42445  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 12/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.901128  -1.43429/+1.48868  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 13/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.00049  -1.43756/+1.49063  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 14/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.73698  -1.29401/+1.34278  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 15/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.173441  -1.24914/+1.31098  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 16/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.50693  -1.40223/+1.45986  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 17/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.88562  -1.39619/+1.48732  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 18/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.866359  -1.27752/+1.32944  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 19/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.19433  -1.31589/+1.36794  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 20/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.984951  -1.41965/+1.48359  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 21/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.43183  -1.43195/+1.47815  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 22/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.29878  -1.44364/+1.49716  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 23/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.70631  -1.27436/+1.32697  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 24/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.756948  -1.37542/+1.43442  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 25/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.60055  -1.28662/+1.33451  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 26/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.93779  -1.26037/+1.30943  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 27/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.188882  -1.28659/+1.33772  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 28/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.28618  -1.44111/+1.49643  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 29/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.01873  -1.41506/+1.46003  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 30/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.31857  -1.36824/+1.42669  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 31/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.20482  -1.49818/+1.55767  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 32/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.327776  -1.33781/+1.38252  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 33/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.668906  -1.27902/+1.31725  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 34/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.8614  -1.43722/+1.50992  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 35/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.8124  -1.36405/+1.43042  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 36/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.01512  -1.42224/+1.47788  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 37/1000
+Error: minimization failed at r = 1.96963
+Error: minimization failed at r = -0.732519
+
+ --- FitDiagnostics ---
+Best fit r: 0.61598  -40.616/+39.384  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 38/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.683326  -1.32732/+1.37716  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 39/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.581121  -1.31669/+1.37515  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 40/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.22157  -1.25045/+1.30654  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 41/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.5978  -1.27691/+1.33369  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 42/1000
+Error: minimization failed at r = 1.12486
+
+ --- FitDiagnostics ---
+Best fit r: 2.43441  -42.4344/+1.42583  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 43/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.221523  -1.33267/+1.38154  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 44/1000
+Error: minimization failed at r = -0.715759
+Error: minimization failed at r = -0.715759
+
+ --- FitDiagnostics ---
+Best fit r: -0.715759  -39.2842/+40.7158  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 45/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.288289  -1.33626/+1.3659  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 46/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.54246  -1.38094/+1.4268  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 47/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.502375  -1.39458/+1.44643  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 48/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.287795  -1.33609/+1.39007  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 49/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.162575  -1.316/+1.37237  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 50/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.95845  -1.43245/+1.47925  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 51/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.50978  -1.39082/+1.44729  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 52/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.3304  -1.34408/+1.40029  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 53/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.487945  -1.3068/+1.3626  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 54/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.754047  -1.30778/+1.3641  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 55/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.97877  -1.40679/+1.46325  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 56/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.70615  -1.41388/+1.46554  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 57/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.323631  -1.3097/+1.34275  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 58/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.96543  -1.4741/+1.53628  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 59/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.54095  -1.39554/+1.45251  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 60/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.7901  -1.43045/+1.48002  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 61/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.602982  -1.32645/+1.36914  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 62/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.31878  -1.37224/+1.40792  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 63/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.6906  -1.39328/+1.45172  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 64/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.842074  -1.31058/+1.37629  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 65/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.64176  -1.36687/+1.41005  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 66/1000
+
+ --- FitDiagnostics ---
+Best fit r: -3.06712  -1.26/+1.31144  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 67/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.22504  -1.3118/+1.35827  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 68/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.00228  -1.46272/+1.50169  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 69/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.0645  -1.4574/+1.5179  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 70/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.37359  -1.29369/+1.35006  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 71/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.375518  -1.28241/+1.33363  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 72/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.67318  -1.37439/+1.43285  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 73/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.584133  -1.32888/+1.37802  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 74/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.19033  -1.38407/+1.43261  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 75/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.96157  -1.39065/+1.43138  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 76/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.992345  -1.41598/+1.43396  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 77/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.63058  -1.50343/+1.53497  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 78/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.14201  -1.32671/+1.36718  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 79/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.803156  -1.4151/+1.46662  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 80/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0305679  -1.31933/+1.3462  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 81/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.63129  -1.35798/+1.43806  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 82/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.92772  -1.38159/+1.43705  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 83/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.308242  -1.29595/+1.34543  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 84/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.02129  -1.25705/+1.29202  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 85/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.562173  -1.31853/+1.3689  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 86/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.538945  -1.25049/+1.30128  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 87/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.899768  -1.37023/+1.4366  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 88/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.463833  -1.3131/+1.36883  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 89/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.62981  -1.29484/+1.33915  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 90/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.03526  -1.4215/+1.47697  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 91/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.582004  -1.363/+1.41792  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 92/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.373822  -1.29558/+1.33414  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 93/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0265401  -1.37143/+1.3938  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 94/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.45729  -1.24091/+1.28664  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 95/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.09016  -1.43565/+1.47434  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 96/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.564294  -1.43545/+1.47286  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 97/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.14244  -1.27989/+1.32566  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 98/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.603195  -1.42721/+1.4555  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 99/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.14914  -1.32409/+1.37766  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 100/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.964095  -1.37097/+1.42795  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 101/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.617589  -1.3003/+1.35483  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 102/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.434445  -1.30314/+1.35051  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 103/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0171567  -1.35713/+1.40458  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 104/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0885886  -1.40852/+1.47981  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 105/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.29214  -1.38268/+1.43025  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 106/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.01829  -1.17353/+1.21982  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 107/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.43004  -1.36503/+1.41643  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 108/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.00807671  -1.38284/+1.42493  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 109/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.10086  -1.3097/+1.35835  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 110/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.410239  -1.33687/+1.38679  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 111/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.79307  -1.48916/+1.56794  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 112/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.89224  -1.21986/+1.26611  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 113/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.33896  -1.27939/+1.33019  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 114/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.554374  -1.4221/+1.48112  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 115/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.34849  -1.45947/+1.46856  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 116/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.12317  -1.41791/+1.46802  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 117/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.831568  -1.36443/+1.42827  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 118/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.29898  -1.34849/+1.39434  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 119/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.462159  -1.29907/+1.3439  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 120/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.33976  -1.41573/+1.47445  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 121/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.8165  -1.44101/+1.47959  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 122/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.77317  -1.40059/+1.45886  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 123/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.3658  -1.33193/+1.3923  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 124/1000
+Error: minimization failed at r = 0.9608
+
+ --- FitDiagnostics ---
+Best fit r: 2.36745  -42.3674/+1.47706  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 125/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.56684  -1.32588/+1.36894  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 126/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.98852  -1.30051/+1.32927  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 127/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.489626  -1.30671/+1.3499  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 128/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.73001  -1.35238/+1.40406  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 129/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.759204  -1.22129/+1.24591  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 130/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.00969787  -1.32211/+1.37428  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 131/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.94111  -1.33553/+1.3805  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 132/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.45146  -1.36919/+1.42122  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 133/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.1851  -1.50041/+1.57431  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 134/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.01642  -1.37855/+1.42939  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 135/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.07453  -1.34697/+1.40085  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 136/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.19071  -1.39142/+1.43457  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 137/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0999631  -1.29496/+1.34693  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 138/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.817881  -1.26104/+1.3223  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 139/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.71354  -1.2488/+1.30024  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 140/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.59133  -1.44736/+1.50626  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 141/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.28464  -1.34066/+1.38515  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 142/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.15625  -1.25947/+1.30393  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 143/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.534548  -1.35656/+1.39985  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 144/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.26288  -1.34203/+1.36951  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 145/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.479081  -1.2798/+1.33224  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 146/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.64388  -1.42723/+1.48365  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 147/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.18126  -1.27902/+1.33291  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 148/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.993471  -1.38351/+1.45452  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 149/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.270691  -1.33484/+1.39173  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 150/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.00675  -1.4353/+1.48717  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 151/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.39078  -1.34517/+1.40113  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 152/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.67534  -1.39717/+1.43656  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 153/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.68796  -1.38362/+1.43854  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 154/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.1434  -1.2889/+1.33156  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 155/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.265768  -1.31317/+1.37044  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 156/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.83208  -1.25493/+1.30398  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 157/1000
+
+ --- FitDiagnostics ---
+Best fit r: -3.30525  -1.20052/+1.2479  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 158/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.272582  -1.33266/+1.38311  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 159/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.70698  -1.39715/+1.49402  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 160/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.982029  -1.28836/+1.34235  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 161/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.18402  -1.33924/+1.36256  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 162/1000
+Error: minimization failed at r = -1.49407
+
+ --- FitDiagnostics ---
+Best fit r: -0.185417  -39.8146/+1.37667  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 163/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.656417  -1.349/+1.4068  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 164/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.757271  -1.35318/+1.42103  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 165/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.458623  -1.28697/+1.33852  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 166/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.890179  -1.36715/+1.40315  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 167/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.79429  -1.27377/+1.3223  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 168/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.713628  -1.29028/+1.34797  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 169/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.412302  -1.3746/+1.45558  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 170/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.35221  -1.37623/+1.42945  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 171/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.274876  -1.31558/+1.38736  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 172/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.361429  -1.24904/+1.29221  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 173/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.586505  -1.34335/+1.4015  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 174/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.45696  -1.38072/+1.41995  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 175/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.265708  -1.31495/+1.36572  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 176/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.02436  -1.27974/+1.32694  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 177/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.15967  -1.2834/+1.336  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 178/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.153393  -1.34799/+1.39782  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 179/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.75728  -1.36317/+1.39205  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 180/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.73573  -1.34705/+1.38622  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 181/1000
+Error: minimization failed at r = 0.565748
+Error: minimization failed at r = 0.565748
+
+ --- FitDiagnostics ---
+Best fit r: 0.565748  -40.5657/+39.4343  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 182/1000
+Error: minimization failed at r = -0.313654
+Error: minimization failed at r = -0.313654
+
+ --- FitDiagnostics ---
+Best fit r: -0.313654  -39.6863/+40.3137  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 183/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.00271184  -1.28712/+1.33723  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 184/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.38188  -1.37288/+1.42267  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 185/1000
+Error: minimization failed at r = 0.192504
+Error: minimization failed at r = -2.32966
+
+ --- FitDiagnostics ---
+Best fit r: -1.0458  -38.9542/+41.0458  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 186/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.3396  -1.34901/+1.40008  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 187/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.912181  -1.36351/+1.41204  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 188/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.419726  -1.30927/+1.36515  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 189/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.43073  -1.20203/+1.24279  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 190/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.331345  -1.39845/+1.46116  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 191/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.151601  -1.28207/+1.33211  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 192/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.14628  -1.38197/+1.44869  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 193/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.5679  -1.39573/+1.46327  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 194/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.893736  -1.41135/+1.48359  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 195/1000
+Error: minimization failed at r = -2.2857
+
+ --- FitDiagnostics ---
+Best fit r: -1.11251  -38.8875/+1.27676  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 196/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0441314  -1.35047/+1.40267  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 197/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.75196  -1.24461/+1.29145  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 198/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.653811  -1.23222/+1.27924  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 199/1000
+Error: minimization failed at r = 1.10435
+
+ --- FitDiagnostics ---
+Best fit r: -0.105581  -1.37496/+40.1056  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 200/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.188843  -1.35096/+1.38921  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 201/1000
+
+ --- FitDiagnostics ---
+Best fit r: 4.83895  -1.49335/+1.53929  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 202/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.03438  -1.40228/+1.45653  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 203/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.26691  -1.41088/+1.47683  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 204/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.11871  -1.38015/+1.42987  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 205/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.47083  -1.37294/+1.42918  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 206/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.38972  -1.34619/+1.39371  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 207/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.678535  -1.2439/+1.29592  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 208/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.22541  -1.39634/+1.44927  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 209/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.02316  -1.3552/+1.41523  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 210/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.430113  -1.28732/+1.34027  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 211/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.27952  -1.27739/+1.31239  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 212/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.28269  -1.41822/+1.46442  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 213/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.728699  -1.2569/+1.29672  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 214/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.12255  -1.28244/+1.33654  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 215/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.924531  -1.29945/+1.36214  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 216/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.660219  -1.35677/+1.4326  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 217/1000
+Error: minimization failed at r = 1.79408
+Error: minimization failed at r = -0.614623
+
+ --- FitDiagnostics ---
+Best fit r: 0.605601  -40.6056/+39.3944  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 218/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.04142  -1.40143/+1.45382  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 219/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.21059  -1.38733/+1.42279  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 220/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.33679  -1.34472/+1.40394  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 221/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.314814  -1.39342/+1.4397  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 222/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.573673  -1.32246/+1.38967  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 223/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.03617  -1.42212/+1.46766  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 224/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.10518  -1.42496/+1.45954  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 225/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.339747  -1.37201/+1.42048  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 226/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.15121  -1.43153/+1.46644  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 227/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.00234  -1.34362/+1.39179  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 228/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.051591  -1.29045/+1.34232  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 229/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.90852  -1.29576/+1.34239  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 230/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.04223  -1.27414/+1.33425  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 231/1000
+Error: minimization failed at r = 0.894984
+
+ --- FitDiagnostics ---
+Best fit r: -0.321464  -1.33612/+40.3215  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 232/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.146416  -1.30921/+1.35466  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 233/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.22252  -1.37983/+1.43949  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 234/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.875103  -1.26726/+1.33484  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 235/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.29255  -1.3827/+1.43774  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 236/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.51491  -1.43264/+1.47898  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 237/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.673965  -1.3267/+1.39825  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 238/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.429388  -1.28187/+1.31704  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 239/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.32303  -1.40126/+1.43262  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 240/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.658916  -1.34896/+1.40111  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 241/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.66675  -1.44786/+1.4877  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 242/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.931015  -1.21852/+1.26588  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 243/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0524475  -1.30119/+1.35276  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 244/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.4707  -1.33712/+1.3853  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 245/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.06079  -1.39477/+1.44634  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 246/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0931006  -1.34413/+1.4061  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 247/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.10559  -1.37833/+1.42716  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 248/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.623891  -1.32648/+1.37938  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 249/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.12176  -1.24637/+1.27929  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 250/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.767948  -1.30907/+1.3591  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 251/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0348714  -1.27951/+1.33239  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 252/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0939766  -1.34039/+1.38301  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 253/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.0732  -1.27572/+1.32402  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 254/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.27587  -1.34456/+1.3908  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 255/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.63402  -1.40291/+1.45453  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 256/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0827229  -1.35832/+1.40416  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 257/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.903814  -1.36225/+1.43387  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 258/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.54045  -1.39057/+1.47919  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 259/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.928485  -1.43014/+1.52481  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 260/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.751009  -1.28244/+1.33542  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 261/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.11787  -1.44744/+1.50394  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 262/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.26849  -1.26737/+1.30659  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 263/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.2961  -1.23353/+1.29097  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 264/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.921535  -1.20414/+1.25044  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 265/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.66988  -1.29029/+1.33888  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 266/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.28389  -1.30326/+1.32767  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 267/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.04169  -1.33352/+1.36508  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 268/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.193891  -1.34477/+1.38421  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 269/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.543884  -1.28934/+1.33879  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 270/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.53935  -1.45866/+1.48623  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 271/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.85215  -1.412/+1.46766  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 272/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.5853  -1.42678/+1.48181  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 273/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.60739  -1.46221/+1.51323  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 274/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.11404  -1.36952/+1.42446  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 275/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.125755  -1.29275/+1.3525  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 276/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.32529  -1.25492/+1.30684  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 277/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.08343  -1.37223/+1.42142  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 278/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.4508  -1.3254/+1.37878  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 279/1000
+
+ --- FitDiagnostics ---
+Best fit r: 4.19435  -1.42511/+1.49015  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 280/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.65747  -1.35949/+1.39431  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 281/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.220943  -1.31302/+1.37114  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 282/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.89147  -1.40624/+1.46746  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 283/1000
+Error: minimization failed at r = -0.565474
+Error: minimization failed at r = -0.565474
+
+ --- FitDiagnostics ---
+Best fit r: -0.565474  -39.4345/+40.5655  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 284/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.165675  -1.2738/+1.32415  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 285/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.999999  -1.34952/+1.36663  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 286/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.193291  -1.30024/+1.36681  (68% CL)
+Done in 0.10 min (cpu), 0.11 min (real)
+Generate toy 287/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.619867  -1.3279/+1.38179  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 288/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.903556  -1.29619/+1.34253  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 289/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.79241  -1.30893/+1.36083  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 290/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.68148  -1.39231/+1.43897  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 291/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.874642  -1.30406/+1.36113  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 292/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.73275  -1.29461/+1.34801  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 293/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.10866  -1.46866/+1.50482  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 294/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.13498  -1.38295/+1.44039  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 295/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.78063  -1.26362/+1.31296  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 296/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.45304  -1.32194/+1.378  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 297/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.02828  -1.24255/+1.29164  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 298/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.742081  -1.30273/+1.3499  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 299/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.108823  -1.36308/+1.42561  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 300/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.703236  -1.29416/+1.33785  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 301/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.35611  -1.27062/+1.32594  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 302/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.62422  -1.25287/+1.30167  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 303/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.954482  -1.29255/+1.35816  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 304/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.5883  -1.39222/+1.45099  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 305/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.550469  -1.33858/+1.39533  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 306/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.467  -1.34773/+1.39875  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 307/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.290618  -1.42114/+1.43809  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 308/1000
+Error: minimization failed at r = 3.10196
+Error: minimization failed at r = 0.575186
+
+ --- FitDiagnostics ---
+Best fit r: 1.95417  -41.9542/+38.0458  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 309/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.856296  -1.3361/+1.35852  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 310/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.345138  -1.27207/+1.31234  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 311/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.5557  -1.24681/+1.29815  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 312/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.76317  -1.34989/+1.37735  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 313/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.0401  -1.47524/+1.53145  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 314/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.33952  -1.42776/+1.55635  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 315/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.746612  -1.26964/+1.32247  (68% CL)
+Done in 0.12 min (cpu), 0.11 min (real)
+Generate toy 316/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.276188  -1.47058/+1.50259  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 317/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.72649  -1.28537/+1.32953  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 318/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.89583  -1.39446/+1.44705  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 319/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.47066  -1.24445/+1.29588  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 320/1000
+Error: minimization failed at r = 0.23171
+Error: minimization failed at r = 0.23171
+
+ --- FitDiagnostics ---
+Best fit r: 0.23171  -40.2317/+39.7683  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 321/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.228063  -1.32554/+1.37631  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 322/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.547904  -1.29646/+1.35822  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 323/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0566676  -1.30896/+1.36079  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 324/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.991895  -1.30023/+1.34971  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 325/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.541464  -1.30196/+1.35091  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 326/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.30464  -1.30374/+1.33125  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 327/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.74916  -1.31376/+1.36725  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 328/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.61367  -1.38884/+1.45603  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 329/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.75225  -1.39918/+1.4855  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 330/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.19703  -1.38514/+1.41758  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 331/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.316141  -1.33441/+1.37929  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 332/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0178501  -1.40656/+1.47478  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 333/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.41451  -1.46606/+1.53425  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 334/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.651806  -1.26802/+1.33492  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 335/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.743573  -1.34251/+1.38146  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 336/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.472696  -1.40003/+1.43822  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 337/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.84677  -1.40411/+1.45839  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 338/1000
+Error: minimization failed at r = 2.93586
+Error: minimization failed at r = 0.425762
+
+ --- FitDiagnostics ---
+Best fit r: 1.7829  -41.7829/+38.2171  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 339/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.33406  -1.38062/+1.4311  (68% CL)
+Done in 0.14 min (cpu), 0.13 min (real)
+Generate toy 340/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.216913  -1.32459/+1.38597  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 341/1000
+
+ --- FitDiagnostics ---
+Best fit r: 4.45149  -1.45559/+1.50579  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 342/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.338  -1.40204/+1.45968  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 343/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.12776  -1.46816/+1.54131  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 344/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.709723  -1.34987/+1.39952  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 345/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.25844  -1.37716/+1.4056  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 346/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.461457  -1.32277/+1.36438  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 347/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.805015  -1.37686/+1.4171  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 348/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.563921  -1.36534/+1.39707  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 349/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.400719  -1.2865/+1.3316  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 350/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.9897  -1.24924/+1.28923  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 351/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.83431  -1.42208/+1.48106  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 352/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.422435  -1.38729/+1.44082  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 353/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.61968  -1.26257/+1.30885  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 354/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.88556  -1.40496/+1.46072  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 355/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.889404  -1.37947/+1.43017  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 356/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0150977  -1.30644/+1.34854  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 357/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.4562  -1.28991/+1.33224  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 358/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.66273  -1.43361/+1.47062  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 359/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.13188  -1.38892/+1.43326  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 360/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.4606  -1.30192/+1.36247  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 361/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.91802  -1.35755/+1.44237  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 362/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.6374  -1.3455/+1.39636  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 363/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0568331  -1.31596/+1.36472  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 364/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.125372  -1.28823/+1.33322  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 365/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.360642  -1.41015/+1.45533  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 366/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.14746  -1.26692/+1.31682  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 367/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.304195  -1.39227/+1.44747  (68% CL)
+Done in 0.12 min (cpu), 0.13 min (real)
+Generate toy 368/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.144789  -1.30491/+1.35143  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 369/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.52034  -1.26781/+1.31871  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 370/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.50404  -1.40709/+1.4647  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 371/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.378982  -1.39045/+1.39736  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 372/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.84995  -1.34359/+1.39979  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 373/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.13415  -1.36796/+1.40437  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 374/1000
+Error: minimization failed at r = -2.35747
+Error: minimization failed at r = -2.35747
+
+ --- FitDiagnostics ---
+Best fit r: -2.35747  -37.6425/+42.3575  (68% CL)
+Done in 0.05 min (cpu), 0.05 min (real)
+Generate toy 375/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.38044  -1.38255/+1.43769  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 376/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0969152  -1.39877/+1.46165  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 377/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.13066  -1.34093/+1.39148  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 378/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.21031  -1.35954/+1.41718  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 379/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.459742  -1.28967/+1.33794  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 380/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.18454  -1.31386/+1.36963  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 381/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.981177  -1.37987/+1.43174  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 382/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.80667  -1.4343/+1.49413  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 383/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.7506  -1.35038/+1.36213  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 384/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.04563  -1.31162/+1.36246  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 385/1000
+Error: minimization failed at r = 4.39719
+
+ --- FitDiagnostics ---
+Best fit r: 2.98505  -1.3836/+37.0149  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 386/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.854158  -1.25008/+1.30437  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 387/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.114806  -1.35373/+1.39326  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 388/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.91192  -1.37672/+1.4714  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 389/1000
+
+ --- FitDiagnostics ---
+Best fit r: -3.23623  -1.26696/+1.34721  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 390/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.1941  -1.34847/+1.37743  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 391/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.113606  -1.30802/+1.3659  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 392/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.332238  -1.4266/+1.48691  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 393/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.44251  -1.30183/+1.35201  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 394/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.25632  -1.28678/+1.33474  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 395/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.458006  -1.33432/+1.42639  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 396/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.40255  -1.41454/+1.46124  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 397/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.39928  -1.4007/+1.45356  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 398/1000
+Error: minimization failed at r = 0.307565
+Error: minimization failed at r = 0.307565
+
+ --- FitDiagnostics ---
+Best fit r: 0.307565  -40.3076/+39.6924  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 399/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.768407  -1.33892/+1.39329  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 400/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.07967  -1.35358/+1.40906  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 401/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.75085  -1.22728/+1.27214  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 402/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.42645  -1.41329/+1.47276  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 403/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.714948  -1.30408/+1.35768  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 404/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.326141  -1.26559/+1.31323  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 405/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.19613  -1.39504/+1.45156  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 406/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.35607  -1.20339/+1.23323  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 407/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.338349  -1.36253/+1.39087  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 408/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.14471  -1.27472/+1.3211  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 409/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.1576  -1.37945/+1.42992  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 410/1000
+Error: minimization failed at r = -0.359801
+
+ --- FitDiagnostics ---
+Best fit r: 0.868318  -40.8683/+1.38883  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 411/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.925221  -1.28616/+1.32887  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 412/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.34477  -1.43553/+1.48793  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 413/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.519907  -1.41367/+1.46716  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 414/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.5029  -1.33543/+1.38798  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 415/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.15562  -1.29828/+1.34166  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 416/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.16979  -1.29523/+1.35418  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 417/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.0896  -1.26836/+1.32185  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 418/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.73013  -1.41399/+1.49434  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 419/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.254448  -1.28246/+1.33519  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 420/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.00284  -1.31955/+1.36968  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 421/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0340674  -1.39287/+1.43503  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 422/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.23679  -1.36009/+1.3826  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 423/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.1974  -1.25707/+1.30542  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 424/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.20801  -1.36751/+1.40045  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 425/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.40327  -1.38944/+1.42599  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 426/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.97254  -1.52833/+1.58745  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 427/1000
+Error: minimization failed at r = 0.521504
+Error: minimization failed at r = -1.99809
+
+ --- FitDiagnostics ---
+Best fit r: -0.706562  -39.2934/+40.7066  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 428/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.802111  -1.3341/+1.39127  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 429/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.0305  -1.32122/+1.36567  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 430/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.226865  -1.34522/+1.41799  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 431/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.68431  -1.36202/+1.412  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 432/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.3217  -1.41804/+1.45958  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 433/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.16345  -1.34494/+1.40623  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 434/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.1018  -1.28566/+1.33868  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 435/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.80716  -1.38151/+1.43353  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 436/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.518289  -1.33069/+1.34576  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 437/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.489718  -1.31913/+1.39483  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 438/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.60093  -1.42112/+1.4657  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 439/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.101212  -1.36968/+1.40577  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 440/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.512786  -1.32963/+1.38127  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 441/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.512178  -1.36851/+1.41762  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 442/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.17973  -1.40452/+1.43588  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 443/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.81422  -1.19389/+1.2634  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 444/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.19932  -1.33436/+1.39021  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 445/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.735687  -1.26066/+1.29707  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 446/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.619906  -1.37015/+1.42071  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 447/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.605313  -1.28361/+1.34452  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 448/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.07573  -1.4023/+1.44794  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 449/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.222255  -1.28613/+1.3191  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 450/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.275398  -1.30296/+1.35059  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 451/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.14911  -1.27563/+1.31703  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 452/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.08588  -1.27223/+1.32909  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 453/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.40413  -1.30706/+1.35655  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 454/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.89438  -1.34726/+1.39445  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 455/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.03938  -1.29754/+1.35389  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 456/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0747458  -1.34939/+1.38236  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 457/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.62748  -1.43876/+1.47038  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 458/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.479324  -1.28906/+1.34444  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 459/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.03154  -1.34643/+1.38991  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 460/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.166316  -1.32274/+1.37114  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 461/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.2657  -1.26241/+1.30952  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 462/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.46473  -1.38825/+1.4291  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 463/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.57534  -1.39604/+1.43903  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 464/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.875178  -1.40229/+1.45982  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 465/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.405233  -1.32698/+1.37057  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 466/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.504344  -1.30047/+1.34823  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 467/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.4792  -1.38383/+1.44087  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 468/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.619249  -1.28118/+1.32554  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 469/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.133995  -1.28724/+1.33688  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 470/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.38369  -1.31283/+1.3669  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 471/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.988115  -1.2801/+1.32592  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 472/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.32082  -1.41562/+1.47105  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 473/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.32948  -1.38041/+1.44083  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 474/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.1252  -1.42718/+1.47327  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 475/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.431831  -1.30855/+1.37218  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 476/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.6062  -1.42827/+1.47927  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 477/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.413864  -1.34011/+1.39456  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 478/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.368556  -1.30727/+1.33609  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 479/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.84597  -1.18655/+1.24285  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 480/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.47596  -1.37068/+1.43943  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 481/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0610409  -1.35968/+1.39374  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 482/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.325116  -1.29315/+1.32837  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 483/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.06036  -1.35272/+1.40917  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 484/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.31186  -1.383/+1.42954  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 485/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.59482  -1.35/+1.41134  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 486/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.06148  -1.24722/+1.29528  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 487/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.62182  -1.37328/+1.44112  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 488/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.812214  -1.39649/+1.4538  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 489/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.87116  -1.42583/+1.48449  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 490/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.697152  -1.37378/+1.40644  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 491/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.796933  -1.33329/+1.41157  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 492/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.4268  -1.24296/+1.30587  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 493/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.64379  -1.28188/+1.32254  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 494/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.278436  -1.32791/+1.37885  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 495/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.8638  -1.39944/+1.45255  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 496/1000
+Error: minimization failed at r = 5.62211
+Error: minimization failed at r = 3.04358
+
+ --- FitDiagnostics ---
+Best fit r: 4.53831  -44.5383/+35.4617  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 497/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.375437  -1.34895/+1.39358  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 498/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.450494  -1.32915/+1.3835  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 499/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.37066  -1.5017/+1.56532  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 500/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.6838  -1.45892/+1.51589  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 501/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.84653  -1.43681/+1.49833  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 502/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.93935  -1.38806/+1.41457  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 503/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.14865  -1.32715/+1.37804  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 504/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.797071  -1.30333/+1.32315  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 505/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.98238  -1.37651/+1.40691  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 506/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.97317  -1.33142/+1.37109  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 507/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0337107  -1.31549/+1.36769  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 508/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.779504  -1.30817/+1.36519  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 509/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.377286  -1.39334/+1.45016  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 510/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.1295  -1.4091/+1.46386  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 511/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.738035  -1.30853/+1.37954  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 512/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.550324  -1.31072/+1.34705  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 513/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.473803  -1.38456/+1.42769  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 514/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.57663  -1.43299/+1.48581  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 515/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.5172  -1.34271/+1.403  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 516/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.731523  -1.32959/+1.33776  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 517/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.87556  -1.36491/+1.39434  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 518/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.845387  -1.31425/+1.3438  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 519/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.00617854  -1.35299/+1.3711  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 520/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.197506  -1.39591/+1.44109  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 521/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.521693  -1.36444/+1.41962  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 522/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.02044  -1.27893/+1.33057  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 523/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.360393  -1.33162/+1.39477  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 524/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0225292  -1.30906/+1.35875  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 525/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.309314  -1.33284/+1.40401  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 526/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.823774  -1.29996/+1.35384  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 527/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.83083  -1.34374/+1.39327  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 528/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.07594  -1.29855/+1.35092  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 529/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.73965  -1.48472/+1.55006  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 530/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.413379  -1.34719/+1.40207  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 531/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.3245  -1.33738/+1.38953  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 532/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.84465  -1.36448/+1.39067  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 533/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.633476  -1.27362/+1.32135  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 534/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.86252  -1.23982/+1.2902  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 535/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.962942  -1.37057/+1.42578  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 536/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.03494  -1.38768/+1.45873  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 537/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.406349  -1.4025/+1.42922  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 538/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.124124  -1.34998/+1.39433  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 539/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0634395  -1.27598/+1.34501  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 540/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.56396  -1.41397/+1.48187  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 541/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.13507  -1.3674/+1.4308  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 542/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.30452  -1.37136/+1.4275  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 543/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.94298  -1.44536/+1.47136  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 544/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.08256  -1.35352/+1.40021  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 545/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.43791  -1.4312/+1.49266  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 546/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.450559  -1.2551/+1.3228  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 547/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.408922  -1.37939/+1.42229  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 548/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0378181  -1.29548/+1.32883  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 549/1000
+Error: minimization failed at r = 2.11917
+Error: minimization failed at r = -0.542665
+
+ --- FitDiagnostics ---
+Best fit r: 0.737906  -40.7379/+39.2621  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 550/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.1492  -1.25099/+1.29763  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 551/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.511116  -1.25136/+1.30666  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 552/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.3424  -1.34351/+1.39632  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 553/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.22236  -1.34688/+1.40084  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 554/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.33241  -1.3491/+1.3971  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 555/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.45135  -1.33161/+1.38858  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 556/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.207213  -1.352/+1.40219  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 557/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.566652  -1.31423/+1.35924  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 558/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.357698  -1.24945/+1.29292  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 559/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.355  -1.32897/+1.38032  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 560/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.147776  -1.38452/+1.41731  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 561/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.670049  -1.31826/+1.37265  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 562/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.96375  -1.45872/+1.51608  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 563/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.09787  -1.25981/+1.30261  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 564/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.177369  -1.26093/+1.31233  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 565/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.04569  -1.37125/+1.44872  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 566/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.441655  -1.36296/+1.37395  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 567/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.387553  -1.29966/+1.34734  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 568/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.29519  -1.25938/+1.32043  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 569/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.215168  -1.29496/+1.34179  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 570/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.36559  -1.42401/+1.51707  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 571/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.359179  -1.33083/+1.38544  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 572/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0408238  -1.32942/+1.37708  (68% CL)
+Done in 0.14 min (cpu), 0.13 min (real)
+Generate toy 573/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.55182  -1.43012/+1.48582  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 574/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.270816  -1.33698/+1.41137  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 575/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.46335  -1.3041/+1.35248  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 576/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.119387  -1.34323/+1.3748  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 577/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.421296  -1.413/+1.45716  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 578/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.86757  -1.45998/+1.51568  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 579/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.436813  -1.3263/+1.38062  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 580/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.98664  -1.37482/+1.41202  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 581/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.456398  -1.29089/+1.35871  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 582/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.16046  -1.37959/+1.43313  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 583/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.81176  -1.4211/+1.47376  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 584/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.41866  -1.2701/+1.31893  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 585/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.10505  -1.34568/+1.40803  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 586/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.00433  -1.31584/+1.36722  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 587/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.91625  -1.43122/+1.51174  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 588/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.611972  -1.35074/+1.39684  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 589/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.863433  -1.37788/+1.43216  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 590/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.14215  -1.32111/+1.34517  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 591/1000
+Error: minimization failed at r = -0.0171278
+
+ --- FitDiagnostics ---
+Best fit r: 1.34172  -41.3417/+1.47673  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 592/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.485973  -1.31856/+1.3615  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 593/1000
+Error: minimization failed at r = -0.170113
+
+ --- FitDiagnostics ---
+Best fit r: 1.06888  -41.0689/+1.44981  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 594/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.5872  -1.33194/+1.39498  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 595/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.533323  -1.38199/+1.44724  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 596/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.21042  -1.27689/+1.33191  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 597/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.69217  -1.32508/+1.38019  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 598/1000
+Error: minimization failed at r = 3.3038
+Error: minimization failed at r = 0.842345
+
+ --- FitDiagnostics ---
+Best fit r: 2.11284  -42.1128/+37.8872  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 599/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.40381  -1.33497/+1.39076  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 600/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.858081  -1.31374/+1.36625  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 601/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.06278  -1.39166/+1.42988  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 602/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.149264  -1.31454/+1.35343  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 603/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.71436  -1.48528/+1.53423  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 604/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.35083  -1.33906/+1.39222  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 605/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.150429  -1.34562/+1.39651  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 606/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.33006  -1.34831/+1.39422  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 607/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.999056  -1.37699/+1.44079  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 608/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.389797  -1.35704/+1.44064  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 609/1000
+Error: minimization failed at r = 1.21306
+Error: minimization failed at r = 1.21306
+
+ --- FitDiagnostics ---
+Best fit r: 1.21306  -41.2131/+38.7869  (68% CL)
+Done in 0.05 min (cpu), 0.05 min (real)
+Generate toy 610/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.33025  -1.27573/+1.32061  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 611/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.26636  -1.35949/+1.40185  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 612/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.13697  -1.21744/+1.2725  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 613/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.798054  -1.29381/+1.33715  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 614/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.03658  -1.36263/+1.4185  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 615/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.929772  -1.37343/+1.424  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 616/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.60828  -1.23193/+1.27171  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 617/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.743858  -1.33506/+1.38211  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 618/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.144121  -1.2506/+1.31461  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 619/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.961225  -1.30826/+1.34559  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 620/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.08228  -1.32389/+1.43172  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 621/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.14512  -1.40443/+1.44792  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 622/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.231199  -1.2667/+1.34889  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 623/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.36947  -1.30192/+1.35382  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 624/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.22491  -1.22479/+1.27076  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 625/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.40605  -1.30343/+1.35387  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 626/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.828952  -1.37415/+1.41857  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 627/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.40685  -1.44858/+1.4749  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 628/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.59555  -1.41484/+1.45476  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 629/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.57097  -1.3524/+1.39997  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 630/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.45427  -1.24738/+1.29908  (68% CL)
+Done in 0.18 min (cpu), 0.18 min (real)
+Generate toy 631/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.564392  -1.38991/+1.44679  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 632/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.554874  -1.36682/+1.42102  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 633/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.52066  -1.48405/+1.55382  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 634/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.280528  -1.31224/+1.35219  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 635/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.03039  -1.37294/+1.42401  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 636/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.107508  -1.35005/+1.38933  (68% CL)
+Done in 0.12 min (cpu), 0.13 min (real)
+Generate toy 637/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.428006  -1.3093/+1.35657  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 638/1000
+Error: minimization failed at r = 0.140445
+
+ --- FitDiagnostics ---
+Best fit r: -1.09947  -1.33196/+41.0995  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 639/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.02415  -1.4024/+1.45317  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 640/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.04927  -1.39531/+1.4417  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 641/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.05062  -1.41201/+1.43474  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 642/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.37408  -1.3672/+1.42485  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 643/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.69783  -1.36017/+1.41362  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 644/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.266441  -1.29061/+1.34172  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 645/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.14004  -1.35199/+1.39176  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 646/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.39286  -1.37648/+1.43277  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 647/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.726997  -1.35054/+1.40572  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 648/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.155898  -1.35433/+1.39511  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 649/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.11894  -1.38682/+1.44234  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 650/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.2717  -1.37882/+1.43236  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 651/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.46913  -1.3373/+1.38808  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 652/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.05267  -1.36575/+1.42265  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 653/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.20422  -1.37635/+1.43616  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 654/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.71253  -1.36472/+1.43053  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 655/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.64768  -1.45078/+1.51601  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 656/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.693036  -1.38118/+1.43162  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 657/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.254371  -1.23833/+1.30015  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 658/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.61029  -1.33186/+1.38701  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 659/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.58755  -1.37453/+1.44181  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 660/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.490387  -1.37574/+1.42331  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 661/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.75839  -1.3676/+1.41725  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 662/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.80994  -1.43033/+1.48498  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 663/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.392269  -1.32272/+1.37694  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 664/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.582591  -1.33264/+1.38843  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 665/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.420128  -1.33033/+1.39411  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 666/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.4994  -1.48904/+1.54122  (68% CL)
+Done in 0.11 min (cpu), 0.12 min (real)
+Generate toy 667/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0975145  -1.34056/+1.40286  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 668/1000
+Error: minimization failed at r = 2.60281
+Error: minimization failed at r = -0.127909
+
+ --- FitDiagnostics ---
+Best fit r: 1.22358  -41.2236/+38.7764  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 669/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.18912  -1.33267/+1.38528  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 670/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.31314  -1.30362/+1.33448  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 671/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.298941  -1.29788/+1.35264  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 672/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.44636  -1.35346/+1.39583  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 673/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.227469  -1.37335/+1.40883  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 674/1000
+Error: minimization failed at r = 2.66433
+Error: minimization failed at r = 2.66433
+
+ --- FitDiagnostics ---
+Best fit r: 2.66433  -42.6643/+37.3357  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 675/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.17437  -1.31971/+1.34955  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 676/1000
+Error: minimization failed at r = 2.36024
+
+ --- FitDiagnostics ---
+Best fit r: 1.08578  -1.34534/+38.9142  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 677/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.80452  -1.38891/+1.43633  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 678/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.36601  -1.35691/+1.39682  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 679/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.18685  -1.32927/+1.38426  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 680/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.8814  -1.29857/+1.35524  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 681/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.870723  -1.35807/+1.39573  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 682/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.44309  -1.31052/+1.36233  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 683/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.79767  -1.43459/+1.49366  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 684/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.122022  -1.31969/+1.36141  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 685/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.16574  -1.39399/+1.41726  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 686/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.09933  -1.34349/+1.39709  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 687/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.97766  -1.34791/+1.41029  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 688/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.61455  -1.39846/+1.43781  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 689/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0271588  -1.3532/+1.38667  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 690/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.165497  -1.34585/+1.38771  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 691/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.756325  -1.26851/+1.32163  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 692/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0590144  -1.34265/+1.39309  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 693/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.632635  -1.32101/+1.36572  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 694/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.76432  -1.45881/+1.46637  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 695/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.1965  -1.28003/+1.33636  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 696/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.435  -1.40424/+1.46068  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 697/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.1478  -1.40164/+1.45661  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 698/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.12385  -1.41523/+1.48307  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 699/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.720425  -1.2871/+1.34907  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 700/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.266535  -1.3417/+1.40687  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 701/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.12302  -1.37814/+1.43338  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 702/1000
+Error: minimization failed at r = 2.21821
+Error: minimization failed at r = 2.21821
+
+ --- FitDiagnostics ---
+Best fit r: 2.21821  -42.2182/+37.7818  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 703/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.561579  -1.30233/+1.35293  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 704/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.581934  -1.25104/+1.3006  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 705/1000
+Error: minimization failed at r = 1.09207
+
+ --- FitDiagnostics ---
+Best fit r: -0.170675  -1.31306/+40.1707  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 706/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.11164  -1.28001/+1.33115  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 707/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.04221  -1.31644/+1.38355  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 708/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.62657  -1.36831/+1.42241  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 709/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.9978  -1.36516/+1.41642  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 710/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.02913  -1.2352/+1.28304  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 711/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.079105  -1.36152/+1.44704  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 712/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.72246  -1.26192/+1.34777  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 713/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.30158  -1.39277/+1.44747  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 714/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.70133  -1.32348/+1.38619  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 715/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.928211  -1.27588/+1.35214  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 716/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.703246  -1.33378/+1.3716  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 717/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.737162  -1.3701/+1.42241  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 718/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.35824  -1.42323/+1.48146  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 719/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.476445  -1.2954/+1.3454  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 720/1000
+
+ --- FitDiagnostics ---
+Fit failed.
+Done in 0.03 min (cpu), 0.03 min (real)
+Generate toy 721/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.04183  -1.34196/+1.39609  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 722/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.511137  -1.30346/+1.3725  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 723/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.1873  -1.29712/+1.3523  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 724/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.00604975  -1.2866/+1.33767  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 725/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.404323  -1.27539/+1.3312  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 726/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.238568  -1.33329/+1.39366  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 727/1000
+Error: minimization failed at r = -0.459017
+Error: minimization failed at r = -0.459017
+
+ --- FitDiagnostics ---
+Best fit r: -0.459017  -39.541/+40.459  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 728/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.40429  -1.36024/+1.43986  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 729/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.75784  -1.35293/+1.41676  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 730/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.509039  -1.35545/+1.39759  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 731/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.1741  -1.33298/+1.38102  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 732/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.50559  -1.35167/+1.37591  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 733/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.379557  -1.35384/+1.42107  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 734/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.470917  -1.34494/+1.3885  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 735/1000
+Error: minimization failed at r = -0.565614
+Error: minimization failed at r = -3.0481
+
+ --- FitDiagnostics ---
+Best fit r: -1.83135  -38.1686/+41.8314  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 736/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.345796  -1.2786/+1.30842  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 737/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.155556  -1.31607/+1.37299  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 738/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.155748  -1.2786/+1.32691  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 739/1000
+Error: minimization failed at r = 2.27387
+Error: minimization failed at r = -0.319911
+
+ --- FitDiagnostics ---
+Best fit r: 0.914426  -40.9144/+39.0856  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 740/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0513597  -1.28334/+1.37458  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 741/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.454442  -1.35538/+1.40751  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 742/1000
+Error: minimization failed at r = 1.6481
+Error: minimization failed at r = -0.765396
+
+ --- FitDiagnostics ---
+Best fit r: 0.455083  -40.4551/+39.5449  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 743/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.57307  -1.27173/+1.31923  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 744/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.130232  -1.33232/+1.3799  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 745/1000
+Error: closed range without finding crossing.
+
+ --- FitDiagnostics ---
+Best fit r: -0.370281  -1.34624/+40.3703  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 746/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.740715  -1.33748/+1.38979  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 747/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.63099  -1.36591/+1.42096  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 748/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.54836  -1.32814/+1.39309  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 749/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0165656  -1.33726/+1.39177  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 750/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.08165  -1.32556/+1.37597  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 751/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.287808  -1.33092/+1.38855  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 752/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.213305  -1.3311/+1.39509  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 753/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.279059  -1.33655/+1.39094  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 754/1000
+Error: minimization failed at r = 2.93662
+Error: minimization failed at r = 2.93662
+
+ --- FitDiagnostics ---
+Best fit r: 2.93662  -42.9366/+37.0634  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 755/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.538856  -1.28625/+1.35595  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 756/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.930132  -1.30641/+1.35541  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 757/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.907625  -1.23631/+1.28785  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 758/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.32859  -1.39794/+1.4224  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 759/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.35318  -1.27303/+1.32226  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 760/1000
+Error: minimization failed at r = -1.24044
+
+ --- FitDiagnostics ---
+Best fit r: -0.0396085  -39.9604/+1.31494  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 761/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.980404  -1.37313/+1.42442  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 762/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.7404  -1.3313/+1.37642  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 763/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.872704  -1.3396/+1.3936  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 764/1000
+Error: minimization failed at r = 2.30204
+Error: minimization failed at r = -0.1314
+
+ --- FitDiagnostics ---
+Best fit r: 1.11357  -41.1136/+38.8864  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 765/1000
+Error: minimization failed at r = 1.58223
+
+ --- FitDiagnostics ---
+Best fit r: 0.387165  -1.35732/+39.6128  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 766/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.570484  -1.3606/+1.39575  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 767/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.734158  -1.37675/+1.43532  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 768/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.420842  -1.36352/+1.41172  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 769/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.54192  -1.40968/+1.45981  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 770/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.831452  -1.25561/+1.30774  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 771/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.29447  -1.39164/+1.42306  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 772/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.01514  -1.34043/+1.39632  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 773/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.40987  -1.32073/+1.37521  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 774/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.10806  -1.46764/+1.51553  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 775/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.42644  -1.41242/+1.45855  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 776/1000
+Error: minimization failed at r = 1.73118
+Error: minimization failed at r = -0.816636
+
+ --- FitDiagnostics ---
+Best fit r: 0.40225  -40.4022/+39.5978  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 777/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.554812  -1.32077/+1.37174  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 778/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.325683  -1.36155/+1.4161  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 779/1000
+Error: minimization failed at r = -2.27294
+
+ --- FitDiagnostics ---
+Best fit r: -0.995516  -39.0045/+1.34357  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 780/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.473534  -1.33113/+1.34362  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 781/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.10037  -1.39371/+1.45608  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 782/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.18091  -1.27458/+1.32688  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 783/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.49341  -1.33307/+1.39812  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 784/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.63438  -1.42329/+1.48041  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 785/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.196498  -1.32176/+1.37795  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 786/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.29006  -1.33637/+1.39195  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 787/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.34724  -1.33032/+1.38103  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 788/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.555925  -1.3845/+1.43895  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 789/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.188518  -1.35364/+1.39591  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 790/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.85715  -1.36075/+1.43134  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 791/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0669157  -1.3627/+1.40273  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 792/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.402527  -1.34445/+1.39656  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 793/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.20161  -1.36231/+1.4185  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 794/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.619876  -1.31898/+1.37439  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 795/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.01603  -1.39799/+1.46324  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 796/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.241065  -1.36872/+1.42  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 797/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.652458  -1.38203/+1.44502  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 798/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.88167  -1.41342/+1.46885  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 799/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.519815  -1.33059/+1.38841  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 800/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.71619  -1.38213/+1.44448  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 801/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.968793  -1.33427/+1.38079  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 802/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.760681  -1.38194/+1.4566  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 803/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.23235  -1.22073/+1.26684  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 804/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.29585  -1.34511/+1.39154  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 805/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.24509  -1.43531/+1.49606  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 806/1000
+Error: minimization failed at r = 0.681065
+Error: minimization failed at r = 0.681065
+
+ --- FitDiagnostics ---
+Best fit r: 0.681065  -40.6811/+39.3189  (68% CL)
+Done in 0.05 min (cpu), 0.05 min (real)
+Generate toy 807/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.419584  -1.3498/+1.38606  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 808/1000
+Error: minimization failed at r = 0.344024
+Error: minimization failed at r = 0.344024
+
+ --- FitDiagnostics ---
+Best fit r: 0.344024  -40.344/+39.656  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 809/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.534832  -1.28358/+1.3325  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 810/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.79331  -1.38319/+1.42637  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 811/1000
+Error: minimization failed at r = 1.20757
+Error: minimization failed at r = -1.3416
+
+ --- FitDiagnostics ---
+Best fit r: 0.000849228  -40.0008/+39.9992  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 812/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.17801  -1.34694/+1.40316  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 813/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.873139  -1.32097/+1.36958  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 814/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.92549  -1.44503/+1.50001  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 815/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.19495  -1.29778/+1.34126  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 816/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.62528  -1.44509/+1.50024  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 817/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.63435  -1.43783/+1.46518  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 818/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.17331  -1.40966/+1.44885  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 819/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.802438  -1.40162/+1.45908  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 820/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.949648  -1.37512/+1.4311  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 821/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.717088  -1.3219/+1.37343  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 822/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.425791  -1.32207/+1.37749  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 823/1000
+Error: minimization failed at r = 1.57288
+Error: minimization failed at r = -0.840625
+
+ --- FitDiagnostics ---
+Best fit r: 0.377514  -40.3775/+39.6225  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 824/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.887347  -1.27204/+1.30957  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 825/1000
+Error: minimization failed at r = 0.371035
+Error: minimization failed at r = -2.15164
+
+ --- FitDiagnostics ---
+Best fit r: -0.861712  -39.1383/+40.8617  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 826/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.95559  -1.41545/+1.4675  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 827/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.83722  -1.26704/+1.31123  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 828/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.734004  -1.34593/+1.43449  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 829/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.273375  -1.40243/+1.44825  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 830/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.74252  -1.41111/+1.47199  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 831/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.17311  -1.25112/+1.29968  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 832/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.364262  -1.35208/+1.40969  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 833/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.94572  -1.36029/+1.41409  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 834/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.26387  -1.47542/+1.52709  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 835/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.199701  -1.30589/+1.35561  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 836/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.11976  -1.39858/+1.44253  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 837/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0711254  -1.3173/+1.36033  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 838/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.57266  -1.43452/+1.48799  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 839/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.76889  -1.23995/+1.30682  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 840/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.33778  -1.22394/+1.2721  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 841/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.203716  -1.31351/+1.34681  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 842/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.17759  -1.32535/+1.37998  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 843/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.95354  -1.38958/+1.4403  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 844/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.75875  -1.31171/+1.3805  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 845/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.134093  -1.33121/+1.37682  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 846/1000
+Error: minimization failed at r = 0.62348
+Error: minimization failed at r = 0.62348
+
+ --- FitDiagnostics ---
+Best fit r: 0.62348  -40.6235/+39.3765  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 847/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.49546  -1.42981/+1.46846  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 848/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.262756  -1.37601/+1.42548  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 849/1000
+Error: minimization failed at r = -0.149713
+Error: minimization failed at r = -0.149713
+
+ --- FitDiagnostics ---
+Best fit r: -0.149713  -39.8503/+40.1497  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 850/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.12343  -1.36149/+1.40915  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 851/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0995125  -1.30932/+1.35241  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 852/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.288289  -1.34371/+1.38673  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 853/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.57701  -1.35834/+1.40881  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 854/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.68725  -1.29247/+1.33748  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 855/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.345756  -1.35649/+1.41236  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 856/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.76837  -1.23281/+1.27978  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 857/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.83786  -1.32295/+1.35613  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 858/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.321842  -1.36746/+1.41498  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 859/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.64063  -1.33768/+1.37079  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 860/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.97819  -1.35816/+1.40851  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 861/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.36184  -1.37213/+1.41599  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 862/1000
+
+ --- FitDiagnostics ---
+Best fit r: -3.08123  -1.18239/+1.23028  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 863/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.176337  -1.30974/+1.35303  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 864/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.05214  -1.42558/+1.50864  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 865/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.809851  -1.28903/+1.31127  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 866/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.341796  -1.32469/+1.37769  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 867/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.14513  -1.36957/+1.45325  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 868/1000
+Error: minimization failed at r = -3.06296
+
+ --- FitDiagnostics ---
+Best fit r: -1.80409  -38.1959/+1.31577  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 869/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.86631  -1.31502/+1.36449  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 870/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.769421  -1.33938/+1.37668  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 871/1000
+
+ --- FitDiagnostics ---
+Best fit r: -4.0462  -1.23038/+1.27121  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 872/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.20415  -1.40085/+1.45724  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 873/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.314954  -1.25846/+1.29792  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 874/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.8808  -1.44449/+1.52654  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 875/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.209615  -1.34741/+1.4134  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 876/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.192138  -1.31497/+1.34962  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 877/1000
+Error: minimization failed at r = 1.38594
+Error: minimization failed at r = -1.13131
+
+ --- FitDiagnostics ---
+Best fit r: 0.184762  -40.1848/+39.8152  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 878/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.490898  -1.2357/+1.28148  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 879/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.540159  -1.25593/+1.30772  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 880/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.2859  -1.45746/+1.51345  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 881/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.212614  -1.35311/+1.40522  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 882/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.67827  -1.23379/+1.27858  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 883/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.507317  -1.36714/+1.41835  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 884/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.12279  -1.37627/+1.43126  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 885/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.61592  -1.32186/+1.37542  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 886/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.581191  -1.37738/+1.43614  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 887/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.674077  -1.36965/+1.41035  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 888/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.6586  -1.25585/+1.27982  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 889/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.54187  -1.45947/+1.47567  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 890/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.46423  -1.32884/+1.38969  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 891/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.42543  -1.37407/+1.43047  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 892/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.25593  -1.25961/+1.30837  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 893/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.40459  -1.3497/+1.41789  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 894/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.03469  -1.2501/+1.28934  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 895/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.56011  -1.44475/+1.51054  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 896/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.408824  -1.33351/+1.38241  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 897/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.27546  -1.40442/+1.46158  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 898/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.199567  -1.32725/+1.37537  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 899/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.919238  -1.44891/+1.50592  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 900/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.6154  -1.43752/+1.45455  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 901/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.15135  -1.44543/+1.52738  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 902/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.87567  -1.47083/+1.52945  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 903/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.25881  -1.3489/+1.38076  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 904/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.83625  -1.29741/+1.35597  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 905/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.09207  -1.45387/+1.48799  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 906/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.51718  -1.37243/+1.39984  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 907/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.362564  -1.29438/+1.3551  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 908/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.8275  -1.27262/+1.31788  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 909/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.56946  -1.38239/+1.38815  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 910/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.926171  -1.30767/+1.3882  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 911/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.430959  -1.3713/+1.43445  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 912/1000
+Error: minimization failed at r = -0.929976
+Error: minimization failed at r = -0.929976
+
+ --- FitDiagnostics ---
+Best fit r: -0.929976  -39.07/+40.93  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 913/1000
+Error: minimization failed at r = 2.90679
+
+ --- FitDiagnostics ---
+Best fit r: 1.74848  -1.41585/+38.2515  (68% CL)
+Done in 0.16 min (cpu), 0.16 min (real)
+Generate toy 914/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.156121  -1.30929/+1.35919  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 915/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.317078  -1.37445/+1.41403  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 916/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.6645  -1.37719/+1.44169  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 917/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.251206  -1.34879/+1.40128  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 918/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.04687  -1.2268/+1.2743  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 919/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.09877  -1.36823/+1.41784  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 920/1000
+
+ --- FitDiagnostics ---
+Best fit r: 4.18171  -1.45871/+1.53969  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 921/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.465826  -1.31756/+1.36277  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 922/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.52676  -1.24635/+1.31005  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 923/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.36868  -1.24969/+1.30197  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 924/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.634457  -1.36615/+1.38197  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 925/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.355154  -1.29627/+1.34314  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 926/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0871088  -1.26478/+1.29753  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 927/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.696904  -1.36923/+1.397  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 928/1000
+Error: minimization failed at r = 3.78802
+Error: minimization failed at r = 1.02538
+
+ --- FitDiagnostics ---
+Best fit r: 2.30156  -42.3016/+37.6984  (68% CL)
+Done in 0.15 min (cpu), 0.15 min (real)
+Generate toy 929/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.420026  -1.35555/+1.40408  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 930/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.497443  -1.32973/+1.3724  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 931/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.53025  -1.38276/+1.42858  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 932/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.95357  -1.28229/+1.34605  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 933/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.3058  -1.42165/+1.46458  (68% CL)
+Done in 0.14 min (cpu), 0.14 min (real)
+Generate toy 934/1000
+Error: minimization failed at r = 3.48905
+Error: minimization failed at r = 0.557076
+
+ --- FitDiagnostics ---
+Best fit r: 2.00067  -42.0007/+37.9993  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 935/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.96834  -1.3641/+1.42818  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 936/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.61023  -1.33225/+1.37391  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 937/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.704281  -1.36681/+1.39371  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 938/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.02713  -1.33609/+1.37778  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 939/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.80876  -1.31059/+1.35756  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 940/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.699694  -1.261/+1.33152  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 941/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.733887  -1.31162/+1.36088  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 942/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.91827  -1.27301/+1.30323  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 943/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.07801  -1.35883/+1.38889  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 944/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.54531  -1.40327/+1.48147  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 945/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.301199  -1.30379/+1.35958  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 946/1000
+Error: minimization failed at r = 1.53673
+Error: minimization failed at r = 1.53673
+
+ --- FitDiagnostics ---
+Best fit r: 1.53673  -41.5367/+38.4633  (68% CL)
+Done in 0.05 min (cpu), 0.05 min (real)
+Generate toy 947/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0413296  -1.35875/+1.40614  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 948/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.03667  -1.29289/+1.34164  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 949/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.55869  -1.30281/+1.34811  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 950/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.096192  -1.30561/+1.35721  (68% CL)
+Done in 0.10 min (cpu), 0.11 min (real)
+Generate toy 951/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0555883  -1.31572/+1.37733  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 952/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.507425  -1.36909/+1.41944  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 953/1000
+Error: minimization failed at r = 2.4461
+Error: minimization failed at r = 2.4461
+
+ --- FitDiagnostics ---
+Best fit r: 2.4461  -42.4461/+37.5539  (68% CL)
+Done in 0.04 min (cpu), 0.04 min (real)
+Generate toy 954/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.03428  -1.34297/+1.39829  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 955/1000
+Error: minimization failed at r = 4.68442
+
+ --- FitDiagnostics ---
+Best fit r: 3.24476  -1.41482/+36.7552  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 956/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0473233  -1.33917/+1.39487  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 957/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.08568  -1.31885/+1.3733  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 958/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.732502  -1.33807/+1.38192  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 959/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.22071  -1.39604/+1.45445  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 960/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.0990168  -1.3407/+1.38159  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 961/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.441782  -1.26016/+1.31667  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 962/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.99871  -1.39037/+1.45355  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 963/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.79493  -1.41087/+1.46928  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 964/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.17208  -1.40556/+1.42137  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 965/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.392771  -1.30654/+1.35679  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 966/1000
+
+ --- FitDiagnostics ---
+Best fit r: 3.33123  -1.36615/+1.42297  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 967/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.28  -1.3609/+1.41439  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 968/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.17515  -1.35427/+1.39648  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 969/1000
+
+ --- FitDiagnostics ---
+Best fit r: -1.51265  -1.29771/+1.38875  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 970/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.130395  -1.34859/+1.3722  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 971/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.56532  -1.42479/+1.49624  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 972/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.69764  -1.36633/+1.39174  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 973/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0489959  -1.27289/+1.32398  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 974/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.914353  -1.39367/+1.44253  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 975/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.899716  -1.31999/+1.37377  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 976/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.318242  -1.36188/+1.41328  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 977/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.229993  -1.36057/+1.36975  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 978/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.356331  -1.34249/+1.39438  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 979/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0167565  -1.3791/+1.43999  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 980/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.403675  -1.38416/+1.44921  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 981/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.326349  -1.30013/+1.3626  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 982/1000
+
+ --- FitDiagnostics ---
+Best fit r: -2.36086  -1.28987/+1.33908  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 983/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.37578  -1.33267/+1.38861  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 984/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.88856  -1.39184/+1.44824  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 985/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.860401  -1.33491/+1.3895  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 986/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.13982  -1.43972/+1.47559  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 987/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.959115  -1.37417/+1.42047  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 988/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.841181  -1.35605/+1.41183  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 989/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.91036  -1.36928/+1.42191  (68% CL)
+Done in 0.10 min (cpu), 0.11 min (real)
+Generate toy 990/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.16714  -1.43501/+1.45437  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 991/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.227722  -1.37372/+1.43507  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 992/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.12294  -1.34295/+1.39942  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 993/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.0941  -1.30616/+1.36  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+Generate toy 994/1000
+
+ --- FitDiagnostics ---
+Best fit r: 2.1716  -1.37135/+1.42902  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 995/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.389038  -1.36314/+1.39989  (68% CL)
+Done in 0.13 min (cpu), 0.13 min (real)
+Generate toy 996/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.865751  -1.36754/+1.41733  (68% CL)
+Done in 0.10 min (cpu), 0.10 min (real)
+Generate toy 997/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.31959  -1.34084/+1.392  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 998/1000
+
+ --- FitDiagnostics ---
+Best fit r: 1.22963  -1.37113/+1.42152  (68% CL)
+Done in 0.11 min (cpu), 0.11 min (real)
+Generate toy 999/1000
+
+ --- FitDiagnostics ---
+Best fit r: -0.0711525  -1.30078/+1.35808  (68% CL)
+Done in 0.12 min (cpu), 0.12 min (real)
+Generate toy 1000/1000
+
+ --- FitDiagnostics ---
+Best fit r: 0.342788  -1.2888/+1.32898  (68% CL)
+Done in 0.09 min (cpu), 0.09 min (real)
+mean   expected limit: r < 0.574248 +/- 0.0433376 @ 95%CL (999 toyMC)
+median expected limit: r < 0.541464 @ 95%CL (999 toyMC)
+   68% expected band : -0.84995 < r < 2.01873
+   95% expected band : -1.89224 < r < 3.28618

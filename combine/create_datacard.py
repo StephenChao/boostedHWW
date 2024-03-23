@@ -52,6 +52,21 @@ LUMI = {  # in pb^-1
     "2017": 41480.0,
     "2018": 59830.0,
 }
+
+jecs = {
+    "JES": "JES_jes",
+    "JER": "JER",
+}
+
+uncluste = {
+    "UE": "unclusteredEnergy",
+}
+
+lp_systematics = {
+    "a" : 0.334/0.898,
+    "b" : 0.349/0.957,
+}
+
 parser = argparse.ArgumentParser()
 
 def add_bool_arg(parser, name, help, default=False, no_name=None):
@@ -116,9 +131,9 @@ if args.nTFb is None:
      
 mc_samples = OrderedDict(
     [
-        ("Top", "ttbar_st"),
+        ("TT", "ttbar"),
+        ("ST", "single top"),
         ("WJets", "wjets"),
-        # ("Diboson", "diboson"),
         ("Rest", "rest"),
     ]
 )
@@ -126,7 +141,8 @@ bg_keys = list(mc_samples.keys())
 sig_keys = [
     "ggF",
     "VBF",
-    "VH",
+    "WH",
+    "ZH",
     "ttH",
 ]
 for key in sig_keys:
@@ -182,9 +198,11 @@ class Syst:
 # dictionary of nuisance params -> (modifier, samples affected by it, value)
 nuisance_params = {
     # https://gitlab.cern.ch/hh/naming-conventions#experimental-uncertainties
-    # "lumi_13TeV_2016": Syst(prior="lnN", samples=all_mc, value=1.01 ** ((LUMI["2016"] + LUMI["2016APV"]) / full_lumi)),
-    # "lumi_13TeV_2017": Syst(prior="lnN", samples=all_mc, value=1.02 ** (LUMI["2017"] / full_lumi)),
-    # "lumi_13TeV_2018": Syst(prior="lnN", samples=all_mc, value=1.015 ** (LUMI["2018"] / full_lumi)),
+    "lumi_13TeV_2016": Syst(
+        prior="lnN", samples=all_mc, value=1.01 ** ((LUMI["2016"] + LUMI["2016APV"]) / full_lumi)
+    ),
+    "lumi_13TeV_2017": Syst(prior="lnN", samples=all_mc, value=1.02 ** (LUMI["2017"] / full_lumi)),
+    "lumi_13TeV_2018": Syst(prior="lnN", samples=all_mc, value=1.015 ** (LUMI["2018"] / full_lumi)),
     "lumi_13TeV_correlated": Syst(
         prior="lnN",
         samples=all_mc,
@@ -194,39 +212,37 @@ nuisance_params = {
             * (1.02 ** (LUMI["2018"] / full_lumi))
         ),
     ),
-    # "lumi_13TeV_1718": Syst(
-    #     prior="lnN",
-    #     samples=all_mc,
-    #     value=((1.006 ** (LUMI["2017"] / full_lumi)) * (1.002 ** (LUMI["2018"] / full_lumi))),
-    # ),
+    "lumi_13TeV_1718": Syst(
+        prior="lnN",
+        samples=all_mc,
+        value=((1.006 ** (LUMI["2017"] / full_lumi)) * (1.002 ** (LUMI["2018"] / full_lumi))),
+    ),
+    
     # https://gitlab.cern.ch/hh/naming-conventions#theory-uncertainties
     "BR_hww": Syst(prior="lnN", samples=sig_keys, value=1.0153, value_down=0.9848),
-    # "pdf_gg": Syst(prior="lnN", samples=["Top"], value=1.042),
-    # "pdf_qqbar": Syst(prior="lnN", samples=["Top"], value=1.027),
-    # "pdf_Higgs_ggF": Syst(prior="lnN", samples=sig_keys, value=1.030),
-    # # # TODO: add these for other Higgs production channel
-    # "QCDscale_ttbar": Syst(
-    #     prior="lnN",
-    #     samples=["Top"],
-    #     value=1.03,
-    #     value_down=0.978
-    #     # diff_samples=True,
-    # ),
-    # "QCDscale_qqHH": Syst(
-    #     prior="lnN", samples=sig_keys, value=1.0003, value_down=0.9996
-    # ),
-    # "alpha_s": for single Higgs backgrounds
-    # value will be added in from the systematics JSON
-    # f"{CMS_PARAMS_LABEL}_triggerEffSF_uncorrelated": Syst(
-    #     prior="lnN", samples=all_mc, diff_regions=False
-    # ),
-}
+    
+    # pdf uncertainty for Higgs signal
+    "pdf_Higgs_gg": Syst(prior="lnN", samples=["ggF"], value=1.019),
+    "pdf_Higgs_qqbar": Syst(prior="lnN", samples=["VBF"], value=1.021),
+    "pdf_Higgs_qqbar": Syst(prior="lnN", samples=["WH"], value=1.017),
+    "pdf_Higgs_qqbar": Syst(prior="lnN", samples=["ZH"], value=1.013),
+    "pdf_Higgs_ttH": Syst(prior="lnN", samples=["ttH"], value=1.030),
+    
+    # pdf uncertainty for background 
+    "pdf_gg": Syst(prior="lnN", samples=["TT"], value=1.042),
+    "pdf_qqbar": Syst(prior="lnN", samples=["ST"], value=1.028),
 
-# for sig_key in sig_keys:
-#     # values will be added in from the systematics JSON
-#     nuisance_params[f"{CMS_PARAMS_LABEL}_lp_sf_{mc_samples[sig_key]}"] = Syst(
-#         prior="lnN", samples=[sig_key]
-#     )
+    #QCD scale for Higgs signal
+    "QCDscale_ggH": Syst(prior="lnN", samples=["ggF"], value=1.039),
+    "QCDscale_qqH": Syst(prior="lnN", samples=["VBF"], value=1.004, value_down=0.997),
+    "QCDscale_VH": Syst(prior="lnN", samples=["WH"], value=1.005, value_down=0.993),
+    "QCDscale_VH": Syst(prior="lnN", samples=["ZH"], value=1.038,value_down=0.97),
+    "QCDscale_ttH": Syst(prior="lnN", samples=["ttH"], value=1.058,value_down=0.908),
+    
+    #lund plane SF
+    f"{CMS_PARAMS_LABEL}_lp_sf_region_a" : Syst(prior="lnN", samples=[sig_key])
+    f"{CMS_PARAMS_LABEL}_lp_sf_region_b" : Syst(prior="lnN", samples=[sig_key])
+}
 
 if args.year != "all":
     # remove other years' keys
@@ -246,48 +262,34 @@ nuisance_params_dict = {
 
 # dictionary of correlated shape systematics: name in templates -> name in cards, etc.
 corr_year_shape_systs = {
-    "FSRPartonShower": Syst(name="ps_fsr", prior="shape", samples=sig_keys),
-    "ISRPartonShower": Syst(name="ps_isr", prior="shape", samples=sig_keys),
-    # TODO: should we be applying QCDscale for "others" process?
-    # https://github.com/LPC-HH/HHLooper/blob/master/python/prepare_card_SR_final.py#L290
-    # "QCDscale": Syst(
-    #     name=f"{CMS_PARAMS_LABEL}_ggHHQCDacc", prior="shape", samples=nonres_sig_keys_ggf
-    # ),
-    # "PDFalphaS": Syst(
-    #     name=f"{CMS_PARAMS_LABEL}_ggHHPDFacc", prior="shape", samples=nonres_sig_keys_ggf
-    # ),
-    # TODO: separate into individual
-    "JES": Syst(name="CMS_scale_j", prior="shape", samples=all_mc),
-    "txbb": Syst(
-        name=f"{CMS_PARAMS_LABEL}_PNetHbbScaleFactors_correlated",
+    "triggerEffSF_uncorrelated": Syst(name="triggerEffSF_uncorrelated", prior="shape", samples=all_mc),
+    "FSRPartonShower": Syst(name="ps_fsr", prior="shape", samples=all_mc),
+    "ISRPartonShower": Syst(name="ps_isr", prior="shape", samples=all_mc),
+    "QCDscale": Syst(
+        name=f"{CMS_PARAMS_LABEL}_QCDScale",
         prior="shape",
-        samples=sig_keys,
-        pass_only=True,
+        samples=bg_keys,
+        samples_corr=False,
     ),
-    # "top_pt": Syst(name="CMS_top_pT_reweighting", prior="shape", samples=["TT"])  # TODO
+    "UE": Syst(name="unclustered_Energy", prior="shape", samples=all_mc),
+    "JES": Syst(name="CMS_scale_j", prior="shape", samples=all_mc),
 }
 
 uncorr_year_shape_systs = {
-    "pileup": Syst(name="CMS_pileup", prior="shape", samples=all_mc),
-    # TODO: add 2016APV template into this
-    # "L1EcalPrefiring": Syst(
-    #     name="CMS_l1_ecal_prefiring", prior="shape", samples=all_mc, uncorr_years=["2016", "2017"]
-    # ),
     "JER": Syst(name="CMS_res_j", prior="shape", samples=all_mc),
-    "JMS": Syst(name=f"{CMS_PARAMS_LABEL}_jms", prior="shape", samples=all_mc),
-    "JMR": Syst(name=f"{CMS_PARAMS_LABEL}_jmr", prior="shape", samples=all_mc),
+    "pileup": Syst(name="CMS_pileup", prior="shape", samples=all_mc),
 }
 
 shape_systs_dict = {}
 for skey, syst in corr_year_shape_systs.items():
     shape_systs_dict[skey] = rl.NuisanceParameter(syst.name, "shape")
+    
 for skey, syst in uncorr_year_shape_systs.items():
     for year in years:
         if year in syst.uncorr_years:
             shape_systs_dict[f"{skey}_{year}"] = rl.NuisanceParameter(
                 f"{syst.name}_{year}", "shape"
             )
-
 
 def main(args):
     # all SRs and CRs
@@ -339,18 +341,111 @@ def main(args):
 
     with open(f"{out_dir}/model.pkl", "wb") as fout:
         pkl.dump(model, fout, 2)  # use python 2 compatible protocol
-    
-    
+
+def get_templates(
+    templates_dir: Path,
+    years: list[str],
+    sig_separate: bool,
+    scale: float = None,
+    combine_lasttwo: bool = False,
+):
+    """Loads templates, combines bg and sig templates if separate, sums across all years"""
+    templates_dict: dict[str, dict[str, Hist]] = {}
+
+    for year in years:
+        with (templates_dir / f"templates_{year}.pkl").open("rb") as f:
+            templates_dict[year] = pickle.load(f)
+
+    templates_summed: dict[str, Hist] = sum_templates(templates_dict, years)  # sum across years
+    return templates_dict, templates_summed
+
+def sum_templates(template_dict: dict, years: list[str]):
+    """Sum templates across years"""
+
+    ttemplate = next(iter(template_dict.values()))  # sample templates to extract values from
+    combined = {}
+
+    for region in ttemplate:
+        thists = []
+        for year in years:
+            thists.append(template_dict["2018"][region])
+
+        combined[region] = sum(thists)
+    return combined
+
+
+def process_lp_systematics(lp_systematics: dict):
+    """Get total uncertainties from per-year systs in ``systematics``"""
+    for region in ["a","b"]:
+        # already for all years
+        nuisance_params[f"{CMS_PARAMS_LABEL}_lp_sf_region_{region}"].value = (
+            1 + lp_systematics[region]
+        )
+
+def get_year_updown(
+    templates_dict, sample, region, region_noblinded, blind_str, year, skey
+):
+    """
+    Return templates with only the given year's shapes shifted up and down by the ``skey`` systematic.
+    Returns as [up templates, down templates]
+    """
+    updown = []
+
+    for shift in ["up", "down"]:
+        sshift = f"{skey}_{shift}"
+        # get nominal templates for each year
+        templates = {y: templates_dict[y][region][sample, ...] for y in years}
+
+        # replace template for this year with the shifted template
+        if skey in jecs or skey in uncluste:
+            # JEC/JMCs saved as different "region" in dict
+            reg_name = f"{region_noblinded}_{sshift}{blind_str}"
+            templates[year] = templates_dict[year][reg_name][sample, ...]
+        else:
+            # weight uncertainties saved as different "sample" in dict
+            templates[year] = templates_dict[year][region][f"{sample}_{sshift}", ...]
+
+        # sum templates with year's template replaced with shifted
+        updown.append(sum(list(templates.values())).values())
+
+    return updown
+
+def get_effect_updown(values_nominal, values_up, values_down, mask, logger, epsilon):
+    effect_up = np.ones_like(values_nominal)
+    effect_down = np.ones_like(values_nominal)
+
+    mask_up = mask & (values_up >= 0)
+    mask_down = mask & (values_down >= 0)
+
+    effect_up[mask_up] = values_up[mask_up] / values_nominal[mask_up]
+    effect_down[mask_down] = values_down[mask_down] / values_nominal[mask_down]
+
+    zero_up = values_up == 0
+    zero_down = values_down == 0
+
+    effect_up[mask_up & zero_up] = values_nominal[mask_up & zero_up] * epsilon
+    effect_down[mask_down & zero_down] = values_nominal[mask_down & zero_down] * epsilon
+
+    _shape_checks(values_up, values_down, values_nominal, effect_up, effect_down, logger)
+
+    logging.debug(f"nominal   : {values_nominal}")
+    logging.debug(f"effect_up  : {effect_up}")
+    logging.debug(f"effect_down: {effect_down}")
+
+    return effect_up, effect_down
 
 def fill_regions(
     model: rl.Model,
-    regions: List[str],
-    templates: Dict,
-    mc_samples: Dict[str, str],
-    nuisance_params: Dict[str, Syst],
-    nuisance_params_dict: Dict[str, rl.NuisanceParameter],
-    bblite:bool = True,
-    #TODO: shape unc.
+    regions: list[str],
+    templates_dict: dict,
+    templates_summed: dict,
+    mc_samples: dict[str, str],
+    nuisance_params: dict[str, Syst],
+    nuisance_params_dict: dict[str, rl.NuisanceParameter],
+    corr_year_shape_systs: dict[str, Syst],
+    uncorr_year_shape_systs: dict[str, Syst],
+    shape_systs_dict: dict[str, rl.NuisanceParameter],
+    bblite: bool = True,
 ):
     """Fill samples per region including given rate, shape and mcstats systematics.
     Ties "blinded" and "nonblinded" mc stats parameters together.
@@ -378,10 +473,13 @@ def fill_regions(
     """
 
     for region in regions:
-        region_templates = templates[region]
+        region_templates = templates_summed[region]
 
         # pass region = SR1a, SR1b, SR2a, SR2b, SR3a, SR3b, and same with "Blinded" suffix
-        pass_region = (region.endswith("a") or region.endswith("b") or "aBlinded" in region or "bBlinded" in region)
+        pass_region = False
+        pass_regs = ["SR1a","SR1b","SR2a","SR2b"]
+        for pass_regi in [passregions]:
+            if pass_regi in region: pass_region = True
         region_noblinded = region.split("Blinded")[0]
         logging.info("starting region: %s" % region)
         ch = rl.Channel(region.replace("_", "")) 
@@ -399,15 +497,9 @@ def fill_regions(
             logging.info("get templates for: %s" % sample_name)
 
             sample_template = region_templates[sample_name,:]
-            # sample_template = get_template(region_templates,sample_name)
 
             stype = rl.Sample.SIGNAL if sample_name in sig_keys else rl.Sample.BACKGROUND
             sample = rl.TemplateSample(ch.name + "_" + card_name, stype, sample_template)
-
-            # # rate params per signal to freeze them for individual limits
-            # if stype == rl.Sample.SIGNAL and len(sig_keys) > 1:
-            #     srate = rate_params[sample_name]
-            #     sample.setParamEffect(srate, 1 * srate)
 
             # nominal values, errors
             values_nominal = np.maximum(sample_template.values(), 0.0) #select value >= 0
@@ -421,8 +513,8 @@ def fill_regions(
             logging.debug("nominal   : {nominal}".format(nominal=values_nominal))
             logging.debug("error     : {errors}".format(errors=errors_nominal))
 
+            #not used
             if not bblite and args.mcstats:
-                # pass
                 # set mc stat uncs
                 logging.info("setting autoMCStats for %s in %s" % (sample_name, region))
                 # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
@@ -457,8 +549,68 @@ def fill_regions(
 
                 sample.setParamEffect(param, val, effect_down=val_down)
 
+            # correlated shape systematics
+            for skey, syst in corr_year_shape_systs.items():
+                if sample_name not in syst.samples or (not pass_region and syst.pass_only):
+                    continue
+
+                logging.info(f"Getting {skey} shapes")
+
+                if skey in jecs or skey in uncluste:
+                    # JEC/UEs saved as different "region" in dict
+                    up_hist = templates_summed[f"{region_noblinded}_{skey}_up{blind_str}"][sample_name,:]
+                    down_hist = templates_summed[f"{region_noblinded}_{skey}_down{blind_str}"][sample_name,:]
+
+                    values_up = up_hist.values()
+                    values_down = down_hist.values()
+                else:
+                    # weight uncertainties saved as different "sample" in dict
+                    values_up = region_templates[f"{sample_name}_{skey}_up", :].values()
+                    values_down = region_templates[f"{sample_name}_{skey}_down", :].values()
+
+                logger = logging.getLogger(f"validate_shapes_{region}_{sample_name}_{skey}")
+
+                effect_up, effect_down = get_effect_updown(
+                    values_nominal, values_up, values_down, mask, logger, args.epsilon
+                )
+
+                # separate syst if not correlated across samples
+                sdkey = skey if syst.samples_corr else f"{skey}_{sample_name}"
+                sample.setParamEffect(shape_systs_dict[sdkey], effect_up, effect_down)
+
+
+            # uncorrelated shape systematics
+            for skey, syst in uncorr_year_shape_systs.items():
+                if sample_name not in syst.samples or (not pass_region and syst.pass_only):
+                    continue
+
+                logging.info(f"Getting {skey} shapes")
+
+                for year in years:
+                    if year not in syst.uncorr_years:
+                        continue
+
+                    values_up, values_down = get_year_updown(
+                        templates_dict,
+                        sample_name,
+                        region,
+                        region_noblinded,
+                        blind_str,
+                        year,
+                        skey,
+                    )
+                    logger = logging.getLogger(f"validate_shapes_{region}_{sample_name}_{skey}")
+
+                    effect_up, effect_down = get_effect_updown(
+                        values_nominal, values_up, values_down, mask, logger, args.epsilon
+                    )
+                    sample.setParamEffect(
+                        shape_systs_dict[f"{skey}_{year}"], effect_up, effect_down
+                    )
+
             ch.addSample(sample)
 
+        # we always use bblite method
         if bblite and args.mcstats:
             # pass
             # tie MC stats parameters together in blinded and "unblinded" region in nonresonant
@@ -502,40 +654,7 @@ def alphabet_fit(
     
     # initialize transfer factor, value here won't influence final results
     # each SR should use one polynomial
-    
-    # tf_dataResidual_1a = rl.BasisPoly(
-    #     f"{CMS_PARAMS_LABEL}_tf_dataResidual_1a",
-    #     (shape_var.order,),
-    #     [shape_var.name],
-    #     basis="Bernstein",
-    #     limits=(-20, 20),
-    #     square_params=True, 
-    # ) 
-    # tf_dataResidual_1b = rl.BasisPoly(
-    #     f"{CMS_PARAMS_LABEL}_tf_dataResidual_1b",
-    #     (shape_var.order,),
-    #     [shape_var.name],
-    #     basis="Bernstein",
-    #     limits=(-20, 20),
-    #     square_params=True, 
-    # ) 
-    # tf_dataResidual_2a = rl.BasisPoly(
-    #     f"{CMS_PARAMS_LABEL}_tf_dataResidual_2a",
-    #     (shape_var.order,),
-    #     [shape_var.name],
-    #     basis="Bernstein",
-    #     limits=(-20, 20),
-    #     square_params=True, 
-    # ) 
-    # tf_dataResidual_2b = rl.BasisPoly(
-    #     f"{CMS_PARAMS_LABEL}_tf_dataResidual_2b",
-    #     (shape_var.order,),
-    #     [shape_var.name],
-    #     basis="Bernstein",
-    #     limits=(-20, 20),
-    #     square_params=True, 
-    # ) 
-    
+
     tf_dataResidual_a = rl.BasisPoly(
         f"{CMS_PARAMS_LABEL}_tf_dataResidual_a",
         (shape_var.order_a,),
@@ -554,11 +673,6 @@ def alphabet_fit(
     )  
     
     # set TF parameters for each pass region(6 SRs)
-    # tf_dataResidual_params_1a = tf_dataResidual_1a(shape_var.scaled)
-    # tf_dataResidual_params_1b = tf_dataResidual_1b(shape_var.scaled)
-    # tf_dataResidual_params_2a = tf_dataResidual_2a(shape_var.scaled)
-    # tf_dataResidual_params_2b = tf_dataResidual_2b(shape_var.scaled)
-    
     tf_dataResidual_params_a = tf_dataResidual_a(shape_var.scaled)
     tf_dataResidual_params_b = tf_dataResidual_b(shape_var.scaled)
 
@@ -566,13 +680,7 @@ def alphabet_fit(
     tf_params_pass_1b = qcd_eff_1b * tf_dataResidual_params_b  # scale params initially by qcd eff
     tf_params_pass_2a = qcd_eff_2a * tf_dataResidual_params_a  # scale params initially by qcd eff
     tf_params_pass_2b = qcd_eff_2b * tf_dataResidual_params_b  # scale params initially by qcd eff
-    
-    # tf_params_pass_1a = qcd_eff_1a * tf_dataResidual_params_1a  # scale params initially by qcd eff
-    # tf_params_pass_1b = qcd_eff_1b * tf_dataResidual_params_1b  # scale params initially by qcd eff
-    
-    # tf_params_pass_2a = qcd_eff_2a * tf_dataResidual_params_2a  # scale params initially by qcd eff
-    # tf_params_pass_2b = qcd_eff_2b * tf_dataResidual_params_2b  # scale params initially by qcd eff
-        
+            
     #set QCD parameters for 3 CRs
     qcd_params1 = np.array(
         [

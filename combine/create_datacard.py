@@ -28,12 +28,22 @@ import os, sys
 import rhalphalib as rl
 # import hist
 from hist import Hist
+from pathlib import Path
 
 from typing import Dict, List, Tuple, Union
 from dataclasses import dataclass, field
 
 from collections import OrderedDict
 from utils import blindBins, get_template, labels, samples, shape_to_num, sigs 
+
+from datacardHelpers import (
+    ShapeVar,
+    Syst,
+    add_bool_arg,
+    sum_templates,
+    get_effect_updown,
+    get_year_updown,
+)
 
 rl.ParametericSample.PreferRooParametricHist = False
 logging.basicConfig(level=logging.INFO)
@@ -68,19 +78,13 @@ lp_systematics = {
 }
 
 parser = argparse.ArgumentParser()
+parser.add_argument(
+    "--templates-dir",
+    default="",
+    type=str,
+    help="input pickle file of dict of hist.Hist templates",
+)
 
-def add_bool_arg(parser, name, help, default=False, no_name=None):
-    """Add a boolean command line argument for argparse"""
-    varname = "_".join(name.split("-"))  # change hyphens to underscores
-    group = parser.add_mutually_exclusive_group(required=False)
-    group.add_argument("--" + name, dest=varname, action="store_true", help=help)
-    if no_name is None:
-        no_name = "no-" + name
-        no_help = "don't " + help
-    else:
-        no_help = help
-    group.add_argument("--" + no_name, dest=varname, action="store_false", help=no_help)
-    parser.set_defaults(**{varname: default})
 parser.add_argument(
     "--nTFa",
     default=None,
@@ -95,7 +99,7 @@ parser.add_argument(
     type=int,
     help="order of polynomial for TFb.",
 )
-parser.add_argument("--cards-dir", default="/home/pku/zhaoyz/Higgs/boostedHWW/combine/cards/", type=str, help="output card directory")
+parser.add_argument("--cards-dir", default="cards", type=str, help="output card directory")
 parser.add_argument("--model-name", default="HWWfhModel", type=str, help="output model name")
 parser.add_argument("--mcstats-threshold", default=100, type=float, help="mcstats threshold n_eff")
 parser.add_argument("--epsilon", default=1e-3, type=float, help="epsilon to avoid numerical errs")
@@ -105,7 +109,6 @@ parser.add_argument(
 parser.add_argument(
     "--min-qcd-val", default=1e-4, type=float, help="clip the pass QCD to above a minimum value"
 )
-
 parser.add_argument(
     "--year",
     help="year",
@@ -132,9 +135,9 @@ if args.nTFb is None:
 mc_samples = OrderedDict(
     [
         ("TT", "ttbar"),
-        ("ST", "single top"),
+        ("ST", "single_top"),
         ("WJets", "wjets"),
-        ("Rest", "rest"),
+        ("Rest", "rest_bkg"),
     ]
 )
 bg_keys = list(mc_samples.keys())
@@ -150,50 +153,7 @@ for key in sig_keys:
         
 all_mc = list(mc_samples.keys())
 logging.info("all MC = %s" % all_mc)
- 
 
-
-@dataclass
-class ShapeVar:
-    """For storing and calculating info about variables used in fit"""
-
-    name:str = None
-    bins:np.ndarray = None  # bin edges
-    order_a:int = None  # TF order for tf_a, to be decided
-    order_b:int = None  # TF order for tf_b, to be decided
-
-    def __post_init__(self):
-        # use bin centers for polynomial fit
-        self.pts = self.bins[:-1] + 0.5 * np.diff(self.bins)
-        # scale to be between [0, 1]
-        self.scaled = (self.pts - self.bins[0]) / (self.bins[-1] - self.bins[0])
-
-@dataclass
-class Syst:
-    """For storing info about systematics"""
-
-    name: str = None
-    prior: str = None  # e.g. "lnN", "shape", etc.
-
-    # float if same value in all regions/samples, dictionary of values per region/sample if not
-    # if both, region should be the higher level of the dictionary
-    value: Union[float, Dict[str, float]] = None
-    value_down: Union[float, Dict[str, float]] = None  # if None assumes symmetric effect
-    # if the value is different for different regions or samples
-    diff_regions: bool = False
-    diff_samples: bool = False
-
-    samples: List[str] = None  # samples affected by it
-    # in case of uncorrelated unc., which years to split into
-    uncorr_years: List[str] = field(default_factory=lambda: years)
-    pass_only: bool = False  # is it applied only in the pass regions
-
-    def __post_init__(self):
-        if isinstance(self.value, dict) and not (self.diff_regions or self.diff_samples):
-            raise RuntimeError(
-                f"Value for systematic is a dictionary but neither ``diff_regions`` nor ``diff_samples`` is set."
-            )
-       
 
 # dictionary of nuisance params -> (modifier, samples affected by it, value)
 nuisance_params = {
@@ -223,9 +183,12 @@ nuisance_params = {
     
     # pdf uncertainty for Higgs signal
     "pdf_Higgs_gg": Syst(prior="lnN", samples=["ggF"], value=1.019),
-    "pdf_Higgs_qqbar": Syst(prior="lnN", samples=["VBF"], value=1.021),
-    "pdf_Higgs_qqbar": Syst(prior="lnN", samples=["WH"], value=1.017),
-    "pdf_Higgs_qqbar": Syst(prior="lnN", samples=["ZH"], value=1.013),
+    "pdf_Higgs_qqbar": Syst(
+        prior="lnN", 
+        samples=["VBF","WH","ZH"], 
+        value={"VBF":1.021,"WH":1.017,"ZH":1.013},
+        diff_samples=True,
+        ),
     "pdf_Higgs_ttH": Syst(prior="lnN", samples=["ttH"], value=1.030),
     
     # pdf uncertainty for background 
@@ -235,13 +198,18 @@ nuisance_params = {
     #QCD scale for Higgs signal
     "QCDscale_ggH": Syst(prior="lnN", samples=["ggF"], value=1.039),
     "QCDscale_qqH": Syst(prior="lnN", samples=["VBF"], value=1.004, value_down=0.997),
-    "QCDscale_VH": Syst(prior="lnN", samples=["WH"], value=1.005, value_down=0.993),
-    "QCDscale_VH": Syst(prior="lnN", samples=["ZH"], value=1.038,value_down=0.97),
+    "QCDscale_VH": Syst(
+        prior="lnN",
+        samples=["WH","ZH"],
+        value={"WH":1.005,"ZH":1.038}, 
+        value_down={"WH":0.993,"ZH":0.97},
+        diff_samples=True,
+        ),
     "QCDscale_ttH": Syst(prior="lnN", samples=["ttH"], value=1.058,value_down=0.908),
     
     #lund plane SF
-    f"{CMS_PARAMS_LABEL}_lp_sf_region_a" : Syst(prior="lnN", samples=[sig_key])
-    f"{CMS_PARAMS_LABEL}_lp_sf_region_b" : Syst(prior="lnN", samples=[sig_key])
+    f"{CMS_PARAMS_LABEL}_lp_sf_region_a" : Syst(prior="lnN", samples=sig_keys, pass_only = True, apply_reg = "a"),
+    f"{CMS_PARAMS_LABEL}_lp_sf_region_b" : Syst(prior="lnN", samples=sig_keys, pass_only = True, apply_reg = "b")
 }
 
 if args.year != "all":
@@ -282,7 +250,16 @@ uncorr_year_shape_systs = {
 
 shape_systs_dict = {}
 for skey, syst in corr_year_shape_systs.items():
-    shape_systs_dict[skey] = rl.NuisanceParameter(syst.name, "shape")
+    if not syst.samples_corr:
+        # separate nuisance param for each affected sample
+        for sample in syst.samples:
+            if sample not in mc_samples:
+                continue #means MC name error
+            shape_systs_dict[f"{skey}_{sample}"] = rl.NuisanceParameter(
+                f"{syst.name}_{mc_samples[sample]}", "shape"
+            )
+    else:
+        shape_systs_dict[skey] = rl.NuisanceParameter(syst.name, "shape")
     
 for skey, syst in uncorr_year_shape_systs.items():
     for year in years:
@@ -291,87 +268,22 @@ for skey, syst in uncorr_year_shape_systs.items():
                 f"{syst.name}_{year}", "shape"
             )
 
-def main(args):
-    # all SRs and CRs
-    regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2"]
-    regions_blinded = [region + "Blinded" for region in regions]
-    regions = regions +  regions_blinded #only use blinded results now
-    cur_dir = os.getcwd()
-    print("current dir = ",cur_dir)
-    with open(f"../../postprocessing/templates/25Jan2024/hists_templates_run2.pkl", "rb") as f:
-        hists_templates = pkl.load(f) #in Raghav's code, it's templates_summed and templates_dict
-    
-    model = rl.Model("HWWfullhad")
-    # TODO: add uncertainties
-    sample_templates: Hist = hists_templates[regions[0]]
-    
-    #MH_Reco for full-hadronic boosted HWW
-    shape_vars = [
-        ShapeVar(name=axis.name, bins=axis.edges, order_a=args.nTFa[i],order_b=args.nTFb[i])
-        for i, axis in enumerate(sample_templates.axes[1:]) #should be [1:] for boosted HWW analysis, because the 1st axes is mass
-    ]
-    # logging.info("shape_var = ",shape_vars)
-    print("shape_var[0] info",shape_vars[0].name,shape_vars[0].scaled,shape_vars[0].bins)
-    fill_args = [
-        model,
-        regions,
-        hists_templates,
-        mc_samples,
-        nuisance_params,
-        nuisance_params_dict,
-        #TODO: shape uncertainties to be added: JES, JER, JMS, JMR
-        args.bblite,
-    ]
-    fit_args = [model, shape_vars, hists_templates, args.scale_templates, args.min_qcd_val]
-    print("now order_a is",args.nTFa[0])
-    print("now order_b is",args.nTFb[0])
-    fill_regions(*fill_args)
-    alphabet_fit(*fit_args)
-    
-    logging.info("rendering combine model")
-
-    os.system(f"mkdir -p {args.cards_dir}")
-
-    out_dir = (
-        os.path.join(str(args.cards_dir), args.model_name)
-        if args.model_name is not None
-        else args.cards_dir
-    )
-    model.renderCombine(out_dir)
-
-    with open(f"{out_dir}/model.pkl", "wb") as fout:
-        pkl.dump(model, fout, 2)  # use python 2 compatible protocol
-
 def get_templates(
     templates_dir: Path,
-    years: list[str],
-    sig_separate: bool,
+    years: List[str],
     scale: float = None,
-    combine_lasttwo: bool = False,
 ):
     """Loads templates, combines bg and sig templates if separate, sums across all years"""
     templates_dict: dict[str, dict[str, Hist]] = {}
 
     for year in years:
+        print("template_dir =",templates_dir )
+        print("template =",templates_dir / f"templates_{year}.pkl" )
         with (templates_dir / f"templates_{year}.pkl").open("rb") as f:
-            templates_dict[year] = pickle.load(f)
+            templates_dict[year] = pkl.load(f)
 
     templates_summed: dict[str, Hist] = sum_templates(templates_dict, years)  # sum across years
     return templates_dict, templates_summed
-
-def sum_templates(template_dict: dict, years: list[str]):
-    """Sum templates across years"""
-
-    ttemplate = next(iter(template_dict.values()))  # sample templates to extract values from
-    combined = {}
-
-    for region in ttemplate:
-        thists = []
-        for year in years:
-            thists.append(template_dict["2018"][region])
-
-        combined[region] = sum(thists)
-    return combined
 
 
 def process_lp_systematics(lp_systematics: dict):
@@ -382,69 +294,18 @@ def process_lp_systematics(lp_systematics: dict):
             1 + lp_systematics[region]
         )
 
-def get_year_updown(
-    templates_dict, sample, region, region_noblinded, blind_str, year, skey
-):
-    """
-    Return templates with only the given year's shapes shifted up and down by the ``skey`` systematic.
-    Returns as [up templates, down templates]
-    """
-    updown = []
-
-    for shift in ["up", "down"]:
-        sshift = f"{skey}_{shift}"
-        # get nominal templates for each year
-        templates = {y: templates_dict[y][region][sample, ...] for y in years}
-
-        # replace template for this year with the shifted template
-        if skey in jecs or skey in uncluste:
-            # JEC/JMCs saved as different "region" in dict
-            reg_name = f"{region_noblinded}_{sshift}{blind_str}"
-            templates[year] = templates_dict[year][reg_name][sample, ...]
-        else:
-            # weight uncertainties saved as different "sample" in dict
-            templates[year] = templates_dict[year][region][f"{sample}_{sshift}", ...]
-
-        # sum templates with year's template replaced with shifted
-        updown.append(sum(list(templates.values())).values())
-
-    return updown
-
-def get_effect_updown(values_nominal, values_up, values_down, mask, logger, epsilon):
-    effect_up = np.ones_like(values_nominal)
-    effect_down = np.ones_like(values_nominal)
-
-    mask_up = mask & (values_up >= 0)
-    mask_down = mask & (values_down >= 0)
-
-    effect_up[mask_up] = values_up[mask_up] / values_nominal[mask_up]
-    effect_down[mask_down] = values_down[mask_down] / values_nominal[mask_down]
-
-    zero_up = values_up == 0
-    zero_down = values_down == 0
-
-    effect_up[mask_up & zero_up] = values_nominal[mask_up & zero_up] * epsilon
-    effect_down[mask_down & zero_down] = values_nominal[mask_down & zero_down] * epsilon
-
-    _shape_checks(values_up, values_down, values_nominal, effect_up, effect_down, logger)
-
-    logging.debug(f"nominal   : {values_nominal}")
-    logging.debug(f"effect_up  : {effect_up}")
-    logging.debug(f"effect_down: {effect_down}")
-
-    return effect_up, effect_down
 
 def fill_regions(
     model: rl.Model,
-    regions: list[str],
-    templates_dict: dict,
-    templates_summed: dict,
-    mc_samples: dict[str, str],
-    nuisance_params: dict[str, Syst],
-    nuisance_params_dict: dict[str, rl.NuisanceParameter],
-    corr_year_shape_systs: dict[str, Syst],
-    uncorr_year_shape_systs: dict[str, Syst],
-    shape_systs_dict: dict[str, rl.NuisanceParameter],
+    regions: List[str],
+    templates_dict: Dict,
+    templates_summed: Dict,
+    mc_samples: Dict[str, str],
+    nuisance_params: Dict[str, Syst],
+    nuisance_params_dict: Dict[str, rl.NuisanceParameter],
+    corr_year_shape_systs: Dict[str, Syst],
+    uncorr_year_shape_systs: Dict[str, Syst],
+    shape_systs_dict: Dict[str, rl.NuisanceParameter],
     bblite: bool = True,
 ):
     """Fill samples per region including given rate, shape and mcstats systematics.
@@ -478,13 +339,14 @@ def fill_regions(
         # pass region = SR1a, SR1b, SR2a, SR2b, SR3a, SR3b, and same with "Blinded" suffix
         pass_region = False
         pass_regs = ["SR1a","SR1b","SR2a","SR2b"]
-        for pass_regi in [passregions]:
+        for pass_regi in pass_regs:
             if pass_regi in region: pass_region = True
         region_noblinded = region.split("Blinded")[0]
         logging.info("starting region: %s" % region)
         ch = rl.Channel(region.replace("_", "")) 
         print(region.replace("_", ""))
         model.addChannel(ch)
+        blind_str = "Blinded" if region.endswith("Blinded") else ""
 
         for sample_name, card_name in mc_samples.items():
             # don't add signals in fail regions
@@ -530,9 +392,12 @@ def fill_regions(
             # rate systematics
             for skey, syst in nuisance_params.items():
                 # pass
-                # continue #TODO: to be fixed
                 if sample_name not in syst.samples or (not pass_region and syst.pass_only):
                     continue
+                
+                # for lp sf, should only be applied to corresponding regions, i.e., "a" or "b"
+                if syst.pass_only and (syst.apply_reg not in region_noblinded):
+                    continue 
 
                 logging.info(f"Getting {skey} rate")
 
@@ -810,4 +675,67 @@ def alphabet_fit(
             min_val=min_qcd_val,
         )        
         passCh2b.addSample(pass_qcd_2b)
+
+def main(args):
+    # all SRs and CRs
+    regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2"]
+    regions_blinded = [region + "Blinded" for region in regions]
+    regions = regions +  regions_blinded #only use blinded results now
+    cur_dir = os.getcwd()
+    print("current dir = ",cur_dir)
+    #normalized the path
+    args.templates_dir = Path(args.templates_dir)
+    args.cards_dir = Path(args.cards_dir)
+    #load templates
+    templates_dict, templates_summed = get_templates(
+        args.templates_dir, years,  args.scale_templates
+    )    
+    # with open(f"../../postprocessing/templates/25Jan2024/hists_templates_run2.pkl", "rb") as f:
+    #     hists_templates = pkl.load(f) #in Raghav's code, it's templates_summed and templates_dict
+    #apply lund plane sf
+    process_lp_systematics(lp_systematics)
+    model = rl.Model("HWWfullhad")
+    #random template from which to extract shape vars
+    sample_templates: Hist = templates_summed[next(iter(templates_summed.keys()))]
+    
+    #MH_Reco for full-hadronic boosted HWW
+    shape_vars = [
+        ShapeVar(name=axis.name, bins=axis.edges, order_a=args.nTFa[i],order_b=args.nTFb[i])
+        for i, axis in enumerate(sample_templates.axes[1:]) #should be [1:] for boosted HWW analysis, because the 1st axes is mass
+    ]
+    # logging.info("shape_var = ",shape_vars)
+    print("shape_var[0] info",shape_vars[0].name,shape_vars[0].scaled,shape_vars[0].bins)
+    fill_args = [
+        model,
+        regions,
+        templates_dict,
+        templates_summed,
+        mc_samples,
+        nuisance_params,
+        nuisance_params_dict,
+        corr_year_shape_systs,
+        uncorr_year_shape_systs,
+        shape_systs_dict,
+        args.bblite,
+    ]
+    fit_args = [model, shape_vars,templates_summed, args.scale_templates, args.min_qcd_val]
+    print("now order_a is",args.nTFa[0])
+    print("now order_b is",args.nTFb[0])
+    fill_regions(*fill_args)
+    alphabet_fit(*fit_args)
+    
+    logging.info("rendering combine model")
+
+    os.system(f"mkdir -p {args.cards_dir}")
+
+    out_dir = (
+        os.path.join(str(args.cards_dir), args.model_name)
+        if args.model_name is not None
+        else args.cards_dir
+    )
+    model.renderCombine(out_dir)
+
+    with open(f"{out_dir}/model.pkl", "wb") as fout:
+        pkl.dump(model, fout, 2)  # use python 2 compatible protocol
+        
 main(args)

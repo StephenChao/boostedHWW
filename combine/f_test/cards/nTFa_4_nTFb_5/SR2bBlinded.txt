@@ -1,30 +1,61 @@
-# Datacard for <Channel (SR2bBlinded) instance at 0x2b41109fca30> generated on 2024-02-02 18:33:10.814107
+# Datacard for <Channel (SR2bBlinded) instance at 0x2b610a1ca2e0> generated on 2024-03-24 15:40:43.380958
 imax 1 # number of categories ('bins' but here we are using shape templates)
-jmax 7 # number of samples minus 1
-kmax 16 # number of nuisance parameters
+jmax 9 # number of samples minus 1
+kmax 47 # number of nuisance parameters
 shapes * SR2bBlinded HWWfullhad.root HWWfullhad:SR2bBlinded_$PROCESS HWWfullhad:SR2bBlinded_$PROCESS_$SYSTEMATIC
 bin SR2bBlinded
-observation 11560.000
-bin                                        SR2bBlinded    SR2bBlinded    SR2bBlinded    SR2bBlinded  SR2bBlinded  SR2bBlinded  SR2bBlinded                     SR2bBlinded
-process                                            ggF            VBF             VH            ttH     ttbar_st        wjets         rest  CMS_HWW_boosted_qcd_datadriven
-process                                             -3             -2             -1              0            1            2            3                               4
-rate                                             3.653          1.690          2.327          3.039      817.371      813.893      165.399                           1.000
-BR_hww lnN                               0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153            -            -            -                               -
-CMS_HWW_boosted_SR2b_mcstat_bin0 shape          1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin1 shape          1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin10 shape         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin11 shape         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin12 shape         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin13 shape         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin14 shape         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin15 shape         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin16 shape         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin17 shape         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin18 shape         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin19 shape         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin2 shape          1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-CMS_HWW_boosted_SR2b_mcstat_bin3 shape          1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000                               -
-lumi_13TeV_correlated lnN                       1.0130         1.0130         1.0130         1.0130       1.0130       1.0130       1.0130                               -
+observation 18900.000
+bin                                          SR2bBlinded    SR2bBlinded    SR2bBlinded    SR2bBlinded    SR2bBlinded  SR2bBlinded  SR2bBlinded  SR2bBlinded  SR2bBlinded                     SR2bBlinded
+process                                              ggF            VBF             WH             ZH            ttH        ttbar   single_top        wjets     rest_bkg  CMS_HWW_boosted_qcd_datadriven
+process                                               -4             -3             -2             -1              0            1            2            3            4                               5
+rate                                               5.819          3.733          1.614          2.567          5.070     1317.197      115.093     2339.697      291.097                           1.000
+BR_hww lnN                                 0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153            -            -            -            -                               -
+CMS_HWW_boosted_QCDScale_rest_bkg shape                -              -              -              -              -            -            -            -       1.0000                               -
+CMS_HWW_boosted_QCDScale_single_top shape              -              -              -              -              -            -       1.0000            -            -                               -
+CMS_HWW_boosted_QCDScale_ttbar shape                   -              -              -              -              -       1.0000            -            -            -                               -
+CMS_HWW_boosted_QCDScale_wjets shape                   -              -              -              -              -            -            -       1.0000            -                               -
+CMS_HWW_boosted_SR2b_mcstat_bin0 shape            1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin1 shape            1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin10 shape           1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin11 shape           1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin12 shape           1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin13 shape           1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin14 shape           1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin15 shape           1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin16 shape           1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin17 shape           1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin18 shape           1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin19 shape           1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin2 shape            1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_SR2b_mcstat_bin3 shape            1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_HWW_boosted_lp_sf_region_b lnN                1.3647         1.3647         1.3647         1.3647         1.3647            -            -            -            -                               -
+CMS_pileup_2016 shape                             1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_pileup_2016APV shape                          1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_pileup_2017 shape                             1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_pileup_2018 shape                             1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_res_j_2016 shape                              1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_res_j_2016APV shape                           1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_res_j_2017 shape                              1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_res_j_2018 shape                              1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+CMS_scale_j shape                                 1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+QCDscale_VH lnN                                        -              -  0.9930/1.0050  0.9700/1.0380              -            -            -            -            -                               -
+QCDscale_ggH lnN                                  1.0390              -              -              -              -            -            -            -            -                               -
+QCDscale_qqH lnN                                       -  0.9970/1.0040              -              -              -            -            -            -            -                               -
+QCDscale_ttH lnN                                       -              -              -              -  0.9080/1.0580            -            -            -            -                               -
+lumi_13TeV_1718 lnN                               1.0027         1.0027         1.0027         1.0027         1.0027       1.0027       1.0027       1.0027       1.0027                               -
+lumi_13TeV_2016 lnN                               1.0026         1.0026         1.0026         1.0026         1.0026       1.0026       1.0026       1.0026       1.0026                               -
+lumi_13TeV_2017 lnN                               1.0060         1.0060         1.0060         1.0060         1.0060       1.0060       1.0060       1.0060       1.0060                               -
+lumi_13TeV_2018 lnN                               1.0065         1.0065         1.0065         1.0065         1.0065       1.0065       1.0065       1.0065       1.0065                               -
+lumi_13TeV_correlated lnN                         1.0130         1.0130         1.0130         1.0130         1.0130       1.0130       1.0130       1.0130       1.0130                               -
+pdf_Higgs_gg lnN                                  1.0190              -              -              -              -            -            -            -            -                               -
+pdf_Higgs_qqbar lnN                                    -         1.0210         1.0170         1.0130              -            -            -            -            -                               -
+pdf_Higgs_ttH lnN                                      -              -              -              -         1.0300            -            -            -            -                               -
+pdf_gg lnN                                             -              -              -              -              -       1.0420            -            -            -                               -
+pdf_qqbar lnN                                          -              -              -              -              -            -       1.0280            -            -                               -
+ps_fsr shape                                      1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+ps_isr shape                                      1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+triggerEffSF_uncorrelated shape                   1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
+unclustered_Energy shape                          1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
 CMS_HWW_boosted_tf_dataResidual_CR2_Bin0 extArg HWWfullhad.root:HWWfullhad
 CMS_HWW_boosted_tf_dataResidual_CR2_Bin1 extArg HWWfullhad.root:HWWfullhad
 CMS_HWW_boosted_tf_dataResidual_CR2_Bin10 extArg HWWfullhad.root:HWWfullhad

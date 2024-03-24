@@ -15,7 +15,7 @@ ffits=0
 dfit=0
 seed=66
 numtoys=300
-
+templates_tag="24Mar2024_JEC_fixed" 
 
 options=$(getopt -o "tfd" --long "cardstag:,templatestag:,sigsample:,goftoys,ffits,dfit,numtoys:,seed:" -- "$@")
 eval set -- "$options"
@@ -73,7 +73,7 @@ goftoys=$goftoys ffits=$ffits seed=$seed numtoys=$numtoys"
 ####################################################################################################
 # Set up fit args
 ####################################################################################################
-
+templates_dir="../../postprocessing/templates/${templates_tag}"
 cd ..
 combine_dir=$(pwd)
 cd -
@@ -136,7 +136,7 @@ freezeparamsblinded=${freezeparamsblinded%,}
 # Making cards and workspaces for each order polynomial
 ####################################################################################################
 
-for orda in {3..6}
+for orda in {3..5}
 do
     for ordb in {5..7}
     do
@@ -144,7 +144,7 @@ do
         if [ ! -f "${cards_dir}/${model_name}/higgsCombineData.GoodnessOfFit.mH125.root" ]; then
             echo "Making Datacard for $model_name"
             python3 -u ${combine_dir}/create_datacard.py \
-            --model-name ${model_name}  \
+            --model-name ${model_name}  --templates-dir "${templates_dir}"\
             --nTFa ${orda} --nTFb ${ordb} --cards-dir ${cards_dir}
         fi
         pwd
@@ -242,59 +242,3 @@ do
         cd ${combine_dir}/scripts
     done
 done
-
-
-
-####################################################################################################
-# Generate toys for (0, 0) order
-####################################################################################################
-
-# if [ $goftoys = 1 ]; then
-#     model_name="nTFa_0_nTFb_0"
-#     toys_name="00"
-#     cd ${cards_dir}/${model_name}/
-#     toys_file="$(pwd)/higgsCombineToys${toys_name}.GenerateOnly.mH125.42.root"
-
-#     ulimit -s unlimited
-
-#     echo "Toys for (0, 0) order fit"
-#     combine -M GenerateOnly -m 125 -d ${wsm_snapshot}.root \
-#     --snapshotName MultiDimFit --bypassFrequentistFit \
-#     --setParameters ${maskunblindedargs},${setparams},r=0 \
-#     --freezeParameters ${freezeparams},r \
-#     -n "Toys${toys_name}" -t $numtoys --saveToys -s $seed -v 9 2>&1 | tee $outsdir/gentoys.txt
-
-#     cd ${combine_dir}/scripts
-# fi
-
-
-####################################################################################################
-# GoFs on generated toys for next order polynomials
-####################################################################################################
-
-# if [ $ffit = 1 ]; then
-#     for ord1 in {0..1}
-#     do
-#         for ord2 in {0..1}
-#         do
-#             if [ $ord1 -gt 0 ] && [ $ord2 -gt 0 ]
-#             then
-#                 break
-#             fi
-
-#             model_name="nTFa_${ord1}_nTFb_${ord2}"
-#             echo "Fits for $model_name"
-
-#             cd ${cards_dir}/${model_name}/
-
-#             ulimit -s unlimited
-
-#             combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
-#             --setParameters ${maskunblindedargs},${setparams},r=0 \
-#             --freezeParameters ${freezeparams},r \
-#             -n Toys${toys_name} -v 9 -s $seed -t $numtoys --toysFile ${toys_file} 2>&1 | tee $outsdir/GoF_toys${toys_name}.txt
-
-#             cd ${combine_dir}/scripts
-#         done
-#     done
-# fi

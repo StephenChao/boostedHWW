@@ -84,7 +84,7 @@ def sum_templates(template_dict: dict, years: List[str]):
     for region in ttemplate:
         thists = []
         for year in years:
-            thists.append(template_dict["2018"][region])
+            thists.append(template_dict[year][region])
 
         combined[region] = sum(thists)
     return combined
@@ -101,16 +101,21 @@ def get_year_updown(
     for shift in ["up", "down"]:
         sshift = f"{skey}_{shift}"
         # get nominal templates for each year
-        templates = {y: templates_dict[y][region][sample, ...] for y in years}
+        templates = {y: templates_dict[y][region][sample,:] for y in years}
+        
+        # logging.info(f"summed nominal values in {year} is {sum(list(templates.values())).values()}")
 
-        # replace template for this year with the shifted template
+        # replace template only for this year with the shifted template
         if skey in jecs or skey in uncluste:
             # JEC/JMCs saved as different "region" in dict
             reg_name = f"{region_noblinded}_{sshift}{blind_str}"
-            templates[year] = templates_dict[year][reg_name][sample, ...]
+            templates[year] = templates_dict[year][reg_name][sample, :]
+            # logging.info(f"{sshift} values in {year} is {templates[year]}")
         else:
             # weight uncertainties saved as different "sample" in dict
-            templates[year] = templates_dict[year][region][f"{sample}_{sshift}", ...]
+            templates[year] = templates_dict[year][region][f"{sample}_{sshift}", :]
+            # logging.info(f"{sshift} values in {year} is {templates[year]}")
+
 
         # sum templates with year's template replaced with shifted
         updown.append(sum(list(templates.values())).values())

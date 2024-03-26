@@ -102,7 +102,7 @@ parser.add_argument(
 parser.add_argument("--cards-dir", default="cards", type=str, help="output card directory")
 parser.add_argument("--model-name", default="HWWfhModel", type=str, help="output model name")
 parser.add_argument("--mcstats-threshold", default=100, type=float, help="mcstats threshold n_eff")
-parser.add_argument("--epsilon", default=1e-3, type=float, help="epsilon to avoid numerical errs")
+parser.add_argument("--epsilon", default=1e-2, type=float, help="epsilon to avoid numerical errs")
 parser.add_argument(
     "--scale-templates", default=None, type=float, help="scale all templates for bias tests"
 )
@@ -207,6 +207,15 @@ nuisance_params = {
         ),
     "QCDscale_ttH": Syst(prior="lnN", samples=["ttH"], value=1.058,value_down=0.908),
     
+    #QCD scale for ttbar
+    "QCDscale_ttbar": Syst(
+        prior="lnN",
+        samples=["ST", "TT"],
+        value={"ST": 1.03, "TT": 1.024},
+        value_down={"ST": 0.978, "TT": 0.965},
+        diff_samples=True,
+    ),    
+    
     #lund plane SF
     f"{CMS_PARAMS_LABEL}_lp_sf_region_a" : Syst(prior="lnN", samples=sig_keys, pass_only = True, apply_reg = "a"),
     f"{CMS_PARAMS_LABEL}_lp_sf_region_b" : Syst(prior="lnN", samples=sig_keys, pass_only = True, apply_reg = "b")
@@ -233,12 +242,13 @@ corr_year_shape_systs = {
     "triggerEffSF_uncorrelated": Syst(name="triggerEffSF_uncorrelated", prior="shape", samples=all_mc),
     "FSRPartonShower": Syst(name="ps_fsr", prior="shape", samples=all_mc),
     "ISRPartonShower": Syst(name="ps_isr", prior="shape", samples=all_mc),
-    "QCDscale": Syst(
-        name=f"{CMS_PARAMS_LABEL}_QCDScale",
-        prior="shape",
-        samples=bg_keys,
-        samples_corr=False,
-    ),
+    #TODO: to add QCD scale acceptance
+    # "QCDscale": Syst(
+    #     name=f"{CMS_PARAMS_LABEL}_QCDScale",
+    #     prior="shape",
+    #     samples=bg_keys,
+    #     samples_corr=False,
+    # ),
     "UE": Syst(name="unclustered_Energy", prior="shape", samples=all_mc),
     "JES": Syst(name="CMS_scale_j", prior="shape", samples=all_mc),
 }
@@ -438,7 +448,8 @@ def fill_regions(
                 effect_up, effect_down = get_effect_updown(
                     values_nominal, values_up, values_down, mask, logger, args.epsilon
                 )
-
+                # logging.info(f"final effect up is {effect_up}")
+                # logging.info(f"final effect down is {effect_down}")
                 # separate syst if not correlated across samples
                 sdkey = skey if syst.samples_corr else f"{skey}_{sample_name}"
                 sample.setParamEffect(shape_systs_dict[sdkey], effect_up, effect_down)
@@ -464,11 +475,19 @@ def fill_regions(
                         year,
                         skey,
                     )
-                    logger = logging.getLogger(f"validate_shapes_{region}_{sample_name}_{skey}")
+                    #get summed templates with only the given year's shape shifted up and down by the ``skey`.
+                    logger = logging.getLogger(f"validate_shapes_{region}_{sample_name}_{skey}_{year}")
+                    
+                    # logging.info(f"final values up in {year} is {values_up}")
+                    # logging.info(f"nom value in {year} is {values_nominal}")
+                    # logging.info(f"final values down in {year} is {values_down}")
 
                     effect_up, effect_down = get_effect_updown(
                         values_nominal, values_up, values_down, mask, logger, args.epsilon
                     )
+                    # logging.info(f"nom value in {year} is {values_nominal}")
+                    # logging.info(f"final effect up in {year} is {effect_up}")
+                    # logging.info(f"final effect down in {year} is {effect_down}")
                     sample.setParamEffect(
                         shape_systs_dict[f"{skey}_{year}"], effect_up, effect_down
                     )
@@ -605,7 +624,7 @@ def alphabet_fit(
         # will result in qcdparams errors ~±1
         # but because qcd is poorly modelled we're scaling sigma scale
 
-        sigmascale = 10  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
+        sigmascale = 1  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
         if scale is not None:
             sigmascale *= scale
 
@@ -613,7 +632,7 @@ def alphabet_fit(
             initial_qcd1 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd1))) ** qcd_params1
         )
         
-        sigmascale = 500        
+        # sigmascale = 100        
         scaled_params2 = (
             initial_qcd2 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd2))) ** qcd_params2
         )
@@ -690,8 +709,6 @@ def main(args):
     templates_dict, templates_summed = get_templates(
         args.templates_dir, years,  args.scale_templates
     )    
-    # with open(f"../../postprocessing/templates/25Jan2024/hists_templates_run2.pkl", "rb") as f:
-    #     hists_templates = pkl.load(f) #in Raghav's code, it's templates_summed and templates_dict
     #apply lund plane sf
     process_lp_systematics(lp_systematics)
     model = rl.Model("HWWfullhad")

@@ -73,8 +73,17 @@ uncluste = {
 }
 
 lp_systematics = {
-    "a" : 0.334/0.898,
-    "b" : 0.349/0.957,
+    # original unc value
+    # "a" : 0.334/0.898,
+    # "b" : 0.349/0.957,
+    
+    # #some other test
+    # "a" : 0.1,
+    # "b" : 0.1,
+    
+    #some other test
+    "a" : 0.8,
+    "b" : 0.8,
 }
 
 parser = argparse.ArgumentParser()
@@ -624,7 +633,7 @@ def alphabet_fit(
         # will result in qcdparams errors ~±1
         # but because qcd is poorly modelled we're scaling sigma scale
 
-        sigmascale = 1  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
+        sigmascale = 3  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
         if scale is not None:
             sigmascale *= scale
 
@@ -632,6 +641,7 @@ def alphabet_fit(
             initial_qcd1 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd1))) ** qcd_params1
         )
         
+        sigmascale = 3
         # sigmascale = 100        
         scaled_params2 = (
             initial_qcd2 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd2))) ** qcd_params2

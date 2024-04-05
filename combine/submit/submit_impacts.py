@@ -33,7 +33,8 @@ def getParameters():
     ret_ps = []
     for p in ps:
         if not (
-            "mcstat" in p
+            # "mcstat" in p
+            "dataResidual_CR" in p
             or "qcdparam" in p
             or p.endswith(("_In", "__norm"))
             or p.startswith(("n_exp_", "mask_"))
@@ -70,7 +71,8 @@ def main(args):
         f"higgsCombine_paramFit_impacts_{p}.MultiDimFit.mH125.root" for p in ps
     ]
 
-    collect_command = f"run_blinded.sh {res_str} --impactsc {','.join(ps)}"
+    collect_command = f"/ospool/cms-user/yuzhe/NanoNtupleChain/boostedHWW/combine/scripts/run_blinded.sh {res_str} --impactsc {','.join(ps)}"
+    # collect_command = f"run_blinded.sh {res_str} --impactsc {','.join(ps)}"
 
     if args.local:
         print("Running locally")

@@ -246,7 +246,7 @@ fi
 
 
 if [ $bfit = 1 ]; then
-    echo "Blinded background-only fit(MC Blinded)"
+    echo "Blinded background-only fit (MC Blinded)"
     combine -D $dataset -M MultiDimFit --saveWorkspace -m 125 -d ${wsm}.root -v 9 \
     --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
     --setParameters ${maskunblindedargs},${setparamsblinded},r=0  \
@@ -341,10 +341,10 @@ if [ $impactsi = 1 ]; then
     # --robustFit 1 --cminDefaultMinimizerStrategy=1 -v 9 2>&1 | tee $outsdir/Impacts_init.txt
 
     combineTool.py -M Impacts --snapshotName MultiDimFit -m 125 -n "impacts" \
-    -t -1 --bypassFrequentistFit --toysFrequentist --expectSignal 1 \
+    -t -1 --bypassFrequentistFit --toysFrequentist --expectSignal 1 --rMin -40 --rMax 40\
     -d ${wsm_snapshot}.root --doInitialFit --robustFit 1 \
     ${unblindedparams} --floatParameters ${freezeparamsblinded} \
-    --cminDefaultMinimizerStrategy=1 -v 1 2>&1 | tee $outsdir/Impacts_init.txt
+    --cminDefaultMinimizerStrategy 0 -v 1 2>&1 | tee $outsdir/Impacts_init.txt
 fi
 
 if [ $impactsf != 0 ]; then
@@ -356,7 +356,7 @@ if [ $impactsf != 0 ]; then
     --floatOtherPOIs 1 --saveInactivePOI 1 --snapshotName MultiDimFit -d ${wsm_snapshot}.root \
     -t -1 --bypassFrequentistFit --toysFrequentist --expectSignal 1 --robustFit 1 \
     ${unblindedparams} --floatParameters ${freezeparamsblinded} \
-    --setParameterRanges r=-0.5,20 --cminDefaultMinimizerStrategy=1 -v 1 -m 125 | tee "$outsdir/Impacts_$impactsf.txt"
+    --rMin -40 --rMax 40 --cminDefaultMinimizerStrategy 0 -v 1 -m 125 | tee "$outsdir/Impacts_$impactsf.txt"
 fi
 
 
@@ -367,7 +367,7 @@ if [ $impactsc != 0 ]; then
     -m 125 -n "impacts" -d ${wsm_snapshot}.root \
     --setParameters ${maskblindedargs} --floatParameters ${freezeparamsblinded} \
     -t -1 --named $impactsc \
-    --setParameterRanges r=-0.5,20 -v 1 -o impacts.json 2>&1 | tee $outsdir/Impacts_collect.txt
+    --rMin -40 --rMax 40 -v 1 -o impacts.json 2>&1 | tee $outsdir/Impacts_collect.txt
 
     plotImpacts.py -i impacts.json -o impacts
 

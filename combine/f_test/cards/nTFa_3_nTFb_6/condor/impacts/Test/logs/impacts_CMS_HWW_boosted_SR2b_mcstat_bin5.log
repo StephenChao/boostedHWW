@@ -1,0 +1,40 @@
+000 (17024556.000.000) 2024-04-05 14:58:05 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8841_c4e4>
+...
+040 (17024556.000.000) 2024-04-05 15:03:12 Started transferring input files
+	Transferring to host: <188.185.209.228:41765?CCBID=137.138.152.114:9679%3faddrs%3d[2001-1458-d00-13--58]-9679+137.138.152.114-9679%26alias%3dvocms0821.cern.ch#3286923&PrivNet=b9p12p5161.cern.ch&addrs=[2001-1458-303-12--100-61]-41765+188.185.209.228-41765&alias=b9p12p5161.cern.ch&noUDP>
+...
+001 (17024556.000.000) 2024-04-05 15:03:14 Job executing on host: <188.185.209.228:33775?CCBID=137.138.152.114:9706%3faddrs%3d[2001-1458-d00-13--58]-9706+137.138.152.114-9706%26alias%3dvocms0821.cern.ch#3301104&PrivNet=b9p12p5161.cern.ch&addrs=[2001-1458-303-12--100-61]-33775+188.185.209.228-33775&alias=b9p12p5161.cern.ch&noUDP>
+...
+040 (17024556.000.000) 2024-04-05 15:03:14 Finished transferring input files
+...
+006 (17024556.000.000) 2024-04-05 15:03:22 Image size of job updated: 2
+	13  -  MemoryUsage of job (MB)
+	3824  -  ResidentSetSize of job (KB)
+	13053  -  ProportionalSetSize of job (KB)
+...
+006 (17024556.000.000) 2024-04-05 15:07:39 Image size of job updated: 3044984
+	535  -  MemoryUsage of job (MB)
+	547248  -  ResidentSetSize of job (KB)
+	13053  -  ProportionalSetSize of job (KB)
+...
+040 (17024556.000.000) 2024-04-05 15:07:39 Started transferring output files
+...
+040 (17024556.000.000) 2024-04-05 15:07:39 Finished transferring output files
+...
+005 (17024556.000.000) 2024-04-05 15:07:40 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:05, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:05, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	61703  -  Run Bytes Sent By Job
+	2363331  -  Run Bytes Received By Job
+	61703  -  Total Bytes Sent By Job
+	2363331  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   121230     2500   2888065 
+	   Memory (MB)          :       13     3000      3072 
+
+	Job terminated of its own accord at 2024-04-05T20:07:39Z.
+...

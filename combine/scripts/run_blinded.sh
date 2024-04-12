@@ -249,8 +249,8 @@ if [ $bfit = 1 ]; then
     echo "Blinded background-only fit (MC Blinded)"
     combine -D $dataset -M MultiDimFit --saveWorkspace -m 125 -d ${wsm}.root -v 9 \
     --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
-    --setParameters ${maskunblindedargs},${setparamsblinded},r=0  \
-    --freezeParameters r,${freezeparamsblinded} \
+    --setParameters "${maskunblindedargs},${setparamsblinded},r=0"  \
+    --freezeParameters "r,${freezeparamsblinded}" \
     -n Snapshot 2>&1 | tee $outsdir/MultiDimFit.txt
 else
     if [ ! -f "higgsCombineSnapshot.MultiDimFit.mH125.root" ]; then
@@ -283,10 +283,12 @@ if [ $dfit = 1 ]; then
     combine -M FitDiagnostics -m 125 -d ${wsm}.root \
     --setParameters "${maskunblindedargs},${setparamsblinded}" \
     --freezeParameters ${freezeparamsblinded} \
-    --cminDefaultMinimizerStrategy 0  --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=5000000 \
+    --cminDefaultMinimizerStrategy 0 \
+    --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=5000000 \
     --saveShapes --saveNormalizations --saveWithUncertainties --saveOverallShapes \
     -n Blinded --ignoreCovWarning -v 9 2>&1 | tee $outsdir/FitDiagnostics.txt
-    # --saveShapes --saveNormalizations --saveWithUncertainties --saveOverallShapes \
+
+    # --saveShapes --saveNormalizations --saveWithUncertainties --saveOverallShapes \ - to save uncertainties
 
     echo "Fit Shapes"
     PostFitShapesFromWorkspace --dataset "$dataset" -w ${wsm}.root --output FitShapes.root \

@@ -1,4 +1,4 @@
-WARN $TMPDIR(/tmp/glide_zyyR3e/execute/dir_92584) is not a writable directory setting $TMPDIR = $PWD
+WARN $TMPDIR(/scr/u/tier1-2416011/glide_2C0HIf/execute/dir_45365) is not a writable directory setting $TMPDIR = $PWD
 running impacts
 extracting tar
 Reading cached build data
@@ -10,14 +10,14 @@ Cleaning up removed directory:src/templates
 Done: ProjectRename
 /srv/CMSSW_11_3_4 is the CMSSW we have on the local worker node
 total 2.3M
-drwxr-xr-x 18 cms001 cmsf  283 Jul 19  2023 CMSSW_11_3_4
--rw-r--r--  1 cms001 cmsf    0 Apr  5 21:58 _condor_stderr
--rw-r--r--  1 cms001 cmsf  465 Apr  5 21:58 _condor_stdout
--rw-r--r--  1 cms001 cmsf 1.1M Apr  5 21:58 combined_withmasks.root
--rwxr-xr-x  1 cms001 cmsf 1.2K Apr  5 21:58 condor_exec.exe
--rw-r--r--  1 cms001 cmsf 1.2M Apr  5 21:58 higgsCombineSnapshot.MultiDimFit.mH125.root
--rwxr-xr-x  1 cms001 cmsf  15K Apr  5 21:58 run_blinded.sh
--rw-------  1 cms001 cmsf  13K Apr  5 21:58 x509up_u12976
+drwxr-xr-x 18 cms001 lcms  215 Jul 19  2023 CMSSW_11_3_4
+-rw-r--r--  1 cms001 lcms    0 Apr 10 00:08 _condor_stderr
+-rw-r--r--  1 cms001 lcms  481 Apr 10 00:08 _condor_stdout
+-rw-r--r--  1 cms001 lcms 1.1M Apr 10 00:08 combined_withmasks.root
+-rwxr-xr-x  1 cms001 lcms 1.2K Apr 10 00:08 condor_exec.exe
+-rw-r--r--  1 cms001 lcms 1.2M Apr 10 00:08 higgsCombineSnapshot.MultiDimFit.mH125.root
+-rwxr-xr-x  1 cms001 lcms  15K Apr 10 00:08 run_blinded.sh
+-rw-------  1 cms001 lcms  13K Apr 10 00:08 x509up_u12976
 Arguments: resonant=0 workspace=0 bfit=0 limits=0 significance=0 dfit=0 gofdata=0 goftoys=0 seed=44 numtoys=40
 actually run the following: 
 cards args=CR1=./CR1.txt CR1Blinded=./CR1Blinded.txt SR1a=./SR1a.txt SR1aBlinded=./SR1aBlinded.txt SR1b=./SR1b.txt SR1bBlinded=./SR1bBlinded.txt CR2=./CR2.txt CR2Blinded=./CR2Blinded.txt SR2a=./SR2a.txt SR2aBlinded=./SR2aBlinded.txt SR2b=./SR2b.txt SR2bBlinded=./SR2bBlinded.txt 

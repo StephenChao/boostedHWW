@@ -1,40 +1,67 @@
-000 (17024461.000.000) 2024-04-05 14:55:41 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8841_c4e4>
+000 (17033451.000.000) 2024-04-09 16:05:08 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8841_c4e4>
 ...
-040 (17024461.000.000) 2024-04-05 14:55:54 Started transferring input files
-	Transferring to host: <134.158.51.42:43142?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9624#10685884%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9678#14396&PrivNet=ccwcondor0496.in2p3.fr&addrs=134.158.51.42-43142&alias=ccwcondor0496.in2p3.fr&noUDP>
+040 (17033451.000.000) 2024-04-09 16:05:30 Started transferring input files
+	Transferring to host: <131.225.190.111:35997?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9666#10686865%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9668#49603&PrivNet=cmsgli-180722-0-cmswn6052.fnal.gov&addrs=[2620-6a-0-8421-f0-0-190-111]-35997+131.225.190.111-35997&alias=cmsgli-180722-0-cmswn6052.fnal.gov&noUDP>
 ...
-001 (17024461.000.000) 2024-04-05 14:55:55 Job executing on host: <134.158.51.42:40571?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9698#10671863%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9644#9466&PrivNet=ccwcondor0496.in2p3.fr&addrs=134.158.51.42-40571&alias=ccwcondor0496.in2p3.fr&noUDP>
+040 (17033451.000.000) 2024-04-09 16:05:30 Finished transferring input files
 ...
-040 (17024461.000.000) 2024-04-05 14:55:55 Finished transferring input files
+001 (17033451.000.000) 2024-04-09 16:05:31 Job executing on host: <131.225.190.111:32807?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9708#10726956%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9670#45662&PrivNet=cmsgli-180722-0-cmswn6052.fnal.gov&addrs=[2620-6a-0-8421-f0-0-190-111]-32807+131.225.190.111-32807&alias=cmsgli-180722-0-cmswn6052.fnal.gov&noUDP>
 ...
-006 (17024461.000.000) 2024-04-05 14:56:04 Image size of job updated: 2
-	6  -  MemoryUsage of job (MB)
-	2708  -  ResidentSetSize of job (KB)
-	5724  -  ProportionalSetSize of job (KB)
+006 (17033451.000.000) 2024-04-09 16:05:32 Image size of job updated: 1620696
+	1077  -  MemoryUsage of job (MB)
+	1102580  -  ResidentSetSize of job (KB)
 ...
-006 (17024461.000.000) 2024-04-05 14:56:15 Image size of job updated: 2416104
-	207  -  MemoryUsage of job (MB)
-	211620  -  ResidentSetSize of job (KB)
-	5724  -  ProportionalSetSize of job (KB)
+040 (17033451.000.000) 2024-04-09 16:05:33 Started transferring output files
 ...
-040 (17024461.000.000) 2024-04-05 14:56:16 Started transferring output files
+040 (17033451.000.000) 2024-04-09 16:05:33 Finished transferring output files
 ...
-040 (17024461.000.000) 2024-04-05 14:56:16 Finished transferring output files
+007 (17033451.000.000) 2024-04-09 16:05:33 Shadow exception!
+	Error from slot1_19@glidein_8_256243220@cmsgli-180722-0-cmswn6052.fnal.gov: STARTER at 131.225.190.111 failed to send file(s) to <192.170.231.212:9618>: |Error: reading from file /storage/local/data1/condor/execute/dir_116008/glide_BEcLdJ/execute/dir_255962/higgsCombine_paramFit_impacts_CMS_HWW_boosted_CR2_mcstat_bin3.MultiDimFit.mH125.root: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <131.225.190.111:45441>
+	20035  -  Run Bytes Sent By Job
+	2352906  -  Run Bytes Received By Job
 ...
-005 (17024461.000.000) 2024-04-05 14:56:17 Job terminated.
+012 (17033451.000.000) 2024-04-09 16:05:33 Job was held.
+	Error from slot1_19@glidein_8_256243220@cmsgli-180722-0-cmswn6052.fnal.gov: STARTER at 131.225.190.111 failed to send file(s) to <192.170.231.212:9618>: |Error: reading from file /storage/local/data1/condor/execute/dir_116008/glide_BEcLdJ/execute/dir_255962/higgsCombine_paramFit_impacts_CMS_HWW_boosted_CR2_mcstat_bin3.MultiDimFit.mH125.root: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <131.225.190.111:45441>
+	Code 13 Subcode 2
+...
+013 (17033451.000.000) 2024-04-09 16:24:29 Job was released.
+	via condor_release (by user yuzhe)
+...
+040 (17033451.000.000) 2024-04-09 16:26:18 Started transferring input files
+	Transferring to host: <144.92.180.136:19053?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9634#10728745%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9700#49569&PrivNet=g28n11.hep.wisc.edu&addrs=[2607-f388-101c-1000--411]-19053+144.92.180.136-19053&alias=g28n11.hep.wisc.edu&noUDP>
+...
+001 (17033451.000.000) 2024-04-09 16:26:18 Job executing on host: <144.92.180.136:13347?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9691#10673217%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9667#34418&PrivNet=g28n11.hep.wisc.edu&addrs=[2607-f388-101c-1000--411]-13347+144.92.180.136-13347&alias=g28n11.hep.wisc.edu&noUDP>
+...
+040 (17033451.000.000) 2024-04-09 16:26:18 Finished transferring input files
+...
+006 (17033451.000.000) 2024-04-09 16:26:27 Image size of job updated: 2174992
+	1221  -  MemoryUsage of job (MB)
+	1250000  -  ResidentSetSize of job (KB)
+	18251  -  ProportionalSetSize of job (KB)
+...
+006 (17033451.000.000) 2024-04-09 16:27:38 Image size of job updated: 2548244
+	1221  -  MemoryUsage of job (MB)
+	1250000  -  ResidentSetSize of job (KB)
+	18251  -  ProportionalSetSize of job (KB)
+...
+040 (17033451.000.000) 2024-04-09 16:27:39 Started transferring output files
+...
+040 (17033451.000.000) 2024-04-09 16:27:39 Finished transferring output files
+...
+005 (17033451.000.000) 2024-04-09 16:27:39 Job terminated.
 	(1) Normal termination (return value 0)
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:13, Sys 0 00:00:01  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
-		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:13, Sys 0 00:00:01  -  Total Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
-	58384  -  Run Bytes Sent By Job
-	2363330  -  Run Bytes Received By Job
-	58384  -  Total Bytes Sent By Job
-	2363330  -  Total Bytes Received By Job
+	58540  -  Run Bytes Sent By Job
+	2352906  -  Run Bytes Received By Job
+	78575  -  Total Bytes Sent By Job
+	4705812  -  Total Bytes Received By Job
 	Partitionable Resources :    Usage  Request Allocated 
 	   Cpus                 :                 1         1 
-	   Disk (KB)            :   174965     2500   1313819 
-	   Memory (MB)          :        6     3000      3072 
+	   Disk (KB)            :   121216     2750    791186 
+	   Memory (MB)          :       18     3000      3072 
 
-	Job terminated of its own accord at 2024-04-05T19:56:15Z.
+	Job terminated of its own accord at 2024-04-09T21:27:38Z.
 ...

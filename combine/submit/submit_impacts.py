@@ -3,7 +3,7 @@
 """
 Splits toy generation into separate condor jobs and fits lowest order + 1 models for F-tests.
 
-Author(s): Raghav Kansal
+Author(s): Raghav Kansal, Yuzhe Zhao
 """
 from __future__ import annotations
 
@@ -34,8 +34,8 @@ def getParameters():
     for p in ps:
         if not (
             # "mcstat" in p
-            "dataResidual_CR" in p
-            or "qcdparam" in p
+            # "dataResidual_CR" in p
+            "qcdparam" in p
             or p.endswith(("_In", "__norm"))
             or p.startswith(("n_exp_", "mask_"))
             or p in pois

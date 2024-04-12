@@ -1,0 +1,40 @@
+000 (17035233.000.000) 2024-04-11 14:40:13 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8841_c4e4>
+...
+040 (17035233.000.000) 2024-04-11 14:45:15 Started transferring input files
+	Transferring to host: <188.185.209.215:40255?CCBID=137.138.152.114:9671%3faddrs%3d[2001-1458-d00-13--58]-9671+137.138.152.114-9671%26alias%3dvocms0821.cern.ch#3323294&PrivNet=b9p12p5440.cern.ch&addrs=[2001-1458-303-12--100-54]-40255+188.185.209.215-40255&alias=b9p12p5440.cern.ch&noUDP>
+...
+001 (17035233.000.000) 2024-04-11 14:45:17 Job executing on host: <188.185.209.215:39971?CCBID=137.138.152.114:9687%3faddrs%3d[2001-1458-d00-13--58]-9687+137.138.152.114-9687%26alias%3dvocms0821.cern.ch#3338893&PrivNet=b9p12p5440.cern.ch&addrs=[2001-1458-303-12--100-54]-39971+188.185.209.215-39971&alias=b9p12p5440.cern.ch&noUDP>
+...
+040 (17035233.000.000) 2024-04-11 14:45:17 Finished transferring input files
+...
+006 (17035233.000.000) 2024-04-11 14:45:25 Image size of job updated: 2
+	12  -  MemoryUsage of job (MB)
+	3832  -  ResidentSetSize of job (KB)
+	11958  -  ProportionalSetSize of job (KB)
+...
+006 (17035233.000.000) 2024-04-11 14:49:48 Image size of job updated: 2670144
+	77  -  MemoryUsage of job (MB)
+	78412  -  ResidentSetSize of job (KB)
+	11958  -  ProportionalSetSize of job (KB)
+...
+040 (17035233.000.000) 2024-04-11 14:49:48 Started transferring output files
+...
+040 (17035233.000.000) 2024-04-11 14:49:48 Finished transferring output files
+...
+005 (17035233.000.000) 2024-04-11 14:49:49 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	86216  -  Run Bytes Sent By Job
+	2242200  -  Run Bytes Received By Job
+	86216  -  Total Bytes Sent By Job
+	2242200  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   121190     2250   2695397 
+	   Memory (MB)          :       12     3000      3072 
+
+	Job terminated of its own accord at 2024-04-11T19:49:48Z.
+...

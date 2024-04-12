@@ -43,6 +43,7 @@ from datacardHelpers import (
     sum_templates,
     get_effect_updown,
     get_year_updown,
+    rem_neg
 )
 
 rl.ParametericSample.PreferRooParametricHist = False
@@ -74,16 +75,16 @@ uncluste = {
 
 lp_systematics = {
     # original unc value
-    # "a" : 0.334/0.898,
-    # "b" : 0.349/0.957,
+    "a" : 0.334/0.898,
+    "b" : 0.349/0.957,
     
     # #some other test
     # "a" : 0.1,
     # "b" : 0.1,
     
     #some other test
-    "a" : 0.8,
-    "b" : 0.8,
+    # "a" : 0.8,
+    # "b" : 0.8,
 }
 
 parser = argparse.ArgumentParser()
@@ -129,6 +130,8 @@ add_bool_arg(parser, "mcstats", "add mc stats nuisances", default=True)
 add_bool_arg(parser, "bblite", "use barlow-beeston-lite method", default=True)
 
 args = parser.parse_args()
+
+#create datacards for individual year
 if args.year != "all":
     years = [args.year]
     full_lumi = LUMI[args.year]
@@ -239,7 +242,7 @@ if args.year != "all":
         "lumi_13TeV_correlated",
         "lumi_13TeV_1718",
     ]:
-        if key != f"lumi_13TeV_{args.year}":
+        if key != f"lumi_13TeV_{args.year}" and key not in f"lumi_13TeV_{args.year}":
             del nuisance_params[key]
 
 nuisance_params_dict = {
@@ -299,7 +302,7 @@ def get_templates(
         print("template_dir =",templates_dir )
         print("template =",templates_dir / f"templates_{year}.pkl" )
         with (templates_dir / f"templates_{year}.pkl").open("rb") as f:
-            templates_dict[year] = pkl.load(f)
+            templates_dict[year] = rem_neg(pkl.load(f))
 
     templates_summed: dict[str, Hist] = sum_templates(templates_dict, years)  # sum across years
     return templates_dict, templates_summed
@@ -474,7 +477,7 @@ def fill_regions(
                 for year in years:
                     if year not in syst.uncorr_years:
                         continue
-
+                    logging.info(f"year: {year}")
                     values_up, values_down = get_year_updown(
                         templates_dict,
                         sample_name,
@@ -483,6 +486,7 @@ def fill_regions(
                         blind_str,
                         year,
                         skey,
+                        years
                     )
                     #get summed templates with only the given year's shape shifted up and down by the ``skey`.
                     logger = logging.getLogger(f"validate_shapes_{region}_{sample_name}_{skey}_{year}")
@@ -624,6 +628,7 @@ def alphabet_fit(
             logging.debug("subtracting %s from qcd" % sample._name)
             initial_qcd2 -= sample.getExpectation(nominal=True)
             
+            #avoid negative value after the subtraction
         if np.any(initial_qcd1 < 0.0):
             initial_qcd1[np.where(initial_qcd1 < 0)] = 0
         if np.any(initial_qcd2 < 0.0):
@@ -641,8 +646,8 @@ def alphabet_fit(
             initial_qcd1 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd1))) ** qcd_params1
         )
         
-        sigmascale = 5
-        # sigmascale = 100        
+        # sigmascale = 5
+        sigmascale = 5        
         scaled_params2 = (
             initial_qcd2 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd2))) ** qcd_params2
         )
@@ -706,19 +711,25 @@ def alphabet_fit(
         passCh2b.addSample(pass_qcd_2b)
 
 def main(args):
+    #print years
+    print("Years are,",years)
+    
     # all SRs and CRs
     regions : List[str] = ["SR1a","SR1b","CR1","SR2a","SR2b","CR2"]
     regions_blinded = [region + "Blinded" for region in regions]
     regions = regions +  regions_blinded #only use blinded results now
     cur_dir = os.getcwd()
     print("current dir = ",cur_dir)
+    
     #normalized the path
     args.templates_dir = Path(args.templates_dir)
     args.cards_dir = Path(args.cards_dir)
-    #load templates
+    
+    # templates per region per year, templates per region summed across years
     templates_dict, templates_summed = get_templates(
         args.templates_dir, years,  args.scale_templates
-    )    
+    )
+        
     #apply lund plane sf
     process_lp_systematics(lp_systematics)
     model = rl.Model("HWWfullhad")

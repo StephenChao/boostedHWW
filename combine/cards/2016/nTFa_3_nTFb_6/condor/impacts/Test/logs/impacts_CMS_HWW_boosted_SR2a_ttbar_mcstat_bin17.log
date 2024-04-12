@@ -1,0 +1,40 @@
+000 (17034622.000.000) 2024-04-11 12:56:02 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8841_c4e4>
+...
+040 (17034622.000.000) 2024-04-11 13:01:10 Started transferring input files
+	Transferring to host: <188.185.206.63:46639?CCBID=137.138.152.114:9685%3faddrs%3d[2001-1458-d00-13--58]-9685+137.138.152.114-9685%26alias%3dvocms0821.cern.ch#3343366&PrivNet=b9p05p3069.cern.ch&addrs=[2001-1458-303-b--100-3c]-46639+188.185.206.63-46639&alias=b9p05p3069.cern.ch&noUDP>
+...
+001 (17034622.000.000) 2024-04-11 13:01:11 Job executing on host: <188.185.206.63:40643?CCBID=137.138.152.114:9687%3faddrs%3d[2001-1458-d00-13--58]-9687+137.138.152.114-9687%26alias%3dvocms0821.cern.ch#3340445&PrivNet=b9p05p3069.cern.ch&addrs=[2001-1458-303-b--100-3c]-40643+188.185.206.63-40643&alias=b9p05p3069.cern.ch&noUDP>
+...
+040 (17034622.000.000) 2024-04-11 13:01:11 Finished transferring input files
+...
+006 (17034622.000.000) 2024-04-11 13:01:20 Image size of job updated: 2
+	10  -  MemoryUsage of job (MB)
+	3824  -  ResidentSetSize of job (KB)
+	9232  -  ProportionalSetSize of job (KB)
+...
+006 (17034622.000.000) 2024-04-11 13:05:42 Image size of job updated: 2670144
+	73  -  MemoryUsage of job (MB)
+	73872  -  ResidentSetSize of job (KB)
+	9232  -  ProportionalSetSize of job (KB)
+...
+040 (17034622.000.000) 2024-04-11 13:05:42 Started transferring output files
+...
+040 (17034622.000.000) 2024-04-11 13:05:43 Finished transferring output files
+...
+005 (17034622.000.000) 2024-04-11 13:05:43 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	78204  -  Run Bytes Sent By Job
+	2188822  -  Run Bytes Received By Job
+	78204  -  Total Bytes Sent By Job
+	2188822  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   121118     2250   2761212 
+	   Memory (MB)          :       10     3000      3072 
+
+	Job terminated of its own accord at 2024-04-11T18:05:42Z.
+...

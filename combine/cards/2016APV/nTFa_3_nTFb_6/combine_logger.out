@@ -1,0 +1,651 @@
+INFO: (function: applyOptionsBase) FitterAlgoBase.cc: 113 -- Setting robust fit options to Tolerance=0.1 / Strategy=0 / Type,Algo=Minuit2,Migrad (note that defaults of CascadeMinimizer were taken where option not specified)
+INFO: (function: run) Combine.cc: 673 -- Floating the following parameters: 
+INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR1_Bin4 
+INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR2_Bin4 
+INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR1_Bin5 
+INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR2_Bin5 
+INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR1_Bin6 
+INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR2_Bin6 
+INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR1_Bin7 
+INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR2_Bin7 
+INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR1_Bin8 
+INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR2_Bin8 
+INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR1_Bin9 
+INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR2_Bin9 
+INFO: (function: run) Combine.cc: 708 -- Freezing the following parameters: 
+INFO: (function: run) Combine.cc: 711  BR_hww_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_VBF_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_VBF_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_VBF_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_VBF_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_VBF_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_VBF_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_VBF_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_VBF_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_VBF_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_VBF_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_WH_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_WH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_WH_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_WH_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_WH_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_WH_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_WH_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_WH_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_WH_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_WH_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_WH_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_WH_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ZH_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ggF_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ggF_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ggF_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ggF_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ggF_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ggF_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ggF_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ggF_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ggF_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ggF_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_rest_bkg_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_single_top_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_single_top_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_single_top_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_single_top_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_single_top_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_single_top_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_single_top_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_single_top_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_single_top_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_single_top_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_single_top_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_single_top_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttH_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_ttbar_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_wjets_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_VBF_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_VBF_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_VBF_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_VBF_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_VBF_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_VBF_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_VBF_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_VBF_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_VBF_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_single_top_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_single_top_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_single_top_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_single_top_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_single_top_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_single_top_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_single_top_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_single_top_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_VBF_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_WH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_WH_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_ZH_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_ZH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_ZH_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_ggF_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_rest_bkg_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_rest_bkg_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_single_top_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_ttH_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_ttH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_ttH_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_ttbar_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_ttbar_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_ttbar_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_wjets_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_wjets_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_wjets_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_lp_sf_region_a_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_lp_sf_region_b_In 
+INFO: (function: run) Combine.cc: 711  CMS_pileup_2016APV_In 
+INFO: (function: run) Combine.cc: 711  CMS_res_j_2016APV_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_In 
+INFO: (function: run) Combine.cc: 711  QCDscale_VH_In 
+INFO: (function: run) Combine.cc: 711  QCDscale_ggH_In 
+INFO: (function: run) Combine.cc: 711  QCDscale_qqH_In 
+INFO: (function: run) Combine.cc: 711  QCDscale_ttH_In 
+INFO: (function: run) Combine.cc: 711  QCDscale_ttbar_In 
+INFO: (function: run) Combine.cc: 711  pdf_Higgs_gg_In 
+INFO: (function: run) Combine.cc: 711  pdf_Higgs_qqbar_In 
+INFO: (function: run) Combine.cc: 711  pdf_Higgs_ttH_In 
+INFO: (function: run) Combine.cc: 711  pdf_gg_In 
+INFO: (function: run) Combine.cc: 711  pdf_qqbar_In 
+INFO: (function: run) Combine.cc: 711  ps_fsr_In 
+INFO: (function: run) Combine.cc: 711  ps_isr_In 
+INFO: (function: run) Combine.cc: 711  triggerEffSF_uncorrelated_In 
+INFO: (function: run) Combine.cc: 711  unclustered_Energy_In 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_CR1__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_single_top_CR1__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_CR1__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_rest_bkg_CR1__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_CR1Blinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_single_top_CR1Blinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_CR1Blinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_rest_bkg_CR1Blinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ggF_SR1a__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_VBF_SR1a__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_WH_SR1a__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ZH_SR1a__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ttH_SR1a__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_SR1a__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_single_top_SR1a__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_SR1a__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_rest_bkg_SR1a__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ggF_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_VBF_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_WH_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ZH_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ttH_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_single_top_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_rest_bkg_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ggF_SR1b__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_VBF_SR1b__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_WH_SR1b__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ZH_SR1b__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ttH_SR1b__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_SR1b__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_single_top_SR1b__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_SR1b__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_rest_bkg_SR1b__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ggF_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_VBF_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_WH_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ZH_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ttH_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_single_top_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_rest_bkg_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_CR2__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_single_top_CR2__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_CR2__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_rest_bkg_CR2__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_single_top_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_rest_bkg_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ggF_SR2a__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_VBF_SR2a__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_WH_SR2a__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ZH_SR2a__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ttH_SR2a__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_SR2a__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_single_top_SR2a__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_SR2a__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_rest_bkg_SR2a__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ggF_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_VBF_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_WH_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ZH_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ttH_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_single_top_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_rest_bkg_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ggF_SR2b__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_VBF_SR2b__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_WH_SR2b__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ZH_SR2b__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ttH_SR2b__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_SR2b__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_single_top_SR2b__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_SR2b__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_rest_bkg_SR2b__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ggF_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_VBF_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_WH_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ZH_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ttH_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_single_top_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_rest_bkg_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 711  n_exp_binCR1_proc_wjets 
+INFO: (function: run) Combine.cc: 711  n_exp_binCR1_proc_rest_bkg 
+INFO: (function: run) Combine.cc: 711  n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 711  n_exp_binCR1Blinded_proc_wjets 
+INFO: (function: run) Combine.cc: 711  n_exp_binCR1Blinded_proc_rest_bkg 
+INFO: (function: run) Combine.cc: 711  n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR1a_proc_wjets 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR1a_proc_rest_bkg 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR1a_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR1aBlinded_proc_wjets 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR1aBlinded_proc_rest_bkg 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR1aBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR1b_proc_wjets 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR1b_proc_rest_bkg 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR1bBlinded_proc_wjets 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR1bBlinded_proc_rest_bkg 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 711  n_exp_binCR2_proc_wjets 
+INFO: (function: run) Combine.cc: 711  n_exp_binCR2_proc_rest_bkg 
+INFO: (function: run) Combine.cc: 711  n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 711  n_exp_binCR2Blinded_proc_wjets 
+INFO: (function: run) Combine.cc: 711  n_exp_binCR2Blinded_proc_rest_bkg 
+INFO: (function: run) Combine.cc: 711  n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR2a_proc_wjets 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR2a_proc_rest_bkg 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR2a_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR2aBlinded_proc_wjets 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR2aBlinded_proc_rest_bkg 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR2aBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR2b_proc_wjets 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR2b_proc_rest_bkg 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR2bBlinded_proc_wjets 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR2bBlinded_proc_rest_bkg 
+INFO: (function: run) Combine.cc: 711  n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR1_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR1Blinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR1a_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR1aBlinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR1b_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR1bBlinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR2_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR2Blinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2a_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2aBlinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2b_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2bBlinded_obsOnly: in 20 x-bins
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: doFit) FitterAlgoBase.cc: 360 -- Running RobustFit for POI r. Configured with strategy 0  
+INFO: (function: findCrossing) FitterAlgoBase.cc: 406 -- Searching for crossing at nll = 0.494473, in the interval 1 < r < 40
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 427 -- r lvl-here lvl-there 	stepping 
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 4.900000    +0.32846  +0.49447    3.900000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 8.800000    -0.10391  +0.32846    3.900000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 6.070000    +0.22203  -0.10391    1.170000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 7.240000    +0.09472  +0.22203    1.170000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 8.410000    -0.05141  +0.09472    1.170000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 7.591000    +0.05259  -0.05141    0.351000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 7.942000    +0.00882  +0.05259    0.351000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 8.293000    -0.03676  +0.00882    0.351000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 8.047300    -0.00465  -0.03676    0.105300
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 7.973590    +0.00492  -0.00465    0.031590
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 8.005180    +0.00090  +0.00492    0.031590
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 8.036770    -0.00302  +0.00090    0.031590
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 8.014657    +0.00017  -0.00302    0.009477
+INFO: (function: findCrossing) FitterAlgoBase.cc: 406 -- Searching for crossing at nll = 0.494473, in the interval 1 < r < -40
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 427 -- r lvl-here lvl-there 	stepping 
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -3.100000    +0.29335  +0.49447    -4.100000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -7.200000    -0.27522  +0.29335    -4.100000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -4.330000    +0.15719  -0.27522    -1.230000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -5.560000    -0.00987  +0.15719    -1.230000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -4.699000    +0.11012  -0.00987    -0.369000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -5.068000    +0.05998  +0.11012    -0.369000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -5.437000    +0.00829  +0.05998    -0.369000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -5.806000    -0.04672  +0.00829    -0.369000
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -5.547700    -0.00789  -0.04672    -0.110700
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -5.470210    +0.00353  -0.00789    -0.033210
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -5.503420    -0.00132  +0.00353    -0.033210
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -5.480173    +0.00209  -0.00132    -0.009963
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -5.490136    +0.00065  +0.00209    -0.009963
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -5.500099    -0.00080  +0.00065    -0.009963
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -5.493125    +0.00022  -0.00080    -0.002989

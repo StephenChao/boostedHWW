@@ -89,8 +89,14 @@ def sum_templates(template_dict: dict, years: List[str]):
         combined[region] = sum(thists)
     return combined
 
+def rem_neg(template_dict: dict):
+    for _sample, template in template_dict.items():
+        template.values()[template.values() < 0] = 0
+    #remove negative value
+    return template_dict
+
 def get_year_updown(
-    templates_dict, sample, region, region_noblinded, blind_str, year, skey
+    templates_dict, sample, region, region_noblinded, blind_str, year, skey, years
 ):
     """
     Return templates with only the given year's shapes shifted up and down by the ``skey`` systematic.

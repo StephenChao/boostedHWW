@@ -1,4 +1,4 @@
-WARN $TMPDIR(/tmp/condor_execute/dir_51896/glide_0Zhn3M/execute/dir_234285) is not a writable directory setting $TMPDIR = $PWD
+WARN $TMPDIR(/tmp/glide_c9qc47/execute/dir_541387) is not a writable directory setting $TMPDIR = $PWD
 running impacts
 extracting tar
 Reading cached build data
@@ -10,14 +10,14 @@ Cleaning up removed directory:src/templates
 Done: ProjectRename
 /srv/CMSSW_11_3_4 is the CMSSW we have on the local worker node
 total 2.3M
-drwxr-xr-x 18 pcms02 pcms 4.0K Jul 19  2023 CMSSW_11_3_4
--rw-r--r--  1 pcms02 pcms    0 Apr  5 21:59 _condor_stderr
--rw-r--r--  1 pcms02 pcms  491 Apr  5 21:59 _condor_stdout
--rw-r--r--  1 pcms02 pcms 1.1M Apr  5 21:59 combined_withmasks.root
--rwxr-xr-x  1 pcms02 pcms 1.2K Apr  5 21:59 condor_exec.exe
--rw-r--r--  1 pcms02 pcms 1.2M Apr  5 21:59 higgsCombineSnapshot.MultiDimFit.mH125.root
--rwxr-xr-x  1 pcms02 pcms  15K Apr  5 21:59 run_blinded.sh
--rw-------  1 pcms02 pcms  13K Apr  5 21:59 x509up_u12976
+drwxr-xr-x 18 cmpilot001 cmpilot 4.0K Jul 19  2023 CMSSW_11_3_4
+-rw-r--r--  1 cmpilot001 cmpilot    0 Apr  9 23:08 _condor_stderr
+-rw-r--r--  1 cmpilot001 cmpilot  466 Apr  9 23:09 _condor_stdout
+-rw-r--r--  1 cmpilot001 cmpilot 1.1M Apr  9 23:08 combined_withmasks.root
+-rwxr-xr-x  1 cmpilot001 cmpilot 1.2K Apr  9 23:08 condor_exec.exe
+-rw-r--r--  1 cmpilot001 cmpilot 1.2M Apr  9 23:08 higgsCombineSnapshot.MultiDimFit.mH125.root
+-rwxr-xr-x  1 cmpilot001 cmpilot  15K Apr  9 23:08 run_blinded.sh
+-rw-------  1 cmpilot001 cmpilot  13K Apr  9 23:08 x509up_u12976
 Arguments: resonant=0 workspace=0 bfit=0 limits=0 significance=0 dfit=0 gofdata=0 goftoys=0 seed=44 numtoys=40
 actually run the following: 
 cards args=CR1=./CR1.txt CR1Blinded=./CR1Blinded.txt SR1a=./SR1a.txt SR1aBlinded=./SR1aBlinded.txt SR1b=./SR1b.txt SR1bBlinded=./SR1bBlinded.txt CR2=./CR2.txt CR2Blinded=./CR2Blinded.txt SR2a=./SR2a.txt SR2aBlinded=./SR2aBlinded.txt SR2b=./SR2b.txt SR2bBlinded=./SR2bBlinded.txt 
@@ -64,38 +64,38 @@ Robus Fit for POI
 Searching for crossing at nll = 0.494473 in the interval -0.147281, 7
       pdf_gg      lvl-here  lvl-there   stepping
 0.567447    +0.23080  +0.49447    0.714728
-1.282175    -0.56050  +0.23080    0.714728
-0.781865    +0.04903  -0.56050    0.214418
-0.996284    -0.18034  +0.04903    0.214418
-0.846191    -0.01494  -0.18034    0.064326
-0.801163    +0.03033  -0.01494    0.019298
-0.820461    +0.01120  +0.03033    0.019298
-0.839758    -0.00834  +0.01120    0.019298
-0.826250    +0.00537  -0.00834    0.005789
-0.832039    -0.00048  +0.00537    0.005789
-0.827987    +0.00361  -0.00048    0.001737
-0.829724    +0.00190  +0.00361    0.001737
-0.831460    +0.00015  +0.00190    0.001737
+1.282175    -0.56049  +0.23080    0.714728
+0.781865    +0.04903  -0.56049    0.214418
+0.996284    -0.18031  +0.04903    0.214418
+0.846191    -0.01491  -0.18031    0.064326
+0.801163    +0.03034  -0.01491    0.019298
+0.820461    +0.01121  +0.03034    0.019298
+0.839758    -0.00834  +0.01121    0.019298
+0.826250    +0.00538  -0.00834    0.005789
+0.832039    -0.00048  +0.00538    0.005789
+0.827987    +0.00365  -0.00048    0.001737
+0.829724    +0.00190  +0.00365    0.001737
+0.831460    +0.00014  +0.00190    0.001737
 Searching for crossing at nll = 0.494473 in the interval -0.147281, -7
       pdf_gg      lvl-here  lvl-there   stepping
 -0.832553    +0.25205  +0.49447    -0.685272
--1.517825    -0.47281  +0.25205    -0.685272
--1.038135    +0.08563  -0.47281    -0.205582
--1.243716    -0.12456  +0.08563    -0.205582
--1.099809    +0.02701  -0.12456    -0.061674
--1.161483    -0.03519  +0.02701    -0.061674
--1.118311    +0.00864  -0.03519    -0.018502
--1.136814    -0.01006  +0.00864    -0.018502
--1.123862    +0.00326  -0.01006    -0.005551
--1.129413    -0.00233  +0.00326    -0.005551
--1.125527    +0.00160  -0.00233    -0.001665
--1.127192    -0.00002  +0.00160    -0.001665
+-1.517825    -0.47265  +0.25205    -0.685272
+-1.038135    +0.08509  -0.47265    -0.205582
+-1.243716    -0.12461  +0.08509    -0.205582
+-1.099809    +0.02702  -0.12461    -0.061674
+-1.161483    -0.03550  +0.02702    -0.061674
+-1.118311    +0.00877  -0.03550    -0.018502
+-1.136814    -0.00993  +0.00877    -0.018502
+-1.123862    +0.00321  -0.00993    -0.005551
+-1.129413    -0.00241  +0.00321    -0.005551
+-1.125527    +0.00153  -0.00241    -0.001665
+-1.127192    -0.00015  +0.00153    -0.001665
 
  --- MultiDimFit ---
 Parameter impacts: 
   Parameter :   Best-fit               r            
-  pdf_gg    :   -0.147  -0.980/+0.979  +0.021/+0.000
-Done in 0.12 min (cpu), 0.12 min (real)
+  pdf_gg    :   -0.147  -0.980/+0.979  +0.000/-0.014
+Done in 0.11 min (cpu), 0.12 min (real)
 Printing Message Summary From ... combine_logger.out
 ----------------------------------------------
 Messages of type INFO : 422
@@ -421,51 +421,51 @@ INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.567447    +0.23080  +
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.282175    -0.56050  +0.23080    0.714728
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.282175    -0.56049  +0.23080    0.714728
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.781865    +0.04903  -0.56050    0.214418
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.781865    +0.04903  -0.56049    0.214418
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.996284    -0.18034  +0.04903    0.214418
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.996284    -0.18031  +0.04903    0.214418
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.846191    -0.01494  -0.18034    0.064326
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.846191    -0.01491  -0.18031    0.064326
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.801163    +0.03033  -0.01494    0.019298
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.801163    +0.03034  -0.01491    0.019298
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.820461    +0.01120  +0.03033    0.019298
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.820461    +0.01121  +0.03034    0.019298
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.839758    -0.00834  +0.01120    0.019298
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.839758    -0.00834  +0.01121    0.019298
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.826250    +0.00537  -0.00834    0.005789
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.826250    +0.00538  -0.00834    0.005789
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.832039    -0.00048  +0.00537    0.005789
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.832039    -0.00048  +0.00538    0.005789
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.827987    +0.00361  -0.00048    0.001737
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.827987    +0.00365  -0.00048    0.001737
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.829724    +0.00190  +0.00361    0.001737
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.829724    +0.00190  +0.00365    0.001737
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.831460    +0.00015  +0.00190    0.001737
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.831460    +0.00014  +0.00190    0.001737
 INFO: (function: findCrossing) FitterAlgoBase.cc: 406 -- Searching for crossing at nll = 0.494473, in the interval -0.147281 < pdf_gg < -7
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
@@ -478,50 +478,50 @@ INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.832553    +0.25205  
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.517825    -0.47281  +0.25205    -0.685272
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.517825    -0.47265  +0.25205    -0.685272
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.038135    +0.08563  -0.47281    -0.205582
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.038135    +0.08509  -0.47265    -0.205582
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.243716    -0.12456  +0.08563    -0.205582
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.243716    -0.12461  +0.08509    -0.205582
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.099809    +0.02701  -0.12456    -0.061674
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.099809    +0.02702  -0.12461    -0.061674
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.161483    -0.03519  +0.02701    -0.061674
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.161483    -0.03550  +0.02702    -0.061674
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.118311    +0.00864  -0.03519    -0.018502
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.118311    +0.00877  -0.03550    -0.018502
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.136814    -0.01006  +0.00864    -0.018502
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.136814    -0.00993  +0.00877    -0.018502
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.123862    +0.00326  -0.01006    -0.005551
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.123862    +0.00321  -0.00993    -0.005551
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.129413    -0.00233  +0.00326    -0.005551
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.129413    -0.00241  +0.00321    -0.005551
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.125527    +0.00160  -0.00233    -0.001665
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.125527    +0.00153  -0.00241    -0.001665
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.127192    -0.00002  +0.00160    -0.001665
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -1.127192    -0.00015  +0.00153    -0.001665
 INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
 DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0

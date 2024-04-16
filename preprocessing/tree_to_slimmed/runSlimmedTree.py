@@ -14,8 +14,8 @@ parser.add_option('--type',      action="store",type="string",dest="type"      ,
 parser.add_option('--test',      action="store",type="string",dest="test"      ,default="notest")
 (options, args) = parser.parse_args()
 
-TreeDir = "/data/bond/zhaoyz/Tree/V9/" + options.year + "/Merged/"
-SlimmedTreeDir = "/data/bond/zhaoyz/SlimmedTree/V6/" + options.year + "/"
+TreeDir = "/data/bond/zhaoyz/Tree/V10/" + options.year + "/Merged/"
+SlimmedTreeDir = "/data/bond/zhaoyz/SlimmedTree/V7/" + options.year + "/"
 if options.type == "Signal":
     for Files in os.listdir(TreeDir + options.type):
         if not Files.endswith("root"):continue

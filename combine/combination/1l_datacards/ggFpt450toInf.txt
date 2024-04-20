@@ -1,0 +1,72 @@
+# Datacard for <Channel (ggFpt450toInf) instance at 0x7fb3be8dd7c0> generated on 2024-04-09 08:34:07.773742
+imax 1 # number of categories ('bins' but here we are using shape templates)
+jmax 10 # number of samples minus 1
+kmax 57 # number of nuisance parameters
+shapes * ggFpt450toInf testModel.root testModel:ggFpt450toInf_$PROCESS testModel:ggFpt450toInf_$PROCESS_$SYSTEMATIC
+bin ggFpt450toInf
+observation 123.000
+bin                                          ggFpt450toInf  ggFpt450toInf  ggFpt450toInf  ggFpt450toInf  ggFpt450toInf  ggFpt450toInf  ggFpt450toInf  ggFpt450toInf  ggFpt450toInf  ggFpt450toInf  ggFpt450toInf
+process                                                ggF            VBF          ttbar          wjets      singletop          vjets        diboson       ewkvjets            ttH             WH             ZH
+process                                                 -1              0              1              2              3              4              5              6              7              8              9
+rate                                                 5.006          1.233         24.237         77.344          3.986          3.864         11.603          8.812          0.145          1.158          0.533
+AK8_JER shape                                       1.0000              -              -              -              -              -              -              -              -              -              -
+AK8_JER shape                                            -         1.0000              -              -              -              -              -              -              -              -              -
+AK8_JES shape                                       1.0000              -              -              -              -              -              -              -              -              -              -
+AK8_JES shape                                            -         1.0000              -              -              -              -              -              -              -              -              -
+AK8_JMR shape                                       1.0000              -              -              -              -              -              -              -              -              -              -
+AK8_JMR shape                                            -         1.0000              -              -              -              -              -              -              -              -              -
+AK8_JMS shape                                       1.0000              -              -              -              -              -              -              -              -              -              -
+AK8_JMS shape                                            -         1.0000              -              -              -              -              -              -              -              -              -
+AK8_UES shape                                       1.0000              -              -              -              -              -              -              -              -              -              -
+AK8_UES shape                                            -         1.0000              -              -              -              -              -              -              -              -              -
+BR_hww lnN                                   0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153
+CCMS_HWW_boostedL1Prefiring_Run2 lnN                1.0166  1.0136/1.0479         1.0156         1.0123  1.0333/1.0886         1.0042         1.0171  1.0094/1.0226  1.0124/1.0338         1.0090         1.0097
+CMS_HWW_boosted_PUIDSF_Run2 shape                   1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000
+CMS_HWW_boosted_W_d1kappa_EW_Run2 lnN                    -              -              -         1.0007              -              -              -              -              -              -              -
+CMS_HWW_boosted_W_d2kappa_EW_Run2 lnN                    -              -              -  0.9946/1.0054              -              -              -              -              -              -              -
+CMS_HWW_boosted_W_d3kappa_EW_Run2 lnN                    -              -              -         1.0007              -              -              -              -              -              -              -
+CMS_HWW_boosted_btagSFbcCorrelated lnN       0.9907/1.0382  0.9804/1.0508  0.9994/1.0832  0.9795/1.0687  1.0377/1.0990  0.9534/1.0858         1.0013  0.9988/1.0452  0.9764/1.3168  0.9352/1.1576  0.9690/1.0935
+CMS_HWW_boosted_btagSFbc_2016 lnN            0.9969/1.0093  0.9954/1.0145  0.9935/1.0267  0.9936/1.0155  0.9972/1.0721  0.9890/1.0295         1.0015  0.9830/1.0251  0.9769/1.0966  0.9666/1.0635  0.9880/1.0287
+CMS_HWW_boosted_btagSFbc_2017 lnN            0.9906/1.0161  0.9837/1.0186  0.9852/1.0321  0.9779/1.0413  0.9952/1.0361  0.9472/1.0663              -  0.9981/1.0155  0.9245/1.1765  0.9332/1.0682  0.9654/1.0455
+CMS_HWW_boosted_btagSFbc_2018 lnN            0.9941/1.0224  0.9890/1.0300  0.9965/1.0497  0.9907/1.0313  1.0121/1.0250  0.9981/1.0084              -  0.9966/1.0263  1.0168/1.1142  0.9595/1.1026  0.9825/1.0551
+CMS_HWW_boosted_btagSFlightCorrelated lnN           1.0001         1.0005         1.0021         1.0020         1.0002         1.0000         1.0008         1.0004         0.9979         1.0012         1.0019
+CMS_HWW_boosted_btagSFlight_2016 lnN                1.0003         1.0008         0.9999         1.0021         1.0003         1.0002         1.0008         1.0003         0.9986         1.0009         1.0008
+CMS_HWW_boosted_btagSFlight_2017 lnN                1.0002         1.0000         1.0001         1.0001         1.0000         1.0001         1.0001         1.0001         1.0002         1.0000         1.0000
+CMS_HWW_boosted_btagSFlight_2018 lnN                1.0001         1.0001         1.0024         1.0003         1.0000         1.0000         1.0000         1.0000         1.0001         1.0005         1.0015
+CMS_HWW_boosted_d1K_NLO_Run2 lnN                         -              -              -  0.9248/1.0752              -              -              -              -              -              -              -
+CMS_HWW_boosted_d2K_NLO_Run2 lnN                         -              -              -  0.9505/1.0495              -              -              -              -              -              -              -
+CMS_HWW_boosted_d3K_NLO_Run2 lnN                         -              -              -  0.9881/1.0119              -              -              -              -              -              -              -
+CMS_HWW_boosted_ele_identification_Run2 lnN         1.0034         1.0031         1.0028         1.0039         1.0036         1.0046         1.0021         1.0024         1.0049         1.0035         1.0036
+CMS_HWW_boosted_ele_isolation_Run2 lnN              1.0001              -         1.0002         1.0002         1.0000         1.0001         1.0003         1.0002         1.0000         1.0000         1.0001
+CMS_HWW_boosted_ele_reconstruction_Run2 lnN         1.0018         1.0017         1.0016         1.0020         1.0018         1.0017         1.0010         1.0016         1.0023         1.0017         1.0018
+CMS_HWW_boosted_ele_trigger_Run2 lnN                1.0012         1.0011         1.0012         1.0014         1.0014         1.0015         1.0006         1.0009         1.0014         1.0011         1.0010
+CMS_HWW_boosted_mu_identification_Run2 lnN          1.0008         1.0009         1.0008         1.0010         1.0007         1.0008         1.0008         1.0008         1.0007         1.0008         1.0008
+CMS_HWW_boosted_mu_isolation_Run2 lnN               1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0001              -         1.0000         1.0000         1.0000
+CMS_HWW_boosted_mu_trigger_Run2 lnN                 1.0018         1.0018         1.0015         1.0018         1.0013         1.0014         1.0016         1.0015         1.0018         1.0018         1.0017
+CMS_HWW_boosted_mu_trigger_iso_Run2 lnN             1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000              -         1.0000         1.0000         1.0000
+CMS_lumi_13TeV_1718 lnN                             1.0027         1.0027         1.0027         1.0027         1.0027         1.0027         1.0027         1.0027         1.0027         1.0027         1.0027
+CMS_lumi_13TeV_2016 lnN                             1.0026         1.0026         1.0026         1.0026         1.0026         1.0026         1.0026         1.0026         1.0026         1.0026         1.0026
+CMS_lumi_13TeV_2017 lnN                             1.0060         1.0060         1.0060         1.0060         1.0060         1.0060         1.0060         1.0060         1.0060         1.0060         1.0060
+CMS_lumi_13TeV_2018 lnN                             1.0065         1.0065         1.0065         1.0065         1.0065         1.0065         1.0065         1.0065         1.0065         1.0065         1.0065
+CMS_lumi_13TeV_corelated lnN                        1.0130         1.0130         1.0130         1.0130         1.0130         1.0130         1.0130         1.0130         1.0130         1.0130         1.0130
+PDF_scale lnN                                0.9810/1.0190  0.9790/1.0210              -              -              -              -              -              -  0.9700/1.0300  0.9830/1.0170  0.9870/1.0130
+PSFSR_VBF shape                                          -         1.0000              -              -              -              -              -              -              -              -              -
+PSFSR_ggF shape                                     1.0000              -              -              -              -              -              -              -              -              -              -
+PSISR_VBF shape                                          -         1.0000              -              -              -              -              -              -              -              -              -
+PSISR_ggF shape                                     1.0000              -              -              -              -              -              -              -              -              -              -
+QCD_scale lnN                                0.9610/1.0390  0.9970/1.0040              -              -              -              -              -              -  0.9080/1.0580  0.9930/1.0050  0.9700/1.0380
+ggFpt450toInf_mcstat_bin0 shape                     1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000
+ggFpt450toInf_mcstat_bin1 shape                     1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000
+ggFpt450toInf_mcstat_bin2 shape                     1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000
+ggFpt450toInf_mcstat_bin3 shape                     1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000
+ggFpt450toInf_mcstat_bin4 shape                     1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000
+ggFpt450toInf_mcstat_bin5 shape                     1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000
+ggFpt450toInf_mcstat_bin6 shape                     1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000
+ggFpt450toInf_mcstat_bin7 shape                     1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000
+ggFpt450toInf_mcstat_bin8 shape                     1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000
+muon_mini-isolation_SF lnN                   0.9800/1.0200  0.9800/1.0200  0.9800/1.0200  0.9800/1.0200  0.9800/1.0200  0.9800/1.0200  0.9800/1.0200  0.9800/1.0200  0.9800/1.0200  0.9800/1.0200  0.9800/1.0200
+taggereff lnN                                       1.3000         1.3000              -              -              -              -              -              -              -              -              -
+ttbarnormSF extArg testModel.root:testModel
+wjetsnormSF extArg testModel.root:testModel
+ttbarnormSF_effect_ggFpt450toInf_ttbar rateParam ggFpt450toInf ttbar (1*@0) ttbarnormSF
+wjetsnormSF_effect_ggFpt450toInf_wjets rateParam ggFpt450toInf wjets (1*@0) wjetsnormSF

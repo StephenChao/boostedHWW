@@ -131,26 +131,20 @@ seed=$seed numtoys=$numtoys"
 
 dataset=data_obs
 cards_dir="."
+ws=${cards_dir}/combined
+wsm=${ws}_withmasks
+wsm_snapshot=higgsCombineSnapshot.MultiDimFit.mH125
+
 CMS_PARAMS_LABEL="CMS_HWW_boosted"
+
+outsdir=${cards_dir}/outs
+mkdir -p $outsdir
 
 # ####################################################################################################
 # # Combine cards, text2workspace, fit, limits, significances, fitdiagnositcs, GoFs
 # ####################################################################################################
 # # # need to run this for large # of nuisances
 # # # https://cms-talk.web.cern.ch/t/segmentation-fault-in-combine/20735
-
-
-# outdir is the combined directory with the combine.txt datafile
-outdir=${cards_dir}/combined
-mkdir -p ${outdir}
-chmod +x ${outdir}
-
-logsdir=${outdir}/logs
-mkdir -p $logsdir
-chmod +x ${logsdir}
-
-combined_datacard=${outdir}/combined.txt
-ws=${outdir}/workspace.root
 
 # ADD REGIONS
 sr1="VBF"
@@ -171,11 +165,11 @@ if [ $workspace = 1 ]; then
     echo "  ${file##*/}"
     done
     echo "-------------------------"
-    combineCards.py $ccargs > $combined_datacard
+    combineCards.py $ccargs > $ws.txt
     echo "Running text2workspace"
-    text2workspace.py $combined_datacard --channel-masks -o $ws 2>&1 | tee $logsdir/text2workspace.txt
+    text2workspace.py $ws.txt --channel-masks -o $wsm.root 2>&1 | tee $outsdir/text2workspace.txt
 else
-    if [ ! -f "$ws" ]; then
+    if [ ! -f "$wsm.root" ]; then
         echo "Workspace doesn't exist! Use the -w|--workspace option to make workspace first"
         exit 1
     fi
@@ -187,18 +181,23 @@ if [ $significance = 1 ]; then
 
     # combine -M Significance -d $ws -m 125 -t -1 --expectSignal=1 --rMin -1 --rMax 5
 
-    combine -M Significance -d $ws -t -1 --expectSignal 1
+    combine -M Significance -d ${wsm}.root -t -1 --expectSignal 1 2>&1 | tee $outsdir/Significance.txt
 
 fi
 
 if [ $dfit_asimov = 1 ]; then
 
     echo "Fit Diagnostics"
-    combine -M FitDiagnostics -m 125 -d $ws \
+    combine -M FitDiagnostics -m 125 -d $wsm.root \
     -t -1 --expectSignal=1 --saveWorkspace --saveToys -n Asimov --ignoreCovWarning \
-    --saveShapes --saveNormalizations --saveWithUncertainties --saveOverallShapes 2>&1 | tee $logsdir/FitDiagnostics.txt
+    --saveShapes --saveNormalizations --saveWithUncertainties --saveOverallShapes 2>&1 | tee $outsdir/FitDiagnostics.txt
 
     # python diffNuisances.py fitDiagnostfitDiagnosticsAsimov.root --abs
+    combineTool.py -M ModifyDataSet ${wsm}.root:w ${wsm}_asimov.root:w:toy_asimov -d higgsCombineAsimov.FitDiagnostics.mH125.123456.root:toys/toy_asimov
+
+    echo "Fit Shapes"
+    PostFitShapesFromWorkspace --dataset toy_asimov -w ${wsm}_asimov.root --output FitShapesAsimov.root \
+    -m 125 -f fitDiagnosticsAsimov.root:fit_b --postfit --print 2>&1 | tee $outsdir/FitShapesAsimov.txt
 fi
 
 
@@ -208,16 +207,16 @@ if [ $limits = 1 ]; then
     # --saveWorkspace --saveToys --bypassFrequentistFit -s $seed \
     # --floatParameters r --toysFrequentist --run blind 2>&1 | tee $logsdir/AsymptoticLimits.txt
 
-    combine -M AsymptoticLimits --run expected -d $ws -t -1  -v 1 --expectSignal 1
+    combine -M AsymptoticLimits --run expected -d $wsm.root -t -1  -v 1 --expectSignal 1 2>&1 | tee $outsdir/AsymptoticLimits.txt
 fi
 
 
 if [ $impactsi = 1 ]; then
 
     echo "Initial fit for impacts"
-    combineTool.py -M Impacts -d $ws -t -1 --rMin -1 --rMax 2 -m 125 --robustFit 1 --doInitialFit --expectSignal 1
-    combineTool.py -M Impacts -d $ws -t -1 --rMin -1 --rMax 2 -m 125 --robustFit 1 --doFits --expectSignal 1 --parallel 50
-    combineTool.py -M Impacts -d $ws -t -1 --rMin -1 --rMax 2 -m 125 --robustFit 1 --output impacts.json --expectSignal 1
+    combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -1 --rMax 2 -m 125 --robustFit 1 --doInitialFit --expectSignal 1
+    combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -1 --rMax 2 -m 125 --robustFit 1 --doFits --expectSignal 1 --parallel 50
+    combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -1 --rMax 2 -m 125 --robustFit 1 --output impacts.json --expectSignal 1
     plotImpacts.py -i impacts.json -o impacts
 
 fi

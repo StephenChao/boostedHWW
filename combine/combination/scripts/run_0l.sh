@@ -231,8 +231,11 @@ ulimit -s unlimited
 
 if [ $workspace = 1 ]; then
     echo "Combining cards"
+    for file in $ccargs; do
+    echo "  ${file##*/}"
+    done
+    echo "-------------------------"
     combineCards.py $ccargs > $ws.txt
-
     echo "Running text2workspace"
     # text2workspace.py -D $dataset $ws.txt --channel-masks -o $wsm.root 2>&1 | tee $outsdir/text2workspace.txt
     # new version got rid of -D arg??

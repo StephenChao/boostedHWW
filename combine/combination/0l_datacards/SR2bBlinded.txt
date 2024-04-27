@@ -1,4 +1,4 @@
-# Datacard for <Channel (SR2bBlinded) instance at 0x7f06830b8790> generated on 2024-04-18 16:05:23.343058
+# Datacard for <Channel (SR2bBlinded) instance at 0x7fd020e67790> generated on 2024-04-27 12:15:00.728488
 imax 1 # number of categories ('bins' but here we are using shape templates)
 jmax 9 # number of samples minus 1
 kmax 44 # number of nuisance parameters
@@ -6,7 +6,7 @@ shapes * SR2bBlinded HWWfullhad.root HWWfullhad:SR2bBlinded_$PROCESS HWWfullhad:
 bin SR2bBlinded
 observation 11560.000
 bin                                        SR2bBlinded    SR2bBlinded    SR2bBlinded    SR2bBlinded    SR2bBlinded    SR2bBlinded    SR2bBlinded  SR2bBlinded  SR2bBlinded                     SR2bBlinded
-process                                            ggF            VBF         WH_sig         ZH_sig        ttH_sig          ttbar     single_top        wjets     rest_bkg  CMS_HWW_boosted_qcd_datadriven
+process                                            ggF            VBF             WH             ZH            ttH          ttbar     single_top        wjets     rest_bkg  CMS_HWW_boosted_qcd_datadriven
 process                                             -4             -3             -2             -1              0              1              2            3            4                               5
 rate                                             3.838          1.981          0.939          1.432          2.987        759.958         67.493     1317.920      152.549                           1.000
 BR_hww lnN                               0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153              -              -            -            -                               -

@@ -1,4 +1,4 @@
-# Datacard for <Channel (SR1a) instance at 0x7f068321f610> generated on 2024-04-18 16:05:23.242867
+# Datacard for <Channel (SR1a) instance at 0x7fd020fcd610> generated on 2024-04-27 12:15:00.601146
 imax 1 # number of categories ('bins' but here we are using shape templates)
 jmax 9 # number of samples minus 1
 kmax 50 # number of nuisance parameters
@@ -6,7 +6,7 @@ shapes * SR1a HWWfullhad.root HWWfullhad:SR1a_$PROCESS HWWfullhad:SR1a_$PROCESS_
 bin SR1a
 observation 7339.000
 bin                                               SR1a           SR1a           SR1a           SR1a           SR1a           SR1a           SR1a      SR1a      SR1a                            SR1a
-process                                            ggF            VBF         WH_sig         ZH_sig        ttH_sig          ttbar     single_top     wjets  rest_bkg  CMS_HWW_boosted_qcd_datadriven
+process                                            ggF            VBF             WH             ZH            ttH          ttbar     single_top     wjets  rest_bkg  CMS_HWW_boosted_qcd_datadriven
 process                                             -4             -3             -2             -1              0              1              2         3         4                               5
 rate                                            17.929          8.822          2.486          3.798          4.286        610.753        123.907  1213.143   259.528                           1.000
 BR_hww lnN                               0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153              -              -         -         -                               -

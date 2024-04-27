@@ -161,9 +161,9 @@ sig_keys = [
     "ttH",
 ]
 for key in sig_keys:
-    # mc_samples[key] = key
+    mc_samples[key] = key
     # temporary solution for WH/ZH/ttH as signal
-    mc_samples[key] = key + "_sig" if key in ["WH","ZH","ttH"] else key
+    # mc_samples[key] = key + "_sig" if key in ["WH","ZH","ttH"] else key
         
 all_mc = list(mc_samples.keys())
 logging.info("all MC = %s" % all_mc)

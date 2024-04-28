@@ -64,14 +64,23 @@ def main(args):
     print(*ps, sep="\n")
 
     res_str = "-r" if args.resonant else ""
-    commands = [f"run_blinded.sh {res_str} -i"] + [
-        f"run_blinded.sh {res_str} --impactsf {p}" for p in ps
+    
+    #when running combination
+    commands = [f"run_combined.sh {res_str} -i"] + [
+        f"run_combined.sh {res_str} --impactsf {p}" for p in ps
     ]
+
+    #when running individually
+    # commands = [f"run_blinded.sh {res_str} -i"] + [
+    #     f"run_blinded.sh {res_str} --impactsf {p}" for p in ps
+    # ]
+    
     impactfiles = ["higgsCombine_initialFit_impacts.MultiDimFit.mH125.root"] + [
         f"higgsCombine_paramFit_impacts_{p}.MultiDimFit.mH125.root" for p in ps
     ]
 
-    collect_command = f"/ospool/cms-user/yuzhe/NanoNtupleChain/boostedHWW/combine/scripts/run_blinded.sh {res_str} --impactsc {','.join(ps)}"
+    # collect_command = f"/ospool/cms-user/yuzhe/NanoNtupleChain/boostedHWW/combine/scripts/run_blinded.sh {res_str} --impactsc {','.join(ps)}"
+    collect_command = f"/ospool/cms-user/yuzhe/NanoNtupleChain/boostedHWW/combine/combination/scripts/run_combined.sh {res_str} --impactsc {','.join(ps)}"
     # collect_command = f"run_blinded.sh {res_str} --impactsc {','.join(ps)}"
 
     if args.local:

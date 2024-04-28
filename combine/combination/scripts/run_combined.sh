@@ -208,14 +208,14 @@ echo "maskunblinded=${maskunblindedargs}"
 echo "Start running 1l parameters:"
 
 # ADD REGIONS
-sr1="VBF"
-sr2="ggFpt250to300"
-sr3="ggFpt300to450"
-sr4="ggFpt450toInf"
-topcr="TopCR"
-wjetscr="WJetsCR"
+VBF="VBF"
+ggFpt250to300="ggFpt250to300"
+ggFpt300to450="ggFpt300to450"
+ggFpt450toInf="ggFpt450toInf"
+TopCR="TopCR"
+WJetsCR="WJetsCR"
 
-ccargs_1l="SR1=${cards_dir}/${sr1}.txt SR2=${cards_dir}/${sr2}.txt SR3=${cards_dir}/${sr3}.txt SR4=${cards_dir}/${sr4}.txt topcr=${cards_dir}/${topcr}.txt wjetscr=${cards_dir}/${wjetscr}.txt"
+ccargs_1l="VBF=${cards_dir}/${VBF}.txt ggFpt250to300=${cards_dir}/${ggFpt250to300}.txt ggFpt300to450=${cards_dir}/${ggFpt300to450}.txt ggFpt450toInf=${cards_dir}/${ggFpt450toInf}.txt TopCR=${cards_dir}/${TopCR}.txt WJetsCR=${cards_dir}/${WJetsCR}.txt"
 echo "cards args for 1l: ${ccargs_1l}"
 
 
@@ -224,8 +224,8 @@ ccargs+=" "
 ccargs+=${ccargs_1l}
 
 #first we have to mask 1l information, and run b-only fit for 0l, and un-mask 1l in post-fit
-mask1l="mask_${sr1}=1,mask_${sr2}=1,mask_${sr3}=1,mask_${sr4}=1,mask_${topcr}=1,mask_${wjetscr}=1"
-ubmask1l="mask_${sr1}=0,mask_${sr2}=0,mask_${sr3}=0,mask_${sr4}=0,mask_${topcr}=0,mask_${wjetscr}=0"
+mask1l="mask_${VBF}=1,mask_${ggFpt250to300}=1,mask_${ggFpt300to450}=1,mask_${ggFpt450toInf}=1,mask_${TopCR}=1,mask_${WJetsCR}=1"
+ubmask1l="mask_${VBF}=0,mask_${ggFpt250to300}=0,mask_${ggFpt300to450}=0,mask_${ggFpt450toInf}=0,mask_${TopCR}=0,mask_${WJetsCR}=0"
 
 #un-mask 1l in the end
 unblindedparams+=",${ubmask1l}"
@@ -316,10 +316,12 @@ fi
 if [ $dfit_asimov = 1 ]; then
     echo "Fit Diagnostics on Asimov dataset(MC unblinded)"
     combine -M FitDiagnostics -m 125 -d ${wsm_snapshot}.root --snapshotName MultiDimFit \
-    -t -1 --expectSignal=1 --toysFrequentist --bypassFrequentistFit --saveWorkspace --saveToys \
+    -t -1 --expectSignal=1 --toysFrequentist --bypassFrequentistFit --saveWorkspace --saveToys --ignoreCovWarning --cminDefaultMinimizerStrategy 0 \
     ${unblindedparams} --floatParameters ${freezeparamsblinded},r \
-    --cminDefaultMinimizerStrategy 1  --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
-    -n Asimov --ignoreCovWarning -v 9 2>&1 | tee $outsdir/FitDiagnosticsAsimov.txt
+    --saveShapes --saveNormalizations --saveWithUncertainties --saveOverallShapes --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=5000000 \
+    -n Asimov -v 9 2>&1 | tee $outsdir/FitDiagnosticsAsimov.txt
+
+    # use  --saveOverallShapes --saveWithUncertainties --saveShapes --saveNormalizations  to save uncertainties
 
     combineTool.py -M ModifyDataSet ${wsm}.root:w ${wsm}_asimov.root:w:toy_asimov -d higgsCombineAsimov.FitDiagnostics.mH125.123456.root:toys/toy_asimov
 
@@ -352,7 +354,7 @@ fi
 
 if [ $impactsi = 1 ]; then
     echo "Initial fit for impacts"
-    
+
     combineTool.py -M Impacts --snapshotName MultiDimFit -m 125 -n "impacts" \
     -t -1 --bypassFrequentistFit --toysFrequentist --expectSignal 1 --rMin -40 --rMax 40\
     -d ${wsm_snapshot}.root --doInitialFit --robustFit 1 \

@@ -1,0 +1,72 @@
+000 (17076758.000.000) 2024-04-28 12:45:47 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8741_2d6c>
+...
+040 (17076758.000.000) 2024-04-28 12:46:11 Started transferring input files
+	Transferring to host: <172.28.4.11:32943?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9641#10950780%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9627#259758&PrivNet=ttcms032-7932560.0-lcg2593.gridpp.rl.ac.uk&addrs=[2001-630-54-4-82f6-ddf8-1000-f]-32943+172.28.4.11-32943&alias=ttcms032-7932560.0-lcg2593.gridpp.rl.ac.uk&noUDP>
+...
+001 (17076758.000.000) 2024-04-28 12:46:13 Job executing on host: <172.28.4.11:33359?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9651#10915712%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9655#256163&PrivNet=ttcms032-7932560.0-lcg2593.gridpp.rl.ac.uk&addrs=[2001-630-54-4-82f6-ddf8-1000-f]-33359+172.28.4.11-33359&alias=ttcms032-7932560.0-lcg2593.gridpp.rl.ac.uk&noUDP>
+...
+040 (17076758.000.000) 2024-04-28 12:46:13 Finished transferring input files
+...
+006 (17076758.000.000) 2024-04-28 12:46:23 Image size of job updated: 2
+	9  -  MemoryUsage of job (MB)
+	6500  -  ResidentSetSize of job (KB)
+	9179  -  ProportionalSetSize of job (KB)
+...
+006 (17076758.000.000) 2024-04-28 12:46:33 Image size of job updated: 2517216
+	53  -  MemoryUsage of job (MB)
+	53456  -  ResidentSetSize of job (KB)
+	9179  -  ProportionalSetSize of job (KB)
+...
+040 (17076758.000.000) 2024-04-28 12:46:33 Started transferring output files
+...
+040 (17076758.000.000) 2024-04-28 12:46:33 Finished transferring output files
+...
+007 (17076758.000.000) 2024-04-28 12:46:34 Shadow exception!
+	Error from slot1_3@glidein_45_76860756@ttcms032-7932560.0-lcg2593.gridpp.rl.ac.uk: STARTER at 172.28.4.11 failed to send file(s) to <192.170.231.212:9618>: |Error: reading from file /pool/condor/dir_2406247/glide_N43kBQ/execute/dir_225864/higgsCombine_paramFit_impacts_CMS_HWW_boosted_CR2_mcstat_bin19.MultiDimFit.mH125.root: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <130.246.221.248:33241>
+	1395  -  Run Bytes Sent By Job
+	2860947  -  Run Bytes Received By Job
+...
+012 (17076758.000.000) 2024-04-28 12:46:34 Job was held.
+	Error from slot1_3@glidein_45_76860756@ttcms032-7932560.0-lcg2593.gridpp.rl.ac.uk: STARTER at 172.28.4.11 failed to send file(s) to <192.170.231.212:9618>: |Error: reading from file /pool/condor/dir_2406247/glide_N43kBQ/execute/dir_225864/higgsCombine_paramFit_impacts_CMS_HWW_boosted_CR2_mcstat_bin19.MultiDimFit.mH125.root: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <130.246.221.248:33241>
+	Code 13 Subcode 2
+...
+000 (17076887.000.000) 2024-04-28 13:00:57 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8741_2d6c>
+...
+040 (17076887.000.000) 2024-04-28 13:01:03 Started transferring input files
+	Transferring to host: <192.168.1.10:38855?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9691#10898275%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9627#259833&PrivNet=node010.local&addrs=192.168.1.10-38855&alias=node010.local&noUDP>
+...
+001 (17076887.000.000) 2024-04-28 13:01:08 Job executing on host: <192.168.1.10:43635?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9643#10960099%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9677#259245&PrivNet=node010.local&addrs=192.168.1.10-43635&alias=node010.local&noUDP>
+...
+040 (17076887.000.000) 2024-04-28 13:01:08 Finished transferring input files
+...
+006 (17076887.000.000) 2024-04-28 13:01:16 Image size of job updated: 2
+	10  -  MemoryUsage of job (MB)
+	3800  -  ResidentSetSize of job (KB)
+	10165  -  ProportionalSetSize of job (KB)
+...
+006 (17076887.000.000) 2024-04-28 13:02:31 Image size of job updated: 2957820
+	544  -  MemoryUsage of job (MB)
+	556568  -  ResidentSetSize of job (KB)
+	10165  -  ProportionalSetSize of job (KB)
+...
+040 (17076887.000.000) 2024-04-28 13:02:32 Started transferring output files
+...
+040 (17076887.000.000) 2024-04-28 13:02:32 Finished transferring output files
+...
+005 (17076887.000.000) 2024-04-28 13:02:33 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:09, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:09, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	76828  -  Run Bytes Sent By Job
+	2860948  -  Run Bytes Received By Job
+	76828  -  Total Bytes Sent By Job
+	2860948  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   121755     3000   2682522 
+	   Memory (MB)          :       10     3000      3072 
+
+	Job terminated of its own accord at 2024-04-28T18:02:31Z.
+...

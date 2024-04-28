@@ -1,0 +1,718 @@
+WARN $TMPDIR(/pool/condor/dir_2202498/glide_QzFbKq/execute/dir_193467) is not a writable directory setting $TMPDIR = $PWD
+running impacts
+extracting tar
+Reading cached build data
+Cleaning up removed directory:src/cards
+Cleaning up removed directory:src/eoscards
+Cleaning up removed directory:src/eostemplates
+Cleaning up removed directory:src/postprocessing
+Cleaning up removed directory:src/templates
+Done: ProjectRename
+/srv/CMSSW_11_3_4 is the CMSSW we have on the local worker node
+total 2.8M
+drwxr-xr-x. 18 cmsplt01 zh 4.0K Jul 19  2023 CMSSW_11_3_4
+-rw-r--r--.  1 cmsplt01 zh    0 Apr 28 20:00 _condor_stderr
+-rw-r--r--.  1 cmsplt01 zh  486 Apr 28 20:04 _condor_stdout
+-rw-r--r--.  1 cmsplt01 zh 1.4M Apr 28 20:00 combined_withmasks.root
+-rwxr-xr-x.  1 cmsplt01 zh 1.2K Apr 28 20:00 condor_exec.exe
+-rw-r--r--.  1 cmsplt01 zh 1.4M Apr 28 20:00 higgsCombineSnapshot.MultiDimFit.mH125.root
+-rwxr-xr-x.  1 cmsplt01 zh  15K Apr 28 20:00 run_combined.sh
+-rw-------.  1 cmsplt01 zh  12K Apr 28 20:00 x509up_u12976
+Arguments: resonant=0 workspace=0 bfit=0 limits=0 significance=0 dfit=0 gofdata=0 goftoys=0 seed=44 numtoys=40
+Start running 0l parameters:
+cards args=CR1=./CR1.txt CR1Blinded=./CR1Blinded.txt SR1a=./SR1a.txt SR1aBlinded=./SR1aBlinded.txt SR1b=./SR1b.txt SR1bBlinded=./SR1bBlinded.txt CR2=./CR2.txt CR2Blinded=./CR2Blinded.txt SR2a=./SR2a.txt SR2aBlinded=./SR2aBlinded.txt SR2b=./SR2b.txt SR2bBlinded=./SR2bBlinded.txt 
+maskblinded=mask_SR1a=0,mask_SR1b=0,mask_CR1=0,mask_SR1aBlinded=1,mask_SR1bBlinded=1,mask_CR1Blinded=1,mask_SR2a=0,mask_SR2b=0,mask_CR2=0,mask_SR2aBlinded=1,mask_SR2bBlinded=1,mask_CR2Blinded=1
+maskunblinded=mask_SR1a=1,mask_SR1b=1,mask_CR1=1,mask_SR1aBlinded=0,mask_SR1bBlinded=0,mask_CR1Blinded=0,mask_SR2a=1,mask_SR2b=1,mask_CR2=1,mask_SR2aBlinded=0,mask_SR2bBlinded=0,mask_CR2Blinded=0
+mask args:
+mask_SR1a=0,mask_SR1b=0,mask_CR1=0,mask_SR1aBlinded=1,mask_SR1bBlinded=1,mask_CR1Blinded=1,mask_SR2a=0,mask_SR2b=0,mask_CR2=0,mask_SR2aBlinded=1,mask_SR2bBlinded=1,mask_CR2Blinded=1
+set params:
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin4=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin4=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin5=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin5=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin6=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin6=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin7=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin7=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin8=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin8=0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin9=0,CMS_HWW_boosted_tf_dataResidual_CR2_Bin9=0
+freeze params:
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin4,CMS_HWW_boosted_tf_dataResidual_CR2_Bin4,CMS_HWW_boosted_tf_dataResidual_CR1_Bin5,CMS_HWW_boosted_tf_dataResidual_CR2_Bin5,CMS_HWW_boosted_tf_dataResidual_CR1_Bin6,CMS_HWW_boosted_tf_dataResidual_CR2_Bin6,CMS_HWW_boosted_tf_dataResidual_CR1_Bin7,CMS_HWW_boosted_tf_dataResidual_CR2_Bin7,CMS_HWW_boosted_tf_dataResidual_CR1_Bin8,CMS_HWW_boosted_tf_dataResidual_CR2_Bin8,CMS_HWW_boosted_tf_dataResidual_CR1_Bin9,CMS_HWW_boosted_tf_dataResidual_CR2_Bin9
+unblinded params:
+--freezeParameters var{.*_In},var{.*__norm},var{n_exp_.*} --setParameters mask_SR1a=0,mask_SR1b=0,mask_CR1=0,mask_SR1aBlinded=1,mask_SR1bBlinded=1,mask_CR1Blinded=1,mask_SR2a=0,mask_SR2b=0,mask_CR2=0,mask_SR2aBlinded=1,mask_SR2bBlinded=1,mask_CR2Blinded=1
+cards args for 0l: CR1=./CR1.txt CR1Blinded=./CR1Blinded.txt SR1a=./SR1a.txt SR1aBlinded=./SR1aBlinded.txt SR1b=./SR1b.txt SR1bBlinded=./SR1bBlinded.txt CR2=./CR2.txt CR2Blinded=./CR2Blinded.txt SR2a=./SR2a.txt SR2aBlinded=./SR2aBlinded.txt SR2b=./SR2b.txt SR2bBlinded=./SR2bBlinded.txt 
+maskblinded=mask_SR1a=0,mask_SR1b=0,mask_CR1=0,mask_SR1aBlinded=1,mask_SR1bBlinded=1,mask_CR1Blinded=1,mask_SR2a=0,mask_SR2b=0,mask_CR2=0,mask_SR2aBlinded=1,mask_SR2bBlinded=1,mask_CR2Blinded=1
+maskunblinded=mask_SR1a=1,mask_SR1b=1,mask_CR1=1,mask_SR1aBlinded=0,mask_SR1bBlinded=0,mask_CR1Blinded=0,mask_SR2a=1,mask_SR2b=1,mask_CR2=1,mask_SR2aBlinded=0,mask_SR2bBlinded=0,mask_CR2Blinded=0
+Start running 1l parameters:
+cards args for 1l: VBF=./VBF.txt ggFpt250to300=./ggFpt250to300.txt ggFpt300to450=./ggFpt300to450.txt ggFpt450toInf=./ggFpt450toInf.txt TopCR=./TopCR.txt WJetsCR=./WJetsCR.txt
+total parameters:
+total cards args=CR1=./CR1.txt CR1Blinded=./CR1Blinded.txt SR1a=./SR1a.txt SR1aBlinded=./SR1aBlinded.txt SR1b=./SR1b.txt SR1bBlinded=./SR1bBlinded.txt CR2=./CR2.txt CR2Blinded=./CR2Blinded.txt SR2a=./SR2a.txt SR2aBlinded=./SR2aBlinded.txt SR2b=./SR2b.txt SR2bBlinded=./SR2bBlinded.txt  VBF=./VBF.txt ggFpt250to300=./ggFpt250to300.txt ggFpt300to450=./ggFpt300to450.txt ggFpt450toInf=./ggFpt450toInf.txt TopCR=./TopCR.txt WJetsCR=./WJetsCR.txt
+mask1l=mask_VBF=1,mask_ggFpt250to300=1,mask_ggFpt300to450=1,mask_ggFpt450toInf=1,mask_TopCR=1,mask_WJetsCR=1
+un-mask1l=mask_VBF=0,mask_ggFpt250to300=0,mask_ggFpt300to450=0,mask_ggFpt450toInf=0,mask_TopCR=0,mask_WJetsCR=0
+total unblinded para=--freezeParameters var{.*_In},var{.*__norm},var{n_exp_.*} --setParameters mask_SR1a=0,mask_SR1b=0,mask_CR1=0,mask_SR1aBlinded=1,mask_SR1bBlinded=1,mask_CR1Blinded=1,mask_SR2a=0,mask_SR2b=0,mask_CR2=0,mask_SR2aBlinded=1,mask_SR2bBlinded=1,mask_CR2Blinded=1,mask_VBF=0,mask_ggFpt250to300=0,mask_ggFpt300to450=0,mask_ggFpt450toInf=0,mask_TopCR=0,mask_WJetsCR=0
+Impact scan for CMS_HWW_boosted_tf_dataResidual_CR2_Bin18
+ <<< Combine >>> 
+>>> random number generator seed is 123456
+   Options for Robust Minimizer :: 
+        Tolerance  0.1
+        Strategy   0
+        Type,Algo  Minuit2,Migrad
+>>> method used is MultiDimFit
+Set Default Value of Parameter mask_SR1a To : 0
+Set Default Value of Parameter mask_SR1b To : 0
+Set Default Value of Parameter mask_CR1 To : 0
+Set Default Value of Parameter mask_SR1aBlinded To : 1
+Set Default Value of Parameter mask_SR1bBlinded To : 1
+Set Default Value of Parameter mask_CR1Blinded To : 1
+Set Default Value of Parameter mask_SR2a To : 0
+Set Default Value of Parameter mask_SR2b To : 0
+Set Default Value of Parameter mask_CR2 To : 0
+Set Default Value of Parameter mask_SR2aBlinded To : 1
+Set Default Value of Parameter mask_SR2bBlinded To : 1
+Set Default Value of Parameter mask_CR2Blinded To : 1
+Set Default Value of Parameter mask_VBF To : 0
+Set Default Value of Parameter mask_ggFpt250to300 To : 0
+Set Default Value of Parameter mask_ggFpt300to450 To : 0
+Set Default Value of Parameter mask_ggFpt450toInf To : 0
+Set Default Value of Parameter mask_TopCR To : 0
+Set Default Value of Parameter mask_WJetsCR To : 0
+Redefining the POIs to be: RooArgSet:: = (r)
+Set floating the following parameters: RooArgSet:: = (CMS_HWW_boosted_tf_dataResidual_CR1_Bin4,CMS_HWW_boosted_tf_dataResidual_CR2_Bin4,CMS_HWW_boosted_tf_dataResidual_CR1_Bin5,CMS_HWW_boosted_tf_dataResidual_CR2_Bin5,CMS_HWW_boosted_tf_dataResidual_CR1_Bin6,CMS_HWW_boosted_tf_dataResidual_CR2_Bin6,CMS_HWW_boosted_tf_dataResidual_CR1_Bin7,CMS_HWW_boosted_tf_dataResidual_CR2_Bin7,CMS_HWW_boosted_tf_dataResidual_CR1_Bin8,CMS_HWW_boosted_tf_dataResidual_CR2_Bin8,CMS_HWW_boosted_tf_dataResidual_CR1_Bin9,CMS_HWW_boosted_tf_dataResidual_CR2_Bin9)
+Freezing the following parameters: RooArgSet:: = (AK8_JER_In,AK8_JES_In,AK8_JMR_In,AK8_JMS_In,AK8_UES_In,BR_hww_In,CCMS_HWW_boostedL1Prefiring_Run2_In,CMS_HWW_boosted_CR1_mcstat_bin0_In,CMS_HWW_boosted_CR1_mcstat_bin1_In,CMS_HWW_boosted_CR1_mcstat_bin10_In,CMS_HWW_boosted_CR1_mcstat_bin11_In,CMS_HWW_boosted_CR1_mcstat_bin12_In,CMS_HWW_boosted_CR1_mcstat_bin13_In,CMS_HWW_boosted_CR1_mcstat_bin14_In,CMS_HWW_boosted_CR1_mcstat_bin15_In,CMS_HWW_boosted_CR1_mcstat_bin16_In,CMS_HWW_boosted_CR1_mcstat_bin17_In,CMS_HWW_boosted_CR1_mcstat_bin18_In,CMS_HWW_boosted_CR1_mcstat_bin19_In,CMS_HWW_boosted_CR1_mcstat_bin2_In,CMS_HWW_boosted_CR1_mcstat_bin3_In,CMS_HWW_boosted_CR1_mcstat_bin4_In,CMS_HWW_boosted_CR1_mcstat_bin5_In,CMS_HWW_boosted_CR1_mcstat_bin6_In,CMS_HWW_boosted_CR1_mcstat_bin7_In,CMS_HWW_boosted_CR1_mcstat_bin8_In,CMS_HWW_boosted_CR1_mcstat_bin9_In,CMS_HWW_boosted_CR2_mcstat_bin0_In,CMS_HWW_boosted_CR2_mcstat_bin1_In,CMS_HWW_boosted_CR2_mcstat_bin10_In,CMS_HWW_boosted_CR2_mcstat_bin11_In,CMS_HWW_boosted_CR2_mcstat_bin12_In,CMS_HWW_boosted_CR2_mcstat_bin13_In,CMS_HWW_boosted_CR2_mcstat_bin14_In,CMS_HWW_boosted_CR2_mcstat_bin15_In,CMS_HWW_boosted_CR2_mcstat_bin16_In,CMS_HWW_boosted_CR2_mcstat_bin17_In,CMS_HWW_boosted_CR2_mcstat_bin18_In,CMS_HWW_boosted_CR2_mcstat_bin19_In,CMS_HWW_boosted_CR2_mcstat_bin2_In,CMS_HWW_boosted_CR2_mcstat_bin3_In,CMS_HWW_boosted_CR2_mcstat_bin4_In,CMS_HWW_boosted_CR2_mcstat_bin5_In,CMS_HWW_boosted_CR2_mcstat_bin6_In,CMS_HWW_boosted_CR2_mcstat_bin7_In,CMS_HWW_boosted_CR2_mcstat_bin8_In,CMS_HWW_boosted_CR2_mcstat_bin9_In,CMS_HWW_boosted_PUIDSF_Run2_In,CMS_HWW_boosted_SR1a_mcstat_bin0_In,CMS_HWW_boosted_SR1a_mcstat_bin1_In,CMS_HWW_boosted_SR1a_mcstat_bin10_In,CMS_HWW_boosted_SR1a_mcstat_bin11_In,CMS_HWW_boosted_SR1a_mcstat_bin12_In,CMS_HWW_boosted_SR1a_mcstat_bin13_In,CMS_HWW_boosted_SR1a_mcstat_bin14_In,CMS_HWW_boosted_SR1a_mcstat_bin15_In,CMS_HWW_boosted_SR1a_mcstat_bin16_In,CMS_HWW_boosted_SR1a_mcstat_bin17_In,CMS_HWW_boosted_SR1a_mcstat_bin18_In,CMS_HWW_boosted_SR1a_mcstat_bin19_In,CMS_HWW_boosted_SR1a_mcstat_bin2_In,CMS_HWW_boosted_SR1a_mcstat_bin3_In,CMS_HWW_boosted_SR1a_mcstat_bin4_In,CMS_HWW_boosted_SR1a_mcstat_bin5_In,CMS_HWW_boosted_SR1a_mcstat_bin6_In,CMS_HWW_boosted_SR1a_mcstat_bin7_In,CMS_HWW_boosted_SR1a_mcstat_bin8_In,CMS_HWW_boosted_SR1a_mcstat_bin9_In,CMS_HWW_boosted_SR1b_mcstat_bin0_In,CMS_HWW_boosted_SR1b_mcstat_bin1_In,CMS_HWW_boosted_SR1b_mcstat_bin10_In,CMS_HWW_boosted_SR1b_mcstat_bin11_In,CMS_HWW_boosted_SR1b_mcstat_bin12_In,CMS_HWW_boosted_SR1b_mcstat_bin13_In,CMS_HWW_boosted_SR1b_mcstat_bin14_In,CMS_HWW_boosted_SR1b_mcstat_bin15_In,CMS_HWW_boosted_SR1b_mcstat_bin16_In,CMS_HWW_boosted_SR1b_mcstat_bin17_In,CMS_HWW_boosted_SR1b_mcstat_bin18_In,CMS_HWW_boosted_SR1b_mcstat_bin19_In,CMS_HWW_boosted_SR1b_mcstat_bin2_In,CMS_HWW_boosted_SR1b_mcstat_bin3_In,CMS_HWW_boosted_SR1b_mcstat_bin4_In,CMS_HWW_boosted_SR1b_mcstat_bin5_In,CMS_HWW_boosted_SR1b_mcstat_bin6_In,CMS_HWW_boosted_SR1b_mcstat_bin7_In,CMS_HWW_boosted_SR1b_mcstat_bin8_In,CMS_HWW_boosted_SR1b_mcstat_bin9_In,CMS_HWW_boosted_SR2a_VBF_mcstat_bin0_In,CMS_HWW_boosted_SR2a_VBF_mcstat_bin4_In,CMS_HWW_boosted_SR2a_WH_mcstat_bin0_In,CMS_HWW_boosted_SR2a_WH_mcstat_bin4_In,CMS_HWW_boosted_SR2a_ZH_mcstat_bin0_In,CMS_HWW_boosted_SR2a_ZH_mcstat_bin4_In,CMS_HWW_boosted_SR2a_ggF_mcstat_bin0_In,CMS_HWW_boosted_SR2a_ggF_mcstat_bin4_In,CMS_HWW_boosted_SR2a_mcstat_bin1_In,CMS_HWW_boosted_SR2a_mcstat_bin10_In,CMS_HWW_boosted_SR2a_mcstat_bin11_In,CMS_HWW_boosted_SR2a_mcstat_bin12_In,CMS_HWW_boosted_SR2a_mcstat_bin13_In,CMS_HWW_boosted_SR2a_mcstat_bin14_In,CMS_HWW_boosted_SR2a_mcstat_bin15_In,CMS_HWW_boosted_SR2a_mcstat_bin16_In,CMS_HWW_boosted_SR2a_mcstat_bin17_In,CMS_HWW_boosted_SR2a_mcstat_bin18_In,CMS_HWW_boosted_SR2a_mcstat_bin19_In,CMS_HWW_boosted_SR2a_mcstat_bin2_In,CMS_HWW_boosted_SR2a_mcstat_bin3_In,CMS_HWW_boosted_SR2a_mcstat_bin5_In,CMS_HWW_boosted_SR2a_mcstat_bin6_In,CMS_HWW_boosted_SR2a_mcstat_bin7_In,CMS_HWW_boosted_SR2a_mcstat_bin8_In,CMS_HWW_boosted_SR2a_mcstat_bin9_In,CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin4_In,CMS_HWW_boosted_SR2a_single_top_mcstat_bin4_In,CMS_HWW_boosted_SR2a_ttH_mcstat_bin0_In,CMS_HWW_boosted_SR2a_ttH_mcstat_bin4_In,CMS_HWW_boosted_SR2a_ttbar_mcstat_bin0_In,CMS_HWW_boosted_SR2a_ttbar_mcstat_bin4_In,CMS_HWW_boosted_SR2a_wjets_mcstat_bin0_In,CMS_HWW_boosted_SR2a_wjets_mcstat_bin4_In,CMS_HWW_boosted_SR2b_mcstat_bin0_In,CMS_HWW_boosted_SR2b_mcstat_bin1_In,CMS_HWW_boosted_SR2b_mcstat_bin10_In,CMS_HWW_boosted_SR2b_mcstat_bin11_In,CMS_HWW_boosted_SR2b_mcstat_bin12_In,CMS_HWW_boosted_SR2b_mcstat_bin13_In,CMS_HWW_boosted_SR2b_mcstat_bin14_In,CMS_HWW_boosted_SR2b_mcstat_bin15_In,CMS_HWW_boosted_SR2b_mcstat_bin16_In,CMS_HWW_boosted_SR2b_mcstat_bin17_In,CMS_HWW_boosted_SR2b_mcstat_bin18_In,CMS_HWW_boosted_SR2b_mcstat_bin19_In,CMS_HWW_boosted_SR2b_mcstat_bin2_In,CMS_HWW_boosted_SR2b_mcstat_bin3_In,CMS_HWW_boosted_SR2b_mcstat_bin4_In,CMS_HWW_boosted_SR2b_mcstat_bin5_In,CMS_HWW_boosted_SR2b_mcstat_bin6_In,CMS_HWW_boosted_SR2b_mcstat_bin7_In,CMS_HWW_boosted_SR2b_mcstat_bin8_In,CMS_HWW_boosted_SR2b_mcstat_bin9_In,CMS_HWW_boosted_W_d1kappa_EW_Run2_In,CMS_HWW_boosted_W_d2kappa_EW_Run2_In,CMS_HWW_boosted_W_d3kappa_EW_Run2_In,CMS_HWW_boosted_btagSFbcCorrelated_In,CMS_HWW_boosted_btagSFbc_2016_In,CMS_HWW_boosted_btagSFbc_2017_In,CMS_HWW_boosted_btagSFbc_2018_In,CMS_HWW_boosted_btagSFlightCorrelated_In,CMS_HWW_boosted_btagSFlight_2016_In,CMS_HWW_boosted_btagSFlight_2017_In,CMS_HWW_boosted_btagSFlight_2018_In,CMS_HWW_boosted_d1K_NLO_Run2_In,CMS_HWW_boosted_d2K_NLO_Run2_In,CMS_HWW_boosted_d3K_NLO_Run2_In,CMS_HWW_boosted_ele_identification_Run2_In,CMS_HWW_boosted_ele_isolation_Run2_In,CMS_HWW_boosted_ele_reconstruction_Run2_In,CMS_HWW_boosted_ele_trigger_Run2_In,CMS_HWW_boosted_lp_sf_region_a_In,CMS_HWW_boosted_lp_sf_region_b_In,CMS_HWW_boosted_mu_identification_Run2_In,CMS_HWW_boosted_mu_isolation_Run2_In,CMS_HWW_boosted_mu_trigger_Run2_In,CMS_HWW_boosted_mu_trigger_iso_Run2_In,CMS_lumi_13TeV_1718_In,CMS_lumi_13TeV_2016_In,CMS_lumi_13TeV_2017_In,CMS_lumi_13TeV_2018_In,CMS_lumi_13TeV_corelated_In,CMS_pileup_2016_In,CMS_pileup_2016APV_In,CMS_pileup_2017_In,CMS_pileup_2018_In,CMS_res_j_2016_In,CMS_res_j_2016APV_In,CMS_res_j_2017_In,CMS_res_j_2018_In,CMS_scale_j_In,PDF_scale_In,PSFSR_VBF_In,PSFSR_ggF_In,PSISR_VBF_In,PSISR_ggF_In,QCD_rate_In,QCD_scale_In,QCDscale_VH_In,QCDscale_ggH_In,QCDscale_qqH_In,QCDscale_ttH_In,QCDscale_ttbar_In,TopCR_diboson_mcstat_In,TopCR_ewkvjets_mcstat_In,TopCR_qcd_mcstat_In,TopCR_singletop_mcstat_In,TopCR_ttbar_mcstat_In,TopCR_vjets_mcstat_In,TopCR_wjets_mcstat_In,VBF_mcstat_bin0_In,VBF_mcstat_bin1_In,VBF_mcstat_bin2_In,VBF_mcstat_bin3_In,VBF_mcstat_bin4_In,VBF_mcstat_bin5_In,VBF_mcstat_bin6_In,VBF_mcstat_bin7_In,VBF_mcstat_bin8_In,WJetsCR_diboson_mcstat_In,WJetsCR_ewkvjets_mcstat_In,WJetsCR_qcd_mcstat_In,WJetsCR_singletop_mcstat_In,WJetsCR_ttbar_mcstat_In,WJetsCR_vjets_mcstat_In,WJetsCR_wjets_mcstat_In,ggFpt250to300_mcstat_bin0_In,ggFpt250to300_mcstat_bin1_In,ggFpt250to300_mcstat_bin2_In,ggFpt250to300_mcstat_bin3_In,ggFpt250to300_mcstat_bin4_In,ggFpt250to300_mcstat_bin5_In,ggFpt250to300_mcstat_bin6_In,ggFpt250to300_mcstat_bin7_In,ggFpt250to300_mcstat_bin8_In,ggFpt300to450_mcstat_bin0_In,ggFpt300to450_mcstat_bin1_In,ggFpt300to450_mcstat_bin2_In,ggFpt300to450_mcstat_bin3_In,ggFpt300to450_mcstat_bin4_In,ggFpt300to450_mcstat_bin5_In,ggFpt300to450_mcstat_bin6_In,ggFpt300to450_mcstat_bin7_In,ggFpt300to450_mcstat_bin8_In,ggFpt450toInf_mcstat_bin0_In,ggFpt450toInf_mcstat_bin1_In,ggFpt450toInf_mcstat_bin2_In,ggFpt450toInf_mcstat_bin3_In,ggFpt450toInf_mcstat_bin4_In,ggFpt450toInf_mcstat_bin5_In,ggFpt450toInf_mcstat_bin6_In,ggFpt450toInf_mcstat_bin7_In,ggFpt450toInf_mcstat_bin8_In,lumi_13TeV_1718_In,lumi_13TeV_2016_In,lumi_13TeV_2017_In,lumi_13TeV_2018_In,lumi_13TeV_correlated_In,muon_mini-isolation_SF_In,pdf_Higgs_gg_In,pdf_Higgs_qqbar_In,pdf_Higgs_ttH_In,pdf_gg_In,pdf_qqbar_In,ps_fsr_In,ps_isr_In,taggereff_In,triggerEffSF_uncorrelated_In,unclustered_Energy_In,shapeBkg_ttbar_CR1__norm,shapeBkg_single_top_CR1__norm,shapeBkg_wjets_CR1__norm,shapeBkg_rest_bkg_CR1__norm,shapeBkg_ttbar_CR1Blinded__norm,shapeBkg_single_top_CR1Blinded__norm,shapeBkg_wjets_CR1Blinded__norm,shapeBkg_rest_bkg_CR1Blinded__norm,shapeSig_ggF_SR1a__norm,shapeSig_VBF_SR1a__norm,shapeSig_WH_SR1a__norm,shapeSig_ZH_SR1a__norm,shapeSig_ttH_SR1a__norm,shapeBkg_ttbar_SR1a__norm,shapeBkg_single_top_SR1a__norm,shapeBkg_wjets_SR1a__norm,shapeBkg_rest_bkg_SR1a__norm,shapeSig_ggF_SR1aBlinded__norm,shapeSig_VBF_SR1aBlinded__norm,shapeSig_WH_SR1aBlinded__norm,shapeSig_ZH_SR1aBlinded__norm,shapeSig_ttH_SR1aBlinded__norm,shapeBkg_ttbar_SR1aBlinded__norm,shapeBkg_single_top_SR1aBlinded__norm,shapeBkg_wjets_SR1aBlinded__norm,shapeBkg_rest_bkg_SR1aBlinded__norm,shapeSig_ggF_SR1b__norm,shapeSig_VBF_SR1b__norm,shapeSig_WH_SR1b__norm,shapeSig_ZH_SR1b__norm,shapeSig_ttH_SR1b__norm,shapeBkg_ttbar_SR1b__norm,shapeBkg_single_top_SR1b__norm,shapeBkg_wjets_SR1b__norm,shapeBkg_rest_bkg_SR1b__norm,shapeSig_ggF_SR1bBlinded__norm,shapeSig_VBF_SR1bBlinded__norm,shapeSig_WH_SR1bBlinded__norm,shapeSig_ZH_SR1bBlinded__norm,shapeSig_ttH_SR1bBlinded__norm,shapeBkg_ttbar_SR1bBlinded__norm,shapeBkg_single_top_SR1bBlinded__norm,shapeBkg_wjets_SR1bBlinded__norm,shapeBkg_rest_bkg_SR1bBlinded__norm,shapeBkg_ttbar_CR2__norm,shapeBkg_single_top_CR2__norm,shapeBkg_wjets_CR2__norm,shapeBkg_rest_bkg_CR2__norm,shapeBkg_ttbar_CR2Blinded__norm,shapeBkg_single_top_CR2Blinded__norm,shapeBkg_wjets_CR2Blinded__norm,shapeBkg_rest_bkg_CR2Blinded__norm,shapeSig_ggF_SR2a__norm,shapeSig_VBF_SR2a__norm,shapeSig_WH_SR2a__norm,shapeSig_ZH_SR2a__norm,shapeSig_ttH_SR2a__norm,shapeBkg_ttbar_SR2a__norm,shapeBkg_single_top_SR2a__norm,shapeBkg_wjets_SR2a__norm,shapeBkg_rest_bkg_SR2a__norm,shapeSig_ggF_SR2aBlinded__norm,shapeSig_VBF_SR2aBlinded__norm,shapeSig_WH_SR2aBlinded__norm,shapeSig_ZH_SR2aBlinded__norm,shapeSig_ttH_SR2aBlinded__norm,shapeBkg_ttbar_SR2aBlinded__norm,shapeBkg_single_top_SR2aBlinded__norm,shapeBkg_wjets_SR2aBlinded__norm,shapeBkg_rest_bkg_SR2aBlinded__norm,shapeSig_ggF_SR2b__norm,shapeSig_VBF_SR2b__norm,shapeSig_WH_SR2b__norm,shapeSig_ZH_SR2b__norm,shapeSig_ttH_SR2b__norm,shapeBkg_ttbar_SR2b__norm,shapeBkg_single_top_SR2b__norm,shapeBkg_wjets_SR2b__norm,shapeBkg_rest_bkg_SR2b__norm,shapeSig_ggF_SR2bBlinded__norm,shapeSig_VBF_SR2bBlinded__norm,shapeSig_WH_SR2bBlinded__norm,shapeSig_ZH_SR2bBlinded__norm,shapeSig_ttH_SR2bBlinded__norm,shapeBkg_ttbar_SR2bBlinded__norm,shapeBkg_single_top_SR2bBlinded__norm,shapeBkg_wjets_SR2bBlinded__norm,shapeBkg_rest_bkg_SR2bBlinded__norm,shapeSig_ggF_VBF__norm,shapeSig_VBF_VBF__norm,shapeSig_WH_VBF__norm,shapeSig_ZH_VBF__norm,shapeSig_ttH_VBF__norm,shapeBkg_ttbar_VBF__norm,shapeBkg_wjets_VBF__norm,shapeBkg_singletop_VBF__norm,shapeBkg_vjets_VBF__norm,shapeBkg_diboson_VBF__norm,shapeBkg_ewkvjets_VBF__norm,shapeSig_ggF_ggFpt250to300__norm,shapeSig_VBF_ggFpt250to300__norm,shapeSig_WH_ggFpt250to300__norm,shapeSig_ZH_ggFpt250to300__norm,shapeSig_ttH_ggFpt250to300__norm,shapeBkg_ttbar_ggFpt250to300__norm,shapeBkg_wjets_ggFpt250to300__norm,shapeBkg_singletop_ggFpt250to300__norm,shapeBkg_vjets_ggFpt250to300__norm,shapeBkg_qcd_ggFpt250to300__norm,shapeBkg_diboson_ggFpt250to300__norm,shapeBkg_ewkvjets_ggFpt250to300__norm,shapeSig_ggF_ggFpt300to450__norm,shapeSig_VBF_ggFpt300to450__norm,shapeSig_WH_ggFpt300to450__norm,shapeSig_ZH_ggFpt300to450__norm,shapeSig_ttH_ggFpt300to450__norm,shapeBkg_ttbar_ggFpt300to450__norm,shapeBkg_wjets_ggFpt300to450__norm,shapeBkg_singletop_ggFpt300to450__norm,shapeBkg_vjets_ggFpt300to450__norm,shapeBkg_qcd_ggFpt300to450__norm,shapeBkg_diboson_ggFpt300to450__norm,shapeBkg_ewkvjets_ggFpt300to450__norm,shapeSig_ggF_ggFpt450toInf__norm,shapeSig_VBF_ggFpt450toInf__norm,shapeSig_WH_ggFpt450toInf__norm,shapeSig_ZH_ggFpt450toInf__norm,shapeSig_ttH_ggFpt450toInf__norm,shapeBkg_ttbar_ggFpt450toInf__norm,shapeBkg_wjets_ggFpt450toInf__norm,shapeBkg_singletop_ggFpt450toInf__norm,shapeBkg_vjets_ggFpt450toInf__norm,shapeBkg_qcd_ggFpt450toInf__norm,shapeBkg_diboson_ggFpt450toInf__norm,shapeBkg_ewkvjets_ggFpt450toInf__norm,shapeBkg_ttbar_TopCR__norm,shapeBkg_wjets_TopCR__norm,shapeBkg_singletop_TopCR__norm,shapeBkg_vjets_TopCR__norm,shapeBkg_qcd_TopCR__norm,shapeBkg_diboson_TopCR__norm,shapeBkg_ewkvjets_TopCR__norm,shapeBkg_ttbar_WJetsCR__norm,shapeBkg_wjets_WJetsCR__norm,shapeBkg_singletop_WJetsCR__norm,shapeBkg_vjets_WJetsCR__norm,shapeBkg_qcd_WJetsCR__norm,shapeBkg_diboson_WJetsCR__norm,shapeBkg_ewkvjets_WJetsCR__norm,n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR1a_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR1aBlinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR2a_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR2aBlinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven,n_exp_binVBF_proc_qcd)
+>>> 6 out of 18 channels masked
+
+SimNLL created with 18 channels, 0 generic constraints, 258 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+Robus Fit for POI 
+Searching for crossing at nll = 0.494473 in the interval 0.17245, 10
+      CMS_HWW_boosted_tf_dataResidual_CR2_Bin18      lvl-here  lvl-there   stepping
+1.155205    -5.96783  +0.49447    0.982755
+0.467276    -0.04979  -5.96783    0.294827
+0.260898    +0.44555  -0.04979    0.088448
+0.349346    +0.30075  +0.44555    0.088448
+0.437794    +0.05476  +0.30075    0.088448
+0.526242    -0.29362  +0.05476    0.088448
+0.464328    -0.03955  -0.29362    0.026534
+0.445754    +0.02786  -0.03955    0.007960
+0.453714    -0.00059  +0.02786    0.007960
+0.448142    +0.01953  -0.00059    0.002388
+0.450530    +0.01102  +0.01953    0.002388
+0.452918    +0.00237  +0.01102    0.002388
+0.455306    -0.00642  +0.00237    0.002388
+0.453635    -0.00025  -0.00642    0.000716
+Searching for crossing at nll = 0.494473 in the interval 0.17245, -10
+      CMS_HWW_boosted_tf_dataResidual_CR2_Bin18      lvl-here  lvl-there   stepping
+-0.844795    -5.54290  +0.49447    -1.017245
+-0.132724    -0.06544  -5.54290    -0.305173
+0.080898    +0.44271  -0.06544    -0.091552
+-0.010654    +0.29137  +0.44271    -0.091552
+-0.102206    +0.04079  +0.29137    -0.091552
+-0.193758    -0.31009  +0.04079    -0.091552
+-0.129672    -0.05451  -0.31009    -0.027466
+-0.110446    +0.01320  -0.05451    -0.008240
+-0.118686    -0.01542  +0.01320    -0.008240
+-0.112918    +0.00466  -0.01542    -0.002472
+-0.115390    -0.00374  +0.00466    -0.002472
+-0.113659    +0.00233  -0.00374    -0.000742
+-0.114401    -0.00024  +0.00233    -0.000742
+
+ --- MultiDimFit ---
+Parameter impacts: 
+  Parameter                                 :   Best-fit               r            
+  CMS_HWW_boosted_tf_dataResidual_CR2_Bin18 :   +0.172  -0.287/+0.281  -0.011/+0.008
+Done in 0.22 min (cpu), 0.23 min (real)
+Printing Message Summary From ... combine_logger.out
+----------------------------------------------
+Messages of type INFO : 599
+Messages of type DEBUG : 0
+Messages of type ERROR : 0
+----------------------------------------------
+INFO: (function: applyOptionsBase) FitterAlgoBase.cc: 113 -- Setting robust fit options to Tolerance=0.1 / Strategy=0 / Type,Algo=Minuit2,Migrad (note that defaults of CascadeMinimizer were taken where option not specified)
+INFO: (function: run) Combine.cc: 676 -- Set floating the following parameters: 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin4 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin4 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin5 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin5 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin6 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin6 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin7 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin7 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin8 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin8 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin9 
+INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin9 
+INFO: (function: run) Combine.cc: 712 -- Freezing the following parameters: 
+INFO: (function: run) Combine.cc: 715  AK8_JER_In 
+INFO: (function: run) Combine.cc: 715  AK8_JES_In 
+INFO: (function: run) Combine.cc: 715  AK8_JMR_In 
+INFO: (function: run) Combine.cc: 715  AK8_JMS_In 
+INFO: (function: run) Combine.cc: 715  AK8_UES_In 
+INFO: (function: run) Combine.cc: 715  BR_hww_In 
+INFO: (function: run) Combine.cc: 715  CCMS_HWW_boostedL1Prefiring_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR2_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_PUIDSF_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1a_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR1b_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_VBF_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_VBF_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_WH_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_WH_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ZH_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ZH_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ggF_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ggF_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_single_top_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttH_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttH_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_wjets_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2a_wjets_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin10_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin11_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin12_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin13_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin14_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin15_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin16_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin17_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin19_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_SR2b_mcstat_bin9_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_W_d1kappa_EW_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_W_d2kappa_EW_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_W_d3kappa_EW_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_btagSFbcCorrelated_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_btagSFbc_2016_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_btagSFbc_2017_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_btagSFbc_2018_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_btagSFlightCorrelated_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_btagSFlight_2016_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_btagSFlight_2017_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_btagSFlight_2018_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_d1K_NLO_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_d2K_NLO_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_d3K_NLO_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_ele_identification_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_ele_isolation_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_ele_reconstruction_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_ele_trigger_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_lp_sf_region_a_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_lp_sf_region_b_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_mu_identification_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_mu_isolation_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_mu_trigger_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_mu_trigger_iso_Run2_In 
+INFO: (function: run) Combine.cc: 715  CMS_lumi_13TeV_1718_In 
+INFO: (function: run) Combine.cc: 715  CMS_lumi_13TeV_2016_In 
+INFO: (function: run) Combine.cc: 715  CMS_lumi_13TeV_2017_In 
+INFO: (function: run) Combine.cc: 715  CMS_lumi_13TeV_2018_In 
+INFO: (function: run) Combine.cc: 715  CMS_lumi_13TeV_corelated_In 
+INFO: (function: run) Combine.cc: 715  CMS_pileup_2016_In 
+INFO: (function: run) Combine.cc: 715  CMS_pileup_2016APV_In 
+INFO: (function: run) Combine.cc: 715  CMS_pileup_2017_In 
+INFO: (function: run) Combine.cc: 715  CMS_pileup_2018_In 
+INFO: (function: run) Combine.cc: 715  CMS_res_j_2016_In 
+INFO: (function: run) Combine.cc: 715  CMS_res_j_2016APV_In 
+INFO: (function: run) Combine.cc: 715  CMS_res_j_2017_In 
+INFO: (function: run) Combine.cc: 715  CMS_res_j_2018_In 
+INFO: (function: run) Combine.cc: 715  CMS_scale_j_In 
+INFO: (function: run) Combine.cc: 715  PDF_scale_In 
+INFO: (function: run) Combine.cc: 715  PSFSR_VBF_In 
+INFO: (function: run) Combine.cc: 715  PSFSR_ggF_In 
+INFO: (function: run) Combine.cc: 715  PSISR_VBF_In 
+INFO: (function: run) Combine.cc: 715  PSISR_ggF_In 
+INFO: (function: run) Combine.cc: 715  QCD_rate_In 
+INFO: (function: run) Combine.cc: 715  QCD_scale_In 
+INFO: (function: run) Combine.cc: 715  QCDscale_VH_In 
+INFO: (function: run) Combine.cc: 715  QCDscale_ggH_In 
+INFO: (function: run) Combine.cc: 715  QCDscale_qqH_In 
+INFO: (function: run) Combine.cc: 715  QCDscale_ttH_In 
+INFO: (function: run) Combine.cc: 715  QCDscale_ttbar_In 
+INFO: (function: run) Combine.cc: 715  TopCR_diboson_mcstat_In 
+INFO: (function: run) Combine.cc: 715  TopCR_ewkvjets_mcstat_In 
+INFO: (function: run) Combine.cc: 715  TopCR_qcd_mcstat_In 
+INFO: (function: run) Combine.cc: 715  TopCR_singletop_mcstat_In 
+INFO: (function: run) Combine.cc: 715  TopCR_ttbar_mcstat_In 
+INFO: (function: run) Combine.cc: 715  TopCR_vjets_mcstat_In 
+INFO: (function: run) Combine.cc: 715  TopCR_wjets_mcstat_In 
+INFO: (function: run) Combine.cc: 715  VBF_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  VBF_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  VBF_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  VBF_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  VBF_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  VBF_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  VBF_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  VBF_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  VBF_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  WJetsCR_diboson_mcstat_In 
+INFO: (function: run) Combine.cc: 715  WJetsCR_ewkvjets_mcstat_In 
+INFO: (function: run) Combine.cc: 715  WJetsCR_qcd_mcstat_In 
+INFO: (function: run) Combine.cc: 715  WJetsCR_singletop_mcstat_In 
+INFO: (function: run) Combine.cc: 715  WJetsCR_ttbar_mcstat_In 
+INFO: (function: run) Combine.cc: 715  WJetsCR_vjets_mcstat_In 
+INFO: (function: run) Combine.cc: 715  WJetsCR_wjets_mcstat_In 
+INFO: (function: run) Combine.cc: 715  ggFpt250to300_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  ggFpt250to300_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  ggFpt250to300_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  ggFpt250to300_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  ggFpt250to300_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  ggFpt250to300_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  ggFpt250to300_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  ggFpt250to300_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  ggFpt250to300_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  ggFpt300to450_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  ggFpt300to450_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  ggFpt300to450_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  ggFpt300to450_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  ggFpt300to450_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  ggFpt300to450_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  ggFpt300to450_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  ggFpt300to450_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  ggFpt300to450_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  ggFpt450toInf_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 715  ggFpt450toInf_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 715  ggFpt450toInf_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 715  ggFpt450toInf_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 715  ggFpt450toInf_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 715  ggFpt450toInf_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 715  ggFpt450toInf_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 715  ggFpt450toInf_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 715  ggFpt450toInf_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 715  lumi_13TeV_1718_In 
+INFO: (function: run) Combine.cc: 715  lumi_13TeV_2016_In 
+INFO: (function: run) Combine.cc: 715  lumi_13TeV_2017_In 
+INFO: (function: run) Combine.cc: 715  lumi_13TeV_2018_In 
+INFO: (function: run) Combine.cc: 715  lumi_13TeV_correlated_In 
+INFO: (function: run) Combine.cc: 715  muon_mini-isolation_SF_In 
+INFO: (function: run) Combine.cc: 715  pdf_Higgs_gg_In 
+INFO: (function: run) Combine.cc: 715  pdf_Higgs_qqbar_In 
+INFO: (function: run) Combine.cc: 715  pdf_Higgs_ttH_In 
+INFO: (function: run) Combine.cc: 715  pdf_gg_In 
+INFO: (function: run) Combine.cc: 715  pdf_qqbar_In 
+INFO: (function: run) Combine.cc: 715  ps_fsr_In 
+INFO: (function: run) Combine.cc: 715  ps_isr_In 
+INFO: (function: run) Combine.cc: 715  taggereff_In 
+INFO: (function: run) Combine.cc: 715  triggerEffSF_uncorrelated_In 
+INFO: (function: run) Combine.cc: 715  unclustered_Energy_In 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_CR1__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_single_top_CR1__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_CR1__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_bkg_CR1__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_CR1Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_single_top_CR1Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_CR1Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_bkg_CR1Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR1a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR1a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_WH_SR1a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ZH_SR1a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR1a__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_SR1a__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_single_top_SR1a__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR1a__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_bkg_SR1a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_WH_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ZH_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_single_top_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_bkg_SR1aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_WH_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ZH_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_single_top_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_bkg_SR1b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_WH_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ZH_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_single_top_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_bkg_SR1bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_CR2__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_single_top_CR2__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_CR2__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_bkg_CR2__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_single_top_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_bkg_CR2Blinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_WH_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ZH_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_single_top_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_bkg_SR2a__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_WH_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ZH_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_single_top_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_bkg_SR2aBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_WH_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ZH_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_single_top_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_bkg_SR2b__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_WH_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ZH_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_single_top_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_rest_bkg_SR2bBlinded__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_VBF__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_VBF__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_WH_VBF__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ZH_VBF__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_VBF__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_VBF__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_VBF__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_singletop_VBF__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_vjets_VBF__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_diboson_VBF__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ewkvjets_VBF__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_WH_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ZH_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_singletop_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_vjets_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_qcd_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_diboson_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ewkvjets_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_WH_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ZH_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_singletop_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_vjets_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_qcd_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_diboson_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ewkvjets_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ggF_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_VBF_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_WH_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ZH_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 715  shapeSig_ttH_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_singletop_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_vjets_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_qcd_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_diboson_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ewkvjets_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_TopCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_TopCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_singletop_TopCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_vjets_TopCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_qcd_TopCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_diboson_TopCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ewkvjets_TopCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ttbar_WJetsCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_wjets_WJetsCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_singletop_WJetsCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_vjets_WJetsCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_qcd_WJetsCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_diboson_WJetsCR__norm 
+INFO: (function: run) Combine.cc: 715  shapeBkg_ewkvjets_WJetsCR__norm 
+INFO: (function: run) Combine.cc: 715  n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR1a_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR1aBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR2a_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR2aBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: run) Combine.cc: 715  n_exp_binVBF_proc_qcd 
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR1_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR1Blinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR1a_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR1aBlinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR1b_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR1bBlinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR2_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR2Blinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2a_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2aBlinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2b_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2bBlinded_obsOnly: in 20 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binVBF_obsOnly: in 9 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binggFpt250to300_obsOnly: in 9 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binggFpt300to450_obsOnly: in 9 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binggFpt450toInf_obsOnly: in 9 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binTopCR_obsOnly: in 9 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binWJetsCR_obsOnly: in 9 x-bins
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: doFit) FitterAlgoBase.cc: 360 -- Running RobustFit for POI CMS_HWW_boosted_tf_dataResidual_CR2_Bin18. Configured with strategy 0  
+INFO: (function: findCrossing) FitterAlgoBase.cc: 406 -- Searching for crossing at nll = 0.494473, in the interval 0.17245 < CMS_HWW_boosted_tf_dataResidual_CR2_Bin18 < 10
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 427 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin18 lvl-here lvl-there 	stepping 
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.155205    -5.96783  +0.49447    0.982755
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.467276    -0.04979  -5.96783    0.294827
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.260898    +0.44555  -0.04979    0.088448
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.349346    +0.30075  +0.44555    0.088448
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.437794    +0.05476  +0.30075    0.088448
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.526242    -0.29362  +0.05476    0.088448
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.464328    -0.03955  -0.29362    0.026534
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.445754    +0.02786  -0.03955    0.007960
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.453714    -0.00059  +0.02786    0.007960
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.448142    +0.01953  -0.00059    0.002388
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.450530    +0.01102  +0.01953    0.002388
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.452918    +0.00237  +0.01102    0.002388
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.455306    -0.00642  +0.00237    0.002388
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.453635    -0.00025  -0.00642    0.000716
+INFO: (function: findCrossing) FitterAlgoBase.cc: 406 -- Searching for crossing at nll = 0.494473, in the interval 0.17245 < CMS_HWW_boosted_tf_dataResidual_CR2_Bin18 < -10
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 427 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin18 lvl-here lvl-there 	stepping 
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.844795    -5.54290  +0.49447    -1.017245
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.132724    -0.06544  -5.54290    -0.305173
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.080898    +0.44271  -0.06544    -0.091552
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.010654    +0.29137  +0.44271    -0.091552
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.102206    +0.04079  +0.29137    -0.091552
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.193758    -0.31009  +0.04079    -0.091552
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.129672    -0.05451  -0.31009    -0.027466
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.110446    +0.01320  -0.05451    -0.008240
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.118686    -0.01542  +0.01320    -0.008240
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.112918    +0.00466  -0.01542    -0.002472
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.115390    -0.00374  +0.00466    -0.002472
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.113659    +0.00233  -0.00374    -0.000742
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.114401    -0.00024  +0.00233    -0.000742
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0

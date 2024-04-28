@@ -221,7 +221,7 @@ nuisance_params = {
         ),
     "QCDscale_ttH": Syst(prior="lnN", samples=["ttH"], value=1.058,value_down=0.908),
     
-    #QCD scale for ttbar
+    # QCD scale for ttbar
     "QCDscale_ttbar": Syst(
         prior="lnN",
         samples=["ST", "TT"],
@@ -649,7 +649,7 @@ def alphabet_fit(
         )
         
         # sigmascale = 5
-        sigmascale = 5        
+        sigmascale = 5       
         scaled_params2 = (
             initial_qcd2 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd2))) ** qcd_params2
         )

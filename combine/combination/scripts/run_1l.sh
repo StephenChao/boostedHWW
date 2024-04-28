@@ -147,25 +147,24 @@ mkdir -p $outsdir
 # # # https://cms-talk.web.cern.ch/t/segmentation-fault-in-combine/20735
 
 # ADD REGIONS
-sr1="VBF"
-sr2="ggFpt250to300"
-sr3="ggFpt300to450"
-sr4="ggFpt450toInf"
-topcr="TopCR"
-wjetscr="WJetsCR"
+VBF="VBF"
+ggFpt250to300="ggFpt250to300"
+ggFpt300to450="ggFpt300to450"
+ggFpt450toInf="ggFpt450toInf"
+TopCR="TopCR"
+WJetsCR="WJetsCR"
 
 ########################### define SR/CR with datacards
 
-ccargs="SR1=${cards_dir}/${sr1}.txt SR2=${cards_dir}/${sr2}.txt SR3=${cards_dir}/${sr3}.txt SR4=${cards_dir}/${sr4}.txt topcr=${cards_dir}/${topcr}.txt wjetscr=${cards_dir}/${wjetscr}.txt"
-
+ccargs_1l="VBF=${cards_dir}/${VBF}.txt ggFpt250to300=${cards_dir}/${ggFpt250to300}.txt ggFpt300to450=${cards_dir}/${ggFpt300to450}.txt ggFpt450toInf=${cards_dir}/${ggFpt450toInf}.txt TopCR=${cards_dir}/${TopCR}.txt WJetsCR=${cards_dir}/${WJetsCR}.txt"
 
 if [ $workspace = 1 ]; then
     echo "Combining cards:"
-    for file in $ccargs; do
+    for file in $ccargs_1l; do
     echo "  ${file##*/}"
     done
     echo "-------------------------"
-    combineCards.py $ccargs > $ws.txt
+    combineCards.py $ccargs_1l > $ws.txt
     echo "Running text2workspace"
     text2workspace.py $ws.txt --channel-masks -o $wsm.root 2>&1 | tee $outsdir/text2workspace.txt
 else
@@ -181,7 +180,7 @@ if [ $significance = 1 ]; then
 
     # combine -M Significance -d $ws -m 125 -t -1 --expectSignal=1 --rMin -1 --rMax 5
 
-    combine -M Significance -d ${wsm}.root -t -1 --expectSignal 1 2>&1 | tee $outsdir/Significance.txt
+    combine -M Significance -d ${wsm}.root -t -1 --expectSignal 1 -v 9 2>&1 | tee $outsdir/Significance.txt
 
 fi
 

@@ -1,0 +1,40 @@
+000 (17077055.000.000) 2024-04-28 13:20:29 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8741_2d6c>
+...
+040 (17077055.000.000) 2024-04-28 13:20:51 Started transferring input files
+	Transferring to host: <90.147.168.16:42259?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9628#10920547%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9658#258875&PrivNet=wn-infn-3-4-13.recas.ba.infn.it&addrs=90.147.168.16-42259&alias=wn-infn-3-4-13.recas.ba.infn.it&noUDP>
+...
+001 (17077055.000.000) 2024-04-28 13:20:53 Job executing on host: <90.147.168.16:36797?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9675#10941497%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9639#255371&PrivNet=wn-infn-3-4-13.recas.ba.infn.it&addrs=90.147.168.16-36797&alias=wn-infn-3-4-13.recas.ba.infn.it&noUDP>
+...
+040 (17077055.000.000) 2024-04-28 13:20:53 Finished transferring input files
+...
+006 (17077055.000.000) 2024-04-28 13:21:02 Image size of job updated: 2019752
+	16  -  MemoryUsage of job (MB)
+	28736  -  ResidentSetSize of job (KB)
+	16029  -  ProportionalSetSize of job (KB)
+...
+006 (17077055.000.000) 2024-04-28 13:22:18 Image size of job updated: 2658940
+	415  -  MemoryUsage of job (MB)
+	424548  -  ResidentSetSize of job (KB)
+	16029  -  ProportionalSetSize of job (KB)
+...
+040 (17077055.000.000) 2024-04-28 13:22:19 Started transferring output files
+...
+040 (17077055.000.000) 2024-04-28 13:22:19 Finished transferring output files
+...
+005 (17077055.000.000) 2024-04-28 13:22:20 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:18, Sys 0 00:00:03  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:18, Sys 0 00:00:03  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	79060  -  Run Bytes Sent By Job
+	2860931  -  Run Bytes Received By Job
+	79060  -  Total Bytes Sent By Job
+	2860931  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   121761     3000   1816314 
+	   Memory (MB)          :       16     3000      3072 
+
+	Job terminated of its own accord at 2024-04-28T18:22:18Z.
+...

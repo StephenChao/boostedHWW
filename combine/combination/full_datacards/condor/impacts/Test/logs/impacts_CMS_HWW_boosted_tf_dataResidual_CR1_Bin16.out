@@ -1,0 +1,20 @@
+WARN $TMPDIR(/pool/condor/dir_1889572/glide_r4FMSq/execute/dir_402368) is not a writable directory setting $TMPDIR = $PWD
+running impacts
+extracting tar
+Reading cached build data
+Cleaning up removed directory:src/cards
+Cleaning up removed directory:src/eoscards
+Cleaning up removed directory:src/eostemplates
+Cleaning up removed directory:src/postprocessing
+Cleaning up removed directory:src/templates
+Done: ProjectRename
+/srv/CMSSW_11_3_4 is the CMSSW we have on the local worker node
+total 2.8M
+drwxr-xr-x. 18 cmsplt01 zh 4.0K Jul 19  2023 CMSSW_11_3_4
+-rw-r--r--.  1 cmsplt01 zh    0 Apr 28 19:51 _condor_stderr
+-rw-r--r--.  1 cmsplt01 zh  486 Apr 28 19:55 _condor_stdout
+-rw-r--r--.  1 cmsplt01 zh 1.4M Apr 28 19:51 combined_withmasks.root
+-rwxr-xr-x.  1 cmsplt01 zh 1.2K Apr 28 19:50 condor_exec.exe
+-rw-r--r--.  1 cmsplt01 zh 1.4M Apr 28 19:51 higgsCombineSnapshot.MultiDimFit.mH125.root
+-rwxr-xr-x.  1 cmsplt01 zh  15K Apr 28 19:50 run_combined.sh
+-rw-------.  1 cmsplt01 zh  12K Apr 28 19:50 x509up_u12976

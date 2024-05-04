@@ -1,0 +1,72 @@
+000 (17076795.000.000) 2024-04-28 12:49:51 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8741_2d6c>
+...
+040 (17076795.000.000) 2024-04-28 12:49:55 Started transferring input files
+	Transferring to host: <130.246.45.158:34863?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9657#10933235%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9623#257737&PrivNet=heplnc158.pp.rl.ac.uk&addrs=[2001-630-58-1c20--82f6-2d9e]-34863+130.246.45.158-34863&alias=heplnc158.pp.rl.ac.uk&noUDP>
+...
+040 (17076795.000.000) 2024-04-28 12:49:57 Finished transferring input files
+...
+001 (17076795.000.000) 2024-04-28 12:49:57 Job executing on host: <130.246.45.158:44729?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9631#10900909%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9639#239564&PrivNet=heplnc158.pp.rl.ac.uk&addrs=[2001-630-58-1c20--82f6-2d9e]-44729+130.246.45.158-44729&alias=heplnc158.pp.rl.ac.uk&noUDP>
+...
+006 (17076795.000.000) 2024-04-28 12:50:06 Image size of job updated: 2777316
+	41  -  MemoryUsage of job (MB)
+	98144  -  ResidentSetSize of job (KB)
+	41423  -  ProportionalSetSize of job (KB)
+...
+006 (17076795.000.000) 2024-04-28 12:50:11 Image size of job updated: 2777316
+	96  -  MemoryUsage of job (MB)
+	98144  -  ResidentSetSize of job (KB)
+	41423  -  ProportionalSetSize of job (KB)
+...
+040 (17076795.000.000) 2024-04-28 12:50:12 Started transferring output files
+...
+040 (17076795.000.000) 2024-04-28 12:50:12 Finished transferring output files
+...
+007 (17076795.000.000) 2024-04-28 12:50:12 Shadow exception!
+	Error from slot1_2@glidein_63620_610605000@heplnc158.pp.rl.ac.uk: STARTER at 130.246.45.158 failed to send file(s) to <192.170.231.212:9618>: |Error: reading from file /tmp/glide_Bmg1px/execute/dir_935392/higgsCombine_paramFit_impacts_CMS_HWW_boosted_SR1b_mcstat_bin15.MultiDimFit.mH125.root: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <130.246.45.158:46639>
+	1093  -  Run Bytes Sent By Job
+	2860948  -  Run Bytes Received By Job
+...
+012 (17076795.000.000) 2024-04-28 12:50:13 Job was held.
+	Error from slot1_2@glidein_63620_610605000@heplnc158.pp.rl.ac.uk: STARTER at 130.246.45.158 failed to send file(s) to <192.170.231.212:9618>: |Error: reading from file /tmp/glide_Bmg1px/execute/dir_935392/higgsCombine_paramFit_impacts_CMS_HWW_boosted_SR1b_mcstat_bin15.MultiDimFit.mH125.root: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <130.246.45.158:46639>
+	Code 13 Subcode 2
+...
+000 (17076924.000.000) 2024-04-28 13:05:11 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8741_2d6c>
+...
+040 (17076924.000.000) 2024-04-28 13:05:17 Started transferring input files
+	Transferring to host: <172.17.36.200:45673?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9652#10916400%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9720#259559&PrivNet=gaew0200.ciemat.es&addrs=172.17.36.200-45673&alias=gaew0200.ciemat.es&noUDP>
+...
+040 (17076924.000.000) 2024-04-28 13:05:21 Finished transferring input files
+...
+001 (17076924.000.000) 2024-04-28 13:05:21 Job executing on host: <172.17.36.200:39992?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9629#10926706%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9625#243331&PrivNet=gaew0200.ciemat.es&addrs=172.17.36.200-39992&alias=gaew0200.ciemat.es&noUDP>
+...
+006 (17076924.000.000) 2024-04-28 13:05:30 Image size of job updated: 2
+	5  -  MemoryUsage of job (MB)
+	2740  -  ResidentSetSize of job (KB)
+	4696  -  ProportionalSetSize of job (KB)
+...
+006 (17076924.000.000) 2024-04-28 13:05:56 Image size of job updated: 2558300
+	402  -  MemoryUsage of job (MB)
+	410940  -  ResidentSetSize of job (KB)
+	4696  -  ProportionalSetSize of job (KB)
+...
+040 (17076924.000.000) 2024-04-28 13:05:57 Started transferring output files
+...
+040 (17076924.000.000) 2024-04-28 13:05:57 Finished transferring output files
+...
+005 (17076924.000.000) 2024-04-28 13:05:58 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:08, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:08, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	77436  -  Run Bytes Sent By Job
+	2860949  -  Run Bytes Received By Job
+	77436  -  Total Bytes Sent By Job
+	2860949  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   121756     3000    735338 
+	   Memory (MB)          :        5     3000      3072 
+
+	Job terminated of its own accord at 2024-04-28T18:05:56Z.
+...

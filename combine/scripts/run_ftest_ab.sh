@@ -10,12 +10,14 @@
 # Author: Raghav Kansal
 ####################################################################################################
 
+run_f=0
 goftoys=0
 ffits=0
 dfit=0
+limits=0
 seed=66
-numtoys=300
-
+numtoys=40
+templates_tag="24Mar2024_JEC_fixed" 
 
 options=$(getopt -o "tfd" --long "cardstag:,templatestag:,sigsample:,goftoys,ffits,dfit,numtoys:,seed:" -- "$@")
 eval set -- "$options"
@@ -73,11 +75,14 @@ goftoys=$goftoys ffits=$ffits seed=$seed numtoys=$numtoys"
 ####################################################################################################
 # Set up fit args
 ####################################################################################################
+templates_dir="../../postprocessing/templates/${templates_tag}"
 
 cd ..
 combine_dir=$(pwd)
 cd -
+
 cards_dir=${combine_dir}/f_test/cards
+
 mkdir -p ${cards_dir}
 echo "Saving datacards to ${cards_dir}"
 
@@ -109,9 +114,10 @@ do
 done
 maskblindedargs=${maskblindedargs%,}
 maskunblindedargs=${maskunblindedargs%,}
-echo "cards args=${ccargs}"
-echo "maskblinded=${maskblindedargs}"
-echo "maskunblinded=${maskunblindedargs}"
+
+# echo "cards args=${ccargs}"
+# echo "maskblinded=${maskblindedargs}"
+# echo "maskunblinded=${maskunblindedargs}"
 
 # freeze qcd params in blinded bins
 setparamsblinded=""
@@ -136,7 +142,7 @@ freezeparamsblinded=${freezeparamsblinded%,}
 # Making cards and workspaces for each order polynomial
 ####################################################################################################
 
-for orda in {3..6}
+for orda in {3..5}
 do
     for ordb in {5..7}
     do
@@ -144,14 +150,14 @@ do
         if [ ! -f "${cards_dir}/${model_name}/higgsCombineData.GoodnessOfFit.mH125.root" ]; then
             echo "Making Datacard for $model_name"
             python3 -u ${combine_dir}/create_datacard.py \
-            --model-name ${model_name}  \
+            --model-name ${model_name}  --templates-dir "${templates_dir}"\
             --nTFa ${orda} --nTFb ${ordb} --cards-dir ${cards_dir}
         fi
         pwd
-        echo ${cards_dir}
-        cd ${cards_dir}/${model_name}/
-        echo "now it's in: "
-        echo ${cards_dir}/${model_name}/
+        echo "Cards dir is ${cards_dir}"
+        cd "${cards_dir}/${model_name}/"
+        echo "now it's in: ${cards_dir}/${model_name}"
+
         if [ ! -f "./higgsCombineData.GoodnessOfFit.mH125.root" ]; then
             echo "Making workspace, doing b-only fit and gof on data"
             source ${combine_dir}/scripts/run_blinded.sh -wbg 
@@ -194,107 +200,52 @@ done
 ####################################################################################################
 # Run GoF for each order on generated toys
 ####################################################################################################
+if [$run_f = 1]; then
+    low1=3
+    low2=6
 
-low1=3
-low2=6
+    model_name="nTFa_${low1}_nTFb_${low2}"
+    toys_name="${low1}${low2}"
+    cards_dir=${combine_dir}/f_test/cards
+    cd ${cards_dir}/${model_name}/
+    mkdir -p $outsdir
+    toys_file="$(pwd)/higgsCombineToys${toys_name}.GenerateOnly.mH125.$seed.root"
+    echo "Toys for ($low1, $low2) order fit is $toys_file"
 
-model_name="nTFa_${low1}_nTFb_${low2}"
-toys_name="${low1}${low2}"
-cards_dir=${combine_dir}/f_test/cards
-cd ${cards_dir}/${model_name}/
-mkdir -p $outsdir
-toys_file="$(pwd)/higgsCombineToys${toys_name}.GenerateOnly.mH125.$seed.root"
-echo "Toys for ($low1, $low2) order fit is $toys_file"
-
-cd ${combine_dir}/scripts
-for (( ord1=$low1; ord1<=$((low1 + 1)); ord1++ ))
-do
-    for (( ord2=$low2; ord2<=$((low2 + 1)); ord2++ ))
+    cd ${combine_dir}/scripts
+    for (( ord1=$low1; ord1<=$((low1 + 1)); ord1++ ))
     do
-        if [ $ord1 -gt $low1 ] && [ $ord2 -gt $low2 ]
-        then
-            break
-        fi
+        for (( ord2=$low2; ord2<=$((low2 + 1)); ord2++ ))
+        do
+            if [ $ord1 -gt $low1 ] && [ $ord2 -gt $low2 ]
+            then
+                break
+            fi
 
-        if [ $ord1 = $low1 ] && [ $ord2 = $low2 ]; then
-            continue
-        fi
+            if [ $ord1 = $low1 ] && [ $ord2 = $low2 ]; then
+                continue
+            fi
 
-        if [ $ord1 = $((low1 + 1)) ] && [ $ord2 = $low2 ]; then
-            continue
-        fi
+            if [ $ord1 = $((low1 + 1)) ] && [ $ord2 = $low2 ]; then
+                continue
+            fi
 
-        model_name="nTFa_${ord1}_nTFb_${ord2}"
-        echo "GoF for $model_name"
+            model_name="nTFa_${ord1}_nTFb_${ord2}"
+            echo "GoF for $model_name"
 
-        cd ${cards_dir}/${model_name}/
-        mkdir -p $outsdir
+            cd ${cards_dir}/${model_name}/
+            mkdir -p $outsdir
 
-        ulimit -s unlimited
+            ulimit -s unlimited
 
-        combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
-        --setParameters ${maskunblindedargs},${setparams},r=0 \
-        --freezeParameters ${freezeparams},r \
-        -n Toys${toys_name}Seed$seed -v 9 -s $seed -t $numtoys \
-        --toysFile ${toys_file} 2>&1 | tee $outsdir/GoF_toys${toys_name}$seed.txt
-        
-        echo "in the end, now it's in: $(pwd)"
-        cd ${combine_dir}/scripts
+            combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
+            --setParameters ${maskunblindedargs},${setparams},r=0 \
+            --freezeParameters ${freezeparams},r \
+            -n Toys${toys_name}Seed$seed -v 9 -s $seed -t $numtoys \
+            --toysFile ${toys_file} 2>&1 | tee $outsdir/GoF_toys${toys_name}$seed.txt
+
+            echo "in the end, now it's in: $(pwd)"
+            cd ${combine_dir}/scripts
+        done
     done
-done
-
-
-
-####################################################################################################
-# Generate toys for (0, 0) order
-####################################################################################################
-
-# if [ $goftoys = 1 ]; then
-#     model_name="nTFa_0_nTFb_0"
-#     toys_name="00"
-#     cd ${cards_dir}/${model_name}/
-#     toys_file="$(pwd)/higgsCombineToys${toys_name}.GenerateOnly.mH125.42.root"
-
-#     ulimit -s unlimited
-
-#     echo "Toys for (0, 0) order fit"
-#     combine -M GenerateOnly -m 125 -d ${wsm_snapshot}.root \
-#     --snapshotName MultiDimFit --bypassFrequentistFit \
-#     --setParameters ${maskunblindedargs},${setparams},r=0 \
-#     --freezeParameters ${freezeparams},r \
-#     -n "Toys${toys_name}" -t $numtoys --saveToys -s $seed -v 9 2>&1 | tee $outsdir/gentoys.txt
-
-#     cd ${combine_dir}/scripts
-# fi
-
-
-####################################################################################################
-# GoFs on generated toys for next order polynomials
-####################################################################################################
-
-# if [ $ffit = 1 ]; then
-#     for ord1 in {0..1}
-#     do
-#         for ord2 in {0..1}
-#         do
-#             if [ $ord1 -gt 0 ] && [ $ord2 -gt 0 ]
-#             then
-#                 break
-#             fi
-
-#             model_name="nTFa_${ord1}_nTFb_${ord2}"
-#             echo "Fits for $model_name"
-
-#             cd ${cards_dir}/${model_name}/
-
-#             ulimit -s unlimited
-
-#             combine -M GoodnessOfFit -d ${wsm_snapshot}.root --algo saturated -m 125 \
-#             --setParameters ${maskunblindedargs},${setparams},r=0 \
-#             --freezeParameters ${freezeparams},r \
-#             -n Toys${toys_name} -v 9 -s $seed -t $numtoys --toysFile ${toys_file} 2>&1 | tee $outsdir/GoF_toys${toys_name}.txt
-
-#             cd ${combine_dir}/scripts
-#         done
-#     done
-# fi
+fi

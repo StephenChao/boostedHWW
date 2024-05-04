@@ -53,44 +53,25 @@ args = parser.parse_args()
 print(sys.executable)
 print(sys.path)
 
-if os.getenv("HOSTNAME") :
-    print("HOSTNAME is",os.getenv("HOSTNAME"))
-    if "lxplus" in os.getenv("HOSTNAME"):
-        BDT_modelpath = "/eos/user/y/yusong/qilong/ROOTFILE/PlotTree/BDT/model/BDT_model/"
-    if "pku.edu.cn" in os.getenv("HOSTNAME"):
-        # BDT_modelpath = "/home/pku/zhaoyz/Higgs/2Taggers/HighMET/"
-        # Input128_2_Output1_HighMET_HLTRequired.h5
-        sys.path.append("/home/pku/zhaoyz/anaconda3/lib/python3.8/site-packages")
+# if os.getenv("HOSTNAME") :
+#     print("HOSTNAME is",os.getenv("HOSTNAME"))
+#     if "lxplus" in os.getenv("HOSTNAME"):
+#         BDT_modelpath = "/eos/user/y/yusong/qilong/ROOTFILE/PlotTree/BDT/model/BDT_model/"
+#     if "pku.edu.cn" in os.getenv("HOSTNAME"):
+#         # BDT_modelpath = "/home/pku/zhaoyz/Higgs/2Taggers/HighMET/"
+#         # Input128_2_Output1_HighMET_HLTRequired.h5
+#         sys.path.append("/home/pku/zhaoyz/anaconda3/lib/python3.8/site-packages")
 
-else :
-    if not args.cluster :
-        sys.exit("echo need to know which cluster it is")
-    else :
-        if "lxplus" in args.cluster :
-            BDT_modelpath = "/eos/user/y/yusong/qilong/ROOTFILE/PlotTree/BDT/model/"
-        if "farm" in args.cluster :
-            # BDT_modelpath = "/home/pku/zhaoyz/Higgs/2Taggers/HighMET/"
-         # Input128_2_Output1_HighMET_HLTRequired.h5
-            sys.path.append("/home/pku/zhaoyz/anaconda3/lib/python3.8/site-packages")
-
-def clean_and_convert(arr):
-    arr = np.array(arr, dtype='float32')  # 将RVec对象转换为NumPy数组
-    clean_arr = []
-    for x in arr:
-        try:
-            clean_arr.append(float(x))
-        except ValueError:
-            clean_arr.append(np.nan)  # 转换失败的项用NaN替代
-    return np.array(clean_arr, dtype='float32')
-
-def batch_convert_to_array(series, batch_size=1000):
-    n = len(series)
-    arrays = []
-    for start in range(0, n, batch_size):
-        end = min(start + batch_size, n)
-        batch = [np.array(x, dtype=np.float32) for x in series[start:end]]
-        arrays.extend(batch)
-    return arrays
+# else :
+#     if not args.cluster :
+#         sys.exit("echo need to know which cluster it is")
+#     else :
+#         if "lxplus" in args.cluster :
+#             BDT_modelpath = "/eos/user/y/yusong/qilong/ROOTFILE/PlotTree/BDT/model/"
+#         if "farm" in args.cluster :
+#             # BDT_modelpath = "/home/pku/zhaoyz/Higgs/2Taggers/HighMET/"
+#          # Input128_2_Output1_HighMET_HLTRequired.h5
+#             sys.path.append("/home/pku/zhaoyz/anaconda3/lib/python3.8/site-packages")
 
 def F_CheckExistFile(FileName):
     if not os.path.isfile(FileName):
@@ -112,14 +93,14 @@ def F_CheckExistFile(FileName):
     else: 
         print("[RSR] passed the rigorous sweeproot")
         return True
-# Check if the file exist.
 
-def Store_BDT_Score(infile_name,outfile_name,Outcolumn,loadcolumns = None,BDT ={},drop=None,definecolumn =None,return_dict={},cut = None, MCOutcolumn = None, SFjson = None, SF_unc_json = None, Data= False, add_pdf = False):
+def Store_BDT_Score(infile_name,outfile_name,outcolumn,loadcolumns = None,BDT ={},drop=None,definecolumn =None,return_dict={},cut = None, MCoutcolumn = None, SFjson = None, SF_unc_json = None, Data= False, add_array = {}):
     if loadcolumns :
-        if add_pdf:
+        if add_array:
+            name_arrays = list(add_array.keys())
             # add PDF weight, note that PDF weight is arrays from Tree files
-            loadcolumns += ["LHEPdfWeight"]
-            Outcolumn += ["LHEPdfWeight"]
+            loadcolumns += name_arrays
+            outcolumn += name_arrays
         print("load columns\n",loadcolumns)
         rdf = ROOT.RDataFrame("PKUTree", infile_name)
         if definecolumn: 
@@ -128,32 +109,39 @@ def Store_BDT_Score(infile_name,outfile_name,Outcolumn,loadcolumns = None,BDT ={
                 name = icolumn["Name"]
                 expr = icolumn["Expr"]
                 rdf = rdf.Define(name,expr)
-        if len(MCOutcolumn) > 0:
+        if len(MCoutcolumn) > 0:
             #check MC out column
-            print("MC outcolumn:",MCOutcolumn)
-            if MCOutcolumn[0] in [str(i) for i in rdf.GetColumnNames()] :
-                loadcolumns += MCOutcolumn
-                Outcolumn   += MCOutcolumn
+            print("MC outcolumn:",MCoutcolumn)
+            if MCoutcolumn[0] in [str(i) for i in rdf.GetColumnNames()] :
+                loadcolumns += MCoutcolumn
+                outcolumn   += MCoutcolumn
             else: 
                 print("You are running data")
-        Outcolumn   = list(set(Outcolumn))
+        outcolumn   = list(set(outcolumn))
         loadcolumns = list(set(loadcolumns))
         outfile_name_tmp = os.path.normpath(outfile_name).replace(".root","_slimmedtmp.root")
         snapshotOptions = ROOT.ROOT.RDF.RSnapshotOptions()
         snapshotOptions.fOverwriteIfExists = True
-        #store to a new dataframe
+        #save it 
         rdf.Snapshot('PKUTree', outfile_name_tmp, loadcolumns, snapshotOptions)
-        # name of output tree, name of output TFile, columlist, options.
+        #load it
         rdf = ROOT.RDataFrame("PKUTree", outfile_name_tmp)
     else :
         rdf = ROOT.RDataFrame("PKUTree", infile_name )
-        if MCOutcolumn[0] in [str(i) for i in rdf.GetColumnNames()] :
-            Outcolumn   += MCOutcolumn
-        Outcolumn = list(set(Outcolumn))
+        if MCoutcolumn[0] in [str(i) for i in rdf.GetColumnNames()] :
+            outcolumn   += MCoutcolumn
+        outcolumn = list(set(outcolumn))
     print([str(i) for i in rdf.GetColumnNames()])
     if cut :
         rdf = rdf.Filter(cut)
     # Cut the events.
+    if add_array:
+        name_arrays = list(add_array.keys())
+        snapshotOptions = ROOT.ROOT.RDF.RSnapshotOptions()
+        snapshotOptions.fOverwriteIfExists = True
+        temp_file_name = "array_tmp.root"
+        rdf.Snapshot("PKUTree", temp_file_name, name_arrays, snapshotOptions)
+
     df = pd.DataFrame(rdf.AsNumpy()) # there will be memory issue if the rootfile is larger than 2 GB
     if drop:
         for idrop in drop:
@@ -203,43 +191,54 @@ def Store_BDT_Score(infile_name,outfile_name,Outcolumn,loadcolumns = None,BDT ={
     # print("*****")
     # for i in range(10):
     #     print("Now weight = ",df["weight"][i])
-    Outcolumn = Outcolumn + ["SF"]
-    Outcolumn = Outcolumn + ["SF_unc"]
+    outcolumn = outcolumn + ["SF"]
+    outcolumn = outcolumn + ["SF_unc"]
     # The scale_factor_output will be a numpy array containing the scale factors corresponding to the input x and y variables
-    
-    if add_pdf:
-        #need to do extra process for vector object
-        #for other columns, still use from numpy
-        data = {key: df[key].values for key in df.columns if not (key == "LHEPdfWeight")}
-        rdf_tmp = ROOT.RDF.FromNumpy(data)
-        rdf_combined = rdf_tmp
-        pdf_column = "LHEPdfWeight"
-        rdf_combined = rdf_combined.Define(pdf_column, f"rdf_col_{pdf_column}")
-        rdf = rdf_combined
-        print("Test 4")
-        snapshotOptions = ROOT.ROOT.RDF.RSnapshotOptions()
-        snapshotOptions.fOverwriteIfExists = True
-        Outcolumn = list(set(Outcolumn))
-        print("Outcolumns are:",Outcolumn)
-        rdf.Snapshot('PKUTree', outfile_name, Outcolumn, snapshotOptions)
-        print(infile_name," : done ")
-        print(outfile_name," : done ")
-        return_dict[infile_name] = True
-        # We don't need the temp file.
-        os.remove(outfile_name_tmp)
         
-        # if 'LHEPdfWeight' in df.columns:
-        #     # df['LHEPdfWeight'] = df['LHEPdfWeight'].apply(clean_and_convert)
-        #     print("Test 1")
-        #     # check and print the items which are not number
-        #     # for i, item in enumerate(df['LHEPdfWeight']):
-        #     #     if not all(isinstance(x, (int, float, np.number)) for x in item):
-        #     #         print(f"Non-numeric data found in row {i}: {item}")
-        #     # df['LHEPdfWeight'] = df['LHEPdfWeight'].apply(lambda x: np.array(x, dtype=np.float32))
-        #     df['LHEPdfWeight'] = batch_convert_to_array(df['LHEPdfWeight'])
-        #     print("Test LHE:",df['LHEPdfWeight'])
-        #     print("Test 2")
-        #     data = {key: df[key].values for key in df.columns}
+    if add_array:
+        name_arrays = list(add_array.keys())
+        data = {key: df[key].values for key in df.columns if key not in name_arrays}
+        rdf_std = ROOT.RDF.FromNumpy(data)
+
+        final_file_name = outfile_name
+        merged_file_name = "std_tmp.root"
+
+        opts = ROOT.ROOT.RDF.RSnapshotOptions()
+        opts.fOverwriteIfExists = True
+        # ROOT.RDF.Experimental.TSnapshotOptions opts
+        # opts.fMode = "UPDATE"
+        rdf_std.Snapshot("PKUTree", merged_file_name, list(data.keys()),opts)
+
+
+
+# 打开2.root，并获取LHEPdfWeight的数据
+        with uproot.open(temp_file_name) as file:
+            tree = file["PKUTree"]
+            array_dict = {name : tree[name].array(library="ak") for name in add_array.keys()}
+            # lhepdfweight = tree["LHEPdfWeight"].array(library="ak")  # 使用awkward array库读取
+        
+        array_dict_fixed = {}
+        for name, array in array_dict.items():
+            array_dict_fixed[name] = ak.to_numpy(ak.fill_none(ak.pad_none(array, add_array[name], clip=True), 0))
+            
+        # lhepdfweight_fixed = ak.to_numpy(ak.fill_none(ak.pad_none(lhepdfweight, 103, clip=True), 0))
+        
+        # 打开1.root并读取所有数据
+        with uproot.open(merged_file_name) as file:
+            tree = file["PKUTree"]
+            data = tree.arrays(library="ak")  # 读取所有分支
+
+        # 合并LHEPdfWeight到data中
+        
+        for name, array_fixed in array_dict_fixed.items():
+            data[name] = ak.from_numpy(array_fixed.reshape(-1, add_array[name]))
+            
+        # data["LHEPdfWeight"] = ak.from_numpy(lhepdfweight_fixed.reshape(-1, 103))
+        with uproot.recreate(final_file_name) as newfile:
+            newfile["PKUTree"] = data
+        os.remove(outfile_name_tmp)
+        os.remove(temp_file_name)
+        os.remove(merged_file_name)
     else:
         # no need to add PDF weight
         data = {key: df[key].values for key in df.columns}
@@ -249,9 +248,9 @@ def Store_BDT_Score(infile_name,outfile_name,Outcolumn,loadcolumns = None,BDT ={
         print("Test 4")
         snapshotOptions = ROOT.ROOT.RDF.RSnapshotOptions()
         snapshotOptions.fOverwriteIfExists = True
-        Outcolumn = list(set(Outcolumn))
-        print("Outcolumns are:",Outcolumn)
-        rdf.Snapshot('PKUTree', outfile_name, Outcolumn, snapshotOptions)
+        outcolumn = list(set(outcolumn))
+        print("outcolumns are:",outcolumn)
+        rdf.Snapshot('PKUTree', outfile_name, outcolumn, snapshotOptions)
         print(infile_name," : done ")
         print(outfile_name," : done ")
         return_dict[infile_name] = True
@@ -271,7 +270,7 @@ def F_FlatVector(variable,length):
 
 
 if args.Branches in ["Tree","SF"] :
-    Outcolumn = [
+    outcolumn = [
 
     # "TriggerSF",
     # "HEM_Filter",
@@ -349,7 +348,7 @@ if args.Branches in ["Tree","SF"] :
     # "MET_phi_NoXYCorr","MET_et_NoXYCorr",    
     ]
 if args.uncert :
-    Outcolumn += [
+    outcolumn += [
     # JES, JER part
     "Mj_jesTotalUp_a",
     "Mj_jesTotalUp_b",
@@ -483,7 +482,7 @@ if args.uncert :
     "PSWeight_3",        
     ]
 if args.Branches == "Slimmed" :
-    Outcolumn = [
+    outcolumn = [
         "HT","Nj8","MJJ","MJJJ",
         "MET_et","MET_phi","MET_phi_NoXYCorr","MET_et_NoXYCorr",
         "weight",
@@ -497,39 +496,39 @@ if args.Branches == "Slimmed" :
         "nb_l_deep_ex","nb_m_deep_ex","nb_t_deep_ex","nb_l_deep_in","nb_m_deep_in","nb_t_deep_in","Nj4_ex","Nj4_in",
     ]
 
-MCOutcolumn = [
+MCoutcolumn = [
 ]
 if args.Branches in ["Tree"]:
-    MCOutcolumn += [
+    MCoutcolumn += [
         # "weight_Prefire_Up","weight_Prefire_Down","weight_pu_Down","weight_pu_Up",
         # "weight_Btag_m","weight_Btag_l",
         # "matchingW_Pneta","matchingW_Pnetb","matchingW_Pnetc",
         # "HEM_Filter",
     ]
 if args.Branches in ["SF"] :
-    MCOutcolumn += [
+    MCoutcolumn += [
         # "matchingt_a","matchingW_a","matchingg_a","matchingZ_a","matchingu_a","matchingd_a","matchings_a","matchingc_a","matchingg_first_a","matchingu_first_a","matchingd_first_a","matchings_first_a", "matchingc_first_a","matchingqg_first_a","matchingt_first_a",
         # "matchingt_b","matchingW_b","matchingg_b","matchingZ_b","matchingu_b","matchingd_b","matchings_b","matchingc_b","matchingg_first_b","matchingu_first_b","matchingd_first_b","matchings_first_b", "matchingc_first_b","matchingqg_first_b","matchingt_first_b",
         # "matchingt_c","matchingW_c","matchingg_c","matchingZ_c","matchingu_c","matchingd_c","matchings_c","matchingc_c","matchingg_first_c","matchingu_first_c","matchingd_first_c","matchings_first_c", "matchingc_first_c","matchingqg_first_c","matchingt_first_c",
     ]
 
 if args.data:
-    MCOutcolumn = []
+    MCoutcolumn = []
 
 signal = args.signal
 if signal :
-    Outcolumn += [
+    outcolumn += [
     'R4q_a','R4q_b','R4q_c','R3q_a','R3q_b','R3q_c','R2q_a','R2q_b','R2q_c','w_a','w_b','w_c','t_a','t_b','t_c','tlqq_a','tlqq_b','tlqq_c','z_a','z_b','z_c','Rlqq_a','Rlqq_b','Rlqq_c','Rlq_a','Rlq_b','Rlq_c','gKK_g_a','gKK_g_b','gKK_g_c','u_a','u_b','u_c','R3q_taudecay_a','R3q_taudecay_b','R3q_taudecay_c'
            ]
     #NOTE:here we added tlqq_* for ttbar validation task, 2024/01/02
 
-print(Outcolumn)
+print(outcolumn)
 
-loadcolumns = copy.deepcopy(Outcolumn)
+loadcolumns = copy.deepcopy(outcolumn)
 
 if args.year == "2018":
-    SFjson = "/home/pku/zhaoyz/Higgs/boostedHWW/scale_factors/trigger/mesh_data_2018.json"
-    SF_unc_json = "/home/pku/zhaoyz/Higgs/boostedHWW/scale_factors/trigger/mesh_data_2018_unc.json"
+    SFjson = "../../scale_factors/trigger/mesh_data_2018.json"
+    SF_unc_json = "../../scale_factors/trigger/mesh_data_2018_unc.json"
     loadcolumns += [ 
         "HEM_Filter",
         "HLT_AK8PFJet500",
@@ -552,8 +551,8 @@ if args.year == "2018":
 ]
 
 elif args.year == "2017":
-    SFjson = "/home/pku/zhaoyz/Higgs/boostedHWW/scale_factors/trigger/mesh_data_2017.json"
-    SF_unc_json = "/home/pku/zhaoyz/Higgs/boostedHWW/scale_factors/trigger/mesh_data_2017_unc.json"
+    SFjson = "../../scale_factors/trigger/mesh_data_2017.json"
+    SF_unc_json = "../../scale_factors/trigger/mesh_data_2017_unc.json"
     loadcolumns += [
         "HEM_Filter",
         "HLT_AK8PFJet500",
@@ -584,8 +583,8 @@ elif args.year == "2017":
     ]
 
 elif args.year == "2016":
-    SFjson = "/home/pku/zhaoyz/Higgs/boostedHWW/scale_factors/trigger/mesh_data_2016.json"
-    SF_unc_json = "/home/pku/zhaoyz/Higgs/boostedHWW/scale_factors/trigger/mesh_data_2016_unc.json"
+    SFjson = "../../scale_factors/trigger/mesh_data_2016.json"
+    SF_unc_json = "../../scale_factors/trigger/mesh_data_2016_unc.json"
     loadcolumns += [
         "HEM_Filter",
         "HLT_PFHT650_WideJetMJJ900DEtaJJ1p5",
@@ -614,8 +613,8 @@ elif args.year == "2016":
     ]
     
 elif args.year == "2016APV":
-    SFjson = "/home/pku/zhaoyz/Higgs/boostedHWW/scale_factors/trigger/mesh_data_2016.json"
-    SF_unc_json = "/home/pku/zhaoyz/Higgs/boostedHWW/scale_factors/trigger/mesh_data_2016_unc.json"
+    SFjson = "../../scale_factors/trigger/mesh_data_2016.json"
+    SF_unc_json = "../../scale_factors/trigger/mesh_data_2016_unc.json"
     loadcolumns += [
         "HEM_Filter",
         "HLT_PFHT650_WideJetMJJ900DEtaJJ1p5",
@@ -652,6 +651,11 @@ loadcolumns = list(set(loadcolumns))
 definecolumn = [
 ]
 
+#add array name and the length
+add_array = {
+    # "LHEPdfWeight" : 103
+}
+
 if args.outfile:
     if args.year == "2018":   cut = " (HEM_Filter == 1) && ((HLT_AK8PFJet500 == 1) || (HLT_PFHT1050 == 1)   || (HLT_AK8PFJet400_TrimMass30 == 1) || (HLT_AK8PFJet420_TrimMass30 == 1) || (HLT_AK8PFHT800_TrimMass50 == 1) || (HLT_AK8PFHT850_TrimMass50== 1) || (HLT_AK8PFHT900_TrimMass50== 1))"
     if args.year == "2017":   cut = " (HEM_Filter == 1) && ((HLT_AK8PFJet500 == 1) || (HLT_PFJet500 == 1)   || (HLT_AK8PFJet360_TrimMass30 == 1) || (HLT_PFHT1050 == 1) || (HLT_AK8PFJet380_TrimMass30 == 1) || (HLT_AK8PFJet400_TrimMass30== 1) || (HLT_AK8PFJet420_TrimMass30== 1) || (HLT_AK8PFHT750_TrimMass50 == 1) || (HLT_AK8PFHT800_TrimMass50 == 1) || (HLT_AK8PFHT850_TrimMass50 == 1) || (HLT_AK8PFHT900_TrimMass50))"
@@ -661,7 +665,7 @@ if args.outfile:
     if F_CheckExistFile(args.outfile) :
         sys.exit("File already exists")
     print("starting generate new file")
-    newcolumn = Store_BDT_Score(args.infile, args.outfile, Outcolumn, loadcolumns = loadcolumns, BDT = None, drop = drop,definecolumn = definecolumn, cut = cut, MCOutcolumn = MCOutcolumn, SFjson = SFjson,SF_unc_json = SF_unc_json, Data = args.data, add_pdf = True) #Turn on PDF only when you want to add PDF!
+    newcolumn = Store_BDT_Score(args.infile, args.outfile, outcolumn, loadcolumns = loadcolumns, BDT = None, drop = drop,definecolumn = definecolumn, cut = cut, MCoutcolumn = MCoutcolumn, SFjson = SFjson,SF_unc_json = SF_unc_json, Data = args.data, add_array = add_array) #Turn on PDF only when you want to add PDF!
 
 Finishing = datetime.now()
 duration = (Finishing - Beginning).seconds

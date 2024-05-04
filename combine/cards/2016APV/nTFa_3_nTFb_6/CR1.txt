@@ -1,0 +1,61 @@
+# Datacard for <Channel (CR1) instance at 0x2b45a41436d0> generated on 2024-04-11 06:59:58.041802
+imax 1 # number of categories ('bins' but here we are using shape templates)
+jmax 4 # number of samples minus 1
+kmax 30 # number of nuisance parameters
+shapes * CR1 HWWfullhad.root HWWfullhad:CR1_$PROCESS HWWfullhad:CR1_$PROCESS_$SYSTEMATIC
+bin CR1
+observation 20462335.000
+bin                                               CR1            CR1         CR1        CR1                             CR1
+process                                         ttbar     single_top       wjets   rest_bkg  CMS_HWW_boosted_qcd_datadriven
+process                                             1              2           3          4                               5
+rate                                        80970.214      10352.017  209568.229  66769.217                           1.000
+CMS_HWW_boosted_CR1_mcstat_bin0 shape          1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin1 shape          1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin10 shape         1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin11 shape         1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin12 shape         1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin13 shape         1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin14 shape         1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin15 shape         1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin16 shape         1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin17 shape         1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin18 shape         1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin19 shape         1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin2 shape          1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin3 shape          1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin4 shape          1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin5 shape          1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin6 shape          1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin7 shape          1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin8 shape          1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_CR1_mcstat_bin9 shape          1.0000         1.0000      1.0000     1.0000                               -
+CMS_pileup_2016APV shape                       1.0000         1.0000      1.0000     1.0000                               -
+CMS_res_j_2016APV shape                        1.0000         1.0000      1.0000     1.0000                               -
+CMS_scale_j shape                              1.0000         1.0000      1.0000     1.0000                               -
+QCDscale_ttbar lnN                      0.9650/1.0240  0.9780/1.0300           -          -                               -
+pdf_gg lnN                                     1.0420              -           -          -                               -
+pdf_qqbar lnN                                       -         1.0280           -          -                               -
+ps_fsr shape                                   1.0000         1.0000      1.0000     1.0000                               -
+ps_isr shape                                   1.0000         1.0000      1.0000     1.0000                               -
+triggerEffSF_uncorrelated shape                1.0000         1.0000      1.0000     1.0000                               -
+unclustered_Energy shape                       1.0000         1.0000      1.0000     1.0000                               -
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin0 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin1 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin10 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin11 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin12 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin13 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin14 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin15 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin16 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin17 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin18 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin19 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin2 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin3 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin4 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin5 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin6 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin7 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin8 extArg HWWfullhad.root:HWWfullhad
+CMS_HWW_boosted_tf_dataResidual_CR1_Bin9 extArg HWWfullhad.root:HWWfullhad

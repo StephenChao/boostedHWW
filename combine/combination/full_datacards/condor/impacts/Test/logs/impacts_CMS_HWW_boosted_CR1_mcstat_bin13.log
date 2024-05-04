@@ -68,3 +68,44 @@
 
 	Job terminated of its own accord at 2024-04-28T17:58:53Z.
 ...
+013 (17076732.000.000) 2024-04-29 10:50:23 Job was released.
+	via condor_release (by user yuzhe)
+...
+040 (17076732.000.000) 2024-04-29 10:55:17 Started transferring input files
+	Transferring to host: <172.17.36.215:39364?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9662#10964870%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9628#267725&PrivNet=gaew0215.ciemat.es&addrs=172.17.36.215-39364&alias=gaew0215.ciemat.es&noUDP>
+...
+040 (17076732.000.000) 2024-04-29 10:55:18 Finished transferring input files
+...
+001 (17076732.000.000) 2024-04-29 10:55:18 Job executing on host: <172.17.36.215:33163?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9687#10935375%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9651#258713&PrivNet=gaew0215.ciemat.es&addrs=172.17.36.215-33163&alias=gaew0215.ciemat.es&noUDP>
+...
+006 (17076732.000.000) 2024-04-29 10:55:28 Image size of job updated: 2506268
+	59  -  MemoryUsage of job (MB)
+	77096  -  ResidentSetSize of job (KB)
+	59611  -  ProportionalSetSize of job (KB)
+...
+006 (17076732.000.000) 2024-04-29 10:55:57 Image size of job updated: 2506268
+	128  -  MemoryUsage of job (MB)
+	130384  -  ResidentSetSize of job (KB)
+	59611  -  ProportionalSetSize of job (KB)
+...
+040 (17076732.000.000) 2024-04-29 10:55:57 Started transferring output files
+...
+040 (17076732.000.000) 2024-04-29 10:55:58 Finished transferring output files
+...
+005 (17076732.000.000) 2024-04-29 10:55:58 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	76967  -  Run Bytes Sent By Job
+	2860948  -  Run Bytes Received By Job
+	78044  -  Total Bytes Sent By Job
+	5721895  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   121758   125000    698985 
+	   Memory (MB)          :       59     3000      3072 
+
+	Job terminated of its own accord at 2024-04-29T15:55:56Z.
+...

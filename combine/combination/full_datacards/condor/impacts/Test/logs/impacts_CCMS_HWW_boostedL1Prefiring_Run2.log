@@ -68,3 +68,44 @@
 
 	Job terminated of its own accord at 2024-04-28T17:58:19Z.
 ...
+013 (17076726.000.000) 2024-04-29 10:50:23 Job was released.
+	via condor_release (by user yuzhe)
+...
+040 (17076726.000.000) 2024-04-29 10:55:15 Started transferring input files
+	Transferring to host: <134.61.26.118:36888?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9718#10924894%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9716#267594&PrivNet=grid-wn407.physik.RWTH-Aachen.de&addrs=[2a00-8a60-1030-a00--863d-1a76]-36888+134.61.26.118-36888&alias=grid-wn407.physik.RWTH-Aachen.de&noUDP>
+...
+040 (17076726.000.000) 2024-04-29 10:55:16 Finished transferring input files
+...
+001 (17076726.000.000) 2024-04-29 10:55:16 Job executing on host: <134.61.26.118:32979?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9717#10914543%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9655#266354&PrivNet=grid-wn407.physik.RWTH-Aachen.de&addrs=[2a00-8a60-1030-a00--863d-1a76]-32979+134.61.26.118-32979&alias=grid-wn407.physik.RWTH-Aachen.de&noUDP>
+...
+006 (17076726.000.000) 2024-04-29 10:55:25 Image size of job updated: 2479128
+	15  -  MemoryUsage of job (MB)
+	75000  -  ResidentSetSize of job (KB)
+	15002  -  ProportionalSetSize of job (KB)
+...
+006 (17076726.000.000) 2024-04-29 10:55:36 Image size of job updated: 2479128
+	36  -  MemoryUsage of job (MB)
+	75000  -  ResidentSetSize of job (KB)
+	15002  -  ProportionalSetSize of job (KB)
+...
+040 (17076726.000.000) 2024-04-29 10:55:36 Started transferring output files
+...
+040 (17076726.000.000) 2024-04-29 10:55:37 Finished transferring output files
+...
+005 (17076726.000.000) 2024-04-29 10:55:37 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	79124  -  Run Bytes Sent By Job
+	2860948  -  Run Bytes Received By Job
+	80200  -  Total Bytes Sent By Job
+	5721895  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   121766   125000   3599279 
+	   Memory (MB)          :       15     3000      3072 
+
+	Job terminated of its own accord at 2024-04-29T15:55:36Z.
+...

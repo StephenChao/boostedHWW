@@ -1,4 +1,4 @@
-WARN $TMPDIR(/home/condor/execute/dir_21333/glide_g88Yoc/execute/dir_47871) is not a writable directory setting $TMPDIR = $PWD
+WARN $TMPDIR(/home/condor/execute/dir_36941/glide_UuUWhC/execute/dir_97160) is not a writable directory setting $TMPDIR = $PWD
 running impacts
 extracting tar
 Reading cached build data
@@ -11,13 +11,13 @@ Done: ProjectRename
 /srv/CMSSW_11_3_4 is the CMSSW we have on the local worker node
 total 2.8M
 drwxr-xr-x 18 pilcms01 cmspil 4.0K Jul 19  2023 CMSSW_11_3_4
--rw-r--r--  1 pilcms01 cmspil  156 Apr 28 20:03 _condor_stderr
--rw-r--r--  1 pilcms01 cmspil  491 Apr 28 20:04 _condor_stdout
--rw-r--r--  1 pilcms01 cmspil 1.4M Apr 28 20:03 combined_withmasks.root
--rwxr-xr-x  1 pilcms01 cmspil 1.2K Apr 28 20:03 condor_exec.exe
--rw-r--r--  1 pilcms01 cmspil 1.4M Apr 28 20:03 higgsCombineSnapshot.MultiDimFit.mH125.root
--rwxr-xr-x  1 pilcms01 cmspil  15K Apr 28 20:03 run_combined.sh
--rw-------  1 pilcms01 cmspil  12K Apr 28 20:03 x509up_u12976
+-rw-r--r--  1 pilcms01 cmspil  156 Apr 29 17:55 _condor_stderr
+-rw-r--r--  1 pilcms01 cmspil  491 Apr 29 17:56 _condor_stdout
+-rw-r--r--  1 pilcms01 cmspil 1.4M Apr 29 17:55 combined_withmasks.root
+-rwxr-xr-x  1 pilcms01 cmspil 1.2K Apr 29 17:55 condor_exec.exe
+-rw-r--r--  1 pilcms01 cmspil 1.4M Apr 29 17:55 higgsCombineSnapshot.MultiDimFit.mH125.root
+-rwxr-xr-x  1 pilcms01 cmspil  15K Apr 29 17:55 run_combined.sh
+-rw-------  1 pilcms01 cmspil  12K Apr 29 17:55 x509up_u12976
 Arguments: resonant=0 workspace=0 bfit=0 limits=0 significance=0 dfit=0 gofdata=0 goftoys=0 seed=44 numtoys=40
 Start running 0l parameters:
 cards args=CR1=./CR1.txt CR1Blinded=./CR1Blinded.txt SR1a=./SR1a.txt SR1aBlinded=./SR1aBlinded.txt SR1b=./SR1b.txt SR1bBlinded=./SR1bBlinded.txt CR2=./CR2.txt CR2Blinded=./CR2Blinded.txt SR2a=./SR2a.txt SR2aBlinded=./SR2aBlinded.txt SR2b=./SR2b.txt SR2bBlinded=./SR2bBlinded.txt 
@@ -104,7 +104,7 @@ Searching for crossing at nll = 0.494473 in the interval 0.080807, -4
 Parameter impacts: 
   Parameter                        :   Best-fit               r            
   CMS_HWW_boosted_SR1a_mcstat_bin2 :   +0.081  -0.983/+0.983  +0.002/+0.002
-Done in 0.17 min (cpu), 0.17 min (real)
+Done in 0.14 min (cpu), 0.14 min (real)
 Printing Message Summary From ... combine_logger.out
 ----------------------------------------------
 Messages of type INFO : 575

@@ -103,3 +103,39 @@
 	Error from slot1_1@glidein_113_693376692@b9p12p1465.cern.ch: STARTER at 188.185.209.135 failed to send file(s) to <192.170.231.212:9618>: |Error: reading from file /pool/condor/dir_584317/glide_UL1JJv/execute/dir_406783/higgsCombine_initialFit_impacts.MultiDimFit.mH125.root: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <188.185.209.135:34755>
 	Code 13 Subcode 2
 ...
+013 (17076668.000.000) 2024-04-29 10:50:21 Job was released.
+	via condor_release (by user yuzhe)
+...
+040 (17076668.000.000) 2024-04-29 10:55:06 Started transferring input files
+	Transferring to host: <130.246.45.147:36249?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9655#10929496%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9651#267377&PrivNet=heplnc147.pp.rl.ac.uk&addrs=[2001-630-58-1c20--82f6-2d93]-36249+130.246.45.147-36249&alias=heplnc147.pp.rl.ac.uk&noUDP>
+...
+001 (17076668.000.000) 2024-04-29 10:55:08 Job executing on host: <130.246.45.147:44043?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9669#10979863%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9639#261170&PrivNet=heplnc147.pp.rl.ac.uk&addrs=[2001-630-58-1c20--82f6-2d93]-44043+130.246.45.147-44043&alias=heplnc147.pp.rl.ac.uk&noUDP>
+...
+040 (17076668.000.000) 2024-04-29 10:55:08 Finished transferring input files
+...
+006 (17076668.000.000) 2024-04-29 10:56:22 Image size of job updated: 4588552
+	1319  -  MemoryUsage of job (MB)
+	1350020  -  ResidentSetSize of job (KB)
+	32500  -  ProportionalSetSize of job (KB)
+...
+040 (17076668.000.000) 2024-04-29 10:56:23 Started transferring output files
+...
+040 (17076668.000.000) 2024-04-29 10:56:23 Finished transferring output files
+...
+005 (17076668.000.000) 2024-04-29 10:56:24 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:22, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:22, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	89483  -  Run Bytes Sent By Job
+	2860907  -  Run Bytes Received By Job
+	91689  -  Total Bytes Sent By Job
+	8582719  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   121787   125000   2716145 
+	   Memory (MB)          :       32     3000      3072 
+
+	Job terminated of its own accord at 2024-04-29T15:56:22Z.
+...

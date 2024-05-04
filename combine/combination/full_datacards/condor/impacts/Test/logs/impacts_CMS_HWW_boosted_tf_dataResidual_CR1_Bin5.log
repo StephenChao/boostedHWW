@@ -95,3 +95,39 @@
 
 	Job terminated of its own accord at 2024-04-28T17:57:31Z.
 ...
+013 (17076685.000.000) 2024-04-29 10:50:21 Job was released.
+	via condor_release (by user yuzhe)
+...
+040 (17076685.000.000) 2024-04-29 10:55:09 Started transferring input files
+	Transferring to host: <90.147.169.15:43584?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9700#10961405%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9662#265601&PrivNet=wn-8-6-23.recas.ba.infn.it&addrs=90.147.169.15-43584&alias=wn-8-6-23.recas.ba.infn.it&noUDP>
+...
+040 (17076685.000.000) 2024-04-29 10:55:11 Finished transferring input files
+...
+001 (17076685.000.000) 2024-04-29 10:55:11 Job executing on host: <90.147.169.15:43699?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9639#10937032%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9683#262607&PrivNet=wn-8-6-23.recas.ba.infn.it&addrs=90.147.169.15-43699&alias=wn-8-6-23.recas.ba.infn.it&noUDP>
+...
+006 (17076685.000.000) 2024-04-29 10:56:52 Image size of job updated: 2659696
+	415  -  MemoryUsage of job (MB)
+	424732  -  ResidentSetSize of job (KB)
+	4750  -  ProportionalSetSize of job (KB)
+...
+040 (17076685.000.000) 2024-04-29 10:56:53 Started transferring output files
+...
+040 (17076685.000.000) 2024-04-29 10:56:54 Finished transferring output files
+...
+005 (17076685.000.000) 2024-04-29 10:56:55 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:28, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:28, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	82150  -  Run Bytes Sent By Job
+	2860956  -  Run Bytes Received By Job
+	84354  -  Total Bytes Sent By Job
+	8582866  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   121774   125000    410417 
+	   Memory (MB)          :        5     3000      3072 
+
+	Job terminated of its own accord at 2024-04-29T15:56:52Z.
+...

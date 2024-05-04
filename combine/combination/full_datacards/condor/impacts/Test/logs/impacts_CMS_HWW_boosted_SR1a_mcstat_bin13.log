@@ -68,3 +68,45 @@
 
 	Job terminated of its own accord at 2024-04-28T18:04:54Z.
 ...
+013 (17076773.000.000) 2024-04-29 10:50:20 Job was released.
+	via condor_release (by user yuzhe)
+...
+040 (17076773.000.000) 2024-04-29 10:55:23 Started transferring input files
+	Transferring to host: <10.60.128.17:46768?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9672#10925879%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9626#267149&PrivNet=wl-17-08.lnl.infn.it&addrs=[2001-760-4229--1-72]-46768+10.60.128.17-46768&alias=wl-17-08.lnl.infn.it&noUDP>
+...
+001 (17076773.000.000) 2024-04-29 10:55:24 Job executing on host: <10.60.128.17:35922?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9700#10959237%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9626#265012&PrivNet=wl-17-08.lnl.infn.it&addrs=[2001-760-4229--1-72]-35922+10.60.128.17-35922&alias=wl-17-08.lnl.infn.it&noUDP>
+...
+040 (17076773.000.000) 2024-04-29 10:55:24 Finished transferring input files
+...
+006 (17076773.000.000) 2024-04-29 10:55:33 Image size of job updated: 2750000
+	26  -  MemoryUsage of job (MB)
+	100000  -  ResidentSetSize of job (KB)
+	26563  -  ProportionalSetSize of job (KB)
+...
+006 (17076773.000.000) 2024-04-29 10:55:51 Image size of job updated: 2750000
+	413  -  MemoryUsage of job (MB)
+	422448  -  ResidentSetSize of job (KB)
+	26563  -  ProportionalSetSize of job (KB)
+...
+040 (17076773.000.000) 2024-04-29 10:55:52 Started transferring output files
+...
+040 (17076773.000.000) 2024-04-29 10:55:53 Finished transferring output files
+...
+005 (17076773.000.000) 2024-04-29 10:55:53 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:03, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:03, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	79164  -  Run Bytes Sent By Job
+	2860949  -  Run Bytes Received By Job
+	80428  -  Total Bytes Sent By Job
+	5721897  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   121766   125000   3465942 
+	   Memory (MB)          :       26     3000      3072 
+	   Opslots              :                           0 
+
+	Job terminated of its own accord at 2024-04-29T15:55:51Z.
+...

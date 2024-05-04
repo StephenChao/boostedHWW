@@ -103,3 +103,39 @@
 	Error from slot1_8@glidein_113_37739763@b9p05p7648.cern.ch: STARTER at 188.185.206.57 failed to send file(s) to <192.170.231.212:9618>: |Error: reading from file /pool/condor/dir_1653696/glide_ul3pEQ/execute/dir_743338/higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par5.MultiDimFit.mH125.root: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <188.185.206.57:34255>
 	Code 13 Subcode 2
 ...
+013 (17076695.000.000) 2024-04-29 10:50:22 Job was released.
+	via condor_release (by user yuzhe)
+...
+040 (17076695.000.000) 2024-04-29 10:55:11 Started transferring input files
+	Transferring to host: <130.246.45.154:35485?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9720#10968117%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9680#266847&PrivNet=heplnc154.pp.rl.ac.uk&addrs=[2001-630-58-1c20--82f6-2d9a]-35485+130.246.45.154-35485&alias=heplnc154.pp.rl.ac.uk&noUDP>
+...
+040 (17076695.000.000) 2024-04-29 10:55:14 Finished transferring input files
+...
+001 (17076695.000.000) 2024-04-29 10:55:14 Job executing on host: <130.246.45.154:40111?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9673#10910471%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9693#263962&PrivNet=heplnc154.pp.rl.ac.uk&addrs=[2001-630-58-1c20--82f6-2d9a]-40111+130.246.45.154-40111&alias=heplnc154.pp.rl.ac.uk&noUDP>
+...
+006 (17076695.000.000) 2024-04-29 10:56:54 Image size of job updated: 3066192
+	552  -  MemoryUsage of job (MB)
+	564300  -  ResidentSetSize of job (KB)
+	30000  -  ProportionalSetSize of job (KB)
+...
+040 (17076695.000.000) 2024-04-29 10:56:55 Started transferring output files
+...
+040 (17076695.000.000) 2024-04-29 10:56:55 Finished transferring output files
+...
+005 (17076695.000.000) 2024-04-29 10:56:56 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:36, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:36, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	83003  -  Run Bytes Sent By Job
+	2860962  -  Run Bytes Received By Job
+	85168  -  Total Bytes Sent By Job
+	8582884  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.11        1         1 
+	   Disk (KB)            : 121776      125000   6053711 
+	   Memory (MB)          :     30        3000      3072 
+
+	Job terminated of its own accord at 2024-04-29T15:56:54Z.
+...

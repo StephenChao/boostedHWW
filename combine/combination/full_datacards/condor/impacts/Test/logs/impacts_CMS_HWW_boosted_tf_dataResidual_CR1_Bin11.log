@@ -1,0 +1,134 @@
+000 (17076671.000.000) 2024-04-28 12:35:20 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8741_2d6c>
+...
+040 (17076671.000.000) 2024-04-28 12:36:45 Started transferring input files
+	Transferring to host: <192.168.35.2:39132?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9639#10935339%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9645#261008&PrivNet=node35-2.wn.iihe.ac.be&addrs=[2001-6a8-1080--c-3502]-39132+192.168.35.2-39132&alias=node35-2.wn.iihe.ac.be&noUDP>
+...
+040 (17076671.000.000) 2024-04-28 12:36:47 Finished transferring input files
+...
+001 (17076671.000.000) 2024-04-28 12:36:47 Job executing on host: <192.168.35.2:40496?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9627#10968946%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9687#246948&PrivNet=node35-2.wn.iihe.ac.be&addrs=[2001-6a8-1080--c-3502]-40496+192.168.35.2-40496&alias=node35-2.wn.iihe.ac.be&noUDP>
+...
+006 (17076671.000.000) 2024-04-28 12:36:56 Image size of job updated: 2
+	3  -  MemoryUsage of job (MB)
+	2708  -  ResidentSetSize of job (KB)
+...
+006 (17076671.000.000) 2024-04-28 12:37:45 Image size of job updated: 2478612
+	51  -  MemoryUsage of job (MB)
+	51924  -  ResidentSetSize of job (KB)
+...
+040 (17076671.000.000) 2024-04-28 12:37:46 Started transferring output files
+...
+040 (17076671.000.000) 2024-04-28 12:37:46 Finished transferring output files
+...
+007 (17076671.000.000) 2024-04-28 12:37:46 Shadow exception!
+	Error from slot1_2@glidein_117184_86310048@node35-2.wn.iihe.ac.be: STARTER at 192.168.35.2 failed to send file(s) to <192.170.231.212:9618>: |Error: reading from file /tmp/glide_RGlb4D/execute/dir_128340/higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin11.MultiDimFit.mH125.root: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <193.58.172.10:34326>
+	1077  -  Run Bytes Sent By Job
+	2860956  -  Run Bytes Received By Job
+...
+012 (17076671.000.000) 2024-04-28 12:37:46 Job was held.
+	Error from slot1_2@glidein_117184_86310048@node35-2.wn.iihe.ac.be: STARTER at 192.168.35.2 failed to send file(s) to <192.170.231.212:9618>: |Error: reading from file /tmp/glide_RGlb4D/execute/dir_128340/higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin11.MultiDimFit.mH125.root: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <193.58.172.10:34326>
+	Code 13 Subcode 2
+...
+013 (17076671.000.000) 2024-04-28 12:42:47 Job was released.
+	via condor_release (by user yuzhe)
+...
+040 (17076671.000.000) 2024-04-28 12:45:59 Started transferring input files
+	Transferring to host: <128.142.60.150:36497?CCBID=137.138.152.114:9644%3faddrs%3d[2001-1458-d00-13--58]-9644+137.138.152.114-9644%26alias%3dvocms0821.cern.ch#3395003%20131.225.204.58:9690%3faddrs%3d[2620-6a-0-8420-f0-0-204-58]-9690+131.225.204.58-9690%26alias%3dcmssrv2221.fnal.gov#89455&PrivNet=b9s05p7087.cern.ch&addrs=[2001-1458-301-22--100-95]-36497+128.142.60.150-36497&alias=b9s05p7087.cern.ch&noUDP>
+...
+040 (17076671.000.000) 2024-04-28 12:46:00 Finished transferring input files
+...
+001 (17076671.000.000) 2024-04-28 12:46:00 Job executing on host: <128.142.60.150:41857?CCBID=137.138.152.114:9680%3faddrs%3d[2001-1458-d00-13--58]-9680+137.138.152.114-9680%26alias%3dvocms0821.cern.ch#3377366%20131.225.204.58:9658%3faddrs%3d[2620-6a-0-8420-f0-0-204-58]-9658+131.225.204.58-9658%26alias%3dcmssrv2221.fnal.gov#83164&PrivNet=b9s05p7087.cern.ch&addrs=[2001-1458-301-22--100-95]-41857+128.142.60.150-41857&alias=b9s05p7087.cern.ch&noUDP>
+...
+006 (17076671.000.000) 2024-04-28 12:46:09 Image size of job updated: 2840212
+	74  -  MemoryUsage of job (MB)
+	75000  -  ResidentSetSize of job (KB)
+	20979  -  ProportionalSetSize of job (KB)
+...
+040 (17076671.000.000) 2024-04-28 12:46:15 Started transferring output files
+...
+040 (17076671.000.000) 2024-04-28 12:46:15 Finished transferring output files
+...
+007 (17076671.000.000) 2024-04-28 12:46:16 Shadow exception!
+	Error from slot1_2@glidein_113_434388960@b9s05p7087.cern.ch: STARTER at 128.142.60.150 failed to send file(s) to <192.170.231.212:9618>: |Error: reading from file /pool/condor/dir_721599/glide_6lJjRk/execute/dir_522233/higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin11.MultiDimFit.mH125.root: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <128.142.60.150:45913>
+	1088  -  Run Bytes Sent By Job
+	2860956  -  Run Bytes Received By Job
+...
+012 (17076671.000.000) 2024-04-28 12:46:16 Job was held.
+	Error from slot1_2@glidein_113_434388960@b9s05p7087.cern.ch: STARTER at 128.142.60.150 failed to send file(s) to <192.170.231.212:9618>: |Error: reading from file /pool/condor/dir_721599/glide_6lJjRk/execute/dir_522233/higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin11.MultiDimFit.mH125.root: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <128.142.60.150:45913>
+	Code 13 Subcode 2
+...
+000 (17076800.000.000) 2024-04-28 12:51:22 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8741_2d6c>
+...
+040 (17076800.000.000) 2024-04-28 12:56:34 Started transferring input files
+	Transferring to host: <188.185.206.89:34093?CCBID=137.138.152.114:9634%3faddrs%3d[2001-1458-d00-13--58]-9634+137.138.152.114-9634%26alias%3dvocms0821.cern.ch#3395289&PrivNet=b9p05p1122.cern.ch&addrs=[2001-1458-303-b--100-56]-34093+188.185.206.89-34093&alias=b9p05p1122.cern.ch&noUDP>
+...
+001 (17076800.000.000) 2024-04-28 12:56:36 Job executing on host: <188.185.206.89:34697?CCBID=137.138.152.114:9673%3faddrs%3d[2001-1458-d00-13--58]-9673+137.138.152.114-9673%26alias%3dvocms0821.cern.ch#3346430&PrivNet=b9p05p1122.cern.ch&addrs=[2001-1458-303-b--100-56]-34697+188.185.206.89-34697&alias=b9p05p1122.cern.ch&noUDP>
+...
+040 (17076800.000.000) 2024-04-28 12:56:36 Finished transferring input files
+...
+006 (17076800.000.000) 2024-04-28 12:56:44 Image size of job updated: 2595856
+	28  -  MemoryUsage of job (MB)
+	62800  -  ResidentSetSize of job (KB)
+	28087  -  ProportionalSetSize of job (KB)
+...
+006 (17076800.000.000) 2024-04-28 13:01:37 Image size of job updated: 3065428
+	547  -  MemoryUsage of job (MB)
+	559476  -  ResidentSetSize of job (KB)
+	28087  -  ProportionalSetSize of job (KB)
+...
+040 (17076800.000.000) 2024-04-28 13:01:37 Started transferring output files
+...
+040 (17076800.000.000) 2024-04-28 13:01:38 Finished transferring output files
+...
+005 (17076800.000.000) 2024-04-28 13:01:38 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:11, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:11, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	80629  -  Run Bytes Sent By Job
+	2860957  -  Run Bytes Received By Job
+	80629  -  Total Bytes Sent By Job
+	2860957  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   121763     3000   2864206 
+	   Memory (MB)          :       28     3000      3072 
+
+	Job terminated of its own accord at 2024-04-28T18:01:37Z.
+...
+013 (17076671.000.000) 2024-04-29 10:50:21 Job was released.
+	via condor_release (by user yuzhe)
+...
+040 (17076671.000.000) 2024-04-29 10:55:07 Started transferring input files
+	Transferring to host: <90.147.169.110:33918?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9689#10976840%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9685#266161&PrivNet=wn-8-6-7.recas.ba.infn.it&addrs=90.147.169.110-33918&alias=wn-8-6-7.recas.ba.infn.it&noUDP>
+...
+001 (17076671.000.000) 2024-04-29 10:55:09 Job executing on host: <90.147.169.110:42981?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9645#10946054%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9671#259220&PrivNet=wn-8-6-7.recas.ba.infn.it&addrs=90.147.169.110-42981&alias=wn-8-6-7.recas.ba.infn.it&noUDP>
+...
+040 (17076671.000.000) 2024-04-29 10:55:09 Finished transferring input files
+...
+006 (17076671.000.000) 2024-04-29 10:56:34 Image size of job updated: 3000000
+	416  -  MemoryUsage of job (MB)
+	425180  -  ResidentSetSize of job (KB)
+	22500  -  ProportionalSetSize of job (KB)
+...
+040 (17076671.000.000) 2024-04-29 10:56:35 Started transferring output files
+...
+040 (17076671.000.000) 2024-04-29 10:56:35 Finished transferring output files
+...
+005 (17076671.000.000) 2024-04-29 10:56:36 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:15, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:18, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	80771  -  Run Bytes Sent By Job
+	2860957  -  Run Bytes Received By Job
+	82936  -  Total Bytes Sent By Job
+	8582869  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   121770   125000    413808 
+	   Memory (MB)          :       22     3000      3072 
+
+	Job terminated of its own accord at 2024-04-29T15:56:34Z.
+...

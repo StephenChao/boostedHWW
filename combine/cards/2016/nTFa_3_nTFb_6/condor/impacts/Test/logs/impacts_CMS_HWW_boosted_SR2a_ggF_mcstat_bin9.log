@@ -1,0 +1,45 @@
+000 (17034577.000.000) 2024-04-11 12:54:47 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login-el7.uscms.org&noUDP&sock=schedd_8841_c4e4>
+...
+040 (17034577.000.000) 2024-04-11 12:54:51 Started transferring input files
+	Transferring to host: <18.12.8.207:36267?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9700#10764399%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9716#71306&PrivNet=T2BAT0207.CMSAF.MIT.EDU&addrs=18.12.8.207-36267&alias=T2BAT0207.CMSAF.MIT.EDU&noUDP>
+...
+040 (17034577.000.000) 2024-04-11 12:54:51 Finished transferring input files
+...
+001 (17034577.000.000) 2024-04-11 12:54:52 Job executing on host: <18.12.8.207:35382?CCBID=128.142.194.25:9618%3faddrs%3d[2001-1458-301-cd--100-364]-9618+128.142.194.25-9618%26alias%3dvocms0813.cern.ch%26noUDP%26sock%3dcollector9676#10733347%20131.225.189.210:9618%3faddrs%3d[2620-6a-0-8421--cd]-9618+131.225.189.210-9618%26alias%3dcmssrvz03.fnal.gov%26noUDP%26sock%3dcollector9716#65269&PrivNet=T2BAT0207.CMSAF.MIT.EDU&addrs=18.12.8.207-35382&alias=T2BAT0207.CMSAF.MIT.EDU&noUDP>
+...
+006 (17034577.000.000) 2024-04-11 12:55:00 Image size of job updated: 2
+	17  -  MemoryUsage of job (MB)
+	2684  -  ResidentSetSize of job (KB)
+	17317  -  ProportionalSetSize of job (KB)
+...
+006 (17034577.000.000) 2024-04-11 13:00:01 Image size of job updated: 5398604
+	179  -  MemoryUsage of job (MB)
+	191688  -  ResidentSetSize of job (KB)
+	183017  -  ProportionalSetSize of job (KB)
+...
+006 (17034577.000.000) 2024-04-11 13:01:58 Image size of job updated: 5398604
+	352  -  MemoryUsage of job (MB)
+	360264  -  ResidentSetSize of job (KB)
+	183017  -  ProportionalSetSize of job (KB)
+...
+040 (17034577.000.000) 2024-04-11 13:02:01 Started transferring output files
+...
+040 (17034577.000.000) 2024-04-11 13:02:01 Finished transferring output files
+...
+005 (17034577.000.000) 2024-04-11 13:02:02 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:08, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:08, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	79230  -  Run Bytes Sent By Job
+	2188819  -  Run Bytes Received By Job
+	79230  -  Total Bytes Sent By Job
+	2188819  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.04        1         1 
+	   Disk (KB)            : 121123        2250    604840 
+	   Memory (MB)          :    179        3000      3072 
+
+	Job terminated of its own accord at 2024-04-11T18:01:57Z.
+...

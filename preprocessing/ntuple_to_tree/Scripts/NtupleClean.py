@@ -9,28 +9,32 @@ from optparse import OptionParser
 
 parser = OptionParser()
 parser.add_option('--year',      action="store",type="string",dest="year"      ,default="2018")
+parser.add_option('--type',      action="store",type="string",dest="type"      ,default="MC")
+parser.add_option('--test',      action="store",type="string",dest="test"      ,default="notest")
+
 (options, args) = parser.parse_args()
 
 print("Now clean ntuple files in year:",options.year)
-NtupleDir = '/data/pubfs/zhaoyz/Ntuple/V3/' + options.year + "/Splitted/"
-if "Merged" not in os.listdir('/data/pubfs/zhaoyz/Ntuple/V3/' + options.year):
-    print("No merged dir so far")
-    os.mkdir('/data/pubfs/zhaoyz/Ntuple/V3/' + options.year + "/Merged")
-else : print("merged dir exist")
-if "Data" not in os.listdir('/data/pubfs/zhaoyz/Ntuple/V3/' + options.year + "/Merged"):
+
+NtupleDir = '/data/bond/zhaoyz/Ntuple/V5/Splitted/' + options.year + "/"
+NtupleDir_merged = '/data/bond/zhaoyz/Ntuple/V5/Merged/' + options.year + "/"
+_ = os.system("mkdir -p " + NtupleDir_merged)
+
+if options.type not in os.listdir('/data/bond/zhaoyz/Ntuple/V5/Merged/' + options.year + "/"):
     print("No types in merged dir so far")
-    os.mkdir('/data/pubfs/zhaoyz/Ntuple/V3/' + options.year + "/Merged/Data")
-    os.mkdir('/data/pubfs/zhaoyz/Ntuple/V3/' + options.year + "/Merged/MC")
-    os.mkdir('/data/pubfs/zhaoyz/Ntuple/V3/' + options.year + "/Merged/Signal")
-else : print("type dir exist")
+    os.mkdir('/data/bond/zhaoyz/Ntuple/V5/Merged/' + options.year + "/" + options.type)
+else : 
+    print("type dir exist")
+
 for FileType in os.listdir(NtupleDir):
-    if FileType == "Test" or FileType == "test" : continue
+    if not FileType == options.type: continue
     for Samples in os.listdir(NtupleDir + FileType):
         for Files in os.listdir(NtupleDir + FileType + '/' + Samples):
             if os.path.getsize(NtupleDir + FileType + '/' + Samples + '/' + Files) == 0:
                 print(NtupleDir + FileType + '/' + Samples + '/' + Files, " is empty.")
-                os.system("rm %s"%(NtupleDir + FileType + '/' + Samples + '/' + Files))
-print("Now all the empty files in ",options.year,"has been deleted.")
+                if options.test == "notest": 
+                    os.system("rm %s"%(NtupleDir + FileType + '/' + Samples + '/' + Files))
+                    print("Now all the empty files in ",options.year,"has been deleted.")
 
 
  

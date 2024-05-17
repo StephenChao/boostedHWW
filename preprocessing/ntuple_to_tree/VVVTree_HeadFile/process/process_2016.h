@@ -24,6 +24,33 @@ void EDBR2PKUTree::initFatJet_Collection_2016(){
         &v_FatJet_msoftdrop_jerUp_,
         &v_FatJet_msoftdrop_jerDown_,
 
+        //Split JES
+        
+        &v_FatJet_msoftdrop_jesAbsoluteUp_,
+        &v_FatJet_msoftdrop_jesAbsoluteDown_,
+        &v_FatJet_msoftdrop_jesAbsolute_yearUp_,
+        &v_FatJet_msoftdrop_jesAbsolute_yearDown_,
+        &v_FatJet_msoftdrop_jesBBEC1Down_,
+        &v_FatJet_msoftdrop_jesBBEC1Up_,
+        &v_FatJet_msoftdrop_jesBBEC1_yearUp_,
+        &v_FatJet_msoftdrop_jesBBEC1_yearDown_,
+        &v_FatJet_msoftdrop_jesEC2Up_,
+        &v_FatJet_msoftdrop_jesEC2Down_,
+        &v_FatJet_msoftdrop_jesEC2_yearUp_,
+        &v_FatJet_msoftdrop_jesEC2_yearDown_,
+        &v_FatJet_msoftdrop_jesFlavorQCDUp_,
+        &v_FatJet_msoftdrop_jesFlavorQCDDown_,
+        &v_FatJet_msoftdrop_jesHFDown_,
+        &v_FatJet_msoftdrop_jesHFUp_,
+        &v_FatJet_msoftdrop_jesHF_yearUp_,
+        &v_FatJet_msoftdrop_jesHF_yearDown_,
+        &v_FatJet_msoftdrop_jesRelativeBalUp_,
+        &v_FatJet_msoftdrop_jesRelativeBalDown_,
+        &v_FatJet_msoftdrop_jesRelativeSample_yearUp_,
+        &v_FatJet_msoftdrop_jesRelativeSample_yearDown_,
+
+        //Done
+
         &v_FatJet_msoftdrop_jmsUp_,
         &v_FatJet_msoftdrop_jmsDown_,
         &v_FatJet_msoftdrop_jmrUp_,
@@ -174,6 +201,8 @@ void EDBR2PKUTree::FatJets_P4_MASSOrder_2016() {
     HWW_V2_mid = FatJets.Get("Mass","HWW_V2",1);
     HWW_V2_min = FatJets.Get("Mass","HWW_V2",2);
 
+
+
 }
 
 
@@ -229,6 +258,81 @@ void EDBR2PKUTree::FatJets_P4_HWWV2_Order_2016() {
     Mj_jmsDown_c      = FatJets.Get("HWW-V2-MD","msoftdrop_jmsDown", 2);
     Mj_jmrUp_c        = FatJets.Get("HWW-V2-MD","msoftdrop_jmrUp", 2);
     Mj_jmrDown_c      = FatJets.Get("HWW-V2-MD","msoftdrop_jmrDown", 2);
+
+  // Split JES
+
+Mj_jesAbsoluteUp_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesAbsoluteUp",0);
+Mj_jesAbsoluteDown_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesAbsoluteDown",0);
+Mj_jesAbsolute_yearUp_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesAbsolute_yearUp",0);
+Mj_jesAbsolute_yearDown_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesAbsolute_yearDown",0);
+Mj_jesBBEC1Down_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesBBEC1Down",0);
+Mj_jesBBEC1Up_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesBBEC1Up",0);
+Mj_jesBBEC1_yearUp_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesBBEC1_yearUp",0);
+Mj_jesBBEC1_yearDown_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesBBEC1_yearDown",0);
+Mj_jesEC2Up_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesEC2Up",0);
+Mj_jesEC2Down_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesEC2Down",0);
+Mj_jesEC2_yearUp_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesEC2_yearUp",0);
+Mj_jesEC2_yearDown_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesEC2_yearDown",0);
+Mj_jesFlavorQCDUp_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesFlavorQCDUp",0);
+Mj_jesFlavorQCDDown_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesFlavorQCDDown",0);
+Mj_jesHFDown_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesHFDown",0);
+Mj_jesHFUp_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesHFUp",0);
+Mj_jesHF_yearUp_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesHF_yearUp",0);
+Mj_jesHF_yearDown_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesHF_yearDown",0);
+Mj_jesRelativeBalUp_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesRelativeBalUp",0);
+Mj_jesRelativeBalDown_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesRelativeBalDown",0);
+Mj_jesRelativeSample_yearUp_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesRelativeSample_yearUp",0);
+Mj_jesRelativeSample_yearDown_a = FatJets.Get("HWW-V2-MD","msoftdrop_jesRelativeSample_yearDown",0);
+
+
+Mj_jesAbsoluteUp_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesAbsoluteUp",1);
+Mj_jesAbsoluteDown_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesAbsoluteDown",1);
+Mj_jesAbsolute_yearUp_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesAbsolute_yearUp",1);
+Mj_jesAbsolute_yearDown_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesAbsolute_yearDown",1);
+Mj_jesBBEC1Down_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesBBEC1Down",1);
+Mj_jesBBEC1Up_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesBBEC1Up",1);
+Mj_jesBBEC1_yearUp_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesBBEC1_yearUp",1);
+Mj_jesBBEC1_yearDown_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesBBEC1_yearDown",1);
+Mj_jesEC2Up_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesEC2Up",1);
+Mj_jesEC2Down_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesEC2Down",1);
+Mj_jesEC2_yearUp_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesEC2_yearUp",1);
+Mj_jesEC2_yearDown_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesEC2_yearDown",1);
+Mj_jesFlavorQCDUp_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesFlavorQCDUp",1);
+Mj_jesFlavorQCDDown_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesFlavorQCDDown",1);
+Mj_jesHFDown_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesHFDown",1);
+Mj_jesHFUp_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesHFUp",1);
+Mj_jesHF_yearUp_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesHF_yearUp",1);
+Mj_jesHF_yearDown_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesHF_yearDown",1);
+Mj_jesRelativeBalUp_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesRelativeBalUp",1);
+Mj_jesRelativeBalDown_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesRelativeBalDown",1);
+Mj_jesRelativeSample_yearUp_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesRelativeSample_yearUp",1);
+Mj_jesRelativeSample_yearDown_b = FatJets.Get("HWW-V2-MD","msoftdrop_jesRelativeSample_yearDown",1);
+
+Mj_jesAbsoluteUp_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesAbsoluteUp",2);
+Mj_jesAbsoluteDown_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesAbsoluteDown",2);
+Mj_jesAbsolute_yearUp_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesAbsolute_yearUp",2);
+Mj_jesAbsolute_yearDown_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesAbsolute_yearDown",2);
+Mj_jesBBEC1Down_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesBBEC1Down",2);
+Mj_jesBBEC1Up_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesBBEC1Up",2);
+Mj_jesBBEC1_yearUp_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesBBEC1_yearUp",2);
+Mj_jesBBEC1_yearDown_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesBBEC1_yearDown",2);
+Mj_jesEC2Up_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesEC2Up",2);
+Mj_jesEC2Down_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesEC2Down",2);
+Mj_jesEC2_yearUp_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesEC2_yearUp",2);
+Mj_jesEC2_yearDown_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesEC2_yearDown",2);
+Mj_jesFlavorQCDUp_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesFlavorQCDUp",2);
+Mj_jesFlavorQCDDown_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesFlavorQCDDown",2);
+Mj_jesHFDown_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesHFDown",2);
+Mj_jesHFUp_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesHFUp",2);
+Mj_jesHF_yearUp_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesHF_yearUp",2);
+Mj_jesHF_yearDown_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesHF_yearDown",2);
+Mj_jesRelativeBalUp_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesRelativeBalUp",2);
+Mj_jesRelativeBalDown_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesRelativeBalDown",2);
+Mj_jesRelativeSample_yearUp_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesRelativeSample_yearUp",2);
+Mj_jesRelativeSample_yearDown_c = FatJets.Get("HWW-V2-MD","msoftdrop_jesRelativeSample_yearDown",2);
+
+
+    // Done split
 
 }
 

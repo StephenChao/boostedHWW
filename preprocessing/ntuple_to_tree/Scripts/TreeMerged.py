@@ -11,11 +11,12 @@ import subprocess
 parser = OptionParser()
 parser.add_option('--year',      action="store",type="string",dest="year"      ,default="2017")
 parser.add_option('--test',      action="store",type="string",dest="test"      ,default="notest")
+parser.add_option('--filetype',  action="store",type="string",dest="type"      ,default="MC")
 (options, args) = parser.parse_args()
 
 
-TreeSplitted = "/data/pubfs/zhaoyz/Tree/V8/" + options.year + "/Splitted/"
-TreeMerged = "/data/pubfs/zhaoyz/Tree/V8/" + options.year + "/Merged/"
+TreeSplitted = "/data/bond/zhaoyz/Tree/V10/" + options.year + "/Splitted/"
+TreeMerged = "/data/bond/zhaoyz/Tree/V10/" + options.year + "/Merged/"
 
 ProcessDict = {
     "VBF"      :      350.18,
@@ -26,7 +27,7 @@ ProcessDict = {
     "GluGlu"   :      100.7,    
 } 
 ProcessDict2 = {
-    "QCD"   :      1,
+    # "QCD"   :      1,
     "ST"      :      1,
     "TT"     :      1,
     "WJets":      1,
@@ -36,23 +37,15 @@ ProcessDict3 = {
     "WZ_TuneCP5"    :      1,
     "ZZ_TuneCP5"    :      1,
     "ZJetsToQQ"     :      1,
-
+    "DYJets"        :      1,
 }
 ProcessDict4 = {
     "HWplus"   :      186,
     "HWminus"  :      116,
-    "HZJ"      :      205,
 }
-ProcessDict5 = {
-    "WJets" : 1,
-    "ST" : 1,
-    "TT" : 1,
-}
-ProcessDict6 = {
-    "ZJets" : 1,
-    "DYJets": 1,
-}
-if options.year == "2018" or options.year == "2017":
+
+# filetype = options.filetype
+if options.year == "2018" or options.year == "2017" or options.year == "2016" or options.year == "2016APV":
     HaddStr = ""
     for FileTypes in os.listdir(TreeSplitted):
         if FileTypes == "Data":
@@ -65,7 +58,7 @@ if options.year == "2018" or options.year == "2017":
             print("\n")
             print("*************** Data Done ***************")
         if FileTypes == "SingleMuon":
-            # continue
+            continue
             HaddStr = "hadd " + TreeMerged + FileTypes + "/Tree_SingleMuon.root "
             for Eras in os.listdir(TreeSplitted + FileTypes):
                 HaddStr += TreeSplitted + FileTypes + '/' + Eras + "/*.root "
@@ -74,7 +67,7 @@ if options.year == "2018" or options.year == "2017":
             print("\n")
             print("*************** SingleMuon Done ***************")
         elif FileTypes == "MC" :
-            continue
+            # continue
             for Process in ProcessDict2:                
                 HaddStr = "hadd " + TreeMerged + FileTypes + "/Tree_" + Process + ".root "
                 for Das in os.listdir(TreeSplitted + FileTypes):
@@ -84,7 +77,9 @@ if options.year == "2018" or options.year == "2017":
                 if options.test == "notest":os.system(HaddStr)
                 print("\n")
                 print("*************** MC nonRest Done ***************")
+                
             HaddStr = "hadd " + TreeMerged + FileTypes + "/Tree_" + "Rest.root "
+            
             for Process in ProcessDict3:            
                 for Das in os.listdir(TreeSplitted + FileTypes):
                     if Process in Das:
@@ -93,28 +88,10 @@ if options.year == "2018" or options.year == "2017":
             if options.test == "notest":os.system(HaddStr)
             print("\n")
             print("*************** MC rest ***************")
-        elif FileTypes == "MET" :
-            continue
-            for Process in ProcessDict5:                
-                HaddStr = "hadd " + TreeMerged + FileTypes + "/Tree_" + Process + ".root "
-                for Das in os.listdir(TreeSplitted + FileTypes):
-                    if Process in Das:
-                        HaddStr += TreeSplitted + FileTypes + '/' + Das + "/*.root "
-                print("Should print:",HaddStr)
-                if options.test == "notest":os.system(HaddStr)
-                print("\n")
-                print("*************** MC nonRest Done ***************")
-            HaddStr = "hadd " + TreeMerged + FileTypes + "/Tree_" + "Rest.root "
-            for Process in ProcessDict6:            
-                for Das in os.listdir(TreeSplitted + FileTypes):
-                    if Process in Das:
-                        HaddStr += TreeSplitted + FileTypes + '/' + Das + "/*.root "
-            print("Should print:",HaddStr)
-            if options.test == "notest":os.system(HaddStr)
-            print("\n")
-            print("*************** MC rest ***************")
+            
+
         elif FileTypes == "Signal":
-            continue
+            # continue
             for Process in ProcessDict:                
                 HaddStr = "hadd " + TreeMerged + FileTypes + "/Tree_" + Process + ".root "
                 for Das in os.listdir(TreeSplitted + FileTypes):
@@ -132,17 +109,24 @@ if options.year == "2018" or options.year == "2017":
             print("Should print:",HaddStr)
             if options.test == "notest":os.system(HaddStr)
             print("\n")
-            HaddStr = "hadd " + TreeMerged + FileTypes + "/Tree_" + "VH.root "
+            HaddStr = "hadd " + TreeMerged + FileTypes + "/Tree_" + "WH.root "
             for Process in ProcessDict4:            
                 for Das in os.listdir(TreeSplitted + FileTypes):
                     if Process in Das:
                         HaddStr += TreeSplitted + FileTypes + '/' + Das + "/*.root "
             print("Should print:",HaddStr)
-            if options.test == "notest":os.system(HaddStr)
+            print("rm " + TreeMerged + FileTypes + "/Tree_HWplus.root")
+            print("rm " + TreeMerged + FileTypes + "/Tree_HWminus.root")
+            if options.test == "notest":
+                os.system(HaddStr)
+                os.system("rm " + TreeMerged + FileTypes + "/Tree_HWplus.root")
+                os.system("rm " + TreeMerged + FileTypes + "/Tree_HWminus.root")            
             print("*************** Signal Done ***************")
-if "2016" in options.year:
-    TreeSplitted = "/data/pubfs/zhaoyz/Tree/V8/2016/Splitted/"
-    TreeSplittedAPV = "/data/pubfs/zhaoyz/Tree/V8/2016APV/Splitted/"
+
+# not used anymore, since we split the eras
+if "2016all" in options.year:
+    TreeSplitted = "/data/bond/zhaoyz/Tree/V8/2016/Splitted/"
+    TreeSplittedAPV = "/data/bond/zhaoyz/Tree/V8/2016APV/Splitted/"
     HaddStr = ""
     for FileTypes in os.listdir(TreeSplitted):
         for FileTypesAPV in os.listdir(TreeSplittedAPV):

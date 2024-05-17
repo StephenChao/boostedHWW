@@ -1,9 +1,4 @@
 import os
-# import random
-# import sys
-# import ctypes
-# import time
-# from datetime import datetime
 import ROOT
 from optparse import OptionParser
 import subprocess
@@ -15,8 +10,8 @@ parser.add_option('--test',      action="store",type="string",dest="test"      ,
 (options, args) = parser.parse_args()
 
 
-path_tree ="/data/pubfs/zhaoyz/Tree/V7/" + options.year + "/Splitted/Data/" # Your dir for Ntuple file waiting for TransferTree,waiting for changing.
-file_dir1="/data/pubfs/zhaoyz/Ntuple/V3/" + options.year + "/Merged/Data/"           # Your dir for Tree file after TransferTree, waiting for changing.
+path_tree ="/data/bond/zhaoyz/Tree/V9/" + options.year + "/Splitted/Data/" # Your dir for Ntuple file waiting for TransferTree,waiting for changing.
+file_dir1="/data/bond/zhaoyz/Ntuple/V3/" + options.year + "/Merged/Data/"           # Your dir for Tree file after TransferTree, waiting for changing.
 if options.year == "2017" or options.year == "2018":
     for das in os.listdir(file_dir1):
         if das not in os.listdir(path_tree): os.mkdir("%s%s"%(path_tree,das))

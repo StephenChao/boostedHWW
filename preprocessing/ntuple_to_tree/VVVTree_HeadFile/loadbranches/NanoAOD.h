@@ -33,6 +33,21 @@ void EDBR2PKUTree::loadVectorBranches_Muon() {
 //b_Muon_charge is a clone to this branch
 
 void EDBR2PKUTree::loadVectorBranches_FatJets_HWW() {
+    // year info, used to identify year uncorrelated unc sources
+    TString year_info;
+    if (YEAR_g.Contains("2016")) {
+        year_info = "2016";
+    }
+    if (YEAR_g.Contains("2017")) {
+        year_info = "2017";
+    }
+    if (YEAR_g.Contains("2018")) {
+        year_info = "2018";
+    }
+    // cout<<"year info:"<<year_info<<endl;
+    // add LHEPdfWeight
+    b_LHEPdfWeight_ = fChain->GetBranch("LHEPdfWeight");
+    if (b_LHEPdfWeight_) { b_LHEPdfWeight_->SetAddress(&LHEPdfWeight_);}
 
     // add LHEScaleWeight
 
@@ -74,6 +89,90 @@ void EDBR2PKUTree::loadVectorBranches_FatJets_HWW() {
 
     b_FatJet_msoftdrop_jerDown_ = fChain->GetBranch("FatJet_msoftdrop_jerDown");
     if (b_FatJet_msoftdrop_jerDown_) { b_FatJet_msoftdrop_jerDown_->SetAddress(&FatJet_msoftdrop_jerDown_);}
+    
+    // Split JES sources, update 16/2/2024
+
+    //Abs
+
+    b_FatJet_msoftdrop_jesAbsoluteUp_ = fChain->GetBranch("FatJet_msoftdrop_jesAbsoluteUp");
+    if (b_FatJet_msoftdrop_jesAbsoluteUp_) { b_FatJet_msoftdrop_jesAbsoluteUp_->SetAddress(&FatJet_msoftdrop_jesAbsoluteUp_);}
+
+    b_FatJet_msoftdrop_jesAbsoluteDown_ = fChain->GetBranch("FatJet_msoftdrop_jesAbsoluteDown");
+    if (b_FatJet_msoftdrop_jesAbsoluteDown_) { b_FatJet_msoftdrop_jesAbsoluteDown_->SetAddress(&FatJet_msoftdrop_jesAbsoluteDown_);}
+
+    b_FatJet_msoftdrop_jesAbsolute_yearUp_ = fChain->GetBranch("FatJet_msoftdrop_jesAbsolute_" + year_info + "Up");
+    if (b_FatJet_msoftdrop_jesAbsolute_yearUp_) { b_FatJet_msoftdrop_jesAbsolute_yearUp_->SetAddress(&FatJet_msoftdrop_jesAbsolute_yearUp_);}
+    
+    b_FatJet_msoftdrop_jesAbsolute_yearDown_ = fChain->GetBranch("FatJet_msoftdrop_jesAbsolute_" + year_info + "Down");
+    if (b_FatJet_msoftdrop_jesAbsolute_yearDown_) { b_FatJet_msoftdrop_jesAbsolute_yearDown_->SetAddress(&FatJet_msoftdrop_jesAbsolute_yearDown_);}
+
+    // BBEC1
+
+    b_FatJet_msoftdrop_jesBBEC1Up_ = fChain->GetBranch("FatJet_msoftdrop_jesBBEC1Up");
+    if (b_FatJet_msoftdrop_jesBBEC1Up_) { b_FatJet_msoftdrop_jesBBEC1Up_->SetAddress(&FatJet_msoftdrop_jesBBEC1Up_);}
+
+    b_FatJet_msoftdrop_jesBBEC1Down_ = fChain->GetBranch("FatJet_msoftdrop_jesBBEC1Down");
+    if (b_FatJet_msoftdrop_jesBBEC1Down_) { b_FatJet_msoftdrop_jesBBEC1Down_->SetAddress(&FatJet_msoftdrop_jesBBEC1Down_);}
+
+    b_FatJet_msoftdrop_jesBBEC1_yearUp_ = fChain->GetBranch("FatJet_msoftdrop_jesBBEC1_" + year_info + "Up");
+    if (b_FatJet_msoftdrop_jesBBEC1_yearUp_) { b_FatJet_msoftdrop_jesBBEC1_yearUp_->SetAddress(&FatJet_msoftdrop_jesBBEC1_yearUp_);}
+    
+    b_FatJet_msoftdrop_jesBBEC1_yearDown_ = fChain->GetBranch("FatJet_msoftdrop_jesBBEC1_" + year_info + "Down");
+    if (b_FatJet_msoftdrop_jesBBEC1_yearDown_) { b_FatJet_msoftdrop_jesBBEC1_yearDown_->SetAddress(&FatJet_msoftdrop_jesBBEC1_yearDown_);}
+
+    //EC2
+
+    b_FatJet_msoftdrop_jesEC2Up_ = fChain->GetBranch("FatJet_msoftdrop_jesEC2Up");
+    if (b_FatJet_msoftdrop_jesEC2Up_) { b_FatJet_msoftdrop_jesEC2Up_->SetAddress(&FatJet_msoftdrop_jesEC2Up_);}
+
+    b_FatJet_msoftdrop_jesEC2Down_ = fChain->GetBranch("FatJet_msoftdrop_jesEC2Down");
+    if (b_FatJet_msoftdrop_jesEC2Down_) { b_FatJet_msoftdrop_jesEC2Down_->SetAddress(&FatJet_msoftdrop_jesEC2Down_);}
+
+    b_FatJet_msoftdrop_jesEC2_yearUp_ = fChain->GetBranch("FatJet_msoftdrop_jesEC2_" + year_info + "Up");
+    if (b_FatJet_msoftdrop_jesEC2_yearUp_) { b_FatJet_msoftdrop_jesEC2_yearUp_->SetAddress(&FatJet_msoftdrop_jesEC2_yearUp_);}
+    
+    b_FatJet_msoftdrop_jesEC2_yearDown_ = fChain->GetBranch("FatJet_msoftdrop_jesEC2_" + year_info + "Down");
+    if (b_FatJet_msoftdrop_jesEC2_yearDown_) { b_FatJet_msoftdrop_jesEC2_yearDown_->SetAddress(&FatJet_msoftdrop_jesEC2_yearDown_);}
+
+    //Flavor QCD
+
+    b_FatJet_msoftdrop_jesFlavorQCDUp_ = fChain->GetBranch("FatJet_msoftdrop_jesFlavorQCDUp");
+    if (b_FatJet_msoftdrop_jesFlavorQCDUp_) { b_FatJet_msoftdrop_jesFlavorQCDUp_->SetAddress(&FatJet_msoftdrop_jesFlavorQCDUp_);}
+
+    b_FatJet_msoftdrop_jesFlavorQCDDown_ = fChain->GetBranch("FatJet_msoftdrop_jesFlavorQCDDown");
+    if (b_FatJet_msoftdrop_jesFlavorQCDDown_) { b_FatJet_msoftdrop_jesFlavorQCDDown_->SetAddress(&FatJet_msoftdrop_jesFlavorQCDDown_);}
+
+    // HF
+
+    b_FatJet_msoftdrop_jesHFUp_ = fChain->GetBranch("FatJet_msoftdrop_jesHFUp");
+    if (b_FatJet_msoftdrop_jesHFUp_) { b_FatJet_msoftdrop_jesHFUp_->SetAddress(&FatJet_msoftdrop_jesHFUp_);}
+
+    b_FatJet_msoftdrop_jesHFDown_ = fChain->GetBranch("FatJet_msoftdrop_jesHFDown");
+    if (b_FatJet_msoftdrop_jesHFDown_) { b_FatJet_msoftdrop_jesHFDown_->SetAddress(&FatJet_msoftdrop_jesHFDown_);}
+
+    b_FatJet_msoftdrop_jesHF_yearUp_ = fChain->GetBranch("FatJet_msoftdrop_jesHF_" + year_info + "Up");
+    if (b_FatJet_msoftdrop_jesHF_yearUp_) { b_FatJet_msoftdrop_jesHF_yearUp_->SetAddress(&FatJet_msoftdrop_jesHF_yearUp_);}
+    
+    b_FatJet_msoftdrop_jesHF_yearDown_ = fChain->GetBranch("FatJet_msoftdrop_jesHF_" + year_info + "Down");
+    if (b_FatJet_msoftdrop_jesHF_yearDown_) { b_FatJet_msoftdrop_jesHF_yearDown_->SetAddress(&FatJet_msoftdrop_jesHF_yearDown_);}
+
+    // RelativeBal
+
+    b_FatJet_msoftdrop_jesRelativeBalUp_ = fChain->GetBranch("FatJet_msoftdrop_jesRelativeBalUp");
+    if (b_FatJet_msoftdrop_jesRelativeBalUp_) { b_FatJet_msoftdrop_jesRelativeBalUp_->SetAddress(&FatJet_msoftdrop_jesRelativeBalUp_);}
+
+    b_FatJet_msoftdrop_jesRelativeBalDown_ = fChain->GetBranch("FatJet_msoftdrop_jesRelativeBalDown");
+    if (b_FatJet_msoftdrop_jesRelativeBalDown_) { b_FatJet_msoftdrop_jesRelativeBalDown_->SetAddress(&FatJet_msoftdrop_jesRelativeBalDown_);}
+
+    // RelativeSample
+
+    b_FatJet_msoftdrop_jesRelativeSample_yearUp_ = fChain->GetBranch("FatJet_msoftdrop_jesRelativeSample_" + year_info + "Up");
+    if (b_FatJet_msoftdrop_jesRelativeSample_yearUp_) { b_FatJet_msoftdrop_jesRelativeSample_yearUp_->SetAddress(&FatJet_msoftdrop_jesRelativeSample_yearUp_);}
+    
+    b_FatJet_msoftdrop_jesRelativeSample_yearDown_ = fChain->GetBranch("FatJet_msoftdrop_jesRelativeSample_" + year_info + "Down");
+    if (b_FatJet_msoftdrop_jesRelativeSample_yearDown_) { b_FatJet_msoftdrop_jesRelativeSample_yearDown_->SetAddress(&FatJet_msoftdrop_jesRelativeSample_yearDown_);}
+
+    // done split JES
 
     // Add JES, JER up and down branch on 26/2/2024, over
     b_FatJet_msoftdrop_jmrUp_ = fChain->GetBranch("FatJet_msoftdrop_jmrUp");
@@ -348,14 +447,15 @@ void EDBR2PKUTree::loadVectorBranches_HLT() {
     fChain->SetBranchAddress("HLT_AK8PFHT850_TrimMass50",&HLT_AK8PFHT850_TrimMass50,&b_HLT_AK8PFHT850_TrimMass50);
     fChain->SetBranchAddress("HLT_AK8PFHT900_TrimMass50",&HLT_AK8PFHT900_TrimMass50,&b_HLT_AK8PFHT900_TrimMass50);
 
-    fChain->SetBranchAddress("HLT_PFMET110_PFMHT110_IDTight",&HLT_PFMET110_PFMHT110_IDTight,&b_HLT_PFMET110_PFMHT110_IDTight);
-    fChain->SetBranchAddress("HLT_PFMET120_PFMHT120_IDTight",&HLT_PFMET120_PFMHT120_IDTight,&b_HLT_PFMET120_PFMHT120_IDTight);
-    fChain->SetBranchAddress("HLT_PFMET130_PFMHT130_IDTight",&HLT_PFMET130_PFMHT130_IDTight,&b_HLT_PFMET130_PFMHT130_IDTight);
-    fChain->SetBranchAddress("HLT_PFMET140_PFMHT140_IDTight",&HLT_PFMET140_PFMHT140_IDTight,&b_HLT_PFMET140_PFMHT140_IDTight);
+    // not used so deleted
+    // fChain->SetBranchAddress("HLT_PFMET110_PFMHT110_IDTight",&HLT_PFMET110_PFMHT110_IDTight,&b_HLT_PFMET110_PFMHT110_IDTight);
+    // fChain->SetBranchAddress("HLT_PFMET120_PFMHT120_IDTight",&HLT_PFMET120_PFMHT120_IDTight,&b_HLT_PFMET120_PFMHT120_IDTight);
+    // fChain->SetBranchAddress("HLT_PFMET130_PFMHT130_IDTight",&HLT_PFMET130_PFMHT130_IDTight,&b_HLT_PFMET130_PFMHT130_IDTight);
+    // fChain->SetBranchAddress("HLT_PFMET140_PFMHT140_IDTight",&HLT_PFMET140_PFMHT140_IDTight,&b_HLT_PFMET140_PFMHT140_IDTight);
     
-    fChain->SetBranchAddress("HLT_Mu50",&HLT_Mu50,&b_HLT_Mu50);
-    fChain->SetBranchAddress("HLT_Ele115_CaloIdVT_GsfTrkIdT",&HLT_Ele115_CaloIdVT_GsfTrkIdT,&b_HLT_Ele115_CaloIdVT_GsfTrkIdT);
-    fChain->SetBranchAddress("HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165",&HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165,&b_HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165);
+    // fChain->SetBranchAddress("HLT_Mu50",&HLT_Mu50,&b_HLT_Mu50);
+    // fChain->SetBranchAddress("HLT_Ele115_CaloIdVT_GsfTrkIdT",&HLT_Ele115_CaloIdVT_GsfTrkIdT,&b_HLT_Ele115_CaloIdVT_GsfTrkIdT);
+    // fChain->SetBranchAddress("HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165",&HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165,&b_HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165);
 
 }
 
@@ -368,6 +468,9 @@ void EDBR2PKUTree::loadVectorBranches_genWeight() {
     fChain->SetBranchAddress("puWeight", &puWeight, &b_puWeight);
     fChain->SetBranchAddress("puWeightDown", &puWeightDown, &b_puWeightDown);
     fChain->SetBranchAddress("puWeightUp", &puWeightUp, &b_puWeightUp);
+    fChain->SetBranchAddress("PrefireWeight", &PrefireWeight, &b_PrefireWeight);
+    fChain->SetBranchAddress("PrefireWeight_Down", &PrefireWeightDown, &b_PrefireWeightDown);
+    fChain->SetBranchAddress("PrefireWeight_Up", &PrefireWeightUp, &b_PrefireWeightUp);
 }
 
 void EDBR2PKUTree::loadVectorBranches_run() {

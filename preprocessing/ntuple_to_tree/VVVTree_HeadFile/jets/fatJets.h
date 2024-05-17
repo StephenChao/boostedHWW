@@ -48,6 +48,32 @@ struct FatJet_P //define the necessary struct used by
     vector<float>* v_FatJet_msoftdrop_jerUp_;
     vector<float>* v_FatJet_msoftdrop_jerDown_;
 
+// Add JES sources
+
+    vector<float>* v_FatJet_msoftdrop_jesAbsoluteUp_;
+    vector<float>* v_FatJet_msoftdrop_jesAbsoluteDown_;
+    vector<float>* v_FatJet_msoftdrop_jesAbsolute_yearUp_;
+    vector<float>* v_FatJet_msoftdrop_jesAbsolute_yearDown_;
+    vector<float>* v_FatJet_msoftdrop_jesBBEC1Down_;
+    vector<float>* v_FatJet_msoftdrop_jesBBEC1Up_;
+    vector<float>* v_FatJet_msoftdrop_jesBBEC1_yearUp_;
+    vector<float>* v_FatJet_msoftdrop_jesBBEC1_yearDown_;
+    vector<float>* v_FatJet_msoftdrop_jesEC2Up_;
+    vector<float>* v_FatJet_msoftdrop_jesEC2Down_;
+    vector<float>* v_FatJet_msoftdrop_jesEC2_yearUp_;
+    vector<float>* v_FatJet_msoftdrop_jesEC2_yearDown_;
+    vector<float>* v_FatJet_msoftdrop_jesFlavorQCDUp_;
+    vector<float>* v_FatJet_msoftdrop_jesFlavorQCDDown_;
+    vector<float>* v_FatJet_msoftdrop_jesHFDown_;
+    vector<float>* v_FatJet_msoftdrop_jesHFUp_;
+    vector<float>* v_FatJet_msoftdrop_jesHF_yearUp_;
+    vector<float>* v_FatJet_msoftdrop_jesHF_yearDown_;
+    vector<float>* v_FatJet_msoftdrop_jesRelativeBalUp_;
+    vector<float>* v_FatJet_msoftdrop_jesRelativeBalDown_;
+    vector<float>* v_FatJet_msoftdrop_jesRelativeSample_yearUp_;
+    vector<float>* v_FatJet_msoftdrop_jesRelativeSample_yearDown_;
+
+
 
 // Add JMS, JMR up and down branch on 1/3/2024
     vector<float>* v_FatJet_msoftdrop_jmsUp_;
@@ -135,7 +161,31 @@ class FatJet_Collection {
     vector<float>* v_FatJet_msoftdrop_jerUp_;
     vector<float>* v_FatJet_msoftdrop_jerDown_;
 
-// Add JES, JER up and down branch on 26/2/2024
+// Add JES sources
+    vector<float>* v_FatJet_msoftdrop_jesAbsoluteUp_;
+    vector<float>* v_FatJet_msoftdrop_jesAbsoluteDown_;
+    vector<float>* v_FatJet_msoftdrop_jesAbsolute_yearUp_;
+    vector<float>* v_FatJet_msoftdrop_jesAbsolute_yearDown_;
+    vector<float>* v_FatJet_msoftdrop_jesBBEC1Down_;
+    vector<float>* v_FatJet_msoftdrop_jesBBEC1Up_;
+    vector<float>* v_FatJet_msoftdrop_jesBBEC1_yearUp_;
+    vector<float>* v_FatJet_msoftdrop_jesBBEC1_yearDown_;
+    vector<float>* v_FatJet_msoftdrop_jesEC2Up_;
+    vector<float>* v_FatJet_msoftdrop_jesEC2Down_;
+    vector<float>* v_FatJet_msoftdrop_jesEC2_yearUp_;
+    vector<float>* v_FatJet_msoftdrop_jesEC2_yearDown_;
+    vector<float>* v_FatJet_msoftdrop_jesFlavorQCDUp_;
+    vector<float>* v_FatJet_msoftdrop_jesFlavorQCDDown_;
+    vector<float>* v_FatJet_msoftdrop_jesHFDown_;
+    vector<float>* v_FatJet_msoftdrop_jesHFUp_;
+    vector<float>* v_FatJet_msoftdrop_jesHF_yearUp_;
+    vector<float>* v_FatJet_msoftdrop_jesHF_yearDown_;
+    vector<float>* v_FatJet_msoftdrop_jesRelativeBalUp_;
+    vector<float>* v_FatJet_msoftdrop_jesRelativeBalDown_;
+    vector<float>* v_FatJet_msoftdrop_jesRelativeSample_yearUp_;
+    vector<float>* v_FatJet_msoftdrop_jesRelativeSample_yearDown_;
+
+// Add JMS, JMR up and down branch on 26/2/2024
     vector<float>* v_FatJet_msoftdrop_jmsUp_;
     vector<float>* v_FatJet_msoftdrop_jmsDown_;
     vector<float>* v_FatJet_msoftdrop_jmrUp_;
@@ -206,6 +256,31 @@ class FatJet_Collection {
     vector<float> FatJet_msoftdrop_jesTotalDown;
     vector<float> FatJet_msoftdrop_jerUp;
     vector<float> FatJet_msoftdrop_jerDown;
+
+    // Split JES
+    vector<float> FatJet_msoftdrop_jesAbsoluteUp;
+    vector<float> FatJet_msoftdrop_jesAbsoluteDown;
+    vector<float> FatJet_msoftdrop_jesAbsolute_yearUp;
+    vector<float> FatJet_msoftdrop_jesAbsolute_yearDown;
+    vector<float> FatJet_msoftdrop_jesBBEC1Down;
+    vector<float> FatJet_msoftdrop_jesBBEC1Up;
+    vector<float> FatJet_msoftdrop_jesBBEC1_yearUp;
+    vector<float> FatJet_msoftdrop_jesBBEC1_yearDown;
+    vector<float> FatJet_msoftdrop_jesEC2Up;
+    vector<float> FatJet_msoftdrop_jesEC2Down;
+    vector<float> FatJet_msoftdrop_jesEC2_yearUp;
+    vector<float> FatJet_msoftdrop_jesEC2_yearDown;
+    vector<float> FatJet_msoftdrop_jesFlavorQCDUp;
+    vector<float> FatJet_msoftdrop_jesFlavorQCDDown;
+    vector<float> FatJet_msoftdrop_jesHFDown;
+    vector<float> FatJet_msoftdrop_jesHFUp;
+    vector<float> FatJet_msoftdrop_jesHF_yearUp;
+    vector<float> FatJet_msoftdrop_jesHF_yearDown;
+    vector<float> FatJet_msoftdrop_jesRelativeBalUp;
+    vector<float> FatJet_msoftdrop_jesRelativeBalDown;
+    vector<float> FatJet_msoftdrop_jesRelativeSample_yearUp;
+    vector<float> FatJet_msoftdrop_jesRelativeSample_yearDown;
+
 
     //JMS/JMR
     vector<float> FatJet_msoftdrop_jmsUp;
@@ -324,7 +399,33 @@ FatJet_Collection::FatJet_Collection(FatJet_P FatJet_ , int NMAXFatJet_, int fil
     v_FatJet_msoftdrop_jerUp_                = FatJet_.v_FatJet_msoftdrop_jerUp_;
     v_FatJet_msoftdrop_jerDown_              = FatJet_.v_FatJet_msoftdrop_jerDown_;
 
-// Add JES, JER up and down branch on 26/2/2024
+// Split JES
+
+    v_FatJet_msoftdrop_jesAbsoluteUp_ = FatJet_.v_FatJet_msoftdrop_jesAbsoluteUp_;
+    v_FatJet_msoftdrop_jesAbsoluteDown_ = FatJet_.v_FatJet_msoftdrop_jesAbsoluteDown_;
+    v_FatJet_msoftdrop_jesAbsolute_yearUp_ = FatJet_.v_FatJet_msoftdrop_jesAbsolute_yearUp_;
+    v_FatJet_msoftdrop_jesAbsolute_yearDown_ = FatJet_.v_FatJet_msoftdrop_jesAbsolute_yearDown_;
+    v_FatJet_msoftdrop_jesBBEC1Down_ = FatJet_.v_FatJet_msoftdrop_jesBBEC1Down_;
+    v_FatJet_msoftdrop_jesBBEC1Up_ = FatJet_.v_FatJet_msoftdrop_jesBBEC1Up_;
+    v_FatJet_msoftdrop_jesBBEC1_yearUp_ = FatJet_.v_FatJet_msoftdrop_jesBBEC1_yearUp_;
+    v_FatJet_msoftdrop_jesBBEC1_yearDown_ = FatJet_.v_FatJet_msoftdrop_jesBBEC1_yearDown_;
+    v_FatJet_msoftdrop_jesEC2Up_ = FatJet_.v_FatJet_msoftdrop_jesEC2Up_;
+    v_FatJet_msoftdrop_jesEC2Down_ = FatJet_.v_FatJet_msoftdrop_jesEC2Down_;
+    v_FatJet_msoftdrop_jesEC2_yearUp_ = FatJet_.v_FatJet_msoftdrop_jesEC2_yearUp_;
+    v_FatJet_msoftdrop_jesEC2_yearDown_ = FatJet_.v_FatJet_msoftdrop_jesEC2_yearDown_;
+    v_FatJet_msoftdrop_jesFlavorQCDUp_ = FatJet_.v_FatJet_msoftdrop_jesFlavorQCDUp_;
+    v_FatJet_msoftdrop_jesFlavorQCDDown_ = FatJet_.v_FatJet_msoftdrop_jesFlavorQCDDown_;
+    v_FatJet_msoftdrop_jesHFDown_ = FatJet_.v_FatJet_msoftdrop_jesHFDown_;
+    v_FatJet_msoftdrop_jesHFUp_ = FatJet_.v_FatJet_msoftdrop_jesHFUp_;
+    v_FatJet_msoftdrop_jesHF_yearUp_ = FatJet_.v_FatJet_msoftdrop_jesHF_yearUp_;
+    v_FatJet_msoftdrop_jesHF_yearDown_ = FatJet_.v_FatJet_msoftdrop_jesHF_yearDown_;
+    v_FatJet_msoftdrop_jesRelativeBalUp_ = FatJet_.v_FatJet_msoftdrop_jesRelativeBalUp_;
+    v_FatJet_msoftdrop_jesRelativeBalDown_ = FatJet_.v_FatJet_msoftdrop_jesRelativeBalDown_;
+    v_FatJet_msoftdrop_jesRelativeSample_yearUp_ = FatJet_.v_FatJet_msoftdrop_jesRelativeSample_yearUp_;
+    v_FatJet_msoftdrop_jesRelativeSample_yearDown_ = FatJet_.v_FatJet_msoftdrop_jesRelativeSample_yearDown_;
+
+
+// Add JMS, JMR up and down branch on 26/2/2024
 
     v_FatJet_msoftdrop_jmsUp_                = FatJet_.v_FatJet_msoftdrop_jmsUp_;
     v_FatJet_msoftdrop_jmsDown_              = FatJet_.v_FatJet_msoftdrop_jmsDown_;
@@ -422,6 +523,31 @@ void FatJet_Collection::brances_map(){
     FatJet_Branches["msoftdrop_jesTotalDown"]          = FatJet_msoftdrop_jesTotalDown;
     FatJet_Branches["msoftdrop_jerUp"]                 = FatJet_msoftdrop_jerUp;
     FatJet_Branches["msoftdrop_jerDown"]               = FatJet_msoftdrop_jerDown;
+
+    //Split JES
+    
+    FatJet_Branches["msoftdrop_jesAbsoluteUp"]             = FatJet_msoftdrop_jesAbsoluteUp;
+    FatJet_Branches["msoftdrop_jesAbsoluteDown"]           = FatJet_msoftdrop_jesAbsoluteDown;
+    FatJet_Branches["msoftdrop_jesAbsolute_yearUp"]        = FatJet_msoftdrop_jesAbsolute_yearUp;
+    FatJet_Branches["msoftdrop_jesAbsolute_yearDown"]      = FatJet_msoftdrop_jesAbsolute_yearDown;
+    FatJet_Branches["msoftdrop_jesBBEC1Down"]              = FatJet_msoftdrop_jesBBEC1Down;
+    FatJet_Branches["msoftdrop_jesBBEC1Up"]                = FatJet_msoftdrop_jesBBEC1Up;
+    FatJet_Branches["msoftdrop_jesBBEC1_yearUp"]           = FatJet_msoftdrop_jesBBEC1_yearUp;
+    FatJet_Branches["msoftdrop_jesBBEC1_yearDown"]         = FatJet_msoftdrop_jesBBEC1_yearDown;
+    FatJet_Branches["msoftdrop_jesEC2Up"]                  = FatJet_msoftdrop_jesEC2Up;
+    FatJet_Branches["msoftdrop_jesEC2Down"]                = FatJet_msoftdrop_jesEC2Down;
+    FatJet_Branches["msoftdrop_jesEC2_yearUp"]             = FatJet_msoftdrop_jesEC2_yearUp;
+    FatJet_Branches["msoftdrop_jesEC2_yearDown"]           = FatJet_msoftdrop_jesEC2_yearDown;
+    FatJet_Branches["msoftdrop_jesFlavorQCDUp"]            = FatJet_msoftdrop_jesFlavorQCDUp;
+    FatJet_Branches["msoftdrop_jesFlavorQCDDown"]          = FatJet_msoftdrop_jesFlavorQCDDown;
+    FatJet_Branches["msoftdrop_jesHFDown"]                 = FatJet_msoftdrop_jesHFDown;
+    FatJet_Branches["msoftdrop_jesHFUp"]                   = FatJet_msoftdrop_jesHFUp;
+    FatJet_Branches["msoftdrop_jesHF_yearUp"]              = FatJet_msoftdrop_jesHF_yearUp;
+    FatJet_Branches["msoftdrop_jesHF_yearDown"]            = FatJet_msoftdrop_jesHF_yearDown;
+    FatJet_Branches["msoftdrop_jesRelativeBalUp"]          = FatJet_msoftdrop_jesRelativeBalUp;
+    FatJet_Branches["msoftdrop_jesRelativeBalDown"]        = FatJet_msoftdrop_jesRelativeBalDown;
+    FatJet_Branches["msoftdrop_jesRelativeSample_yearUp"]  = FatJet_msoftdrop_jesRelativeSample_yearUp;
+    FatJet_Branches["msoftdrop_jesRelativeSample_yearDown"]= FatJet_msoftdrop_jesRelativeSample_yearDown;
 
     // Add JMS, JMR up and down
 
@@ -742,12 +868,174 @@ void FatJet_Collection::Filter_1(){
             FatJet_msoftdrop_jesTotalUp.push_back(-99.);
         }
 
+
         if( v_FatJet_msoftdrop_jesTotalDown_->size() > iFJ ){
             FatJet_msoftdrop_jesTotalDown.push_back(v_FatJet_msoftdrop_jesTotalDown_->at(iFJ));
         }
         else{
             FatJet_msoftdrop_jesTotalDown.push_back(-99.);
         }
+
+        // Split JES
+
+        // Absolute
+        if( v_FatJet_msoftdrop_jesAbsoluteUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesAbsoluteUp.push_back(v_FatJet_msoftdrop_jesAbsoluteUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesAbsoluteUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesAbsoluteDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesAbsoluteDown.push_back(v_FatJet_msoftdrop_jesAbsoluteDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesAbsoluteDown.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesAbsolute_yearUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesAbsolute_yearUp.push_back(v_FatJet_msoftdrop_jesAbsolute_yearUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesAbsolute_yearUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesAbsolute_yearDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesAbsolute_yearDown.push_back(v_FatJet_msoftdrop_jesAbsolute_yearDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesAbsolute_yearDown.push_back(-99.);
+        }
+
+        // BBEC1
+        
+       if( v_FatJet_msoftdrop_jesBBEC1Up_->size() > iFJ ){
+            FatJet_msoftdrop_jesBBEC1Up.push_back(v_FatJet_msoftdrop_jesBBEC1Up_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesBBEC1Up.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesBBEC1Down_->size() > iFJ ){
+            FatJet_msoftdrop_jesBBEC1Down.push_back(v_FatJet_msoftdrop_jesBBEC1Down_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesBBEC1Down.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesBBEC1_yearUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesBBEC1_yearUp.push_back(v_FatJet_msoftdrop_jesBBEC1_yearUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesBBEC1_yearUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesBBEC1_yearDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesBBEC1_yearDown.push_back(v_FatJet_msoftdrop_jesBBEC1_yearDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesBBEC1_yearDown.push_back(-99.);
+        }
+
+        // EC2
+        if( v_FatJet_msoftdrop_jesEC2Up_->size() > iFJ ){
+            FatJet_msoftdrop_jesEC2Up.push_back(v_FatJet_msoftdrop_jesEC2Up_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesEC2Up.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesEC2Down_->size() > iFJ ){
+            FatJet_msoftdrop_jesEC2Down.push_back(v_FatJet_msoftdrop_jesEC2Down_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesEC2Down.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesEC2_yearUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesEC2_yearUp.push_back(v_FatJet_msoftdrop_jesEC2_yearUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesEC2_yearUp.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesEC2_yearDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesEC2_yearDown.push_back(v_FatJet_msoftdrop_jesEC2_yearDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesEC2_yearDown.push_back(-99.);
+        }
+     
+        //Flavor QCD
+        
+        if( v_FatJet_msoftdrop_jesFlavorQCDUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesFlavorQCDUp.push_back(v_FatJet_msoftdrop_jesFlavorQCDUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesFlavorQCDUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesFlavorQCDDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesFlavorQCDDown.push_back(v_FatJet_msoftdrop_jesFlavorQCDDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesFlavorQCDDown.push_back(-99.);
+        }
+
+        //HF
+        if( v_FatJet_msoftdrop_jesHFUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesHFUp.push_back(v_FatJet_msoftdrop_jesHFUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesHFUp.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesHFDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesHFDown.push_back(v_FatJet_msoftdrop_jesHFDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesHFDown.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesHF_yearUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesHF_yearUp.push_back(v_FatJet_msoftdrop_jesHF_yearUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesHF_yearUp.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesHF_yearDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesHF_yearDown.push_back(v_FatJet_msoftdrop_jesHF_yearDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesHF_yearDown.push_back(-99.);
+        }
+        //RelativeBal
+
+        if( v_FatJet_msoftdrop_jesRelativeBalUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesRelativeBalUp.push_back(v_FatJet_msoftdrop_jesRelativeBalUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesRelativeBalUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesRelativeBalDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesRelativeBalDown.push_back(v_FatJet_msoftdrop_jesRelativeBalDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesRelativeBalDown.push_back(-99.);
+        }
+
+        // RelativeSample
+
+        if( v_FatJet_msoftdrop_jesRelativeSample_yearUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesRelativeSample_yearUp.push_back(v_FatJet_msoftdrop_jesRelativeSample_yearUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesRelativeSample_yearUp.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesRelativeSample_yearDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesRelativeSample_yearDown.push_back(v_FatJet_msoftdrop_jesRelativeSample_yearDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesRelativeSample_yearDown.push_back(-99.);
+        }
+
+        // Done Split
 
         if( v_FatJet_msoftdrop_jerUp_->size() > iFJ ){
             FatJet_msoftdrop_jerUp.push_back(v_FatJet_msoftdrop_jerUp_->at(iFJ));
@@ -762,8 +1050,6 @@ void FatJet_Collection::Filter_1(){
         else{
             FatJet_msoftdrop_jerDown.push_back(-99.);
         }
-
-
 
         // Add JMS, JMR up and down branch on 1/3/2024
         
@@ -924,6 +1210,169 @@ void FatJet_Collection::Filter_2(){
             FatJet_msoftdrop_jesTotalDown.push_back(-99.);
         }
 
+        // Split JES
+
+
+        // Absolute
+        if( v_FatJet_msoftdrop_jesAbsoluteUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesAbsoluteUp.push_back(v_FatJet_msoftdrop_jesAbsoluteUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesAbsoluteUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesAbsoluteDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesAbsoluteDown.push_back(v_FatJet_msoftdrop_jesAbsoluteDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesAbsoluteDown.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesAbsolute_yearUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesAbsolute_yearUp.push_back(v_FatJet_msoftdrop_jesAbsolute_yearUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesAbsolute_yearUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesAbsolute_yearDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesAbsolute_yearDown.push_back(v_FatJet_msoftdrop_jesAbsolute_yearDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesAbsolute_yearDown.push_back(-99.);
+        }
+
+        // BBEC1
+        
+       if( v_FatJet_msoftdrop_jesBBEC1Up_->size() > iFJ ){
+            FatJet_msoftdrop_jesBBEC1Up.push_back(v_FatJet_msoftdrop_jesBBEC1Up_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesBBEC1Up.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesBBEC1Down_->size() > iFJ ){
+            FatJet_msoftdrop_jesBBEC1Down.push_back(v_FatJet_msoftdrop_jesBBEC1Down_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesBBEC1Down.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesBBEC1_yearUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesBBEC1_yearUp.push_back(v_FatJet_msoftdrop_jesBBEC1_yearUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesBBEC1_yearUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesBBEC1_yearDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesBBEC1_yearDown.push_back(v_FatJet_msoftdrop_jesBBEC1_yearDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesBBEC1_yearDown.push_back(-99.);
+        }
+
+        // EC2
+        if( v_FatJet_msoftdrop_jesEC2Up_->size() > iFJ ){
+            FatJet_msoftdrop_jesEC2Up.push_back(v_FatJet_msoftdrop_jesEC2Up_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesEC2Up.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesEC2Down_->size() > iFJ ){
+            FatJet_msoftdrop_jesEC2Down.push_back(v_FatJet_msoftdrop_jesEC2Down_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesEC2Down.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesEC2_yearUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesEC2_yearUp.push_back(v_FatJet_msoftdrop_jesEC2_yearUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesEC2_yearUp.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesEC2_yearDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesEC2_yearDown.push_back(v_FatJet_msoftdrop_jesEC2_yearDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesEC2_yearDown.push_back(-99.);
+        }
+     
+        //Flavor QCD
+        
+        if( v_FatJet_msoftdrop_jesFlavorQCDUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesFlavorQCDUp.push_back(v_FatJet_msoftdrop_jesFlavorQCDUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesFlavorQCDUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesFlavorQCDDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesFlavorQCDDown.push_back(v_FatJet_msoftdrop_jesFlavorQCDDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesFlavorQCDDown.push_back(-99.);
+        }
+
+        //HF
+        if( v_FatJet_msoftdrop_jesHFUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesHFUp.push_back(v_FatJet_msoftdrop_jesHFUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesHFUp.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesHFDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesHFDown.push_back(v_FatJet_msoftdrop_jesHFDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesHFDown.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesHF_yearUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesHF_yearUp.push_back(v_FatJet_msoftdrop_jesHF_yearUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesHF_yearUp.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesHF_yearDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesHF_yearDown.push_back(v_FatJet_msoftdrop_jesHF_yearDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesHF_yearDown.push_back(-99.);
+        }
+        //RelativeBal
+
+        if( v_FatJet_msoftdrop_jesRelativeBalUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesRelativeBalUp.push_back(v_FatJet_msoftdrop_jesRelativeBalUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesRelativeBalUp.push_back(-99.);
+        }
+
+        if( v_FatJet_msoftdrop_jesRelativeBalDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesRelativeBalDown.push_back(v_FatJet_msoftdrop_jesRelativeBalDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesRelativeBalDown.push_back(-99.);
+        }
+
+        // RelativeSample
+
+        if( v_FatJet_msoftdrop_jesRelativeSample_yearUp_->size() > iFJ ){
+            FatJet_msoftdrop_jesRelativeSample_yearUp.push_back(v_FatJet_msoftdrop_jesRelativeSample_yearUp_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesRelativeSample_yearUp.push_back(-99.);
+        }
+        if( v_FatJet_msoftdrop_jesRelativeSample_yearDown_->size() > iFJ ){
+            FatJet_msoftdrop_jesRelativeSample_yearDown.push_back(v_FatJet_msoftdrop_jesRelativeSample_yearDown_->at(iFJ));
+        }
+        else{
+            FatJet_msoftdrop_jesRelativeSample_yearDown.push_back(-99.);
+        }
+
+
+        // Done split JES
+
         if( v_FatJet_msoftdrop_jerUp_->size() > iFJ ){
             FatJet_msoftdrop_jerUp.push_back(v_FatJet_msoftdrop_jerUp_->at(iFJ));
         }
@@ -945,6 +1394,7 @@ void FatJet_Collection::Filter_2(){
         else{
             FatJet_pt_nom.push_back(-99.);
         }
+
 
 
         // start JMS/JMR

@@ -139,7 +139,7 @@ def Store_BDT_Score(infile_name,outfile_name,outcolumn,loadcolumns = None,BDT ={
         name_arrays = list(add_array.keys())
         snapshotOptions = ROOT.ROOT.RDF.RSnapshotOptions()
         snapshotOptions.fOverwriteIfExists = True
-        temp_file_name = "array_tmp.root"
+        temp_file_name = os.path.normpath(outfile_name).replace(".root","_array_tmp.root")
         rdf.Snapshot("PKUTree", temp_file_name, name_arrays, snapshotOptions)
 
     df = pd.DataFrame(rdf.AsNumpy()) # there will be memory issue if the rootfile is larger than 2 GB
@@ -201,7 +201,7 @@ def Store_BDT_Score(infile_name,outfile_name,outcolumn,loadcolumns = None,BDT ={
         rdf_std = ROOT.RDF.FromNumpy(data)
 
         final_file_name = outfile_name
-        merged_file_name = "std_tmp.root"
+        merged_file_name = os.path.normpath(outfile_name).replace(".root","_std_tmp.root")
 
         opts = ROOT.ROOT.RDF.RSnapshotOptions()
         opts.fOverwriteIfExists = True
@@ -232,10 +232,33 @@ def Store_BDT_Score(infile_name,outfile_name,outcolumn,loadcolumns = None,BDT ={
         
         for name, array_fixed in array_dict_fixed.items():
             data[name] = ak.from_numpy(array_fixed.reshape(-1, add_array[name]))
-            
+        
+        #if the events number is too large we have to process batchly:
+        # 假设你的总数据存储在awkward array 'data' 中
+        # 假设每批处理1000000个事件
+        batch_size = 1000000
+        n_batches = (len(data) + batch_size - 1) // batch_size  # 计算需要多少批次
+
+        # final_file_name = "final_output.root"
+        sum_split_file_name = ""
+        for i in range(n_batches):
+            start = i * batch_size
+            end = min((i + 1) * batch_size, len(data))
+            batch_data = data[start:end]
+            print("processing batchly ",i)
+            split_file_name = os.path.normpath(final_file_name).replace(".root",f"_batch_{i}.root")
+            # always create new files to avoid large events number error
+            with uproot.recreate(split_file_name) as newfile:
+                newfile["PKUTree"] = batch_data
+        sum_split_file_name = os.path.normpath(final_file_name).replace(".root",f"_batch*.root")
+        print("then add:",f"hadd {final_file_name} {sum_split_file_name}")
+        os.system(f"hadd {final_file_name} {sum_split_file_name}")
+        os.system(f"rm {sum_split_file_name}")
+        
         # data["LHEPdfWeight"] = ak.from_numpy(lhepdfweight_fixed.reshape(-1, 103))
-        with uproot.recreate(final_file_name) as newfile:
-            newfile["PKUTree"] = data
+        # with uproot.recreate(final_file_name) as newfile:
+        #     newfile["PKUTree"] = data
+        print("Successfully create slimmed tree files!")
         os.remove(outfile_name_tmp)
         os.remove(temp_file_name)
         os.remove(merged_file_name)
@@ -653,7 +676,7 @@ definecolumn = [
 
 #add array name and the length
 add_array = {
-    # "LHEPdfWeight" : 103
+    "LHEPdfWeight" : 103
 }
 
 if args.outfile:

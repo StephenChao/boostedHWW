@@ -120,18 +120,18 @@ if __name__ == '__main__':
 "c_TopbWtauhv",          "b_TopbWtauhv",           "a_TopbWtauhv",
 "c_TopbWtauev",          "b_TopbWtauev",           "a_TopbWtauev",
 "c_TopbWtaumv",          "b_TopbWtaumv",           "a_TopbWtaumv",
-"FatJet_tau1_HWW_a",
-"FatJet_tau2_HWW_a",
-"FatJet_tau3_HWW_a",
-"FatJet_tau4_HWW_a",
-"FatJet_tau1_HWW_c",
-"FatJet_tau2_HWW_c",
-"FatJet_tau3_HWW_c",
-"FatJet_tau4_HWW_c",
-"FatJet_tau1_HWW_b",
-"FatJet_tau2_HWW_b",
-"FatJet_tau3_HWW_b",
-"FatJet_tau4_HWW_b",
+# "FatJet_tau1_HWW_a",
+# "FatJet_tau2_HWW_a",
+# "FatJet_tau3_HWW_a",
+# "FatJet_tau4_HWW_a",
+# "FatJet_tau1_HWW_c",
+# "FatJet_tau2_HWW_c",
+# "FatJet_tau3_HWW_c",
+# "FatJet_tau4_HWW_c",
+# "FatJet_tau1_HWW_b",
+# "FatJet_tau2_HWW_b",
+# "FatJet_tau3_HWW_b",
+# "FatJet_tau4_HWW_b",
 "a_HWW_V2",
 "b_HWW_V2",
 "c_HWW_V2",
@@ -164,9 +164,8 @@ if __name__ == '__main__':
         "MJJ","MJJJ",
         "MET_et","MET_phi",
         "weight",
-        "puWeight",
-        "puWeightDown",
-        "puWeightUp",
+    
+        
         "PTj","PTj_2","PTj_3","Etaj","Etaj_2","Etaj_3","Phij","Phij_2","Phij_3","Mj","Mj_2","Mj_3",
         "PTj_max","PTj_mid","PTj_min","Etaj_max","Etaj_mid","Etaj_min","Phij_max","Phij_mid","Phij_min","Mj_max","Mj_mid","Mj_min",
 
@@ -181,10 +180,13 @@ if __name__ == '__main__':
         "nb_l_deep_ex","nb_m_deep_ex","nb_t_deep_ex","nb_l_deep_in","nb_m_deep_in","nb_t_deep_in","Nj4_ex","Nj4_in",
         "goodRun",
         "Flag",
-        "MET_T1Smear_pt_XYcorr","MET_T1Smear_phi_XYcorr",
-        "Mj_corr","Mj_corr_2","Mj_corr_3",
-        "Mj_corr_a","Mj_corr_b","Mj_corr_c",
-        "MET_phi_NoXYCorr","MET_et_NoXYCorr",
+        
+        # "MET_T1Smear_pt_XYcorr","MET_T1Smear_phi_XYcorr",
+        
+        # "Mj_corr","Mj_corr_2","Mj_corr_3",
+        # "Mj_corr_a","Mj_corr_b","Mj_corr_c",
+        
+        # "MET_phi_NoXYCorr","MET_et_NoXYCorr",
 
         "HLT_PFHT650_WideJetMJJ900DEtaJJ1p5",
         "HLT_PFHT650_WideJetMJJ950DEtaJJ1p5",
@@ -206,13 +208,15 @@ if __name__ == '__main__':
         "HLT_AK8PFHT850_TrimMass50",
         "HLT_AK8PFHT900_TrimMass50",
 
-"HLT_PFMET110_PFMHT110_IDTight",
-"HLT_PFMET120_PFMHT120_IDTight",
-"HLT_PFMET130_PFMHT130_IDTight",
-"HLT_PFMET140_PFMHT140_IDTight",
-"HLT_Mu50",
-"HLT_Ele115_CaloIdVT_GsfTrkIdT",
-"HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165",
+# deleted since not used
+    
+# "HLT_PFMET110_PFMHT110_IDTight",
+# "HLT_PFMET120_PFMHT120_IDTight",
+# "HLT_PFMET130_PFMHT130_IDTight",
+# "HLT_PFMET140_PFMHT140_IDTight",
+# "HLT_Mu50",
+# "HLT_Ele115_CaloIdVT_GsfTrkIdT",
+# "HLT_Ele50_CaloIdVT_GsfTrkIdT_PFJet165",
 
     # JES, JER part
     
@@ -237,10 +241,90 @@ if __name__ == '__main__':
 "Mj_jerDown_b",
 "Mj_jerDown_c",
 
+#split
+
+"Mj_jesAbsoluteUp_a",
+"Mj_jesAbsoluteDown_a",
+"Mj_jesAbsolute_yearUp_a",
+"Mj_jesAbsolute_yearDown_a",
+"Mj_jesBBEC1Down_a",
+"Mj_jesBBEC1Up_a",
+"Mj_jesBBEC1_yearUp_a",
+"Mj_jesBBEC1_yearDown_a",
+"Mj_jesEC2Up_a",
+"Mj_jesEC2Down_a",
+"Mj_jesEC2_yearUp_a",
+"Mj_jesEC2_yearDown_a",
+"Mj_jesFlavorQCDUp_a",
+"Mj_jesFlavorQCDDown_a",
+"Mj_jesHFDown_a",
+"Mj_jesHFUp_a",
+"Mj_jesHF_yearUp_a",
+"Mj_jesHF_yearDown_a",
+"Mj_jesRelativeBalUp_a",
+"Mj_jesRelativeBalDown_a",
+"Mj_jesRelativeSample_yearUp_a",
+"Mj_jesRelativeSample_yearDown_a",
+
+"Mj_jesAbsoluteUp_b",
+"Mj_jesAbsoluteDown_b",
+"Mj_jesAbsolute_yearUp_b",
+"Mj_jesAbsolute_yearDown_b",
+"Mj_jesBBEC1Down_b",
+"Mj_jesBBEC1Up_b",
+"Mj_jesBBEC1_yearUp_b",
+"Mj_jesBBEC1_yearDown_b",
+"Mj_jesEC2Up_b",
+"Mj_jesEC2Down_b",
+"Mj_jesEC2_yearUp_b",
+"Mj_jesEC2_yearDown_b",
+"Mj_jesFlavorQCDUp_b",
+"Mj_jesFlavorQCDDown_b",
+"Mj_jesHFDown_b",
+"Mj_jesHFUp_b",
+"Mj_jesHF_yearUp_b",
+"Mj_jesHF_yearDown_b",
+"Mj_jesRelativeBalUp_b",
+"Mj_jesRelativeBalDown_b",
+"Mj_jesRelativeSample_yearUp_b",
+"Mj_jesRelativeSample_yearDown_b",
+
+
+"Mj_jesAbsoluteUp_c",
+"Mj_jesAbsoluteDown_c",
+"Mj_jesAbsolute_yearUp_c",
+"Mj_jesAbsolute_yearDown_c",
+"Mj_jesBBEC1Down_c",
+"Mj_jesBBEC1Up_c",
+"Mj_jesBBEC1_yearUp_c",
+"Mj_jesBBEC1_yearDown_c",
+"Mj_jesEC2Up_c",
+"Mj_jesEC2Down_c",
+"Mj_jesEC2_yearUp_c",
+"Mj_jesEC2_yearDown_c",
+"Mj_jesFlavorQCDUp_c",
+"Mj_jesFlavorQCDDown_c",
+"Mj_jesHFDown_c",
+"Mj_jesHFUp_c",
+"Mj_jesHF_yearUp_c",
+"Mj_jesHF_yearDown_c",
+"Mj_jesRelativeBalUp_c",
+"Mj_jesRelativeBalDown_c",
+"Mj_jesRelativeSample_yearUp_c",
+"Mj_jesRelativeSample_yearDown_c",
+
 #add pu
 "puWeight",
 "puWeightDown",
 "puWeightUp",
+
+#add prefire
+"PrefireWeight",
+"PrefireWeightDown",
+"PrefireWeightUp",
+
+#add PDF
+"LHEPdfWeight",
 
 #add LHE
 "LHEScaleWeight",
@@ -270,6 +354,21 @@ if __name__ == '__main__':
 # PS weight
 "PSWeight",
 
+"LHEScaleWeight_0",
+"LHEScaleWeight_1",
+"LHEScaleWeight_2",
+"LHEScaleWeight_3",
+"LHEScaleWeight_4",
+"LHEScaleWeight_5",
+"LHEScaleWeight_6",
+"LHEScaleWeight_7",
+"LHEScaleWeight_8",
+
+"PSWeight_0",
+"PSWeight_1",
+"PSWeight_2",
+"PSWeight_3",
+
     ]
 
     if IsData > 100 :
@@ -278,7 +377,7 @@ if __name__ == '__main__':
             "matchingt_a","matchingW_a","matchingg_a","matchingZ_a","matchingu_a","matchingd_a","matchings_a","matchingc_a","matchingg_first_a","matchingu_first_a","matchingd_first_a","matchings_first_a", "matchingc_first_a","matchingqg_first_a","matchingt_first_a",
             "matchingt_b","matchingW_b","matchingg_b","matchingZ_b","matchingu_b","matchingd_b","matchings_b","matchingc_b","matchingg_first_b","matchingu_first_b","matchingd_first_b","matchings_first_b", "matchingc_first_b","matchingqg_first_b","matchingt_first_b",
             "matchingt_c","matchingW_c","matchingg_c","matchingZ_c","matchingu_c","matchingd_c","matchings_c","matchingc_c","matchingg_first_c","matchingu_first_c","matchingd_first_c","matchings_first_c", "matchingc_first_c","matchingqg_first_c","matchingt_first_c",
-            "Jet_pt_out","Jet_eta_out","Jet_phi_out","Jet_mass_out","Jet_btagDeepFlavB_out","Jet_jetId_out","Jet_hadronFlavour_out",
+            # "Jet_pt_out","Jet_eta_out","Jet_phi_out","Jet_mass_out","Jet_btagDeepFlavB_out","Jet_jetId_out","Jet_hadronFlavour_out",
         ]
 
     if options.signal : 

@@ -25,13 +25,13 @@ if options.type == "Signal":
         if  options.test == "notest" : os.system(CommandStr)
 elif options.type == "MC":
     for Files in os.listdir(TreeDir + options.type):
-        if Files == "Tree_BKG.root": continue
-        if Files == "Tree_TT.root": continue
+        # if Files == "Tree_BKG.root": continue
+        # if Files == "Tree_TT.root": continue
         # if Files == "Tree_QCD.root": continue
-        if Files == "Tree_ST.root": continue
-        if Files == "Tree_WJets.root": continue
-        if Files == "Tree_Rest.root": continue
-        CommandStr = "python SlimmedTreeProducer.py -i %s/%s -o %s/Slimmed%s -B Tree  -y %s"%(TreeDir + options.type, Files, SlimmedTreeDir + options.type, Files,options.year)
+        # if Files == "Tree_ST.root": continue
+        # if Files == "Tree_WJets.root": continue
+        # if Files == "Tree_Rest.root": continue
+        CommandStr = "python SlimmedTreeProducer.py -i %s/%s -o %s/Slimmed%s -B Tree -u -y %s"%(TreeDir + options.type, Files, SlimmedTreeDir + options.type, Files,options.year)
         print("Should ",CommandStr)
         if  options.test == "notest" : os.system(CommandStr)
 else:    

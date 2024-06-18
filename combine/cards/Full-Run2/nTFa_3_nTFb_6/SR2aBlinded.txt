@@ -1,7 +1,7 @@
-# Datacard for <Channel (SR2aBlinded) instance at 0x2aadcaa99100> generated on 2024-05-12 14:15:34.331772
+# Datacard for <Channel (SR2aBlinded) instance at 0x7f5af6ca72e0> generated on 2024-06-18 13:28:53.056953
 imax 1 # number of categories ('bins' but here we are using shape templates)
 jmax 9 # number of samples minus 1
-kmax 106 # number of nuisance parameters
+kmax 107 # number of nuisance parameters
 shapes * SR2aBlinded HWWfullhad.root HWWfullhad:SR2aBlinded_$PROCESS HWWfullhad:SR2aBlinded_$PROCESS_$SYSTEMATIC
 bin SR2aBlinded
 observation 518.000
@@ -10,10 +10,14 @@ process                                                       ggF            VBF
 process                                                        -4             -3             -2             -1              0            1            2            3            4                               5
 rate                                                        1.924          1.375          0.457          0.723          0.890      153.151       17.756      235.674       28.016                           1.000
 BR_hww lnN                                          0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153            -            -            -            -                               -
-CMS_HWW_boosted_QCDScale_rest_bkg shape                         -              -              -              -              -            -            -            -       1.0000                               -
-CMS_HWW_boosted_QCDScale_single_top shape                       -              -              -              -              -            -       1.0000            -            -                               -
-CMS_HWW_boosted_QCDScale_ttbar shape                            -              -              -              -              -       1.0000            -            -            -                               -
-CMS_HWW_boosted_QCDScale_wjets shape                            -              -              -              -              -            -            -       1.0000            -                               -
+CMS_HWW_boosted_PDFacc_rest_bkg shape                           -              -              -              -              -            -            -            -       1.0000                               -
+CMS_HWW_boosted_PDFacc_single_top shape                         -              -              -              -              -            -       1.0000            -            -                               -
+CMS_HWW_boosted_PDFacc_ttbar shape                              -              -              -              -              -       1.0000            -            -            -                               -
+CMS_HWW_boosted_PDFacc_wjets shape                              -              -              -              -              -            -            -       1.0000            -                               -
+CMS_HWW_boosted_QCDScaleacc_rest_bkg shape                      -              -              -              -              -            -            -            -       1.0000                               -
+CMS_HWW_boosted_QCDScaleacc_single_top shape                    -              -              -              -              -            -       1.0000            -            -                               -
+CMS_HWW_boosted_QCDScaleacc_ttbar shape                         -              -              -              -              -       1.0000            -            -            -                               -
+CMS_HWW_boosted_QCDScaleacc_wjets shape                         -              -              -              -              -            -            -       1.0000            -                               -
 CMS_HWW_boosted_SR2a_VBF_mcstat_bin0 shape                      -         1.0000              -              -              -            -            -            -            -                               -
 CMS_HWW_boosted_SR2a_VBF_mcstat_bin1 shape                      -         1.0000              -              -              -            -            -            -            -                               -
 CMS_HWW_boosted_SR2a_WH_mcstat_bin0 shape                       -              -         1.0000              -              -            -            -            -            -                               -
@@ -56,6 +60,10 @@ CMS_HWW_boosted_jms_2016APV shape                          1.0000         1.0000
 CMS_HWW_boosted_jms_2017 shape                             1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
 CMS_HWW_boosted_jms_2018 shape                             1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
 CMS_HWW_boosted_lp_sf_region_a lnN                         1.3719         1.3719         1.3719         1.3719         1.3719            -            -            -            -                               -
+CMS_HWW_boosted_rest_bkg_rate lnN                               -              -              -              -              -            -            -            -       1.0500                               -
+CMS_HWW_boosted_single_top_rate lnN                             -              -              -              -              -            -       1.0500            -            -                               -
+CMS_HWW_boosted_ttbar_rate lnN                                  -              -              -              -              -       1.0500            -            -            -                               -
+CMS_HWW_boosted_wjets_rate lnN                                  -              -              -              -              -            -            -       1.0500            -                               -
 CMS_pileup_2016 shape                                      1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
 CMS_pileup_2016APV shape                                   1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
 CMS_pileup_2017 shape                                      1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
@@ -95,10 +103,7 @@ QCDscale_VH lnN                                                 -              -
 QCDscale_ggH lnN                                           1.0390              -              -              -              -            -            -            -            -                               -
 QCDscale_qqH lnN                                                -  0.9970/1.0040              -              -              -            -            -            -            -                               -
 QCDscale_ttH lnN                                                -              -              -              -  0.9080/1.0580            -            -            -            -                               -
-Rest_rate lnN                                                   -              -              -              -              -            -            -            -       1.0500                               -
-ST_rate lnN                                                     -              -              -              -              -            -       1.0500            -            -                               -
-TT_rate lnN                                                     -              -              -              -              -       1.0500            -            -            -                               -
-WJets_rate lnN                                                  -              -              -              -              -            -            -       1.0500            -                               -
+alpha_s lnN                                                1.0260         1.0050         1.0090         1.0090         1.0200            -            -            -            -                               -
 lumi_13TeV_1718 lnN                                        1.0027         1.0027         1.0027         1.0027         1.0027       1.0027       1.0027       1.0027       1.0027                               -
 lumi_13TeV_2016 lnN                                        1.0026         1.0026         1.0026         1.0026         1.0026       1.0026       1.0026       1.0026       1.0026                               -
 lumi_13TeV_2017 lnN                                        1.0060         1.0060         1.0060         1.0060         1.0060       1.0060       1.0060       1.0060       1.0060                               -
@@ -107,10 +112,6 @@ lumi_13TeV_correlated lnN                                  1.0130         1.0130
 pdf_Higgs_gg lnN                                           1.0190              -              -              -              -            -            -            -            -                               -
 pdf_Higgs_qqbar lnN                                             -         1.0210         1.0170         1.0130              -            -            -            -            -                               -
 pdf_Higgs_ttH lnN                                               -              -              -              -         1.0300            -            -            -            -                               -
-pdf_rest_bkg shape                                              -              -              -              -              -            -            -            -       1.0000                               -
-pdf_single_top shape                                            -              -              -              -              -            -       1.0000            -            -                               -
-pdf_ttbar shape                                                 -              -              -              -              -       1.0000            -            -            -                               -
-pdf_wjets shape                                                 -              -              -              -              -            -            -       1.0000            -                               -
 ps_fsr shape                                               1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
 ps_isr shape                                               1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -
 triggerEffSF_uncorrelated shape                            1.0000         1.0000         1.0000         1.0000         1.0000       1.0000       1.0000       1.0000       1.0000                               -

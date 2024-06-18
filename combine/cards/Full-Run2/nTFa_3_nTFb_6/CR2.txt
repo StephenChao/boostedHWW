@@ -1,7 +1,7 @@
-# Datacard for <Channel (CR2) instance at 0x7f5af6dbfe20> generated on 2024-06-18 13:28:53.015018
+# Datacard for <Channel (CR2) instance at 0x2b334d685f40> generated on 2024-06-18 13:50:57.960147
 imax 1 # number of categories ('bins' but here we are using shape templates)
 jmax 4 # number of samples minus 1
-kmax 84 # number of nuisance parameters
+kmax 86 # number of nuisance parameters
 shapes * CR2 HWWfullhad.root HWWfullhad:CR2_$PROCESS HWWfullhad:CR2_$PROCESS_$SYSTEMATIC
 bin CR2
 observation 5504638.000
@@ -49,6 +49,9 @@ CMS_HWW_boosted_rest_bkg_rate lnN                     -           -          -  
 CMS_HWW_boosted_single_top_rate lnN                   -      1.0500          -          -                               -
 CMS_HWW_boosted_ttbar_rate lnN                   1.0500           -          -          -                               -
 CMS_HWW_boosted_wjets_rate lnN                        -           -     1.0500          -                               -
+CMS_l1_ecal_prefiring_2016 shape                 1.0000      1.0000     1.0000     1.0000                               -
+CMS_l1_ecal_prefiring_2016APV shape              1.0000      1.0000     1.0000     1.0000                               -
+CMS_l1_ecal_prefiring_2017 shape                 1.0000      1.0000     1.0000     1.0000                               -
 CMS_pileup_2016 shape                            1.0000      1.0000     1.0000     1.0000                               -
 CMS_pileup_2016APV shape                         1.0000      1.0000     1.0000     1.0000                               -
 CMS_pileup_2017 shape                            1.0000      1.0000     1.0000     1.0000                               -
@@ -83,7 +86,6 @@ CMS_scale_j_RelSample_2016 shape                 1.0000      1.0000     1.0000  
 CMS_scale_j_RelSample_2016APV shape              1.0000      1.0000     1.0000     1.0000                               -
 CMS_scale_j_RelSample_2017 shape                 1.0000      1.0000     1.0000     1.0000                               -
 CMS_scale_j_RelSample_2018 shape                 1.0000      1.0000     1.0000     1.0000                               -
-L1Prefiring shape                                1.0000      1.0000     1.0000     1.0000                               -
 lumi_13TeV_1718 lnN                              1.0027      1.0027     1.0027     1.0027                               -
 lumi_13TeV_2016 lnN                              1.0026      1.0026     1.0026     1.0026                               -
 lumi_13TeV_2017 lnN                              1.0060      1.0060     1.0060     1.0060                               -

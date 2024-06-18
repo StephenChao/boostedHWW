@@ -1,7 +1,7 @@
-# Datacard for <Channel (SR1b) instance at 0x7f5af6e964c0> generated on 2024-06-18 13:28:52.968137
+# Datacard for <Channel (SR1b) instance at 0x2b334d55ad60> generated on 2024-06-18 13:50:57.378899
 imax 1 # number of categories ('bins' but here we are using shape templates)
 jmax 9 # number of samples minus 1
-kmax 94 # number of nuisance parameters
+kmax 96 # number of nuisance parameters
 shapes * SR1b HWWfullhad.root HWWfullhad:SR1b_$PROCESS HWWfullhad:SR1b_$PROCESS_$SYSTEMATIC
 bin SR1b
 observation 336541.000
@@ -51,6 +51,9 @@ CMS_HWW_boosted_rest_bkg_rate lnN                         -              -      
 CMS_HWW_boosted_single_top_rate lnN                       -              -              -              -              -         -      1.0500          -         -                               -
 CMS_HWW_boosted_ttbar_rate lnN                            -              -              -              -              -    1.0500           -          -         -                               -
 CMS_HWW_boosted_wjets_rate lnN                            -              -              -              -              -         -           -     1.0500         -                               -
+CMS_l1_ecal_prefiring_2016 shape                     1.0000         1.0000         1.0000         1.0000         1.0000    1.0000      1.0000     1.0000    1.0000                               -
+CMS_l1_ecal_prefiring_2016APV shape                  1.0000         1.0000         1.0000         1.0000         1.0000    1.0000      1.0000     1.0000    1.0000                               -
+CMS_l1_ecal_prefiring_2017 shape                     1.0000         1.0000         1.0000         1.0000         1.0000    1.0000      1.0000     1.0000    1.0000                               -
 CMS_pileup_2016 shape                                1.0000         1.0000         1.0000         1.0000         1.0000    1.0000      1.0000     1.0000    1.0000                               -
 CMS_pileup_2016APV shape                             1.0000         1.0000         1.0000         1.0000         1.0000    1.0000      1.0000     1.0000    1.0000                               -
 CMS_pileup_2017 shape                                1.0000         1.0000         1.0000         1.0000         1.0000    1.0000      1.0000     1.0000    1.0000                               -
@@ -85,7 +88,6 @@ CMS_scale_j_RelSample_2016 shape                     1.0000         1.0000      
 CMS_scale_j_RelSample_2016APV shape                  1.0000         1.0000         1.0000         1.0000         1.0000    1.0000      1.0000     1.0000    1.0000                               -
 CMS_scale_j_RelSample_2017 shape                     1.0000         1.0000         1.0000         1.0000         1.0000    1.0000      1.0000     1.0000    1.0000                               -
 CMS_scale_j_RelSample_2018 shape                     1.0000         1.0000         1.0000         1.0000         1.0000    1.0000      1.0000     1.0000    1.0000                               -
-L1Prefiring shape                                    1.0000         1.0000         1.0000         1.0000         1.0000    1.0000      1.0000     1.0000    1.0000                               -
 QCDscale_VH lnN                                           -              -  0.9930/1.0050  0.9700/1.0380              -         -           -          -         -                               -
 QCDscale_ggH lnN                                     1.0390              -              -              -              -         -           -          -         -                               -
 QCDscale_qqH lnN                                          -  0.9970/1.0040              -              -              -         -           -          -         -                               -

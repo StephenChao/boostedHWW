@@ -1,7 +1,7 @@
-# Datacard for <Channel (CR1) instance at 0x2b334d5a5100> generated on 2024-06-18 13:50:57.398017
+# Datacard for <Channel (CR1) instance at 0x7ff35f5baa30> generated on 2024-06-25 15:13:45.763651
 imax 1 # number of categories ('bins' but here we are using shape templates)
 jmax 4 # number of samples minus 1
-kmax 86 # number of nuisance parameters
+kmax 82 # number of nuisance parameters
 shapes * CR1 HWWfullhad.root HWWfullhad:CR1_$PROCESS HWWfullhad:CR1_$PROCESS_$SYSTEMATIC
 bin CR1
 observation 110954256.000
@@ -29,10 +29,6 @@ CMS_HWW_boosted_CR1_mcstat_bin6 shape             1.0000      1.0000       1.000
 CMS_HWW_boosted_CR1_mcstat_bin7 shape             1.0000      1.0000       1.0000      1.0000                               -
 CMS_HWW_boosted_CR1_mcstat_bin8 shape             1.0000      1.0000       1.0000      1.0000                               -
 CMS_HWW_boosted_CR1_mcstat_bin9 shape             1.0000      1.0000       1.0000      1.0000                               -
-CMS_HWW_boosted_PDFacc_rest_bkg shape                  -           -            -      1.0000                               -
-CMS_HWW_boosted_PDFacc_single_top shape                -      1.0000            -           -                               -
-CMS_HWW_boosted_PDFacc_ttbar shape                1.0000           -            -           -                               -
-CMS_HWW_boosted_PDFacc_wjets shape                     -           -       1.0000           -                               -
 CMS_HWW_boosted_QCDScaleacc_rest_bkg shape             -           -            -      1.0000                               -
 CMS_HWW_boosted_QCDScaleacc_single_top shape           -      1.0000            -           -                               -
 CMS_HWW_boosted_QCDScaleacc_ttbar shape           1.0000           -            -           -                               -

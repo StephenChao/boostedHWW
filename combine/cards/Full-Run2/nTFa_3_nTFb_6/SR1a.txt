@@ -1,7 +1,7 @@
-# Datacard for <Channel (SR1a) instance at 0x2b334d5223a0> generated on 2024-06-18 13:50:57.331145
+# Datacard for <Channel (SR1a) instance at 0x7ff35f62d4f0> generated on 2024-06-25 15:13:45.736653
 imax 1 # number of categories ('bins' but here we are using shape templates)
 jmax 9 # number of samples minus 1
-kmax 96 # number of nuisance parameters
+kmax 100 # number of nuisance parameters
 shapes * SR1a HWWfullhad.root HWWfullhad:SR1a_$PROCESS HWWfullhad:SR1a_$PROCESS_$SYSTEMATIC
 bin SR1a
 observation 7339.000
@@ -10,12 +10,16 @@ process                                                 ggF            VBF      
 process                                                  -4             -3             -2             -1              0        1           2         3         4                               5
 rate                                                 17.873          8.751          2.476          3.788          4.295  606.107     123.594  1156.767   261.866                           1.000
 BR_hww lnN                                    0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153        -           -         -         -                               -
-CMS_HWW_boosted_PDFacc_rest_bkg shape                     -              -              -              -              -        -           -         -    1.0000                               -
-CMS_HWW_boosted_PDFacc_single_top shape                   -              -              -              -              -        -      1.0000         -         -                               -
-CMS_HWW_boosted_PDFacc_ttbar shape                        -              -              -              -              -   1.0000           -         -         -                               -
-CMS_HWW_boosted_PDFacc_wjets shape                        -              -              -              -              -        -           -    1.0000         -                               -
+CMS_HWW_boosted_PDFacc_VH shape                           -              -         1.0000         1.0000              -        -           -         -         -                               -
+CMS_HWW_boosted_PDFacc_ggH shape                     1.0000              -              -              -              -        -           -         -         -                               -
+CMS_HWW_boosted_PDFacc_qqH shape                          -         1.0000              -              -              -        -           -         -         -                               -
+CMS_HWW_boosted_PDFacc_ttH shape                          -              -              -              -         1.0000        -           -         -         -                               -
+CMS_HWW_boosted_QCDScaleacc_VH shape                      -              -         1.0000         1.0000              -        -           -         -         -                               -
+CMS_HWW_boosted_QCDScaleacc_ggH shape                1.0000              -              -              -              -        -           -         -         -                               -
+CMS_HWW_boosted_QCDScaleacc_qqH shape                     -         1.0000              -              -              -        -           -         -         -                               -
 CMS_HWW_boosted_QCDScaleacc_rest_bkg shape                -              -              -              -              -        -           -         -    1.0000                               -
 CMS_HWW_boosted_QCDScaleacc_single_top shape              -              -              -              -              -        -      1.0000         -         -                               -
+CMS_HWW_boosted_QCDScaleacc_ttH shape                     -              -              -              -         1.0000        -           -         -         -                               -
 CMS_HWW_boosted_QCDScaleacc_ttbar shape                   -              -              -              -              -   1.0000           -         -         -                               -
 CMS_HWW_boosted_QCDScaleacc_wjets shape                   -              -              -              -              -        -           -    1.0000         -                               -
 CMS_HWW_boosted_SR1a_mcstat_bin0 shape               1.0000         1.0000         1.0000         1.0000         1.0000   1.0000      1.0000    1.0000    1.0000                               -

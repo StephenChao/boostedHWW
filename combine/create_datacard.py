@@ -296,21 +296,78 @@ corr_year_shape_systs = {
     #     samples=bg_keys,
     #     samples_corr=False,
     # ),
+    
+    # QCD scale acc for background
     "QCDscale": Syst(
         name=f"{CMS_PARAMS_LABEL}_QCDScaleacc",
         prior="shape",
         samples=bg_keys,
         samples_corr=False,
     ),
+    
+    # "pdfscale": Syst(
+    #     name=f"{CMS_PARAMS_LABEL}_PDFacc", 
+    #     prior="shape", 
+    #     # samples=bg_keys,
+    #     samples = bg_keys,
+    #     samples_corr=False,
+    #     ),
+    
+    # QCD scale acc for signal
+    "QCDscaleacc_ggH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_QCDScaleacc_ggH",
+        prior="shape",
+        samples=["ggF"],
+        # samples_corr=True,
+    ),
+    "QCDscaleacc_qqH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_QCDScaleacc_qqH",
+        prior="shape",
+        samples=["VBF"],
+        # samples_corr=True,
+    ),
+    "QCDscaleacc_VH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_QCDScaleacc_VH",
+        prior="shape",
+        samples=["WH","ZH"],
+        # samples_corr=True,
+    ),
+    "QCDscaleacc_ttH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_QCDScaleacc_ttH",
+        prior="shape",
+        samples=["ttH"],
+        # samples_corr=True,
+    ),
+    
+    #pdf scale acc for sig
+    "pdfscaleacc_ggH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_PDFacc_ggH",
+        prior="shape",
+        samples=["ggF"],
+        # samples_corr=True,
+    ),
+    "pdfscaleacc_qqH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_PDFacc_qqH",
+        prior="shape",
+        samples=["VBF"],
+        # samples_corr=True,
+    ),
+    "pdfscaleacc_VH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_PDFacc_VH",
+        prior="shape",
+        samples=["WH","ZH"],
+        # samples_corr=True,
+    ),
+    "pdfscaleacc_ttH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_PDFacc_ttH",
+        prior="shape",
+        samples=["ttH"],
+        # samples_corr=True,
+    ),
+    
     "UE": Syst(name="unclustered_Energy", prior="shape", samples=all_mc),
     # "JES": Syst(name="CMS_scale_j", prior="shape", samples=all_mc),
-    "pdfscale": Syst(
-        name=f"{CMS_PARAMS_LABEL}_PDFacc", 
-        prior="shape", 
-        # samples=bg_keys,
-        samples = bg_keys,
-        samples_corr=False,
-        ),
+
     #split JES
     "Absolute": Syst(name="CMS_scale_j_Abs", prior="shape", samples=all_mc),
     "BBEC1": Syst(name="CMS_scale_j_BBEC1", prior="shape", samples=all_mc),
@@ -504,24 +561,29 @@ def fill_regions(
 
                 sample.setParamEffect(param, val, effect_down=val_down)
 
-            # correlated shape systematics
+            # year correlated shape systematics
             for skey, syst in corr_year_shape_systs.items():
                 if sample_name not in syst.samples or (not pass_region and syst.pass_only):
                     continue
 
                 logging.info(f"Getting {skey} shapes")
 
-                if skey in jecs or skey in uncluste:
+                #manually add for signal samples for scale/pdf, i.e., replace "pdfscaleacc_ggH" with "pdfscale"
+                skey_ = skey.split("acc_")[0] if sample_name in sig_keys else skey
+
+                if skey_ in jecs or skey_ in uncluste:                        
                     # JEC/UEs saved as different "region" in dict
-                    up_hist = templates_summed[f"{region_noblinded}_{skey}_up{blind_str}"][sample_name,:]
-                    down_hist = templates_summed[f"{region_noblinded}_{skey}_down{blind_str}"][sample_name,:]
+                    
+                    up_hist = templates_summed[f"{region_noblinded}_{skey_}_up{blind_str}"][sample_name,:]
+                    down_hist = templates_summed[f"{region_noblinded}_{skey_}_down{blind_str}"][sample_name,:]
 
                     values_up = up_hist.values()
                     values_down = down_hist.values()
                 else:
                     # weight uncertainties saved as different "sample" in dict
-                    values_up = region_templates[f"{sample_name}_{skey}_up", :].values()
-                    values_down = region_templates[f"{sample_name}_{skey}_down", :].values()
+                                            
+                    values_up = region_templates[f"{sample_name}_{skey_}_up", :].values()
+                    values_down = region_templates[f"{sample_name}_{skey_}_down", :].values()
 
                 logger = logging.getLogger(f"validate_shapes_{region}_{sample_name}_{skey}")
 
@@ -535,7 +597,7 @@ def fill_regions(
                 sample.setParamEffect(shape_systs_dict[sdkey], effect_up, effect_down)
 
 
-            # uncorrelated shape systematics
+            # year uncorrelated shape systematics
             for skey, syst in uncorr_year_shape_systs.items():
                 if sample_name not in syst.samples or (not pass_region and syst.pass_only):
                     continue

@@ -1,21 +1,5 @@
-Error in <TFile::ReadBuffer>: error reading all requested bytes from file higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin10.MultiDimFit.mH125.root, got 0 of 300
-Error in <TFile::Init>: higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin10.MultiDimFit.mH125.root failed to read the file type data.
-Error in <TFile::ReadBuffer>: error reading all requested bytes from file higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin12.MultiDimFit.mH125.root, got 0 of 300
-Error in <TFile::Init>: higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin12.MultiDimFit.mH125.root failed to read the file type data.
-Error in <TFile::ReadBuffer>: error reading all requested bytes from file higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin13.MultiDimFit.mH125.root, got 0 of 300
-Error in <TFile::Init>: higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin13.MultiDimFit.mH125.root failed to read the file type data.
-Error in <TFile::ReadBuffer>: error reading all requested bytes from file higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin15.MultiDimFit.mH125.root, got 0 of 300
-Error in <TFile::Init>: higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin15.MultiDimFit.mH125.root failed to read the file type data.
-Error in <TFile::ReadBuffer>: error reading all requested bytes from file higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin16.MultiDimFit.mH125.root, got 0 of 300
-Error in <TFile::Init>: higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin16.MultiDimFit.mH125.root failed to read the file type data.
-Error in <TFile::ReadBuffer>: error reading all requested bytes from file higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin0.MultiDimFit.mH125.root, got 0 of 300
-Error in <TFile::Init>: higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin0.MultiDimFit.mH125.root failed to read the file type data.
-Error in <TFile::ReadBuffer>: error reading all requested bytes from file higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin2.MultiDimFit.mH125.root, got 0 of 300
-Error in <TFile::Init>: higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin2.MultiDimFit.mH125.root failed to read the file type data.
-Error in <TFile::ReadBuffer>: error reading all requested bytes from file higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par5.MultiDimFit.mH125.root, got 0 of 300
-Error in <TFile::Init>: higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par5.MultiDimFit.mH125.root failed to read the file type data.
 Have POIs: ['r']
-Have parameters: 311
+Have parameters: 367
 Setting parameter mask_SR1a to 0
 Setting parameter mask_SR1b to 0
 Setting parameter mask_CR1 to 0
@@ -28,4 +12,7 @@ Setting parameter mask_CR2 to 0
 Setting parameter mask_SR2aBlinded to 1
 Setting parameter mask_SR2bBlinded to 1
 Setting parameter mask_CR2Blinded to 1
-Missing inputs: CMS_HWW_boosted_tf_dataResidual_CR1_Bin10,CMS_HWW_boosted_tf_dataResidual_CR1_Bin12,CMS_HWW_boosted_tf_dataResidual_CR1_Bin13,CMS_HWW_boosted_tf_dataResidual_CR1_Bin15,CMS_HWW_boosted_tf_dataResidual_CR1_Bin16,CMS_HWW_boosted_tf_dataResidual_CR1_Bin0,CMS_HWW_boosted_tf_dataResidual_CR1_Bin2,CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par5
+File higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin12.MultiDimFit.mH125.root did not contain a sufficient number of entries, skipping
+File higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par1.MultiDimFit.mH125.root did not contain a sufficient number of entries, skipping
+File higgsCombine_paramFit_impacts_CMS_scale_j_Abs_2018.MultiDimFit.mH125.root did not contain a sufficient number of entries, skipping
+Missing inputs: CMS_HWW_boosted_tf_dataResidual_CR1_Bin12,CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par1,CMS_scale_j_Abs_2018

@@ -1,4 +1,4 @@
-# Datacard for <Channel (SR1bBlinded) instance at 0x7f2276876eb0> generated on 2024-07-18 15:37:04.769981
+# Datacard for <Channel (SR1bBlinded) instance at 0x7fe4b99eceb0> generated on 2024-07-23 13:17:19.639421
 imax 1 # number of categories ('bins' but here we are using shape templates)
 jmax 9 # number of samples minus 1
 kmax 121 # number of nuisance parameters
@@ -6,7 +6,7 @@ shapes * SR1bBlinded HWWfullhad.root HWWfullhad:SR1bBlinded_$PROCESS HWWfullhad:
 bin SR1bBlinded
 observation 336541.000
 bin                                                SR1bBlinded    SR1bBlinded    SR1bBlinded    SR1bBlinded    SR1bBlinded    SR1bBlinded    SR1bBlinded    SR1bBlinded  SR1bBlinded                     SR1bBlinded
-process                                                    ggF            VBF             WH             ZH            ttH          ttbar     single_top          wjets     rest_bkg  CMS_HWW_boosted_qcd_datadriven
+process                                                ggH_hww        qqH_hww         WH_hww         ZH_hww        ttH_hww          ttbar     single_top          wjets     rest_bkg  CMS_HWW_boosted_qcd_datadriven
 process                                                     -4             -3             -2             -1              0              1              2              3            4                               5
 rate                                                    23.751          9.943          3.648          6.011         10.931       4394.283        494.702       9641.197     2604.732                           1.000
 BR_hww lnN                                       0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153  0.9848/1.0153              -              -              -            -                               -
@@ -75,25 +75,25 @@ CMS_scale_j_RelSample_2016 shape                        1.0000         1.0000   
 CMS_scale_j_RelSample_2016APV shape                     1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000       1.0000                               -
 CMS_scale_j_RelSample_2017 shape                        1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000       1.0000                               -
 CMS_scale_j_RelSample_2018 shape                        1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000       1.0000                               -
-PDF_WH_hww_ACCEPT_CMS_HWW_boosted lnN                        -              -  0.9980/1.0090              -              -              -              -              -            -                               -
-PDF_ZH_hww_ACCEPT_CMS_HWW_boosted lnN                        -              -              -  0.9980/1.0080              -              -              -              -            -                               -
-PDF_ggH_hww_ACCEPT_CMS_HWW_boosted lnN           0.9970/1.0050              -              -              -              -              -              -              -            -                               -
-PDF_qqH_hww_ACCEPT_CMS_HWW_boosted lnN                       -  0.9970/1.0070              -              -              -              -              -              -            -                               -
+PDF_WH_ACCEPT_CMS_HWW_boosted lnN                            -              -  0.9980/1.0090              -              -              -              -              -            -                               -
+PDF_ZH_ACCEPT_CMS_HWW_boosted lnN                            -              -              -  0.9980/1.0080              -              -              -              -            -                               -
+PDF_ggH_ACCEPT_CMS_HWW_boosted lnN               0.9970/1.0050              -              -              -              -              -              -              -            -                               -
+PDF_qqH_ACCEPT_CMS_HWW_boosted lnN                           -  0.9970/1.0070              -              -              -              -              -              -            -                               -
 PDF_single_top_ACCEPT_CMS_HWW_boosted lnN                    -              -              -              -              -              -  0.9370/1.0650              -            -                               -
-PDF_ttH_hww_ACCEPT_CMS_HWW_boosted lnN                       -              -              -              -  0.9880/1.0150              -              -              -            -                               -
+PDF_ttH_ACCEPT_CMS_HWW_boosted lnN                           -              -              -              -  0.9880/1.0150              -              -              -            -                               -
 PDF_ttbar_ACCEPT_CMS_HWW_boosted lnN                         -              -              -              -              -  0.9180/1.0130              -              -            -                               -
 PDF_wjets_ACCEPT_CMS_HWW_boosted lnN                         -              -              -              -              -              -              -  0.9390/1.0810            -                               -
-QCDscale_WH_hww lnN                                          -              -  0.9930/1.0050              -              -              -              -              -            -                               -
-QCDscale_WH_hww_ACCEPT_CMS_HWW_boosted lnN                   -              -  0.9560/1.0660              -              -              -              -              -            -                               -
-QCDscale_ZH_hww lnN                                          -              -              -  0.9700/1.0380              -              -              -              -            -                               -
-QCDscale_ZH_hww_ACCEPT_CMS_HWW_boosted lnN                   -              -              -  0.9610/1.0610              -              -              -              -            -                               -
-QCDscale_ggH_hww lnN                                    1.0390              -              -              -              -              -              -              -            -                               -
-QCDscale_ggH_hww_ACCEPT_CMS_HWW_boosted lnN      0.9250/1.0920              -              -              -              -              -              -              -            -                               -
-QCDscale_qqH_hww lnN                                         -  0.9970/1.0040              -              -              -              -              -              -            -                               -
-QCDscale_qqH_hww_ACCEPT_CMS_HWW_boosted lnN                  -  1.0120/0.9990              -              -              -              -              -              -            -                               -
+QCDscale_WH lnN                                              -              -  0.9930/1.0050              -              -              -              -              -            -                               -
+QCDscale_WH_ACCEPT_CMS_HWW_boosted lnN                       -              -  0.9560/1.0660              -              -              -              -              -            -                               -
+QCDscale_ZH lnN                                              -              -              -  0.9700/1.0380              -              -              -              -            -                               -
+QCDscale_ZH_ACCEPT_CMS_HWW_boosted lnN                       -              -              -  0.9610/1.0610              -              -              -              -            -                               -
+QCDscale_ggH lnN                                        1.0390              -              -              -              -              -              -              -            -                               -
+QCDscale_ggH_ACCEPT_CMS_HWW_boosted lnN          0.9250/1.0920              -              -              -              -              -              -              -            -                               -
+QCDscale_qqH lnN                                             -  0.9970/1.0040              -              -              -              -              -              -            -                               -
+QCDscale_qqH_ACCEPT_CMS_HWW_boosted lnN                      -  1.0120/0.9990              -              -              -              -              -              -            -                               -
 QCDscale_single_top_ACCEPT_CMS_HWW_boosted lnN               -              -              -              -              -              -  0.9070/1.1230              -            -                               -
-QCDscale_ttH_hww lnN                                         -              -              -              -  0.9080/1.0580              -              -              -            -                               -
-QCDscale_ttH_hww_ACCEPT_CMS_HWW_boosted lnN                  -              -              -              -  0.9210/1.1000              -              -              -            -                               -
+QCDscale_ttH lnN                                             -              -              -              -  0.9080/1.0580              -              -              -            -                               -
+QCDscale_ttH_ACCEPT_CMS_HWW_boosted lnN                      -              -              -              -  0.9210/1.1000              -              -              -            -                               -
 QCDscale_ttbar_ACCEPT_CMS_HWW_boosted lnN                    -              -              -              -              -  0.8760/1.1630              -              -            -                               -
 QCDscale_wjets_ACCEPT_CMS_HWW_boosted lnN                    -              -              -              -              -              -              -  0.8530/1.1830            -                               -
 alpha_s lnN                                             1.0260         1.0050         1.0090         1.0090         1.0200              -              -              -            -                               -
@@ -102,31 +102,31 @@ lumi_13TeV_2016 lnN                                     1.0026         1.0026   
 lumi_13TeV_2017 lnN                                     1.0060         1.0060         1.0060         1.0060         1.0060         1.0060         1.0060         1.0060       1.0060                               -
 lumi_13TeV_2018 lnN                                     1.0065         1.0065         1.0065         1.0065         1.0065         1.0065         1.0065         1.0065       1.0065                               -
 lumi_13TeV_correlated lnN                               1.0130         1.0130         1.0130         1.0130         1.0130         1.0130         1.0130         1.0130       1.0130                               -
-pdf_Higgs_WH_hww lnN                                         -              -         1.0170              -              -              -              -              -            -                               -
-pdf_Higgs_ZH_hww lnN                                         -              -              -         1.0130              -              -              -              -            -                               -
-pdf_Higgs_ggH_hww lnN                                   1.0190              -              -              -              -              -              -              -            -                               -
-pdf_Higgs_qqH_hww lnN                                        -         1.0210              -              -              -              -              -              -            -                               -
-pdf_Higgs_ttH_hww lnN                                        -              -              -              -         1.0300              -              -              -            -                               -
+pdf_Higgs_WH lnN                                             -              -         1.0170              -              -              -              -              -            -                               -
+pdf_Higgs_ZH lnN                                             -              -              -         1.0130              -              -              -              -            -                               -
+pdf_Higgs_ggH lnN                                       1.0190              -              -              -              -              -              -              -            -                               -
+pdf_Higgs_qqH lnN                                            -         1.0210              -              -              -              -              -              -            -                               -
+pdf_Higgs_ttH lnN                                            -              -              -              -         1.0300              -              -              -            -                               -
 pdf_rest_bkg shape                                           -              -              -              -              -              -              -              -       1.0000                               -
 pdf_single_top shape                                         -              -              -              -              -              -         1.0000              -            -                               -
 pdf_ttbar shape                                              -              -              -              -              -         1.0000              -              -            -                               -
 pdf_wjets shape                                              -              -              -              -              -              -              -         1.0000            -                               -
-ps_fsr_WH_hww shape                                          -              -         1.0000              -              -              -              -              -            -                               -
-ps_fsr_ZH_hww shape                                          -              -              -         1.0000              -              -              -              -            -                               -
-ps_fsr_ggH_hww shape                                    1.0000              -              -              -              -              -              -              -            -                               -
-ps_fsr_qqH_hww shape                                         -         1.0000              -              -              -              -              -              -            -                               -
+ps_fsr_WH shape                                              -              -         1.0000              -              -              -              -              -            -                               -
+ps_fsr_ZH shape                                              -              -              -         1.0000              -              -              -              -            -                               -
+ps_fsr_ggH shape                                        1.0000              -              -              -              -              -              -              -            -                               -
+ps_fsr_qqH shape                                             -         1.0000              -              -              -              -              -              -            -                               -
 ps_fsr_rest_bkg shape                                        -              -              -              -              -              -              -              -       1.0000                               -
 ps_fsr_single_top shape                                      -              -              -              -              -              -         1.0000              -            -                               -
-ps_fsr_ttH_hww shape                                         -              -              -              -         1.0000              -              -              -            -                               -
+ps_fsr_ttH shape                                             -              -              -              -         1.0000              -              -              -            -                               -
 ps_fsr_ttbar shape                                           -              -              -              -              -         1.0000              -              -            -                               -
 ps_fsr_wjets shape                                           -              -              -              -              -              -              -         1.0000            -                               -
-ps_isr_WH_hww shape                                          -              -         1.0000              -              -              -              -              -            -                               -
-ps_isr_ZH_hww shape                                          -              -              -         1.0000              -              -              -              -            -                               -
-ps_isr_ggH_hww shape                                    1.0000              -              -              -              -              -              -              -            -                               -
-ps_isr_qqH_hww shape                                         -         1.0000              -              -              -              -              -              -            -                               -
+ps_isr_WH shape                                              -              -         1.0000              -              -              -              -              -            -                               -
+ps_isr_ZH shape                                              -              -              -         1.0000              -              -              -              -            -                               -
+ps_isr_ggH shape                                        1.0000              -              -              -              -              -              -              -            -                               -
+ps_isr_qqH shape                                             -         1.0000              -              -              -              -              -              -            -                               -
 ps_isr_rest_bkg shape                                        -              -              -              -              -              -              -              -       1.0000                               -
 ps_isr_single_top shape                                      -              -              -              -              -              -         1.0000              -            -                               -
-ps_isr_ttH_hww shape                                         -              -              -              -         1.0000              -              -              -            -                               -
+ps_isr_ttH shape                                             -              -              -              -         1.0000              -              -              -            -                               -
 ps_isr_ttbar shape                                           -              -              -              -              -         1.0000              -              -            -                               -
 ps_isr_wjets shape                                           -              -              -              -              -              -              -         1.0000            -                               -
 unclustered_Energy shape                                1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000         1.0000       1.0000                               -

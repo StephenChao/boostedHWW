@@ -1,0 +1,45 @@
+000 (4339.000.000) 2024-07-23 14:08:32 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login.uscms.org&noUDP&sock=schedd_2177342_1641>
+...
+040 (4339.000.000) 2024-07-23 14:25:20 Started transferring input files
+	Transferring to host: <128.142.130.163:35115?CCBID=137.138.152.114:9700%3faddrs%3d[2001-1458-d00-13--58]-9700+137.138.152.114-9700%26alias%3dvocms0821.cern.ch#3705370%20131.225.204.58:9698%3faddrs%3d[2620-6a-0-8420-f0-0-204-58]-9698+131.225.204.58-9698%26alias%3dcmssrv2221.fnal.gov#388284&PrivNet=b9g20p6751.cern.ch&addrs=[2001-1458-301-58--100-97]-35115+128.142.130.163-35115&alias=b9g20p6751.cern.ch&noUDP>
+...
+001 (4339.000.000) 2024-07-23 14:25:22 Job executing on host: <128.142.130.163:37523?CCBID=137.138.152.114:9677%3faddrs%3d[2001-1458-d00-13--58]-9677+137.138.152.114-9677%26alias%3dvocms0821.cern.ch#4493724%20131.225.204.58:9654%3faddrs%3d[2620-6a-0-8420-f0-0-204-58]-9654+131.225.204.58-9654%26alias%3dcmssrv2221.fnal.gov#509818&PrivNet=b9g20p6751.cern.ch&addrs=[2001-1458-301-58--100-97]-37523+128.142.130.163-37523&alias=b9g20p6751.cern.ch&noUDP>
+	SlotName: slot1@b9g20p6751.cern.ch
+	CondorScratchDir = "/pool/condor/dir_81357/glide_2wV24J/execute/dir_11871"
+	Cpus = 1
+	Disk = 1735870680
+	Memory = 257007
+...
+040 (4339.000.000) 2024-07-23 14:25:22 Finished transferring input files
+...
+006 (4339.000.000) 2024-07-23 14:25:30 Image size of job updated: 2
+	7  -  MemoryUsage of job (MB)
+	3816  -  ResidentSetSize of job (KB)
+	6738  -  ProportionalSetSize of job (KB)
+...
+006 (4339.000.000) 2024-07-23 14:26:20 Image size of job updated: 4098744
+	546  -  MemoryUsage of job (MB)
+	558596  -  ResidentSetSize of job (KB)
+	6738  -  ProportionalSetSize of job (KB)
+...
+040 (4339.000.000) 2024-07-23 14:26:20 Started transferring output files
+...
+040 (4339.000.000) 2024-07-23 14:26:21 Finished transferring output files
+...
+005 (4339.000.000) 2024-07-23 14:26:22 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:30, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:30, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	65175  -  Run Bytes Sent By Job
+	3952646  -  Run Bytes Received By Job
+	65175  -  Total Bytes Sent By Job
+	3952646  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request  Allocated 
+	   Cpus                 :                 1          1 
+	   Disk (KB)            :   122790     4000 1735870680 
+	   Memory (MB)          :        7     3000     257007 
+
+	Job terminated of its own accord at 2024-07-23T19:26:20Z with exit-code 0.
+...

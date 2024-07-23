@@ -1,0 +1,1 @@
+ValidateDatacards.py combined.txt 2>&1 | tee validation/validation.txt

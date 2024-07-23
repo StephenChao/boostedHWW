@@ -8,9 +8,11 @@
 ####################################################################################################
 echo "creating env"
 
-if [ "${SINGULARITY_NAME}" != "x86_64-centos7" ]; then
-    exec singularity exec --bind=/cvmfs:/cvmfs/cvmfs/atlas.cern.ch/repo/containers/fs/singularity/x86_64-centos7 /bin/bash "$0" "$@"
-fi
+# if [ "${SINGULARITY_NAME}" != "x86_64-centos7" ]; then
+#     exec singularity exec --bind=/cvmfs:/cvmfs \
+#     /cvmfs/atlas.cern.ch/repo/containers/fs/singularity/x86_64-centos7 \
+#     /bin/bash "$0" "$@"
+# fi
 
 echo "running impacts"
 
@@ -33,4 +35,4 @@ cd ../..
 ls -lh
 
 ulimit -s unlimited
-./run_combined.sh  --impactsf CMS_HWW_boosted_SR2a_mcstat_bin6
+./run_0l.sh  --impactsf CMS_HWW_boosted_SR2a_mcstat_bin6

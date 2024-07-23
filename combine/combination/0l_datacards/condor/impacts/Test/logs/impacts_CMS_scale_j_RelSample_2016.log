@@ -1,0 +1,41 @@
+000 (4377.000.000) 2024-07-23 14:08:47 Job submitted from host: <192.170.231.212:9618?addrs=192.170.231.212-9618&alias=login.uscms.org&noUDP&sock=schedd_2177342_1641>
+...
+040 (4377.000.000) 2024-07-23 14:25:22 Started transferring input files
+	Transferring to host: <128.142.240.77:36633?CCBID=137.138.152.114:9660%3faddrs%3d[2001-1458-d00-13--58]-9660+137.138.152.114-9660%26alias%3dvocms0821.cern.ch#3669117%20131.225.204.58:9646%3faddrs%3d[2620-6a-0-8420-f0-0-204-58]-9646+131.225.204.58-9646%26alias%3dcmssrv2221.fnal.gov#261763&PrivNet=b9g29p0335.cern.ch&addrs=[2001-1458-301-11--100-4d]-36633+128.142.240.77-36633&alias=b9g29p0335.cern.ch&noUDP>
+...
+040 (4377.000.000) 2024-07-23 14:25:23 Finished transferring input files
+...
+001 (4377.000.000) 2024-07-23 14:25:23 Job executing on host: <128.142.240.77:46135?CCBID=137.138.152.114:9632%3faddrs%3d[2001-1458-d00-13--58]-9632+137.138.152.114-9632%26alias%3dvocms0821.cern.ch#3847788%20131.225.204.58:9694%3faddrs%3d[2620-6a-0-8420-f0-0-204-58]-9694+131.225.204.58-9694%26alias%3dcmssrv2221.fnal.gov#462191&PrivNet=b9g29p0335.cern.ch&addrs=[2001-1458-301-11--100-4d]-46135+128.142.240.77-46135&alias=b9g29p0335.cern.ch&noUDP>
+	SlotName: slot1@b9g29p0335.cern.ch
+...
+006 (4377.000.000) 2024-07-23 14:25:31 Image size of job updated: 2
+	11  -  MemoryUsage of job (MB)
+	3964  -  ResidentSetSize of job (KB)
+	10801  -  ProportionalSetSize of job (KB)
+...
+006 (4377.000.000) 2024-07-23 14:25:58 Image size of job updated: 4099052
+	552  -  MemoryUsage of job (MB)
+	565080  -  ResidentSetSize of job (KB)
+	10801  -  ProportionalSetSize of job (KB)
+...
+040 (4377.000.000) 2024-07-23 14:25:59 Started transferring output files
+...
+040 (4377.000.000) 2024-07-23 14:25:59 Finished transferring output files
+...
+005 (4377.000.000) 2024-07-23 14:26:00 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:08, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:08, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	67587  -  Run Bytes Sent By Job
+	3952643  -  Run Bytes Received By Job
+	67587  -  Total Bytes Sent By Job
+	3952643  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request  Allocated 
+	   Cpus                 :                 1          1 
+	   Disk (KB)            :   170369     4000 2863168052 
+	   Memory (MB)          :       11     3000     257260 
+
+	Job terminated of its own accord at 2024-07-23T19:25:58Z with exit-code 0.
+...

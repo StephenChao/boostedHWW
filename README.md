@@ -1,7 +1,7 @@
 # boostedHWW
 
 <p align="left">
-  <img width="300" src="./figure.png" />
+  <img width="300" src="https://raw.githubusercontent.com/StephenChao/boostedHWW/main/figure.png" />
 </p>
 
 Search for boosted(high transverse momentum) Higgs boson(H) decaying to two W bosons, with the decay product in a single large radius jet. The majority of the analysis

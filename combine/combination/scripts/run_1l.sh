@@ -1,5 +1,6 @@
 #!/bin/bash
-### https://github.com/rkansal47/HHbbVV/blob/main/src/HHbbVV/combine/run_blinded.sh
+### adapted from https://github.com/rkansal47/HHbbVV/blob/main/src/HHbbVV/combine/run_blinded.sh
+### Author: Raghav Kansal, Yuzhe Zhao, Farouk Mokhtar
 
 ####################################################################################################
 # Script for fits
@@ -150,13 +151,14 @@ mkdir -p $outsdir
 VBF="VBF"
 ggFpt250to300="ggFpt250to300"
 ggFpt300to450="ggFpt300to450"
-ggFpt450toInf="ggFpt450toInf"
+ggFpt450to650="ggFpt450to650"
+ggFpt650toInf="ggFpt650toInf"
 TopCR="TopCR"
 WJetsCR="WJetsCR"
 
 ########################### define SR/CR with datacards
 
-ccargs_1l="VBF=${cards_dir}/${VBF}.txt ggFpt250to300=${cards_dir}/${ggFpt250to300}.txt ggFpt300to450=${cards_dir}/${ggFpt300to450}.txt ggFpt450toInf=${cards_dir}/${ggFpt450toInf}.txt TopCR=${cards_dir}/${TopCR}.txt WJetsCR=${cards_dir}/${WJetsCR}.txt"
+ccargs_1l="VBF=${cards_dir}/${VBF}.txt ggFpt250to300=${cards_dir}/${ggFpt250to300}.txt ggFpt300to450=${cards_dir}/${ggFpt300to450}.txt ggFpt450to650=${cards_dir}/${ggFpt450to650}.txt ggFpt650toInf=${cards_dir}/${ggFpt650toInf}.txt TopCR=${cards_dir}/${TopCR}.txt WJetsCR=${cards_dir}/${WJetsCR}.txt"
 
 if [ $workspace = 1 ]; then
     echo "Combining cards:"

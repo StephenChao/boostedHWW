@@ -1,0 +1,17 @@
+#!/usr/bin/env condor_submit
+
+universe=Vanilla
+executable              = condor/impacts/Test/impacts_CMS_HWW_boosted_tf_dataResidual_CR2_Bin11.sh
+should_transfer_files   = YES
+transfer_input_files    = combined_withmasks.root,higgsCombineSnapshot.MultiDimFit.mH125.root,/ospool/cms-user/yuzhe/NanoNtupleChain/boostedHWW/combine/combination/scripts/run_0l.sh
+transfer_output_files   = higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR2_Bin11.MultiDimFit.mH125.root
+when_to_transfer_output = ON_EXIT_OR_EVICT
+request_memory          = 3000
+use_x509userproxy       = true
+x509userproxy           = /ospool/cms-user/yuzhe/x509up_u12976
+
+output                  = condor/impacts/Test/logs/impacts_CMS_HWW_boosted_tf_dataResidual_CR2_Bin11.out
+error                   = condor/impacts/Test/logs/impacts_CMS_HWW_boosted_tf_dataResidual_CR2_Bin11.err
+log                     = condor/impacts/Test/logs/impacts_CMS_HWW_boosted_tf_dataResidual_CR2_Bin11.log
+
+Queue 1

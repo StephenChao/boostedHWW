@@ -1,4 +1,3 @@
-INFO: (function: applyOptionsBase) FitterAlgoBase.cc: 113 -- Setting robust fit options to Tolerance=0.1 / Strategy=0 / Type,Algo=Minuit2,Migrad (note that defaults of CascadeMinimizer were taken where option not specified)
 INFO: (function: run) Combine.cc: 673 -- Floating the following parameters: 
 INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR1_Bin4 
 INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR2_Bin4 
@@ -12,14 +11,9 @@ INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR1_Bin8
 INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR2_Bin8 
 INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR1_Bin9 
 INFO: (function: run) Combine.cc: 676  CMS_HWW_boosted_tf_dataResidual_CR2_Bin9 
+INFO: (function: run) Combine.cc: 676  r 
 INFO: (function: run) Combine.cc: 708 -- Freezing the following parameters: 
-INFO: (function: run) Combine.cc: 711  AK8_JER_In 
-INFO: (function: run) Combine.cc: 711  AK8_JES_In 
-INFO: (function: run) Combine.cc: 711  AK8_JMR_In 
-INFO: (function: run) Combine.cc: 711  AK8_JMS_In 
-INFO: (function: run) Combine.cc: 711  AK8_UES_In 
 INFO: (function: run) Combine.cc: 711  BR_hww_In 
-INFO: (function: run) Combine.cc: 711  CCMS_HWW_boostedL1Prefiring_Run2_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin0_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin1_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR1_mcstat_bin10_In 
@@ -60,7 +54,15 @@ INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin6_In
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin7_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin8_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_CR2_mcstat_bin9_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_PUIDSF_Run2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_PDFacc_VH_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_PDFacc_ggH_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_PDFacc_qqH_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_PDFacc_ttH_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_QCDScaleacc_VH_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_QCDScaleacc_ggH_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_QCDScaleacc_qqH_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_QCDScaleacc_ttH_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_QCDScaleacc_wjets_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_mcstat_bin0_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_mcstat_bin1_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1a_mcstat_bin10_In 
@@ -102,14 +104,15 @@ INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin7_In
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin8_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR1b_mcstat_bin9_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_VBF_mcstat_bin0_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_VBF_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_VBF_mcstat_bin1_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin0_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_WH_mcstat_bin18_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin0_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ZH_mcstat_bin18_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin0_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin4_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ggF_mcstat_bin1_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin10_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin11_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin12_In 
@@ -118,23 +121,27 @@ INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin14_In
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin15_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin16_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin17_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin18_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin19_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin2_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin4_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin5_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin6_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin7_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin8_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_mcstat_bin9_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin4_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_single_top_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin18_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_single_top_mcstat_bin18_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin0_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttH_mcstat_bin18_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin0_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_ttbar_mcstat_bin18_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin0_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2a_wjets_mcstat_bin18_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin0_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin1_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin10_In 
@@ -155,63 +162,100 @@ INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin6_In
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin7_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin8_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_SR2b_mcstat_bin9_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_W_d1kappa_EW_Run2_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_W_d2kappa_EW_Run2_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_W_d3kappa_EW_Run2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_W_d1kappa_EW_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_W_d2kappa_EW_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_W_d3kappa_EW_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_Z_d2kappa_EW_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_Z_d3kappa_EW_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_btagSFbcCorrelated_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_btagSFbc_2016_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_btagSFbc_2016APV_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_btagSFbc_2017_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_btagSFbc_2018_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_btagSFlightCorrelated_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_btagSFlight_2016_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_btagSFlight_2016APV_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_btagSFlight_2017_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_btagSFlight_2018_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_d1K_NLO_Run2_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_d2K_NLO_Run2_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_d3K_NLO_Run2_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_ele_identification_Run2_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_ele_isolation_Run2_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_ele_reconstruction_Run2_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_ele_trigger_Run2_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_d1K_NLO_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_d2K_NLO_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_d3K_NLO_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_ele_identification_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_ele_isolation_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_ele_reconstruction_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_ele_trigger_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_had_QCDScaleacc_rest_bkg_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_had_QCDScaleacc_single_top_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_had_QCDScaleacc_ttbar_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_had_QCDScaleacc_wjets_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_jmr_2016_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_jmr_2016APV_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_jmr_2017_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_jmr_2018_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_jms_2016_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_jms_2016APV_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_jms_2017_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_jms_2018_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_lp_sf_region_a_In 
 INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_lp_sf_region_b_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_mu_identification_Run2_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_mu_isolation_Run2_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_mu_trigger_Run2_In 
-INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_mu_trigger_iso_Run2_In 
-INFO: (function: run) Combine.cc: 711  CMS_lumi_13TeV_1718_In 
-INFO: (function: run) Combine.cc: 711  CMS_lumi_13TeV_2016_In 
-INFO: (function: run) Combine.cc: 711  CMS_lumi_13TeV_2017_In 
-INFO: (function: run) Combine.cc: 711  CMS_lumi_13TeV_2018_In 
-INFO: (function: run) Combine.cc: 711  CMS_lumi_13TeV_corelated_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_mu_identification_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_mu_isolation_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_mu_trigger_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_mu_trigger_iso_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_rest_bkg_rate_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_single_top_rate_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_ttbar_rate_In 
+INFO: (function: run) Combine.cc: 711  CMS_HWW_boosted_wjets_rate_In 
+INFO: (function: run) Combine.cc: 711  CMS_l1_ecal_prefiring_2016_In 
+INFO: (function: run) Combine.cc: 711  CMS_l1_ecal_prefiring_2016APV_In 
+INFO: (function: run) Combine.cc: 711  CMS_l1_ecal_prefiring_2017_In 
 INFO: (function: run) Combine.cc: 711  CMS_pileup_2016_In 
 INFO: (function: run) Combine.cc: 711  CMS_pileup_2016APV_In 
 INFO: (function: run) Combine.cc: 711  CMS_pileup_2017_In 
 INFO: (function: run) Combine.cc: 711  CMS_pileup_2018_In 
+INFO: (function: run) Combine.cc: 711  CMS_pileup_id_In 
 INFO: (function: run) Combine.cc: 711  CMS_res_j_2016_In 
 INFO: (function: run) Combine.cc: 711  CMS_res_j_2016APV_In 
 INFO: (function: run) Combine.cc: 711  CMS_res_j_2017_In 
 INFO: (function: run) Combine.cc: 711  CMS_res_j_2018_In 
-INFO: (function: run) Combine.cc: 711  CMS_scale_j_In 
-INFO: (function: run) Combine.cc: 711  PDF_scale_In 
-INFO: (function: run) Combine.cc: 711  PSFSR_VBF_In 
-INFO: (function: run) Combine.cc: 711  PSFSR_ggF_In 
-INFO: (function: run) Combine.cc: 711  PSISR_VBF_In 
-INFO: (function: run) Combine.cc: 711  PSISR_ggF_In 
-INFO: (function: run) Combine.cc: 711  QCD_rate_In 
-INFO: (function: run) Combine.cc: 711  QCD_scale_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_Abs_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_Abs_2016_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_Abs_2016APV_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_Abs_2017_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_Abs_2018_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_BBEC1_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_BBEC1_2016_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_BBEC1_2016APV_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_BBEC1_2017_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_BBEC1_2018_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_EC2_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_EC2_2016_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_EC2_2016APV_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_EC2_2017_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_EC2_2018_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_FlavQCD_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_HF_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_HF_2016_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_HF_2016APV_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_HF_2017_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_HF_2018_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_RelBal_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_RelSample_2016_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_RelSample_2016APV_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_RelSample_2017_In 
+INFO: (function: run) Combine.cc: 711  CMS_scale_j_RelSample_2018_In 
 INFO: (function: run) Combine.cc: 711  QCDscale_VH_In 
 INFO: (function: run) Combine.cc: 711  QCDscale_ggH_In 
 INFO: (function: run) Combine.cc: 711  QCDscale_qqH_In 
 INFO: (function: run) Combine.cc: 711  QCDscale_ttH_In 
-INFO: (function: run) Combine.cc: 711  QCDscale_ttbar_In 
 INFO: (function: run) Combine.cc: 711  TopCR_diboson_mcstat_In 
 INFO: (function: run) Combine.cc: 711  TopCR_ewkvjets_mcstat_In 
-INFO: (function: run) Combine.cc: 711  TopCR_qcd_mcstat_In 
+INFO: (function: run) Combine.cc: 711  TopCR_fake_mcstat_In 
 INFO: (function: run) Combine.cc: 711  TopCR_singletop_mcstat_In 
 INFO: (function: run) Combine.cc: 711  TopCR_ttbar_mcstat_In 
-INFO: (function: run) Combine.cc: 711  TopCR_vjets_mcstat_In 
 INFO: (function: run) Combine.cc: 711  TopCR_wjets_mcstat_In 
+INFO: (function: run) Combine.cc: 711  TopCR_wzqq_mcstat_In 
+INFO: (function: run) Combine.cc: 711  TopCR_zjets_mcstat_In 
 INFO: (function: run) Combine.cc: 711  VBF_mcstat_bin0_In 
 INFO: (function: run) Combine.cc: 711  VBF_mcstat_bin1_In 
 INFO: (function: run) Combine.cc: 711  VBF_mcstat_bin2_In 
@@ -223,11 +267,13 @@ INFO: (function: run) Combine.cc: 711  VBF_mcstat_bin7_In
 INFO: (function: run) Combine.cc: 711  VBF_mcstat_bin8_In 
 INFO: (function: run) Combine.cc: 711  WJetsCR_diboson_mcstat_In 
 INFO: (function: run) Combine.cc: 711  WJetsCR_ewkvjets_mcstat_In 
-INFO: (function: run) Combine.cc: 711  WJetsCR_qcd_mcstat_In 
+INFO: (function: run) Combine.cc: 711  WJetsCR_fake_mcstat_In 
 INFO: (function: run) Combine.cc: 711  WJetsCR_singletop_mcstat_In 
 INFO: (function: run) Combine.cc: 711  WJetsCR_ttbar_mcstat_In 
-INFO: (function: run) Combine.cc: 711  WJetsCR_vjets_mcstat_In 
 INFO: (function: run) Combine.cc: 711  WJetsCR_wjets_mcstat_In 
+INFO: (function: run) Combine.cc: 711  WJetsCR_wzqq_mcstat_In 
+INFO: (function: run) Combine.cc: 711  WJetsCR_zjets_mcstat_In 
+INFO: (function: run) Combine.cc: 711  alpha_s_In 
 INFO: (function: run) Combine.cc: 711  ggFpt250to300_mcstat_bin0_In 
 INFO: (function: run) Combine.cc: 711  ggFpt250to300_mcstat_bin1_In 
 INFO: (function: run) Combine.cc: 711  ggFpt250to300_mcstat_bin2_In 
@@ -246,28 +292,38 @@ INFO: (function: run) Combine.cc: 711  ggFpt300to450_mcstat_bin5_In
 INFO: (function: run) Combine.cc: 711  ggFpt300to450_mcstat_bin6_In 
 INFO: (function: run) Combine.cc: 711  ggFpt300to450_mcstat_bin7_In 
 INFO: (function: run) Combine.cc: 711  ggFpt300to450_mcstat_bin8_In 
-INFO: (function: run) Combine.cc: 711  ggFpt450toInf_mcstat_bin0_In 
-INFO: (function: run) Combine.cc: 711  ggFpt450toInf_mcstat_bin1_In 
-INFO: (function: run) Combine.cc: 711  ggFpt450toInf_mcstat_bin2_In 
-INFO: (function: run) Combine.cc: 711  ggFpt450toInf_mcstat_bin3_In 
-INFO: (function: run) Combine.cc: 711  ggFpt450toInf_mcstat_bin4_In 
-INFO: (function: run) Combine.cc: 711  ggFpt450toInf_mcstat_bin5_In 
-INFO: (function: run) Combine.cc: 711  ggFpt450toInf_mcstat_bin6_In 
-INFO: (function: run) Combine.cc: 711  ggFpt450toInf_mcstat_bin7_In 
-INFO: (function: run) Combine.cc: 711  ggFpt450toInf_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  ggFpt450to650_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  ggFpt450to650_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  ggFpt450to650_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  ggFpt450to650_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  ggFpt450to650_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  ggFpt450to650_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  ggFpt450to650_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  ggFpt450to650_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  ggFpt450to650_mcstat_bin8_In 
+INFO: (function: run) Combine.cc: 711  ggFpt650toInf_mcstat_bin0_In 
+INFO: (function: run) Combine.cc: 711  ggFpt650toInf_mcstat_bin1_In 
+INFO: (function: run) Combine.cc: 711  ggFpt650toInf_mcstat_bin2_In 
+INFO: (function: run) Combine.cc: 711  ggFpt650toInf_mcstat_bin3_In 
+INFO: (function: run) Combine.cc: 711  ggFpt650toInf_mcstat_bin4_In 
+INFO: (function: run) Combine.cc: 711  ggFpt650toInf_mcstat_bin5_In 
+INFO: (function: run) Combine.cc: 711  ggFpt650toInf_mcstat_bin6_In 
+INFO: (function: run) Combine.cc: 711  ggFpt650toInf_mcstat_bin7_In 
+INFO: (function: run) Combine.cc: 711  ggFpt650toInf_mcstat_bin8_In 
 INFO: (function: run) Combine.cc: 711  lumi_13TeV_1718_In 
 INFO: (function: run) Combine.cc: 711  lumi_13TeV_2016_In 
 INFO: (function: run) Combine.cc: 711  lumi_13TeV_2017_In 
 INFO: (function: run) Combine.cc: 711  lumi_13TeV_2018_In 
+INFO: (function: run) Combine.cc: 711  lumi_13TeV_corelated_In 
 INFO: (function: run) Combine.cc: 711  lumi_13TeV_correlated_In 
-INFO: (function: run) Combine.cc: 711  muon_mini-isolation_SF_In 
+INFO: (function: run) Combine.cc: 711  miniisolation_SF_unc_In 
 INFO: (function: run) Combine.cc: 711  pdf_Higgs_gg_In 
 INFO: (function: run) Combine.cc: 711  pdf_Higgs_qqbar_In 
 INFO: (function: run) Combine.cc: 711  pdf_Higgs_ttH_In 
-INFO: (function: run) Combine.cc: 711  pdf_gg_In 
-INFO: (function: run) Combine.cc: 711  pdf_qqbar_In 
 INFO: (function: run) Combine.cc: 711  ps_fsr_In 
+INFO: (function: run) Combine.cc: 711  ps_fsr_had_In 
 INFO: (function: run) Combine.cc: 711  ps_isr_In 
+INFO: (function: run) Combine.cc: 711  ps_isr_had_In 
 INFO: (function: run) Combine.cc: 711  taggereff_In 
 INFO: (function: run) Combine.cc: 711  triggerEffSF_uncorrelated_In 
 INFO: (function: run) Combine.cc: 711  unclustered_Energy_In 
@@ -367,9 +423,11 @@ INFO: (function: run) Combine.cc: 711  shapeSig_ttH_VBF__norm
 INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_VBF__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_VBF__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_singletop_VBF__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_vjets_VBF__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_zjets_VBF__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wzqq_VBF__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_diboson_VBF__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_ewkvjets_VBF__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_fake_VBF__norm 
 INFO: (function: run) Combine.cc: 711  shapeSig_ggF_ggFpt250to300__norm 
 INFO: (function: run) Combine.cc: 711  shapeSig_VBF_ggFpt250to300__norm 
 INFO: (function: run) Combine.cc: 711  shapeSig_WH_ggFpt250to300__norm 
@@ -378,10 +436,11 @@ INFO: (function: run) Combine.cc: 711  shapeSig_ttH_ggFpt250to300__norm
 INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_ggFpt250to300__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_ggFpt250to300__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_singletop_ggFpt250to300__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_vjets_ggFpt250to300__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_qcd_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_zjets_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wzqq_ggFpt250to300__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_diboson_ggFpt250to300__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_ewkvjets_ggFpt250to300__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_fake_ggFpt250to300__norm 
 INFO: (function: run) Combine.cc: 711  shapeSig_ggF_ggFpt300to450__norm 
 INFO: (function: run) Combine.cc: 711  shapeSig_VBF_ggFpt300to450__norm 
 INFO: (function: run) Combine.cc: 711  shapeSig_WH_ggFpt300to450__norm 
@@ -390,36 +449,53 @@ INFO: (function: run) Combine.cc: 711  shapeSig_ttH_ggFpt300to450__norm
 INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_ggFpt300to450__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_ggFpt300to450__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_singletop_ggFpt300to450__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_vjets_ggFpt300to450__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_qcd_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_zjets_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wzqq_ggFpt300to450__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_diboson_ggFpt300to450__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_ewkvjets_ggFpt300to450__norm 
-INFO: (function: run) Combine.cc: 711  shapeSig_ggF_ggFpt450toInf__norm 
-INFO: (function: run) Combine.cc: 711  shapeSig_VBF_ggFpt450toInf__norm 
-INFO: (function: run) Combine.cc: 711  shapeSig_WH_ggFpt450toInf__norm 
-INFO: (function: run) Combine.cc: 711  shapeSig_ZH_ggFpt450toInf__norm 
-INFO: (function: run) Combine.cc: 711  shapeSig_ttH_ggFpt450toInf__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_ggFpt450toInf__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_ggFpt450toInf__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_singletop_ggFpt450toInf__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_vjets_ggFpt450toInf__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_qcd_ggFpt450toInf__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_diboson_ggFpt450toInf__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_ewkvjets_ggFpt450toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_fake_ggFpt300to450__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ggF_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_VBF_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_WH_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ZH_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ttH_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_singletop_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_zjets_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wzqq_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_diboson_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ewkvjets_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_fake_ggFpt450to650__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ggF_ggFpt650toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_VBF_ggFpt650toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_WH_ggFpt650toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ZH_ggFpt650toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeSig_ttH_ggFpt650toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_ggFpt650toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_ggFpt650toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_singletop_ggFpt650toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_zjets_ggFpt650toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wzqq_ggFpt650toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_diboson_ggFpt650toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_ewkvjets_ggFpt650toInf__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_fake_ggFpt650toInf__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_TopCR__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_TopCR__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_singletop_TopCR__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_vjets_TopCR__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_qcd_TopCR__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_zjets_TopCR__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wzqq_TopCR__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_diboson_TopCR__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_ewkvjets_TopCR__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_fake_TopCR__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_ttbar_WJetsCR__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_wjets_WJetsCR__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_singletop_WJetsCR__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_vjets_WJetsCR__norm 
-INFO: (function: run) Combine.cc: 711  shapeBkg_qcd_WJetsCR__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_zjets_WJetsCR__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_wzqq_WJetsCR__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_diboson_WJetsCR__norm 
 INFO: (function: run) Combine.cc: 711  shapeBkg_ewkvjets_WJetsCR__norm 
+INFO: (function: run) Combine.cc: 711  shapeBkg_fake_WJetsCR__norm 
 INFO: (function: run) Combine.cc: 711  n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven 
 INFO: (function: run) Combine.cc: 711  n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven 
 INFO: (function: run) Combine.cc: 711  n_exp_binSR1a_proc_CMS_HWW_boosted_qcd_datadriven 
@@ -432,7 +508,720 @@ INFO: (function: run) Combine.cc: 711  n_exp_binSR2a_proc_CMS_HWW_boosted_qcd_da
 INFO: (function: run) Combine.cc: 711  n_exp_binSR2aBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
 INFO: (function: run) Combine.cc: 711  n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven 
 INFO: (function: run) Combine.cc: 711  n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
-INFO: (function: run) Combine.cc: 711  n_exp_binVBF_proc_qcd 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 69 -- Parameters after fit for asimov dataset
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- BR_hww = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- BR_hww_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin0 = 0.000240158 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin1 = 0.000105505 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin10 = 0.00302975 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin11 = -0.00642271 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin12 = 0.00458233 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin13 = 0.00178079 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin14 = 0.00244864 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin15 = -0.000811663 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin16 = -0.00706206 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin17 = 0.000555647 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin18 = 0.00592238 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin19 = -0.00383375 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin2 = 0.000218619 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin3 = -0.00113928 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR1_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin0 = -0.00379967 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin1 = -0.00251105 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin10 = -0.000534776 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin11 = -0.00296883 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin12 = 0.00154301 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin13 = -0.0117621 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin14 = -0.0037645 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin15 = 0.00176472 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin16 = 0.0129197 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin17 = 0.00224529 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin18 = 0.000553239 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin19 = 0.00180213 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin2 = 0.00340053 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin3 = 0.00317582 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_CR2_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_PDFacc_VH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_PDFacc_VH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_PDFacc_ggH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_PDFacc_ggH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_PDFacc_qqH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_PDFacc_qqH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_PDFacc_ttH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_PDFacc_ttH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_QCDScaleacc_VH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_QCDScaleacc_VH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_QCDScaleacc_ggH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_QCDScaleacc_ggH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_QCDScaleacc_qqH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_QCDScaleacc_qqH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_QCDScaleacc_ttH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_QCDScaleacc_ttH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_QCDScaleacc_wjets = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_QCDScaleacc_wjets_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin0 = -0.017462 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin1 = 0.00540568 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin10 = -0.0409919 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin11 = 0.131801 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin12 = -0.160799 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin13 = 0.0516254 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin14 = 0.1039 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin15 = -0.0292856 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin16 = -0.027227 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin17 = -0.172907 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin18 = 0.0365718 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin19 = 0.0982215 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin2 = 0.0944709 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin3 = -0.0277052 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1a_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin0 = -0.0073648 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin1 = -7.32118e-05 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin10 = -0.0647009 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin11 = 0.136022 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin12 = -0.086683 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin13 = -0.0359446 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin14 = -0.0507808 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin15 = 0.0167585 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin16 = 0.107874 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin17 = 0.0101609 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin18 = -0.0941743 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin19 = 0.043944 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin2 = -0.00476567 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin3 = 0.0238553 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR1b_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_VBF_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_VBF_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_VBF_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_VBF_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_WH_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_WH_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_WH_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_WH_mcstat_bin18 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_WH_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_WH_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ZH_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ZH_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ZH_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ZH_mcstat_bin18 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ZH_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ZH_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ggF_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ggF_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ggF_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ggF_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin10 = -0.216387 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin11 = -0.226795 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin12 = -0.0624274 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin13 = 0.31789 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin14 = 0.376458 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin15 = 0.100512 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin16 = -0.0873654 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin17 = -0.0906622 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin19 = -0.246378 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin2 = -0.154658 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin3 = -0.146199 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin1 = -0.00488408 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin18 = 0.137327 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_single_top_mcstat_bin18 = 0.0223278 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_single_top_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ttH_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ttH_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ttH_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ttH_mcstat_bin18 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ttH_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ttH_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ttbar_mcstat_bin0 = 0.0341254 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ttbar_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ttbar_mcstat_bin1 = -0.0132585 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ttbar_mcstat_bin18 = 0.0350308 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ttbar_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_ttbar_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_wjets_mcstat_bin0 = 0.0753014 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_wjets_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_wjets_mcstat_bin1 = -0.0322625 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_wjets_mcstat_bin18 = 0.03592 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_wjets_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2a_wjets_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin0 = 0.100895 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin1 = 0.0643582 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin10 = 0.0355512 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin11 = 0.159803 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin12 = -0.0556454 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin13 = 0.449881 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin14 = 0.104483 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin15 = -0.0431122 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin16 = -0.31686 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin17 = -0.0569231 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin18 = -0.0119542 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin19 = -0.0287697 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin2 = -0.114556 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin3 = -0.0964792 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_SR2b_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_W_d1kappa_EW = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_W_d1kappa_EW_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_W_d2kappa_EW = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_W_d2kappa_EW_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_W_d3kappa_EW = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_W_d3kappa_EW_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_Z_d2kappa_EW = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_Z_d2kappa_EW_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_Z_d3kappa_EW = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_Z_d3kappa_EW_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFbcCorrelated = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFbcCorrelated_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFbc_2016 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFbc_2016APV = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFbc_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFbc_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFbc_2017 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFbc_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFbc_2018 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFbc_2018_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFlightCorrelated = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFlightCorrelated_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFlight_2016 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFlight_2016APV = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFlight_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFlight_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFlight_2017 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFlight_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFlight_2018 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_btagSFlight_2018_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_d1K_NLO = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_d1K_NLO_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_d2K_NLO = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_d2K_NLO_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_d3K_NLO = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_d3K_NLO_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_ele_identification = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_ele_identification_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_ele_isolation = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_ele_isolation_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_ele_reconstruction = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_ele_reconstruction_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_ele_trigger = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_ele_trigger_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_had_QCDScaleacc_rest_bkg = -0.0696904 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_had_QCDScaleacc_rest_bkg_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_had_QCDScaleacc_single_top = -0.116484 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_had_QCDScaleacc_single_top_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_had_QCDScaleacc_ttbar = -0.00397062 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_had_QCDScaleacc_ttbar_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_had_QCDScaleacc_wjets = 0.38361 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_had_QCDScaleacc_wjets_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jmr_2016 = -0.0785486 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jmr_2016APV = 0.0198727 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jmr_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jmr_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jmr_2017 = 0.0635917 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jmr_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jmr_2018 = 0.0996964 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jmr_2018_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jms_2016 = 0.0911261 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jms_2016APV = 0.121025 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jms_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jms_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jms_2017 = 0.0608037 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jms_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jms_2018 = 0.234943 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_jms_2018_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_lp_sf_region_a = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_lp_sf_region_a_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_lp_sf_region_b = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_lp_sf_region_b_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_mu_identification = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_mu_identification_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_mu_isolation = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_mu_isolation_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_mu_trigger = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_mu_trigger_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_mu_trigger_iso = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_mu_trigger_iso_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_rest_bkg_rate = 0.0693199 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_rest_bkg_rate_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_single_top_rate = 0.0134607 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_single_top_rate_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin0 = 0.0938125 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin1 = 0.1309 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin10 = 0.207376 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin11 = 0.217852 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin12 = 0.185694 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin13 = 0.180388 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin14 = 0.171567 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin15 = 0.168256 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin16 = 0.158353 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin17 = 0.150856 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin18 = 0.120001 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin19 = 0.116114 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin2 = 0.148996 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin3 = 0.312415 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin0 = 0.0259916 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin1 = 0.0447609 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin10 = 0.107112 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin11 = 0.101089 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin12 = 0.0910192 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin13 = 0.111368 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin14 = 0.07788 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin15 = 0.0796638 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin16 = 0.0524732 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin17 = 0.0709201 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin18 = 0.0500195 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin19 = 0.0585322 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin2 = 0.0563543 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin3 = 0.0960999 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin9 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par0 = 0.813368 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par1 = 0.879557 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par2 = 0.914051 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par3 = 1.77977 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par0 = 0.979365 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par1 = 1.215 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par2 = 0.973116 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par3 = 1.47678 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par4 = 0.864978 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par5 = 1.84728 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par6 = 1.80252 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_ttbar_rate = 0.0159602 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_ttbar_rate_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_wjets_rate = -0.102101 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_HWW_boosted_wjets_rate_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_l1_ecal_prefiring_2016 = -0.000334128 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_l1_ecal_prefiring_2016APV = -0.00119184 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_l1_ecal_prefiring_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_l1_ecal_prefiring_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_l1_ecal_prefiring_2017 = 0.0388879 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_l1_ecal_prefiring_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_pileup_2016 = 0.0521352 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_pileup_2016APV = 0.0143361 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_pileup_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_pileup_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_pileup_2017 = -0.0416149 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_pileup_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_pileup_2018 = 0.203884 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_pileup_2018_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_pileup_id = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_pileup_id_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_res_j_2016 = 0.0245277 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_res_j_2016APV = 0.0933135 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_res_j_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_res_j_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_res_j_2017 = 0.0223096 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_res_j_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_res_j_2018 = 0.0532648 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_res_j_2018_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_Abs = 0.0221112 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_Abs_2016 = 0.0373735 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_Abs_2016APV = 0.104248 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_Abs_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_Abs_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_Abs_2017 = 0.00991639 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_Abs_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_Abs_2018 = -0.05474 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_Abs_2018_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_Abs_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_BBEC1 = -0.0252704 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_BBEC1_2016 = -0.00782753 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_BBEC1_2016APV = 0.0259879 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_BBEC1_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_BBEC1_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_BBEC1_2017 = 0.0995766 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_BBEC1_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_BBEC1_2018 = 0.000896926 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_BBEC1_2018_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_BBEC1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_EC2 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_EC2_2016 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_EC2_2016APV = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_EC2_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_EC2_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_EC2_2017 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_EC2_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_EC2_2018 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_EC2_2018_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_EC2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_FlavQCD = -0.0529804 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_FlavQCD_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_HF = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_HF_2016 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_HF_2016APV = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_HF_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_HF_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_HF_2017 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_HF_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_HF_2018 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_HF_2018_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_HF_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_RelBal = 0.109848 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_RelBal_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_RelSample_2016 = 0.0514006 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_RelSample_2016APV = -0.0488089 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_RelSample_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_RelSample_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_RelSample_2017 = 0.01417 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_RelSample_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_RelSample_2018 = -0.161007 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- CMS_scale_j_RelSample_2018_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- QCDscale_VH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- QCDscale_VH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- QCDscale_ggH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- QCDscale_ggH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- QCDscale_qqH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- QCDscale_qqH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- QCDscale_ttH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- QCDscale_ttH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_diboson_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_diboson_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_ewkvjets_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_ewkvjets_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_fake_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_fake_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_singletop_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_singletop_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_ttbar_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_ttbar_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_wjets_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_wjets_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_wzqq_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_wzqq_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_zjets_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- TopCR_zjets_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin2 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin3 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- VBF_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_diboson_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_diboson_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_ewkvjets_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_ewkvjets_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_fake_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_fake_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_singletop_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_singletop_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_ttbar_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_ttbar_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_wjets_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_wjets_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_wzqq_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_wzqq_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_zjets_mcstat = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- WJetsCR_zjets_mcstat_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- alpha_s = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- alpha_s_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin2 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin3 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt250to300_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin2 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin3 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt300to450_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin2 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin3 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt450to650_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin2 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin3 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ggFpt650toInf_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_1718 = 0.000965633 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_1718_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_2016 = -0.000439937 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_2016_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_2017 = 0.000649501 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_2017_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_2018 = -0.000747383 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_2018_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_corelated = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_corelated_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_correlated = -0.00374633 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- lumi_13TeV_correlated_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_CR1 = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_CR1Blinded = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_CR2 = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_CR2Blinded = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_SR1a = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_SR1aBlinded = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_SR1b = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_SR1bBlinded = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_SR2a = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_SR2aBlinded = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_SR2b = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_SR2bBlinded = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_TopCR = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_VBF = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_WJetsCR = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_ggFpt250to300 = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_ggFpt300to450 = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_ggFpt450to650 = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- mask_ggFpt650toInf = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- miniisolation_SF_unc = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- miniisolation_SF_unc_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binSR1aBlinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binSR1a_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binSR2aBlinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binSR2a_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- pdf_Higgs_gg = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- pdf_Higgs_gg_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- pdf_Higgs_qqbar = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- pdf_Higgs_qqbar_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- pdf_Higgs_ttH = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- pdf_Higgs_ttH_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ps_fsr = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ps_fsr_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ps_fsr_had = -0.80402 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ps_fsr_had_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ps_isr = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ps_isr_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ps_isr_had = -0.0313368 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ps_isr_had_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- r = 1 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- taggereff = 0 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- taggereff_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- triggerEffSF_uncorrelated = 0.0133805 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- triggerEffSF_uncorrelated_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- ttbarnormSF = 1 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- unclustered_Energy = 0.0355629 
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- unclustered_Energy_In = 0 (constant)
+INFO: (function: asimovDatasetWithFit) AsimovUtils.cc: 73 -- wjetsnormSF = 1 
 INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
 INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR1_obsOnly: in 20 x-bins
 INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
@@ -464,146 +1253,18 @@ INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov
 INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
 INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binggFpt300to450_obsOnly: in 9 x-bins
 INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
-INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binggFpt450toInf_obsOnly: in 9 x-bins
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binggFpt450to650_obsOnly: in 9 x-bins
+INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
+INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binggFpt650toInf_obsOnly: in 9 x-bins
 INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
 INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binTopCR_obsOnly: in 9 x-bins
 INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
 INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binWJetsCR_obsOnly: in 9 x-bins
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 212 -- finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim.
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: doFit) FitterAlgoBase.cc: 360 -- Running RobustFit for POI r. Configured with strategy 0  
-INFO: (function: findCrossing) FitterAlgoBase.cc: 406 -- Searching for crossing at nll = 0.494473, in the interval 1 < r < 40
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 212 -- finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim.
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 427 -- r lvl-here lvl-there 	stepping 
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 4.900000    -7.51247  +0.49447    3.900000
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 2.170000    -0.94921  -7.51247    1.170000
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.351000    +0.31541  -0.94921    0.351000
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.702000    -0.12166  +0.31541    0.351000
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.456300    +0.20722  -0.12166    0.105300
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.561600    +0.07738  +0.20722    0.105300
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.666900    -0.06862  +0.07738    0.105300
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.593190    +0.03491  -0.06862    0.031590
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.624780    -0.00919  +0.03491    0.031590
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.602667    +0.02190  -0.00919    0.009477
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.612144    +0.00870  +0.02190    0.009477
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.621621    -0.00464  +0.00870    0.009477
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.614987    +0.00558  -0.00464    0.002843
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.617830    +0.00174  +0.00558    0.002843
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.620673    -0.00220  +0.00174    0.002843
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.618683    +0.00063  -0.00220    0.000853
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 1.619536    -0.00053  +0.00063    0.000853
-INFO: (function: findCrossing) FitterAlgoBase.cc: 406 -- Searching for crossing at nll = 0.494473, in the interval 1 < r < -40
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 427 -- r lvl-here lvl-there 	stepping 
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -3.100000    -9000000044.64513  +0.49447    -4.100000
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.230000    -3.23071  -9000000044.64513    -1.230000
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.631000    +0.22354  -3.23071    -0.369000
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.262000    -0.75526  +0.22354    -0.369000
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.520300    +0.01404  -0.75526    -0.110700
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.409600    -0.26463  +0.01404    -0.110700
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.487090    -0.06111  -0.26463    -0.033210
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.510337    -0.00765  -0.06111    -0.009963
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.517311    +0.00795  -0.00765    -0.002989
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.514322    +0.00140  +0.00795    -0.002989
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.511333    -0.00532  +0.00140    -0.002989
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.513426    -0.00058  -0.00532    -0.000897
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.514053    +0.00083  -0.00058    -0.000269
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.513784    +0.00024  +0.00083    -0.000269

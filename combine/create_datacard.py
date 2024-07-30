@@ -65,9 +65,28 @@ LUMI = {  # in pb^-1
 }
 
 jecs = {
-    "JES": "JES_jes",
+    # "JES": "JES_jes",
     "JER": "JER",
+    "Absolute": "split",
+    "Absolute_year": "split",
+    "BBEC1": "split",
+    "BBEC1_year": "split",
+    "EC2": "split",
+    "EC2_year": "split",
+    "FlavorQCD": "split",
+    "HF": "split",
+    "HF_year": "split",
+    "RelativeBal": "split",
+    "RelativeSample_year": "split",
+    
+    #although pdf are added here
+    "pdfscale": "pdfscale",
+    
+    #although JMS/JMR are added here
+    "JMS"     : "JMS",
+    "JMR"     : "JMR",
 }
+
 
 uncluste = {
     "UE": "unclusteredEnergy",
@@ -192,6 +211,12 @@ nuisance_params = {
         value=((1.006 ** (LUMI["2017"] / full_lumi)) * (1.002 ** (LUMI["2018"] / full_lumi))),
     ),
     
+    #assign 5% unc for Wjets, Top and rest background
+    f"{CMS_PARAMS_LABEL}_wjets_rate": Syst(prior="lnN", samples=["WJets"], value=1.05),
+    f"{CMS_PARAMS_LABEL}_ttbar_rate": Syst(prior="lnN", samples=["TT"], value=1.05),
+    f"{CMS_PARAMS_LABEL}_single_top_rate": Syst(prior="lnN", samples=["ST"], value=1.05),
+    f"{CMS_PARAMS_LABEL}_rest_bkg_rate": Syst(prior="lnN", samples=["Rest"], value=1.05),
+    
     # https://gitlab.cern.ch/hh/naming-conventions#theory-uncertainties
     "BR_hww": Syst(prior="lnN", samples=sig_keys, value=1.0153, value_down=0.9848),
     
@@ -205,9 +230,17 @@ nuisance_params = {
         ),
     "pdf_Higgs_ttH": Syst(prior="lnN", samples=["ttH"], value=1.030),
     
-    # pdf uncertainty for background 
-    "pdf_gg": Syst(prior="lnN", samples=["TT"], value=1.042),
-    "pdf_qqbar": Syst(prior="lnN", samples=["ST"], value=1.028),
+    # alphas_s
+    "alpha_s" : Syst(
+        prior="lnN", 
+        samples=["ggF","VBF","WH","ZH","ttH"], 
+        value={"ggF":1.0260,"VBF":1.005,"WH":1.009,"ZH":1.009,"ttH":1.020},
+        diff_samples=True,
+        ),
+    
+    # # pdf uncertainty for background: NOT USED
+    # "pdf_gg": Syst(prior="lnN", samples=["TT"], value=1.042),
+    # "pdf_qqbar": Syst(prior="lnN", samples=["ST"], value=1.028),
 
     #QCD scale for Higgs signal
     "QCDscale_ggH": Syst(prior="lnN", samples=["ggF"], value=1.039),
@@ -221,14 +254,14 @@ nuisance_params = {
         ),
     "QCDscale_ttH": Syst(prior="lnN", samples=["ttH"], value=1.058,value_down=0.908),
     
-    # QCD scale for ttbar
-    "QCDscale_ttbar": Syst(
-        prior="lnN",
-        samples=["ST", "TT"],
-        value={"ST": 1.03, "TT": 1.024},
-        value_down={"ST": 0.978, "TT": 0.965},
-        diff_samples=True,
-    ),    
+    # QCD scale for ttbar: NOT USED
+    # "QCDscale_ttbar": Syst(
+    #     prior="lnN",
+    #     samples=["ST", "TT"],
+    #     value={"ST": 1.03, "TT": 1.024},
+    #     value_down={"ST": 0.978, "TT": 0.965},
+    #     diff_samples=True,
+    # ),    
     
     #lund plane SF
     f"{CMS_PARAMS_LABEL}_lp_sf_region_a" : Syst(prior="lnN", samples=sig_keys, pass_only = True, apply_reg = "a"),
@@ -263,13 +296,103 @@ corr_year_shape_systs = {
     #     samples=bg_keys,
     #     samples_corr=False,
     # ),
+    
+    # QCD scale acc for background
+    "QCDscale": Syst(
+        name=f"{CMS_PARAMS_LABEL}_QCDScaleacc",
+        prior="shape",
+        samples=bg_keys,
+        samples_corr=False,
+    ),
+    
+    # "pdfscale": Syst(
+    #     name=f"{CMS_PARAMS_LABEL}_PDFacc", 
+    #     prior="shape", 
+    #     # samples=bg_keys,
+    #     samples = bg_keys,
+    #     samples_corr=False,
+    #     ),
+    
+    # QCD scale acc for signal
+    "QCDscaleacc_ggH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_QCDScaleacc_ggH",
+        prior="shape",
+        samples=["ggF"],
+        # samples_corr=True,
+    ),
+    "QCDscaleacc_qqH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_QCDScaleacc_qqH",
+        prior="shape",
+        samples=["VBF"],
+        # samples_corr=True,
+    ),
+    "QCDscaleacc_VH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_QCDScaleacc_VH",
+        prior="shape",
+        samples=["WH","ZH"],
+        # samples_corr=True,
+    ),
+    "QCDscaleacc_ttH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_QCDScaleacc_ttH",
+        prior="shape",
+        samples=["ttH"],
+        # samples_corr=True,
+    ),
+    
+    #pdf scale acc for sig
+    "pdfscaleacc_ggH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_PDFacc_ggH",
+        prior="shape",
+        samples=["ggF"],
+        # samples_corr=True,
+    ),
+    "pdfscaleacc_qqH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_PDFacc_qqH",
+        prior="shape",
+        samples=["VBF"],
+        # samples_corr=True,
+    ),
+    "pdfscaleacc_VH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_PDFacc_VH",
+        prior="shape",
+        samples=["WH","ZH"],
+        # samples_corr=True,
+    ),
+    "pdfscaleacc_ttH": Syst(
+        name=f"{CMS_PARAMS_LABEL}_PDFacc_ttH",
+        prior="shape",
+        samples=["ttH"],
+        # samples_corr=True,
+    ),
+    
     "UE": Syst(name="unclustered_Energy", prior="shape", samples=all_mc),
-    "JES": Syst(name="CMS_scale_j", prior="shape", samples=all_mc),
+    # "JES": Syst(name="CMS_scale_j", prior="shape", samples=all_mc),
+
+    #split JES
+    "Absolute": Syst(name="CMS_scale_j_Abs", prior="shape", samples=all_mc),
+    "BBEC1": Syst(name="CMS_scale_j_BBEC1", prior="shape", samples=all_mc),
+    "EC2": Syst(name="CMS_scale_j_EC2", prior="shape", samples=all_mc),
+    "FlavorQCD": Syst(name="CMS_scale_j_FlavQCD", prior="shape", samples=all_mc),
+    "HF": Syst(name="CMS_scale_j_HF", prior="shape", samples=all_mc),
+    "RelativeBal": Syst(name="CMS_scale_j_RelBal", prior="shape", samples=all_mc),
 }
 
 uncorr_year_shape_systs = {
+    #split JES
+    "Absolute_year": Syst(name="CMS_scale_j_Abs", prior="shape", samples=all_mc),
+    "BBEC1_year": Syst(name="CMS_scale_j_BBEC1", prior="shape", samples=all_mc),
+    "EC2": Syst(name="CMS_scale_j_EC2", prior="shape", samples=all_mc),
+    "HF": Syst(name="CMS_scale_j_HF", prior="shape", samples=all_mc),
+    "RelativeSample_year": Syst(name="CMS_scale_j_RelSample", prior="shape", samples=all_mc),
+    
+    "JMS": Syst(name=f"{CMS_PARAMS_LABEL}_jms", prior="shape", samples=all_mc),
+    "JMR": Syst(name=f"{CMS_PARAMS_LABEL}_jmr", prior="shape", samples=all_mc),
     "JER": Syst(name="CMS_res_j", prior="shape", samples=all_mc),
     "pileup": Syst(name="CMS_pileup", prior="shape", samples=all_mc),
+    
+    #L1 prefiring
+    "L1Prefiring": Syst(name="CMS_l1_ecal_prefiring", prior="shape", samples=all_mc, uncorr_years = ["2016","2016APV","2017"]),
+
 }
 
 shape_systs_dict = {}
@@ -438,24 +561,29 @@ def fill_regions(
 
                 sample.setParamEffect(param, val, effect_down=val_down)
 
-            # correlated shape systematics
+            # year correlated shape systematics
             for skey, syst in corr_year_shape_systs.items():
                 if sample_name not in syst.samples or (not pass_region and syst.pass_only):
                     continue
 
                 logging.info(f"Getting {skey} shapes")
 
-                if skey in jecs or skey in uncluste:
+                #manually add for signal samples for scale/pdf, i.e., replace "pdfscaleacc_ggH" with "pdfscale"
+                skey_ = skey.split("acc_")[0] if sample_name in sig_keys else skey
+
+                if skey_ in jecs or skey_ in uncluste:                        
                     # JEC/UEs saved as different "region" in dict
-                    up_hist = templates_summed[f"{region_noblinded}_{skey}_up{blind_str}"][sample_name,:]
-                    down_hist = templates_summed[f"{region_noblinded}_{skey}_down{blind_str}"][sample_name,:]
+                    
+                    up_hist = templates_summed[f"{region_noblinded}_{skey_}_up{blind_str}"][sample_name,:]
+                    down_hist = templates_summed[f"{region_noblinded}_{skey_}_down{blind_str}"][sample_name,:]
 
                     values_up = up_hist.values()
                     values_down = down_hist.values()
                 else:
                     # weight uncertainties saved as different "sample" in dict
-                    values_up = region_templates[f"{sample_name}_{skey}_up", :].values()
-                    values_down = region_templates[f"{sample_name}_{skey}_down", :].values()
+                                            
+                    values_up = region_templates[f"{sample_name}_{skey_}_up", :].values()
+                    values_down = region_templates[f"{sample_name}_{skey_}_down", :].values()
 
                 logger = logging.getLogger(f"validate_shapes_{region}_{sample_name}_{skey}")
 
@@ -469,7 +597,7 @@ def fill_regions(
                 sample.setParamEffect(shape_systs_dict[sdkey], effect_up, effect_down)
 
 
-            # uncorrelated shape systematics
+            # year uncorrelated shape systematics
             for skey, syst in uncorr_year_shape_systs.items():
                 if sample_name not in syst.samples or (not pass_region and syst.pass_only):
                     continue
@@ -640,7 +768,7 @@ def alphabet_fit(
         # will result in qcdparams errors ~±1
         # but because qcd is poorly modelled we're scaling sigma scale
 
-        sigmascale = 5  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
+        sigmascale = 10  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
         if scale is not None:
             sigmascale *= scale
 
@@ -649,7 +777,7 @@ def alphabet_fit(
         )
         
         # sigmascale = 5
-        sigmascale = 5       
+        sigmascale = 10       
         scaled_params2 = (
             initial_qcd2 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd2))) ** qcd_params2
         )

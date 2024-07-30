@@ -1,8 +1,11 @@
 # boostedHWW
 
-<p align="left">
+<!-- <p align="left">
   <img width="300" src="https://raw.githubusercontent.com/StephenChao/boostedHWW/main/figure.png" />
-</p>
+</p> -->
+
+![Example Image](figure.png)
+
 
 Search for boosted(high transverse momentum) Higgs boson(H) decaying to two W bosons, with the decay product in a single large radius jet. The majority of the analysis
 uses [nanoAOD-tools](https://github.com/cms-nanoAOD/nanoAOD-tools), [coffea](https://coffeateam.github.io/coffea/) and

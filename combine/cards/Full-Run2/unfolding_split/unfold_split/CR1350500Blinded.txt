@@ -1,0 +1,103 @@
+# Datacard for <Channel (CR1350500Blinded) instance at 0x2b08f3b08040> generated on 2024-11-25 18:25:12.476002
+imax 1 # number of categories ('bins' but here we are using shape templates)
+jmax 3 # number of samples minus 1
+kmax 92 # number of nuisance parameters
+shapes * CR1350500Blinded HWWfullhad.root HWWfullhad:CR1350500Blinded_$PROCESS HWWfullhad:CR1350500Blinded_$PROCESS_$SYSTEMATIC
+bin CR1350500Blinded
+observation 37535850.000
+bin                                              CR1350500Blinded  CR1350500Blinded  CR1350500Blinded  CR1350500Blinded
+process                                                     ttbar        single_top             wjets          rest_bkg
+process                                                         1                 2                 3                 4
+rate                                                   193236.377         20269.484        360261.473        120261.677
+CMS_HWW_boosted_CR1_350_500_mcstat_bin0 shape              1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin1 shape              1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin10 shape             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin11 shape             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin12 shape             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin13 shape             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin14 shape             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin15 shape             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin16 shape             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin17 shape             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin18 shape             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin19 shape             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin2 shape              1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_CR1_350_500_mcstat_bin3 shape              1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_jmr_2016 shape                             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_jmr_2016APV shape                          1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_jmr_2017 shape                             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_jmr_2018 shape                             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_jms_2016 shape                             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_jms_2016APV shape                          1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_jms_2017 shape                             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_jms_2018 shape                             1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_rest_bkg_rate lnN                               -                 -                 -            1.0500
+CMS_HWW_boosted_single_top_rate lnN                             -            1.0500                 -                 -
+CMS_HWW_boosted_triggerEffSF_uncorrelated shape            1.0000            1.0000            1.0000            1.0000
+CMS_HWW_boosted_ttbar_rate lnN                             1.0500                 -                 -                 -
+CMS_HWW_boosted_wjets_rate lnN                                  -                 -            1.0500                 -
+CMS_l1_ecal_prefiring_2016 shape                           1.0000            1.0000            1.0000            1.0000
+CMS_l1_ecal_prefiring_2016APV shape                        1.0000            1.0000            1.0000            1.0000
+CMS_l1_ecal_prefiring_2017 shape                           1.0000            1.0000            1.0000            1.0000
+CMS_pileup_2016 shape                                      1.0000            1.0000            1.0000            1.0000
+CMS_pileup_2016APV shape                                   1.0000            1.0000            1.0000            1.0000
+CMS_pileup_2017 shape                                      1.0000            1.0000            1.0000            1.0000
+CMS_pileup_2018 shape                                      1.0000            1.0000            1.0000            1.0000
+CMS_res_j_2016 shape                                       1.0000            1.0000            1.0000            1.0000
+CMS_res_j_2016APV shape                                    1.0000            1.0000            1.0000            1.0000
+CMS_res_j_2017 shape                                       1.0000            1.0000            1.0000            1.0000
+CMS_res_j_2018 shape                                       1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_Abs shape                                      1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_Abs_2016 shape                                 1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_Abs_2016APV shape                              1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_Abs_2017 shape                                 1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_Abs_2018 shape                                 1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_BBEC1 shape                                    1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_BBEC1_2016 shape                               1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_BBEC1_2016APV shape                            1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_BBEC1_2017 shape                               1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_BBEC1_2018 shape                               1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_EC2 shape                                      1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_EC2_2016 shape                                 1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_EC2_2016APV shape                              1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_EC2_2017 shape                                 1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_EC2_2018 shape                                 1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_FlavQCD shape                                  1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_HF shape                                       1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_HF_2016 shape                                  1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_HF_2016APV shape                               1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_HF_2017 shape                                  1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_HF_2018 shape                                  1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_RelBal shape                                   1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_RelSample_2016 shape                           1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_RelSample_2016APV shape                        1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_RelSample_2017 shape                           1.0000            1.0000            1.0000            1.0000
+CMS_scale_j_RelSample_2018 shape                           1.0000            1.0000            1.0000            1.0000
+PDF_single_top_ACCEPT_CMS_HWW_boosted lnN                       -     0.9160/1.1150                 -                 -
+PDF_ttbar_ACCEPT_CMS_HWW_boosted lnN                0.8820/1.1540                 -                 -                 -
+PDF_wjets_ACCEPT_CMS_HWW_boosted lnN                            -                 -     0.8550/1.1810                 -
+QCDscale_rest_bkg shape                                         -                 -                 -            1.0000
+QCDscale_single_top shape                                       -            1.0000                 -                 -
+QCDscale_single_top_ACCEPT_CMS_HWW_boosted lnN                  -     0.9070/1.1230                 -                 -
+QCDscale_ttbar shape                                       1.0000                 -                 -                 -
+QCDscale_ttbar_ACCEPT_CMS_HWW_boosted lnN           0.8760/1.1630                 -                 -                 -
+QCDscale_wjets shape                                            -                 -            1.0000                 -
+QCDscale_wjets_ACCEPT_CMS_HWW_boosted lnN                       -                 -     0.8530/1.1830                 -
+lumi_13TeV_1718 lnN                                        1.0027            1.0027            1.0027            1.0027
+lumi_13TeV_2016 lnN                                        1.0026            1.0026            1.0026            1.0026
+lumi_13TeV_2017 lnN                                        1.0060            1.0060            1.0060            1.0060
+lumi_13TeV_2018 lnN                                        1.0065            1.0065            1.0065            1.0065
+lumi_13TeV_correlated lnN                                  1.0130            1.0130            1.0130            1.0130
+pdf_rest_bkg shape                                              -                 -                 -            1.0000
+pdf_single_top shape                                            -            1.0000                 -                 -
+pdf_ttbar shape                                            1.0000                 -                 -                 -
+pdf_wjets shape                                                 -                 -            1.0000                 -
+ps_fsr_rest_bkg shape                                           -                 -                 -            1.0000
+ps_fsr_single_top shape                                         -            1.0000                 -                 -
+ps_fsr_ttbar shape                                         1.0000                 -                 -                 -
+ps_fsr_wjets shape                                              -                 -            1.0000                 -
+ps_isr_rest_bkg shape                                           -                 -                 -            1.0000
+ps_isr_single_top shape                                         -            1.0000                 -                 -
+ps_isr_ttbar shape                                         1.0000                 -                 -                 -
+ps_isr_wjets shape                                              -                 -            1.0000                 -
+unclustered_Energy shape                                   1.0000            1.0000            1.0000            1.0000

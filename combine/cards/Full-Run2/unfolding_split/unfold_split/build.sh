@@ -1,0 +1,2 @@
+combineCards.py SR1a200350=SR1a200350.txt SR1b200350=SR1b200350.txt CR1200350=CR1200350.txt SR2a200350=SR2a200350.txt SR2b200350=SR2b200350.txt CR2200350=CR2200350.txt SR1a200350Blinded=SR1a200350Blinded.txt SR1b200350Blinded=SR1b200350Blinded.txt CR1200350Blinded=CR1200350Blinded.txt SR2a200350Blinded=SR2a200350Blinded.txt SR2b200350Blinded=SR2b200350Blinded.txt CR2200350Blinded=CR2200350Blinded.txt > model_combined.txt
+text2workspace.py model_combined.txt

@@ -148,26 +148,58 @@ mkdir -p $outsdir
 # # # https://cms-talk.web.cern.ch/t/segmentation-fault-in-combine/20735
 
 # ADD REGIONS
-VBF="VBF"
-ggFpt250to350="ggFpt250to350"
-ggFpt350to500="ggFpt350to500"
-ggFpt500toInf="ggFpt500toInf"
-TopCR="TopCR"
-WJetsCR="WJetsCR"
+
+SR1fail2016="SR1fail2016"
+SR1fail2016APV="SR1fail2016APV"
+SR1fail2017="SR1fail2017"
+SR1fail2018="SR1fail2018"
+
+SR1pass2016="SR1pass2016"
+SR1pass2016APV="SR1pass2016APV"
+SR1pass2017="SR1pass2017"
+SR1pass2018="SR1pass2018"
+
+TopCRfail2016="TopCRfail2016"
+TopCRfail2016APV="TopCRfail2016APV"
+TopCRfail2017="TopCRfail2017"
+TopCRfail2018="TopCRfail2018"
+
+TopCRpass2016="TopCRpass2016"
+TopCRpass2016APV="TopCRpass2016APV"
+TopCRpass2017="TopCRpass2017"
+TopCRpass2018="TopCRpass2018"
 
 ########################### define SR/CR with datacards
 
-ccargs_1l="VBF=${cards_dir}/${VBF}.txt ggFpt250to350=${cards_dir}/${ggFpt250to350}.txt ggFpt350to500=${cards_dir}/${ggFpt350to500}.txt ggFpt500toInf=${cards_dir}/${ggFpt500toInf}.txt TopCR=${cards_dir}/${TopCR}.txt WJetsCR=${cards_dir}/${WJetsCR}.txt"
+ccargs_VH="SR1fail2016=${cards_dir}/${SR1fail2016}.txt \
+SR1fail2016APV=${cards_dir}/${SR1fail2016APV}.txt \
+SR1fail2017=${cards_dir}/${SR1fail2017}.txt \
+SR1fail2018=${cards_dir}/${SR1fail2018}.txt \
+SR1pass2016=${cards_dir}/${SR1pass2016}.txt \
+SR1pass2016APV=${cards_dir}/${SR1pass2016APV}.txt \
+SR1pass2017=${cards_dir}/${SR1pass2017}.txt \
+SR1pass2018=${cards_dir}/${SR1pass2018}.txt \
+TopCRfail2016=${cards_dir}/${TopCRfail2016}.txt \
+TopCRfail2016APV=${cards_dir}/${TopCRfail2016APV}.txt \
+TopCRfail2017=${cards_dir}/${TopCRfail2017}.txt \
+TopCRfail2018=${cards_dir}/${TopCRfail2018}.txt \
+TopCRpass2016=${cards_dir}/${TopCRpass2016}.txt \
+TopCRpass2016APV=${cards_dir}/${TopCRpass2016APV}.txt \
+TopCRpass2017=${cards_dir}/${TopCRpass2017}.txt \
+TopCRpass2018=${cards_dir}/${TopCRpass2018}.txt"
+
+
+echo "ccargs_VH:${ccargs_VH}"
 
 if [ $workspace = 1 ]; then
     echo "Combining cards:"
-    for file in $ccargs_1l; do
+    for file in $ccargs_VH; do
     echo "  ${file##*/}"
     done
     echo "-------------------------"
-    combineCards.py $ccargs_1l > $ws.txt
+    combineCards.py $ccargs_VH > $ws.txt
     echo "Running text2workspace"
-    text2workspace.py $ws.txt --channel-masks -o $wsm.root 2>&1 | tee $outsdir/text2workspace.txt
+    text2workspace.py $ws.txt -o $wsm.root 2>&1 | tee $outsdir/text2workspace.txt
 else
     if [ ! -f "$wsm.root" ]; then
         echo "Workspace doesn't exist! Use the -w|--workspace option to make workspace first"
@@ -179,8 +211,7 @@ fi
 if [ $significance = 1 ]; then
     echo "Expected significance"
 
-    # combine -M Significance -d $ws -m 125 -t -1 --expectSignal=1 --rMin -1 --rMax 5
-
+    # combine -M Significance -d workspace.root -t -1 --expectSignal 1 -v 9  2>&1 | tee $outsdir/Significance.txt
     combine -M Significance -d ${wsm}.root -t -1 --expectSignal 1 -v 9 2>&1 | tee $outsdir/Significance.txt
 
 fi
@@ -214,9 +245,9 @@ fi
 if [ $impactsi = 1 ]; then
 
     echo "Initial fit for impacts"
-    combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -1 --rMax 2 -m 125 --robustFit 1 --doInitialFit --expectSignal 1 2>&1 | tee $outsdir/impact1.txt
-    combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -1 --rMax 2 -m 125 --robustFit 1 --doFits --expectSignal 1 --parallel 50 2>&1 | tee $outsdir/impact2.txt
-    combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -1 --rMax 2 -m 125 --robustFit 1 --output impacts.json --expectSignal 1 2>&1 | tee $outsdir/impact3.txt
+    combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -3 --rMax 3 -m 125 --robustFit 1 --doInitialFit --expectSignal 1
+    combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -3 --rMax 3 -m 125 --robustFit 1 --doFits --expectSignal 1 --parallel 50
+    combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -3 --rMax 3 -m 125 --robustFit 1 --output impacts.json --expectSignal 1
     plotImpacts.py -i impacts.json -o impacts
 
 fi

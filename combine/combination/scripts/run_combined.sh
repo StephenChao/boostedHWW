@@ -204,33 +204,99 @@ echo "maskunblinded=${maskunblindedargs}"
 
 echo "Start running 1l parameters:"
 
-# ADD REGIONS
+# ADD REGIONS with 1l datacards
+
 VBF="VBF"
-ggFpt250to300="ggFpt250to300"
-ggFpt300to450="ggFpt300to450"
-ggFpt450to650="ggFpt450to650"
-ggFpt650toInf="ggFpt650toInf"
+ggFpt250to350="ggFpt250to350"
+ggFpt350to500="ggFpt350to500"
+ggFpt500toInf="ggFpt500toInf"
 TopCR="TopCR"
 WJetsCR="WJetsCR"
 
-ccargs_1l="VBF=${cards_dir}/${VBF}.txt ggFpt250to300=${cards_dir}/${ggFpt250to300}.txt ggFpt300to450=${cards_dir}/${ggFpt300to450}.txt ggFpt450to650=${cards_dir}/${ggFpt450to650}.txt ggFpt650toInf=${cards_dir}/${ggFpt650toInf}.txt TopCR=${cards_dir}/${TopCR}.txt WJetsCR=${cards_dir}/${WJetsCR}.txt"
+########################### define SR/CR with 1l datacards
+
+ccargs_1l="VBF=${cards_dir}/${VBF}.txt ggFpt250to350=${cards_dir}/${ggFpt250to350}.txt ggFpt350to500=${cards_dir}/${ggFpt350to500}.txt ggFpt500toInf=${cards_dir}/${ggFpt500toInf}.txt TopCR=${cards_dir}/${TopCR}.txt WJetsCR=${cards_dir}/${WJetsCR}.txt"
+
 echo "cards args for 1l: ${ccargs_1l}"
 
+########################### define SR/CR with datacards
 
-echo "total parameters:"
+
+
+echo "added 1l parameters:"
 ccargs+=" "
 ccargs+=${ccargs_1l}
 
+###########################
+
+# ADD REGIONS
+
+SR1fail2016="SR1fail2016"
+SR1fail2016APV="SR1fail2016APV"
+SR1fail2017="SR1fail2017"
+SR1fail2018="SR1fail2018"
+
+SR1pass2016="SR1pass2016"
+SR1pass2016APV="SR1pass2016APV"
+SR1pass2017="SR1pass2017"
+SR1pass2018="SR1pass2018"
+
+TopCRfail2016="TopCRfail2016"
+TopCRfail2016APV="TopCRfail2016APV"
+TopCRfail2017="TopCRfail2017"
+TopCRfail2018="TopCRfail2018"
+
+TopCRpass2016="TopCRpass2016"
+TopCRpass2016APV="TopCRpass2016APV"
+TopCRpass2017="TopCRpass2017"
+TopCRpass2018="TopCRpass2018"
+
+########################### define SR/CR with datacards
+
+ccargs_VH="SR1fail2016=${cards_dir}/${SR1fail2016}.txt \
+SR1fail2016APV=${cards_dir}/${SR1fail2016APV}.txt \
+SR1fail2017=${cards_dir}/${SR1fail2017}.txt \
+SR1fail2018=${cards_dir}/${SR1fail2018}.txt \
+SR1pass2016=${cards_dir}/${SR1pass2016}.txt \
+SR1pass2016APV=${cards_dir}/${SR1pass2016APV}.txt \
+SR1pass2017=${cards_dir}/${SR1pass2017}.txt \
+SR1pass2018=${cards_dir}/${SR1pass2018}.txt \
+TopCRfail2016=${cards_dir}/${TopCRfail2016}.txt \
+TopCRfail2016APV=${cards_dir}/${TopCRfail2016APV}.txt \
+TopCRfail2017=${cards_dir}/${TopCRfail2017}.txt \
+TopCRfail2018=${cards_dir}/${TopCRfail2018}.txt \
+TopCRpass2016=${cards_dir}/${TopCRpass2016}.txt \
+TopCRpass2016APV=${cards_dir}/${TopCRpass2016APV}.txt \
+TopCRpass2017=${cards_dir}/${TopCRpass2017}.txt \
+TopCRpass2018=${cards_dir}/${TopCRpass2018}.txt"
+
+
+echo "ccargs_VH:${ccargs_VH}"
+
+ccargs+=" "
+ccargs+=${ccargs_VH}
+
+###########################
+
 #first we have to mask 1l information, and run b-only fit for 0l, and un-mask 1l in post-fit
-mask1l="mask_${VBF}=1,mask_${ggFpt250to300}=1,mask_${ggFpt300to450}=1,mask_${ggFpt450to650}=1,mask_${ggFpt650toInf}=1,mask_${TopCR}=1,mask_${WJetsCR}=1"
-ubmask1l="mask_${VBF}=0,mask_${ggFpt250to300}=0,mask_${ggFpt300to450}=0,mask_${ggFpt450to650}=0,mask_${ggFpt650toInf}=0,mask_${TopCR}=0,mask_${WJetsCR}=0"
+
+mask1l="mask_${VBF}=1,mask_${ggFpt250to350}=1,mask_${ggFpt350to500}=1,mask_${ggFpt500toInf}=1,mask_${TopCR}=1,mask_${WJetsCR}=1"
+unmask1l="mask_${VBF}=0,mask_${ggFpt250to350}=0,mask_${ggFpt350to500}=0,mask_${ggFpt500toInf}=0,mask_${TopCR}=0,mask_${WJetsCR}=0"
+
+maskVH="mask_${SR1fail2016}=1,mask_${SR1fail2016APV}=1,mask_${SR1fail2017}=1,mask_${SR1fail2018}=1,mask_${SR1pass2016}=1,mask_${SR1pass2016APV}=1,mask_${SR1pass2017}=1,mask_${SR1pass2018}=1,mask_${TopCRfail2016}=1,mask_${TopCRfail2016APV}=1,mask_${TopCRfail2017}=1,mask_${TopCRfail2018}=1,mask_${TopCRpass2016}=1,mask_${TopCRpass2016APV}=1,mask_${TopCRpass2017}=1,mask_${TopCRpass2018}=1"
+unmaskVH="mask_${SR1fail2016}=0,mask_${SR1fail2016APV}=0,mask_${SR1fail2017}=0,mask_${SR1fail2018}=0,mask_${SR1pass2016}=0,mask_${SR1pass2016APV}=0,mask_${SR1pass2017}=0,mask_${SR1pass2018}=0,mask_${TopCRfail2016}=0,mask_${TopCRfail2016APV}=0,mask_${TopCRfail2017}=0,mask_${TopCRfail2018}=0,mask_${TopCRpass2016}=0,mask_${TopCRpass2016APV}=0,mask_${TopCRpass2017}=0,mask_${TopCRpass2018}=0"
 
 #un-mask 1l in the end
-unblindedparams+=",${ubmask1l}"
+unblindedparams+=",${unmask1l},${unmaskVH}"
 
 echo "total cards args=${ccargs}"
+
 echo "mask1l=${mask1l}"
-echo "un-mask1l=${ubmask1l}"
+echo "un-mask1l=${unmask1l}"
+
+echo "maskVH=${maskVH}"
+echo "un-maskVH=${unmaskVH}"
+
 
 echo "total unblinded para=${unblindedparams}"
 
@@ -264,7 +330,7 @@ if [ $bfit = 1 ]; then
     echo "Blinded background-only fit (MC Blinded)"
     combine -D $dataset -M MultiDimFit --saveWorkspace -m 125 -d ${wsm}.root -v 9 \
     --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
-    --setParameters "${maskunblindedargs},${setparamsblinded},${mask1l},r=0"  \
+    --setParameters "${maskunblindedargs},${setparamsblinded},${mask1l},${maskVH},r=0"  \
     --freezeParameters "r,${freezeparamsblinded}" \
     -n Snapshot 2>&1 | tee $outsdir/MultiDimFit.txt
 else

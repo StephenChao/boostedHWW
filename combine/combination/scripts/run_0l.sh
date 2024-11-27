@@ -1,5 +1,6 @@
 #!/bin/bash
-### https://github.com/rkansal47/HHbbVV/blob/main/src/HHbbVV/combine/run_blinded.sh
+### adapted from https://github.com/rkansal47/HHbbVV/blob/main/src/HHbbVV/combine/run_blinded.sh
+### Author: Raghav Kansal, Yuzhe Zhao, Farouk Mokhtar
 
 ####################################################################################################
 # Script for fits
@@ -15,10 +16,11 @@
 # 9) Bias test: run a bias test on toys (using post-fit nuisances) with expected signal strength 
 #    given by --bias X.
 # 
-# Specify resonant with --resonant / -r, otherwise does nonresonant
 # Specify seed with --seed (default 42) and number of toys with --numtoys (default 100)
 #
 # Usage ./run_0l.sh [-wblsdgt] [--numtoys 100] [--seed 42] 
+
+#TO BE NOTICED: should only be run in the datacards directory
 ####################################################################################################
 
 
@@ -32,7 +34,6 @@ limits=0
 dfit_asimov=0
 significance=0
 dfit=0
-resonant=0 #always do non-resonant option
 gofdata=0
 goftoys=0
 impactsi=0
@@ -44,7 +45,7 @@ bias=-1
 mintol=0.5 # --cminDefaultMinimizerTolerance
 maxcalls=1000000000  # --X-rtd MINIMIZER_MaxCalls
 
-options=$(getopt -o "wblsdrgti" --long "workspace,bfit,limits,significance,dfit,dfitasimov,resonant,gofdata,goftoys,impactsi,impactsf:,impactsc:,bias:,seed:,numtoys:,mintol:" -- "$@")
+options=$(getopt -o "wblsdgti" --long "workspace,bfit,limits,significance,dfit,dfitasimov,gofdata,goftoys,impactsi,impactsf:,impactsc:,bias:,seed:,numtoys:,mintol:" -- "$@")
 eval set -- "$options"
 
 while true; do
@@ -66,9 +67,6 @@ while true; do
             ;;
         --dfitasimov)
             dfit_asimov=1
-            ;;
-        -r|--resonant)
-            resonant=0
             ;;
         -g|--gofdata)
             gofdata=1
@@ -141,69 +139,55 @@ CMS_PARAMS_LABEL="CMS_HWW_boosted"
 outsdir=${cards_dir}/outs
 mkdir -p $outsdir
 
-if [ $resonant = 0 ]; then #doing nonresonant fits
-    if [ -f "mXbin0pass.txt" ]; then
-        echo -e "\nWARNING: This is doing nonresonant fits - did you mean to pass -r|--resonant?\n"
-    fi
+echo "Run the following: "
+ccargs=""
 
-    echo "actually run the following: "
-
-
-
-    ccargs=""
-
-    maskunblindedargs=""
-    maskblindedargs=""
-
-    for region in 1 2;
-    do 
-        cr="CR${region}"
-        sra="SR${region}a"
-        srb="SR${region}b"
-        ccargs+="${cr}=${cards_dir}/${cr}.txt ${cr}Blinded=${cards_dir}/${cr}Blinded.txt "
-        ccargs+="${sra}=${cards_dir}/${sra}.txt ${sra}Blinded=${cards_dir}/${sra}Blinded.txt "
-        ccargs+="${srb}=${cards_dir}/${srb}.txt ${srb}Blinded=${cards_dir}/${srb}Blinded.txt "
-        maskunblindedargs+="mask_${sra}=1,mask_${srb}=1,mask_${cr}=1,"
-        maskunblindedargs+="mask_${sra}Blinded=0,mask_${srb}Blinded=0,mask_${cr}Blinded=0,"
-        maskblindedargs+="mask_${sra}=0,mask_${srb}=0,mask_${cr}=0,"
-        maskblindedargs+="mask_${sra}Blinded=1,mask_${srb}Blinded=1,mask_${cr}Blinded=1,"
-    done
+maskunblindedargs=""
+maskblindedargs=""
+for region in 1 2;
+do 
+    cr="CR${region}"
+    sra="SR${region}a"
+    srb="SR${region}b"
+    ccargs+="${cr}=${cards_dir}/${cr}.txt ${cr}Blinded=${cards_dir}/${cr}Blinded.txt "
+    ccargs+="${sra}=${cards_dir}/${sra}.txt ${sra}Blinded=${cards_dir}/${sra}Blinded.txt "
+    ccargs+="${srb}=${cards_dir}/${srb}.txt ${srb}Blinded=${cards_dir}/${srb}Blinded.txt "
+    maskunblindedargs+="mask_${sra}=1,mask_${srb}=1,mask_${cr}=1,"
+    maskunblindedargs+="mask_${sra}Blinded=0,mask_${srb}Blinded=0,mask_${cr}Blinded=0,"
+    maskblindedargs+="mask_${sra}=0,mask_${srb}=0,mask_${cr}=0,"
+    maskblindedargs+="mask_${sra}Blinded=1,mask_${srb}Blinded=1,mask_${cr}Blinded=1,"
+done
     
-    maskblindedargs=${maskblindedargs%,}
-    maskunblindedargs=${maskunblindedargs%,}
-    echo "cards args=${ccargs}"
-    echo "maskblinded=${maskblindedargs}"
-    echo "maskunblinded=${maskunblindedargs}"
-    
-    # blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
-    # freeze qcd params in blinded bins
-    setparamsblinded=""
-    freezeparamsblinded=""
-    for bin in {4..9} 
-    do  
-        for cr in CR1 CR2;
-        # for cr in CR3;
-        do
-            setparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin}=0,"
-            freezeparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin},"
-        done
+maskblindedargs=${maskblindedargs%,}
+maskunblindedargs=${maskunblindedargs%,}
+echo "cards args=${ccargs}"
+echo "maskblinded=${maskblindedargs}"
+echo "maskunblinded=${maskunblindedargs}"
+
+# blind 80 - 160 GeV mass bin, starts from 80 and ends with 160
+# freeze qcd params in blinded bins
+setparamsblinded=""
+freezeparamsblinded=""
+for bin in {4..9} 
+do  
+    for cr in CR1 CR2;
+    do
+        setparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin}=0,"
+        freezeparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin},"
     done
+done
 
-    # remove last comma
-    setparamsblinded=${setparamsblinded%,}
-    freezeparamsblinded=${freezeparamsblinded%,}
+# remove last comma
+setparamsblinded=${setparamsblinded%,}
+freezeparamsblinded=${freezeparamsblinded%,}
 
-    # floating parameters using var{} floats a bunch of parameters which shouldn't be floated,
-    # so countering this inside --freezeParameters which takes priority.
-    # Although, practically even if those are set to "float", I didn't see them ever being fitted,
-    # so this is just to be extra safe.
-    unblindedparams="--freezeParameters var{.*_In},var{.*__norm},var{n_exp_.*} --setParameters $maskblindedargs"
-    # excludeimpactparams='rgx{.*tf_dataResidual_Bin.*}'
-else
-    # resonant args
-    ccargs=""
-    # the other statement deleted
-fi
+# floating parameters using var{} floats a bunch of parameters which shouldn't be floated,
+# so countering this inside --freezeParameters which takes priority.
+# Although, practically even if those are set to "float", I didn't see them ever being fitted,
+# so this is just to be extra safe.
+unblindedparams="--freezeParameters var{.*_In},var{.*__norm},var{n_exp_.*} --setParameters $maskblindedargs"
+# excludeimpactparams='rgx{.*tf_dataResidual_Bin.*}'
+
 
 echo "mask args:"
 echo $maskblindedargs
@@ -237,8 +221,6 @@ if [ $workspace = 1 ]; then
     echo "-------------------------"
     combineCards.py $ccargs > $ws.txt
     echo "Running text2workspace"
-    # text2workspace.py -D $dataset $ws.txt --channel-masks -o $wsm.root 2>&1 | tee $outsdir/text2workspace.txt
-    # new version got rid of -D arg??
     # use --channel-masks options to mask the channels
     text2workspace.py $ws.txt --channel-masks -o $wsm.root 2>&1 | tee $outsdir/text2workspace.txt
 else
@@ -252,7 +234,7 @@ fi
 if [ $bfit = 1 ]; then
     echo "Blinded background-only fit (MC Blinded)"
     combine -D $dataset -M MultiDimFit --saveWorkspace -m 125 -d ${wsm}.root -v 9 \
-    --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
+    --cminDefaultMinimizerStrategy 0 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
     --setParameters "${maskunblindedargs},${setparamsblinded},r=0"  \
     --freezeParameters "r,${freezeparamsblinded}" \
     -n Snapshot 2>&1 | tee $outsdir/MultiDimFit.txt
@@ -291,8 +273,6 @@ if [ $dfit = 1 ]; then
     --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=5000000 \
     --saveShapes --saveNormalizations --saveWithUncertainties --saveOverallShapes \
     -n Blinded --ignoreCovWarning -v 9 2>&1 | tee $outsdir/FitDiagnostics.txt
-
-    # --saveShapes --saveNormalizations --saveWithUncertainties --saveOverallShapes \ - to save uncertainties
 
     echo "Fit Shapes"
     PostFitShapesFromWorkspace --dataset "$dataset" -w ${wsm}.root --output FitShapes.root \
@@ -341,11 +321,6 @@ fi
 if [ $impactsi = 1 ]; then
     echo "Initial fit for impacts"
     # from https://github.com/cms-analysis/CombineHarvester/blob/f0e0c53298521921abf59c175b5c5616026d203b/CombineTools/python/combine/Impacts.py#L113
-    # combine -M MultiDimFit -m 125 -n "_initialFit_impacts" -d ${wsm_snapshot}.root --snapshotName MultiDimFit \
-    #  --algo singles --redefineSignalPOIs r --floatOtherPOIs 1 --saveInactivePOI 1 -P r --setParameterRanges r=-0.5,20 \
-    # --toysFrequentist --expectSignal 1 --bypassFrequentistFit -t -1 \
-    # ${unblindedparams} --floatParameters ${freezeparamsblinded} \
-    # --robustFit 1 --cminDefaultMinimizerStrategy=1 -v 9 2>&1 | tee $outsdir/Impacts_init.txt
 
     combineTool.py -M Impacts --snapshotName MultiDimFit -m 125 -n "impacts" \
     -t -1 --bypassFrequentistFit --toysFrequentist --expectSignal 1 --rMin -40 --rMax 40\
@@ -377,13 +352,6 @@ if [ $impactsc != 0 ]; then
     --rMin -40 --rMax 40 -v 1 -o impacts.json 2>&1 | tee $outsdir/Impacts_collect.txt
 
     plotImpacts.py -i impacts.json -o impacts
-
-    # Old commands: run the impacts locally
-    # combineTool.py -M Impacts -d ${wsm_snapshot}.root --setParameters ${maskblindedargs} --floatParameters ${freezeparamsblinded} --cminDefaultMinimizerStrategy=0 --expectSignal=1 -t -1 -m 125 --doInitialFit --robustFit 1   --rMin -40 --rMax 40
-    # combineTool.py -M Impacts -d ${wsm_snapshot}.root --setParameters ${maskblindedargs} --floatParameters ${freezeparamsblinded} --cminDefaultMinimizerStrategy=0 --expectSignal=1 -t -1 -m 125 --robustFit 1 --doFits  --rMin -40 --rMax 40
-    # combineTool.py -M Impacts -d ${wsm_snapshot}.root --setParameters ${maskblindedargs} --floatParameters ${freezeparamsblinded} --cminDefaultMinimizerStrategy=0 --expectSignal=1 -t -1 -m 125 -o impacts.json  --rMin -40 --rMax 40
-    
-    # plotImpacts.py -i impacts.json -o impacts
 fi
 
 

@@ -1,5 +1,6 @@
 #!/bin/bash
-### https://github.com/rkansal47/HHbbVV/blob/main/src/HHbbVV/combine/run_blinded.sh
+### adapted from https://github.com/rkansal47/HHbbVV/blob/main/src/HHbbVV/combine/run_blinded.sh
+### Author: Raghav Kansal, Yuzhe Zhao, Farouk Mokhtar
 
 ####################################################################################################
 # Script for fits
@@ -32,7 +33,6 @@ limits=0
 dfit_asimov=0
 significance=0
 dfit=0
-resonant=0 #always do non-resonant option
 gofdata=0
 goftoys=0
 impactsi=0
@@ -44,7 +44,7 @@ bias=-1
 mintol=0.1 # --cminDefaultMinimizerTolerance
 maxcalls=1000000000  # --X-rtd MINIMIZER_MaxCalls
 
-options=$(getopt -o "wblsdrgti" --long "workspace,bfit,limits,significance,dfit,dfitasimov,resonant,gofdata,goftoys,impactsi,impactsf:,impactsc:,bias:,seed:,numtoys:,mintol:" -- "$@")
+options=$(getopt -o "wblsdrgti" --long "workspace,bfit,limits,significance,dfit,dfitasimov,gofdata,goftoys,impactsi,impactsf:,impactsc:,bias:,seed:,numtoys:,mintol:" -- "$@")
 eval set -- "$options"
 
 while true; do
@@ -66,9 +66,6 @@ while true; do
             ;;
         --dfitasimov)
             dfit_asimov=1
-            ;;
-        -r|--resonant)
-            resonant=0
             ;;
         -g|--gofdata)
             gofdata=1
@@ -172,7 +169,6 @@ freezeparamsblinded=""
 for bin in {4..9} 
 do  
     for cr in CR1 CR2;
-    # for cr in CR3;
     do
         setparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin}=0,"
         freezeparamsblinded+="CMS_HWW_boosted_tf_dataResidual_${cr}_Bin${bin},"
@@ -181,6 +177,7 @@ done
 # remove last comma
 setparamsblinded=${setparamsblinded%,}
 freezeparamsblinded=${freezeparamsblinded%,}
+
 # floating parameters using var{} floats a bunch of parameters which shouldn't be floated,
 # so countering this inside --freezeParameters which takes priority.
 # Although, practically even if those are set to "float", I didn't see them ever being fitted,
@@ -211,11 +208,12 @@ echo "Start running 1l parameters:"
 VBF="VBF"
 ggFpt250to300="ggFpt250to300"
 ggFpt300to450="ggFpt300to450"
-ggFpt450toInf="ggFpt450toInf"
+ggFpt450to650="ggFpt450to650"
+ggFpt650toInf="ggFpt650toInf"
 TopCR="TopCR"
 WJetsCR="WJetsCR"
 
-ccargs_1l="VBF=${cards_dir}/${VBF}.txt ggFpt250to300=${cards_dir}/${ggFpt250to300}.txt ggFpt300to450=${cards_dir}/${ggFpt300to450}.txt ggFpt450toInf=${cards_dir}/${ggFpt450toInf}.txt TopCR=${cards_dir}/${TopCR}.txt WJetsCR=${cards_dir}/${WJetsCR}.txt"
+ccargs_1l="VBF=${cards_dir}/${VBF}.txt ggFpt250to300=${cards_dir}/${ggFpt250to300}.txt ggFpt300to450=${cards_dir}/${ggFpt300to450}.txt ggFpt450to650=${cards_dir}/${ggFpt450to650}.txt ggFpt650toInf=${cards_dir}/${ggFpt650toInf}.txt TopCR=${cards_dir}/${TopCR}.txt WJetsCR=${cards_dir}/${WJetsCR}.txt"
 echo "cards args for 1l: ${ccargs_1l}"
 
 
@@ -224,8 +222,8 @@ ccargs+=" "
 ccargs+=${ccargs_1l}
 
 #first we have to mask 1l information, and run b-only fit for 0l, and un-mask 1l in post-fit
-mask1l="mask_${VBF}=1,mask_${ggFpt250to300}=1,mask_${ggFpt300to450}=1,mask_${ggFpt450toInf}=1,mask_${TopCR}=1,mask_${WJetsCR}=1"
-ubmask1l="mask_${VBF}=0,mask_${ggFpt250to300}=0,mask_${ggFpt300to450}=0,mask_${ggFpt450toInf}=0,mask_${TopCR}=0,mask_${WJetsCR}=0"
+mask1l="mask_${VBF}=1,mask_${ggFpt250to300}=1,mask_${ggFpt300to450}=1,mask_${ggFpt450to650}=1,mask_${ggFpt650toInf}=1,mask_${TopCR}=1,mask_${WJetsCR}=1"
+ubmask1l="mask_${VBF}=0,mask_${ggFpt250to300}=0,mask_${ggFpt300to450}=0,mask_${ggFpt450to650}=0,mask_${ggFpt650toInf}=0,mask_${TopCR}=0,mask_${WJetsCR}=0"
 
 #un-mask 1l in the end
 unblindedparams+=",${ubmask1l}"

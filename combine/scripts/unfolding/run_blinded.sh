@@ -254,8 +254,8 @@ if [ $bfit = 1 ]; then
     echo "Blinded background-only fit (MC Blinded)"
     combine -D $dataset -M MultiDimFit --saveWorkspace -m 125 -d ${wsm}.root -v 9 \
     --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
-    --setParameters "${maskunblindedargs},${setparamsblinded},r_ggH_pt200_300=0,r_ggH_pt300_450=0,r_ggH_pt450_inf=0,r_qqH_hww=0,r_WH_hww=0,r_ZH_hww=0,r_ttH_hww=0"  \
-    --freezeParameters "${freezeparamsblinded},r_ggH_pt200_300,r_ggH_pt300_450,r_ggH_pt450_inf,r_qqH_hww,r_WH_hww,r_ZH_hww,r_ttH_hww" \
+    --setParameters ${maskunblindedargs},${setparamsblinded},r_ggH_pt200_300=0,r_ggH_pt300_450=0,r_ggH_pt450_inf=0,r_qqH_hww=0,r_WH_hww=0,r_ZH_hww=0,r_ttH_hww=0  \
+    --freezeParameters r_ggH_pt200_300,r_ggH_pt300_450,r_ggH_pt450_inf,r_qqH_hww,r_WH_hww,r_ZH_hww,r_ttH_hww,${freezeparamsblinded} \
     -n Snapshot 2>&1 | tee $outsdir/MultiDimFit.txt
 else
     if [ ! -f "higgsCombineSnapshot.MultiDimFit.mH125.root" ]; then
@@ -338,17 +338,12 @@ fi
 
 if [ $unfoldingi = 1 ]; then
     echo "Unfolding"
-    # from https://github.com/cms-analysis/CombineHarvester/blob/f0e0c53298521921abf59c175b5c5616026d203b/CombineTools/python/combine/Impacts.py#L113
-    # combine -M MultiDimFit -m 125 -n "_initialFit_impacts" -d ${wsm_snapshot}.root --snapshotName MultiDimFit \
-    #  --algo singles --redefineSignalPOIs r --floatOtherPOIs 1 --saveInactivePOI 1 -P r --setParameterRanges r=-0.5,20 \
-    # --toysFrequentist --expectSignal 1 --bypassFrequentistFit -t -1 \
-    # ${unblindedparams} --floatParameters ${freezeparamsblinded} \
-    # --robustFit 1 --cminDefaultMinimizerStrategy=1 -v 9 2>&1 | tee $outsdir/Impacts_init.txt
 
     combineTool.py -M MultiDimFit -d ${wsm_snapshot}.root --algo singles --snapshotName MultiDimFit -m 125 \
-    -t -1 --rMin -40 --rMax 40 \
+    -t -1 --expectSignal 1 \
     ${unblindedparams},r_ggH_pt200_300=1,r_ggH_pt300_450=1,r_ggH_pt450_inf=1,r_qqH_hww=1,r_WH_hww=1,r_ZH_hww=1,r_ttH_hww=1 \
     --floatParameters ${freezeparamsblinded} \
+    --redefineSignalPOIs r_ggH_pt200_300,r_ggH_pt300_450,r_ggH_pt450_inf,r_qqH_hww,r_WH_hww,r_ZH_hww,r_ttH_hww \
     --cminDefaultMinimizerStrategy 0 -v 1 2>&1 | tee $outsdir/Unfolding.txt
 
 fi

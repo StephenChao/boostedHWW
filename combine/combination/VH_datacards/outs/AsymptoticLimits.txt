@@ -2,17 +2,17 @@
 >>> random number generator seed is 123456
 >>> method used is AsymptoticLimits
 SimNLL created with 16 channels, 0 generic constraints, 148 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
-Median for expected limits: 2.91406
-Sigma  for expected limits: 1.48679
+Median for expected limits: 3.29688
+Sigma  for expected limits: 1.68211
 
  -- AsymptoticLimits ( CLs ) --
-Expected  2.5%: r < 1.4912
-Expected 16.0%: r < 2.0248
-Expected 50.0%: r < 2.9141
-Expected 84.0%: r < 4.2615
-Expected 97.5%: r < 6.0403
+Expected  2.5%: r < 1.6484
+Expected 16.0%: r < 2.2602
+Expected 50.0%: r < 3.2969
+Expected 84.0%: r < 4.9658
+Expected 97.5%: r < 7.3770
 
-Done in 1.14 min (cpu), 1.14 min (real)
+Done in 0.81 min (cpu), 0.81 min (real)
 Printing Message Summary From ... combine_logger.out
 ----------------------------------------------
 Messages of type INFO : 68
@@ -86,4 +86,4 @@ INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic
 INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binTopCRpass2017_obsOnly: in 6 x-bins
 INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
 INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binTopCRpass2018_obsOnly: in 6 x-bins
-INFO: (function: runLimitExpected) AsymptoticLimits.cc: 436 -- Median for expected limits = 2.91406 (Sigma for expected limits = 1.48679)
+INFO: (function: runLimitExpected) AsymptoticLimits.cc: 436 -- Median for expected limits = 3.29688 (Sigma for expected limits = 1.68211)

@@ -245,7 +245,7 @@ fi
 if [ $impactsi = 1 ]; then
 
     echo "Initial fit for impacts"
-    combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -3 --rMax 3 -m 125 --robustFit 1 --doInitialFit --expectSignal 1
+    combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -3 --rMax 3 -m 125 --robustFit 1 --doInitialFit --expectSignal 1 2>&1 | tee $outsdir/Initialfit.txt
     combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -3 --rMax 3 -m 125 --robustFit 1 --doFits --expectSignal 1 --parallel 50
     combineTool.py -M Impacts -d $wsm.root -t -1 --rMin -3 --rMax 3 -m 125 --robustFit 1 --output impacts.json --expectSignal 1
     plotImpacts.py -i impacts.json -o impacts

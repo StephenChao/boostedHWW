@@ -3,18 +3,18 @@
 >>> method used is AsymptoticLimits
 >>> 0 out of 6 channels masked
 
-SimNLL created with 6 channels, 0 generic constraints, 193 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
-Median for expected limits: 1.22266
-Sigma  for expected limits: 0.623816
+SimNLL created with 6 channels, 0 generic constraints, 194 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+Median for expected limits: 1.41406
+Sigma  for expected limits: 0.721474
 
  -- AsymptoticLimits ( CLs ) --
-Expected  2.5%: r < 0.5492
-Expected 16.0%: r < 0.7860
-Expected 50.0%: r < 1.2227
-Expected 84.0%: r < 2.0512
-Expected 97.5%: r < 3.4445
+Expected  2.5%: r < 0.6297
+Expected 16.0%: r < 0.8993
+Expected 50.0%: r < 1.4141
+Expected 84.0%: r < 2.3723
+Expected 97.5%: r < 4.0138
 
-Done in 1.03 min (cpu), 1.03 min (real)
+Done in 0.92 min (cpu), 0.92 min (real)
 Printing Message Summary From ... combine_logger.out
 ----------------------------------------------
 Messages of type INFO : 28
@@ -48,4 +48,4 @@ INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic
 INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binTopCR_obsOnly: in 9 x-bins
 INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
 INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binWJetsCR_obsOnly: in 9 x-bins
-INFO: (function: runLimitExpected) AsymptoticLimits.cc: 436 -- Median for expected limits = 1.22266 (Sigma for expected limits = 0.623816)
+INFO: (function: runLimitExpected) AsymptoticLimits.cc: 436 -- Median for expected limits = 1.41406 (Sigma for expected limits = 0.721474)

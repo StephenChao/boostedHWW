@@ -1,4 +1,3 @@
-INFO: (function: applyOptionsBase) FitterAlgoBase.cc: 113 -- Setting robust fit options to Tolerance=0.1 / Strategy=0 / Type,Algo=Minuit2,Migrad (note that defaults of CascadeMinimizer were taken where option not specified)
 INFO: (function: run) Combine.cc: 676 -- Set floating the following parameters: 
 INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin4 
 INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin4 
@@ -12,6 +11,7 @@ INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin8
 INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin8 
 INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR1_Bin9 
 INFO: (function: run) Combine.cc: 679  CMS_HWW_boosted_tf_dataResidual_CR2_Bin9 
+INFO: (function: run) Combine.cc: 679  r 
 INFO: (function: run) Combine.cc: 712 -- Freezing the following parameters: 
 INFO: (function: run) Combine.cc: 715  BR_hww_In 
 INFO: (function: run) Combine.cc: 715  CMS_HWW_boosted_CR1_mcstat_bin0_In 
@@ -365,6 +365,589 @@ INFO: (function: run) Combine.cc: 715  n_exp_binSR2a_proc_CMS_HWW_boosted_qcd_da
 INFO: (function: run) Combine.cc: 715  n_exp_binSR2aBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
 INFO: (function: run) Combine.cc: 715  n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven 
 INFO: (function: run) Combine.cc: 715  n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 23 -- Parameters after fit for asimov dataset
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- BR_hww = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- BR_hww_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin0 = 0.000296943 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin1 = -1.04801e-05 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin10 = 0.00278232 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin11 = -0.00648952 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin12 = 0.00439948 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin13 = 0.00150248 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin14 = 0.00221809 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin15 = -0.000473504 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin16 = -0.00719002 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin17 = 0.000448524 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin18 = 0.0060641 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin19 = -0.00316295 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin2 = 9.92901e-05 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin3 = -0.000702627 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR1_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin0 = -0.0037648 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin1 = -0.00238796 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin10 = -2.86648e-05 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin11 = -0.00298427 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin12 = 0.00180378 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin13 = -0.0115396 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin14 = -0.00369656 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin15 = 0.00193079 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin16 = 0.0124505 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin17 = 0.00202351 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin18 = 0.000101869 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin19 = 0.000596606 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin2 = 0.00348956 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin3 = 0.00317103 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_CR2_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin0 = -0.018356 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin1 = 0.000540548 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin10 = -0.0365002 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin11 = 0.117452 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin12 = -0.162292 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin13 = 0.0635728 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin14 = 0.101763 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin15 = -0.0219183 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin16 = -0.00948723 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin17 = -0.186502 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin18 = 0.0395936 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin19 = 0.0902586 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin2 = 0.113144 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin3 = -0.0388353 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1a_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin0 = -0.00760794 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin1 = 0.00204289 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin10 = -0.0625494 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin11 = 0.135976 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin12 = -0.0869459 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin13 = -0.0359515 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin14 = -0.0496585 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin15 = 0.0106718 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin16 = 0.110979 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin17 = 0.0133702 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin18 = -0.0950958 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin19 = 0.0413463 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin2 = -0.00386447 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin3 = 0.0222392 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR1b_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_WH_hww_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_WH_hww_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_WH_hww_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_WH_hww_mcstat_bin18 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_WH_hww_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_WH_hww_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ZH_hww_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ZH_hww_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ZH_hww_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ZH_hww_mcstat_bin18 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ZH_hww_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ZH_hww_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ggH_hww_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ggH_hww_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ggH_hww_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ggH_hww_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin10 = -0.218868 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin11 = -0.239725 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin12 = -0.0905005 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin13 = 0.275419 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin14 = 0.369354 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin15 = 0.0351063 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin16 = -0.0757555 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin17 = -0.0979782 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin19 = -0.264543 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin2 = -0.153622 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin3 = -0.119148 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_qqH_hww_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_qqH_hww_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_qqH_hww_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_qqH_hww_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin1 = -0.00458961 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin18 = 0.0739209 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_rest_bkg_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_single_top_mcstat_bin18 = 0.0139413 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_single_top_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ttH_hww_mcstat_bin0 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ttH_hww_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ttH_hww_mcstat_bin1 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ttH_hww_mcstat_bin18 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ttH_hww_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ttH_hww_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ttbar_mcstat_bin0 = 0.0387501 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ttbar_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ttbar_mcstat_bin1 = -0.0125788 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ttbar_mcstat_bin18 = 0.0179894 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ttbar_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_ttbar_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_wjets_mcstat_bin0 = 0.0811589 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_wjets_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_wjets_mcstat_bin1 = -0.0291954 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_wjets_mcstat_bin18 = 0.017916 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_wjets_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2a_wjets_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin0 = 0.100093 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin0_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin1 = 0.062153 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin10 = 0.0328065 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin10_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin11 = 0.17913 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin11_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin12 = -0.0480074 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin12_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin13 = 0.45453 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin13_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin14 = 0.112671 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin14_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin15 = -0.0412006 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin15_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin16 = -0.302993 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin16_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin17 = -0.0523605 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin17_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin18 = 0.01357 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin18_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin19 = 0.0112021 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin19_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin2 = -0.110468 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin2_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin3 = -0.090776 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin3_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin4 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin4_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin5 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin5_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin6 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin6_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin7 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin7_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin8 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin8_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin9 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_SR2b_mcstat_bin9_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_electron_veto = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_electron_veto_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jmr_2016 = 0.0332522 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jmr_2016APV = 0.000970225 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jmr_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jmr_2016_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jmr_2017 = 0.0645726 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jmr_2017_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jmr_2018 = 0.0946273 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jmr_2018_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jms_2016 = 0.0901462 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jms_2016APV = 0.119521 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jms_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jms_2016_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jms_2017 = 0.0579587 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jms_2017_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jms_2018 = 0.273096 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_jms_2018_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_lp_sf_region_a = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_lp_sf_region_a_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_lp_sf_region_b = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_lp_sf_region_b_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_rest_bkg_rate = 0.0753396 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_rest_bkg_rate_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_single_top_rate = 0.0139721 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_single_top_rate_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin0 = 0.152257 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin1 = 0.199734 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin10 = 0.274274 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin11 = 0.290061 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin12 = 0.263336 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin13 = 0.26327 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin14 = 0.248174 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin15 = 0.225988 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin16 = 0.208715 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin17 = 0.190932 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin18 = 0.162713 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin19 = 0.159252 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin2 = 0.245219 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin3 = 0.474098 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin4 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin5 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin6 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin7 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin8 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR1_Bin9 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin0 = 0.0333221 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin1 = 0.0520397 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin10 = 0.127744 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin11 = 0.125779 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin12 = 0.112218 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin13 = 0.130515 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin14 = 0.105322 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin15 = 0.0990085 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin16 = 0.0764095 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin17 = 0.0884166 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin18 = 0.075377 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin19 = 0.0805833 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin2 = 0.068819 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin3 = 0.110771 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin4 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin5 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin6 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin7 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin8 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_CR2_Bin9 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par0 = 0.81459 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par1 = 0.879215 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par2 = 0.91709 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_a_MH_Reco_par3 = 1.77094 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par0 = 0.980249 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par1 = 1.21126 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par2 = 0.991428 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par3 = 1.45721 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par4 = 0.896954 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par5 = 1.83802 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_tf_dataResidual_b_MH_Reco_par6 = 1.80274 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_triggerEffSF_uncorrelated = 0.0476313 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_triggerEffSF_uncorrelated_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_ttbar_rate = 0.00484703 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_ttbar_rate_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_wjets_rate = -0.0975737 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_HWW_boosted_wjets_rate_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_channel = 11 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_l1_ecal_prefiring_2016 = -0.000265045 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_l1_ecal_prefiring_2016APV = -0.000894645 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_l1_ecal_prefiring_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_l1_ecal_prefiring_2016_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_l1_ecal_prefiring_2017 = 0.0364896 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_l1_ecal_prefiring_2017_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_pileup_2016 = 0.0488191 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_pileup_2016APV = 0.0120306 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_pileup_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_pileup_2016_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_pileup_2017 = -0.0171754 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_pileup_2017_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_pileup_2018 = 0.210375 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_pileup_2018_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_res_j_2016 = 0.0313907 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_res_j_2016APV = 0.0943277 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_res_j_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_res_j_2016_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_res_j_2017 = 0.0315221 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_res_j_2017_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_res_j_2018 = 0.0580774 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_res_j_2018_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_Abs = 0.011474 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_Abs_2016 = 0.0203564 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_Abs_2016APV = 0.103389 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_Abs_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_Abs_2016_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_Abs_2017 = 0.00657954 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_Abs_2017_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_Abs_2018 = -0.0514799 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_Abs_2018_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_Abs_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_BBEC1 = -0.0276733 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_BBEC1_2016 = -0.0023936 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_BBEC1_2016APV = 0.028139 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_BBEC1_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_BBEC1_2016_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_BBEC1_2017 = 0.100939 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_BBEC1_2017_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_BBEC1_2018 = 0.0063196 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_BBEC1_2018_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_BBEC1_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_EC2 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_EC2_2016 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_EC2_2016APV = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_EC2_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_EC2_2016_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_EC2_2017 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_EC2_2017_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_EC2_2018 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_EC2_2018_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_EC2_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_FlavQCD = -0.0648455 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_FlavQCD_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_HF = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_HF_2016 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_HF_2016APV = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_HF_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_HF_2016_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_HF_2017 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_HF_2017_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_HF_2018 = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_HF_2018_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_HF_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_RelBal = 0.100974 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_RelBal_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_RelSample_2016 = 0.045548 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_RelSample_2016APV = -0.0555484 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_RelSample_2016APV_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_RelSample_2016_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_RelSample_2017 = 0.0116764 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_RelSample_2017_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_RelSample_2018 = -0.155916 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- CMS_scale_j_RelSample_2018_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- MH_Reco = 245 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_WH_ACCEPT_CMS_HWW_boosted = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_WH_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_ZH_ACCEPT_CMS_HWW_boosted = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_ZH_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_ggH_ACCEPT_CMS_HWW_boosted = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_ggH_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_qqH_ACCEPT_CMS_HWW_boosted = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_qqH_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_single_top_ACCEPT_CMS_HWW_boosted = 0.0185778 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_single_top_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_ttH_ACCEPT_CMS_HWW_boosted = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_ttH_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_ttbar_ACCEPT_CMS_HWW_boosted = 0.0553144 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_ttbar_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_wjets_ACCEPT_CMS_HWW_boosted = -0.130044 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- PDF_wjets_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_WH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_WH_ACCEPT_CMS_HWW_boosted = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_WH_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_WH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ZH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ZH_ACCEPT_CMS_HWW_boosted = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ZH_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ZH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ggH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ggH_ACCEPT_CMS_HWW_boosted = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ggH_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ggH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_qqH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_qqH_ACCEPT_CMS_HWW_boosted = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_qqH_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_qqH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_rest_bkg = -0.0777276 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_rest_bkg_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_single_top = -0.0716852 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_single_top_ACCEPT_CMS_HWW_boosted = 0.0122677 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_single_top_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_single_top_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ttH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ttH_ACCEPT_CMS_HWW_boosted = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ttH_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ttH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ttbar = 0.0918565 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ttbar_ACCEPT_CMS_HWW_boosted = 0.0307422 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ttbar_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_ttbar_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_wjets = 0.278053 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_wjets_ACCEPT_CMS_HWW_boosted = -0.25687 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_wjets_ACCEPT_CMS_HWW_boosted_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- QCDscale_wjets_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- alpha_s = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- alpha_s_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- lumi_13TeV_1718 = -0.00109981 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- lumi_13TeV_1718_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- lumi_13TeV_2016 = -0.000813975 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- lumi_13TeV_2016_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- lumi_13TeV_2017 = 0.00100519 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- lumi_13TeV_2017_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- lumi_13TeV_2018 = -0.00176216 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- lumi_13TeV_2018_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- lumi_13TeV_correlated = -0.00141796 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- lumi_13TeV_correlated_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- mask_CR1 = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- mask_CR1Blinded = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- mask_CR2 = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- mask_CR2Blinded = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- mask_SR1a = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- mask_SR1aBlinded = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- mask_SR1b = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- mask_SR1bBlinded = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- mask_SR2a = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- mask_SR2aBlinded = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- mask_SR2b = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- mask_SR2bBlinded = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- n_exp_binCR1Blinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- n_exp_binCR1_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- n_exp_binCR2Blinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- n_exp_binCR2_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- n_exp_binSR1aBlinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- n_exp_binSR1a_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- n_exp_binSR1bBlinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- n_exp_binSR1b_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- n_exp_binSR2aBlinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- n_exp_binSR2a_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- n_exp_binSR2bBlinded_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- n_exp_binSR2b_proc_CMS_HWW_boosted_qcd_datadriven = 1 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_Higgs_WH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_Higgs_WH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_Higgs_ZH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_Higgs_ZH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_Higgs_ggH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_Higgs_ggH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_Higgs_qqH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_Higgs_qqH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_Higgs_ttH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_Higgs_ttH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_rest_bkg = 0.0425234 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_rest_bkg_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_single_top = 0.0237571 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_single_top_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_ttbar = -0.00130865 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_ttbar_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_wjets = -0.211976 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- pdf_wjets_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_WH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_WH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_ZH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_ZH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_ggH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_ggH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_qqH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_qqH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_rest_bkg = -0.531798 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_rest_bkg_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_single_top = -0.0919481 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_single_top_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_ttH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_ttH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_ttbar = -0.387168 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_ttbar_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_wjets = -0.500437 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_fsr_wjets_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_WH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_WH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_ZH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_ZH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_ggH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_ggH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_qqH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_qqH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_rest_bkg = -0.0103456 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_rest_bkg_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_single_top = 0.0496381 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_single_top_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_ttH = 0 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_ttH_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_ttbar = -0.0154674 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_ttbar_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_wjets = -0.0117715 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- ps_isr_wjets_In = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- r = 0 (constant)
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- unclustered_Energy = 0.0265699 
+INFO: (function: asimovDatasetNominal) AsimovUtils.cc: 27 -- unclustered_Energy_In = 0 (constant)
 INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
 INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binCR1_obsOnly: in 20 x-bins
 INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
@@ -389,142 +972,140 @@ INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic
 INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2b_obsOnly: in 20 x-bins
 INFO: (function: generateAsimov) ToyMCSamplerOpt.cc: 146 -- Using internal logic for binned/unbinned Asimov dataset generation
 INFO: (function: generateWithHisto) ToyMCSamplerOpt.cc: 221 -- Generating asimov with histogram for pdf pdf_binSR2bBlinded_obsOnly: in 20 x-bins
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: doFit) FitterAlgoBase.cc: 360 -- Running RobustFit for POI unclustered_Energy. Configured with strategy 0  
-INFO: (function: findCrossing) FitterAlgoBase.cc: 406 -- Searching for crossing at nll = 0.494473, in the interval 0.0265699 < unclustered_Energy < 4
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 212 -- finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim.
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 212 -- finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim.
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 427 -- unclustered_Energy lvl-here lvl-there 	stepping 
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
 DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.225241    +0.46642  +0.49447    0.198672
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.423913    +0.37549  +0.46642    0.198672
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.622584    +0.20752  +0.37549    0.198672
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.821256    -0.03370  +0.20752    0.198672
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.682186    +0.14199  -0.03370    0.059601
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.741787    +0.07061  +0.14199    0.059601
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: runLimitExpected) AsymptoticLimits.cc: 436 -- Median for expected limits = 4.96875 (Sigma for expected limits = 2.53512)
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.801389    -0.00679  +0.07061    0.059601
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.759668    +0.04803  -0.00679    0.017880
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.777548    +0.02486  +0.04803    0.017880
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.795429    +0.00118  +0.02486    0.017880
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.813309    -0.02298  +0.00118    0.017880
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.800793    -0.00592  -0.02298    0.005364
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.797038    -0.00089  -0.00592    0.001609
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.795911    +0.00062  -0.00089    0.000483
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- 0.796394    +0.00026  +0.00062    0.000483
-INFO: (function: findCrossing) FitterAlgoBase.cc: 406 -- Searching for crossing at nll = 0.494473, in the interval 0.0265699 < unclustered_Energy < -4
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 427 -- unclustered_Energy lvl-here lvl-there 	stepping 
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.376087    +0.34709  +0.49447    -0.402657
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 212 -- finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim.
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 212 -- finished with status 1 (covariance forced positive definite), this could indicate a problem with the minimim.
+INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
 INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
 INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.778744    -0.22554  +0.34709    -0.402657
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.496884    +0.22357  -0.22554    -0.120797
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.617681    +0.05670  +0.22357    -0.120797
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.738478    -0.14975  +0.05670    -0.120797
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.653920    -0.00139  -0.14975    -0.036239
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.628553    +0.03970  -0.00139    -0.010872
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.639425    +0.02233  +0.03970    -0.010872
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.650297    +0.00463  +0.02233    -0.010872
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.661168    -0.01338  +0.00463    -0.010872
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.653558    -0.00073  -0.01338    -0.003262
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.651275    +0.00303  -0.00073    -0.000978
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.652253    +0.00143  +0.00303    -0.000978
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: findCrossing) FitterAlgoBase.cc: 460 -- -0.653232    -0.00019  +0.00143    -0.000978
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=0, tolerance=0.1
-INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=0
-INFO: (function: improveOnce) CascadeMinimizer.cc: 216 -- Minimization success! status=0
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 188 -- Minimisation configured with Type=Minuit2, Algo=Migrad, strategy=1, tolerance=0.1
+INFO: (function: improveOnce) CascadeMinimizer.cc: 211 -- Minimisation finished with status=-1
+DEBUG: (function: improveOnce) CascadeMinimizer.cc: 217 -- Minimization ended with latest status != 0 or 1

@@ -1,0 +1,16 @@
+Have POIs: ['r']
+pass_str -t -1 --rMin -3 --rMax 3 --robustFit 1 --expectSignal 1 -m 125 -d ./combined_withmasks.root
+ <<< Combine >>> 
+>>> random number generator seed is 123456
+   Options for Robust Minimizer :: 
+        Tolerance  0.1
+        Strategy   0
+        Type,Algo  Minuit2,Migrad
+>>> method used is MultiDimFit
+SimNLL created with 16 channels, 0 generic constraints, 148 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+
+ --- MultiDimFit ---
+best fit parameter values and profile-likelihood uncertainties: 
+   r :    +1.000   -1.468/+1.648 (68%)
+Done in 0.74 min (cpu), 0.74 min (real)
+>> combine -M MultiDimFit -n _initialFit_Test --algo singles --redefineSignalPOIs r -t -1 --rMin -3 --rMax 3 --robustFit 1 --expectSignal 1 -m 125 -d ./combined_withmasks.root

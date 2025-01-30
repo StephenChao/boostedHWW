@@ -1,0 +1,57 @@
+ <<< Combine >>> 
+>>> random number generator seed is 123456
+   Options for Robust Minimizer :: 
+        Tolerance  0.1
+        Strategy   0
+        Type,Algo  Minuit2,Migrad
+>>> method used is MultiDimFit
+Redefining the POIs to be: RooArgSet:: = (r)
+SimNLL created with 6 channels, 0 generic constraints, 261 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+Robus Fit for POI 
+Searching for crossing at nll = -42456.8 in the interval 0.146664, 10
+      CMS_HWW_boosted_tf_dataResidual_CR2_Bin2      lvl-here  lvl-there   stepping
+1.131997    -32.82530  +0.49570    0.985334
+0.442264    -2.37994  -32.82530    0.295600
+0.235344    +0.22884  -2.37994    0.088680
+0.324024    -0.55023  +0.22884    0.088680
+0.261948    +0.04841  -0.55023    0.026604
+0.288552    -0.17776  +0.04841    0.026604
+0.269929    -0.01527  -0.17776    0.007981
+0.264342    +0.03013  -0.01527    0.002394
+0.266736    +0.01105  +0.03013    0.002394
+0.269131    -0.00860  +0.01105    0.002394
+0.267455    +0.00522  -0.00860    0.000718
+0.268173    -0.00067  +0.00522    0.000718
+0.267670    +0.00346  -0.00067    0.000215
+0.267886    +0.00176  +0.00346    0.000215
+0.268101    +0.00001  +0.00176    0.000215
+Searching for crossing at nll = -42456.8 in the interval 0.146664, -10
+      CMS_HWW_boosted_tf_dataResidual_CR2_Bin2      lvl-here  lvl-there   stepping
+-0.868003    -27.25880  +0.49570    -1.014666
+-0.157736    -2.37673  -27.25880    -0.304400
+0.055344    +0.23518  -2.37673    -0.091320
+-0.035976    -0.55082  +0.23518    -0.091320
+0.027948    +0.05349  -0.55082    -0.027396
+0.000552    -0.17490  +0.05349    -0.027396
+0.019729    -0.01141  -0.17490    -0.008219
+0.025482    +0.03469  -0.01141    -0.002466
+0.023016    +0.01530  +0.03469    -0.002466
+0.020551    -0.00465  +0.01530    -0.002466
+0.022277    +0.00940  -0.00465    -0.000740
+0.021537    +0.00342  +0.00940    -0.000740
+0.020797    -0.00261  +0.00342    -0.000740
+0.021315    +0.00162  -0.00261    -0.000222
+0.021093    -0.00018  +0.00162    -0.000222
+
+ --- MultiDimFit ---
+Parameter impacts: 
+  Parameter                                :   Best-fit               r            
+  CMS_HWW_boosted_tf_dataResidual_CR2_Bin2 :   +0.147  -0.126/+0.121  -0.812/+0.631
+Done in 1.25 min (cpu), 1.28 min (real)
+Printing Message Summary From ... combine_logger.out
+----------------------------------------------
+Messages of type INFO : 141
+Messages of type DEBUG : 0
+Messages of type ERROR : 0
+----------------------------------------------
+INFO: (function: applyOptionsBase) FitterAlgoBase.cc: 113 -- Setting robust fit options to Tolerance=0.1 / Strategy=0 / Type,Algo=Minuit2,Migrad (note that defaults of CascadeMinimizer were taken where option not specified)

@@ -43,7 +43,9 @@ from datacardHelpers import (
     sum_templates,
     get_effect_updown,
     get_year_updown,
-    rem_neg
+    rem_neg,
+    qcd_scale_acc_dict,
+    pdf_scale_acc_dict
 )
 
 rl.ParametericSample.PreferRooParametricHist = False
@@ -65,9 +67,28 @@ LUMI = {  # in pb^-1
 }
 
 jecs = {
-    "JES": "JES_jes",
+    # "JES": "JES_jes",
     "JER": "JER",
+    "Absolute": "split",
+    "Absolute_year": "split",
+    "BBEC1": "split",
+    "BBEC1_year": "split",
+    "EC2": "split",
+    "EC2_year": "split",
+    "FlavorQCD": "split",
+    "HF": "split",
+    "HF_year": "split",
+    "RelativeBal": "split",
+    "RelativeSample_year": "split",
+    
+    #although pdf are added here
+    "pdfscale": "pdfscale",
+    
+    #although JMS/JMR are added here
+    "JMS"     : "JMS",
+    "JMR"     : "JMR",
 }
+
 
 uncluste = {
     "UE": "unclusteredEnergy",
@@ -75,8 +96,8 @@ uncluste = {
 
 lp_systematics = {
     # original unc value
-    "a" : 0.334/0.898,
-    "b" : 0.349/0.957,
+    "a" : 0.18/0.842,
+    "b" : 0.13/0.947,
     
     # #some other test
     # "a" : 0.1,
@@ -160,8 +181,17 @@ sig_keys = [
     "ZH",
     "ttH",
 ]
+
+sig_keys_dict = {
+    "ggF" : "ggH_hww",
+    "VBF" : "qqH_hww",
+    "WH"  : "WH_hww",
+    "ZH"  : "ZH_hww",
+    "ttH" : "ttH_hww",
+}
+
 for key in sig_keys:
-    mc_samples[key] = key
+    mc_samples[key] = sig_keys_dict[key]
     # temporary solution for WH/ZH/ttH as signal
     # mc_samples[key] = key + "_sig" if key in ["WH","ZH","ttH"] else key
         
@@ -192,44 +222,145 @@ nuisance_params = {
         value=((1.006 ** (LUMI["2017"] / full_lumi)) * (1.002 ** (LUMI["2018"] / full_lumi))),
     ),
     
+    #assign 5% unc for Wjets, Top and rest background
+    f"{CMS_PARAMS_LABEL}_wjets_rate": Syst(prior="lnN", samples=["WJets"], value=1.05),
+    f"{CMS_PARAMS_LABEL}_ttbar_rate": Syst(prior="lnN", samples=["TT"], value=1.05),
+    f"{CMS_PARAMS_LABEL}_single_top_rate": Syst(prior="lnN", samples=["ST"], value=1.05),
+    f"{CMS_PARAMS_LABEL}_rest_bkg_rate": Syst(prior="lnN", samples=["Rest"], value=1.05),
+    
     # https://gitlab.cern.ch/hh/naming-conventions#theory-uncertainties
     "BR_hww": Syst(prior="lnN", samples=sig_keys, value=1.0153, value_down=0.9848),
     
-    # pdf uncertainty for Higgs signal
-    "pdf_Higgs_gg": Syst(prior="lnN", samples=["ggF"], value=1.019),
-    "pdf_Higgs_qqbar": Syst(
-        prior="lnN", 
-        samples=["VBF","WH","ZH"], 
-        value={"VBF":1.021,"WH":1.017,"ZH":1.013},
-        diff_samples=True,
-        ),
+    # see: https://cms-pub-talk.web.cern.ch/t/hig-23-008-boosted-h-ww-hadronic-part-hig-egm-review/24750/13
+    f"{CMS_PARAMS_LABEL}_electron_veto": Syst(prior="lnN", samples=sig_keys, value=1.0585),
+    f"{CMS_PARAMS_LABEL}_muon_veto": Syst(prior="lnN", samples=sig_keys, value=1.0423),
+    
+    # pdf uncertainty for Higgs signal:
+    "pdf_Higgs_ggH": Syst(prior="lnN", samples=["ggF"], value=1.019),
+    "pdf_Higgs_qqH": Syst(prior="lnN", samples=["VBF"], value=1.021),
+    "pdf_Higgs_WH": Syst(prior="lnN", samples=["WH"], value=1.017),
+    "pdf_Higgs_ZH": Syst(prior="lnN", samples=["ZH"], value=1.013),
     "pdf_Higgs_ttH": Syst(prior="lnN", samples=["ttH"], value=1.030),
     
-    # pdf uncertainty for background 
-    "pdf_gg": Syst(prior="lnN", samples=["TT"], value=1.042),
-    "pdf_qqbar": Syst(prior="lnN", samples=["ST"], value=1.028),
+    #pdf scale acc for signal:
+    f"PDF_ggH_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["ggF"],
+        value = pdf_scale_acc_dict["ggF"]["up"],
+        value_down = pdf_scale_acc_dict["ggF"]["down"]      
+    ),
+    f"PDF_qqH_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["VBF"],
+        value = pdf_scale_acc_dict["VBF"]["up"],
+        value_down = pdf_scale_acc_dict["ggF"]["down"]   
+    ),
+    f"PDF_WH_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["WH"],
+        value = pdf_scale_acc_dict["WH"]["up"],
+        value_down = pdf_scale_acc_dict["WH"]["down"] 
+    ),
+    f"PDF_ZH_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["ZH"],
+        value = pdf_scale_acc_dict["ZH"]["up"],
+        value_down = pdf_scale_acc_dict["ZH"]["down"] 
+    ),
+    f"PDF_ttH_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["ttH"],
+        value = pdf_scale_acc_dict["ttH"]["up"],
+        value_down = pdf_scale_acc_dict["ttH"]["down"] 
+    ),
 
+    #pdf scale acc for bkg, apart from rest, since too small:
+    f"PDF_wjets_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["WJets"],
+        value = pdf_scale_acc_dict["WJets"]["up"],
+        value_down = pdf_scale_acc_dict["WJets"]["down"] 
+    ),
+    f"PDF_ttbar_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["TT"],
+        value = pdf_scale_acc_dict["TT"]["up"],
+        value_down = pdf_scale_acc_dict["TT"]["down"] 
+    ),
+    f"PDF_single_top_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["ST"],
+        value = pdf_scale_acc_dict["ST"]["up"],
+        value_down = pdf_scale_acc_dict["ST"]["down"] 
+    ),
+    
+    # alphas_s
+    "alpha_s" : Syst(
+        prior="lnN", 
+        samples=["ggF","VBF","WH","ZH","ttH"], 
+        value={"ggF":1.0260,"VBF":1.005,"WH":1.009,"ZH":1.009,"ttH":1.020},
+        diff_samples=True,
+        ),
+    
     #QCD scale for Higgs signal
     "QCDscale_ggH": Syst(prior="lnN", samples=["ggF"], value=1.039),
     "QCDscale_qqH": Syst(prior="lnN", samples=["VBF"], value=1.004, value_down=0.997),
-    "QCDscale_VH": Syst(
-        prior="lnN",
-        samples=["WH","ZH"],
-        value={"WH":1.005,"ZH":1.038}, 
-        value_down={"WH":0.993,"ZH":0.97},
-        diff_samples=True,
-        ),
+    "QCDscale_ZH": Syst(prior="lnN",samples=["ZH"],value=1.038, value_down=0.97),
+    "QCDscale_WH": Syst(prior="lnN",samples=["WH"],value=1.005, value_down=0.993),
     "QCDscale_ttH": Syst(prior="lnN", samples=["ttH"], value=1.058,value_down=0.908),
     
-    # QCD scale for ttbar
-    "QCDscale_ttbar": Syst(
+    #QCD scale acc for signal:
+    f"QCDscale_ggH_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
         prior="lnN",
-        samples=["ST", "TT"],
-        value={"ST": 1.03, "TT": 1.024},
-        value_down={"ST": 0.978, "TT": 0.965},
-        diff_samples=True,
-    ),    
+        samples=["ggF"],
+        value = qcd_scale_acc_dict["ggF"]["up"],
+        value_down = qcd_scale_acc_dict["ggF"]["down"]      
+    ),
+    f"QCDscale_qqH_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["VBF"],
+        value = qcd_scale_acc_dict["VBF"]["up"],
+        value_down = qcd_scale_acc_dict["VBF"]["down"]      
+    ),
+    f"QCDscale_WH_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["WH"],
+        value = qcd_scale_acc_dict["WH"]["up"],
+        value_down = qcd_scale_acc_dict["WH"]["down"]      
+    ),        
+    f"QCDscale_ZH_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["ZH"],
+        value = qcd_scale_acc_dict["ZH"]["up"],
+        value_down = qcd_scale_acc_dict["ZH"]["down"]      
+    ),
+    f"QCDscale_ttH_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["ttH"],
+        value = qcd_scale_acc_dict["ttH"]["up"],
+        value_down = qcd_scale_acc_dict["ttH"]["down"]      
+    ),
     
+    #QCD scale acc for bkg, apart from rest because so small:
+    f"QCDscale_wjets_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["WJets"],
+        value = qcd_scale_acc_dict["WJets"]["up"],
+        value_down = qcd_scale_acc_dict["WJets"]["down"] 
+    ),
+    f"QCDscale_ttbar_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["TT"],
+        value = qcd_scale_acc_dict["TT"]["up"],
+        value_down = qcd_scale_acc_dict["TT"]["down"] 
+    ),
+    f"QCDscale_single_top_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
+        prior="lnN",
+        samples=["ST"],
+        value = qcd_scale_acc_dict["ST"]["up"],
+        value_down = qcd_scale_acc_dict["ST"]["down"] 
+    ), 
+
     #lund plane SF
     f"{CMS_PARAMS_LABEL}_lp_sf_region_a" : Syst(prior="lnN", samples=sig_keys, pass_only = True, apply_reg = "a"),
     f"{CMS_PARAMS_LABEL}_lp_sf_region_b" : Syst(prior="lnN", samples=sig_keys, pass_only = True, apply_reg = "b")
@@ -253,23 +384,79 @@ nuisance_params_dict = {
 
 # dictionary of correlated shape systematics: name in templates -> name in cards, etc.
 corr_year_shape_systs = {
-    "triggerEffSF_uncorrelated": Syst(name="triggerEffSF_uncorrelated", prior="shape", samples=all_mc),
-    "FSRPartonShower": Syst(name="ps_fsr", prior="shape", samples=all_mc),
-    "ISRPartonShower": Syst(name="ps_isr", prior="shape", samples=all_mc),
-    #TODO: to add QCD scale acceptance
-    # "QCDscale": Syst(
-    #     name=f"{CMS_PARAMS_LABEL}_QCDScale",
-    #     prior="shape",
-    #     samples=bg_keys,
-    #     samples_corr=False,
-    # ),
+    #trigger
+    "triggerEffSF_uncorrelated": Syst(name=f"{CMS_PARAMS_LABEL}_triggerEffSF_uncorrelated", prior="shape", samples=all_mc),
+    
+    #separate for signal now:
+    "FSRPartonShower_ps_sig_ggH": Syst(name="ps_fsr_ggH", prior="shape", samples=["ggF"]),
+    "FSRPartonShower_ps_sig_qqH": Syst(name="ps_fsr_qqH", prior="shape", samples=["VBF"]),
+    "FSRPartonShower_ps_sig_ttH": Syst(name="ps_fsr_ttH", prior="shape", samples=["ttH"]),
+    "FSRPartonShower_ps_sig_WH": Syst(name="ps_fsr_WH", prior="shape", samples=["WH"]),
+    "FSRPartonShower_ps_sig_ZH": Syst(name="ps_fsr_ZH", prior="shape", samples=["ZH"]),
+    
+    "ISRPartonShower_ps_sig_ggH": Syst(name="ps_isr_ggH", prior="shape", samples=["ggF"]),
+    "ISRPartonShower_ps_sig_qqH": Syst(name="ps_isr_qqH", prior="shape", samples=["VBF"]),
+    "ISRPartonShower_ps_sig_ttH": Syst(name="ps_isr_ttH", prior="shape", samples=["ttH"]),
+    "ISRPartonShower_ps_sig_WH":  Syst(name="ps_isr_WH",  prior="shape", samples=["WH"]),
+    "ISRPartonShower_ps_sig_ZH":  Syst(name="ps_isr_ZH",  prior="shape", samples=["ZH"]),
+
+    #separate for bkg now:
+    "FSRPartonShower": Syst(
+        name="ps_fsr", 
+        prior="shape", 
+        samples=bg_keys,
+        samples_corr=False,
+        ),
+    
+    "ISRPartonShower": Syst(
+        name="ps_isr", 
+        prior="shape", 
+        samples=bg_keys,
+        samples_corr=False,
+        ),
+        
+    # QCD scale for background
+    "QCDscale": Syst(
+        name="QCDscale",
+        prior="shape",
+        samples=bg_keys,
+        samples_corr=False,
+    ),
+    # pdf scale for background
+    "pdfscale": Syst( #TODO: need to be careful
+        name="pdf",
+        prior="shape",
+        samples=bg_keys,
+        samples_corr=False,
+    ), 
+    #MET    
     "UE": Syst(name="unclustered_Energy", prior="shape", samples=all_mc),
-    "JES": Syst(name="CMS_scale_j", prior="shape", samples=all_mc),
+    #split JES
+    "Absolute": Syst(name="CMS_scale_j_Abs", prior="shape", samples=all_mc),
+    "BBEC1": Syst(name="CMS_scale_j_BBEC1", prior="shape", samples=all_mc),
+    "EC2": Syst(name="CMS_scale_j_EC2", prior="shape", samples=all_mc),
+    "FlavorQCD": Syst(name="CMS_scale_j_FlavQCD", prior="shape", samples=all_mc),
+    "HF": Syst(name="CMS_scale_j_HF", prior="shape", samples=all_mc),
+    "RelativeBal": Syst(name="CMS_scale_j_RelBal", prior="shape", samples=all_mc),
 }
 
 uncorr_year_shape_systs = {
+    #split JES
+    "Absolute_year": Syst(name="CMS_scale_j_Abs", prior="shape", samples=all_mc),
+    "BBEC1_year": Syst(name="CMS_scale_j_BBEC1", prior="shape", samples=all_mc),
+    "EC2": Syst(name="CMS_scale_j_EC2", prior="shape", samples=all_mc),
+    "HF": Syst(name="CMS_scale_j_HF", prior="shape", samples=all_mc),
+    "RelativeSample_year": Syst(name="CMS_scale_j_RelSample", prior="shape", samples=all_mc),
+    #JMSR
+    "JMS": Syst(name=f"{CMS_PARAMS_LABEL}_jms", prior="shape", samples=all_mc),
+    "JMR": Syst(name=f"{CMS_PARAMS_LABEL}_jmr", prior="shape", samples=all_mc),
+    #JER
     "JER": Syst(name="CMS_res_j", prior="shape", samples=all_mc),
+    #pileup
     "pileup": Syst(name="CMS_pileup", prior="shape", samples=all_mc),
+    #L1 prefiring
+    "L1Prefiring": Syst(name="CMS_l1_ecal_prefiring", prior="shape", samples=all_mc, uncorr_years = ["2016","2016APV","2017"]),
+
 }
 
 shape_systs_dict = {}
@@ -438,24 +625,33 @@ def fill_regions(
 
                 sample.setParamEffect(param, val, effect_down=val_down)
 
-            # correlated shape systematics
+            # year correlated shape systematics
             for skey, syst in corr_year_shape_systs.items():
                 if sample_name not in syst.samples or (not pass_region and syst.pass_only):
                     continue
 
                 logging.info(f"Getting {skey} shapes")
 
-                if skey in jecs or skey in uncluste:
+                #manually add for signal samples for scale/pdf, i.e., replace "pdfscaleacc_ggH" with "pdfscale"
+                # NOT USED ANYMORE:
+                skey_ = skey.split("acc_")[0] if sample_name in sig_keys else skey
+                
+                #manually add for signal samples for fsr/isr, i.e., replace "FSRPartonShower_ps_sig_ggH" with "FSRPartonShower"
+                skey_ = skey.split("_ps_sig_")[0] if sample_name in sig_keys else skey
+
+                if skey_ in jecs or skey_ in uncluste:                        
                     # JEC/UEs saved as different "region" in dict
-                    up_hist = templates_summed[f"{region_noblinded}_{skey}_up{blind_str}"][sample_name,:]
-                    down_hist = templates_summed[f"{region_noblinded}_{skey}_down{blind_str}"][sample_name,:]
+                    
+                    up_hist = templates_summed[f"{region_noblinded}_{skey_}_up{blind_str}"][sample_name,:]
+                    down_hist = templates_summed[f"{region_noblinded}_{skey_}_down{blind_str}"][sample_name,:]
 
                     values_up = up_hist.values()
                     values_down = down_hist.values()
                 else:
                     # weight uncertainties saved as different "sample" in dict
-                    values_up = region_templates[f"{sample_name}_{skey}_up", :].values()
-                    values_down = region_templates[f"{sample_name}_{skey}_down", :].values()
+                                            
+                    values_up = region_templates[f"{sample_name}_{skey_}_up", :].values()
+                    values_down = region_templates[f"{sample_name}_{skey_}_down", :].values()
 
                 logger = logging.getLogger(f"validate_shapes_{region}_{sample_name}_{skey}")
 
@@ -469,7 +665,7 @@ def fill_regions(
                 sample.setParamEffect(shape_systs_dict[sdkey], effect_up, effect_down)
 
 
-            # uncorrelated shape systematics
+            # year uncorrelated shape systematics
             for skey, syst in uncorr_year_shape_systs.items():
                 if sample_name not in syst.samples or (not pass_region and syst.pass_only):
                     continue
@@ -640,7 +836,7 @@ def alphabet_fit(
         # will result in qcdparams errors ~±1
         # but because qcd is poorly modelled we're scaling sigma scale
 
-        sigmascale = 5  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
+        sigmascale = 10  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
         if scale is not None:
             sigmascale *= scale
 
@@ -649,7 +845,7 @@ def alphabet_fit(
         )
         
         # sigmascale = 5
-        sigmascale = 5       
+        sigmascale = 10       
         scaled_params2 = (
             initial_qcd2 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd2))) ** qcd_params2
         )

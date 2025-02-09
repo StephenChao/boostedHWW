@@ -48,11 +48,13 @@ impactsc=0
 seed=44
 numtoys=100
 bias=-1
-rmax=200
-mintol=1 # --cminDefaultMinimizerTolerance
+rmin=-40
+rmax=40
+mintol=0.1 # --cminDefaultMinimizerTolerance
+
 # maxcalls=1000000000  # --X-rtd MINIMIZER_MaxCalls
 
-options=$(getopt -o "wblsdrgti" --long "workspace,bfit,limits,significance,dfit,dfitasimov,resonant,gofdata,goftoys,impactsi,impactsf:,impactsc:,bias:,seed:,numtoys:,mintol:" -- "$@")
+options=$(getopt -o "wblsdrgti" --long "workspace,bfit,limits,significance,dfit,dfitasimov,resonant,gofdata,goftoys,impactsi,impactsf:,impactsc:,bias:,seed:,numtoys:,mintol:,sr:,rmax:,rmin:" -- "$@")
 eval set -- "$options"
 
 while true; do
@@ -103,6 +105,10 @@ while true; do
             shift
             numtoys=$1
             ;;
+        --sr)
+            shift
+            sr=$1
+            ;;
         --mintol)
             shift
             mintol=$1
@@ -110,6 +116,10 @@ while true; do
         --rmax)
             shift
             rmax=$1
+            ;;
+        --rmin)
+            shift
+            rmin=$1
             ;;
         --bias)
             shift
@@ -132,7 +142,7 @@ done
 
 echo "Arguments: resonant=$resonant workspace=$workspace bfit=$bfit limits=$limits \
 significance=$significance dfit=$dfit gofdata=$gofdata goftoys=$goftoys \
-seed=$seed numtoys=$numtoys mintol=$mintol"
+seed=$seed numtoys=$numtoys mintol=$mintol breakdown_sr=$sr rMin=$rmin rMax=$rmax"
 
 
 ####################################################################################################
@@ -161,6 +171,7 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
     echo "actually run the following: "
     ccargs=""
 
+    
     for region in 1 2;
     do 
         cr="CR${region}"
@@ -171,14 +182,16 @@ if [ $resonant = 0 ]; then #doing nonresonant fits
         ccargs+="${srb}=${cards_dir}/${srb}.txt "
         # No need to run the mask
     done
-    
+        
     echo "cards args=${ccargs}"
+
 
 else
     # resonant args
     ccargs=""
     # the other statement deleted
 fi
+
 
 
 ####################################################################################################
@@ -194,7 +207,17 @@ if [ $workspace = 1 ]; then
     combineCards.py $ccargs > $ws.txt
 
     echo "Running text2workspace"
-    text2workspace.py $ws.txt -o $wsm.root 2>&1 | tee $outsdir/text2workspace.txt
+    
+    text2workspace.py $ws.txt --channel-masks -o $wsm.root 2>&1 | tee $outsdir/text2workspace.txt
+    
+    # text2workspace.py $ws.txt \
+    # -P HiggsAnalysis.CombinedLimit.PhysicsModel:multiSignalModel \
+    # --PO 'map=SR1a/.*_hww:r_SR1a[1,-40,40]' \
+    # --PO 'map=SR1b/.*_hww:r_SR1b[1,-40,40]' \
+    # --PO 'map=SR2a/.*_hww:r_SR2a[1,-40,40]' \
+    # --PO 'map=SR2b/.*_hww:r_SR2b[1,-40,40]' \
+    # -o $wsm.root 2>&1 | tee $outsdir/text2workspace.txt
+
 else
     if [ ! -f "$wsm.root" ]; then
         echo "Workspace doesn't exist! Use the -w|--workspace option to make workspace first"
@@ -203,19 +226,48 @@ else
 fi
 
 if [ $bfit = 1 ]; then
-    echo "Multidim fit"
-    combine -D $dataset -M MultiDimFit --saveWorkspace -m 125 -d ${wsm}.root --rMax 20 --rMin -10 \
-    --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
-    -n Snapshot --algo grid --points 100 2>&1 | tee $outsdir/MultiDimFit.txt
+    # echo "Multidim fit"
 
-    echo "plot scan"
-    plot1DScan.py ${wsm_snapshot}.root -o single_scan
+    combine -D $dataset -M MultiDimFit --saveWorkspace -m 125 -d ${wsm}.root --rMax ${rmax} --rMin ${rmin} \
+    --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
+    -n SnapshotAllSRs -v 1 2>&1 | tee $outsdir/MultiDimFit.txt
+
+
+    # combine -D $dataset -M MultiDimFit --saveWorkspace -m 125 -d ${wsm}.root --rMax ${rmax} --rMin ${rmin} \
+    # --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
+    # -n Snapshot --algo grid --points 300 -v 1 2>&1 | tee $outsdir/MultiDimFit.txt
+
+    # echo "plot scan"
+    # plot1DScan.py ${wsm_snapshot}.root -o single_scan
+
+    # SR
+    # combine -D $dataset -M MultiDimFit --saveWorkspace -m 125 -d ${wsm}.root \
+    # --redefineSignalPOIs r_SR1a,r_SR1b,r_SR2a,r_SR2b \
+    # -P r_${sr} --floatOtherPOIs=1 \
+    # --algo grid --points 80 \
+    # --setParameterRanges r_${sr}=${rmin},${rmax} \
+    # -n _scan_r_${sr} \
+    # --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance $mintol --X-rtd MINIMIZER_MaxCalls=400000 \
+    # -v 1 2>&1 | tee $outsdir/MultiDimFit.txt
+
+    # plot1DScan.py higgsCombine_scan_r_${sr}.MultiDimFit.mH125.root -o r_${sr}_scan --POI r_${sr}
+
+    # together
+
+    combine -D $dataset -M MultiDimFit --saveWorkspace -m 125 -d ${wsm}.root \
+    --redefineSignalPOIs r_SR1a,r_SR1b,r_SR2a,r_SR2b \
+    --algo singles \
+    --setParameterRanges r_SR1a=-40,20:r_SR1b=-40,50:r_SR2a=-40,40:r_SR2b=-100,100 \
+    -n _scan_r \
+    --cminDefaultMinimizerStrategy 1 --cminDefaultMinimizerTolerance $mintol \
+    -v 1 2>&1 | tee $outsdir/MultiDimFit.txt
+
 fi
 
 
 if [ $limits = 1 ]; then
     echo "Limits"
-    combine -M AsymptoticLimits -m 125 -n "" -d $wsm.root --rMax 40 --rMin -40 \
+    combine -M AsymptoticLimits -m 125 -n "" -d $wsm.root --rMax ${rmax} --rMin ${rmin} \
     --saveWorkspace --saveToys -s "$seed" --toysFrequentist 2>&1 | tee $outsdir/AsymptoticLimits.txt
 fi
 

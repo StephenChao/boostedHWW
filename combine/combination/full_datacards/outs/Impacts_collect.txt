@@ -1,6 +1,6 @@
 Have POIs: ['r']
 pass_str --snapshotName MultiDimFit --floatParameters CMS_HWW_boosted_tf_dataResidual_CR1_Bin4,CMS_HWW_boosted_tf_dataResidual_CR2_Bin4,CMS_HWW_boosted_tf_dataResidual_CR1_Bin5,CMS_HWW_boosted_tf_dataResidual_CR2_Bin5,CMS_HWW_boosted_tf_dataResidual_CR1_Bin6,CMS_HWW_boosted_tf_dataResidual_CR2_Bin6,CMS_HWW_boosted_tf_dataResidual_CR1_Bin7,CMS_HWW_boosted_tf_dataResidual_CR2_Bin7,CMS_HWW_boosted_tf_dataResidual_CR1_Bin8,CMS_HWW_boosted_tf_dataResidual_CR2_Bin8,CMS_HWW_boosted_tf_dataResidual_CR1_Bin9,CMS_HWW_boosted_tf_dataResidual_CR2_Bin9 -t -1 --rMin -40 --rMax 40 -v 1 -m 125 -d higgsCombineSnapshot.MultiDimFit.mH125.root --setParameters mask_SR1a=0,mask_SR1b=0,mask_CR1=0,mask_SR1aBlinded=1,mask_SR1bBlinded=1,mask_CR1Blinded=1,mask_SR2a=0,mask_SR2b=0,mask_CR2=0,mask_SR2aBlinded=1,mask_SR2bBlinded=1,mask_CR2Blinded=1
-Have parameters: 467
+Have parameters: 465
 Setting parameter mask_SR1a to 0
 Setting parameter mask_SR1b to 0
 Setting parameter mask_CR1 to 0
@@ -13,7 +13,7 @@ Setting parameter mask_CR2 to 0
 Setting parameter mask_SR2aBlinded to 1
 Setting parameter mask_SR2bBlinded to 1
 Setting parameter mask_CR2Blinded to 1
-File higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin16.MultiDimFit.mH125.root did not contain a sufficient number of entries, skipping
-File higgsCombine_paramFit_impacts_CMS_HWW_boosted_tf_dataResidual_CR1_Bin2.MultiDimFit.mH125.root did not contain a sufficient number of entries, skipping
-File higgsCombine_paramFit_impacts_CMS_HWW_boosted_single_top_rate.MultiDimFit.mH125.root did not contain a sufficient number of entries, skipping
-Missing inputs: CMS_HWW_boosted_tf_dataResidual_CR1_Bin16,CMS_HWW_boosted_tf_dataResidual_CR1_Bin2,CMS_HWW_boosted_single_top_rate
+File higgsCombine_paramFit_impacts_CMS_HWW_boosted_btagSFbc_2016.MultiDimFit.mH125.root did not contain a sufficient number of entries, skipping
+File higgsCombine_paramFit_impacts_CMS_HWW_boosted_jmr_2018.MultiDimFit.mH125.root did not contain a sufficient number of entries, skipping
+File higgsCombine_paramFit_impacts_lumi_13TeV_2016.MultiDimFit.mH125.root did not contain a sufficient number of entries, skipping
+Missing inputs: CMS_HWW_boosted_btagSFbc_2016,CMS_HWW_boosted_jmr_2018,lumi_13TeV_2016

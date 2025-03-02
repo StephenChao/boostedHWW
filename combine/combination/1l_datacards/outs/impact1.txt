@@ -9,10 +9,10 @@ pass_str -t -1 --rMin -1 --rMax 2 --robustFit 1 --expectSignal 1 -m 125 -d ./com
 >>> method used is MultiDimFit
 >>> 0 out of 6 channels masked
 
-SimNLL created with 6 channels, 0 generic constraints, 194 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+SimNLL created with 6 channels, 0 generic constraints, 188 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
 
  --- MultiDimFit ---
 best fit parameter values and profile-likelihood uncertainties: 
-   r :    +1.000   -0.583/+0.884 (68%)
-Done in 0.90 min (cpu), 0.90 min (real)
+   r :    +1.000   -0.529/+0.825 (68%)
+Done in 0.67 min (cpu), 0.67 min (real)
 >> combine -M MultiDimFit -n _initialFit_Test --algo singles --redefineSignalPOIs r -t -1 --rMin -1 --rMax 2 --robustFit 1 --expectSignal 1 -m 125 -d ./combined_withmasks.root

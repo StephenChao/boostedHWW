@@ -1,14 +1,14 @@
-# Datacard for <Channel (CR1) instance at 0x7fa6b7124430> generated on 2024-11-19 19:40:05.649467
+# Datacard for <Channel (CR1) instance at 0x2b55cb743520> generated on 2025-01-22 18:37:56.061977
 imax 1 # number of categories ('bins' but here we are using shape templates)
 jmax 4 # number of samples minus 1
 kmax 98 # number of nuisance parameters
 shapes * CR1 HWWfullhad.root HWWfullhad:CR1_$PROCESS HWWfullhad:CR1_$PROCESS_$SYSTEMATIC
 bin CR1
-observation 110954256.000
+observation 107816301.000
 bin                                                        CR1            CR1            CR1         CR1                             CR1
 process                                                  ttbar     single_top          wjets    rest_bkg  CMS_HWW_boosted_qcd_datadriven
 process                                                      1              2              3           4                               5
-rate                                                571160.771      72623.698    1339623.169  490832.093                           1.000
+rate                                                554298.916      70475.536    1302187.769  476926.882                           1.000
 CMS_HWW_boosted_CR1_mcstat_bin0 shape                   1.0000         1.0000         1.0000      1.0000                               -
 CMS_HWW_boosted_CR1_mcstat_bin1 shape                   1.0000         1.0000         1.0000      1.0000                               -
 CMS_HWW_boosted_CR1_mcstat_bin10 shape                  1.0000         1.0000         1.0000      1.0000                               -
@@ -79,9 +79,9 @@ CMS_scale_j_RelSample_2016 shape                        1.0000         1.0000   
 CMS_scale_j_RelSample_2016APV shape                     1.0000         1.0000         1.0000      1.0000                               -
 CMS_scale_j_RelSample_2017 shape                        1.0000         1.0000         1.0000      1.0000                               -
 CMS_scale_j_RelSample_2018 shape                        1.0000         1.0000         1.0000      1.0000                               -
-PDF_single_top_ACCEPT_CMS_HWW_boosted lnN                    -  0.9370/1.0650              -           -                               -
-PDF_ttbar_ACCEPT_CMS_HWW_boosted lnN             0.9180/1.0130              -              -           -                               -
-PDF_wjets_ACCEPT_CMS_HWW_boosted lnN                         -              -  0.9390/1.0810           -                               -
+PDF_single_top_ACCEPT_CMS_HWW_boosted lnN                    -  0.9160/1.1150              -           -                               -
+PDF_ttbar_ACCEPT_CMS_HWW_boosted lnN             0.8820/1.1540              -              -           -                               -
+PDF_wjets_ACCEPT_CMS_HWW_boosted lnN                         -              -  0.8550/1.1810           -                               -
 QCDscale_rest_bkg shape                                      -              -              -      1.0000                               -
 QCDscale_single_top shape                                    -         1.0000              -           -                               -
 QCDscale_single_top_ACCEPT_CMS_HWW_boosted lnN               -  0.9070/1.1230              -           -                               -

@@ -11,13 +11,51 @@ from hist import Hist
 years = ["2016APV", "2016", "2017", "2018"]
 
 jecs = {
-    "JES": "JES_jes",
+    # "JES": "JES_jes",
     "JER": "JER",
+    "Absolute": "split",
+    "Absolute_year": "split",
+    "BBEC1": "split",
+    "BBEC1_year": "split",
+    "EC2": "split",
+    "EC2_year": "split",
+    "FlavorQCD": "split",
+    "HF": "split",
+    "HF_year": "split",
+    "RelativeBal": "split",
+    "RelativeSample_year": "split",
+
+    #although pdf are added here
+    "pdfscale": "pdfscale",
+
+    #although JMS/JMR are added here
+    "JMS"     : "JMS",
+    "JMR"     : "JMR",
 }
 
 uncluste = {
     "UE": "unclusteredEnergy",
 }
+
+pdf_scale_acc_dict = {'ggF': {'up': 1.005, 'down': 0.997},
+ 'VBF': {'up': 1.007, 'down': 0.994},
+ 'ZH': {'up': 1.008, 'down': 0.998},
+ 'WH': {'up': 1.009, 'down': 0.998},
+ 'ttH': {'up': 1.015, 'down': 0.988},
+ 'TT': {'up': 1.013, 'down': 0.918},
+ 'WJets': {'up': 1.081, 'down': 0.939},
+ 'ST': {'up': 1.065, 'down': 0.937},
+ 'Rest': {'up': 0, 'down': 0}}
+
+qcd_scale_acc_dict = {'ggF': {'up': 1.092, 'down': 0.925},
+ 'VBF': {'up': 0.999, 'down': 1.012},
+ 'ZH': {'up': 1.061, 'down': 0.961},
+ 'WH': {'up': 1.066, 'down': 0.956},
+ 'ttH': {'up': 1.1, 'down': 0.921},
+ 'TT': {'up': 1.163, 'down': 0.876},
+ 'WJets': {'up': 1.183, 'down': 0.853},
+ 'ST': {'up': 1.123, 'down': 0.907},
+ 'Rest': {'up': 0, 'down': 0}}
 
 @dataclass
 class ShapeVar:

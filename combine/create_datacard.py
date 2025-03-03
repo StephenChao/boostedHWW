@@ -758,23 +758,33 @@ def alphabet_fit(
         limits=(-20, 20),
         square_params=True, 
     )
-    tf_dataResidual_b = rl.BasisPoly(
-        f"{CMS_PARAMS_LABEL}_tf_dataResidual_b",
+    tf_dataResidual_1b = rl.BasisPoly(
+        f"{CMS_PARAMS_LABEL}_tf_dataResidual_1b",
         (shape_var.order_b,),
         [shape_var.name],
         basis="Bernstein",
-        limits=(-20, 20),
+        limits=(-40, 40),
         square_params=True, 
-    )  
+    )
+    
+    tf_dataResidual_2b = rl.BasisPoly(
+        f"{CMS_PARAMS_LABEL}_tf_dataResidual_2b",
+        (shape_var.order_b,),
+        [shape_var.name],
+        basis="Bernstein",
+        limits=(-40, 40),
+        square_params=True, 
+    )    
     
     # set TF parameters for each pass region(6 SRs)
     tf_dataResidual_params_a = tf_dataResidual_a(shape_var.scaled)
-    tf_dataResidual_params_b = tf_dataResidual_b(shape_var.scaled)
+    tf_dataResidual_params_1b = tf_dataResidual_1b(shape_var.scaled)
+    tf_dataResidual_params_2b = tf_dataResidual_2b(shape_var.scaled)
 
     tf_params_pass_1a = qcd_eff_1a * tf_dataResidual_params_a  # scale params initially by qcd eff
-    tf_params_pass_1b = qcd_eff_1b * tf_dataResidual_params_b  # scale params initially by qcd eff
+    tf_params_pass_1b = qcd_eff_1b * tf_dataResidual_params_1b  # scale params initially by qcd eff
     tf_params_pass_2a = qcd_eff_2a * tf_dataResidual_params_a  # scale params initially by qcd eff
-    tf_params_pass_2b = qcd_eff_2b * tf_dataResidual_params_b  # scale params initially by qcd eff
+    tf_params_pass_2b = qcd_eff_2b * tf_dataResidual_params_2b  # scale params initially by qcd eff
             
     #set QCD parameters for 3 CRs
     qcd_params1 = np.array(
@@ -836,7 +846,7 @@ def alphabet_fit(
         # will result in qcdparams errors ~±1
         # but because qcd is poorly modelled we're scaling sigma scale
 
-        sigmascale = 10  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
+        sigmascale = 50  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
         if scale is not None:
             sigmascale *= scale
 
@@ -845,7 +855,7 @@ def alphabet_fit(
         )
         
         # sigmascale = 5
-        sigmascale = 10       
+        sigmascale = 50       
         scaled_params2 = (
             initial_qcd2 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd2))) ** qcd_params2
         )

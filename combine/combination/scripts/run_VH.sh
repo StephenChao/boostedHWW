@@ -149,44 +149,31 @@ mkdir -p $outsdir
 
 # ADD REGIONS
 
-SR1fail2016="SR1fail2016"
-SR1fail2016APV="SR1fail2016APV"
-SR1fail2017="SR1fail2017"
-SR1fail2018="SR1fail2018"
+# SR1fail2016="SR1fail2016"
+# SR1fail2016APV="SR1fail2016APV"
+# SR1fail2017="SR1fail2017"
+# SR1fail2018="SR1fail2018"
 
-SR1pass2016="SR1pass2016"
-SR1pass2016APV="SR1pass2016APV"
-SR1pass2017="SR1pass2017"
-SR1pass2018="SR1pass2018"
+# SR1pass2016="SR1pass2016"
+# SR1pass2016APV="SR1pass2016APV"
+# SR1pass2017="SR1pass2017"
+# SR1pass2018="SR1pass2018"
 
-TopCRfail2016="TopCRfail2016"
-TopCRfail2016APV="TopCRfail2016APV"
-TopCRfail2017="TopCRfail2017"
-TopCRfail2018="TopCRfail2018"
+# TopCRfail2016="TopCRfail2016"
+# TopCRfail2016APV="TopCRfail2016APV"
+# TopCRfail2017="TopCRfail2017"
+# TopCRfail2018="TopCRfail2018"
 
-TopCRpass2016="TopCRpass2016"
-TopCRpass2016APV="TopCRpass2016APV"
-TopCRpass2017="TopCRpass2017"
-TopCRpass2018="TopCRpass2018"
+# TopCRpass2016="TopCRpass2016"
+# TopCRpass2016APV="TopCRpass2016APV"
+# TopCRpass2017="TopCRpass2017"
+# TopCRpass2018="TopCRpass2018"
 
 ########################### define SR/CR with datacards
 
-ccargs_VH="SR1fail2016=${cards_dir}/${SR1fail2016}.txt \
-SR1fail2016APV=${cards_dir}/${SR1fail2016APV}.txt \
-SR1fail2017=${cards_dir}/${SR1fail2017}.txt \
-SR1fail2018=${cards_dir}/${SR1fail2018}.txt \
-SR1pass2016=${cards_dir}/${SR1pass2016}.txt \
-SR1pass2016APV=${cards_dir}/${SR1pass2016APV}.txt \
-SR1pass2017=${cards_dir}/${SR1pass2017}.txt \
-SR1pass2018=${cards_dir}/${SR1pass2018}.txt \
-TopCRfail2016=${cards_dir}/${TopCRfail2016}.txt \
-TopCRfail2016APV=${cards_dir}/${TopCRfail2016APV}.txt \
-TopCRfail2017=${cards_dir}/${TopCRfail2017}.txt \
-TopCRfail2018=${cards_dir}/${TopCRfail2018}.txt \
-TopCRpass2016=${cards_dir}/${TopCRpass2016}.txt \
-TopCRpass2016APV=${cards_dir}/${TopCRpass2016APV}.txt \
-TopCRpass2017=${cards_dir}/${TopCRpass2017}.txt \
-TopCRpass2018=${cards_dir}/${TopCRpass2018}.txt"
+ccargs_VH="SR1fail=${cards_dir}/VH_HWW_Vww_RunII_SR1fail.txt \
+SR1pass=${cards_dir}/VH_HWW_Vww_RunII_SR1pass.txt \
+TopCRpass=${cards_dir}/VH_HWW_Vww_RunII_TopCRpass.txt "
 
 
 echo "ccargs_VH:${ccargs_VH}"
@@ -212,7 +199,9 @@ if [ $significance = 1 ]; then
     echo "Expected significance"
 
     # combine -M Significance -d workspace.root -t -1 --expectSignal 1 -v 9  2>&1 | tee $outsdir/Significance.txt
-    combine -M Significance -d ${wsm}.root -t -1 --expectSignal 1 -v 9 2>&1 | tee $outsdir/Significance.txt
+    combine -M Significance -d ${wsm}.root --rMin -40 --rMax 40 -t -1 --expectSignal 1  2>&1 | tee $outsdir/ExpectedSignificance.txt
+    echo "Observed significance"
+    combine -M Significance -d ${wsm}.root --rMin -40 --rMax 40  2>&1 | tee $outsdir/ObservedSignificance.txt
 
 fi
 

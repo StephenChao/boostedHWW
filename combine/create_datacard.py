@@ -171,9 +171,12 @@ mc_samples = OrderedDict(
         ("ST", "single_top"),
         ("WJets", "wjets"),
         ("Rest", "rest_bkg"),
+        ("HZZ", "hzz"),
     ]
 )
+
 bg_keys = list(mc_samples.keys())
+
 sig_keys = [
     "ggF",
     "VBF",
@@ -241,6 +244,9 @@ nuisance_params = {
     "pdf_Higgs_WH": Syst(prior="lnN", samples=["WH"], value=1.017),
     "pdf_Higgs_ZH": Syst(prior="lnN", samples=["ZH"], value=1.013),
     "pdf_Higgs_ttH": Syst(prior="lnN", samples=["ttH"], value=1.030),
+    
+    # HZZ samples
+    "hzz": Syst(prior="lnN", samples=["HZZ"], value=1.5),
     
     #pdf scale acc for signal:
     f"PDF_ggH_ACCEPT_{CMS_PARAMS_LABEL}": Syst(
@@ -846,7 +852,7 @@ def alphabet_fit(
         # will result in qcdparams errors ~±1
         # but because qcd is poorly modelled we're scaling sigma scale
 
-        sigmascale = 50  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
+        sigmascale = 10  # to scale the deviation from initial, value >100 can make SR2a/SR2b/CR2 fit work
         if scale is not None:
             sigmascale *= scale
 
@@ -855,7 +861,7 @@ def alphabet_fit(
         )
         
         # sigmascale = 5
-        sigmascale = 50       
+        sigmascale = 10       
         scaled_params2 = (
             initial_qcd2 * (1 + sigmascale / np.maximum(1.0, np.sqrt(initial_qcd2))) ** qcd_params2
         )
